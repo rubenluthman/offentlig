@@ -1,0 +1,98 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+    paths: &paths
+      - "sources/**"
+      - "tests/**"
+      - "scripts/**"
+      - "Makefile"
+      - "requirements*.txt"
+      - ".github/**"
+  pull_request:
+    branches: [main]
+    paths: *paths
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  FONTSPECTOR_VERSION: "1.9.0"
+  FONTSPECTOR_SHA256: "0d4a7fbc577f7f99a084dec2a7acc13f64f923cbe44c0e3c5e3d76469786b8e2"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - name: Install Python dependencies
+        run: |
+          python -m venv venv
+          venv/bin/pip install -r requirements.txt
+      - name: Install Fontspector
+        run: |
+          url="https://github.com/fonttools/fontspector/releases/download/fontspector-v${FONTSPECTOR_VERSION}/fontspector-${FONTSPECTOR_VERSION}-x86_64-unknown-linux-gnu.tar.gz"
+          curl -fsSL -o "$RUNNER_TEMP/fontspector.tar.gz" "$url"
+          echo "${FONTSPECTOR_SHA256}  $RUNNER_TEMP/fontspector.tar.gz" | sha256sum -c -
+          mkdir "$RUNNER_TEMP/fsp"
+          tar -xzf "$RUNNER_TEMP/fontspector.tar.gz" -C "$RUNNER_TEMP/fsp"
+          install -m 755 "$(find "$RUNNER_TEMP/fsp" -type f -name fontspector | head -n 1)" venv/bin/fontspector
+          venv/bin/fontspector --version
+      - run: make build
+      - run: make test
+      - name: Fontspector (fails on any FAIL)
+        run: make qa
+      - name: Archive Fontspector reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fontspector-reports
+          path: build/fsp-*.*
+          if-no-files-found: ignore
+      - name: Zip release fonts
+        run: |
+          if [ "${GITHUB_REF_TYPE}" = tag ]; then version="${GITHUB_REF_NAME#v}"; else version="dry-run-${GITHUB_SHA::7}"; fi
+          (cd fonts && zip -r -q "../OffentligSans-${version}.zip" OffentligSans)
+          ls -l OffentligSans-*.zip
+      - name: Upload zip as workflow artifact (dry run, any non-tag run)
+        if: ${{ !startsWith(github.ref, 'refs/tags/v') }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-zip
+          path: OffentligSans-*.zip
+      - name: Upload zip for the release job
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-zip
+          path: OffentligSans-*.zip
+
+  release:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: release-zip
+      - name: Create draft release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" --repo "$GITHUB_REPOSITORY" --draft \
+            --title "$GITHUB_REF_NAME" --generate-notes OffentligSans-*.zip

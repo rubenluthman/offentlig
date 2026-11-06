@@ -35,8 +35,11 @@ qa:
 	mkdir -p build
 	-$(FONTSPECTOR) -p universal --skip-network --json build/fsp-universal.json $(FONTS)/ttf/*.ttf $(FONTS)/variable/*.ttf > build/fsp-universal.txt
 	-$(FONTSPECTOR) -p opentype --skip-network --json build/fsp-opentype.json $(FONTS)/ttf/*.ttf $(FONTS)/variable/*.ttf > build/fsp-opentype.txt
-	$(VENV)/bin/python scripts/fsp_summary.py build/fsp-universal.json
-	$(VENV)/bin/python scripts/fsp_summary.py build/fsp-opentype.json
+	@status=0; \
+	for r in universal opentype; do \
+	  $(VENV)/bin/python scripts/fsp_summary.py build/fsp-$$r.json || status=1; \
+	done; \
+	exit $$status
 
 verify:
 	./scripts/verify_commit.sh

@@ -39,8 +39,11 @@ Fix bugs upstream first. Open a pull request against https://github.com/uswds/pu
 
 1. Update `CHANGELOG.md` and the version in `sources/*.ufo/fontinfo.plist` (`versionMajor`, `versionMinor`). Package version `0.X.Y` becomes font version `0.(X × 100 + Y)`.
 2. Run `make build test qa`.
-3. Tag `vX.Y.Z` (tags are never moved or reused).
-4. Attach a zip of `fonts/OffentligSans/` to the GitHub release (ADR-0002).
+3. Tag `vX.Y.Z` and push the tag (tags are never moved or reused).
+4. CI builds the fonts, runs the tests and Fontspector, zips `fonts/OffentligSans/` as `OffentligSans-X.Y.Z.zip` and creates a draft GitHub release with the zip attached (ADR-0002).
+5. Review the draft release and publish it.
+
+CI runs on pushes and pull requests to `main` that touch `sources/`, `tests/`, `scripts/`, `Makefile`, `requirements*.txt` or `.github/`, and fails on any test failure or Fontspector FAIL. Every run that is not a tag push also builds the zip and uploads it as the `release-zip` workflow artifact, so the release job's input can be inspected without a tag. The workflow can also be started manually (`workflow_dispatch`).
 
 Versioning:
 
