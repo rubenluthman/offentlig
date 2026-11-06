@@ -31,6 +31,7 @@ feature salt;
 feature ss01;
 feature ss02;
 feature calt;
+feature cv20;
 feature tnum;
 
 } aalt;
@@ -314,6 +315,22 @@ featureNames {
 feature calt {
 sub space emdash' space by emdash.alt;
 } calt;
+
+feature cv20 {
+sub one.tf by one.tf.cv20;
+cvParameters {
+    FeatUILabelNameID {
+        name "Plain tabular 1";
+    };
+    FeatUITooltipTextNameID {
+        name "A tabular 1 without the foot, the same shape as the lining 1 (use with tnum)";
+    };
+    SampleTextNameID {
+        name "1111 1234 9871";
+    };
+};
+
+} cv20;
 
 feature tnum {
 # automatic
