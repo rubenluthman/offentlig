@@ -13,3 +13,4 @@ sources/.ninja_lock
 sources/instance_ufos/
 sources/build.ninja
 sources/.ninja_log
+.vale/styles/HouseStyle/

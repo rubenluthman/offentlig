@@ -1,5 +1,5 @@
 #!/bin/sh
-# Pre-commit verification: tests, relative Markdown links, marketing wording, absolute home paths and secrets.
+# Pre-commit verification: tests, relative Markdown links, house style (Vale), absolute home paths and secrets.
 set -eu
 cd "$(dirname "$0")/.."
 fail=0
@@ -23,14 +23,20 @@ for f in $(echo "$files" | grep '\.md$'); do
   done || fail=1
 done
 
-echo "== marketing wording"
-if echo "$files" | grep -E '\.(md|txt)$' | grep -v -E '^(LICENSE|AUTHORS.txt|CONTRIBUTORS.txt)$' | xargs grep -n -i -E 'seamless|cutting-edge|world-class|revolutionary|state-of-the-art|powerful|blazing|game-changing|unleash|robust solution|best-in-class' ; then
+echo "== house style (Vale)"
+# Wording and punctuation rules come from the shared house-style package (see docs/house-style.md).
+if ! command -v vale >/dev/null 2>&1; then
+  echo "vale is not installed: brew install vale" >&2
   fail=1
-fi
-
-echo "== em dashes"
-if echo "$files" | grep -E '\.(md|txt|swift)$' | xargs grep -n "$(printf '\342\200\224')" ; then
-  fail=1
+else
+  [ -d .vale/styles/HouseStyle ] || vale sync >/dev/null || { echo "vale sync failed: needs network access once" >&2; fail=1; }
+  if [ -d .vale/styles/HouseStyle ]; then
+    prose=$(echo "$files" | grep -E '\.(md|txt)$' | grep -v -E '^(LICENSE|AUTHORS.txt|CONTRIBUTORS.txt)$' || true)
+    for f in $prose; do [ -f "$f" ] && set -- "$@" "$f"; done
+    if [ "$#" -gt 0 ] && ! vale --output=line "$@" >&2; then
+      fail=1
+    fi
+  fi
 fi
 
 echo "== absolute home paths and secrets"
