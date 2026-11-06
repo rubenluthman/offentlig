@@ -30,6 +30,7 @@ feature onum;
 feature salt;
 feature ss01;
 feature ss02;
+feature ss04;
 feature calt;
 feature tnum;
 
@@ -310,6 +311,19 @@ featureNames {
 };
 
 } ss02;
+
+feature ss04 {
+# automatic
+sub d by d.ss04;
+sub q by q.ss04;
+sub dcaron by dcaron.ss04;
+sub dcroat by dcroat.ss04;
+sub ddotbelow by ddotbelow.ss04;
+featureNames {
+    name "Distinct b d p q";
+};
+
+} ss04;
 
 feature calt {
 sub space emdash' space by emdash.alt;

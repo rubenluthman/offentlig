@@ -578,6 +578,8 @@
     <string>currency.glif</string>
     <key>d</key>
     <string>d.glif</string>
+    <key>d.ss04</key>
+    <string>d.ss04.glif</string>
     <key>dagger</key>
     <string>dagger.glif</string>
     <key>daggerdbl</key>
@@ -586,10 +588,16 @@
     <string>dblgravecomb.glif</string>
     <key>dcaron</key>
     <string>dcaron.glif</string>
+    <key>dcaron.ss04</key>
+    <string>dcaron.ss04.glif</string>
     <key>dcroat</key>
     <string>dcroat.glif</string>
+    <key>dcroat.ss04</key>
+    <string>dcroat.ss04.glif</string>
     <key>ddotbelow</key>
     <string>ddotbelow.glif</string>
+    <key>ddotbelow.ss04</key>
+    <string>ddotbelow.ss04.glif</string>
     <key>degree</key>
     <string>degree.glif</string>
     <key>dieresis</key>
@@ -1040,6 +1048,8 @@
     <string>published.glif</string>
     <key>q</key>
     <string>q.glif</string>
+    <key>q.ss04</key>
+    <string>q.ss04.glif</string>
     <key>question</key>
     <string>question.glif</string>
     <key>questiondown</key>
