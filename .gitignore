@@ -7,3 +7,5 @@ __MACOSX/
 *(Autosave)*
 __pycache__/
 .pytest_cache/
+build.ninja
+.ninja_log
