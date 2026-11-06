@@ -18,7 +18,7 @@ make test      # pytest against the built fonts
 make qa        # Fontspector universal and OpenType profiles, expected 0 FAIL
 make proof     # tester page (docs/proof/allemansratten.txt) and Diffenator2 proof pages in build/proof
 make specimen  # docs/specimen.png from the built TTFs and the Allemansrätten text
-make verify    # tests, links, wording, paths and secrets
+make verify    # tests, links, house style, paths and secrets
 ```
 
 ## Editing sources
@@ -33,7 +33,7 @@ Fix bugs upstream first. Open a pull request against https://github.com/uswds/pu
 
 - Work on a branch and open a pull request into `main`.
 - Use Conventional Commits.
-- Run `make verify` before committing.
+- Run `make verify` before committing. It needs `vale` (`brew install vale`); the wording rules are described in [house-style.md](house-style.md).
 
 ## Releases
 
