@@ -63,6 +63,7 @@ These values are identical in every master and are enforced by `tests/test_metri
 - The variable default is 400, and the default named instance has the same PostScript name as the font itself.
 - `Ǔ` (U+01D3) exists, so every cased letter has its counterpart (Fontspector `case_mapping`).
 - `ss01` swaps `g` only, `ss02` swaps `l` only, `salt` swaps both.
+- The `percent` slash is at least 0.80 of the zero stem thickness, and the `asciitilde` and `approxequal` strokes are at least 0.85 of the hyphen thickness, at every weight in both styles.
 
 ## Documents
 
