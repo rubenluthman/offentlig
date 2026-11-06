@@ -296,12 +296,18 @@ sub l by l.ss02;
 feature ss01 {
 # automatic
 sub g by g.ss01;
+featureNames {
+    name "Alternate g";
+};
 
 } ss01;
 
 feature ss02 {
 # automatic
 sub l by l.ss02;
+featureNames {
+    name "Alternate l";
+};
 
 } ss02;
 

@@ -9,3 +9,7 @@ __pycache__/
 .pytest_cache/
 build.ninja
 .ninja_log
+sources/.ninja_lock
+sources/instance_ufos/
+sources/build.ninja
+sources/.ninja_log
