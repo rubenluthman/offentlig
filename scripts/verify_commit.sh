@@ -29,7 +29,16 @@ if ! command -v vale >/dev/null 2>&1; then
   echo "vale is not installed: brew install vale" >&2
   fail=1
 else
-  [ -d .vale/styles/HouseStyle ] || vale sync >/dev/null || { echo "vale sync failed: needs network access once" >&2; fail=1; }
+  # Resync whenever the pinned release changes, so a version bump never runs stale cached rules.
+  pin="$(grep '^Packages' .vale.ini)"
+  if [ "$(cat .vale/styles/HouseStyle/.pin 2>/dev/null)" != "$pin" ]; then
+    if vale sync >/dev/null; then
+      printf '%s\n' "$pin" > .vale/styles/HouseStyle/.pin
+    else
+      echo "vale sync failed: the house-style package needs network access once per pinned release" >&2
+      fail=1
+    fi
+  fi
   if [ -d .vale/styles/HouseStyle ]; then
     prose=$(echo "$files" | grep -E '\.(md|txt)$' | grep -v -E '^(LICENSE|AUTHORS.txt|CONTRIBUTORS.txt)$' || true)
     for f in $prose; do [ -f "$f" ] && set -- "$@" "$f"; done
