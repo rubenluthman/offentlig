@@ -62,6 +62,8 @@ These values are identical in every master and are enforced by `tests/test_metri
 - The variable default is 400, and the default named instance has the same PostScript name as the font itself.
 - `Ǔ` (U+01D3) exists, so every cased letter has its counterpart (Fontspector `case_mapping`).
 - `ss01` swaps `g` only, `ss02` swaps `l` only, `salt` swaps both.
+- The eight arrows U+2190 – U+2193 and U+2196 – U+2199 (from public-sans pull request #252) are mapped in every font, have an advance of 1446 and outlines. Their bounding-box centre lies within 12 units of the `plus` centre for the four axis arrows and within 70 units for the four diagonals.
+- `leftArrow` and `rightArrow` have the same bounding-box height.
 
 ## Documents
 
