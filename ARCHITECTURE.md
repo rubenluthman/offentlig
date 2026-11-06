@@ -11,6 +11,7 @@ sources/
   config-OffentligSans.yaml        gftools builder configuration
 tests/                             pytest suite, runs against the built fonts
 scripts/verify_commit.sh           pre-commit verification
+.github/workflows/ci.yaml          CI: build, test, Fontspector; draft release with zip on v* tags
 docs/                              contributor docs and docs/adr/
 fonts/OffentligSans/{otf,ttf,variable,webfonts}/    build output, gitignored
 ```
