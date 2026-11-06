@@ -14,7 +14,7 @@
 - [ ] Trademark alignment and the Bitcoin sign, see issues #216 and #215.
 - [ ] Fix the gap between capital A and lowercase m, see issue #259.
 - [ ] DIN 91379 sequences and pinyin tones, see issues #277 and #258.
-- [ ] Add CI that builds, tests and attaches the zip to tagged releases.
+- [x] Add CI that builds, tests and attaches the zip to tagged releases.
 - [ ] Serif family adapted from IBM Plex Serif, weights 100 – 700.
 - [ ] Mono family adapted from IBM Plex Mono, weights 100 – 700.
 
