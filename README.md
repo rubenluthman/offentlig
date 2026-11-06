@@ -1,13 +1,13 @@
 # Offentlig
 
-Offentlig is a planned open-source font superfamily. Offentlig Sans is the first member: a renamed fork of [Public Sans](https://github.com/uswds/public-sans) with correct Swedish letters. Serif and Mono families are planned and not yet started.
+Offentlig is a planned open-source font superfamily. Offentlig Sans is the first member: a renamed fork of [Public Sans](https://github.com/uswds/public-sans) with correct Swedish letters. Serif and Mono families are planned but not yet started.
 
 ![Offentlig Sans specimen](docs/specimen.png)
 
 ## Offentlig Sans
 
 - Nine weights (Thin to Black) in upright and italic, plus variable fonts on the `wght` axis (default 400).
-- Same design as Public Sans `develop` at `e40fcf567`, with three fixes: italic `å` no longer renders as `ǻ`, subscript digits U+2080 – U+2089 are encoded, and a spaced en dash keeps its spaces in Thin. It also adds the missing capital `Ǔ` (U+01D3).
+- Same design as Public Sans `develop` at `e40fcf567`, with four fixes: italic `å` no longer renders as `ǻ`, subscript digits U+2080 – U+2089 are encoded, a spaced en dash keeps its spaces in Thin, and the missing capital `Ǔ` (U+01D3) is added.
 - Stylistic sets: `ss01` selects an alternate `g`, `ss02` an alternate `l`, and `salt` both.
 - Formats: OTF, TTF, variable TTF and WOFF2.
 

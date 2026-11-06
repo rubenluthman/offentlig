@@ -12,3 +12,4 @@ ninja==1.13.2
 protobuf==7.36.2
 pytest==9.2.0
 uharfbuzz==0.57.0
+pillow==13.0.0

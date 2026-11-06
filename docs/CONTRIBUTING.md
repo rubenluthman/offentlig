@@ -17,6 +17,7 @@ make build     # fonts/OffentligSans/{otf,ttf,variable,webfonts}
 make test      # pytest against the built fonts
 make qa        # Fontspector universal and OpenType profiles, expected 0 FAIL
 make proof     # tester page (docs/proof/allemansratten.txt) and Diffenator2 proof pages in build/proof
+make specimen  # docs/specimen.png from the built TTFs and the Allemansrätten text
 make verify    # tests, links, wording, paths and secrets
 ```
 
