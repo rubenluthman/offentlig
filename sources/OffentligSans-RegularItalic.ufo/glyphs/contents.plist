@@ -320,6 +320,8 @@
     <string>U_acute.glif</string>
     <key>Ubreve</key>
     <string>U_breve.glif</string>
+    <key>Ucaron</key>
+    <string>U_caron.glif</string>
     <key>Ucircumflex</key>
     <string>U_circumflex.glif</string>
     <key>Udblgrave</key>

@@ -3,7 +3,7 @@
 ## Active
 
 - [ ] Review the repository tree and history, make it public, tag `v0.1.0` and publish the release.
-- [ ] Post the upstream pull requests for the three fixes (italic `å`, subscript Unicode values, Thin en dash kerning).
+- [ ] Post the upstream pull requests for the three fixes (italic `å`, subscript Unicode values, Thin en dash kerning) and for the missing capital `Ǔ` (U+01D3), which Fontspector reports as `case_mapping`.
 - [ ] Swedish diacritic audit: ring roundness and clearance, diaeresis spacing, italic ring slant. Measure first, change only after a specimen review.
 - [ ] Add arrow glyphs from public-sans PR #252 (wayne-shih). Credit in `CONTRIBUTORS.txt` and `CHANGELOG.md`.
 - [ ] Draw capital sharp s ẞ (U+1E9E), see public-sans PR #194 and #144.

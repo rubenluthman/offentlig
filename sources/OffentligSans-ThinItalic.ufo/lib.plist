@@ -193,6 +193,7 @@
       <string>Uacute</string>
       <string>Ubreve</string>
       <string>Ucircumflex</string>
+      <string>Ucaron</string>
       <string>Udblgrave</string>
       <string>Udieresis</string>
       <string>Udotbelow</string>
@@ -990,6 +991,8 @@
       <string>base</string>
       <key>Ubreve</key>
       <string>base</string>
+      <key>Ucaron</key>
+      <string>base</string>
       <key>Ucircumflex</key>
       <string>base</string>
       <key>Udblgrave</key>
@@ -1653,6 +1656,8 @@
       <string>uni021A</string>
       <key>Tdotbelow</key>
       <string>uni1E6C</string>
+      <key>Ucaron</key>
+      <string>uni01D3</string>
       <key>Udblgrave</key>
       <string>uni0214</string>
       <key>Udotbelow</key>

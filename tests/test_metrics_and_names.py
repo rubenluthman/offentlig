@@ -123,3 +123,11 @@ def test_proof_text_is_covered():
         cmap = TTFont(BUILD / "variable" / name).getBestCmap()
         missing = sorted({c for c in text if not c.isspace() and ord(c) not in cmap})
         assert missing == [], (name, missing)
+
+
+def test_variable_default_instance_names_match_name_table(variable_ttf):
+    """The default named instance and the font's own PostScript name agree (Fontspector valid_default_instance_nameids)."""
+    name = variable_ttf["name"]
+    ps = name.getName(6, 3, 1, 0x409).toUnicode()
+    default = [i for i in variable_ttf["fvar"].instances if i.coordinates["wght"] == 400]
+    assert default and name.getDebugName(default[0].postscriptNameID) == ps

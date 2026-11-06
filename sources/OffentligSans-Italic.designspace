@@ -19,7 +19,7 @@
         <dimension name="Weight" xvalue="100"/>
       </location>
     </source>
-    <source filename="OffentligSans-RegularItalic.ufo" name="Offentlig Sans Regular Italic" familyname="Offentlig Sans" stylename="Regular Italic">
+    <source filename="OffentligSans-RegularItalic.ufo" name="Offentlig Sans Italic Master" familyname="Offentlig Sans" stylename="Italic">
       <lib copy="1"/>
       <groups copy="1"/>
       <features copy="1"/>

@@ -60,3 +60,18 @@ def test_spaced_en_dash_keeps_both_spaces_variable(variable_path):
         face, buf = shape(variable_path, " – ", wght=wght)
         _, nominal_buf = shape(variable_path, " – ", features={"kern": False}, wght=wght)
         assert [p.x_advance for p in buf.glyph_positions] == [p.x_advance for p in nominal_buf.glyph_positions]
+
+
+def test_ucaron_exists_and_is_taller_than_u(static_ttf):
+    """U+01D3 pairs with U+01D4 (case mapping); it is U plus a caron above cap height."""
+    from fontTools.pens.boundsPen import BoundsPen
+    cmap = static_ttf.getBestCmap()
+    assert 0x1D3 in cmap and 0x1D4 in cmap
+    gs = static_ttf.getGlyphSet()
+    tops = []
+    for name in ("U", cmap[0x1D3]):
+        bp = BoundsPen(gs)
+        gs[name].draw(bp)
+        tops.append(bp.bounds[3])
+    assert tops[1] > tops[0]
+    assert static_ttf["hmtx"][cmap[0x1D3]][0] == static_ttf["hmtx"]["U"][0]

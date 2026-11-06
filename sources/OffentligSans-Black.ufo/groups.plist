@@ -232,6 +232,7 @@
       <string>Uacute</string>
       <string>Ubreve</string>
       <string>Ucircumflex</string>
+      <string>Ucaron</string>
       <string>Udblgrave</string>
       <string>Udieresis</string>
       <string>Udotbelow</string>
@@ -909,6 +910,7 @@
       <string>Uacute</string>
       <string>Ubreve</string>
       <string>Ucircumflex</string>
+      <string>Ucaron</string>
       <string>Udblgrave</string>
       <string>Udieresis</string>
       <string>Udotbelow</string>
