@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="gravecomb.viet" format="2">
+  <anchor x="122.78125" y="1034.0" name="_top"/>
+  <outline>
+    <contour>
+      <point x="213.9375" y="1155.0" type="line"/>
+      <point x="334.6875" y="1155.0" type="line"/>
+      <point x="176.0625" y="1397.5625" type="line"/>
+      <point x="3.125" y="1397.5625" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>301</integer>
+    </dict>
+  </lib>
+</glyph>

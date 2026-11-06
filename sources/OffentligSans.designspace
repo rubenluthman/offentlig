@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="5.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="100" maximum="900" default="400">
+      <map input="100" output="100"/>
+      <map input="200" output="220"/>
+      <map input="300" output="300"/>
+      <map input="400" output="375"/>
+      <map input="500" output="450"/>
+      <map input="600" output="525"/>
+      <map input="700" output="650"/>
+      <map input="800" output="775"/>
+      <map input="900" output="900"/>
+    </axis>
+  </axes>
+  <sources>
+    <source filename="OffentligSans-Thin.ufo" name="Offentlig Sans Thin" familyname="Offentlig Sans" stylename="Thin">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+    </source>
+    <source filename="OffentligSans-Regular.ufo" name="Offentlig Sans Regular" familyname="Offentlig Sans" stylename="Regular">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="375"/>
+      </location>
+    </source>
+    <source filename="OffentligSans-Black.ufo" name="Offentlig Sans Black" familyname="Offentlig Sans" stylename="Black">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance name="Offentlig Sans Thin" familyname="Offentlig Sans" stylename="Thin" filename="instance_ufos/OffentligSans-Thin.ufo" stylemapfamilyname="Offentlig Sans Thin" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="100"/>
+      </location>
+    </instance>
+    <instance name="Offentlig Sans ExtraLight" familyname="Offentlig Sans" stylename="ExtraLight" filename="instance_ufos/OffentligSans-ExtraLight.ufo" stylemapfamilyname="Offentlig Sans ExtraLight" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="220"/>
+      </location>
+    </instance>
+    <instance name="Offentlig Sans Light" familyname="Offentlig Sans" stylename="Light" filename="instance_ufos/OffentligSans-Light.ufo" stylemapfamilyname="Offentlig Sans Light" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="300"/>
+      </location>
+    </instance>
+    <instance name="Offentlig Sans Regular" familyname="Offentlig Sans" stylename="Regular" filename="instance_ufos/OffentligSans-Regular.ufo" stylemapfamilyname="Offentlig Sans" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="375"/>
+      </location>
+    </instance>
+    <instance name="Offentlig Sans Medium" familyname="Offentlig Sans" stylename="Medium" filename="instance_ufos/OffentligSans-Medium.ufo" stylemapfamilyname="Offentlig Sans Medium" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="450"/>
+      </location>
+    </instance>
+    <instance name="Offentlig Sans SemiBold" familyname="Offentlig Sans" stylename="SemiBold" filename="instance_ufos/OffentligSans-SemiBold.ufo" stylemapfamilyname="Offentlig Sans SemiBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="525"/>
+      </location>
+    </instance>
+    <instance name="Offentlig Sans Bold" familyname="Offentlig Sans" stylename="Bold" filename="instance_ufos/OffentligSans-Bold.ufo" stylemapfamilyname="Offentlig Sans" stylemapstylename="bold">
+      <location>
+        <dimension name="Weight" xvalue="650"/>
+      </location>
+    </instance>
+    <instance name="Offentlig Sans ExtraBold" familyname="Offentlig Sans" stylename="ExtraBold" filename="instance_ufos/OffentligSans-ExtraBold.ufo" stylemapfamilyname="Offentlig Sans ExtraBold" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="775"/>
+      </location>
+    </instance>
+    <instance name="Offentlig Sans Black" familyname="Offentlig Sans" stylename="Black" filename="instance_ufos/OffentligSans-Black.ufo" stylemapfamilyname="Offentlig Sans Black" stylemapstylename="regular">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+      </location>
+    </instance>
+  </instances>
+</designspace>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="brevecomb_tildecomb" format="2">
+  <anchor x="383.59375" y="1034.0" name="_top"/>
+  <outline>
+    <contour>
+      <point x="429.875" y="1155.34375" type="curve" smooth="yes"/>
+      <point x="586.1875" y="1155.34375"/>
+      <point x="704.375" y="1259.84375"/>
+      <point x="753.0" y="1371.84375" type="curve"/>
+      <point x="621.75" y="1371.84375" type="line"/>
+      <point x="586.875" y="1323.53125"/>
+      <point x="532.0625" y="1267.65625"/>
+      <point x="446.6875" y="1267.65625" type="curve" smooth="yes"/>
+      <point x="354.125" y="1267.65625"/>
+      <point x="322.5" y="1330.09375"/>
+      <point x="305.0" y="1371.84375" type="curve"/>
+      <point x="175.0625" y="1371.84375" type="line"/>
+      <point x="188.625" y="1249.90625"/>
+      <point x="277.5625" y="1155.34375"/>
+    </contour>
+    <contour>
+      <point x="190.375" y="1491.28125" type="line"/>
+      <point x="234.125" y="1521.65625"/>
+      <point x="270.25" y="1547.53125"/>
+      <point x="333.0" y="1547.53125" type="curve" smooth="yes"/>
+      <point x="419.375" y="1547.53125"/>
+      <point x="465.875" y="1495.40625"/>
+      <point x="566.125" y="1495.40625" type="curve" smooth="yes"/>
+      <point x="645.6875" y="1495.40625"/>
+      <point x="703.5625" y="1527.53125"/>
+      <point x="740.5" y="1553.78125" type="curve"/>
+      <point x="725.25" y="1669.21875" type="line"/>
+      <point x="683.8125" y="1639.78125"/>
+      <point x="640.625" y="1613.46875"/>
+      <point x="584.3125" y="1613.46875" type="curve" smooth="yes"/>
+      <point x="500.1875" y="1613.46875"/>
+      <point x="435.0" y="1668.96875"/>
+      <point x="341.875" y="1668.96875" type="curve" smooth="yes"/>
+      <point x="268.0625" y="1668.96875"/>
+      <point x="220.4375" y="1635.40625"/>
+      <point x="171.5625" y="1591.84375" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.originalWidth</key>
+      <integer>515</integer>
+    </dict>
+  </lib>
+</glyph>

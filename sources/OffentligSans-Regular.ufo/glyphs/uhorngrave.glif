@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uhorngrave" format="2">
+  <advance width="1304.1875"/>
+  <unicode hex="1EEB"/>
+  <anchor x="578.0" y="1034.0" name="_top"/>
+  <anchor x="576.90625" y="0.0" name="bottom"/>
+  <anchor x="970.125" y="807.1875" name="horn"/>
+  <anchor x="978.6875" y="21.3125" name="ogonek"/>
+  <anchor x="575.8125" y="1034.0" name="top"/>
+  <anchor x="1132.25" y="921.5625" name="topright"/>
+  <outline>
+    <component base="gravecomb" xOffset="227.375"/>
+    <component base="uhorn"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>uhorn</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

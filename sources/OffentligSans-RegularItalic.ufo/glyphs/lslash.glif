@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="lslash" format="2">
+  <advance width="732.6875"/>
+  <unicode hex="0142"/>
+  <anchor x="288.21875" y="1.3125" name="bottom"/>
+  <anchor x="575.625" y="1486.0" name="caron"/>
+  <anchor x="488.15625" y="1526.0625" name="top"/>
+  <outline>
+    <contour>
+      <point x="70.375" y="348.25" type="line"/>
+      <point x="659.21875" y="798.6875" type="line"/>
+      <point x="659.21875" y="960.3125" type="line"/>
+      <point x="70.375" y="518.6875" type="line"/>
+    </contour>
+    <component base="l" xOffset="103.46875"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uhornacute" format="2">
+  <advance width="1241.09375"/>
+  <unicode hex="1EE9"/>
+  <anchor x="479.34375" y="0.0" name="bottom"/>
+  <anchor x="943.40625" y="807.1875" name="horn"/>
+  <anchor x="876.84375" y="21.3125" name="ogonek"/>
+  <anchor x="627.78125" y="1034.0" name="top"/>
+  <anchor x="1130.21875" y="921.5625" name="topright"/>
+  <outline>
+    <component base="u" xOffset="0.65625"/>
+    <component base="__horn" xOffset="904.21875" yOffset="-138.4375"/>
+    <component base="acutecomb" xOffset="468.125"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>u</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>__horn</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>2</integer>
+          <key>name</key>
+          <string>acutecomb</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

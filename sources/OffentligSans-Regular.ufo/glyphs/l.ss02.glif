@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="l.ss02" format="2">
+  <advance width="557.125"/>
+  <anchor x="274.875" y="0.0" name="bottom"/>
+  <anchor x="283.6875" y="1488.0625" name="top"/>
+  <anchor x="613.4375" y="1505.0625" name="topright"/>
+  <outline>
+    <contour>
+      <point x="185.9375" y="0.0" type="line"/>
+      <point x="371.1875" y="0.0" type="line"/>
+      <point x="371.1875" y="1486.0" type="line"/>
+      <point x="185.9375" y="1486.0" type="line"/>
+    </contour>
+  </outline>
+</glyph>

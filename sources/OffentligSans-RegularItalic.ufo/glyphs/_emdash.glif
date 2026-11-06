@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_emdash" format="2">
+  <advance width="2234.59375"/>
+  <outline>
+    <contour>
+      <point x="358.53125" y="428.1875" type="line"/>
+      <point x="1851.40625" y="429.5" type="line"/>
+      <point x="1872.03125" y="574.875" type="line"/>
+      <point x="379.15625" y="573.5625" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.Export</key>
+      <false/>
+    </dict>
+  </lib>
+</glyph>

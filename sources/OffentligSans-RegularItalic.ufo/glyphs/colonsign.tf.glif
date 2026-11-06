@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="colonsign.tf" format="2">
+  <advance width="1400.0"/>
+  <anchor x="659.53125" y="0.0" name="bottom"/>
+  <anchor x="858.5" y="1446.0" name="top"/>
+  <outline>
+    <component base="colonsign" xOffset="34.125"/>
+  </outline>
+</glyph>

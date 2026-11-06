@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Uhorndotbelow" format="2">
+  <advance width="1555.3125"/>
+  <unicode hex="1EF0"/>
+  <anchor x="615.9375" y="2.625" name="bottom"/>
+  <anchor x="1247.65625" y="1171.4375" name="horn"/>
+  <anchor x="745.8125" y="11.8125" name="ogonek"/>
+  <anchor x="827.71875" y="1446.0" name="top"/>
+  <anchor x="1410.40625" y="1285.15625" name="topright"/>
+  <outline>
+    <component base="U"/>
+    <component base="__horn" xOffset="1184.40625" yOffset="225.15625"/>
+    <component base="dotbelowcomb" xOffset="576.65625" yOffset="2.625"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>U</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>__horn</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>2</integer>
+          <key>name</key>
+          <string>dotbelowcomb</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

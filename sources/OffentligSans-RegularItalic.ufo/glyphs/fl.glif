@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="fl" format="2">
+  <advance width="1353.59375"/>
+  <unicode hex="FB02"/>
+  <anchor x="945.625" y="1.3125" name="bottom_1"/>
+  <anchor x="1233.03125" y="1486.0" name="caron_1"/>
+  <anchor x="1145.5625" y="1526.0625" name="top_1"/>
+  <anchor x="677.125" y="0.0" name="caret_1"/>
+  <outline>
+    <component base="f"/>
+    <component base="l" xOffset="760.875"/>
+  </outline>
+</glyph>
