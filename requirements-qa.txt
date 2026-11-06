@@ -1,0 +1,3 @@
+# Diffenator2 lives in its own environment (venv/diffenator) because it pins an older protobuf than gftools.
+diffenator2==0.0.7
+setuptools==80.10.2

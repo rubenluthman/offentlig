@@ -1,0 +1,9 @@
+fonts/
+build/
+docs/private/
+venv/
+.DS_Store
+__MACOSX/
+*(Autosave)*
+__pycache__/
+.pytest_cache/
