@@ -1,0 +1,21 @@
+# Source
+Regeringsformen (1974:152), 2 kap. 15 §, and Miljöbalken (1998:808), 7 kap. 1 §. Statutory text as published by the Swedish Riksdag (https://www.riksdagen.se), retrieved 2026-11-06. Laws are exempt from copyright under 9 § of the Swedish copyright act (upphovsrättslagen).
+
+# Regeringsformen 2 kap. 15 § – Egendomsskydd och allemansrätt
+Vars och ens egendom är tryggad genom att ingen kan tvingas avstå sin egendom till det allmänna eller till någon enskild genom expropriation eller något annat sådant förfogande eller tåla att det allmänna inskränker användningen av mark eller byggnad utom när det krävs för att tillgodose angelägna allmänna intressen.
+
+Den som genom expropriation eller något annat sådant förfogande tvingas avstå sin egendom ska vara tillförsäkrad full ersättning för förlusten. Ersättning ska också vara tillförsäkrad den för vilken det allmänna inskränker användningen av mark eller byggnad på sådant sätt att pågående markanvändning inom berörd del av fastigheten avsevärt försvåras eller att skada uppkommer som är betydande i förhållande till värdet på denna del av fastigheten. Ersättningen ska bestämmas enligt grunder som anges i lag.
+
+Vid inskränkningar i användningen av mark eller byggnad som sker av hälsoskydds-, miljöskydds- eller säkerhetsskäl gäller dock vad som följer av lag i fråga om rätt till ersättning.
+
+Alla ska ha tillgång till naturen enligt allemansrätten oberoende av vad som föreskrivits ovan. Lag (2010:1408).
+
+# Miljöbalken 7 kap. 1 § – Allemansrätt m.m.
+Var och en som utnyttjar allemansrätten eller annars vistas i naturen skall visa hänsyn och varsamhet i sitt umgänge med den.
+
+# Supplementary strings (not statutory text)
+Spaced en dash: Åre – Östersund – Älvsjö, sidorna 12 – 18, åren 1994 – 2026.
+Tabular numerals: 1994 1111 2222 3333 – 1 111,00 kr
+Subscripts: koldioxid (CO₂), vatten (H₂O), x₀ x₁ x₂ x₃ x₄ x₅ x₆ x₇ x₈ x₉
+Swedish letters: Å Ä Ö å ä ö É é – Ångström, Västerås, Örebro, Köpenhamn, café
+Alternates: glad lilla gula igloo – ss01 sets g, ss02 sets l
