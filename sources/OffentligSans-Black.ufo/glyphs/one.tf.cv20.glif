@@ -2,6 +2,6 @@
 <glyph name="one.tf.cv20" format="2">
   <advance width="1400"/>
   <outline>
-    <component base="one" xOffset="208"/>
+    <component base="one" xOffset="305"/>
   </outline>
 </glyph>

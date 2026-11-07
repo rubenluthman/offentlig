@@ -61,3 +61,14 @@ def test_cv20_is_the_lining_one_shifted(static_ttf):
     assert len(shifts) == 1 and shifts.pop() > 0
     assert [p[1] for p in plain] == [l[1] for l in lining]
     assert static_ttf["hmtx"]["one.tf.cv20"][0] == static_ttf["hmtx"]["one.tf"][0]
+
+
+def test_cv20_ink_is_centred_in_the_cell(static_ttf):
+    """Public Sans PR 194 placed the stem, not the ink, at the cell centre, which left a wide gap after the 1."""
+    from fontTools.pens.boundsPen import BoundsPen
+    gs = static_ttf.getGlyphSet()
+    bp = BoundsPen(gs)
+    gs["one.tf.cv20"].draw(bp)
+    x0, _, x1, _ = bp.bounds
+    adv = static_ttf["hmtx"]["one.tf.cv20"][0]
+    assert abs(x0 - (adv - x1)) <= 25

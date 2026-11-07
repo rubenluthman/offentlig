@@ -63,7 +63,7 @@ These values are identical in every master and are enforced by `tests/test_metri
 - The variable default is 400, and the default named instance has the same PostScript name as the font itself.
 - `Ǔ` (U+01D3) exists, so every cased letter has its counterpart (Fontspector `case_mapping`).
 - `ss01` swaps `g` only, `ss02` swaps `l` only, `salt` swaps both.
-- `cv20` swaps `one.tf` for `one.tf.cv20` (the lining 1 without the foot, same advance) and only takes effect together with `tnum`; with `cv20` alone, shaping is unchanged.
+- `cv20` swaps `one.tf` for `one.tf.cv20` (the lining 1 without the foot, same advance) its ink is centred in the cell, and it only takes effect together with `tnum`; with `cv20` alone, shaping is unchanged.
 
 ## Documents
 
