@@ -304,7 +304,6 @@
     <key>public.kern1.emdash</key>
     <array>
       <string>emdash</string>
-      <string>emdash.alt</string>
     </array>
     <key>public.kern1.f</key>
     <array>
@@ -1009,7 +1008,6 @@
     <key>public.kern2.emdash</key>
     <array>
       <string>emdash</string>
-      <string>emdash.alt</string>
     </array>
     <key>public.kern2.f</key>
     <array>
