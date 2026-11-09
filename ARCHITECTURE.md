@@ -71,6 +71,8 @@ These values are identical in every master and are enforced by `tests/test_metri
 - Å Ä Ö å ä ö É é exist in every font.
 - The variable default is 400, and the default named instance has the same PostScript name as the font itself.
 - `Ǔ` (U+01D3) exists, so every cased letter has its counterpart (Fontspector `case_mapping`).
+- `™` (U+2122) and `℠` (U+2120) top out at cap height, within 20 units.
+- U+20BF (Bitcoin sign) is mapped in every font and has a 1400-wide tabular form under `tnum`.
 - `ss01` swaps `g` only, `ss02` swaps `l` only, `salt` swaps both.
 
 ## Documents

@@ -490,6 +490,10 @@
     <string>backslash.glif</string>
     <key>bar</key>
     <string>bar.glif</string>
+    <key>bitcoin</key>
+    <string>bitcoin.glif</string>
+    <key>bitcoin.tf</key>
+    <string>bitcoin.tf.glif</string>
     <key>braceleft</key>
     <string>braceleft.glif</string>
     <key>braceright</key>
