@@ -5,6 +5,7 @@
     <key>public.kern1.0.tf</key>
     <array>
       <string>zero.tf</string>
+      <string>zero.slash.tf</string>
       <string>one.tf</string>
       <string>two.tf</string>
       <string>three.tf</string>
@@ -523,7 +524,9 @@
     <key>public.kern1.one</key>
     <array>
       <string>one</string>
+      <string>one.cv06</string>
       <string>one.osf</string>
+      <string>one.cv06.osf</string>
     </array>
     <key>public.kern1.one.numr</key>
     <array>
@@ -721,11 +724,13 @@
     <key>public.kern1.zero</key>
     <array>
       <string>zero</string>
+      <string>zero.slash</string>
       <string>three</string>
       <string>six</string>
       <string>eight</string>
       <string>nine</string>
       <string>zero.osf</string>
+      <string>zero.slash.osf</string>
     </array>
     <key>public.kern1.zero.dnom</key>
     <array>
@@ -747,6 +752,7 @@
     <key>public.kern2.0.tf</key>
     <array>
       <string>zero.tf</string>
+      <string>zero.slash.tf</string>
       <string>one.tf</string>
       <string>two.tf</string>
       <string>three.tf</string>
@@ -1274,7 +1280,9 @@
     <key>public.kern2.one</key>
     <array>
       <string>one</string>
+      <string>one.cv06</string>
       <string>one.osf</string>
+      <string>one.cv06.osf</string>
     </array>
     <key>public.kern2.one.numr</key>
     <array>
@@ -1437,11 +1445,13 @@
     <key>public.kern2.zero</key>
     <array>
       <string>zero</string>
+      <string>zero.slash</string>
       <string>three</string>
       <string>six</string>
       <string>eight</string>
       <string>nine</string>
       <string>zero.osf</string>
+      <string>zero.slash.osf</string>
     </array>
     <key>public.kern2.zero.dnom</key>
     <array>

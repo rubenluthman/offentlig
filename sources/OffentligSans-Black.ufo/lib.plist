@@ -740,6 +740,11 @@
       <string>_j-hook</string>
       <string>_dot</string>
       <string>_emdash</string>
+      <string>zero.slash</string>
+      <string>zero.slash.tf</string>
+      <string>zero.slash.osf</string>
+      <string>one.cv06</string>
+      <string>one.cv06.osf</string>
     </array>
     <key>public.openTypeCategories</key>
     <dict>
