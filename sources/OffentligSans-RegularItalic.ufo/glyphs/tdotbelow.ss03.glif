@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tdotbelow.ss03" format="2">
+  <advance width="754.65625"/>
+  <anchor x="375.78125" y="6.1875" name="bottom"/>
+  <anchor x="560.15625" y="1520.375" name="caron"/>
+  <anchor x="398.15625" y="584.25" name="center"/>
+  <outline>
+    <component base="t"/>
+    <component base="dotbelowcomb.ss03" xOffset="347.6875" yOffset="6.1875"/>
+  </outline>
+</glyph>

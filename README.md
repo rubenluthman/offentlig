@@ -7,7 +7,7 @@ Offentlig is a planned open-source font superfamily. Offentlig Sans is the first
 ## Offentlig Sans
 
 - Nine weights (Thin to Black) in upright and italic, plus variable fonts on the `wght` axis (default 400).
-- Stylistic sets: `ss01` selects an alternate `g`, `ss02` an alternate `l`, and `salt` both.
+- Stylistic sets: `ss01` selects an alternate `g`, `ss02` an alternate `l`, and `salt` both. `ss03` replaces the square dots (`i`, `j`, `ä`, `ö`, punctuation, comma shapes) with round ones.
 - Formats: OTF, TTF, variable TTF and WOFF2.
 
 ## Differences from Public Sans

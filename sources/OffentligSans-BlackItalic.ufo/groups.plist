@@ -22,18 +22,22 @@
       <string>Abreve</string>
       <string>Abreveacute</string>
       <string>Abrevedotbelow</string>
+      <string>Abrevedotbelow.ss03</string>
       <string>Abrevegrave</string>
       <string>Abrevehookabove</string>
       <string>Abrevetilde</string>
       <string>Acircumflex</string>
       <string>Acircumflexacute</string>
       <string>Acircumflexdotbelow</string>
+      <string>Acircumflexdotbelow.ss03</string>
       <string>Acircumflexgrave</string>
       <string>Acircumflexhookabove</string>
       <string>Acircumflextilde</string>
       <string>Adblgrave</string>
       <string>Adieresis</string>
+      <string>Adieresis.ss03</string>
       <string>Adotbelow</string>
+      <string>Adotbelow.ss03</string>
       <string>Agrave</string>
       <string>Ahookabove</string>
       <string>Ainvertedbreve</string>
@@ -55,6 +59,7 @@
       <string>Ccedilla</string>
       <string>Ccircumflex</string>
       <string>Cdotaccent</string>
+      <string>Cdotaccent.ss03</string>
       <string>colonsign</string>
       <string>colonsign.tf</string>
     </array>
@@ -65,6 +70,7 @@
       <string>Dcaron</string>
       <string>Dcroat</string>
       <string>Ddotbelow</string>
+      <string>Ddotbelow.ss03</string>
     </array>
     <key>public.kern1.E</key>
     <array>
@@ -77,13 +83,17 @@
       <string>Ecircumflex</string>
       <string>Ecircumflexacute</string>
       <string>Ecircumflexdotbelow</string>
+      <string>Ecircumflexdotbelow.ss03</string>
       <string>Ecircumflexgrave</string>
       <string>Ecircumflexhookabove</string>
       <string>Ecircumflextilde</string>
       <string>Edblgrave</string>
       <string>Edieresis</string>
+      <string>Edieresis.ss03</string>
       <string>Edotaccent</string>
+      <string>Edotaccent.ss03</string>
       <string>Edotbelow</string>
+      <string>Edotbelow.ss03</string>
       <string>Egrave</string>
       <string>Ehookabove</string>
       <string>Einvertedbreve</string>
@@ -104,12 +114,15 @@
       <string>Gbreve</string>
       <string>Gcircumflex</string>
       <string>Gcommaaccent</string>
+      <string>Gcommaaccent.ss03</string>
       <string>Gdotaccent</string>
+      <string>Gdotaccent.ss03</string>
     </array>
     <key>public.kern1.K</key>
     <array>
       <string>K</string>
       <string>Kcommaaccent</string>
+      <string>Kcommaaccent.ss03</string>
     </array>
     <key>public.kern1.L</key>
     <array>
@@ -117,6 +130,7 @@
       <string>Lacute</string>
       <string>Lcaron</string>
       <string>Lcommaaccent</string>
+      <string>Lcommaaccent.ss03</string>
       <string>Lslash</string>
     </array>
     <key>public.kern1.N</key>
@@ -125,14 +139,18 @@
       <string>Hbar</string>
       <string>Hcircumflex</string>
       <string>Hdotbelow</string>
+      <string>Hdotbelow.ss03</string>
       <string>I</string>
       <string>Iacute</string>
       <string>Ibreve</string>
       <string>Icircumflex</string>
       <string>Idblgrave</string>
       <string>Idieresis</string>
+      <string>Idieresis.ss03</string>
       <string>Idotaccent</string>
+      <string>Idotaccent.ss03</string>
       <string>Idotbelow</string>
+      <string>Idotbelow.ss03</string>
       <string>Igrave</string>
       <string>Ihookabove</string>
       <string>Iinvertedbreve</string>
@@ -144,7 +162,9 @@
       <string>Nacute</string>
       <string>Ncaron</string>
       <string>Ncommaaccent</string>
+      <string>Ncommaaccent.ss03</string>
       <string>Ndotaccent</string>
+      <string>Ndotaccent.ss03</string>
       <string>Eng</string>
       <string>Ntilde</string>
       <string>won</string>
@@ -159,12 +179,15 @@
       <string>Ocircumflex</string>
       <string>Ocircumflexacute</string>
       <string>Ocircumflexdotbelow</string>
+      <string>Ocircumflexdotbelow.ss03</string>
       <string>Ocircumflexgrave</string>
       <string>Ocircumflexhookabove</string>
       <string>Ocircumflextilde</string>
       <string>Odblgrave</string>
       <string>Odieresis</string>
+      <string>Odieresis.ss03</string>
       <string>Odotbelow</string>
+      <string>Odotbelow.ss03</string>
       <string>Ograve</string>
       <string>Ohookabove</string>
       <string>Ohungarumlaut</string>
@@ -180,6 +203,7 @@
       <string>Ohorn</string>
       <string>Ohornacute</string>
       <string>Ohorndotbelow</string>
+      <string>Ohorndotbelow.ss03</string>
       <string>Ohorngrave</string>
       <string>Ohornhookabove</string>
       <string>Ohorntilde</string>
@@ -200,8 +224,10 @@
       <string>Racute</string>
       <string>Rcaron</string>
       <string>Rcommaaccent</string>
+      <string>Rcommaaccent.ss03</string>
       <string>Rdblgrave</string>
       <string>Rdotbelow</string>
+      <string>Rdotbelow.ss03</string>
       <string>Rinvertedbreve</string>
     </array>
     <key>public.kern1.S</key>
@@ -212,7 +238,9 @@
       <string>Scedilla</string>
       <string>Scircumflex</string>
       <string>Scommaaccent</string>
+      <string>Scommaaccent.ss03</string>
       <string>Sdotbelow</string>
+      <string>Sdotbelow.ss03</string>
     </array>
     <key>public.kern1.T</key>
     <array>
@@ -221,7 +249,9 @@
       <string>Tcaron</string>
       <string>Tcedilla</string>
       <string>Tcommaaccent</string>
+      <string>Tcommaaccent.ss03</string>
       <string>Tdotbelow</string>
+      <string>Tdotbelow.ss03</string>
     </array>
     <key>public.kern1.U</key>
     <array>
@@ -234,7 +264,9 @@
       <string>Ucaron</string>
       <string>Udblgrave</string>
       <string>Udieresis</string>
+      <string>Udieresis.ss03</string>
       <string>Udotbelow</string>
+      <string>Udotbelow.ss03</string>
       <string>Ugrave</string>
       <string>Uhookabove</string>
       <string>Uhungarumlaut</string>
@@ -249,6 +281,7 @@
       <string>Uhorn</string>
       <string>Uhornacute</string>
       <string>Uhorndotbelow</string>
+      <string>Uhorndotbelow.ss03</string>
       <string>Uhorngrave</string>
       <string>Uhornhookabove</string>
       <string>Uhorntilde</string>
@@ -260,6 +293,7 @@
       <string>Wacute</string>
       <string>Wcircumflex</string>
       <string>Wdieresis</string>
+      <string>Wdieresis.ss03</string>
       <string>Wgrave</string>
     </array>
     <key>public.kern1.X</key>
@@ -272,7 +306,9 @@
       <string>Yacute</string>
       <string>Ycircumflex</string>
       <string>Ydieresis</string>
+      <string>Ydieresis.ss03</string>
       <string>Ydotbelow</string>
+      <string>Ydotbelow.ss03</string>
       <string>Ygrave</string>
       <string>Yhookabove</string>
       <string>Ytilde</string>
@@ -283,15 +319,19 @@
       <string>Zacute</string>
       <string>Zcaron</string>
       <string>Zdotaccent</string>
+      <string>Zdotaccent.ss03</string>
       <string>Zdotbelow</string>
+      <string>Zdotbelow.ss03</string>
     </array>
     <key>public.kern1.colon</key>
     <array>
       <string>semicolon</string>
+      <string>semicolon.ss03</string>
     </array>
     <key>public.kern1.comma</key>
     <array>
       <string>quotesinglbase</string>
+      <string>quotesinglbase.ss03</string>
     </array>
     <key>public.kern1.copyright</key>
     <array>
@@ -326,7 +366,9 @@
       <string>gbreve</string>
       <string>gcircumflex</string>
       <string>gcommaaccent</string>
+      <string>gcommaaccent.ss03</string>
       <string>gdotaccent</string>
+      <string>gdotaccent.ss03</string>
     </array>
     <key>public.kern1.guilsinglleft</key>
     <array>
@@ -351,6 +393,7 @@
     <array>
       <string>k</string>
       <string>kcommaaccent</string>
+      <string>kcommaaccent.ss03</string>
       <string>kgreenlandic</string>
     </array>
     <key>public.kern1.l</key>
@@ -359,6 +402,7 @@
       <string>lacute</string>
       <string>lcaron</string>
       <string>lcommaaccent</string>
+      <string>lcommaaccent.ss03</string>
       <string>lslash</string>
       <string>fl</string>
     </array>
@@ -369,18 +413,22 @@
       <string>abreve</string>
       <string>abreveacute</string>
       <string>abrevedotbelow</string>
+      <string>abrevedotbelow.ss03</string>
       <string>abrevegrave</string>
       <string>abrevehookabove</string>
       <string>abrevetilde</string>
       <string>acircumflex</string>
       <string>acircumflexacute</string>
       <string>acircumflexdotbelow</string>
+      <string>acircumflexdotbelow.ss03</string>
       <string>acircumflexgrave</string>
       <string>acircumflexhookabove</string>
       <string>acircumflextilde</string>
       <string>adblgrave</string>
       <string>adieresis</string>
+      <string>adieresis.ss03</string>
       <string>adotbelow</string>
+      <string>adotbelow.ss03</string>
       <string>agrave</string>
       <string>ahookabove</string>
       <string>ainvertedbreve</string>
@@ -393,12 +441,15 @@
       <string>hbar</string>
       <string>hcircumflex</string>
       <string>hdotbelow</string>
+      <string>hdotbelow.ss03</string>
       <string>m</string>
       <string>n</string>
       <string>nacute</string>
       <string>ncaron</string>
       <string>ncommaaccent</string>
+      <string>ncommaaccent.ss03</string>
       <string>ndotaccent</string>
+      <string>ndotaccent.ss03</string>
       <string>eng</string>
       <string>ntilde</string>
     </array>
@@ -417,6 +468,7 @@
       <string>ccedilla</string>
       <string>ccircumflex</string>
       <string>cdotaccent</string>
+      <string>cdotaccent.ss03</string>
       <string>eth</string>
       <string>e</string>
       <string>eacute</string>
@@ -425,13 +477,17 @@
       <string>ecircumflex</string>
       <string>ecircumflexacute</string>
       <string>ecircumflexdotbelow</string>
+      <string>ecircumflexdotbelow.ss03</string>
       <string>ecircumflexgrave</string>
       <string>ecircumflexhookabove</string>
       <string>ecircumflextilde</string>
       <string>edblgrave</string>
       <string>edieresis</string>
+      <string>edieresis.ss03</string>
       <string>edotaccent</string>
+      <string>edotaccent.ss03</string>
       <string>edotbelow</string>
+      <string>edotbelow.ss03</string>
       <string>egrave</string>
       <string>ehookabove</string>
       <string>einvertedbreve</string>
@@ -445,12 +501,15 @@
       <string>ocircumflex</string>
       <string>ocircumflexacute</string>
       <string>ocircumflexdotbelow</string>
+      <string>ocircumflexdotbelow.ss03</string>
       <string>ocircumflexgrave</string>
       <string>ocircumflexhookabove</string>
       <string>ocircumflextilde</string>
       <string>odblgrave</string>
       <string>odieresis</string>
+      <string>odieresis.ss03</string>
       <string>odotbelow</string>
+      <string>odotbelow.ss03</string>
       <string>ograve</string>
       <string>ohookabove</string>
       <string>ohungarumlaut</string>
@@ -470,6 +529,7 @@
       <string>ohorn</string>
       <string>ohornacute</string>
       <string>ohorndotbelow</string>
+      <string>ohorndotbelow.ss03</string>
       <string>ohorngrave</string>
       <string>ohornhookabove</string>
       <string>ohorntilde</string>
@@ -498,10 +558,15 @@
     <key>public.kern1.period</key>
     <array>
       <string>period</string>
+      <string>period.ss03</string>
       <string>comma</string>
+      <string>comma.ss03</string>
       <string>colon</string>
+      <string>colon.ss03</string>
       <string>ellipsis</string>
+      <string>ellipsis.ss03</string>
       <string>periodcentered</string>
+      <string>periodcentered.ss03</string>
       <string>underscore</string>
     </array>
     <key>public.kern1.plus</key>
@@ -509,6 +574,7 @@
       <string>plus</string>
       <string>multiply</string>
       <string>divide</string>
+      <string>divide.ss03</string>
       <string>equal</string>
       <string>notequal</string>
       <string>greater</string>
@@ -527,16 +593,21 @@
     <key>public.kern1.quoteleft</key>
     <array>
       <string>quotedblleft</string>
+      <string>quotedblleft.ss03</string>
       <string>quoteleft</string>
+      <string>quoteleft.ss03</string>
     </array>
     <key>public.kern1.quoteright</key>
     <array>
       <string>quotedblright</string>
+      <string>quotedblright.ss03</string>
       <string>quoteright</string>
+      <string>quoteright.ss03</string>
     </array>
     <key>public.kern1.quotesinglbase</key>
     <array>
       <string>quotedblbase</string>
+      <string>quotedblbase.ss03</string>
     </array>
     <key>public.kern1.quotesingle</key>
     <array>
@@ -549,8 +620,10 @@
       <string>racute</string>
       <string>rcaron</string>
       <string>rcommaaccent</string>
+      <string>rcommaaccent.ss03</string>
       <string>rdblgrave</string>
       <string>rdotbelow</string>
+      <string>rdotbelow.ss03</string>
       <string>rinvertedbreve</string>
     </array>
     <key>public.kern1.s</key>
@@ -561,7 +634,9 @@
       <string>scedilla</string>
       <string>scircumflex</string>
       <string>scommaaccent</string>
+      <string>scommaaccent.ss03</string>
       <string>sdotbelow</string>
+      <string>sdotbelow.ss03</string>
       <string>germandbls</string>
     </array>
     <key>public.kern1.seven</key>
@@ -580,7 +655,9 @@
       <string>tcaron</string>
       <string>tcedilla</string>
       <string>tcommaaccent</string>
+      <string>tcommaaccent.ss03</string>
       <string>tdotbelow</string>
+      <string>tdotbelow.ss03</string>
     </array>
     <key>public.kern1.three</key>
     <array>
@@ -596,22 +673,29 @@
       <string>d</string>
       <string>dcaron</string>
       <string>ddotbelow</string>
+      <string>ddotbelow.ss03</string>
       <string>i</string>
+      <string>i.ss03</string>
       <string>idotless</string>
       <string>iacute</string>
       <string>ibreve</string>
       <string>icircumflex</string>
       <string>idblgrave</string>
       <string>idieresis</string>
+      <string>idieresis.ss03</string>
       <string>idotaccent</string>
+      <string>idotaccent.ss03</string>
       <string>idotbelow</string>
+      <string>idotbelow.ss03</string>
       <string>igrave</string>
       <string>ihookabove</string>
       <string>iinvertedbreve</string>
       <string>imacron</string>
       <string>iogonek</string>
+      <string>iogonek.ss03</string>
       <string>itilde</string>
       <string>j</string>
+      <string>j.ss03</string>
       <string>jdotless</string>
       <string>jcircumflex</string>
       <string>q</string>
@@ -621,7 +705,9 @@
       <string>ucircumflex</string>
       <string>udblgrave</string>
       <string>udieresis</string>
+      <string>udieresis.ss03</string>
       <string>udotbelow</string>
+      <string>udotbelow.ss03</string>
       <string>ugrave</string>
       <string>uhookabove</string>
       <string>uhungarumlaut</string>
@@ -632,6 +718,7 @@
       <string>utilde</string>
       <string>l.ss02</string>
       <string>fi</string>
+      <string>fi.ss03</string>
       <string>micro</string>
     </array>
     <key>public.kern1.uhorn</key>
@@ -639,6 +726,7 @@
       <string>uhorn</string>
       <string>uhornacute</string>
       <string>uhorndotbelow</string>
+      <string>uhorndotbelow.ss03</string>
       <string>uhorngrave</string>
       <string>uhornhookabove</string>
       <string>uhorntilde</string>
@@ -650,12 +738,15 @@
       <string>wacute</string>
       <string>wcircumflex</string>
       <string>wdieresis</string>
+      <string>wdieresis.ss03</string>
       <string>wgrave</string>
       <string>y</string>
       <string>yacute</string>
       <string>ycircumflex</string>
       <string>ydieresis</string>
+      <string>ydieresis.ss03</string>
       <string>ydotbelow</string>
+      <string>ydotbelow.ss03</string>
       <string>ygrave</string>
       <string>yhookabove</string>
       <string>ytilde</string>
@@ -670,7 +761,9 @@
       <string>zacute</string>
       <string>zcaron</string>
       <string>zdotaccent</string>
+      <string>zdotaccent.ss03</string>
       <string>zdotbelow</string>
+      <string>zdotbelow.ss03</string>
     </array>
     <key>public.kern1.zero</key>
     <array>
@@ -718,18 +811,22 @@
       <string>Abreve</string>
       <string>Abreveacute</string>
       <string>Abrevedotbelow</string>
+      <string>Abrevedotbelow.ss03</string>
       <string>Abrevegrave</string>
       <string>Abrevehookabove</string>
       <string>Abrevetilde</string>
       <string>Acircumflex</string>
       <string>Acircumflexacute</string>
       <string>Acircumflexdotbelow</string>
+      <string>Acircumflexdotbelow.ss03</string>
       <string>Acircumflexgrave</string>
       <string>Acircumflexhookabove</string>
       <string>Acircumflextilde</string>
       <string>Adblgrave</string>
       <string>Adieresis</string>
+      <string>Adieresis.ss03</string>
       <string>Adotbelow</string>
+      <string>Adotbelow.ss03</string>
       <string>Agrave</string>
       <string>Ahookabove</string>
       <string>Ainvertedbreve</string>
@@ -767,6 +864,7 @@
       <string>Dcaron</string>
       <string>Dcroat</string>
       <string>Ddotbelow</string>
+      <string>Ddotbelow.ss03</string>
       <string>E</string>
       <string>Eacute</string>
       <string>Ebreve</string>
@@ -774,13 +872,17 @@
       <string>Ecircumflex</string>
       <string>Ecircumflexacute</string>
       <string>Ecircumflexdotbelow</string>
+      <string>Ecircumflexdotbelow.ss03</string>
       <string>Ecircumflexgrave</string>
       <string>Ecircumflexhookabove</string>
       <string>Ecircumflextilde</string>
       <string>Edblgrave</string>
       <string>Edieresis</string>
+      <string>Edieresis.ss03</string>
       <string>Edotaccent</string>
+      <string>Edotaccent.ss03</string>
       <string>Edotbelow</string>
+      <string>Edotbelow.ss03</string>
       <string>Egrave</string>
       <string>Ehookabove</string>
       <string>Einvertedbreve</string>
@@ -792,14 +894,18 @@
       <string>Hbar</string>
       <string>Hcircumflex</string>
       <string>Hdotbelow</string>
+      <string>Hdotbelow.ss03</string>
       <string>I</string>
       <string>Iacute</string>
       <string>Ibreve</string>
       <string>Icircumflex</string>
       <string>Idblgrave</string>
       <string>Idieresis</string>
+      <string>Idieresis.ss03</string>
       <string>Idotaccent</string>
+      <string>Idotaccent.ss03</string>
       <string>Idotbelow</string>
+      <string>Idotbelow.ss03</string>
       <string>Igrave</string>
       <string>Ihookabove</string>
       <string>Iinvertedbreve</string>
@@ -808,18 +914,23 @@
       <string>Itilde</string>
       <string>K</string>
       <string>Kcommaaccent</string>
+      <string>Kcommaaccent.ss03</string>
       <string>L</string>
       <string>Lacute</string>
       <string>Lcaron</string>
       <string>Lcommaaccent</string>
+      <string>Lcommaaccent.ss03</string>
       <string>Ldot</string>
+      <string>Ldot.ss03</string>
       <string>Lslash</string>
       <string>M</string>
       <string>N</string>
       <string>Nacute</string>
       <string>Ncaron</string>
       <string>Ncommaaccent</string>
+      <string>Ncommaaccent.ss03</string>
       <string>Ndotaccent</string>
+      <string>Ndotaccent.ss03</string>
       <string>Eng</string>
       <string>Ntilde</string>
       <string>P</string>
@@ -828,8 +939,10 @@
       <string>Racute</string>
       <string>Rcaron</string>
       <string>Rcommaaccent</string>
+      <string>Rcommaaccent.ss03</string>
       <string>Rdblgrave</string>
       <string>Rdotbelow</string>
+      <string>Rdotbelow.ss03</string>
       <string>Rinvertedbreve</string>
       <string>won</string>
       <string>yen</string>
@@ -844,28 +957,35 @@
       <string>Ccedilla</string>
       <string>Ccircumflex</string>
       <string>Cdotaccent</string>
+      <string>Cdotaccent.ss03</string>
       <string>G</string>
       <string>Gbreve</string>
       <string>Gcircumflex</string>
       <string>Gcommaaccent</string>
+      <string>Gcommaaccent.ss03</string>
       <string>Gdotaccent</string>
+      <string>Gdotaccent.ss03</string>
       <string>O</string>
       <string>Oacute</string>
       <string>Obreve</string>
       <string>Ocircumflex</string>
       <string>Ocircumflexacute</string>
       <string>Ocircumflexdotbelow</string>
+      <string>Ocircumflexdotbelow.ss03</string>
       <string>Ocircumflexgrave</string>
       <string>Ocircumflexhookabove</string>
       <string>Ocircumflextilde</string>
       <string>Odblgrave</string>
       <string>Odieresis</string>
+      <string>Odieresis.ss03</string>
       <string>Odotbelow</string>
+      <string>Odotbelow.ss03</string>
       <string>Ograve</string>
       <string>Ohookabove</string>
       <string>Ohorn</string>
       <string>Ohornacute</string>
       <string>Ohorndotbelow</string>
+      <string>Ohorndotbelow.ss03</string>
       <string>Ohorngrave</string>
       <string>Ohornhookabove</string>
       <string>Ohorntilde</string>
@@ -891,7 +1011,9 @@
       <string>Scedilla</string>
       <string>Scircumflex</string>
       <string>Scommaaccent</string>
+      <string>Scommaaccent.ss03</string>
       <string>Sdotbelow</string>
+      <string>Sdotbelow.ss03</string>
     </array>
     <key>public.kern2.T</key>
     <array>
@@ -900,7 +1022,9 @@
       <string>Tcaron</string>
       <string>Tcedilla</string>
       <string>Tcommaaccent</string>
+      <string>Tcommaaccent.ss03</string>
       <string>Tdotbelow</string>
+      <string>Tdotbelow.ss03</string>
     </array>
     <key>public.kern2.U</key>
     <array>
@@ -911,12 +1035,15 @@
       <string>Ucaron</string>
       <string>Udblgrave</string>
       <string>Udieresis</string>
+      <string>Udieresis.ss03</string>
       <string>Udotbelow</string>
+      <string>Udotbelow.ss03</string>
       <string>Ugrave</string>
       <string>Uhookabove</string>
       <string>Uhorn</string>
       <string>Uhornacute</string>
       <string>Uhorndotbelow</string>
+      <string>Uhorndotbelow.ss03</string>
       <string>Uhorngrave</string>
       <string>Uhornhookabove</string>
       <string>Uhorntilde</string>
@@ -934,6 +1061,7 @@
       <string>Wacute</string>
       <string>Wcircumflex</string>
       <string>Wdieresis</string>
+      <string>Wdieresis.ss03</string>
       <string>Wgrave</string>
     </array>
     <key>public.kern2.X</key>
@@ -946,7 +1074,9 @@
       <string>Yacute</string>
       <string>Ycircumflex</string>
       <string>Ydieresis</string>
+      <string>Ydieresis.ss03</string>
       <string>Ydotbelow</string>
+      <string>Ydotbelow.ss03</string>
       <string>Ygrave</string>
       <string>Yhookabove</string>
       <string>Ytilde</string>
@@ -957,7 +1087,9 @@
       <string>Zacute</string>
       <string>Zcaron</string>
       <string>Zdotaccent</string>
+      <string>Zdotaccent.ss03</string>
       <string>Zdotbelow</string>
+      <string>Zdotbelow.ss03</string>
     </array>
     <key>public.kern2.a</key>
     <array>
@@ -966,18 +1098,22 @@
       <string>abreve</string>
       <string>abreveacute</string>
       <string>abrevedotbelow</string>
+      <string>abrevedotbelow.ss03</string>
       <string>abrevegrave</string>
       <string>abrevehookabove</string>
       <string>abrevetilde</string>
       <string>acircumflex</string>
       <string>acircumflexacute</string>
       <string>acircumflexdotbelow</string>
+      <string>acircumflexdotbelow.ss03</string>
       <string>acircumflexgrave</string>
       <string>acircumflexhookabove</string>
       <string>acircumflextilde</string>
       <string>adblgrave</string>
       <string>adieresis</string>
+      <string>adieresis.ss03</string>
       <string>adotbelow</string>
+      <string>adotbelow.ss03</string>
       <string>agrave</string>
       <string>ahookabove</string>
       <string>ainvertedbreve</string>
@@ -992,11 +1128,14 @@
     <key>public.kern2.colon</key>
     <array>
       <string>colon</string>
+      <string>colon.ss03</string>
       <string>semicolon</string>
+      <string>semicolon.ss03</string>
     </array>
     <key>public.kern2.comma</key>
     <array>
       <string>quotesinglbase</string>
+      <string>quotesinglbase.ss03</string>
     </array>
     <key>public.kern2.copyright</key>
     <array>
@@ -1031,7 +1170,9 @@
       <string>gbreve</string>
       <string>gcircumflex</string>
       <string>gcommaaccent</string>
+      <string>gcommaaccent.ss03</string>
       <string>gdotaccent</string>
+      <string>gdotaccent.ss03</string>
     </array>
     <key>public.kern2.guilsinglleft</key>
     <array>
@@ -1055,6 +1196,7 @@
     <key>public.kern2.j</key>
     <array>
       <string>j</string>
+      <string>j.ss03</string>
       <string>jdotless</string>
       <string>jcircumflex</string>
     </array>
@@ -1065,36 +1207,47 @@
       <string>hbar</string>
       <string>hcircumflex</string>
       <string>hdotbelow</string>
+      <string>hdotbelow.ss03</string>
       <string>i</string>
+      <string>i.ss03</string>
       <string>idotless</string>
       <string>iacute</string>
       <string>ibreve</string>
       <string>icircumflex</string>
       <string>idblgrave</string>
       <string>idieresis</string>
+      <string>idieresis.ss03</string>
       <string>idotaccent</string>
+      <string>idotaccent.ss03</string>
       <string>idotbelow</string>
+      <string>idotbelow.ss03</string>
       <string>igrave</string>
       <string>ihookabove</string>
       <string>iinvertedbreve</string>
       <string>imacron</string>
       <string>iogonek</string>
+      <string>iogonek.ss03</string>
       <string>itilde</string>
       <string>k</string>
       <string>kcommaaccent</string>
+      <string>kcommaaccent.ss03</string>
       <string>kgreenlandic</string>
       <string>l</string>
       <string>lacute</string>
       <string>lcaron</string>
       <string>lcommaaccent</string>
+      <string>lcommaaccent.ss03</string>
       <string>ldot</string>
+      <string>ldot.ss03</string>
       <string>lslash</string>
       <string>m</string>
       <string>n</string>
       <string>nacute</string>
       <string>ncaron</string>
       <string>ncommaaccent</string>
+      <string>ncommaaccent.ss03</string>
       <string>ndotaccent</string>
+      <string>ndotaccent.ss03</string>
       <string>eng</string>
       <string>ntilde</string>
       <string>p</string>
@@ -1103,8 +1256,10 @@
       <string>racute</string>
       <string>rcaron</string>
       <string>rcommaaccent</string>
+      <string>rcommaaccent.ss03</string>
       <string>rdblgrave</string>
       <string>rdotbelow</string>
+      <string>rdotbelow.ss03</string>
       <string>rinvertedbreve</string>
       <string>germandbls</string>
       <string>l.ss02</string>
@@ -1121,11 +1276,13 @@
       <string>ccedilla</string>
       <string>ccircumflex</string>
       <string>cdotaccent</string>
+      <string>cdotaccent.ss03</string>
       <string>d</string>
       <string>eth</string>
       <string>dcaron</string>
       <string>dcroat</string>
       <string>ddotbelow</string>
+      <string>ddotbelow.ss03</string>
       <string>e</string>
       <string>eacute</string>
       <string>ebreve</string>
@@ -1133,13 +1290,17 @@
       <string>ecircumflex</string>
       <string>ecircumflexacute</string>
       <string>ecircumflexdotbelow</string>
+      <string>ecircumflexdotbelow.ss03</string>
       <string>ecircumflexgrave</string>
       <string>ecircumflexhookabove</string>
       <string>ecircumflextilde</string>
       <string>edblgrave</string>
       <string>edieresis</string>
+      <string>edieresis.ss03</string>
       <string>edotaccent</string>
+      <string>edotaccent.ss03</string>
       <string>edotbelow</string>
+      <string>edotbelow.ss03</string>
       <string>egrave</string>
       <string>ehookabove</string>
       <string>einvertedbreve</string>
@@ -1153,17 +1314,21 @@
       <string>ocircumflex</string>
       <string>ocircumflexacute</string>
       <string>ocircumflexdotbelow</string>
+      <string>ocircumflexdotbelow.ss03</string>
       <string>ocircumflexgrave</string>
       <string>ocircumflexhookabove</string>
       <string>ocircumflextilde</string>
       <string>odblgrave</string>
       <string>odieresis</string>
+      <string>odieresis.ss03</string>
       <string>odotbelow</string>
+      <string>odotbelow.ss03</string>
       <string>ograve</string>
       <string>ohookabove</string>
       <string>ohorn</string>
       <string>ohornacute</string>
       <string>ohorndotbelow</string>
+      <string>ohorndotbelow.ss03</string>
       <string>ohorngrave</string>
       <string>ohornhookabove</string>
       <string>ohorntilde</string>
@@ -1203,6 +1368,7 @@
     <key>public.kern2.parenright</key>
     <array>
       <string>question</string>
+      <string>question.ss03</string>
       <string>parenright</string>
       <string>braceright</string>
       <string>bracketright</string>
@@ -1210,9 +1376,13 @@
     <key>public.kern2.period</key>
     <array>
       <string>period</string>
+      <string>period.ss03</string>
       <string>comma</string>
+      <string>comma.ss03</string>
       <string>ellipsis</string>
+      <string>ellipsis.ss03</string>
       <string>periodcentered</string>
+      <string>periodcentered.ss03</string>
       <string>underscore</string>
     </array>
     <key>public.kern2.plus</key>
@@ -1220,6 +1390,7 @@
       <string>plus</string>
       <string>multiply</string>
       <string>divide</string>
+      <string>divide.ss03</string>
       <string>equal</string>
       <string>notequal</string>
       <string>greater</string>
@@ -1234,15 +1405,19 @@
     <key>public.kern2.quoteleft</key>
     <array>
       <string>quotedblleft</string>
+      <string>quotedblleft.ss03</string>
     </array>
     <key>public.kern2.quoteright</key>
     <array>
       <string>quotedblright</string>
+      <string>quotedblright.ss03</string>
       <string>quoteright</string>
+      <string>quoteright.ss03</string>
     </array>
     <key>public.kern2.quotesinglbase</key>
     <array>
       <string>quotedblbase</string>
+      <string>quotedblbase.ss03</string>
     </array>
     <key>public.kern2.quotesingle</key>
     <array>
@@ -1257,7 +1432,9 @@
       <string>scedilla</string>
       <string>scircumflex</string>
       <string>scommaaccent</string>
+      <string>scommaaccent.ss03</string>
       <string>sdotbelow</string>
+      <string>sdotbelow.ss03</string>
     </array>
     <key>public.kern2.seven</key>
     <array>
@@ -1275,8 +1452,11 @@
       <string>tcaron</string>
       <string>tcedilla</string>
       <string>tcommaaccent</string>
+      <string>tcommaaccent.ss03</string>
       <string>tdotbelow</string>
+      <string>tdotbelow.ss03</string>
       <string>fi</string>
+      <string>fi.ss03</string>
       <string>fl</string>
     </array>
     <key>public.kern2.three</key>
@@ -1296,12 +1476,15 @@
       <string>ucircumflex</string>
       <string>udblgrave</string>
       <string>udieresis</string>
+      <string>udieresis.ss03</string>
       <string>udotbelow</string>
+      <string>udotbelow.ss03</string>
       <string>ugrave</string>
       <string>uhookabove</string>
       <string>uhorn</string>
       <string>uhornacute</string>
       <string>uhorndotbelow</string>
+      <string>uhorndotbelow.ss03</string>
       <string>uhorngrave</string>
       <string>uhornhookabove</string>
       <string>uhorntilde</string>
@@ -1320,12 +1503,15 @@
       <string>wacute</string>
       <string>wcircumflex</string>
       <string>wdieresis</string>
+      <string>wdieresis.ss03</string>
       <string>wgrave</string>
       <string>y</string>
       <string>yacute</string>
       <string>ycircumflex</string>
       <string>ydieresis</string>
+      <string>ydieresis.ss03</string>
       <string>ydotbelow</string>
+      <string>ydotbelow.ss03</string>
       <string>ygrave</string>
       <string>yhookabove</string>
       <string>ytilde</string>
@@ -1340,7 +1526,9 @@
       <string>zacute</string>
       <string>zcaron</string>
       <string>zdotaccent</string>
+      <string>zdotaccent.ss03</string>
       <string>zdotbelow</string>
+      <string>zdotbelow.ss03</string>
     </array>
     <key>public.kern2.zero</key>
     <array>

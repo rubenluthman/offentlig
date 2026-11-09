@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Abrevedotbelow.ss03" format="2">
+  <advance width="1420.3125"/>
+  <anchor x="710.5" y="0.0" name="bottom"/>
+  <anchor x="1319.375" y="19.1875" name="ogonek"/>
+  <anchor x="710.5" y="1446.0" name="top"/>
+  <outline>
+    <component base="A"/>
+    <component base="dotbelowcomb.ss03" xOffset="607.125"/>
+    <component base="brevecomb" xOffset="386.75" yOffset="409.375"/>
+  </outline>
+</glyph>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="quotedblright.ss03" format="2">
+  <advance width="1078"/>
+  <outline>
+    <contour>
+      <point x="598.0" y="802.0" type="line"/>
+      <point x="728.0" y="802.0" type="line"/>
+      <point x="931.95" y="1167.0253" type="line"/>
+      <point x="980.0086" y="1232.8287"/>
+      <point x="980.2501" y="1322.0884"/>
+      <point x="932.5483" y="1388.1509" type="curve" smooth="yes"/>
+      <point x="884.8464" y="1454.2133"/>
+      <point x="800.0426" y="1482.0642"/>
+      <point x="722.4614" y="1457.1466" type="curve" smooth="yes"/>
+      <point x="644.8803" y="1432.229"/>
+      <point x="592.1541" y="1360.206"/>
+      <point x="591.8414" y="1278.7222" type="curve" smooth="yes"/>
+      <point x="591.5286" y="1197.2383"/>
+      <point x="643.7005" y="1124.8127"/>
+      <point x="721.088" y="1099.3003" type="curve"/>
+    </contour>
+    <contour>
+      <point x="100.0" y="802.0" type="line"/>
+      <point x="228.0" y="802.0" type="line"/>
+      <point x="432.6514" y="1166.6176" type="line"/>
+      <point x="480.8634" y="1232.2601"/>
+      <point x="481.3696" y="1321.469"/>
+      <point x="433.9056" y="1387.6543" type="curve" smooth="yes"/>
+      <point x="386.4416" y="1453.8396"/>
+      <point x="301.7839" y="1481.9744"/>
+      <point x="224.1456" y="1457.3649" type="curve" smooth="yes"/>
+      <point x="146.5073" y="1432.7554"/>
+      <point x="93.5158" y="1360.9892"/>
+      <point x="92.8464" y="1279.5467" type="curve" smooth="yes"/>
+      <point x="92.1769" y="1198.1042"/>
+      <point x="143.9814" y="1125.4765"/>
+      <point x="221.2046" y="1099.594" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

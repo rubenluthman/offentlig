@@ -706,6 +706,8 @@
       <string>base</string>
       <key>Abrevedotbelow</key>
       <string>base</string>
+      <key>Abrevedotbelow.ss03</key>
+      <string>base</string>
       <key>Abrevegrave</key>
       <string>base</string>
       <key>Abrevehookabove</key>
@@ -718,6 +720,8 @@
       <string>base</string>
       <key>Acircumflexdotbelow</key>
       <string>base</string>
+      <key>Acircumflexdotbelow.ss03</key>
+      <string>base</string>
       <key>Acircumflexgrave</key>
       <string>base</string>
       <key>Acircumflexhookabove</key>
@@ -728,7 +732,11 @@
       <string>base</string>
       <key>Adieresis</key>
       <string>base</string>
+      <key>Adieresis.ss03</key>
+      <string>base</string>
       <key>Adotbelow</key>
+      <string>base</string>
+      <key>Adotbelow.ss03</key>
       <string>base</string>
       <key>Agrave</key>
       <string>base</string>
@@ -758,6 +766,8 @@
       <string>base</string>
       <key>Cdotaccent</key>
       <string>base</string>
+      <key>Cdotaccent.ss03</key>
+      <string>base</string>
       <key>D</key>
       <string>base</string>
       <key>Dcaron</key>
@@ -765,6 +775,8 @@
       <key>Dcroat</key>
       <string>base</string>
       <key>Ddotbelow</key>
+      <string>base</string>
+      <key>Ddotbelow.ss03</key>
       <string>base</string>
       <key>E</key>
       <string>base</string>
@@ -780,6 +792,8 @@
       <string>base</string>
       <key>Ecircumflexdotbelow</key>
       <string>base</string>
+      <key>Ecircumflexdotbelow.ss03</key>
+      <string>base</string>
       <key>Ecircumflexgrave</key>
       <string>base</string>
       <key>Ecircumflexhookabove</key>
@@ -790,9 +804,15 @@
       <string>base</string>
       <key>Edieresis</key>
       <string>base</string>
+      <key>Edieresis.ss03</key>
+      <string>base</string>
       <key>Edotaccent</key>
       <string>base</string>
+      <key>Edotaccent.ss03</key>
+      <string>base</string>
       <key>Edotbelow</key>
+      <string>base</string>
+      <key>Edotbelow.ss03</key>
       <string>base</string>
       <key>Egrave</key>
       <string>base</string>
@@ -818,7 +838,11 @@
       <string>base</string>
       <key>Gcommaaccent</key>
       <string>base</string>
+      <key>Gcommaaccent.ss03</key>
+      <string>base</string>
       <key>Gdotaccent</key>
+      <string>base</string>
+      <key>Gdotaccent.ss03</key>
       <string>base</string>
       <key>H</key>
       <string>base</string>
@@ -827,6 +851,8 @@
       <key>Hcircumflex</key>
       <string>base</string>
       <key>Hdotbelow</key>
+      <string>base</string>
+      <key>Hdotbelow.ss03</key>
       <string>base</string>
       <key>I</key>
       <string>base</string>
@@ -840,9 +866,15 @@
       <string>base</string>
       <key>Idieresis</key>
       <string>base</string>
+      <key>Idieresis.ss03</key>
+      <string>base</string>
       <key>Idotaccent</key>
       <string>base</string>
+      <key>Idotaccent.ss03</key>
+      <string>base</string>
       <key>Idotbelow</key>
+      <string>base</string>
+      <key>Idotbelow.ss03</key>
       <string>base</string>
       <key>Igrave</key>
       <string>base</string>
@@ -864,6 +896,8 @@
       <string>base</string>
       <key>Kcommaaccent</key>
       <string>base</string>
+      <key>Kcommaaccent.ss03</key>
+      <string>base</string>
       <key>L</key>
       <string>base</string>
       <key>Lacute</key>
@@ -872,7 +906,11 @@
       <string>base</string>
       <key>Lcommaaccent</key>
       <string>base</string>
+      <key>Lcommaaccent.ss03</key>
+      <string>base</string>
       <key>Ldot</key>
+      <string>base</string>
+      <key>Ldot.ss03</key>
       <string>base</string>
       <key>Lslash</key>
       <string>base</string>
@@ -884,7 +922,11 @@
       <string>base</string>
       <key>Ncommaaccent</key>
       <string>base</string>
+      <key>Ncommaaccent.ss03</key>
+      <string>base</string>
       <key>Ndotaccent</key>
+      <string>base</string>
+      <key>Ndotaccent.ss03</key>
       <string>base</string>
       <key>Ntilde</key>
       <string>base</string>
@@ -902,6 +944,8 @@
       <string>base</string>
       <key>Ocircumflexdotbelow</key>
       <string>base</string>
+      <key>Ocircumflexdotbelow.ss03</key>
+      <string>base</string>
       <key>Ocircumflexgrave</key>
       <string>base</string>
       <key>Ocircumflexhookabove</key>
@@ -912,7 +956,11 @@
       <string>base</string>
       <key>Odieresis</key>
       <string>base</string>
+      <key>Odieresis.ss03</key>
+      <string>base</string>
       <key>Odotbelow</key>
+      <string>base</string>
+      <key>Odotbelow.ss03</key>
       <string>base</string>
       <key>Ograve</key>
       <string>base</string>
@@ -923,6 +971,8 @@
       <key>Ohornacute</key>
       <string>base</string>
       <key>Ohorndotbelow</key>
+      <string>base</string>
+      <key>Ohorndotbelow.ss03</key>
       <string>base</string>
       <key>Ohorngrave</key>
       <string>base</string>
@@ -952,9 +1002,13 @@
       <string>base</string>
       <key>Rcommaaccent</key>
       <string>base</string>
+      <key>Rcommaaccent.ss03</key>
+      <string>base</string>
       <key>Rdblgrave</key>
       <string>base</string>
       <key>Rdotbelow</key>
+      <string>base</string>
+      <key>Rdotbelow.ss03</key>
       <string>base</string>
       <key>Rinvertedbreve</key>
       <string>base</string>
@@ -970,7 +1024,11 @@
       <string>base</string>
       <key>Scommaaccent</key>
       <string>base</string>
+      <key>Scommaaccent.ss03</key>
+      <string>base</string>
       <key>Sdotbelow</key>
+      <string>base</string>
+      <key>Sdotbelow.ss03</key>
       <string>base</string>
       <key>T</key>
       <string>base</string>
@@ -982,7 +1040,11 @@
       <string>base</string>
       <key>Tcommaaccent</key>
       <string>base</string>
+      <key>Tcommaaccent.ss03</key>
+      <string>base</string>
       <key>Tdotbelow</key>
+      <string>base</string>
+      <key>Tdotbelow.ss03</key>
       <string>base</string>
       <key>U</key>
       <string>base</string>
@@ -998,7 +1060,11 @@
       <string>base</string>
       <key>Udieresis</key>
       <string>base</string>
+      <key>Udieresis.ss03</key>
+      <string>base</string>
       <key>Udotbelow</key>
+      <string>base</string>
+      <key>Udotbelow.ss03</key>
       <string>base</string>
       <key>Ugrave</key>
       <string>base</string>
@@ -1009,6 +1075,8 @@
       <key>Uhornacute</key>
       <string>base</string>
       <key>Uhorndotbelow</key>
+      <string>base</string>
+      <key>Uhorndotbelow.ss03</key>
       <string>base</string>
       <key>Uhorngrave</key>
       <string>base</string>
@@ -1036,6 +1104,8 @@
       <string>base</string>
       <key>Wdieresis</key>
       <string>base</string>
+      <key>Wdieresis.ss03</key>
+      <string>base</string>
       <key>Wgrave</key>
       <string>base</string>
       <key>Y</key>
@@ -1046,7 +1116,11 @@
       <string>base</string>
       <key>Ydieresis</key>
       <string>base</string>
+      <key>Ydieresis.ss03</key>
+      <string>base</string>
       <key>Ydotbelow</key>
+      <string>base</string>
+      <key>Ydotbelow.ss03</key>
       <string>base</string>
       <key>Ygrave</key>
       <string>base</string>
@@ -1062,7 +1136,11 @@
       <string>base</string>
       <key>Zdotaccent</key>
       <string>base</string>
+      <key>Zdotaccent.ss03</key>
+      <string>base</string>
       <key>Zdotbelow</key>
+      <string>base</string>
+      <key>Zdotbelow.ss03</key>
       <string>base</string>
       <key>__horn</key>
       <string>base</string>
@@ -1076,6 +1154,8 @@
       <string>base</string>
       <key>abrevedotbelow</key>
       <string>base</string>
+      <key>abrevedotbelow.ss03</key>
+      <string>base</string>
       <key>abrevegrave</key>
       <string>base</string>
       <key>abrevehookabove</key>
@@ -1087,6 +1167,8 @@
       <key>acircumflexacute</key>
       <string>base</string>
       <key>acircumflexdotbelow</key>
+      <string>base</string>
+      <key>acircumflexdotbelow.ss03</key>
       <string>base</string>
       <key>acircumflexgrave</key>
       <string>base</string>
@@ -1104,7 +1186,11 @@
       <string>base</string>
       <key>adieresis</key>
       <string>base</string>
+      <key>adieresis.ss03</key>
+      <string>base</string>
       <key>adotbelow</key>
+      <string>base</string>
+      <key>adotbelow.ss03</key>
       <string>base</string>
       <key>ae</key>
       <string>base</string>
@@ -1156,6 +1242,8 @@
       <string>base</string>
       <key>cdotaccent</key>
       <string>base</string>
+      <key>cdotaccent.ss03</key>
+      <string>base</string>
       <key>cedillacomb</key>
       <string>mark</string>
       <key>cent</key>
@@ -1178,7 +1266,11 @@
       <string>base</string>
       <key>commaaccentcomb</key>
       <string>mark</string>
+      <key>commaaccentcomb.ss03</key>
+      <string>mark</string>
       <key>commaturnedabovecomb</key>
+      <string>mark</string>
+      <key>commaturnedabovecomb.ss03</key>
       <string>mark</string>
       <key>d</key>
       <string>base</string>
@@ -1190,11 +1282,19 @@
       <string>base</string>
       <key>ddotbelow</key>
       <string>base</string>
+      <key>ddotbelow.ss03</key>
+      <string>base</string>
       <key>dieresiscomb</key>
+      <string>mark</string>
+      <key>dieresiscomb.ss03</key>
       <string>mark</string>
       <key>dotaccentcomb</key>
       <string>mark</string>
+      <key>dotaccentcomb.ss03</key>
+      <string>mark</string>
       <key>dotbelowcomb</key>
+      <string>mark</string>
+      <key>dotbelowcomb.ss03</key>
       <string>mark</string>
       <key>e</key>
       <string>base</string>
@@ -1210,6 +1310,8 @@
       <string>base</string>
       <key>ecircumflexdotbelow</key>
       <string>base</string>
+      <key>ecircumflexdotbelow.ss03</key>
+      <string>base</string>
       <key>ecircumflexgrave</key>
       <string>base</string>
       <key>ecircumflexhookabove</key>
@@ -1220,9 +1322,15 @@
       <string>base</string>
       <key>edieresis</key>
       <string>base</string>
+      <key>edieresis.ss03</key>
+      <string>base</string>
       <key>edotaccent</key>
       <string>base</string>
+      <key>edotaccent.ss03</key>
+      <string>base</string>
       <key>edotbelow</key>
+      <string>base</string>
+      <key>edotbelow.ss03</key>
       <string>base</string>
       <key>egrave</key>
       <string>base</string>
@@ -1238,6 +1346,8 @@
       <string>base</string>
       <key>fi</key>
       <string>ligature</string>
+      <key>fi.ss03</key>
+      <string>ligature</string>
       <key>fl</key>
       <string>ligature</string>
       <key>g</key>
@@ -1250,7 +1360,11 @@
       <string>base</string>
       <key>gcommaaccent</key>
       <string>base</string>
+      <key>gcommaaccent.ss03</key>
+      <string>base</string>
       <key>gdotaccent</key>
+      <string>base</string>
+      <key>gdotaccent.ss03</key>
       <string>base</string>
       <key>gravecomb</key>
       <string>mark</string>
@@ -1266,6 +1380,8 @@
       <string>base</string>
       <key>hdotbelow</key>
       <string>base</string>
+      <key>hdotbelow.ss03</key>
+      <string>base</string>
       <key>hookabovecomb</key>
       <string>mark</string>
       <key>horncomb</key>
@@ -1273,6 +1389,8 @@
       <key>hungarumlautcomb</key>
       <string>mark</string>
       <key>i</key>
+      <string>base</string>
+      <key>i.ss03</key>
       <string>base</string>
       <key>iacute</key>
       <string>base</string>
@@ -1284,9 +1402,15 @@
       <string>base</string>
       <key>idieresis</key>
       <string>base</string>
+      <key>idieresis.ss03</key>
+      <string>base</string>
       <key>idotaccent</key>
       <string>base</string>
+      <key>idotaccent.ss03</key>
+      <string>base</string>
       <key>idotbelow</key>
+      <string>base</string>
+      <key>idotbelow.ss03</key>
       <string>base</string>
       <key>idotless</key>
       <string>base</string>
@@ -1300,6 +1424,8 @@
       <string>base</string>
       <key>iogonek</key>
       <string>base</string>
+      <key>iogonek.ss03</key>
+      <string>base</string>
       <key>itilde</key>
       <string>base</string>
       <key>jcircumflex</key>
@@ -1309,6 +1435,8 @@
       <key>k</key>
       <string>base</string>
       <key>kcommaaccent</key>
+      <string>base</string>
+      <key>kcommaaccent.ss03</key>
       <string>base</string>
       <key>l</key>
       <string>base</string>
@@ -1320,7 +1448,11 @@
       <string>base</string>
       <key>lcommaaccent</key>
       <string>base</string>
+      <key>lcommaaccent.ss03</key>
+      <string>base</string>
       <key>ldot</key>
+      <string>base</string>
+      <key>ldot.ss03</key>
       <string>base</string>
       <key>lslash</key>
       <string>base</string>
@@ -1336,7 +1468,11 @@
       <string>base</string>
       <key>ncommaaccent</key>
       <string>base</string>
+      <key>ncommaaccent.ss03</key>
+      <string>base</string>
       <key>ndotaccent</key>
+      <string>base</string>
+      <key>ndotaccent.ss03</key>
       <string>base</string>
       <key>ntilde</key>
       <string>base</string>
@@ -1354,6 +1490,8 @@
       <string>base</string>
       <key>ocircumflexdotbelow</key>
       <string>base</string>
+      <key>ocircumflexdotbelow.ss03</key>
+      <string>base</string>
       <key>ocircumflexgrave</key>
       <string>base</string>
       <key>ocircumflexhookabove</key>
@@ -1364,7 +1502,11 @@
       <string>base</string>
       <key>odieresis</key>
       <string>base</string>
+      <key>odieresis.ss03</key>
+      <string>base</string>
       <key>odotbelow</key>
+      <string>base</string>
+      <key>odotbelow.ss03</key>
       <string>base</string>
       <key>oe</key>
       <string>base</string>
@@ -1379,6 +1521,8 @@
       <key>ohornacute</key>
       <string>base</string>
       <key>ohorndotbelow</key>
+      <string>base</string>
+      <key>ohorndotbelow.ss03</key>
       <string>base</string>
       <key>ohorngrave</key>
       <string>base</string>
@@ -1408,9 +1552,13 @@
       <string>base</string>
       <key>rcommaaccent</key>
       <string>base</string>
+      <key>rcommaaccent.ss03</key>
+      <string>base</string>
       <key>rdblgrave</key>
       <string>base</string>
       <key>rdotbelow</key>
+      <string>base</string>
+      <key>rdotbelow.ss03</key>
       <string>base</string>
       <key>ringcomb</key>
       <string>mark</string>
@@ -1430,7 +1578,11 @@
       <string>base</string>
       <key>scommaaccent</key>
       <string>base</string>
+      <key>scommaaccent.ss03</key>
+      <string>base</string>
       <key>sdotbelow</key>
+      <string>base</string>
+      <key>sdotbelow.ss03</key>
       <string>base</string>
       <key>servicemark</key>
       <string>base</string>
@@ -1444,7 +1596,11 @@
       <string>base</string>
       <key>tcommaaccent</key>
       <string>base</string>
+      <key>tcommaaccent.ss03</key>
+      <string>base</string>
       <key>tdotbelow</key>
+      <string>base</string>
+      <key>tdotbelow.ss03</key>
       <string>base</string>
       <key>tildecomb</key>
       <string>mark</string>
@@ -1464,7 +1620,11 @@
       <string>base</string>
       <key>udieresis</key>
       <string>base</string>
+      <key>udieresis.ss03</key>
+      <string>base</string>
       <key>udotbelow</key>
+      <string>base</string>
+      <key>udotbelow.ss03</key>
       <string>base</string>
       <key>ugrave</key>
       <string>base</string>
@@ -1475,6 +1635,8 @@
       <key>uhornacute</key>
       <string>base</string>
       <key>uhorndotbelow</key>
+      <string>base</string>
+      <key>uhorndotbelow.ss03</key>
       <string>base</string>
       <key>uhorngrave</key>
       <string>base</string>
@@ -1502,6 +1664,8 @@
       <string>base</string>
       <key>wdieresis</key>
       <string>base</string>
+      <key>wdieresis.ss03</key>
+      <string>base</string>
       <key>wgrave</key>
       <string>base</string>
       <key>won</key>
@@ -1514,7 +1678,11 @@
       <string>base</string>
       <key>ydieresis</key>
       <string>base</string>
+      <key>ydieresis.ss03</key>
+      <string>base</string>
       <key>ydotbelow</key>
+      <string>base</string>
+      <key>ydotbelow.ss03</key>
       <string>base</string>
       <key>ygrave</key>
       <string>base</string>
@@ -1530,7 +1698,11 @@
       <string>base</string>
       <key>zdotaccent</key>
       <string>base</string>
+      <key>zdotaccent.ss03</key>
+      <string>base</string>
       <key>zdotbelow</key>
+      <string>base</string>
+      <key>zdotbelow.ss03</key>
       <string>base</string>
     </dict>
     <key>public.postscriptNames</key>
