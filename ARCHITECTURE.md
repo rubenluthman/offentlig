@@ -61,6 +61,8 @@ These values are identical in every master and are enforced by `tests/test_metri
 - Å Ä Ö å ä ö É é exist in every font.
 - The variable default is 400, and the default named instance has the same PostScript name as the font itself.
 - `Ǔ` (U+01D3) exists, so every cased letter has its counterpart (Fontspector `case_mapping`).
+- The ring stroke is at least 45 % of the `o` stroke and the outer ring stays round (width to height 0.93 – 1.03) at every weight, and the ring of `ǻ` and `Ǻ` follows the plain ring's stroke share.
+- The two dots of the diaeresis sit as far apart in the italic as in the upright, at every weight.
 - `ss01` swaps `g` only, `ss02` swaps `l` only, `salt` swaps both.
 
 ## Documents
