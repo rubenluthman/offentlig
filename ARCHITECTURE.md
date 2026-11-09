@@ -53,6 +53,15 @@ These values are identical in every master and are enforced by `tests/test_metri
 
 `USE_TYPO_METRICS` is set in every font.
 
+## OpenType features
+
+| Tag | Effect |
+| --- | --- |
+| `ss01` | Alternate `g` (`g.ss01`) |
+| `ss02` | Alternate `l` (`l.ss02`) |
+| `salt` | Both alternates and nothing else, as in Public Sans. Apps that offer one alternates button use `salt`, so it keeps doing what it did there; later alternates are reached only by their own tags. |
+| `aalt` | Collects every single-substitution feature in the font (`locl`, `subs`, `sinf`, `sups`, `numr`, `dnom`, `frac`, `ordn`, `lnum`, `pnum`, `tnum`, `onum`, `salt`, `ss01`, `ss02`) |
+
 ## Invariants enforced by tests
 
 - Italic and upright `å` differ from `ǻ`.

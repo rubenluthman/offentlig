@@ -12,16 +12,16 @@ Offentlig is a planned open-source font superfamily. Offentlig Sans is the first
 
 ## Differences from Public Sans
 
-Offentlig Sans starts from Public Sans `develop` at `e40fcf567` and differs in these ways:
+Offentlig Sans starts from Public Sans `develop` at `e40fcf567`. The main differences:
 
-| | Public Sans | Offentlig Sans |
-| --- | --- | --- |
-| Italic `å` | Renders as `ǻ` (ring with acute accent) | Renders as `å` |
-| Subscript digits `₀` – `₉` | Drawn, but not mapped to U+2080 – U+2089 | Mapped, so they work as text |
-| Spaced en dash in Thin | Kerning removes the spaces around ` – ` | Spaces kept |
-| Capital `Ǔ` (U+01D3) | Missing, though lowercase `ǔ` exists | Added |
-| Stylistic sets | `ss01` switches both `g` and `l` | `ss01` switches `g`, `ss02` switches `l`, `salt` both |
-| Variable font default | Thin (100) | Regular (400) |
+- Italic `å` renders as `å`, not as `ǻ`.
+- Subscript digits `₀` – `₉` work as text.
+- The spaces around a Thin en dash stay.
+- Capital `Ǔ` (U+01D3) is added.
+- `ss01` switches `g`, `ss02` switches `l`, and `salt` switches both.
+- The variable font opens at Regular (400).
+
+See the [full list of changes](#full-list-of-changes).
 
 ## Install on macOS
 
@@ -46,10 +46,27 @@ Self-host the WOFF2 files from the `webfonts` folder of the release.
 }
 ```
 
+## Full list of changes
+
+Offentlig Sans starts from Public Sans `develop` at `e40fcf567` and differs in these ways:
+
+| | Public Sans | Offentlig Sans |
+| --- | --- | --- |
+| Italic `å` | Renders as `ǻ` (ring with acute accent) | Renders as `å` |
+| Subscript digits `₀` – `₉` | Drawn, but not mapped to U+2080 – U+2089 | Mapped, so they work as text |
+| Spaced en dash in Thin | Kerning removes the spaces around ` – ` | Spaces kept |
+| Capital `Ǔ` (U+01D3) | Missing, though lowercase `ǔ` exists | Added |
+| Stylistic sets | `ss01` switches both `g` and `l` | `ss01` switches `g`, `ss02` switches `l`, `salt` both |
+| Variable font default | Thin (100) | Regular (400) |
+
+The variable font opens at Regular because Public Sans opens at Thin, so a web page that loads it without setting a weight shows hairline text. Inter, Noto Sans and Atkinson also default to 400.
+
+The first three fixes went to Public Sans as pull requests [#396](https://github.com/uswds/public-sans/pull/396), [#397](https://github.com/uswds/public-sans/pull/397) and [#398](https://github.com/uswds/public-sans/pull/398). The `Ǔ` addition is noted on issue [#258](https://github.com/uswds/public-sans/issues/258).
+
 ## Credits and license
 
 - Based on Public Sans by the Public Sans project authors and the [U.S. Web Design System](https://designsystem.digital.gov), commit `e40fcf567` of https://github.com/uswds/public-sans. The U.S. Government's changes are in the public domain; the combined work is used under the OFL.
 - Public Sans is based on Libre Franklin by Pablo Impallari and Rodrigo Fuenzalida, a reinterpretation of Morris Fuller Benton's 1912 typeface.
 - Offentlig Sans by Ruben Luthman.
 
-Licensed under the SIL Open Font License 1.1, see [LICENSE](LICENSE). Authors are listed in [AUTHORS.txt](AUTHORS.txt) and [CONTRIBUTORS.txt](CONTRIBUTORS.txt).
+Licensed under the SIL Open Font License 1.1, see [LICENSE](LICENSE). The font has no Reserved Font Name, so a web font made by subsetting Offentlig Sans needs no rename. Authors are listed in [AUTHORS.txt](AUTHORS.txt) and [CONTRIBUTORS.txt](CONTRIBUTORS.txt).

@@ -25,6 +25,10 @@ make verify    # tests, links, house style, paths and secrets
 
 Edit the UFO files in `sources/` with any UFO editor (see ADR-0001). The Regular master is a regular master: a change to Thin or Black must be repeated in Regular. Keep Thin, Regular and Black compatible (same contours, same point order) and keep the vertical metrics in `ARCHITECTURE.md`.
 
+## Credits
+
+Anyone whose drawings ship in the fonts goes in `AUTHORS.txt` as well as `CONTRIBUTORS.txt`, because the OFL copyright notice lists the authors of the drawings.
+
 ## Bug fixes
 
 Fix bugs upstream first. Open a pull request against https://github.com/uswds/public-sans when the bug exists there, then apply the same change here.
