@@ -2,6 +2,32 @@
 <glyph name="two.osf" format="2">
   <advance width="1339"/>
   <outline>
-    <component base="two"/>
+    <contour>
+      <point x="29" y="0" type="line"/>
+      <point x="1177" y="0" type="line"/>
+      <point x="1205.978" y="206" type="line"/>
+      <point x="491.978" y="206" type="line"/>
+      <point x="491.978" y="206" type="line" smooth="yes"/>
+      <point x="514.711" y="364.942"/>
+      <point x="1233.012" y="329.317"/>
+      <point x="1281.618" y="675.976" type="curve" smooth="yes"/>
+      <point x="1312.094" y="889.325"/>
+      <point x="1121.097" y="1054"/>
+      <point x="765.097" y="1054" type="curve" smooth="yes"/>
+      <point x="351.097" y="1054"/>
+      <point x="126.803" y="850.369"/>
+      <point x="95.716" y="628.019" type="curve"/>
+      <point x="461.716" y="628.019" type="line"/>
+      <point x="506.635" y="737.635"/>
+      <point x="612.157" y="776"/>
+      <point x="718.157" y="776" type="curve" smooth="yes"/>
+      <point x="824.157" y="776"/>
+      <point x="881.989" y="732.154"/>
+      <point x="873.795" y="673.236" type="curve" smooth="yes"/>
+      <point x="849.682" y="504.702"/>
+      <point x="101.151" y="512.923"/>
+      <point x="52.982" y="167.375" type="curve" smooth="yes"/>
+      <point x="44.388" y="110.725" type="line"/>
+    </contour>
   </outline>
 </glyph>

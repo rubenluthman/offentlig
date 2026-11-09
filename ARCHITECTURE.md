@@ -63,6 +63,7 @@ These values are identical in every master and are enforced by `tests/test_metri
 - The variable default is 400, and the default named instance has the same PostScript name as the font itself.
 - `Ǔ` (U+01D3) exists, so every cased letter has its counterpart (Fontspector `case_mapping`).
 - `ss01` swaps `g` only, `ss02` swaps `l` only, `salt` swaps both.
+- `onum` draws `0 1 2` at x-height, `3 4 5 7 9` hanging from x-height below the baseline, and `6 8` at full figure height, each with its own outline.
 
 ## Documents
 

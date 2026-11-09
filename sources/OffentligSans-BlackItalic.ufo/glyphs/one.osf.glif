@@ -2,6 +2,16 @@
 <glyph name="one.osf" format="2">
   <advance width="896"/>
   <outline>
-    <component base="one"/>
+    <contour>
+      <point x="233" y="0" type="line"/>
+      <point x="622" y="0" type="line"/>
+      <point x="784.097" y="1034" type="line"/>
+      <point x="536.097" y="1034" type="line"/>
+      <point x="502.187" y="947.333"/>
+      <point x="372.404" y="887.333"/>
+      <point x="134.404" y="887.333" type="curve"/>
+      <point x="103.122" y="681.333" type="line"/>
+      <point x="342.122" y="681.333" type="line"/>
+    </contour>
   </outline>
 </glyph>
