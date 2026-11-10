@@ -33,11 +33,15 @@ Anyone whose drawings ship in the fonts goes in `AUTHORS.txt` as well as `CONTRI
 
 Fix bugs upstream first. Open a pull request against https://github.com/uswds/public-sans when the bug exists there, then apply the same change here.
 
+## House style
+
+This project follows a shared house style for wording and punctuation. It asks for concrete properties instead of claims of quality, and for facts instead of filler. Parenthetical breaks require a spaced en dash ( – ) instead of an em dash, following Swedish and British typographic standards. [Vale](https://vale.sh) enforces these checks via the [house-style](https://github.com/rubenluthman/house-style) package, and each rule's message gives its reason.
+
 ## Branches and commits
 
 - Work on a branch and open a pull request into `main`.
 - Use Conventional Commits.
-- Run `make verify` before committing. It runs the house style check with `vale` ([install](https://vale.sh/docs/install)), and skips it with a notice when `vale` is missing, because CI runs it too. The wording rules are described in [house-style.md](house-style.md).
+- Run `make verify` before committing. It runs the house style check with `vale` ([install](https://vale.sh/docs/install)), and skips it with a notice when `vale` is missing, because CI runs it too. The rules are described under [House style](#house-style).
 
 ## Releases
 

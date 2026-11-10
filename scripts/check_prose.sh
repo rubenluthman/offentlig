@@ -1,6 +1,6 @@
 #!/bin/sh
 # House style check (Vale) on the tracked prose files. Run by verify_commit.sh and by the prose CI workflow.
-# Wording and punctuation rules come from the shared house-style package (see docs/house-style.md).
+# Wording and punctuation rules come from the shared house-style package (see docs/CONTRIBUTING.md).
 set -eu
 cd "$(dirname "$0")/.."
 
