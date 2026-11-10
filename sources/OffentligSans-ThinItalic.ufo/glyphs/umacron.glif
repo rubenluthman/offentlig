@@ -5,7 +5,7 @@
   <anchor x="456" y="0" name="bottom"/>
   <anchor x="874" y="856" name="horn"/>
   <anchor x="815" y="22" name="ogonek"/>
-  <anchor x="601" y="1034" name="top"/>
+  <anchor x="639.508" y="1308" name="top"/>
   <outline>
     <component base="u"/>
     <component base="macroncomb" xOffset="284"/>

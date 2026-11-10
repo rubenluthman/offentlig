@@ -5,7 +5,7 @@
   <anchor x="516" y="0" name="bottom"/>
   <anchor x="989" y="668" name="horn"/>
   <anchor x="676" y="20" name="ogonek"/>
-  <anchor x="568" y="1034" name="top"/>
+  <anchor x="621.546" y="1415" name="top"/>
   <outline>
     <component base="oslash"/>
     <component base="acutecomb" xOffset="346"/>

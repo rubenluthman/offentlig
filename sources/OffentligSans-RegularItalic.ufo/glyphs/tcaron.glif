@@ -5,6 +5,7 @@
   <anchor x="375.78125" y="6.1875" name="bottom"/>
   <anchor x="560.15625" y="1520.375" name="caron"/>
   <anchor x="398.15625" y="584.25" name="center"/>
+  <anchor x="491.08118" y="1335" name="top"/>
   <outline>
     <component base="t"/>
     <component base="caroncomb.alt" xOffset="429.15625" yOffset="74.375"/>
