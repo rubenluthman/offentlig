@@ -108,6 +108,7 @@
       <string>Gcircumflex</string>
       <string>Gcommaaccent</string>
       <string>Gdotaccent</string>
+      <string>Germandbls</string>
       <string>H</string>
       <string>Hbar</string>
       <string>Hcircumflex</string>
@@ -827,6 +828,8 @@
       <key>Gcommaaccent</key>
       <string>base</string>
       <key>Gdotaccent</key>
+      <string>base</string>
+      <key>Germandbls</key>
       <string>base</string>
       <key>H</key>
       <string>base</string>
@@ -1593,6 +1596,8 @@
       <string>uni1EBC</string>
       <key>Gcommaaccent</key>
       <string>uni0122</string>
+      <key>Germandbls</key>
+      <string>uni1E9E</string>
       <key>Hdotbelow</key>
       <string>uni1E24</string>
       <key>Idblgrave</key>

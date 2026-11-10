@@ -62,6 +62,9 @@ These values are identical in every master and are enforced by `tests/test_metri
 - The variable default is 400, and the default named instance has the same PostScript name as the font itself.
 - `Ǔ` (U+01D3) exists, so every cased letter has its counterpart (Fontspector `case_mapping`).
 - `ss01` swaps `g` only, `ss02` swaps `l` only, `salt` swaps both.
+- U+1E9E is mapped and wider than `S`; U+00DF still maps to `germandbls`.
+- The ten `.tf` digits share one advance at every weight, static and variable (`tnum`).
+- Black and Black Italic `five` have no tiny smooth curve at the join between the diagonal and the bowl.
 
 ## Documents
 

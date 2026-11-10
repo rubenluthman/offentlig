@@ -9,6 +9,7 @@ Offentlig is a planned open-source font superfamily. Offentlig Sans is the first
 - Nine weights (Thin to Black) in upright and italic, plus variable fonts on the `wght` axis (default 400).
 - Same design as Public Sans `develop` at `e40fcf567`, with four fixes: italic `å` no longer renders as `ǻ`, subscript digits U+2080 – U+2089 are encoded, a spaced en dash keeps its spaces in Thin, and the missing capital `Ǔ` (U+01D3) is added.
 - Stylistic sets: `ss01` selects an alternate `g`, `ss02` an alternate `l`, and `salt` both.
+- Capital sharp s ẞ (U+1E9E) is drawn as its own letter, about as wide as `H`, in every weight and in the italic. Uppercasing ß is unchanged and still produces SS.
 - Formats: OTF, TTF, variable TTF and WOFF2.
 
 ## Install on macOS
