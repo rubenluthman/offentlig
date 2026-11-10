@@ -37,6 +37,8 @@ feature cv01;
 feature cv03;
 feature cv04;
 feature cv05;
+feature cv06;
+feature zero;
 feature tnum;
 
 } aalt;
@@ -432,4 +434,30 @@ cvParameters {
 };
 
 } cv05;
+
+feature zero {
+# automatic
+sub zero by zero.slash;
+sub zero.tf by zero.slash.tf;
+sub zero.osf by zero.slash.osf;
+
+} zero;
+
+feature cv06 {
+# automatic
+sub one by one.cv06;
+sub one.osf by one.cv06.osf;
+cvParameters {
+    FeatUILabelNameID {
+        name "1 with base";
+    };
+    FeatUITooltipTextNameID {
+        name "A digit 1 with a short base, to tell it from I and l";
+    };
+    SampleTextNameID {
+        name "Il1 11 2026";
+    };
+};
+
+} cv06;
 

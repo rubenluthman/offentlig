@@ -1330,12 +1330,16 @@
     <string>omacronacute.glif</string>
     <key>one</key>
     <string>one.glif</string>
+    <key>one.cv06</key>
+    <string>one.cv06.glif</string>
     <key>one.dnom</key>
     <string>one.dnom.glif</string>
     <key>one.numr</key>
     <string>one.numr.glif</string>
     <key>one.osf</key>
     <string>one.osf.glif</string>
+    <key>one.cv06.osf</key>
+    <string>one.cv06.osf.glif</string>
     <key>one.subs</key>
     <string>one.subs.glif</string>
     <key>one.tf</key>
@@ -1714,16 +1718,22 @@
     <string>zdotbelow.glif</string>
     <key>zero</key>
     <string>zero.glif</string>
+    <key>zero.slash</key>
+    <string>zero.slash.glif</string>
     <key>zero.dnom</key>
     <string>zero.dnom.glif</string>
     <key>zero.numr</key>
     <string>zero.numr.glif</string>
     <key>zero.osf</key>
     <string>zero.osf.glif</string>
+    <key>zero.slash.osf</key>
+    <string>zero.slash.osf.glif</string>
     <key>zero.subs</key>
     <string>zero.subs.glif</string>
     <key>zero.tf</key>
     <string>zero.tf.glif</string>
+    <key>zero.slash.tf</key>
+    <string>zero.slash.tf.glif</string>
     <key>zerosuperior</key>
     <string>zerosuperior.glif</string>
     <key>zlinebelow</key>

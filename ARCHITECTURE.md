@@ -68,8 +68,10 @@ These values are identical in every master and are enforced by `tests/test_metri
 | `cv03` | Round `G` without spur, with its accented forms |
 | `cv04` | Single-storey `a`, with its accented forms |
 | `cv05` | `I` with serifs, with its accented forms and the Ĳ forms that use it |
+| `cv06` | `1` with a base (`one.cv06`, `one.cv06.osf`); the tabular `1` already has its own base |
+| `zero` | Slashed `0` (`zero.slash`, `zero.slash.tf`, `zero.slash.osf`) |
 | `onum` | Oldstyle figures: `0 1 2` at x-height, `3 4 5 7 9` hanging below the baseline, `6 8` at full height (`zero.osf` to `nine.osf`) |
-| `aalt` | Collects every single-substitution feature in the font (`locl`, `subs`, `sinf`, `sups`, `numr`, `dnom`, `frac`, `ordn`, `lnum`, `pnum`, `tnum`, `onum`, `salt`, `ss01`, `ss02`, `cv01`, `cv03`, `cv04`, `cv05`) |
+| `aalt` | Collects every single-substitution feature in the font (`locl`, `subs`, `sinf`, `sups`, `numr`, `dnom`, `frac`, `ordn`, `lnum`, `pnum`, `tnum`, `onum`, `salt`, `ss01`, `ss02`, `cv01`, `cv03`, `cv04`, `cv05`, `cv06`, `zero`) |
 
 ## Invariants enforced by tests
 
@@ -94,6 +96,7 @@ These values are identical in every master and are enforced by `tests/test_metri
 - `ss01` swaps `g` only, `ss02` swaps `l` only, `salt` swaps both.
 - `cv01` (wider `J`), `cv03` (round `G`), `cv04` (single-storey `a`) and `cv05` (`I` with serifs) each swap their letter and its accented forms only. No feature changes default shaping, and `salt` stays `g` and `l`.
 - `cv03` is deliberately not a mirror of the bowl: the outer lower right is about 7% fuller than the lower left in the diagonal part, in every master, to make up for the stem the default `G` has and to keep the letter from looking as if it leans forward. Do not "correct" it to a mirror. The `cv04` step is the step of `q`, which has the same flat top at x-height.
+- `zero` (slashed `0`) and `cv06` (`1` with base) are opt-in. The default digits never change, and each alternate has matching tabular and oldstyle forms, except the `1`, whose tabular form already has its own base. The small digits (numerators, subscripts) keep the default design.
 - The 14 `.cv05` letters (`I.cv05` and its accented forms) have their own kerning groups `public.kern1.Icv05` and `public.kern2.Icv05`, because the serifs reach into the side bearings. Each pair carries the plain `I` value plus the extra space that keeps the serifed pair within 20 units of the plain pair's closest ink distance; `tests/test_letter_alternates.py` fails if any pair with a letter touches or comes closer than 30 units.
 - U+1E9E is mapped and wider than `S`; U+00DF still maps to `germandbls`.
 - The ten `.tf` digits share one advance at every weight, static and variable (`tnum`).
