@@ -4,7 +4,9 @@ Offentlig is a planned open-source font superfamily. Offentlig Sans is the first
 
 ![Offentlig Sans specimen](docs/specimen.png)
 
+<!-- vale HouseStyle.Headings = NO -->
 ## Offentlig Sans
+<!-- vale HouseStyle.Headings = YES -->
 
 - Nine weights (Thin to Black) in upright and italic, plus variable fonts on the `wght` axis (default 400).
 - Stylistic sets: `ss01` selects an alternate `g`, `ss02` an alternate `l`, and `salt` both. Character variants: `cv01` a wider `J`, `cv03` a round `G` without spur, `cv04` a single-storey `a`, `cv05` an `I` with serifs and `cv06` a `1` with a base; `cv01` and `cv05` also change `Ĳ`. `zero` draws a slashed `0`. The digit forms also work with `onum` and `tnum`.
@@ -12,7 +14,9 @@ Offentlig is a planned open-source font superfamily. Offentlig Sans is the first
 - Capital sharp s ẞ (U+1E9E) is drawn as its own letter, about as wide as `H`, in every weight and in the italic. Uppercasing ß is unchanged and still produces SS.
 - Formats: OTF, TTF, variable TTF and WOFF2.
 
+<!-- vale HouseStyle.Headings = NO -->
 ## Differences from Public Sans
+<!-- vale HouseStyle.Headings = YES -->
 
 Offentlig Sans starts from Public Sans `develop` at `e40fcf567` and differs in these ways:
 

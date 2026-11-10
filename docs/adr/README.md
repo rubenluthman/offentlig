@@ -6,4 +6,4 @@ A record has `Status: Active | Retired · Date` and the headings Decision, Why, 
 | --- | --- | --- |
 | [0001](0001-ufo-designspace-sources.md) | UFO and designspace as the source format | Active |
 | [0002](0002-built-fonts-on-releases.md) | Built fonts are attached to releases, not committed | Active |
-| [0003](0003-no-reserved-font-name.md) | No Reserved Font Name | Active |
+| [0003](0003-no-reserved-font-name.md) | No reserved font name | Active |

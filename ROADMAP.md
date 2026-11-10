@@ -6,7 +6,9 @@
 
 - [x] Review the repository tree and history, make it public, tag `v0.1.0` and publish the release.
 
+<!-- vale HouseStyle.Headings = NO -->
 ### Offentlig Sans
+<!-- vale HouseStyle.Headings = YES -->
 
 - [ ] Pinyin tone letters and DIN 91379 Latin coverage, see public-sans issues #258 and #277.
 - [ ] Swedish diacritics: a larger ring with an open centre, diaeresis position and dot size.
@@ -16,20 +18,28 @@
 - [x] Em dash spacing, trademark alignment, the Bitcoin sign, arrows and A and m spacing, see public-sans issues #151, #204, #215, #216, #259 and PR #252.
 - [ ] Superscript and subscript `+ − = ( )`, prime marks `′ ″ ‴` and the DIN 91379 modifier letters `ʰ ʳ ˢ ᵈ ᵗ ⁿ`.
 
+<!-- vale HouseStyle.Headings = NO -->
 ### Offentlig Serif
+<!-- vale HouseStyle.Headings = YES -->
 
 - [ ] Adapt IBM Plex Serif, weights 100 – 700.
 
+<!-- vale HouseStyle.Headings = NO -->
 ### Offentlig Mono
+<!-- vale HouseStyle.Headings = YES -->
 
 - [ ] Adapt IBM Plex Mono, weights 100 – 700.
 
 ## Icebox
 
+<!-- vale HouseStyle.Headings = NO -->
 ### Offentlig Sans
+<!-- vale HouseStyle.Headings = YES -->
 
 - [ ] Greek and Cyrillic, to complete DIN 91379 (see public-sans issue #17).
 
+<!-- vale HouseStyle.Headings = NO -->
 ### Offentlig Serif
+<!-- vale HouseStyle.Headings = YES -->
 
 - [ ] A Black master of our own, extending the weight axis from 700 to 900 to match Offentlig Sans.
