@@ -762,6 +762,14 @@
       <string>product</string>
       <string>summation</string>
       <string>radical</string>
+      <string>leftArrow</string>
+      <string>upArrow</string>
+      <string>rightArrow</string>
+      <string>downArrow</string>
+      <string>northWestArrow</string>
+      <string>northEastArrow</string>
+      <string>southEastArrow</string>
+      <string>southWestArrow</string>
       <string>partialdiff</string>
       <string>micro</string>
       <string>percent</string>
