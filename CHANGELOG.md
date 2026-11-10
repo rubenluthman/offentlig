@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [0.1.0] - 2026-11-10
 
 - Added Offentlig Sans, a fork of Public Sans (upstream commit `e40fcf567`) renamed to Offentlig Sans.
 - Fixed four Public Sans issues: italic `å` rendered as `ǻ`, subscript digits U+2080 – U+2089 were unencoded, a spaced en dash lost its spaces in every weight except Black, and capital `Ǔ` (U+01D3) was missing.
