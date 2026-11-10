@@ -108,6 +108,11 @@ sub seven by seven.subs;
 sub eight by eight.subs;
 sub nine by nine.subs;
 
+sub plus by plus.subs;
+sub minus by minus.subs;
+sub equal by equal.subs;
+sub parenleft by parenleft.subs;
+sub parenright by parenright.subs;
 } subs;
 
 feature sinf {
@@ -123,6 +128,11 @@ sub seven by seven.subs;
 sub eight by eight.subs;
 sub nine by nine.subs;
 
+sub plus by plus.subs;
+sub minus by minus.subs;
+sub equal by equal.subs;
+sub parenleft by parenleft.subs;
+sub parenright by parenright.subs;
 } sinf;
 
 feature sups {
@@ -138,6 +148,11 @@ sub seven by sevensuperior;
 sub eight by eightsuperior;
 sub nine by ninesuperior;
 
+sub plus by plussuperior;
+sub minus by minussuperior;
+sub equal by equalsuperior;
+sub parenleft by parenleftsuperior;
+sub parenright by parenrightsuperior;
 } sups;
 
 feature numr {

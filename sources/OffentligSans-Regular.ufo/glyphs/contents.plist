@@ -1312,5 +1312,25 @@
     <string>zero.tf.glif</string>
     <key>zerosuperior</key>
     <string>zerosuperior.glif</string>
-  </dict>
+      <key>plussuperior</key>
+    <string>plussuperior.glif</string>
+    <key>plus.subs</key>
+    <string>plus.subs.glif</string>
+    <key>minussuperior</key>
+    <string>minussuperior.glif</string>
+    <key>minus.subs</key>
+    <string>minus.subs.glif</string>
+    <key>equalsuperior</key>
+    <string>equalsuperior.glif</string>
+    <key>equal.subs</key>
+    <string>equal.subs.glif</string>
+    <key>parenleftsuperior</key>
+    <string>parenleftsuperior.glif</string>
+    <key>parenleft.subs</key>
+    <string>parenleft.subs.glif</string>
+    <key>parenrightsuperior</key>
+    <string>parenrightsuperior.glif</string>
+    <key>parenright.subs</key>
+    <string>parenright.subs.glif</string>
+</dict>
 </plist>
