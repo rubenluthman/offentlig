@@ -2,25 +2,34 @@
 
 ## Active
 
-- [ ] Review the repository tree and history, make it public, tag `v0.1.0` and publish the release.
-- [x] Post the upstream pull requests for the three fixes (italic `å`, subscript Unicode values, Thin en dash kerning): public-sans PR #396, #397 and #398.
-- [x] Comment on public-sans issue #258 (pinyin with tones) with the capital `Ǔ` (U+01D3) added here, which pairs the existing `ǔ`.
-- [ ] Swedish diacritic audit: ring roundness and clearance, diaeresis spacing, italic ring slant. Measure first, change only after a specimen review.
-- [ ] Add arrow glyphs from public-sans PR #252 (wayne-shih). Credit in `CONTRIBUTORS.txt` and `CHANGELOG.md`.
-- [ ] Draw capital sharp s ẞ (U+1E9E), see public-sans PR #194 and #144.
-- [ ] Round the corner of `5` in Black and Black Italic, see PR #194 and #148.
-- [ ] Match the tabular `1` width to the lining figures, see PR #194 and #128.
-- [ ] Fix em dash spacing and the `calt` substitution, see issues #204 and #151.
-- [ ] Trademark alignment and the Bitcoin sign, see issues #216 and #215.
-- [ ] Fix the gap between capital A and lowercase m, see issue #259.
-- [ ] DIN 91379 sequences and pinyin tones, see issues #277 and #258.
-- [x] Add CI that builds, tests and attaches the zip to tagged releases.
-- [ ] Serif family adapted from IBM Plex Serif, weights 100 – 700.
-- [ ] Mono family adapted from IBM Plex Mono, weights 100 – 700.
+### All families
+
+- [x] Review the repository tree and history, make it public, tag `v0.1.0` and publish the release.
+
+### Offentlig Sans
+
+- [ ] Pinyin tone letters and DIN 91379 Latin coverage, see public-sans issues #258 and #277.
+- [ ] Swedish diacritics: a larger ring with an open centre, diaeresis position and dot size.
+- [x] A drawn capital sharp s `ẞ` (U+1E9E), see public-sans PR #194 and issue #144.
+- [ ] Optional letter forms: wide `J`, round `G`, single-storey `a`, serifed `I`, `1` with a base, slashed zero, round dots.
+- [ ] Old-style figures and Rosalie Wagner's design to-do list, see public-sans issue #158.
+- [x] Em dash spacing, trademark alignment, the Bitcoin sign, arrows and A and m spacing, see public-sans issues #151, #204, #215, #216, #259 and PR #252.
+- [ ] Superscript and subscript `+ − = ( )`, prime marks `′ ″ ‴` and the DIN 91379 modifier letters `ʰ ʳ ˢ ᵈ ᵗ ⁿ`.
+
+### Offentlig Serif
+
+- [ ] Adapt IBM Plex Serif, weights 100 – 700.
+
+### Offentlig Mono
+
+- [ ] Adapt IBM Plex Mono, weights 100 – 700.
 
 ## Icebox
 
-- [ ] A choice between round and square dots (`i`, `j`, `ä`, `ö`, punctuation) as a stylistic set.
-- [ ] Alternates for more letters that commonly have them, alongside the existing `g` and `l`.
-- [ ] Narrow J, G alternates and distinct b/d/p/q: design choices to evaluate, see issues #358, #295 and #288.
-- [ ] Work through Rosalie Wagner's 2020 design to-do list, see issue #158.
+### Offentlig Sans
+
+- [ ] Greek and Cyrillic, to complete DIN 91379 (see public-sans issue #17).
+
+### Offentlig Serif
+
+- [ ] A Black master of our own, extending the weight axis from 700 to 900 to match Offentlig Sans.

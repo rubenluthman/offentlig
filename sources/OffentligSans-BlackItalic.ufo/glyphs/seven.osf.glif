@@ -2,6 +2,18 @@
 <glyph name="seven.osf" format="2">
   <advance width="1295"/>
   <outline>
-    <component base="seven"/>
+    <contour>
+      <point x="199.097" y="-330" type="curve"/>
+      <point x="615.097" y="-330" type="line"/>
+      <point x="662.097" y="-2.078"/>
+      <point x="1006.097" y="507.059"/>
+      <point x="1239.097" y="722" type="curve"/>
+      <point x="1288.097" y="1034" type="line"/>
+      <point x="155.097" y="1034" type="line"/>
+      <point x="109.097" y="722" type="line"/>
+      <point x="845.097" y="722" type="line"/>
+      <point x="420.097" y="310.595"/>
+      <point x="231.097" y="-138.309"/>
+    </contour>
   </outline>
 </glyph>

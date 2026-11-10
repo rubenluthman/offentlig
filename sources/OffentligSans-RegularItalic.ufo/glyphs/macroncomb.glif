@@ -2,6 +2,7 @@
 <glyph name="macroncomb" format="2">
   <unicode hex="0304"/>
   <anchor x="383.6875" y="1034.0" name="_top"/>
+  <anchor x="425.916" y="1334.46875" name="top"/>
   <outline>
     <contour>
       <point x="130.875" y="1235.09375" type="line"/>

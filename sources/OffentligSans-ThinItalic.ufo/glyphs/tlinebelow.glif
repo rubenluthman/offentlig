@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tlinebelow" format="2">
+  <advance width="689"/>
+  <unicode hex="1E6F"/>
+  <anchor x="350" y="0" name="bottom"/>
+  <anchor x="500" y="1486" name="caron"/>
+  <anchor x="382" y="620" name="center"/>
+  <anchor x="382" y="920" name="horn"/>
+  <anchor x="465.53523" y="1324" name="top"/>
+  <outline>
+    <component base="t"/>
+    <component base="macronbelowcomb" xOffset="33"/>
+  </outline>
+</glyph>
