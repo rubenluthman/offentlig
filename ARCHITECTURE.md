@@ -11,7 +11,9 @@ sources/
   config-OffentligSans.yaml        gftools builder configuration
 tests/                             pytest suite, runs against the built fonts
 scripts/verify_commit.sh           pre-commit verification
+scripts/check_prose.sh             house style check (Vale), run by verify_commit.sh and prose.yaml
 .github/workflows/ci.yaml          CI: build, test, Fontspector; draft release with zip on v* tags
+.github/workflows/prose.yaml       CI: house style check on changes to prose files
 docs/                              contributor docs and docs/adr/
 fonts/OffentligSans/{otf,ttf,variable,webfonts}/    build output, gitignored
 ```

@@ -37,7 +37,7 @@ Fix bugs upstream first. Open a pull request against https://github.com/uswds/pu
 
 - Work on a branch and open a pull request into `main`.
 - Use Conventional Commits.
-- Run `make verify` before committing. It needs `vale` (`brew install vale`); the wording rules are described in [house-style.md](house-style.md).
+- Run `make verify` before committing. It runs the house style check with `vale` ([install](https://vale.sh/docs/install)), and skips it with a notice when `vale` is missing, because CI runs it too. The wording rules are described in [house-style.md](house-style.md).
 
 ## Releases
 
@@ -48,6 +48,8 @@ Fix bugs upstream first. Open a pull request against https://github.com/uswds/pu
 5. Review the draft release and publish it.
 
 CI runs on pushes and pull requests to `main` that touch `sources/`, `tests/`, `scripts/`, `Makefile`, `requirements*.txt` or `.github/`, and fails on any test failure or Fontspector FAIL. Every run that is not a tag push also builds the zip and uploads it as the `release-zip` workflow artifact, so the release job's input can be inspected without a tag. The workflow can also be started manually (`workflow_dispatch`).
+
+A second workflow, Prose, runs the house style check on pushes and pull requests to `main` that touch `.md` or `.txt` files or `.vale.ini`. It installs a pinned Vale release and checks its SHA-256 first.
 
 Versioning:
 
