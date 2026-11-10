@@ -33,6 +33,10 @@ feature onum;
 feature salt;
 feature ss01;
 feature ss02;
+feature cv01;
+feature cv03;
+feature cv04;
+feature cv05;
 feature calt;
 feature tnum;
 
@@ -313,6 +317,120 @@ featureNames {
 };
 
 } ss02;
+
+feature cv01 {
+# automatic
+sub J by J.cv01;
+sub Jcircumflex by Jcircumflex.cv01;
+sub IJ by IJ.cv01;
+sub IJ.cv05 by IJ.cv01.cv05;
+cvParameters {
+    FeatUILabelNameID {
+        name "Wider J";
+    };
+    FeatUITooltipTextNameID {
+        name "A J with a longer hook and a wider bowl, so it is harder to mistake for I or U";
+    };
+    SampleTextNameID {
+        name "Jag gjorde jobbet";
+    };
+};
+
+} cv01;
+
+feature cv03 {
+# automatic
+sub G by G.cv03;
+sub Gbreve by Gbreve.cv03;
+sub Gcircumflex by Gcircumflex.cv03;
+sub Gcommaaccent by Gcommaaccent.cv03;
+sub Gdotaccent by Gdotaccent.cv03;
+cvParameters {
+    FeatUILabelNameID {
+        name "G without spur";
+    };
+    FeatUITooltipTextNameID {
+        name "The G has no spur: bowl and right edge are one curve";
+    };
+    SampleTextNameID {
+        name "Göteborg Gnesta GIG";
+    };
+};
+
+} cv03;
+
+feature cv04 {
+# automatic
+sub a by a.cv04;
+sub aacute by aacute.cv04;
+sub abreve by abreve.cv04;
+sub abreveacute by abreveacute.cv04;
+sub abrevedotbelow by abrevedotbelow.cv04;
+sub abrevegrave by abrevegrave.cv04;
+sub abrevehookabove by abrevehookabove.cv04;
+sub abrevetilde by abrevetilde.cv04;
+sub acircumflex by acircumflex.cv04;
+sub acircumflexacute by acircumflexacute.cv04;
+sub acircumflexdotbelow by acircumflexdotbelow.cv04;
+sub acircumflexgrave by acircumflexgrave.cv04;
+sub acircumflexhookabove by acircumflexhookabove.cv04;
+sub acircumflextilde by acircumflextilde.cv04;
+sub adblgrave by adblgrave.cv04;
+sub adieresis by adieresis.cv04;
+sub adotbelow by adotbelow.cv04;
+sub agrave by agrave.cv04;
+sub ahookabove by ahookabove.cv04;
+sub ainvertedbreve by ainvertedbreve.cv04;
+sub amacron by amacron.cv04;
+sub aogonek by aogonek.cv04;
+sub aring by aring.cv04;
+sub aringacute by aringacute.cv04;
+sub atilde by atilde.cv04;
+cvParameters {
+    FeatUILabelNameID {
+        name "Single-storey a";
+    };
+    FeatUITooltipTextNameID {
+        name "A one-storey a with a straight stem on the right";
+    };
+    SampleTextNameID {
+        name "Alla ska ha tillgång";
+    };
+};
+
+} cv04;
+
+feature cv05 {
+# automatic
+sub I by I.cv05;
+sub Iacute by Iacute.cv05;
+sub Ibreve by Ibreve.cv05;
+sub Icircumflex by Icircumflex.cv05;
+sub Idblgrave by Idblgrave.cv05;
+sub Idieresis by Idieresis.cv05;
+sub Idotaccent by Idotaccent.cv05;
+sub Idotbelow by Idotbelow.cv05;
+sub Igrave by Igrave.cv05;
+sub Ihookabove by Ihookabove.cv05;
+sub Iinvertedbreve by Iinvertedbreve.cv05;
+sub Imacron by Imacron.cv05;
+sub Iogonek by Iogonek.cv05;
+sub Itilde by Itilde.cv05;
+sub IJ by IJ.cv05;
+sub IJ.cv01 by IJ.cv01.cv05;
+cvParameters {
+    FeatUILabelNameID {
+        name "I with serifs";
+    };
+    FeatUITooltipTextNameID {
+        name "A capital I with slab serifs, to tell it from l and 1";
+    };
+    SampleTextNameID {
+        name "Illa Ivar Iris";
+    };
+};
+
+} cv05;
 
 feature calt {
 sub space emdash' space by emdash.alt;
