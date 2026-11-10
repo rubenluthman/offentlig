@@ -20,6 +20,10 @@ Offentlig Sans starts from Public Sans `develop` at `e40fcf567` and differs in t
 | Subscript digits `₀` – `₉` | Drawn, but not mapped to U+2080 – U+2089 | Mapped, so they work as text |
 | Spaced en dash | Kerning removes most of the space around ` – ` in every weight except Black (a quarter em at Regular) | Spaces kept |
 | Capital `Ǔ` (U+01D3) | Missing, though lowercase `ǔ` exists | Added |
+| Pinyin and DIN 91379 letters | Pinyin tone letters, many Latin Extended letters and several combining marks missing; marks stacked on a letter do not always land where the precomposed letter puts them | Added (110 composites, 18 pinyin letters and drawn Ƈ ƈ Ɨ ɨ Ǥ ǥ Ʒ ʒ), and stacked marks follow the precomposed positions, also in italic |
+| Arrows `←` `↑` `→` `↓` `↖` `↗` `↘` `↙` | Missing | Added (U+2190 – U+2193 and U+2196 – U+2199), drawn by Wayne Shih for Public Sans |
+| Em dash (U+2014) | Wide side bearings (371 per side at Regular), and a `calt` substitution that breaks the spacing when the space after the dash sits in another element such as a link | Side bearings of the en dash (124 per side at Regular), and `calt` and `emdash.alt` removed |
+| Capital `A` before `m n r p h b` and similar letters | No kerning, so the gap is wider than before `o` | Kerned, never tighter than `A` before `o` |
 | Stylistic sets | `ss01` switches both `g` and `l` | `ss01` switches `g`, `ss02` switches `l`, `salt` both |
 | Variable font default | Thin (100) | Regular (400) |
 

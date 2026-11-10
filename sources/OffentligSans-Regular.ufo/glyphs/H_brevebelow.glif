@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Hbrevebelow" format="2">
+  <advance width="1531.90625"/>
+  <unicode hex="1E2A"/>
+  <anchor x="781.21875" y="0" name="bottom"/>
+  <anchor x="763.875" y="1453.875" name="top"/>
+  <outline>
+    <component base="H"/>
+    <component base="brevebelowcomb" xOffset="457.46875"/>
+  </outline>
+</glyph>
