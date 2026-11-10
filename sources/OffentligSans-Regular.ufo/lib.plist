@@ -572,6 +572,55 @@
       <string>zdotbelow</string>
       <string>g.ss01</string>
       <string>l.ss02</string>
+      <string>J.cv01</string>
+      <string>Jcircumflex.cv01</string>
+      <string>G.cv03</string>
+      <string>Gbreve.cv03</string>
+      <string>Gcircumflex.cv03</string>
+      <string>Gcommaaccent.cv03</string>
+      <string>Gdotaccent.cv03</string>
+      <string>a.cv04</string>
+      <string>aacute.cv04</string>
+      <string>abreve.cv04</string>
+      <string>abreveacute.cv04</string>
+      <string>abrevedotbelow.cv04</string>
+      <string>abrevegrave.cv04</string>
+      <string>abrevehookabove.cv04</string>
+      <string>abrevetilde.cv04</string>
+      <string>acircumflex.cv04</string>
+      <string>acircumflexacute.cv04</string>
+      <string>acircumflexdotbelow.cv04</string>
+      <string>acircumflexgrave.cv04</string>
+      <string>acircumflexhookabove.cv04</string>
+      <string>acircumflextilde.cv04</string>
+      <string>adblgrave.cv04</string>
+      <string>adieresis.cv04</string>
+      <string>adotbelow.cv04</string>
+      <string>agrave.cv04</string>
+      <string>ahookabove.cv04</string>
+      <string>ainvertedbreve.cv04</string>
+      <string>amacron.cv04</string>
+      <string>aogonek.cv04</string>
+      <string>aring.cv04</string>
+      <string>aringacute.cv04</string>
+      <string>atilde.cv04</string>
+      <string>I.cv05</string>
+      <string>Iacute.cv05</string>
+      <string>Ibreve.cv05</string>
+      <string>Icircumflex.cv05</string>
+      <string>Idblgrave.cv05</string>
+      <string>Idieresis.cv05</string>
+      <string>Idotaccent.cv05</string>
+      <string>Idotbelow.cv05</string>
+      <string>Igrave.cv05</string>
+      <string>Ihookabove.cv05</string>
+      <string>Iinvertedbreve.cv05</string>
+      <string>Imacron.cv05</string>
+      <string>Iogonek.cv05</string>
+      <string>Itilde.cv05</string>
+      <string>IJ.cv01.cv05</string>
+      <string>IJ.cv01</string>
+      <string>IJ.cv05</string>
       <string>fi</string>
       <string>fl</string>
       <string>ordfeminine</string>
@@ -2016,6 +2065,104 @@
       <string>base</string>
       <key>ezhcaron</key>
       <string>base</string>
+      <key>G.cv03</key>
+      <string>base</string>
+      <key>Gbreve.cv03</key>
+      <string>base</string>
+      <key>Gcircumflex.cv03</key>
+      <string>base</string>
+      <key>Gcommaaccent.cv03</key>
+      <string>base</string>
+      <key>Gdotaccent.cv03</key>
+      <string>base</string>
+      <key>I.cv05</key>
+      <string>base</string>
+      <key>IJ.cv01</key>
+      <string>base</string>
+      <key>IJ.cv01.cv05</key>
+      <string>base</string>
+      <key>IJ.cv05</key>
+      <string>base</string>
+      <key>Iacute.cv05</key>
+      <string>base</string>
+      <key>Ibreve.cv05</key>
+      <string>base</string>
+      <key>Icircumflex.cv05</key>
+      <string>base</string>
+      <key>Idblgrave.cv05</key>
+      <string>base</string>
+      <key>Idieresis.cv05</key>
+      <string>base</string>
+      <key>Idotaccent.cv05</key>
+      <string>base</string>
+      <key>Idotbelow.cv05</key>
+      <string>base</string>
+      <key>Igrave.cv05</key>
+      <string>base</string>
+      <key>Ihookabove.cv05</key>
+      <string>base</string>
+      <key>Iinvertedbreve.cv05</key>
+      <string>base</string>
+      <key>Imacron.cv05</key>
+      <string>base</string>
+      <key>Iogonek.cv05</key>
+      <string>base</string>
+      <key>Itilde.cv05</key>
+      <string>base</string>
+      <key>J.cv01</key>
+      <string>base</string>
+      <key>Jcircumflex.cv01</key>
+      <string>base</string>
+      <key>a.cv04</key>
+      <string>base</string>
+      <key>aacute.cv04</key>
+      <string>base</string>
+      <key>abreve.cv04</key>
+      <string>base</string>
+      <key>abreveacute.cv04</key>
+      <string>base</string>
+      <key>abrevedotbelow.cv04</key>
+      <string>base</string>
+      <key>abrevegrave.cv04</key>
+      <string>base</string>
+      <key>abrevehookabove.cv04</key>
+      <string>base</string>
+      <key>abrevetilde.cv04</key>
+      <string>base</string>
+      <key>acircumflex.cv04</key>
+      <string>base</string>
+      <key>acircumflexacute.cv04</key>
+      <string>base</string>
+      <key>acircumflexdotbelow.cv04</key>
+      <string>base</string>
+      <key>acircumflexgrave.cv04</key>
+      <string>base</string>
+      <key>acircumflexhookabove.cv04</key>
+      <string>base</string>
+      <key>acircumflextilde.cv04</key>
+      <string>base</string>
+      <key>adblgrave.cv04</key>
+      <string>base</string>
+      <key>adieresis.cv04</key>
+      <string>base</string>
+      <key>adotbelow.cv04</key>
+      <string>base</string>
+      <key>agrave.cv04</key>
+      <string>base</string>
+      <key>ahookabove.cv04</key>
+      <string>base</string>
+      <key>ainvertedbreve.cv04</key>
+      <string>base</string>
+      <key>amacron.cv04</key>
+      <string>base</string>
+      <key>aogonek.cv04</key>
+      <string>base</string>
+      <key>aring.cv04</key>
+      <string>base</string>
+      <key>aringacute.cv04</key>
+      <string>base</string>
+      <key>atilde.cv04</key>
+      <string>base</string>
     </dict>
     <key>public.postscriptNames</key>
     <dict>
@@ -2741,6 +2888,12 @@
       <string>uni01EE</string>
       <key>ezhcaron</key>
       <string>uni01EF</string>
+      <key>IJ.cv01</key>
+      <string>uni0132.cv01</string>
+      <key>IJ.cv01.cv05</key>
+      <string>uni0132.cv01.cv05</string>
+      <key>IJ.cv05</key>
+      <string>uni0132.cv05</string>
     </dict>
     <key>public.skipExportGlyphs</key>
     <array>
