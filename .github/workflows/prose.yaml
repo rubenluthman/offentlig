@@ -8,6 +8,7 @@ on:
       - "**.txt"
       - ".vale.ini"
       - "scripts/check_prose.sh"
+      - "scripts/check_conflict_markers.sh"
       - ".github/workflows/prose.yaml"
   pull_request:
     branches: [main]
@@ -31,6 +32,8 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+      - name: Conflict markers
+        run: ./scripts/check_conflict_markers.sh
       - name: Install Vale
         run: |
           archive="vale_${VALE_VERSION}_Linux_64-bit.tar.gz"
