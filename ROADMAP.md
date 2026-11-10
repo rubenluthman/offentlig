@@ -29,3 +29,7 @@
 ### Offentlig Sans
 
 - [ ] Greek and Cyrillic, to complete DIN 91379 (see public-sans issue #17).
+
+### Offentlig Serif
+
+- [ ] A Black master of our own, extending the weight axis from 700 to 900 to match Offentlig Sans.
