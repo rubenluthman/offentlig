@@ -4,7 +4,7 @@
 
 ### All families
 
-- [ ] Review the repository tree and history, make it public, tag `v0.1.0` and publish the release.
+- [x] Review the repository tree and history, make it public, tag `v0.1.0` and publish the release.
 
 ### Offentlig Sans
 
