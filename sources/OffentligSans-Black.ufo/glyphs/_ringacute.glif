@@ -16,9 +16,9 @@
       <point x="907.61" y="1352"/>
       <point x="1026.04" y="1450.69"/>
       <point x="1026.04" y="1598.73" type="curve" smooth="yes"/>
-      <point x="1026.04" y="1702.36"/>
-      <point x="966.82" y="1783.78"/>
-      <point x="880.47" y="1823.25" type="curve"/>
+      <point x="1026.04" y="1719.43"/>
+      <point x="945.71" y="1810.00"/>
+      <point x="835.74" y="1839.25" type="curve"/>
     </contour>
     <contour>
       <point x="759.39" y="1499.11" type="curve" smooth="yes"/>
