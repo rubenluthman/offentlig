@@ -100,6 +100,8 @@
       <real>-33.125</real>
       <key>public.kern2.hyphen</key>
       <integer>-60</integer>
+      <key>public.kern2.n</key>
+      <real>-26</real>
       <key>public.kern2.o</key>
       <real>-26.875</real>
       <key>public.kern2.parenright</key>

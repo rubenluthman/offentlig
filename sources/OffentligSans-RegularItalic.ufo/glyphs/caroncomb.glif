@@ -2,6 +2,7 @@
 <glyph name="caroncomb" format="2">
   <unicode hex="030C"/>
   <anchor x="387.96875" y="1034.0" name="_top"/>
+  <anchor x="432.204" y="1348.75" name="top"/>
   <outline>
     <contour>
       <point x="338.8125" y="1154.34375" type="line"/>
