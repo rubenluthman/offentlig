@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Gstroke" format="2">
+  <advance width="1339"/>
+  <unicode hex="01E4"/>
+  <anchor x="570" y="0" name="bottom"/>
+  <anchor x="776" y="1446" name="top"/>
+  <outline>
+    <contour>
+      <point x="605.85702" y="359.9" type="line"/>
+      <point x="1221.79702" y="359.9" type="line"/>
+      <point x="1231.66298" y="430.1" type="line"/>
+      <point x="615.72298" y="430.1" type="line"/>
+    </contour>
+    <component base="G"/>
+  </outline>
+</glyph>

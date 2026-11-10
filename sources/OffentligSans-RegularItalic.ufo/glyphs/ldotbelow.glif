@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ldotbelow" format="2">
+  <advance width="592.71875"/>
+  <unicode hex="1E37"/>
+  <anchor x="184.75" y="1.3125" name="bottom"/>
+  <anchor x="472.15625" y="1486" name="caron"/>
+  <anchor x="384.6875" y="1526.0625" name="top"/>
+  <outline>
+    <component base="l"/>
+    <component base="dotbelowcomb" xOffset="156.65625" yOffset="1.3125"/>
+  </outline>
+</glyph>

@@ -3,6 +3,7 @@
   <unicode hex="0309"/>
   <anchor x="604.6875" y="1051.0625" name="_top"/>
   <anchor x="515.1875" y="1178.3125" name="_topviet"/>
+  <anchor x="604.6875" y="1489.33552" name="top"/>
   <outline>
     <contour>
       <point x="664.0625" y="1168.78125" type="line"/>
