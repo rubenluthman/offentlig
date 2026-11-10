@@ -64,6 +64,7 @@ These values are identical in every master and are enforced by `tests/test_metri
 | `ss01` | Alternate `g` (`g.ss01`) |
 | `ss02` | Alternate `l` (`l.ss02`) |
 | `salt` | Both alternates and nothing else, as in Public Sans. Apps that offer one alternates button use `salt`, so it keeps doing what it did there; later alternates are reached only by their own tags. |
+| `onum` | Oldstyle figures: `0 1 2` at x-height, `3 4 5 7 9` hanging below the baseline, `6 8` at full height (`zero.osf` to `nine.osf`) |
 | `aalt` | Collects every single-substitution feature in the font (`locl`, `subs`, `sinf`, `sups`, `numr`, `dnom`, `frac`, `ordn`, `lnum`, `pnum`, `tnum`, `onum`, `salt`, `ss01`, `ss02`) |
 
 ## Invariants enforced by tests
