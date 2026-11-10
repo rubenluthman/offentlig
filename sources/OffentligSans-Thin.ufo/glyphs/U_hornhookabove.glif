@@ -5,7 +5,7 @@
   <anchor x="696" y="4" name="bottom"/>
   <anchor x="1148" y="1212" name="horn"/>
   <anchor x="838" y="18" name="ogonek"/>
-  <anchor x="702" y="1446" name="top"/>
+  <anchor x="702" y="1838.18276" name="top"/>
   <anchor x="1274" y="1292" name="topright"/>
   <outline>
     <component base="Uhorn"/>

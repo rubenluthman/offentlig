@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="jdotlesscaron" format="2">
+  <advance width="467"/>
+  <unicode hex="01F0"/>
+  <anchor x="247" y="1314" name="top"/>
+  <outline>
+    <component base="jdotless"/>
+    <component base="caroncomb" xOffset="-23"/>
+  </outline>
+</glyph>

@@ -7,9 +7,26 @@ Offentlig is a planned open-source font superfamily. Offentlig Sans is the first
 ## Offentlig Sans
 
 - Nine weights (Thin to Black) in upright and italic, plus variable fonts on the `wght` axis (default 400).
-- Same design as Public Sans `develop` at `e40fcf567`, with four fixes: italic `å` no longer renders as `ǻ`, subscript digits U+2080 – U+2089 are encoded, a spaced en dash keeps its spaces in Thin, and the missing capital `Ǔ` (U+01D3) is added.
 - Stylistic sets: `ss01` selects an alternate `g`, `ss02` an alternate `l`, and `salt` both.
 - Formats: OTF, TTF, variable TTF and WOFF2.
+
+## Differences from Public Sans
+
+Offentlig Sans starts from Public Sans `develop` at `e40fcf567` and differs in these ways:
+
+| | Public Sans | Offentlig Sans |
+| --- | --- | --- |
+| Italic `å` | Renders as `ǻ` (ring with acute accent) | Renders as `å` |
+| Subscript digits `₀` – `₉` | Drawn, but not mapped to U+2080 – U+2089 | Mapped, so they work as text |
+| Spaced en dash | Kerning removes most of the space around ` – ` in every weight except Black (a quarter em at Regular) | Spaces kept |
+| Capital `Ǔ` (U+01D3) | Missing, though lowercase `ǔ` exists | Added |
+| Pinyin and DIN 91379 letters | Pinyin tone letters, many Latin Extended letters and several combining marks missing; marks stacked on a letter do not always land where the precomposed letter puts them | Added (110 composites, 18 pinyin letters and drawn Ƈ ƈ Ɨ ɨ Ǥ ǥ Ʒ ʒ), and stacked marks follow the precomposed positions, also in italic |
+| Stylistic sets | `ss01` switches both `g` and `l` | `ss01` switches `g`, `ss02` switches `l`, `salt` both |
+| Variable font default | Thin (100) | Regular (400) |
+
+The variable font opens at Regular because Public Sans opens at Thin, so a web page that loads it without setting a weight shows hairline text. Inter, Noto Sans and Atkinson also default to 400.
+
+The first three fixes went to Public Sans as pull requests [#396](https://github.com/uswds/public-sans/pull/396), [#397](https://github.com/uswds/public-sans/pull/397) and [#398](https://github.com/uswds/public-sans/pull/398). The `Ǔ` addition is noted on issue [#258](https://github.com/uswds/public-sans/issues/258).
 
 ## Install on macOS
 
@@ -40,4 +57,4 @@ Self-host the WOFF2 files from the `webfonts` folder of the release.
 - Public Sans is based on Libre Franklin by Pablo Impallari and Rodrigo Fuenzalida, a reinterpretation of Morris Fuller Benton's 1912 typeface.
 - Offentlig Sans by Ruben Luthman.
 
-Licensed under the SIL Open Font License 1.1, see [LICENSE](LICENSE). Authors are listed in [AUTHORS.txt](AUTHORS.txt) and [CONTRIBUTORS.txt](CONTRIBUTORS.txt).
+Licensed under the SIL Open Font License 1.1, see [LICENSE](LICENSE). The font has no Reserved Font Name, so a web font made by subsetting Offentlig Sans needs no rename. Authors are listed in [AUTHORS.txt](AUTHORS.txt) and [CONTRIBUTORS.txt](CONTRIBUTORS.txt).

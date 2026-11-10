@@ -38,8 +38,8 @@ feature tnum;
 feature ccmp {
 # automatic
 lookup ccmp_Other_1 {
-	@CombiningTopAccents = [acutecomb brevecomb breveinvertedcomb caroncomb circumflexcomb commaturnedabovecomb dblgravecomb dieresiscomb dotaccentcomb gravecomb hookabovecomb hungarumlautcomb macroncomb ringcomb tildecomb];
-	@CombiningNonTopAccents = [cedillacomb dotbelowcomb ogonekcomb horncomb];
+	@CombiningTopAccents = [acutecomb brevecomb breveinvertedcomb candrabinducomb caroncomb circumflexcomb commaaboverightcomb commaturnedabovecomb dblgravecomb dieresiscomb dotaccentcomb gravecomb hookabovecomb hungarumlautcomb macroncomb ringcomb tildecomb verticallineabovecomb];
+	@CombiningNonTopAccents = [brevebelowcomb cedillacomb dblmacronbelowcomb dotbelowcomb macronbelowcomb ogonekcomb ringbelowcomb horncomb];
 	sub [i j]' @CombiningTopAccents by [idotless jdotless];
 	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
 } ccmp_Other_1;
@@ -314,32 +314,3 @@ featureNames {
 feature calt {
 sub space emdash' space by emdash.alt;
 } calt;
-
-feature tnum {
-# automatic
-sub zero by zero.tf;
-sub one by one.tf;
-sub two by two.tf;
-sub three by three.tf;
-sub four by four.tf;
-sub five by five.tf;
-sub six by six.tf;
-sub seven by seven.tf;
-sub eight by eight.tf;
-sub nine by nine.tf;
-sub period by period.tf;
-sub comma by comma.tf;
-sub cent by cent.tf;
-sub colonsign by colonsign.tf;
-sub dollar by dollar.tf;
-sub dong by dong.tf;
-sub euro by euro.tf;
-sub florin by florin.tf;
-sub franc by franc.tf;
-sub lira by lira.tf;
-sub liraTurkish by liraTurkish.tf;
-sub rupeeIndian by rupeeIndian.tf;
-sub sterling by sterling.tf;
-sub yen by yen.tf;
-
-} tnum;
