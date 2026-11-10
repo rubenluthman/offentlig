@@ -13,7 +13,7 @@ Open-source font superfamily. Offentlig Sans is a renamed fork of Public Sans (u
 ## Boundaries
 
 - Sources are `sources/*.designspace` and `sources/*.ufo` only (ADR-0001). Do not add `.glyphs` files.
-- Never commit `fonts/`, `build/` or `docs/private/` (ADR-0002).
+- Never commit `fonts/` or `build/` (ADR-0002), or `docs/private/`, which holds private notes.
 - Keep the vertical metrics in `ARCHITECTURE.md`; a test enforces them.
 - Never create tags or releases, and never make the repository public, without the owner's go-ahead.
 - Bug fixes go upstream to uswds/public-sans first.

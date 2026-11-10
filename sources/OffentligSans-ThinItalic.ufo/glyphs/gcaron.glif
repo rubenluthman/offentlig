@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="gcaron" format="2">
+  <advance width="1148"/>
+  <unicode hex="01E7"/>
+  <anchor x="622.211" y="1313" name="top"/>
+  <outline>
+    <component base="g"/>
+    <component base="caroncomb" xOffset="260"/>
+  </outline>
+</glyph>

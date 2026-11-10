@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Istroke" format="2">
+  <advance width="568.65625"/>
+  <unicode hex="0197"/>
+  <anchor x="217.9375" y="0" name="bottom"/>
+  <anchor x="278.3125" y="16.21875" name="ogonek"/>
+  <anchor x="419.25" y="1446" name="top"/>
+  <outline>
+    <contour>
+      <point x="78.957" y="664.938" type="line"/>
+      <point x="531.379" y="664.938" type="line"/>
+      <point x="547.699" y="781.062" type="line"/>
+      <point x="95.277" y="781.062" type="line"/>
+    </contour>
+    <component base="I"/>
+  </outline>
+</glyph>

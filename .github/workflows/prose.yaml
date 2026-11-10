@@ -1,0 +1,43 @@
+name: Prose
+
+on:
+  push:
+    branches: [main]
+    paths: &paths
+      - "**.md"
+      - "**.txt"
+      - ".vale.ini"
+      - "scripts/check_prose.sh"
+      - ".github/workflows/prose.yaml"
+  pull_request:
+    branches: [main]
+    paths: *paths
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  VALE_VERSION: "3.26.0"
+  VALE_SHA256: "22aa69a556558e4a9dfc63c17030777383d8d3c48dcdfad655fa98e839d666ed"
+
+jobs:
+  house-style:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Vale
+        run: |
+          archive="vale_${VALE_VERSION}_Linux_64-bit.tar.gz"
+          curl -fsSLO "https://github.com/vale-cli/vale/releases/download/v${VALE_VERSION}/${archive}"
+          echo "${VALE_SHA256}  ${archive}" | sha256sum -c -
+          mkdir -p "$RUNNER_TEMP/vale"
+          tar -xzf "${archive}" -C "$RUNNER_TEMP/vale" vale
+          echo "$RUNNER_TEMP/vale" >> "$GITHUB_PATH"
+      - name: House style (Vale)
+        run: ./scripts/check_prose.sh
