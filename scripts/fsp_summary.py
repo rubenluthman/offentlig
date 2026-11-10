@@ -1,4 +1,7 @@
-"""Summarize a Fontspector JSON report: FAIL counts per check id with one sample message."""
+"""Summarize a Fontspector JSON report: FAIL counts per check id with one sample message.
+
+Exits 1 when the severity is FAIL (the default) and the report contains at least one such result.
+"""
 import collections, json, sys
 
 d = json.load(open(sys.argv[1]))["results"]
@@ -15,3 +18,6 @@ for res in d.values():
                     e[2] = s.get("message", "").replace("\n", " ")
 for k, (n, files, m) in sorted(c.items(), key=lambda x: -x[1][0]):
     print(f"{n:4d} {k} ({len(files)} files) | {m[:260]}")
+
+if sev == "FAIL" and c:
+    sys.exit(1)

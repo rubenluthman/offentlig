@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dblmacronbelowcomb" format="2">
+  <advance width="0"/>
+  <unicode hex="035F"/>
+  <anchor x="0" y="0" name="_bottom"/>
+  <outline>
+    <contour>
+      <point x="0" y="-310.375" type="line"/>
+      <point x="1300" y="-310.375" type="line"/>
+      <point x="1300" y="-180" type="line"/>
+      <point x="0" y="-180" type="line"/>
+    </contour>
+  </outline>
+</glyph>

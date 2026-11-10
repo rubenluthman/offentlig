@@ -10,3 +10,4 @@ Rodrigo Fuenzalida <fuenzarodrigo@gmail.com>
 Google LLC
 Ruben Luthman <9303062+rubenluthman@users.noreply.github.com>
 Cristiano Sobral
+Wayne Shih <wayne@wcys.co>

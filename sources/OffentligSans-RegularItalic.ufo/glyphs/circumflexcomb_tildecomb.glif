@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="circumflexcomb_tildecomb" format="2">
   <anchor x="383.9375" y="1034.0" name="_top"/>
+  <anchor x="468.117" y="1632.96875" name="top"/>
   <outline>
     <contour>
       <point x="111.25" y="1155.0" type="line"/>
