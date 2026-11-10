@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="gravecomb.viet" format="2">
   <anchor x="312.09375" y="1034.0" name="_top"/>
+  <anchor x="356.022" y="1346.5625" name="top"/>
   <outline>
     <contour>
       <point x="267.84375" y="1155.0" type="line"/>
