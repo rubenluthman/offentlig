@@ -3,7 +3,7 @@
 ## [Unreleased]
 
 - Added the pinyin tone letters and the Latin letters of DIN 91379 (including drawn Ƈ ƈ Ɨ ɨ Ǥ ǥ Ʒ ʒ), six combining marks, the modifier letters ʹ ʺ ʾ ʿ ˈ ˌ and eight arrows (← ↑ → ↓ ↖ ↗ ↘ ↙, drawn by Wayne Shih for Public Sans).
-- Changed existing text: marks stacked on a letter now land where the precomposed letter puts them, also in the italic fonts, and the bar of `ŧ` is lighter in Bold and Black.
+- Changed existing text: marks stacked on a letter now land where the precomposed letter puts them, also in the italic fonts, the bar of `ŧ` is lighter in Bold and Black, the em dash has the en dash's side bearings and no longer uses `calt`, and capital `A` is kerned against `m n r p h b` and similar letters.
 
 ## [0.1.0] - 2026-11-10
 
