@@ -7,6 +7,6 @@
   <anchor x="628.9375" y="1034.0" name="top"/>
   <outline>
     <component base="e"/>
-    <component base="circumflexcomb_gravecomb" xOffset="238.6875"/>
+    <component base="circumflexcomb_gravecomb" xOffset="247.6"/>
   </outline>
 </glyph>

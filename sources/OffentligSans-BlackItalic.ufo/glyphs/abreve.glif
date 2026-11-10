@@ -7,7 +7,7 @@
   <anchor x="680" y="1034" name="top"/>
   <outline>
     <component base="a"/>
-    <component base="brevecomb" xOffset="159"/>
+    <component base="brevecomb" xOffset="179"/>
   </outline>
   <lib>
     <dict>
