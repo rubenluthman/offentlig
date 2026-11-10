@@ -1,8 +1,9 @@
 """The `zero` feature and cv06: the slashed zero and the 1 with a base.
 
 Every digit alternate is opt-in. The default digits, `salt`, `ss01` and `ss02` never reach one. `onum` and a digit
-feature work together through the old-style alternates. `tnum` and a digit feature work together on lining figures.
-With `tnum` and `onum` both on, the figures stay lining: the font has no tabular old-style (`.tf.osf`) glyphs.
+feature work together through the old-style alternates, which sit at x-height like `zero.osf` and `one.osf`. `tnum` and
+a digit feature work together on lining tabular figures. With `tnum` and `onum` both on, `tnum` wins: the font has no
+tabular old-style (`.tf.osf`) glyphs, so the figures stay lining and tabular.
 """
 import pytest
 import uharfbuzz as hb
@@ -99,3 +100,41 @@ def test_features_have_names(static_ttf):
         assert params is not None, tag
         assert static_ttf["name"].getName(params.FeatUILabelNameID, 3, 1, 0x409), tag
     assert "zero" in tags
+
+
+@pytest.mark.parametrize("weight,italic", SHAPED, ids=IDS)
+def test_digit_features_with_tnum_and_onum_stay_lining_and_tabular(weight, italic):
+    path = static_path(weight, italic)
+    assert shape(path, "0", {"zero": True, "tnum": True, "onum": True}) == ["zero.slash.tf"]
+    assert shape(path, "1", {"cv06": True, "tnum": True, "onum": True}) == ["one.tf"]
+
+
+def _bounds(ttf, name):
+    glyph = ttf["glyf"][name]
+    glyph.recalcBounds(ttf["glyf"])
+    return glyph.xMin, glyph.yMin, glyph.xMax, glyph.yMax
+
+
+def test_zero_slash_osf_sits_at_x_height_like_zero_osf(static_ttf):
+    ring = _bounds(static_ttf, "zero.osf")
+    slashed = _bounds(static_ttf, "zero.slash.osf")
+    lining = _bounds(static_ttf, "zero.slash")
+    assert slashed[1] == ring[1] and slashed[3] == ring[3]
+    assert slashed[3] < lining[3] * 0.8, "the old-style slashed zero must be an x-height form, not the lining form"
+    assert static_ttf["hmtx"]["zero.slash.osf"][0] == static_ttf["hmtx"]["zero.osf"][0]
+
+
+def test_one_with_base_osf_sits_at_x_height_like_one_osf(static_ttf):
+    plain = _bounds(static_ttf, "one.osf")
+    based = _bounds(static_ttf, "one.cv06.osf")
+    lining = _bounds(static_ttf, "one.cv06")
+    assert based[3] == plain[3] and based[1] == 0
+    assert based[3] < lining[3] * 0.8, "the old-style 1 with base must be an x-height form, not the lining form"
+    assert based[2] - based[0] > plain[2] - plain[0] + 60
+
+
+def test_old_style_alternates_are_built_on_the_old_style_figures(static_ttf):
+    # one.cv06.osf must not be a component of the lining one.cv06
+    for name in ("zero.slash.osf", "one.cv06.osf"):
+        glyph = static_ttf["glyf"][name]
+        assert glyph.numberOfContours != -1, f"{name} is a composite"
