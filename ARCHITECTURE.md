@@ -64,6 +64,7 @@ These values are identical in every master and are enforced by `tests/test_metri
 | `ss01` | Alternate `g` (`g.ss01`) |
 | `ss02` | Alternate `l` (`l.ss02`) |
 | `salt` | Both alternates and nothing else, as in Public Sans. Apps that offer one alternates button use `salt`, so it keeps doing what it did there; later alternates are reached only by their own tags. |
+| `onum` | Oldstyle figures: `0 1 2` at x-height, `3 4 5 7 9` hanging below the baseline, `6 8` at full height (`zero.osf` to `nine.osf`) |
 | `aalt` | Collects every single-substitution feature in the font (`locl`, `subs`, `sinf`, `sups`, `numr`, `dnom`, `frac`, `ordn`, `lnum`, `pnum`, `tnum`, `onum`, `salt`, `ss01`, `ss02`) |
 
 ## Invariants enforced by tests
@@ -92,6 +93,7 @@ These values are identical in every master and are enforced by `tests/test_metri
 - Black and Black Italic `five` have no tiny smooth curve at the join between the diagonal and the bowl.
 - The eight arrows U+2190 – U+2193 and U+2196 – U+2199 (from public-sans pull request #252) are mapped in every font, have an advance of 1446 and outlines. Their bounding-box centre lies within 12 units of the `plus` centre for the four axis arrows and within 70 units for the four diagonals.
 - `leftArrow` and `rightArrow` have the same bounding-box height.
+- `onum` draws `0 1 2` at x-height, `3 4 5 7 9` hanging from x-height below the baseline, and `6 8` at full figure height, each with its own outline.
 
 ## Marks and anchors
 

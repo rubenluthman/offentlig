@@ -1,7 +1,24 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="four.osf" format="2">
-  <advance width="1256.6875"/>
+  <advance width="1256.688"/>
   <outline>
-    <component base="four"/>
+    <contour>
+      <point x="773.656" y="-330" type="line"/>
+      <point x="955" y="-330" type="line"/>
+      <point x="955" y="12.502" type="line"/>
+      <point x="1194.5" y="12.502" type="line"/>
+      <point x="1194.5" y="175.626" type="line"/>
+      <point x="955" y="175.626" type="line"/>
+      <point x="955" y="1034" type="line"/>
+      <point x="766.688" y="1034" type="line"/>
+      <point x="93.125" y="181.314" type="line"/>
+      <point x="93.125" y="12.502" type="line"/>
+      <point x="774" y="12.502" type="line"/>
+    </contour>
+    <contour>
+      <point x="269.938" y="175.626" type="line"/>
+      <point x="770.125" y="799.06" type="line"/>
+      <point x="770.125" y="175.626" type="line"/>
+    </contour>
   </outline>
 </glyph>
