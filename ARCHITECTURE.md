@@ -12,6 +12,7 @@ sources/
 tests/                             pytest suite, runs against the built fonts
 scripts/verify_commit.sh           pre-commit verification
 scripts/check_prose.sh             house style check (Vale), run by verify_commit.sh and prose.yaml
+scripts/release_notes.sh           CHANGELOG.md section for one version, used as the release notes
 .github/workflows/ci.yaml          CI: build, test, Fontspector; draft release with zip on v* tags
 .github/workflows/prose.yaml       CI: house style check on changes to prose files
 docs/                              contributor docs and docs/adr/
