@@ -9,7 +9,7 @@
 - [ ] Optional letter forms: wide `J`, round `G`, single-storey `a`, serifed `I`, `1` with a base, slashed zero, round dots.
 - [ ] Old-style figures and Rosalie Wagner's design to-do list, see public-sans issue #158.
 - [ ] Em dash spacing, trademark alignment, the Bitcoin sign, arrows and A and m spacing, see public-sans issues #151, #204, #215, #216, #259 and PR #252.
-- [ ] Superscript and subscript `+ − = ( )`, prime marks `′ ″ ‴`.
+- [ ] Superscript and subscript `+ − = ( )`, prime marks `′ ″ ‴` and the DIN 91379 modifier letters `ʰ ʳ ˢ ᵈ ᵗ ⁿ`.
 - [ ] Serif family adapted from IBM Plex Serif, weights 100 – 700.
 - [ ] Mono family adapted from IBM Plex Mono, weights 100 – 700.
 
