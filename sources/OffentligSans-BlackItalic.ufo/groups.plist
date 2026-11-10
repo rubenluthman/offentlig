@@ -160,36 +160,22 @@
       <string>Hcircumflex</string>
       <string>Hdotbelow</string>
       <string>I</string>
-      <string>I.cv05</string>
       <string>Istroke</string>
       <string>Idieresisacute</string>
       <string>Icaron</string>
       <string>Iacute</string>
-      <string>Iacute.cv05</string>
       <string>Ibreve</string>
-      <string>Ibreve.cv05</string>
       <string>Icircumflex</string>
-      <string>Icircumflex.cv05</string>
       <string>Idblgrave</string>
-      <string>Idblgrave.cv05</string>
       <string>Idieresis</string>
-      <string>Idieresis.cv05</string>
       <string>Idotaccent</string>
-      <string>Idotaccent.cv05</string>
       <string>Idotbelow</string>
-      <string>Idotbelow.cv05</string>
       <string>Igrave</string>
-      <string>Igrave.cv05</string>
       <string>Ihookabove</string>
-      <string>Ihookabove.cv05</string>
       <string>Iinvertedbreve</string>
-      <string>Iinvertedbreve.cv05</string>
       <string>Imacron</string>
-      <string>Imacron.cv05</string>
       <string>Iogonek</string>
-      <string>Iogonek.cv05</string>
       <string>Itilde</string>
-      <string>Itilde.cv05</string>
       <string>M</string>
       <string>Macute</string>
       <string>Mdotbelow</string>
@@ -985,36 +971,22 @@
       <string>Hcircumflex</string>
       <string>Hdotbelow</string>
       <string>I</string>
-      <string>I.cv05</string>
       <string>Istroke</string>
       <string>Idieresisacute</string>
       <string>Icaron</string>
       <string>Iacute</string>
-      <string>Iacute.cv05</string>
       <string>Ibreve</string>
-      <string>Ibreve.cv05</string>
       <string>Icircumflex</string>
-      <string>Icircumflex.cv05</string>
       <string>Idblgrave</string>
-      <string>Idblgrave.cv05</string>
       <string>Idieresis</string>
-      <string>Idieresis.cv05</string>
       <string>Idotaccent</string>
-      <string>Idotaccent.cv05</string>
       <string>Idotbelow</string>
-      <string>Idotbelow.cv05</string>
       <string>Igrave</string>
-      <string>Igrave.cv05</string>
       <string>Ihookabove</string>
-      <string>Ihookabove.cv05</string>
       <string>Iinvertedbreve</string>
-      <string>Iinvertedbreve.cv05</string>
       <string>Imacron</string>
-      <string>Imacron.cv05</string>
       <string>Iogonek</string>
-      <string>Iogonek.cv05</string>
       <string>Itilde</string>
-      <string>Itilde.cv05</string>
       <string>K</string>
       <string>Klinebelow</string>
       <string>Kdotbelow</string>
@@ -1712,6 +1684,40 @@
       <string>six.numr</string>
       <string>eight.numr</string>
       <string>nine.numr</string>
+    </array>
+    <key>public.kern1.Icv05</key>
+    <array>
+      <string>I.cv05</string>
+      <string>Iacute.cv05</string>
+      <string>Ibreve.cv05</string>
+      <string>Icircumflex.cv05</string>
+      <string>Idblgrave.cv05</string>
+      <string>Idieresis.cv05</string>
+      <string>Idotaccent.cv05</string>
+      <string>Idotbelow.cv05</string>
+      <string>Igrave.cv05</string>
+      <string>Ihookabove.cv05</string>
+      <string>Iinvertedbreve.cv05</string>
+      <string>Imacron.cv05</string>
+      <string>Iogonek.cv05</string>
+      <string>Itilde.cv05</string>
+    </array>
+    <key>public.kern2.Icv05</key>
+    <array>
+      <string>I.cv05</string>
+      <string>Iacute.cv05</string>
+      <string>Ibreve.cv05</string>
+      <string>Icircumflex.cv05</string>
+      <string>Idblgrave.cv05</string>
+      <string>Idieresis.cv05</string>
+      <string>Idotaccent.cv05</string>
+      <string>Idotbelow.cv05</string>
+      <string>Igrave.cv05</string>
+      <string>Ihookabove.cv05</string>
+      <string>Iinvertedbreve.cv05</string>
+      <string>Imacron.cv05</string>
+      <string>Iogonek.cv05</string>
+      <string>Itilde.cv05</string>
     </array>
   </dict>
 </plist>

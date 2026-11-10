@@ -94,6 +94,7 @@ These values are identical in every master and are enforced by `tests/test_metri
 - `ss01` swaps `g` only, `ss02` swaps `l` only, `salt` swaps both.
 - `cv01` (wider `J`), `cv03` (round `G`), `cv04` (single-storey `a`) and `cv05` (`I` with serifs) each swap their letter and its accented forms only. No feature changes default shaping, and `salt` stays `g` and `l`.
 - `cv03` is deliberately not a mirror of the bowl: the outer lower right is about 7% fuller than the lower left in the diagonal part, in every master, to make up for the stem the default `G` has and to keep the letter from looking as if it leans forward. Do not "correct" it to a mirror. The `cv04` step is the step of `q`, which has the same flat top at x-height.
+- The 14 `.cv05` letters (`I.cv05` and its accented forms) have their own kerning groups `public.kern1.Icv05` and `public.kern2.Icv05`, because the serifs reach into the side bearings. Each pair carries the plain `I` value plus the extra space that keeps the serifed pair within 20 units of the plain pair's closest ink distance; `tests/test_letter_alternates.py` fails if any pair with a letter touches or comes closer than 30 units.
 - U+1E9E is mapped and wider than `S`; U+00DF still maps to `germandbls`.
 - The ten `.tf` digits share one advance at every weight, static and variable (`tnum`).
 - Black and Black Italic `five` have no tiny smooth curve at the join between the diagonal and the bowl.
