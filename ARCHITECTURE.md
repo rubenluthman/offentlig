@@ -76,6 +76,8 @@ These values are identical in every master and are enforced by `tests/test_metri
 - Å Ä Ö å ä ö É é exist in every font.
 - The variable default is 400, and the default named instance has the same PostScript name as the font itself.
 - `Ǔ` (U+01D3) exists, so every cased letter has its counterpart (Fontspector `case_mapping`).
+- `™` (U+2122) and `℠` (U+2120) top out at cap height, within 20 units.
+- U+20BF (Bitcoin sign) is mapped in every font and has a 1400-wide tabular form under `tnum`.
 - The 20 pinyin letters of uswds/public-sans#258 (Ǎ Ǐ Ǒ Ǔ Ǖ Ǘ Ǚ Ǜ Ḿ Ǹ and lowercase) are mapped, keep the width of their base letter and rise above it; the tone mark of a stacked letter clears the diaeresis.
 - `M` and `m` take combining marks: base plus mark shapes to the same ink extents as the precomposed Ḿ ḿ Ǹ ǹ Ǎ Ǐ Ǒ ǎ ǐ ǒ.
 - The DIN 91379 letters that are composites of existing parts (Ĳ ĳ ŉ and the Latin Extended-A/B and Extended Additional letters listed in uswds/public-sans#277) are mapped and keep the advance of their base letter. U+0310, U+0315, U+0325, U+032E and U+0331 exist as zero-width marks.

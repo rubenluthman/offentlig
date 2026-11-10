@@ -707,6 +707,7 @@
       <string>nbspace</string>
       <string>CR</string>
       <string>.notdef</string>
+      <string>bitcoin</string>
       <string>cent</string>
       <string>colonsign</string>
       <string>currency</string>
@@ -722,6 +723,7 @@
       <string>sterling</string>
       <string>won</string>
       <string>yen</string>
+      <string>bitcoin.tf</string>
       <string>cent.tf</string>
       <string>colonsign.tf</string>
       <string>dollar.tf</string>
@@ -1288,6 +1290,10 @@
       <key>atilde</key>
       <string>base</string>
       <key>b</key>
+      <string>base</string>
+      <key>bitcoin</key>
+      <string>base</string>
+      <key>bitcoin.tf</key>
       <string>base</string>
       <key>brevecomb</key>
       <string>mark</string>

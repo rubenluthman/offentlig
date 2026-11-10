@@ -24,6 +24,7 @@ Offentlig Sans starts from Public Sans `develop` at `e40fcf567` and differs in t
 | Arrows `←` `↑` `→` `↓` `↖` `↗` `↘` `↙` | Missing | Added (U+2190 – U+2193 and U+2196 – U+2199), drawn by Wayne Shih for Public Sans |
 | Em dash (U+2014) | Wide side bearings (371 per side at Regular), and a `calt` substitution that breaks the spacing when the space after the dash sits in another element such as a link | Side bearings of the en dash (124 per side at Regular), and `calt` and `emdash.alt` removed |
 | Capital `A` before `m n r p h b` and similar letters | No kerning, so the gap is wider than before `o` | Kerned, never tighter than `A` before `o` |
+| Trademark `™` and service mark `℠`, Bitcoin sign `₿`, strokes of `$` and `¢` | Marks sit low, `₿` (U+20BF) missing, strokes of `$` and `¢` heavy in Bold and Black | Marks top out at cap height, `₿` added, and the `$` `¢` `₿` strokes are lighter (about 0.56 of the stem at Bold and 0.50 at Black) |
 | Stylistic sets | `ss01` switches both `g` and `l` | `ss01` switches `g`, `ss02` switches `l`, `salt` both |
 | Variable font default | Thin (100) | Regular (400) |
 

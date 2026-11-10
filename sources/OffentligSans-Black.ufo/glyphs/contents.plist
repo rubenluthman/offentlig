@@ -634,6 +634,10 @@
     <string>bar.glif</string>
     <key>bdotaccent</key>
     <string>bdotaccent.glif</string>
+    <key>bitcoin</key>
+    <string>bitcoin.glif</string>
+    <key>bitcoin.tf</key>
+    <string>bitcoin.tf.glif</string>
     <key>blinebelow</key>
     <string>blinebelow.glif</string>
     <key>braceleft</key>
