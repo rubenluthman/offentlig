@@ -10,6 +10,7 @@ import sys
 from pathlib import Path
 
 import uharfbuzz as hb
+from fontTools.pens.boundsPen import BoundsPen
 from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageFont
 
@@ -73,6 +74,22 @@ def draw_line(draw, style, text, size, x, baseline, fill):
         pen += pos.x_advance * scale
 
 
+def ink(style, text, size):
+    """Left and right ink edges of a shaped line, in pixels from its pen start."""
+    path, _, upem, _, order = font(style)
+    glyphs = TTFont(path).getGlyphSet()
+    infos, positions = shape(style, text)
+    scale, pen, edges = size / upem, 0, []
+    for info, pos in zip(infos, positions):
+        bounds = BoundsPen(glyphs)
+        glyphs[order[info.codepoint]].draw(bounds)
+        if bounds.bounds:
+            x_min, _, x_max, _ = bounds.bounds
+            edges += [pen + pos.x_offset + x_min, pen + pos.x_offset + x_max]
+        pen += pos.x_advance
+    return min(edges) * scale, max(edges) * scale
+
+
 def wrap(style, text, size, max_width):
     lines, line = [], ""
     for word in text.split():
@@ -134,28 +151,40 @@ def render(plan, page_width, page_height, out):
 
 
 def social():
-    """GitHub's recommended 1280 x 640, with wide side margins because some sites crop shared links to 1.91:1."""
+    """GitHub's recommended 1280 x 640, with wide side margins because some sites crop shared links to 1.91:1.
+
+    Every line is placed by its ink, not its advance, so all three share the same left edge, and the quote and the
+    weight row share the same right edge.
+    """
     page_width, page_height, side = 1280, 640, 140
     content = page_width - 2 * side
-    title_size = 104
+    title, title_size = "Offentlig Sans", 104
     quote = "Alla ska ha tillgång till naturen"
-    quote_size = fit("Regular", quote, content)
-    column = content / len(WEIGHTS)
-    sample_size = fit("Black", WEIGHT_SAMPLE, column * 0.86)
+    left, right = ink("Regular", quote, 1)
+    quote_size = content / (right - left)
+
+    # Weight row: the samples' ink spans the content width, with equal gaps between them.
+    sample_size = quote_size
+    while True:
+        spans = [ink(weight, WEIGHT_SAMPLE, sample_size) for weight in WEIGHTS]
+        gap = (content - sum(r - l for l, r in spans)) / (len(WEIGHTS) - 1)
+        if gap >= sample_size * 0.4:
+            break
+        sample_size -= 1
 
     # Baselines relative to the top of the block, then the block is centred vertically. Cap height is 0.723 em.
     y = 0.723 * title_size
-    rows = [("Bold", "Offentlig Sans", title_size, side, y)]
+    rows = [("Bold", title, title_size, side - ink("Bold", title, title_size)[0], y)]
     y += 0.723 * quote_size + 64
-    rows.append(("Regular", quote, quote_size, side, y))
+    rows.append(("Regular", quote, quote_size, side - left * quote_size, y))
     y += 0.723 * sample_size + 80
-    for i, weight in enumerate(WEIGHTS):
-        w = width(weight, WEIGHT_SAMPLE, sample_size)
-        rows.append((weight, WEIGHT_SAMPLE, sample_size, side + i * column + (column - w) / 2, y))
+    x = side
+    for weight, (l, r) in zip(WEIGHTS, spans):
+        rows.append((weight, WEIGHT_SAMPLE, sample_size, x - l, y))
+        x += (r - l) + gap
     top = (page_height - y) / 2
     plan = [("line", style, text, size, x, top + baseline, INK) for style, text, size, x, baseline in rows]
     render(plan, page_width, page_height, SOCIAL_OUT)
-
 
 if __name__ == "__main__":
     social() if "--social" in sys.argv[1:] else main()
