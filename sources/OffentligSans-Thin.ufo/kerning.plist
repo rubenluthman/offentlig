@@ -79,6 +79,8 @@
       <integer>-40</integer>
       <key>public.kern2.hyphen</key>
       <integer>-60</integer>
+      <key>public.kern2.n</key>
+      <integer>-20</integer>
       <key>public.kern2.o</key>
       <integer>-20</integer>
       <key>public.kern2.parenright</key>

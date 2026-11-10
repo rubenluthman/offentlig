@@ -33,7 +33,6 @@ feature onum;
 feature salt;
 feature ss01;
 feature ss02;
-feature calt;
 feature tnum;
 
 } aalt;
@@ -314,6 +313,3 @@ featureNames {
 
 } ss02;
 
-feature calt {
-sub space emdash' space by emdash.alt;
-} calt;

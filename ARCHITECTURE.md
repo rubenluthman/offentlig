@@ -70,6 +70,8 @@ These values are identical in every master and are enforced by `tests/test_metri
 - Italic and upright `å` differ from `ǻ`.
 - U+2080 – U+2089 map to the `.subs` glyphs.
 - A spaced en dash keeps both spaces at every weight.
+- The em dash has the en dash's side bearings, no `calt` feature exists, and an em dash between two spaces shapes the same whether or not the text is split into runs after the dash.
+- `A` is kerned against the stem-letter group (`m n r p h b`, accented n and r letters included) at every weight, in upright and italic, and never tighter than against `o` (`-20`, `-26`, `-38` in Thin, Regular, Black).
 - The `name` table uses Offentlig Sans as the family and never Public Sans.
 - Å Ä Ö å ä ö É é exist in every font.
 - The variable default is 400, and the default named instance has the same PostScript name as the font itself.
