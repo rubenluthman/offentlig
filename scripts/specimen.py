@@ -154,13 +154,13 @@ def social():
     """GitHub's recommended 1280 x 640, with wide side margins because some sites crop shared links to 1.91:1.
 
     Every line is placed by its ink, not its advance, so all three share the same left edge, and the quote and the
-    weight row share the same right edge.
+    weight row share the same right edge. The quote is set in italic, so both styles appear.
     """
     page_width, page_height, side = 1280, 640, 140
     content = page_width - 2 * side
     title, title_size = "Offentlig Sans", 104
     quote = "Alla ska ha tillgång till naturen"
-    left, right = ink("Regular", quote, 1)
+    left, right = ink("Italic", quote, 1)
     quote_size = content / (right - left)
 
     # Weight row: the samples' ink spans the content width, with equal gaps between them.
@@ -176,7 +176,7 @@ def social():
     y = 0.723 * title_size
     rows = [("Bold", title, title_size, side - ink("Bold", title, title_size)[0], y)]
     y += 0.723 * quote_size + 64
-    rows.append(("Regular", quote, quote_size, side - left * quote_size, y))
+    rows.append(("Italic", quote, quote_size, side - left * quote_size, y))
     y += 0.723 * sample_size + 80
     x = side
     for weight, (l, r) in zip(WEIGHTS, spans):
