@@ -7,7 +7,7 @@ Offentlig is a planned open-source font superfamily. Offentlig Sans is the first
 ## Offentlig Sans
 
 - Nine weights (Thin to Black) in upright and italic, plus variable fonts on the `wght` axis (default 400).
-- Stylistic sets: `ss01` selects an alternate `g`, `ss02` an alternate `l`, and `salt` both.
+- Stylistic sets: `ss01` selects an alternate `g`, `ss02` an alternate `l`, and `salt` both. Character variants: `cv01` a wider `J`, `cv03` a round `G` without spur, `cv04` a single-storey `a` and `cv05` an `I` with serifs; `cv01` and `cv05` also change `Ĳ`.
 - Oldstyle figures: the `onum` feature draws `0 1 2` at x-height, `3 4 5 7 9` hanging below the baseline and `6 8` at full height, in every weight and in the italic.
 - Capital sharp s ẞ (U+1E9E) is drawn as its own letter, about as wide as `H`, in every weight and in the italic. Uppercasing ß is unchanged and still produces SS.
 - Formats: OTF, TTF, variable TTF and WOFF2.
@@ -30,6 +30,7 @@ Offentlig Sans starts from Public Sans `develop` at `e40fcf567` and differs in t
 | Ring of `å Å ů Ů ǻ Ǻ` and italic diaeresis dots | The ring is thin in Regular to Black (stroke 0.35 of the `o` stroke at Black), and the italic dots sit closer together than in the upright | The ring is thicker with an open hole (Black stroke 82, hole 100 per 1000 em), and the italic dots are spaced like the upright |
 | Capital sharp s `ẞ` (U+1E9E) and Black `5` | No drawn `ẞ`, and the Black and Black Italic `5` has a small notch where the diagonal meets the bowl | `ẞ` drawn as its own letter, about as wide as `H`, in all weights and in the italic, and the Black `5` has a clean join |
 | Oldstyle figures (`onum`) | The `.osf` figures are components of the lining figures, so `onum` changes nothing visible | Each of the ten figures has its own oldstyle outline in every weight and in the italic |
+| Letter alternates `cv01`, `cv03`, `cv04`, `cv05` | None: `J` can read as `I` or `U`, `G` has a spur, `a` is double-storey only, and `I` has no serifs | Optional wide `J`, round `G`, single-storey `a` and serifed `I`, with their accented letters and `Ĳ`; default letters unchanged |
 | Stylistic sets | `ss01` switches both `g` and `l` | `ss01` switches `g`, `ss02` switches `l`, `salt` both |
 | Variable font default | Thin (100) | Regular (400) |
 
