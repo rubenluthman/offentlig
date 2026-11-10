@@ -69,3 +69,13 @@ def test_black_five_has_no_notch_curve():
         font = TTFont(static_path("Black", italic))
         pts = {tuple(round(v) for v in p) for p in decomposed_points(font, "five")}
         assert (440, 586) not in pts and (449, 586) not in pts
+
+
+def test_black_old_style_five_has_no_notch_curve():
+    """five.osf is a copy of five, so it carries the same fix: no tiny smooth curve at the diagonal-to-bowl join."""
+    from fontTools.ttLib import TTFont
+    for italic in (False, True):
+        font = TTFont(static_path("Black", italic))
+        pts = {(round(x), round(y)) for x, y in decomposed_points(font, "five.osf")}
+        assert (440, 205) not in pts and (391, 205) not in pts
+        assert (469, 191) not in pts and (418, 191) not in pts
