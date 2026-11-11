@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="dotaccentcomb.ss03" format="2">
   <anchor x="58" y="1034" name="_top"/>
+  <anchor x="58" y="1415" name="top"/>
   <outline>
     <contour>
       <point x="58.0" y="1326.0" type="curve" smooth="yes"/>

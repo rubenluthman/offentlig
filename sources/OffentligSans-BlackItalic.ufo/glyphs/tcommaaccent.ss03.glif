@@ -4,6 +4,7 @@
   <anchor x="425" y="18" name="bottom"/>
   <anchor x="675" y="1586" name="caron"/>
   <anchor x="429" y="516" name="center"/>
+  <anchor x="540.03254" y="1356" name="top"/>
   <outline>
     <component base="t"/>
     <component base="commaaccentcomb.ss03" xOffset="326" yOffset="18"/>

@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="dieresiscomb.ss03" format="2">
   <anchor x="339.75" y="1034.0" name="_top"/>
+  <anchor x="393.296" y="1436.454" name="top"/>
   <outline>
     <contour>
       <point x="552.8438" y="1267.2188" type="curve" smooth="yes"/>

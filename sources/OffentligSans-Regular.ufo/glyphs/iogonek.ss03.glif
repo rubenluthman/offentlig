@@ -2,7 +2,7 @@
 <glyph name="iogonek.ss03" format="2">
   <advance width="483.71875"/>
   <anchor x="308.65625" y="23.25" name="ogonek"/>
-  <anchor x="243.4375" y="1034.0" name="top"/>
+  <anchor x="243.4375" y="1436.454" name="top"/>
   <outline>
     <component base="idotless"/>
     <component base="dotaccentcomb.ss03" xOffset="139.375"/>

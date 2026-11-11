@@ -3,7 +3,7 @@
   <advance width="1088.15625"/>
   <anchor x="487.15625" y="0.0" name="bottom"/>
   <anchor x="688.03125" y="40.8125" name="ogonek"/>
-  <anchor x="628.9375" y="1034.0" name="top"/>
+  <anchor x="628.9375" y="1348.719" name="top"/>
   <outline>
     <component base="e"/>
     <component base="dotbelowcomb.ss03" xOffset="459.0625"/>

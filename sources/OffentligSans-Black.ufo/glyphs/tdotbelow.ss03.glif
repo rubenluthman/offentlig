@@ -4,6 +4,7 @@
   <anchor x="506" y="18" name="bottom"/>
   <anchor x="544" y="1586" name="caron"/>
   <anchor x="434" y="516" name="center"/>
+  <anchor x="424" y="1356" name="top"/>
   <outline>
     <component base="t"/>
     <component base="dotbelowcomb.ss03" xOffset="316" yOffset="18"/>

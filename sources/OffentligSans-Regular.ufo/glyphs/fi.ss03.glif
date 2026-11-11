@@ -3,6 +3,7 @@
   <advance width="1286.5625"/>
   <anchor x="1039.625" y="0.0" name="bottom_1"/>
   <anchor x="643.28125" y="0.0" name="caret_1"/>
+  <anchor x="414" y="1465.463" name="top"/>
   <outline>
     <component base="f"/>
     <component base="i.ss03" xOffset="792.03125"/>

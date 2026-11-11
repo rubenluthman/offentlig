@@ -129,3 +129,32 @@ def test_ss03_does_not_undo_letter_alternates(weight, italic):
     # letters the alternates do not touch still get round dots
     assert shape(path, "öÄ", {"ss03": True, "cv04": True})[0] == ["odieresis.ss03", "Adieresis.ss03"]
     assert shape(path, "1.5", {"ss03": True, "tnum": True})[0] == ["one.tf", "period.tf.ss03", "five.tf"]
+
+
+def last_mark_offset(path, text, features):
+    font = hb.Font(hb.Face(hb.Blob.from_file_path(str(path))))
+    buf = hb.Buffer()
+    buf.add_str(text)
+    buf.guess_segment_properties()
+    hb.shape(font, buf, features)
+    return buf.glyph_positions[-1].y_offset
+
+
+STACKS = [
+    "ä́", "Ä́", "ė́", "ÿ́", "ö́", "ǘ", "ḯ",
+    "ö̀", "ǜ", "ï̀", "ȫ", "ǖ", "ï̄", "ǟ",
+    "Ġ́", "ż́", "İ́", "Ë̀",
+]
+
+
+@pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
+def test_marks_stacked_on_round_dots_clear_the_dots(weight, italic):
+    """A second mark over a letter with a dot or diaeresis sits at least as high with `ss03` as without, so it never lands on the (larger) round dots."""
+    path = static_path(weight, italic)
+    for text in STACKS:
+        off = last_mark_offset(path, text, {})
+        on = last_mark_offset(path, text, {"ss03": True})
+        # a stack the font composes into one glyph (ü + acute is ǘ) has no second mark to place
+        assert on >= off, (text, off, on)
+        if text in ("\u00e4\u0301", "\u00c4\u0301", "\u0117\u0301", "\u00ff\u0301", "\u00f6\u0300"):
+            assert off > 0, text

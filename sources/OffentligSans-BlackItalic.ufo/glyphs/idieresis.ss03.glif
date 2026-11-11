@@ -2,7 +2,7 @@
 <glyph name="idieresis.ss03" format="2">
   <advance width="600"/>
   <anchor x="363" y="18" name="ogonek"/>
-  <anchor x="385" y="1034" name="top"/>
+  <anchor x="385" y="1449.92" name="top"/>
   <outline>
     <component base="idotless"/>
     <component base="dieresiscomb.ss03" xOffset="-149"/>
