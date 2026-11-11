@@ -9,8 +9,8 @@
   <anchor x="1130.21875" y="921.5625" name="topright"/>
   <outline>
     <component base="u" xOffset="0.65625"/>
-    <component base="__horn" xOffset="904.21875" yOffset="-138.4375"/>
-    <component base="acutecomb" xOffset="468.125"/>
+    <component base="__horn" xOffset="883.2" yOffset="-138.4375"/>
+    <component base="acutecomb" xOffset="457"/>
   </outline>
   <lib>
     <dict>

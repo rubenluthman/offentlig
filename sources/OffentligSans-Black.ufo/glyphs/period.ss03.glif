@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="period.ss03" format="2">
+  <advance width="620"/>
+  <outline>
+    <contour>
+      <point x="295.0" y="-23.52" type="curve" smooth="yes"/>
+      <point x="416.2375" y="-23.52"/>
+      <point x="514.52" y="74.7625"/>
+      <point x="514.52" y="196.0" type="curve" smooth="yes"/>
+      <point x="514.52" y="317.2375"/>
+      <point x="416.2375" y="415.52"/>
+      <point x="295.0" y="415.52" type="curve" smooth="yes"/>
+      <point x="173.7625" y="415.52"/>
+      <point x="75.48" y="317.2375"/>
+      <point x="75.48" y="196.0" type="curve" smooth="yes"/>
+      <point x="75.48" y="74.7625"/>
+      <point x="173.7625" y="-23.52"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,4 +1,4 @@
-# No Reserved Font Name
+# No reserved font name
 Status: Active · 2026-11-09
 
 ## Decision

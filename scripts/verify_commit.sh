@@ -1,15 +1,21 @@
 #!/bin/sh
-# Pre-commit verification: tests, relative Markdown links, house style (Vale), absolute home paths and secrets.
+# Pre-commit verification: tests, relative Markdown links, house style (Vale), conflict markers, absolute home paths and secrets.
 set -eu
 cd "$(dirname "$0")/.."
 fail=0
 
 echo "== tests"
-if [ -d fonts/OffentligSans/ttf ]; then
-  PATH="$PWD/venv/bin:$PATH" pytest -q tests || fail=1
-else
+built=fonts/OffentligSans/ttf/OffentligSans-Regular.ttf
+if [ ! -f "$built" ]; then
   echo "fonts/ missing: run 'make build' first" >&2
   fail=1
+elif [ -n "$(git ls-files -z --cached --others --exclude-standard sources | xargs -0 sh -c 'find "$@" -prune -newer "$0" 2>/dev/null' "$built" | head -n 1)" ]; then
+  # The tests read the built fonts, so a build older than sources/ reports false failures.
+  # Only source files count: the build writes ignored files (build.ninja, instance_ufos/) into sources/.
+  echo "fonts/ is older than sources/: run 'make build' first" >&2
+  fail=1
+else
+  PATH="$PWD/venv/bin:$PATH" pytest -q tests || fail=1
 fi
 
 files=$(git ls-files --cached --others --exclude-standard)
@@ -25,6 +31,9 @@ done
 
 echo "== house style (Vale)"
 ./scripts/check_prose.sh || fail=1
+
+echo "== conflict markers"
+./scripts/check_conflict_markers.sh || fail=1
 
 echo "== absolute home paths and secrets"
 if echo "$files" | grep -v '^scripts/verify_commit.sh$' | xargs grep -I -n -E '/Users/[A-Za-z0-9_.-]+|/home/[A-Za-z0-9_.-]+|gh[pousr]_[A-Za-z0-9]{20,}|AKIA[0-9A-Z]{16}|BEGIN (RSA |OPENSSH |EC )?PRIVATE KEY|sk-[A-Za-z0-9]{20,}' ; then
