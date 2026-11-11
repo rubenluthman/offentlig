@@ -78,6 +78,7 @@ These values are identical in every master and are enforced by `tests/test_metri
 
 - Italic and upright `å` differ from `ǻ`.
 - U+2080 – U+2089 map to the `.subs` glyphs.
+- U+207A – U+207E and U+208A – U+208E (superscript and subscript `+ − = ( )`) map to `plussuperior` and the other `*superior` glyphs and to `plus.subs` and the other `.subs` glyphs, which are the base sign scaled 0.629 and raised like the figures; `sups`, `subs` and `sinf` substitute them.
 - A spaced en dash keeps both spaces at every weight.
 - The em dash has the en dash's side bearings, no `calt` feature exists, and an em dash between two spaces shapes the same whether or not the text is split into runs after the dash.
 - `A` is kerned against the stem-letter group (`m n r p h b`, accented n and r letters included) at every weight, in upright and italic, and never tighter than against `o` (`-20`, `-26`, `-38` in Thin, Regular, Black).
