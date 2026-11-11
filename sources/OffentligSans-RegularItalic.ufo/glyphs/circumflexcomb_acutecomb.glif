@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="circumflexcomb_acutecomb" format="2">
   <anchor x="377.375" y="1034.0" name="_top"/>
+  <anchor x="450.07" y="1551.25" name="top"/>
   <outline>
     <contour>
       <point x="99.5625" y="1155.0" type="line"/>

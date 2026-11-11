@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="adieresismacron" format="2">
+  <advance width="1157"/>
+  <unicode hex="01DF"/>
+  <anchor x="597" y="0" name="bottom"/>
+  <anchor x="1011" y="20" name="ogonek"/>
+  <anchor x="604" y="1766" name="top"/>
+  <outline>
+    <component base="a"/>
+    <component base="dieresiscomb" xOffset="145"/>
+    <component base="macroncomb" xOffset="162" yOffset="381"/>
+  </outline>
+</glyph>

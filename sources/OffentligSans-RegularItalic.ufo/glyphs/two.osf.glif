@@ -1,7 +1,33 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="two.osf" format="2">
-  <advance width="1148.03125"/>
+  <advance width="1148.031"/>
   <outline>
-    <component base="two"/>
+    <contour>
+      <point x="50" y="0" type="line"/>
+      <point x="975.531" y="0" type="line"/>
+      <point x="992.015" y="115" type="line"/>
+      <point x="267.515" y="115" type="line"/>
+      <point x="270.221" y="135.116" type="line" smooth="yes"/>
+      <point x="308.327" y="405.543"/>
+      <point x="1021.015" y="373.89"/>
+      <point x="1071.851" y="735.534" type="curve" smooth="yes"/>
+      <point x="1096.407" y="907.213"/>
+      <point x="939.972" y="1054"/>
+      <point x="662.066" y="1054" type="curve" smooth="yes"/>
+      <point x="340.597" y="1054"/>
+      <point x="148.421" y="878.389"/>
+      <point x="119.71" y="704.142" type="curve"/>
+      <point x="298.678" y="704.142" type="line"/>
+      <point x="330.605" y="828.405"/>
+      <point x="456.668" y="908.562"/>
+      <point x="634.855" y="908.562" type="curve" smooth="yes"/>
+      <point x="799.918" y="908.562"/>
+      <point x="895.307" y="838.376"/>
+      <point x="881.072" y="735.49" type="curve" smooth="yes"/>
+      <point x="842.372" y="463.539"/>
+      <point x="117.526" y="481.956"/>
+      <point x="67.319" y="120.747" type="curve" smooth="yes"/>
+      <point x="61.395" y="79.285" type="line"/>
+    </contour>
   </outline>
 </glyph>

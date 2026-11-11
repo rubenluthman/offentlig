@@ -33,7 +33,13 @@ feature onum;
 feature salt;
 feature ss01;
 feature ss02;
-feature calt;
+feature ss03;
+feature cv01;
+feature cv03;
+feature cv04;
+feature cv05;
+feature cv06;
+feature zero;
 feature tnum;
 
 } aalt;
@@ -41,8 +47,8 @@ feature tnum;
 feature ccmp {
 # automatic
 lookup ccmp_Other_1 {
-	@CombiningTopAccents = [acutecomb brevecomb breveinvertedcomb caroncomb circumflexcomb commaturnedabovecomb dblgravecomb dieresiscomb dotaccentcomb gravecomb hookabovecomb hungarumlautcomb macroncomb ringcomb tildecomb];
-	@CombiningNonTopAccents = [cedillacomb dotbelowcomb ogonekcomb horncomb];
+	@CombiningTopAccents = [acutecomb brevecomb breveinvertedcomb candrabinducomb caroncomb circumflexcomb commaaboverightcomb commaturnedabovecomb dblgravecomb dieresiscomb dotaccentcomb gravecomb hookabovecomb hungarumlautcomb macroncomb ringcomb tildecomb verticallineabovecomb];
+	@CombiningNonTopAccents = [brevebelowcomb cedillacomb dblmacronbelowcomb dotbelowcomb macronbelowcomb ogonekcomb ringbelowcomb horncomb];
 	sub [i j]' @CombiningTopAccents by [idotless jdotless];
 	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
 } ccmp_Other_1;
@@ -222,6 +228,7 @@ sub eight.tf by eight;
 sub nine.tf by nine;
 sub period.tf by period;
 sub comma.tf by comma;
+sub bitcoin.tf by bitcoin;
 sub cent.tf by cent;
 sub colonsign.tf by colonsign;
 sub dollar.tf by dollar;
@@ -251,6 +258,7 @@ sub eight by eight.tf;
 sub nine by nine.tf;
 sub period by period.tf;
 sub comma by comma.tf;
+sub bitcoin by bitcoin.tf;
 sub cent by cent.tf;
 sub colonsign by colonsign.tf;
 sub dollar by dollar.tf;
@@ -314,35 +322,258 @@ featureNames {
 
 } ss02;
 
-feature calt {
-sub space emdash' space by emdash.alt;
-} calt;
-
-feature tnum {
+feature cv01 {
 # automatic
-sub zero by zero.tf;
-sub one by one.tf;
-sub two by two.tf;
-sub three by three.tf;
-sub four by four.tf;
-sub five by five.tf;
-sub six by six.tf;
-sub seven by seven.tf;
-sub eight by eight.tf;
-sub nine by nine.tf;
-sub period by period.tf;
-sub comma by comma.tf;
-sub cent by cent.tf;
-sub colonsign by colonsign.tf;
-sub dollar by dollar.tf;
-sub dong by dong.tf;
-sub euro by euro.tf;
-sub florin by florin.tf;
-sub franc by franc.tf;
-sub lira by lira.tf;
-sub liraTurkish by liraTurkish.tf;
-sub rupeeIndian by rupeeIndian.tf;
-sub sterling by sterling.tf;
-sub yen by yen.tf;
+sub J by J.cv01;
+sub Jcircumflex by Jcircumflex.cv01;
+sub IJ by IJ.cv01;
+sub IJ.cv05 by IJ.cv01.cv05;
+cvParameters {
+    FeatUILabelNameID {
+        name "Wider J";
+    };
+    FeatUITooltipTextNameID {
+        name "A J with a longer hook and a wider bowl, so it is harder to mistake for I or U";
+    };
+    SampleTextNameID {
+        name "Jag gjorde jobbet";
+    };
+};
 
-} tnum;
+} cv01;
+
+feature cv03 {
+# automatic
+sub G by G.cv03;
+sub Gbreve by Gbreve.cv03;
+sub Gcircumflex by Gcircumflex.cv03;
+sub Gcommaaccent by Gcommaaccent.cv03;
+sub Gdotaccent by Gdotaccent.cv03;
+cvParameters {
+    FeatUILabelNameID {
+        name "G without spur";
+    };
+    FeatUITooltipTextNameID {
+        name "The G has no spur: bowl and right edge are one curve";
+    };
+    SampleTextNameID {
+        name "Göteborg Gnesta GIG";
+    };
+};
+
+} cv03;
+
+feature cv04 {
+# automatic
+sub a by a.cv04;
+sub aacute by aacute.cv04;
+sub abreve by abreve.cv04;
+sub abreveacute by abreveacute.cv04;
+sub abrevedotbelow by abrevedotbelow.cv04;
+sub abrevegrave by abrevegrave.cv04;
+sub abrevehookabove by abrevehookabove.cv04;
+sub abrevetilde by abrevetilde.cv04;
+sub acircumflex by acircumflex.cv04;
+sub acircumflexacute by acircumflexacute.cv04;
+sub acircumflexdotbelow by acircumflexdotbelow.cv04;
+sub acircumflexgrave by acircumflexgrave.cv04;
+sub acircumflexhookabove by acircumflexhookabove.cv04;
+sub acircumflextilde by acircumflextilde.cv04;
+sub adblgrave by adblgrave.cv04;
+sub adieresis by adieresis.cv04;
+sub adotbelow by adotbelow.cv04;
+sub agrave by agrave.cv04;
+sub ahookabove by ahookabove.cv04;
+sub ainvertedbreve by ainvertedbreve.cv04;
+sub amacron by amacron.cv04;
+sub aogonek by aogonek.cv04;
+sub aring by aring.cv04;
+sub aringacute by aringacute.cv04;
+sub atilde by atilde.cv04;
+cvParameters {
+    FeatUILabelNameID {
+        name "Single-storey a";
+    };
+    FeatUITooltipTextNameID {
+        name "A one-storey a with a straight stem on the right";
+    };
+    SampleTextNameID {
+        name "Alla ska ha tillgång";
+    };
+};
+
+} cv04;
+
+feature cv05 {
+# automatic
+sub I by I.cv05;
+sub Iacute by Iacute.cv05;
+sub Ibreve by Ibreve.cv05;
+sub Icircumflex by Icircumflex.cv05;
+sub Idblgrave by Idblgrave.cv05;
+sub Idieresis by Idieresis.cv05;
+sub Idotaccent by Idotaccent.cv05;
+sub Idotbelow by Idotbelow.cv05;
+sub Igrave by Igrave.cv05;
+sub Ihookabove by Ihookabove.cv05;
+sub Iinvertedbreve by Iinvertedbreve.cv05;
+sub Imacron by Imacron.cv05;
+sub Iogonek by Iogonek.cv05;
+sub Itilde by Itilde.cv05;
+sub IJ by IJ.cv05;
+sub IJ.cv01 by IJ.cv01.cv05;
+cvParameters {
+    FeatUILabelNameID {
+        name "I with serifs";
+    };
+    FeatUITooltipTextNameID {
+        name "A capital I with slab serifs, to tell it from l and 1";
+    };
+    SampleTextNameID {
+        name "Illa Ivar Iris";
+    };
+};
+
+} cv05;
+
+feature zero {
+# automatic
+sub zero by zero.slash;
+sub zero.tf by zero.slash.tf;
+sub zero.osf by zero.slash.osf;
+
+} zero;
+
+feature cv06 {
+# automatic
+sub one by one.cv06;
+sub one.osf by one.cv06.osf;
+cvParameters {
+    FeatUILabelNameID {
+        name "1 with base";
+    };
+    FeatUITooltipTextNameID {
+        name "A digit 1 with a short base, to tell it from I and l";
+    };
+    SampleTextNameID {
+        name "Il1 11 2026";
+    };
+};
+
+} cv06;
+
+feature ss03 {
+# automatic
+sub Abrevedotbelow by Abrevedotbelow.ss03;
+sub Acircumflexdotbelow by Acircumflexdotbelow.ss03;
+sub Adieresis by Adieresis.ss03;
+sub Adotbelow by Adotbelow.ss03;
+sub Cdotaccent by Cdotaccent.ss03;
+sub Ddotbelow by Ddotbelow.ss03;
+sub Ecircumflexdotbelow by Ecircumflexdotbelow.ss03;
+sub Edieresis by Edieresis.ss03;
+sub Edotaccent by Edotaccent.ss03;
+sub Edotbelow by Edotbelow.ss03;
+sub Gcommaaccent by Gcommaaccent.ss03;
+sub Gdotaccent by Gdotaccent.ss03;
+sub Hdotbelow by Hdotbelow.ss03;
+sub Idieresis by Idieresis.ss03;
+sub Idotaccent by Idotaccent.ss03;
+sub Idotbelow by Idotbelow.ss03;
+sub Kcommaaccent by Kcommaaccent.ss03;
+sub Lcommaaccent by Lcommaaccent.ss03;
+sub Ldot by Ldot.ss03;
+sub Ncommaaccent by Ncommaaccent.ss03;
+sub Ndotaccent by Ndotaccent.ss03;
+sub Ocircumflexdotbelow by Ocircumflexdotbelow.ss03;
+sub Odieresis by Odieresis.ss03;
+sub Odotbelow by Odotbelow.ss03;
+sub Ohorndotbelow by Ohorndotbelow.ss03;
+sub Rcommaaccent by Rcommaaccent.ss03;
+sub Rdotbelow by Rdotbelow.ss03;
+sub Scommaaccent by Scommaaccent.ss03;
+sub Sdotbelow by Sdotbelow.ss03;
+sub Tcommaaccent by Tcommaaccent.ss03;
+sub Tdotbelow by Tdotbelow.ss03;
+sub Udieresis by Udieresis.ss03;
+sub Udotbelow by Udotbelow.ss03;
+sub Uhorndotbelow by Uhorndotbelow.ss03;
+sub Wdieresis by Wdieresis.ss03;
+sub Ydieresis by Ydieresis.ss03;
+sub Ydotbelow by Ydotbelow.ss03;
+sub Zdotaccent by Zdotaccent.ss03;
+sub Zdotbelow by Zdotbelow.ss03;
+sub abrevedotbelow by abrevedotbelow.ss03;
+sub acircumflexdotbelow by acircumflexdotbelow.ss03;
+sub adieresis by adieresis.ss03;
+sub adotbelow by adotbelow.ss03;
+sub cdotaccent by cdotaccent.ss03;
+sub colon by colon.ss03;
+sub comma by comma.ss03;
+sub comma.tf by comma.tf.ss03;
+sub commaaccentcomb by commaaccentcomb.ss03;
+sub commaturnedabovecomb by commaturnedabovecomb.ss03;
+sub ddotbelow by ddotbelow.ss03;
+sub dieresis by dieresis.ss03;
+sub dieresiscomb by dieresiscomb.ss03;
+sub divide by divide.ss03;
+sub dotaccent by dotaccent.ss03;
+sub dotaccentcomb by dotaccentcomb.ss03;
+sub dotbelowcomb by dotbelowcomb.ss03;
+sub ecircumflexdotbelow by ecircumflexdotbelow.ss03;
+sub edieresis by edieresis.ss03;
+sub edotaccent by edotaccent.ss03;
+sub edotbelow by edotbelow.ss03;
+sub ellipsis by ellipsis.ss03;
+sub exclam by exclam.ss03;
+sub exclamdown by exclamdown.ss03;
+sub fi by fi.ss03;
+sub gcommaaccent by gcommaaccent.ss03;
+sub gdotaccent by gdotaccent.ss03;
+sub hdotbelow by hdotbelow.ss03;
+sub i by i.ss03;
+sub idieresis by idieresis.ss03;
+sub idotaccent by idotaccent.ss03;
+sub idotbelow by idotbelow.ss03;
+sub iogonek by iogonek.ss03;
+sub j by j.ss03;
+sub kcommaaccent by kcommaaccent.ss03;
+sub lcommaaccent by lcommaaccent.ss03;
+sub ldot by ldot.ss03;
+sub ncommaaccent by ncommaaccent.ss03;
+sub ndotaccent by ndotaccent.ss03;
+sub ocircumflexdotbelow by ocircumflexdotbelow.ss03;
+sub odieresis by odieresis.ss03;
+sub odotbelow by odotbelow.ss03;
+sub ohorndotbelow by ohorndotbelow.ss03;
+sub period by period.ss03;
+sub period.tf by period.tf.ss03;
+sub periodcentered by periodcentered.ss03;
+sub question by question.ss03;
+sub questiondown by questiondown.ss03;
+sub quotedblbase by quotedblbase.ss03;
+sub quotedblleft by quotedblleft.ss03;
+sub quotedblright by quotedblright.ss03;
+sub quoteleft by quoteleft.ss03;
+sub quoteright by quoteright.ss03;
+sub quotesinglbase by quotesinglbase.ss03;
+sub rcommaaccent by rcommaaccent.ss03;
+sub rdotbelow by rdotbelow.ss03;
+sub scommaaccent by scommaaccent.ss03;
+sub sdotbelow by sdotbelow.ss03;
+sub semicolon by semicolon.ss03;
+sub tcommaaccent by tcommaaccent.ss03;
+sub tdotbelow by tdotbelow.ss03;
+sub udieresis by udieresis.ss03;
+sub udotbelow by udotbelow.ss03;
+sub uhorndotbelow by uhorndotbelow.ss03;
+sub wdieresis by wdieresis.ss03;
+sub ydieresis by ydieresis.ss03;
+sub ydotbelow by ydotbelow.ss03;
+sub zdotaccent by zdotaccent.ss03;
+sub zdotbelow by zdotbelow.ss03;
+featureNames {
+    name "Round dots";
+};
+
+} ss03;

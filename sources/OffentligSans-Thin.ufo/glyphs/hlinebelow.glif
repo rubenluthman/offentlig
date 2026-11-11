@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hlinebelow" format="2">
+  <advance width="1122"/>
+  <unicode hex="1E96"/>
+  <anchor x="592" y="0" name="bottom"/>
+  <anchor x="216" y="1446" name="top"/>
+  <outline>
+    <component base="h"/>
+    <component base="macronbelowcomb" xOffset="328"/>
+  </outline>
+</glyph>

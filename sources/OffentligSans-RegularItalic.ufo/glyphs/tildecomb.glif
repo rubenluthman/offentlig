@@ -2,28 +2,29 @@
 <glyph name="tildecomb" format="2">
   <unicode hex="0303"/>
   <anchor x="396.875" y="1034.0" name="_top"/>
+  <anchor x="444.022" y="1369.46875" name="top"/>
   <outline>
     <contour>
-      <point x="173.3125" y="1222.53125" type="line"/>
-      <point x="217.0625" y="1252.90625"/>
-      <point x="253.1875" y="1278.78125"/>
-      <point x="315.9375" y="1278.78125" type="curve" smooth="yes"/>
-      <point x="402.3125" y="1278.78125"/>
-      <point x="448.8125" y="1226.65625"/>
-      <point x="549.0625" y="1226.65625" type="curve" smooth="yes"/>
-      <point x="628.625" y="1226.65625"/>
-      <point x="686.5" y="1258.78125"/>
-      <point x="723.4375" y="1285.03125" type="curve"/>
-      <point x="708.1875" y="1400.46875" type="line"/>
-      <point x="666.75" y="1371.03125"/>
-      <point x="623.5625" y="1344.71875"/>
-      <point x="567.25" y="1344.71875" type="curve" smooth="yes"/>
-      <point x="483.125" y="1344.71875"/>
-      <point x="417.9375" y="1400.21875"/>
-      <point x="324.8125" y="1400.21875" type="curve" smooth="yes"/>
-      <point x="251.0" y="1400.21875"/>
-      <point x="203.375" y="1366.65625"/>
-      <point x="154.5" y="1323.09375" type="curve"/>
+      <point x="173.312" y="1223" type="line"/>
+      <point x="217.062" y="1261"/>
+      <point x="253.188" y="1293"/>
+      <point x="315.938" y="1293" type="curve" smooth="yes"/>
+      <point x="402.312" y="1293"/>
+      <point x="448.812" y="1228"/>
+      <point x="549.062" y="1228" type="curve" smooth="yes"/>
+      <point x="628.625" y="1228"/>
+      <point x="686.5" y="1268"/>
+      <point x="723.438" y="1301" type="curve"/>
+      <point x="708.188" y="1416" type="line"/>
+      <point x="666.75" y="1379"/>
+      <point x="623.562" y="1346"/>
+      <point x="567.25" y="1346" type="curve" smooth="yes"/>
+      <point x="483.125" y="1346"/>
+      <point x="417.938" y="1416"/>
+      <point x="324.812" y="1416" type="curve" smooth="yes"/>
+      <point x="251" y="1416"/>
+      <point x="203.375" y="1374"/>
+      <point x="154.5" y="1319" type="curve"/>
     </contour>
   </outline>
   <lib>
