@@ -2,6 +2,7 @@
 <glyph name="dblgravecomb" format="2">
   <unicode hex="030F"/>
   <anchor x="691" y="1034" name="_top"/>
+  <anchor x="691" y="1415" name="top"/>
   <outline>
     <contour>
       <point x="340" y="1155" type="line"/>

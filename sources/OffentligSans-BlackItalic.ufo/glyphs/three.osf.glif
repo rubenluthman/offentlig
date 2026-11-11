@@ -2,6 +2,48 @@
 <glyph name="three.osf" format="2">
   <advance width="1394"/>
   <outline>
-    <component base="three"/>
+    <contour>
+      <point x="536.097" y="-350" type="curve" smooth="yes"/>
+      <point x="877.097" y="-350"/>
+      <point x="1199.097" y="-210"/>
+      <point x="1242.097" y="74.755" type="curve" smooth="yes"/>
+      <point x="1270.097" y="250.618"/>
+      <point x="1135.097" y="348.618"/>
+      <point x="1006.097" y="384.49" type="curve"/>
+      <point x="1200.097" y="446.166"/>
+      <point x="1283.097" y="550.166"/>
+      <point x="1303.097" y="663.07" type="curve" smooth="yes"/>
+      <point x="1344.097" y="940"/>
+      <point x="1097.097" y="1054"/>
+      <point x="753.097" y="1054" type="curve" smooth="yes"/>
+      <point x="414.097" y="1054"/>
+      <point x="135.097" y="906"/>
+      <point x="87.097" y="603.333" type="curve"/>
+      <point x="453.097" y="603.333" type="line"/>
+      <point x="491.097" y="722"/>
+      <point x="579.097" y="762"/>
+      <point x="701.097" y="762" type="curve" smooth="yes"/>
+      <point x="806.097" y="762"/>
+      <point x="901.097" y="724"/>
+      <point x="889.097" y="650.287" type="curve" smooth="yes"/>
+      <point x="876.097" y="583.892"/>
+      <point x="802.097" y="536.166"/>
+      <point x="677.097" y="526.166" type="curve" smooth="yes"/>
+      <point x="549.097" y="516.166" type="line"/>
+      <point x="507.097" y="216.618" type="line"/>
+      <point x="651.097" y="208.618" type="line" smooth="yes"/>
+      <point x="774.097" y="202.618"/>
+      <point x="842.097" y="143.716"/>
+      <point x="831.097" y="85.989" type="curve" smooth="yes"/>
+      <point x="818.097" y="19.518"/>
+      <point x="727.097" y="-44"/>
+      <point x="579.097" y="-44" type="curve" smooth="yes"/>
+      <point x="477.097" y="-44"/>
+      <point x="392.097" y="-4"/>
+      <point x="384.097" y="114.339" type="curve"/>
+      <point x="16.097" y="114.339" type="line"/>
+      <point x="-27.903" y="-166"/>
+      <point x="144.097" y="-350"/>
+    </contour>
   </outline>
 </glyph>

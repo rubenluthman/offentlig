@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="gstroke" format="2">
+  <advance width="1189.344"/>
+  <unicode hex="01E5"/>
+  <anchor x="650.031" y="1032" name="top"/>
+  <outline>
+    <contour>
+      <point x="802.017" y="462.719" type="line"/>
+      <point x="1103.665" y="462.719" type="line"/>
+      <point x="1102.98" y="571.281" type="line"/>
+      <point x="800.439" y="571.281" type="line"/>
+    </contour>
+    <component base="g.ss01"/>
+  </outline>
+</glyph>

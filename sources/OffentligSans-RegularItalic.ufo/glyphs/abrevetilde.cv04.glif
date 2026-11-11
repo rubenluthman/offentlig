@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="abrevetilde.cv04" format="2">
+  <advance width="1171.8125"/>
+  <anchor x="484.75" y="0.0" name="bottom"/>
+  <anchor x="906.03125" y="25.25" name="ogonek"/>
+  <anchor x="618.421135384416" y="1034.0" name="top"/>
+  <outline>
+    <component base="a.cv04"/>
+    <component base="brevecomb_tildecomb" xOffset="235"/>
+  </outline>
+</glyph>

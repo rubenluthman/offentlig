@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="aringacute.cv04" format="2">
+  <advance width="1090.0"/>
+  <anchor x="449" y="0" name="bottom"/>
+  <anchor x="850.0" y="28" name="ogonek"/>
+  <anchor x="590.7920725072684" y="1034" name="top"/>
+  <outline>
+    <component base="a.cv04"/>
+    <component base="_ringacute" xOffset="-152.20792749273164"/>
+  </outline>
+</glyph>

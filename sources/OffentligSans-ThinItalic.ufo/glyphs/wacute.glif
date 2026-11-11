@@ -2,7 +2,7 @@
 <glyph name="wacute" format="2">
   <advance width="1430"/>
   <unicode hex="1E83"/>
-  <anchor x="796" y="1034" name="top"/>
+  <anchor x="849.546" y="1415" name="top"/>
   <outline>
     <component base="w"/>
     <component base="acutecomb" xOffset="652"/>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="semicolon.ss03" format="2">
+  <advance width="475.5625"/>
+  <outline>
+    <contour>
+      <point x="-2.75" y="-285.375" type="line"/>
+      <point x="74.4375" y="-285.375" type="line"/>
+      <point x="276.1463" y="33.9945" type="line"/>
+      <point x="312.7939" y="72.1829"/>
+      <point x="320.0106" y="129.9061"/>
+      <point x="293.8929" y="175.9416" type="curve" smooth="yes"/>
+      <point x="267.7751" y="221.9771"/>
+      <point x="214.5242" y="245.3946"/>
+      <point x="162.9434" y="233.5276" type="curve" smooth="yes"/>
+      <point x="111.3626" y="221.6606"/>
+      <point x="73.699" y="177.3267"/>
+      <point x="70.3247" y="124.5061" type="curve" smooth="yes"/>
+      <point x="66.9505" y="71.6855"/>
+      <point x="98.6667" y="22.9195"/>
+      <point x="148.3182" y="4.5856" type="curve"/>
+    </contour>
+    <contour>
+      <point x="292.1562" y="752.175" type="curve" smooth="yes"/>
+      <point x="358.2647" y="752.175"/>
+      <point x="411.8563" y="805.7665"/>
+      <point x="411.8563" y="871.875" type="curve" smooth="yes"/>
+      <point x="411.8563" y="937.9835"/>
+      <point x="358.2647" y="991.575"/>
+      <point x="292.1562" y="991.575" type="curve" smooth="yes"/>
+      <point x="226.0478" y="991.575"/>
+      <point x="172.4562" y="937.9835"/>
+      <point x="172.4562" y="871.875" type="curve" smooth="yes"/>
+      <point x="172.4562" y="805.7665"/>
+      <point x="226.0478" y="752.175"/>
+    </contour>
+  </outline>
+</glyph>
