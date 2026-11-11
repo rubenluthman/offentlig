@@ -68,10 +68,11 @@ These values are identical in every master and are enforced by `tests/test_metri
 | `cv03` | Round `G` without spur, with its accented forms |
 | `cv04` | Single-storey `a`, with its accented forms |
 | `cv05` | `I` with serifs, with its accented forms and the Ĳ forms that use it |
+| `ss03` | Round dots in place of the square ones: `i`, `j`, the dot accents and diaeresis with every letter built on them, `. : ; ! ? ¡ ¿ ÷ …` and the comma heads (108 `.ss03` glyphs). It runs after the `cv` features, so a letter alternate such as `a` with `cv04` keeps its form and its square dots |
 | `cv06` | `1` with a base (`one.cv06`, `one.cv06.osf`); the tabular `1` already has its own base |
 | `zero` | Slashed `0` (`zero.slash`, `zero.slash.tf`, `zero.slash.osf`) |
 | `onum` | Oldstyle figures: `0 1 2` at x-height, `3 4 5 7 9` hanging below the baseline, `6 8` at full height (`zero.osf` to `nine.osf`) |
-| `aalt` | Collects every single-substitution feature in the font (`locl`, `subs`, `sinf`, `sups`, `numr`, `dnom`, `frac`, `ordn`, `lnum`, `pnum`, `tnum`, `onum`, `salt`, `ss01`, `ss02`, `cv01`, `cv03`, `cv04`, `cv05`, `cv06`, `zero`) |
+| `aalt` | Collects every single-substitution feature in the font (`locl`, `subs`, `sinf`, `sups`, `numr`, `dnom`, `frac`, `ordn`, `lnum`, `pnum`, `tnum`, `onum`, `salt`, `ss01`, `ss02`, `ss03`, `cv01`, `cv03`, `cv04`, `cv05`, `cv06`, `zero`) |
 
 ## Invariants enforced by tests
 
