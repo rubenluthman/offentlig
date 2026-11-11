@@ -3,6 +3,8 @@
 Each is the base sign as a component scaled like the figures (0.629) and raised like them: the superscript sits at the height of a
 superscript figure, the subscript at the height of a subscript figure.
 """
+import math
+
 import pytest
 import uharfbuzz as hb
 from fontTools.pens.boundsPen import BoundsPen
@@ -82,6 +84,25 @@ def test_sign_advance_is_narrower_than_the_sign_and_sits_like_a_figure(weight, i
     # a raised italic figure leans right of the centre of its advance by about its rise times tan 8 degrees: the sign must lean alike
     assert offset(supname) == pytest.approx(offset(cmap[0xB2]), abs=35)
     assert offset(base + ".subs") == pytest.approx(offset(cmap[0x2082]), abs=35)
+
+
+@pytest.mark.parametrize("char,base,usup,usub,supname", SIGNS, ids=IDS)
+@pytest.mark.parametrize("weight", [w for w, i in STATICS if i])
+def test_italic_signs_lean_like_the_figures(weight, char, base, usup, usub, supname):
+    """In the italic styles a sign leans from its upright form by as much as the figure next to it: ink centre against advance centre,
+    italic minus upright. The subscript parentheses move 55 units less than the figures, so they lean 55 times tan 8 degrees less."""
+    up, it = TTFont(static_path(weight, False)), TTFont(static_path(weight, True))
+
+    def lean(name):
+        def centre(font):
+            xmin, _, xmax, _ = bounds(font, name)
+            return (xmin + xmax) / 2 - font["hmtx"][name][0] / 2
+        return centre(it) - centre(up)
+
+    tan8 = math.tan(math.radians(8))
+    assert lean(supname) == pytest.approx(lean(it.getBestCmap()[0xB2]), abs=4)
+    expected = lean(it.getBestCmap()[0x2082]) + (PAREN_LIFT * tan8 if base.startswith("paren") else 0)
+    assert lean(base + ".subs") == pytest.approx(expected, abs=4)
 
 
 @pytest.mark.parametrize("name", ["parenleft.subs", "parenright.subs"])
