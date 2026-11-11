@@ -37,6 +37,7 @@ Offentlig Sans starts from Public Sans `develop` at `e40fcf567` and differs in t
 | Letter alternates `cv01`, `cv03`, `cv04`, `cv05` | None: `J` can read as `I` or `U`, `G` has a spur, `a` is double-storey only, and `I` has no serifs | Optional wide `J`, round `G`, single-storey `a` and serifed `I`, with their accented letters and `Ĳ`; default letters unchanged |
 | Digit alternates `zero`, `cv06` | None: `0` can read as `O` and `1` as `I` or `l` | Optional slashed `0` and `1` with a base, in lining, tabular and oldstyle forms; default figures unchanged |
 | Round dots `ss03` | None: the dots of `i`, `j`, the dot accents, the diaeresis and punctuation are square | Optional round dots on 108 glyphs, so every letter with a dot or diaeresis follows `i` and `j`; default letters unchanged. The dotted letters added for pinyin and DIN 91379, and the dotted alternates with `cv04` and `cv05`, keep square dots under `ss03` |
+| Percent and per mille signs `%` `‰`, tilde `~` and almost equal `≈` | The slash of `%` and `‰` is thin next to the small circles in Regular and Black, and the wave of `~` and `≈` is thin in Black (0.85 of the hyphen at Black, 0.83 at Black Italic) | The slash is thickened to 0.85 of the stroke of the small circles in Regular and Black, and the Black waves reach 0.88 and 0.86 of the hyphen; Thin is unchanged |
 | Stylistic sets | `ss01` switches both `g` and `l` | `ss01` switches `g`, `ss02` switches `l`, `salt` both |
 | Variable font default | Thin (100) | Regular (400) |
 

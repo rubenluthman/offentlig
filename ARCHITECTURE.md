@@ -106,6 +106,7 @@ These values are identical in every master and are enforced by `tests/test_metri
 - `leftArrow` and `rightArrow` have the same bounding-box height.
 - `onum` draws `0 1 2` at x-height, `3 4 5 7 9` hanging from x-height below the baseline, and `6 8` at full figure height, each with its own outline.
 - Every glyph that carries a dot has an `.ss03` form in every font, `ss03` substitutes all of them (composites use the `.ss03` forms of their parts), shaping with `ss03` off contains no `.ss03` glyph, and `ss03` keeps every advance.
+- The `percent` and `perthousand` slashes are at least 0.80 of the stroke of the small circles in `%`, and the `asciitilde` and `approxequal` strokes are at least 0.85 of the hyphen thickness, at every weight in both styles.
 
 ## Marks and anchors
 
