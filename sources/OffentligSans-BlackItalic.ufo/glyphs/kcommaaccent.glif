@@ -3,6 +3,7 @@
   <advance width="1194"/>
   <unicode hex="0137"/>
   <anchor x="529" y="0" name="bottom"/>
+  <anchor x="439.51896" y="1446" name="top"/>
   <outline>
     <component base="k"/>
     <component base="commaaccentcomb" xOffset="430"/>

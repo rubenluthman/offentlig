@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="one.cv06" format="2">
+  <advance width="886.0"/>
+  <outline>
+    <contour>
+      <point x="100.0" y="0" type="line"/>
+      <point x="786.0" y="0" type="line"/>
+      <point x="798.0865117844056" y="86" type="line"/>
+      <point x="494.0865117844057" y="86" type="line"/>
+      <point x="686.0" y="1446" type="line"/>
+      <point x="623.0" y="1446" type="line"/>
+      <point x="606.0" y="1336"/>
+      <point x="558.0" y="1296"/>
+      <point x="310.0" y="1296" type="curve"/>
+      <point x="300.0" y="1218" type="line"/>
+      <point x="576.0" y="1218" type="line"/>
+      <point x="416.0865117844057" y="86" type="line"/>
+      <point x="112.08651178440566" y="86" type="line"/>
+    </contour>
+  </outline>
+</glyph>

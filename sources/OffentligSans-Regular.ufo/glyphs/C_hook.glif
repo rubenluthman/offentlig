@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Chook" format="2">
+  <advance width="1377.125"/>
+  <unicode hex="0187"/>
+  <anchor x="726.46875" y="0" name="bottom"/>
+  <anchor x="717.28125" y="1446" name="top"/>
+  <outline>
+    <component base="C"/>
+    <component base="_hook.C"/>
+  </outline>
+</glyph>

@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="brevecomb_tildecomb" format="2">
   <anchor x="383.59375" y="1034.0" name="_top"/>
+  <anchor x="468.511" y="1638.21875" name="top"/>
   <outline>
     <contour>
       <point x="429.875" y="1155.34375" type="curve" smooth="yes"/>

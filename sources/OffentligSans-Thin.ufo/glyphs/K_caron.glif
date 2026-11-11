@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Kcaron" format="2">
+  <advance width="1295"/>
+  <unicode hex="01E8"/>
+  <anchor x="664" y="0" name="bottom"/>
+  <anchor x="898" y="1171" name="horn"/>
+  <anchor x="698" y="1726" name="top"/>
+  <outline>
+    <component base="K"/>
+    <component base="caroncomb" xOffset="428" yOffset="412"/>
+  </outline>
+</glyph>

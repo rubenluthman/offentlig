@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="brevecomb_gravecomb" format="2">
   <anchor x="347.375" y="1034.0" name="_top"/>
+  <anchor x="428.256" y="1609.5" name="top"/>
   <outline>
     <contour>
       <point x="395.625" y="1155.34375" type="curve" smooth="yes"/>
