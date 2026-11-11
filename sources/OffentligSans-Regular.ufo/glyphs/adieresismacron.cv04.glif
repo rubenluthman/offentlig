@@ -3,7 +3,7 @@
   <advance width="1105.8125"/>
   <anchor x="544.66" y="0.0" name="bottom"/>
   <anchor x="1013.75" y="25.25" name="ogonek"/>
-  <anchor x="566.84" y="1715.47" name="top"/>
+  <anchor x="566.8" y="1703.1" name="top"/>
   <outline>
     <component base="a.cv04"/>
     <component base="dieresiscomb" xOffset="271.25"/>

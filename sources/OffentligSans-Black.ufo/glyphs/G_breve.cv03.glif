@@ -2,7 +2,7 @@
 <glyph name="Gbreve.cv03" format="2">
   <advance width="1565"/>
   <anchor x="773" y="0" name="bottom"/>
-  <anchor x="781" y="1446" name="top"/>
+  <anchor x="781" y="1827" name="top"/>
   <outline>
     <component base="G.cv03"/>
     <component base="brevecomb" xOffset="347" yOffset="412"/>

@@ -3,7 +3,7 @@
   <advance width="1134.0"/>
   <anchor x="449" y="0" name="bottom"/>
   <anchor x="850.0" y="28" name="ogonek"/>
-  <anchor x="590.7920725072684" y="1034" name="top"/>
+  <anchor x="664.1" y="1554" name="top"/>
   <outline>
     <component base="a.cv04"/>
     <component base="circumflexcomb_tildecomb" xOffset="271"/>

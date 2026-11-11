@@ -2,7 +2,7 @@
 <glyph name="Hdieresis.ss03" format="2">
   <advance width="1479.40625"/>
   <anchor x="669.06" y="0" name="bottom"/>
-  <anchor x="932.11" y="1848.45" name="top"/>
+  <anchor x="930.4" y="1814.6" name="top"/>
   <outline>
     <component base="H"/>
     <component base="dieresiscomb.ss03" xOffset="538.812" yOffset="412.0"/>
