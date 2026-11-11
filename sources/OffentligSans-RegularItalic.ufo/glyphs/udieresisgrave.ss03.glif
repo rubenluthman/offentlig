@@ -4,7 +4,7 @@
   <anchor x="478.69" y="0" name="bottom"/>
   <anchor x="942.75" y="807.19" name="horn"/>
   <anchor x="876.19" y="21.31" name="ogonek"/>
-  <anchor x="734.22" y="1796.0" name="top"/>
+  <anchor x="732.5" y="1783.6" name="top"/>
   <outline>
     <component base="u"/>
     <component base="dieresiscomb.ss03" xOffset="287.375"/>

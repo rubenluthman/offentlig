@@ -2,7 +2,7 @@
 <glyph name="Cdotaccent.ss03" format="2">
   <advance width="1485"/>
   <anchor x="693" y="0" name="bottom"/>
-  <anchor x="911" y="1861.92" name="top"/>
+  <anchor x="964.5" y="1861.9" name="top"/>
   <outline>
     <component base="C"/>
     <component base="dotaccentcomb.ss03" xOffset="649" yOffset="412"/>

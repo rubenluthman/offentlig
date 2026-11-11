@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Idieresisacute.cv05" format="2">
-  <advance width="568.65625"/>
+  <advance width="753.469"/>
   <anchor x="385.09" y="0.0" name="bottom"/>
   <anchor x="545.47" y="16.22" name="ogonek"/>
-  <anchor x="693.5" y="2208.0" name="top"/>
+  <anchor x="691.8" y="2195.6" name="top"/>
   <outline>
     <component base="I.cv05"/>
     <component base="dieresiscomb" xOffset="246.656" yOffset="412.0"/>

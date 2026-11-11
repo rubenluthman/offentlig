@@ -3,7 +3,7 @@
   <advance width="757.40625"/>
   <anchor x="388.0625" y="0.0" name="bottom"/>
   <anchor x="548.4375" y="15.875" name="ogonek"/>
-  <anchor x="379.875" y="1446.0" name="top"/>
+  <anchor x="379.9" y="1884.3" name="top"/>
   <outline>
     <component base="I.cv05"/>
     <component base="hookabovecomb" xOffset="-224.8125" yOffset="394.9375"/>

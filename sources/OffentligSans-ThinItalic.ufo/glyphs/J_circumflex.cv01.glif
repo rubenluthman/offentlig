@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Jcircumflex.cv01" format="2">
   <advance width="941.4705370750689"/>
-  <anchor x="858.9705370750689" y="1446" name="top"/>
+  <anchor x="898.3" y="1726" name="top"/>
   <outline>
     <component base="J.cv01"/>
     <component base="circumflexcomb" xOffset="536.9705370750689" yOffset="412"/>
