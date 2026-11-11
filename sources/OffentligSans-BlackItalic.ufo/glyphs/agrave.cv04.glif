@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="agrave.cv04" format="2">
+  <advance width="1256.0"/>
+  <anchor x="565" y="0" name="bottom"/>
+  <anchor x="1025.0" y="20" name="ogonek"/>
+  <anchor x="683.1675281498797" y="1034" name="top"/>
+  <outline>
+    <component base="a.cv04" xOffset="12"/>
+    <component base="gravecomb" xOffset="46.16752814987956"/>
+  </outline>
+</glyph>

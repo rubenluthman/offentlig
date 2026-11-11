@@ -2,6 +2,23 @@
 <glyph name="four.osf" format="2">
   <advance width="1201"/>
   <outline>
-    <component base="four"/>
+    <contour>
+      <point x="796" y="-330" type="line"/>
+      <point x="878" y="-330" type="line"/>
+      <point x="878" y="60.652" type="line"/>
+      <point x="1134" y="60.652" type="line"/>
+      <point x="1134" y="142.652" type="line"/>
+      <point x="878" y="142.652" type="line"/>
+      <point x="878" y="1034" type="line"/>
+      <point x="788" y="1034" type="line"/>
+      <point x="100" y="158.652" type="line"/>
+      <point x="100" y="60.652" type="line"/>
+      <point x="796" y="60.652" type="line"/>
+    </contour>
+    <contour>
+      <point x="184" y="142.652" type="line"/>
+      <point x="788" y="901.752" type="line"/>
+      <point x="788" y="142.652" type="line"/>
+    </contour>
   </outline>
 </glyph>

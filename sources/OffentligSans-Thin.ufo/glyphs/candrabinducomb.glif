@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="candrabinducomb" format="2">
+  <advance width="0"/>
+  <unicode hex="0310"/>
+  <anchor x="266" y="1038" name="_top"/>
+  <anchor x="265.5" y="1512" name="top"/>
+  <outline>
+    <component base="brevecomb"/>
+    <component base="dotaccentcomb" xOffset="207.5" yOffset="97"/>
+  </outline>
+</glyph>

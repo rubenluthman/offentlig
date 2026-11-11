@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="northWestArrow" format="2">
+  <advance width="1446"/>
+  <unicode hex="2196"/>
+  <outline>
+    <contour>
+      <point x="1217" y="283" type="line"/>
+      <point x="348" y="1150" type="line"/>
+      <point x="296" y="1098" type="line"/>
+      <point x="1165" y="231" type="line"/>
+    </contour>
+    <contour>
+      <point x="1073" y="1098" type="line"/>
+      <point x="1073" y="1173" type="line"/>
+      <point x="273" y="1173" type="line"/>
+      <point x="273" y="373" type="line"/>
+      <point x="348" y="373" type="line"/>
+      <point x="348" y="1098" type="line"/>
+    </contour>
+  </outline>
+</glyph>

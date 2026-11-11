@@ -1,7 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="one.osf" format="2">
-  <advance width="792.96875"/>
+  <advance width="792.969"/>
   <outline>
-    <component base="one"/>
+    <contour>
+      <point x="278.938" y="0" type="line"/>
+      <point x="463.844" y="0" type="line"/>
+      <point x="615.441" y="1034" type="line"/>
+      <point x="488.847" y="1034" type="line"/>
+      <point x="468.971" y="952.918"/>
+      <point x="393.87" y="913.244"/>
+      <point x="149.308" y="913.244" type="curve"/>
+      <point x="132.976" y="798.244" type="line"/>
+      <point x="396.257" y="798.244" type="line"/>
+    </contour>
   </outline>
 </glyph>

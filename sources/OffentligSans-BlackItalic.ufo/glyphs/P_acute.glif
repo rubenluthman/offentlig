@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Pacute" format="2">
+  <advance width="1339"/>
+  <unicode hex="1E54"/>
+  <anchor x="603.17666" y="0" name="bottom"/>
+  <anchor x="859.945" y="1827" name="top"/>
+  <outline>
+    <component base="P"/>
+    <component base="acutecomb" xOffset="584.39871" yOffset="412"/>
+  </outline>
+</glyph>

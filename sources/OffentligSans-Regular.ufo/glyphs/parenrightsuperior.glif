@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="parenrightsuperior" format="2">
+  <advance width="380"/>
+  <unicode hex="207E"/>
+  <outline>
+    <component base="parenright" xScale="0.629" yScale="0.629" xOffset="30.153" yOffset="746"/>
+  </outline>
+</glyph>

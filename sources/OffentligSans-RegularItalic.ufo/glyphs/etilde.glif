@@ -4,7 +4,7 @@
   <unicode hex="1EBD"/>
   <anchor x="487.15625" y="0.0" name="bottom"/>
   <anchor x="688.03125" y="40.8125" name="ogonek"/>
-  <anchor x="628.9375" y="1034.0" name="top"/>
+  <anchor x="676.084" y="1369.469" name="top"/>
   <outline>
     <component base="e"/>
     <component base="tildecomb" xOffset="232.0625"/>

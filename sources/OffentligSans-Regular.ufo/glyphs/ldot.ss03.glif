@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ldot.ss03" format="2">
+  <advance width="700.78125"/>
+  <anchor x="262.0625" y="1.3125" name="bottom"/>
+  <anchor x="334.65625" y="1486.0" name="caron"/>
+  <anchor x="239.84375" y="1526.0625" name="top"/>
+  <outline>
+    <component base="l"/>
+    <component base="periodcentered.ss03" xOffset="369.5625" yOffset="46.0"/>
+  </outline>
+</glyph>
