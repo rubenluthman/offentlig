@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="dcaron" format="2">
-  <advance width="1149"/>
+  <advance width="1223"/>
   <unicode hex="010F"/>
   <anchor x="545" y="0" name="bottom"/>
   <anchor x="990" y="1486" name="caron"/>

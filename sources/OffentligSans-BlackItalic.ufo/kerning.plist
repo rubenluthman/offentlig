@@ -1759,5 +1759,34 @@
       <key>public.kern2.Icv05</key>
       <integer>124</integer>
     </dict>
+    <key>Lcaron</key>
+    <dict>
+      <key>public.kern2.Y</key>
+      <integer>-109</integer>
+      <key>public.kern2.V</key>
+      <integer>-124</integer>
+      <key>quotedblright</key>
+      <integer>-204</integer>
+      <key>public.kern2.T</key>
+      <integer>-126</integer>
+      <key>quoteright</key>
+      <integer>-204</integer>
+    </dict>
+    <key>dcaron</key>
+    <dict>
+      <key>braceright</key>
+      <integer>20</integer>
+      <key>parenright</key>
+      <integer>42</integer>
+      <key>bracketright</key>
+      <integer>0</integer>
+    </dict>
+    <key>lcaron</key>
+    <dict>
+      <key>braceright</key>
+      <integer>3</integer>
+      <key>parenright</key>
+      <integer>14</integer>
+    </dict>
   </dict>
 </plist>
