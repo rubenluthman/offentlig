@@ -10,7 +10,7 @@
   <outline>
     <component base="U"/>
     <component base="__horn" xOffset="1184.40625" yOffset="225.15625"/>
-    <component base="acutecomb" xOffset="667.96875" yOffset="412.0"/>
+    <component base="acutecomb" xOffset="656.9" yOffset="412.0"/>
   </outline>
   <lib>
     <dict>

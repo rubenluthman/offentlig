@@ -10,7 +10,7 @@
   <outline>
     <component base="U"/>
     <component base="__horn" xOffset="1336" yOffset="214"/>
-    <component base="hookabovecomb" xOffset="232" yOffset="412"/>
+    <component base="hookabovecomb" xOffset="241" yOffset="412"/>
   </outline>
   <lib>
     <dict>

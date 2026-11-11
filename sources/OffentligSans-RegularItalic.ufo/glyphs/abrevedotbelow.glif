@@ -7,7 +7,7 @@
   <anchor x="657.187" y="1338.219" name="top"/>
   <outline>
     <component base="a"/>
-    <component base="dotbelowcomb" xOffset="430.03125"/>
+    <component base="dotbelowcomb" xOffset="440.7"/>
     <component base="brevecomb" xOffset="232.5" yOffset="-2.625"/>
   </outline>
   <lib>

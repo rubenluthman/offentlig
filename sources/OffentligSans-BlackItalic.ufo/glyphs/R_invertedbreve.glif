@@ -6,7 +6,7 @@
   <anchor x="727.406" y="1826" name="top"/>
   <outline>
     <component base="R"/>
-    <component base="breveinvertedcomb" xOffset="202" yOffset="412"/>
+    <component base="breveinvertedcomb" xOffset="371" yOffset="412"/>
   </outline>
   <lib>
     <dict>
