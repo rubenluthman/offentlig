@@ -2,19 +2,19 @@
 <glyph name="dieresiscomb" format="2">
   <unicode hex="0308"/>
   <anchor x="339.75" y="1034.0" name="_top"/>
-  <anchor x="393.296" y="1415" name="top"/>
+  <anchor x="391.5522" y="1402.5925" name="top"/>
   <outline>
     <contour>
-      <point x="463.1586" y="1233.2188" type="line"/>
-      <point x="665.809" y="1233.2188" type="line"/>
-      <point x="694.5289" y="1433.5925" type="line"/>
-      <point x="491.8785" y="1433.5925" type="line"/>
+      <point x="459.8975" y="1233.2188" type="line"/>
+      <point x="662.5479" y="1233.2188" type="line"/>
+      <point x="691.2678" y="1433.5925" type="line"/>
+      <point x="488.6174" y="1433.5925" type="line"/>
     </contour>
     <contour>
-      <point x="74.6586" y="1233.2188" type="line"/>
-      <point x="277.309" y="1233.2188" type="line"/>
-      <point x="306.0289" y="1433.5925" type="line"/>
-      <point x="103.3785" y="1433.5925" type="line"/>
+      <point x="71.3975" y="1233.2188" type="line"/>
+      <point x="274.0479" y="1233.2188" type="line"/>
+      <point x="302.7678" y="1433.5925" type="line"/>
+      <point x="100.1174" y="1433.5925" type="line"/>
     </contour>
   </outline>
   <lib>
