@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Odotaccentmacron.ss03" format="2">
+  <advance width="1409.78125"/>
+  <anchor x="633.78" y="0" name="bottom"/>
+  <anchor x="1195.84" y="1171.44" name="horn"/>
+  <anchor x="780.66" y="18.69" name="ogonek"/>
+  <anchor x="931.49" y="2148.92" name="top"/>
+  <outline>
+    <component base="O"/>
+    <component base="dotaccentcomb.ss03" xOffset="662.312" yOffset="412.0"/>
+    <component base="macroncomb" xOffset="505.576" yOffset="814.454"/>
+  </outline>
+</glyph>

@@ -23,7 +23,22 @@ DOT_GLYPHS = """
     quoteright quotesinglbase rcommaaccent rdotbelow scommaaccent sdotbelow semicolon
     tcommaaccent tdotbelow udieresis udotbelow uhorndotbelow wdieresis ydieresis ydotbelow
     zdotaccent zdotbelow
+    Adieresismacron Adotaccent Bdotaccent Ddotaccent Fdotaccent Hdieresis Hdotaccent Idieresisacute Kdotbelow
+    Ldotbelow Mdotaccent Mdotbelow Ndotbelow Odieresismacron Odotaccent Odotaccentmacron Pdotaccent Rdotaccent
+    Sdotaccent Tdotaccent Udieresisacute Udieresiscaron Udieresisgrave Udieresismacron Wdotaccent Xdieresis
+    Ydotaccent adieresismacron adotaccent bdotaccent candrabinducomb commaaboverightcomb ddotaccent fdotaccent
+    hdieresis hdotaccent idotlessdieresisacute ij istroke kdotbelow ldotbelow mdotaccent mdotbelow napostrophe
+    ndotbelow odieresismacron odotaccent odotaccentmacron pdotaccent rdotaccent sdotaccent tdieresis tdotaccent
+    udieresisacute udieresiscaron udieresisgrave udieresismacron wdotaccent xdieresis ydotaccent
 """.split()
+
+# Letter alternates that carry a dot: the `cv` features run first, so these need their own round-dot forms.
+DOT_ALTERNATES = """
+    Gcommaaccent.cv03 Gdotaccent.cv03 Idieresis.cv05 Idieresisacute.cv05 Idotaccent.cv05 Idotbelow.cv05
+    abrevedotbelow.cv04 acircumflexdotbelow.cv04 adieresis.cv04 adieresismacron.cv04 adotaccent.cv04
+    adotbelow.cv04
+""".split()
+DOT_GLYPHS += DOT_ALTERNATES
 
 
 def shape(path, text, features):
@@ -101,6 +116,8 @@ def test_italic_ss03_marks_sit_on_their_anchors(weight):
     for glyph in font:
         if not glyph.name.endswith(".ss03") or glyph.contours or len(glyph.components) < 2:
             continue
+        if glyph.name == "candrabinducomb.ss03":
+            continue  # a dot centred on a breve: it has no anchor to attach to, test_wagner_italic_marks checks its slant
         for index, comp in enumerate(glyph.components[1:], start=1):
             mark = anchors(comp.baseGlyph)
             attach = [k for k in mark if k.startswith("_")]
@@ -120,12 +137,17 @@ def test_italic_ss03_marks_sit_on_their_anchors(weight):
 
 @pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
 def test_ss03_does_not_undo_letter_alternates(weight, italic):
-    """The `cv` features run before `ss03`, so a letter alternate keeps its shape (and square dots) under `ss03`."""
+    """The `cv` features run before `ss03`, so a letter alternate keeps its shape under `ss03` and swaps to its own round-dot form."""
     path = static_path(weight, italic)
-    assert shape(path, "ä", {"ss03": True, "cv04": True})[0] == ["adieresis.cv04"]
-    assert shape(path, "ạ", {"ss03": True, "cv04": True})[0] == ["adotbelow.cv04"]
-    assert shape(path, "Ï", {"ss03": True, "cv05": True})[0] == ["Idieresis.cv05"]
-    assert shape(path, "Ġ", {"ss03": True, "cv03": True})[0] == ["Gdotaccent.cv03"]
+    assert shape(path, "ä", {"ss03": True, "cv04": True})[0] == ["adieresis.cv04.ss03"]
+    assert shape(path, "ạ", {"ss03": True, "cv04": True})[0] == ["adotbelow.cv04.ss03"]
+    assert shape(path, "Ï", {"ss03": True, "cv05": True})[0] == ["Idieresis.cv05.ss03"]
+    assert shape(path, "Ġ", {"ss03": True, "cv03": True})[0] == ["Gdotaccent.cv03.ss03"]
+    assert shape(path, "ǟ", {"ss03": True, "cv04": True})[0] == ["adieresismacron.cv04.ss03"]
+    assert shape(path, "ȧ", {"ss03": True, "cv04": True})[0] == ["adotaccent.cv04.ss03"]
+    assert shape(path, "Ḯ", {"ss03": True, "cv05": True})[0] == ["Idieresisacute.cv05.ss03"]
+    # an alternate without a dot keeps its form, and a dotted letter without an alternate gets the plain round dots
+    assert shape(path, "á", {"ss03": True, "cv04": True})[0] == ["aacute.cv04"]
     # letters the alternates do not touch still get round dots
     assert shape(path, "öÄ", {"ss03": True, "cv04": True})[0] == ["odieresis.ss03", "Adieresis.ss03"]
     assert shape(path, "1.5", {"ss03": True, "tnum": True})[0] == ["one.tf", "period.tf.ss03", "five.tf"]
@@ -158,3 +180,47 @@ def test_marks_stacked_on_round_dots_clear_the_dots(weight, italic):
         assert on >= off, (text, off, on)
         if text in ("\u00e4\u0301", "\u00c4\u0301", "\u0117\u0301", "\u00ff\u0301", "\u00f6\u0300"):
             assert off > 0, text
+
+
+ABOVE_DOTS = {"dieresiscomb", "dotaccentcomb"}
+
+
+def _extent(font, comp):
+    xmin, ymin, xmax, ymax = font[comp.baseGlyph].getBounds(font)
+    return ymin + comp.transformation[5], ymax + comp.transformation[5]
+
+
+def _clearances(font, glyph):
+    """(dots to the letter below, dots to the mark above or None) for a composite whose first dot mark sits above its base."""
+    parts = glyph.components
+    index = next((i for i, c in enumerate(parts) if c.baseGlyph.removesuffix(".ss03") in ABOVE_DOTS), None)
+    if index is None or index == 0:
+        return None
+    dot_bottom, dot_top = _extent(font, parts[index])
+    below = dot_bottom - max(_extent(font, c)[1] for c in parts[:index])
+    above = [_extent(font, c)[0] - dot_top for c in parts[index + 1:] if _extent(font, c)[0] > dot_top - 5]
+    return below, (min(above) if above else None)
+
+
+@pytest.mark.parametrize("weight", ["Thin", "Regular", "Black"])
+@pytest.mark.parametrize("italic", [False, True], ids=["roman", "italic"])
+def test_round_dots_keep_the_clearances_of_the_square_dots(weight, italic):
+    """Round dots sit no closer to the letter than square dots; a mark stacked above them is never closer than 2 units less than above square dots."""
+    import ufoLib2
+    from pathlib import Path
+
+    font = ufoLib2.Font.open(Path(__file__).resolve().parent.parent / "sources" / f"OffentligSans-{weight}{'Italic' if italic else ''}.ufo")
+    checked, bad = 0, []
+    for glyph in font:
+        if not glyph.name.endswith(".ss03") or glyph.contours or glyph.name[:-5] not in font:
+            continue
+        plain, rounded = _clearances(font, font[glyph.name[:-5]]), _clearances(font, glyph)
+        if plain is None or rounded is None:
+            continue
+        checked += 1
+        if rounded[0] < plain[0] - 0.5:
+            bad.append((glyph.name, "letter", round(plain[0], 1), round(rounded[0], 1)))
+        if plain[1] is not None and rounded[1] < plain[1] - 2:
+            bad.append((glyph.name, "mark", round(plain[1], 1), round(rounded[1], 1)))
+    assert checked > 80
+    assert not bad, bad

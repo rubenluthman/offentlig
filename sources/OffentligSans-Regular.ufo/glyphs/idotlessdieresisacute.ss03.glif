@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="idotlessdieresisacute.ss03" format="2">
+  <advance width="483.71875"/>
+  <anchor x="308.66" y="23.25" name="ogonek"/>
+  <anchor x="243.44" y="1796.0" name="top"/>
+  <outline>
+    <component base="idotless"/>
+    <component base="dieresiscomb.ss03" xOffset="-52.156"/>
+    <component base="acutecomb" xOffset="152.25" yOffset="368.592"/>
+  </outline>
+</glyph>

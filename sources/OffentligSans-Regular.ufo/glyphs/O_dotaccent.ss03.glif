@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Odotaccent.ss03" format="2">
+  <advance width="1467.625"/>
+  <anchor x="738.47" y="0" name="bottom"/>
+  <anchor x="1152.28" y="1171.44" name="horn"/>
+  <anchor x="889.25" y="18.69" name="ogonek"/>
+  <anchor x="737.09" y="1848.45" name="top"/>
+  <outline>
+    <component base="O"/>
+    <component base="dotaccentcomb.ss03" xOffset="633.031" yOffset="412.0"/>
+  </outline>
+</glyph>

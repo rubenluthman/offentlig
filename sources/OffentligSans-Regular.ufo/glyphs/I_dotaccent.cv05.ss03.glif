@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Idotaccent.cv05.ss03" format="2">
+  <advance width="757.40625"/>
+  <anchor x="388.06" y="0.0" name="bottom"/>
+  <anchor x="548.44" y="15.88" name="ogonek"/>
+  <anchor x="379.87" y="1848.45" name="top"/>
+  <outline>
+    <component base="I.cv05"/>
+    <component base="dotaccentcomb.ss03" xOffset="275.812" yOffset="412.0"/>
+  </outline>
+</glyph>

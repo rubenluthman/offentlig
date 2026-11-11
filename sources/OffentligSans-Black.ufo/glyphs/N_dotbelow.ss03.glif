@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ndotbelow.ss03" format="2">
+  <advance width="1615"/>
+  <anchor x="807" y="0" name="bottom"/>
+  <anchor x="807" y="1446" name="top"/>
+  <outline>
+    <component base="N"/>
+    <component base="dotbelowcomb.ss03" xOffset="617"/>
+  </outline>
+</glyph>

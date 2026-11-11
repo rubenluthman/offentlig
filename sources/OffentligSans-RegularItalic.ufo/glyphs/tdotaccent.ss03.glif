@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tdotaccent.ss03" format="2">
+  <advance width="754.65625"/>
+  <anchor x="375.78" y="6.19" name="bottom"/>
+  <anchor x="560.16" y="1520.38" name="caron"/>
+  <anchor x="398.16" y="584.25" name="center"/>
+  <anchor x="684" y="920" name="horn"/>
+  <anchor x="544.63" y="1737.45" name="top"/>
+  <outline>
+    <component base="t"/>
+    <component base="dotaccentcomb.ss03" xOffset="317.675" yOffset="301"/>
+  </outline>
+</glyph>

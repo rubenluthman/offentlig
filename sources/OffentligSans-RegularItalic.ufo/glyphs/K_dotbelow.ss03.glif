@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Kdotbelow.ss03" format="2">
+  <advance width="1315.4375"/>
+  <anchor x="585.59" y="0" name="bottom"/>
+  <anchor x="1047" y="1171" name="horn"/>
+  <anchor x="824.69" y="1446.0" name="top"/>
+  <outline>
+    <component base="K"/>
+    <component base="dotbelowcomb.ss03" xOffset="557.5"/>
+  </outline>
+</glyph>

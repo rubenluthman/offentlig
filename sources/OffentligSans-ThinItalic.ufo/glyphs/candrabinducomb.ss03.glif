@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="candrabinducomb.ss03" format="2">
+  <anchor x="319" y="1034" name="_top"/>
+  <anchor x="397.13" y="1512" name="top"/>
+  <outline>
+    <component base="brevecomb"/>
+    <component base="dotaccentcomb.ss03" xOffset="216.589" yOffset="97"/>
+  </outline>
+</glyph>
