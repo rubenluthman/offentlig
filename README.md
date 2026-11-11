@@ -9,7 +9,7 @@ Offentlig is a planned open-source font superfamily. Offentlig Sans is the first
 <!-- vale HouseStyle.Headings = YES -->
 
 - Nine weights (Thin to Black) in upright and italic, plus variable fonts on the `wght` axis (default 400).
-- Stylistic sets: `ss01` selects an alternate `g`, `ss02` an alternate `l`, and `salt` both. Character variants: `cv01` a wider `J`, `cv03` a round `G` without spur, `cv04` a single-storey `a`, `cv05` an `I` with serifs and `cv06` a `1` with a base; `cv01` and `cv05` also change `Ĳ`. `zero` draws a slashed `0`. The digit forms also work with `onum` and `tnum`.
+- Stylistic sets: `ss01` selects an alternate `g`, `ss02` an alternate `l`, and `salt` both. Character variants: `cv01` a wider `J`, `cv03` a round `G` without spur, `cv04` a single-storey `a`, `cv05` an `I` with serifs and `cv06` a `1` with a base; `cv01` and `cv05` also change `Ĳ`. `zero` draws a slashed `0`. The digit forms also work with `onum` and `tnum`. `ss03` replaces the square dots (`i`, `j`, `ä`, `ö`, `. : ; ! ?` and the comma shapes) with round ones.
 - Oldstyle figures: the `onum` feature draws `0 1 2` at x-height, `3 4 5 7 9` hanging below the baseline and `6 8` at full height, in every weight and in the italic.
 - Capital sharp s ẞ (U+1E9E) is drawn as its own letter, about as wide as `H`, in every weight and in the italic. Uppercasing ß is unchanged and still produces SS.
 - Formats: OTF, TTF, variable TTF and WOFF2.
@@ -36,6 +36,7 @@ Offentlig Sans starts from Public Sans `develop` at `e40fcf567` and differs in t
 | Oldstyle figures (`onum`) | The `.osf` figures are components of the lining figures, so `onum` changes nothing visible | Each of the ten figures has its own oldstyle outline in every weight and in the italic |
 | Letter alternates `cv01`, `cv03`, `cv04`, `cv05` | None: `J` can read as `I` or `U`, `G` has a spur, `a` is double-storey only, and `I` has no serifs | Optional wide `J`, round `G`, single-storey `a` and serifed `I`, with their accented letters and `Ĳ`; default letters unchanged |
 | Digit alternates `zero`, `cv06` | None: `0` can read as `O` and `1` as `I` or `l` | Optional slashed `0` and `1` with a base, in lining, tabular and oldstyle forms; default figures unchanged |
+| Round dots `ss03` | None: the dots of `i`, `j`, the dot accents, the diaeresis and punctuation are square | Optional round dots on 108 glyphs, so every letter with a dot or diaeresis follows `i` and `j`; default letters unchanged. The dotted letters added for pinyin and DIN 91379, and the dotted alternates with `cv04` and `cv05`, keep square dots under `ss03` |
 | Stylistic sets | `ss01` switches both `g` and `l` | `ss01` switches `g`, `ss02` switches `l`, `salt` both |
 | Variable font default | Thin (100) | Regular (400) |
 
