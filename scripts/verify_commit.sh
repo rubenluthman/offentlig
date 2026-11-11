@@ -1,15 +1,21 @@
 #!/bin/sh
-# Pre-commit verification: tests, relative Markdown links, house style (Vale), absolute home paths and secrets.
+# Pre-commit verification: tests, relative Markdown links, house style (Vale), conflict markers, absolute home paths and secrets.
 set -eu
 cd "$(dirname "$0")/.."
 fail=0
 
 echo "== tests"
-if [ -d fonts/OffentligSans/ttf ]; then
-  PATH="$PWD/venv/bin:$PATH" pytest -q tests || fail=1
-else
+built=fonts/OffentligSans/ttf/OffentligSans-Regular.ttf
+if [ ! -f "$built" ]; then
   echo "fonts/ missing: run 'make build' first" >&2
   fail=1
+elif [ -n "$(git ls-files -z --cached --others --exclude-standard sources | xargs -0 sh -c 'find "$@" -prune -newer "$0" 2>/dev/null' "$built" | head -n 1)" ]; then
+  # The tests read the built fonts, so a build older than sources/ reports false failures.
+  # Only source files count: the build writes ignored files (build.ninja, instance_ufos/) into sources/.
+  echo "fonts/ is older than sources/: run 'make build' first" >&2
+  fail=1
+else
+  PATH="$PWD/venv/bin:$PATH" pytest -q tests || fail=1
 fi
 
 files=$(git ls-files --cached --others --exclude-standard)
@@ -24,29 +30,10 @@ for f in $(echo "$files" | grep '\.md$'); do
 done
 
 echo "== house style (Vale)"
-# Wording and punctuation rules come from the shared house-style package (see docs/house-style.md).
-if ! command -v vale >/dev/null 2>&1; then
-  echo "vale is not installed: brew install vale" >&2
-  fail=1
-else
-  # Resync whenever the pinned release changes, so a version bump never runs stale cached rules.
-  pin="$(grep '^Packages' .vale.ini)"
-  if [ "$(cat .vale/styles/HouseStyle/.pin 2>/dev/null)" != "$pin" ]; then
-    if vale sync >/dev/null; then
-      printf '%s\n' "$pin" > .vale/styles/HouseStyle/.pin
-    else
-      echo "vale sync failed: the house-style package needs network access once per pinned release" >&2
-      fail=1
-    fi
-  fi
-  if [ -d .vale/styles/HouseStyle ]; then
-    prose=$(echo "$files" | grep -E '\.(md|txt)$' | grep -v -E '^(LICENSE|AUTHORS.txt|CONTRIBUTORS.txt)$' || true)
-    for f in $prose; do [ -f "$f" ] && set -- "$@" "$f"; done
-    if [ "$#" -gt 0 ] && ! vale --output=line "$@" >&2; then
-      fail=1
-    fi
-  fi
-fi
+./scripts/check_prose.sh || fail=1
+
+echo "== conflict markers"
+./scripts/check_conflict_markers.sh || fail=1
 
 echo "== absolute home paths and secrets"
 if echo "$files" | grep -v '^scripts/verify_commit.sh$' | xargs grep -I -n -E '/Users/[A-Za-z0-9_.-]+|/home/[A-Za-z0-9_.-]+|gh[pousr]_[A-Za-z0-9]{20,}|AKIA[0-9A-Z]{16}|BEGIN (RSA |OPENSSH |EC )?PRIVATE KEY|sk-[A-Za-z0-9]{20,}' ; then

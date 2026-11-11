@@ -3,7 +3,7 @@
   <advance width="827"/>
   <unicode hex="2082"/>
   <outline>
-    <component base="two.dnom" yOffset="-330"/>
+    <component base="two.dnom" xOffset="-47" yOffset="-330"/>
   </outline>
   <lib>
     <dict>

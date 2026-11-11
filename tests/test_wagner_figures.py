@@ -39,3 +39,16 @@ def test_superior_figures_follow_the_italic_slant(weight, italic, digit):
     rise = sup[1] - numr[1]
     expected = rise * math.tan(math.radians(ITALIC_ANGLE)) if italic else 0
     assert sup[0] - numr[0] == pytest.approx(expected, abs=3), f"dx {sup[0] - numr[0]:.1f}, rise {rise:.1f}"
+
+
+@pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
+@pytest.mark.parametrize("digit", "0123456789")
+def test_subscript_figures_follow_the_italic_slant(weight, italic, digit):
+    """A subscript figure sits where the denominator figure would be if lowered along the slant: dx = drop * tan(angle) (drop is negative) in italic, 0 in upright."""
+    path = static_path(weight, italic)
+    font = TTFont(path)
+    sub = bounds(font, shaped_glyph(path, font, digit, "subs"))
+    dnom = bounds(font, shaped_glyph(path, font, digit, "dnom"))
+    drop = sub[1] - dnom[1]
+    expected = drop * math.tan(math.radians(ITALIC_ANGLE)) if italic else 0
+    assert sub[0] - dnom[0] == pytest.approx(expected, abs=2), f"dx {sub[0] - dnom[0]:.1f}, drop {drop:.1f}"

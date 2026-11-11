@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="quoteright.ss03" format="2">
+  <advance width="462.5"/>
+  <outline>
+    <contour>
+      <point x="100.0" y="973.9375" type="line"/>
+      <point x="186.0" y="973.9375" type="line"/>
+      <point x="340.3058" y="1265.2186" type="line"/>
+      <point x="371.4887" y="1309.0195"/>
+      <point x="370.5354" y="1368.0165"/>
+      <point x="337.9538" y="1410.7871" type="curve" smooth="yes"/>
+      <point x="305.3722" y="1453.5577"/>
+      <point x="248.747" y="1470.1451"/>
+      <point x="198.2376" y="1451.7147" type="curve" smooth="yes"/>
+      <point x="147.7281" y="1433.2843"/>
+      <point x="115.0927" y="1384.1265"/>
+      <point x="117.7134" y="1330.4234" type="curve" smooth="yes"/>
+      <point x="120.3341" y="1276.7204"/>
+      <point x="157.6008" y="1230.9738"/>
+      <point x="209.6648" y="1217.549" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

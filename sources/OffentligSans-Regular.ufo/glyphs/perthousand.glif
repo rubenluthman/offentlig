@@ -4,10 +4,10 @@
   <unicode hex="2030"/>
   <outline>
     <contour>
-      <point x="357.71875" y="-8.0" type="line"/>
-      <point x="483.84375" y="-8.0" type="line"/>
-      <point x="1455.84375" y="1462.0" type="line"/>
-      <point x="1334.71875" y="1462.0" type="line"/>
+      <point x="348.21875" y="-8" type="line"/>
+      <point x="493.21875" y="-8" type="line"/>
+      <point x="1465.21875" y="1462" type="line"/>
+      <point x="1325.21875" y="1462" type="line"/>
     </contour>
     <contour>
       <point x="449.625" y="642.8125" type="curve" smooth="yes"/>

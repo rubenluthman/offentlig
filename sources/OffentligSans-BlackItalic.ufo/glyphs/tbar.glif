@@ -5,12 +5,13 @@
   <anchor x="435" y="18" name="bottom"/>
   <anchor x="685" y="1586" name="caron"/>
   <anchor x="439" y="516" name="center"/>
+  <anchor x="550.03254" y="1356" name="top"/>
   <outline>
     <contour>
-      <point x="50" y="450" type="line"/>
-      <point x="773" y="450" type="line"/>
-      <point x="804" y="660" type="line"/>
-      <point x="81" y="660" type="line"/>
+      <point x="54.281" y="479" type="line"/>
+      <point x="777.281" y="479" type="line"/>
+      <point x="799.719" y="631" type="line"/>
+      <point x="76.719" y="631" type="line"/>
     </contour>
     <component base="t" xOffset="10"/>
   </outline>

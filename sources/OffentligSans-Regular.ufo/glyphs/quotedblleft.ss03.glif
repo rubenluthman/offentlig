@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="quotedblleft.ss03" format="2">
+  <advance width="838.3125"/>
+  <outline>
+    <contour>
+      <point x="362.7188" y="1446.0" type="line"/>
+      <point x="276.7188" y="1446.0" type="line"/>
+      <point x="120.7722" y="1156.1798" type="line"/>
+      <point x="89.2026" y="1112.1875"/>
+      <point x="89.9771" y="1052.7597"/>
+      <point x="122.6825" y="1009.6051" type="curve" smooth="yes"/>
+      <point x="155.3878" y="966.4505"/>
+      <point x="212.393" y="949.638"/>
+      <point x="263.2822" y="968.1382" type="curve" smooth="yes"/>
+      <point x="314.1713" y="986.6383"/>
+      <point x="347.0707" y="1036.1346"/>
+      <point x="344.4264" y="1090.2176" type="curve" smooth="yes"/>
+      <point x="341.7821" y="1144.3006"/>
+      <point x="304.2112" y="1190.3514"/>
+      <point x="251.76" y="1203.7989" type="curve"/>
+    </contour>
+    <contour>
+      <point x="720.9688" y="1446.0" type="line"/>
+      <point x="634.9688" y="1446.0" type="line"/>
+      <point x="480.3347" y="1156.1798" type="line"/>
+      <point x="448.6937" y="1112.088"/>
+      <point x="449.5502" y="1052.5054"/>
+      <point x="482.4454" y="1009.3414" type="curve" smooth="yes"/>
+      <point x="515.3406" y="966.1773"/>
+      <point x="572.5628" y="949.5508"/>
+      <point x="623.4668" y="968.3662" type="curve" smooth="yes"/>
+      <point x="674.3707" y="987.1816"/>
+      <point x="707.0229" y="1037.028"/>
+      <point x="703.9364" y="1091.2101" type="curve" smooth="yes"/>
+      <point x="700.8499" y="1145.3923"/>
+      <point x="662.7484" y="1191.2082"/>
+      <point x="610.0371" y="1204.1211" type="curve"/>
+    </contour>
+  </outline>
+</glyph>
