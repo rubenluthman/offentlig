@@ -13,8 +13,9 @@ def _anchors(glyph):
     return {a.name: (a.x, a.y) for a in glyph.anchors}
 
 
-def _is_combining_mark(glyph):
-    return any(0x0300 <= u <= 0x036F for u in glyph.unicodes)
+def _is_combining_mark(font, name):
+    # the `.ss03` form of a mark has no code point of its own
+    return any(0x0300 <= u <= 0x036F for u in font[name.removesuffix(".ss03")].unicodes)
 
 
 def _centre(font, comp):
@@ -51,7 +52,7 @@ def _misplaced(font):
     for glyph in font:
         if len(glyph.components) < 2 or glyph.contours:
             continue
-        if all(_is_combining_mark(font[c.baseGlyph]) for c in glyph.components):
+        if all(_is_combining_mark(font, c.baseGlyph) for c in glyph.components):
             bad.extend(_off_slant(font, glyph))
             continue
         for index, comp in enumerate(glyph.components[1:], start=1):

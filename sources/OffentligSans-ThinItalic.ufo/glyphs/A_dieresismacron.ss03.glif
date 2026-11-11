@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Adieresismacron.ss03" format="2">
+  <advance width="1304"/>
+  <anchor x="579" y="0" name="bottom"/>
+  <anchor x="1097" y="24" name="ogonek"/>
+  <anchor x="875.05" y="2101" name="top"/>
+  <outline>
+    <component base="A"/>
+    <component base="dieresiscomb.ss03" xOffset="545" yOffset="412"/>
+    <component base="macroncomb" xOffset="511.957" yOffset="739"/>
+  </outline>
+</glyph>

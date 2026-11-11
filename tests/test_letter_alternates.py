@@ -15,9 +15,9 @@ from conftest import static_path
 # cv01 and cv05 also reach the ligature letter IJ (U+0132); IJ.cv01.cv05 is the glyph for both features on.
 FEATURES = {
     "cv01": ("J", 3, 3),
-    "cv03": ("G", 5, 5),
-    "cv04": ("a", 25, 25),
-    "cv05": ("I", 16, 15),
+    "cv03": ("G", 8, 8),
+    "cv04": ("a", 28, 28),
+    "cv05": ("I", 18, 17),
 }
 LIGATURE = "\u0132"
 SHAPED = [("Thin", False), ("Regular", False), ("Black", False), ("Thin", True), ("Regular", True), ("Black", True)]
@@ -123,7 +123,7 @@ def test_ij_follows_the_j_and_i_features(weight, italic):
 
 @pytest.mark.parametrize("ufo", ["Thin", "Regular", "Black"])
 def test_italic_cv04_marks_sit_on_the_single_storey_a_anchors(ufo):
-    """Each mark of an italic .cv04 composite lands on its anchor of a.cv04, within 10 units."""
+    """Each mark of an italic .cv04 composite lands on its anchor of a.cv04 (or of the mark below it in a stack), within 10 units."""
     import ufoLib2
     from pathlib import Path
 
@@ -136,17 +136,19 @@ def test_italic_cv04_marks_sit_on_the_single_storey_a_anchors(ufo):
     for glyph in font:
         if not glyph.name.endswith(".cv04") or len(glyph.components) < 2 or glyph.contours:
             continue
-        base = glyph.components[0]
-        base_anchors = anchors(base.baseGlyph)
-        for comp in glyph.components[1:]:
+        for index, comp in enumerate(glyph.components[1:], start=1):
             mark_anchors = anchors(comp.baseGlyph)
             attach = [k for k in mark_anchors if k.startswith("_")]
-            if not attach or attach[0][1:] not in base_anchors:
+            if not attach:
                 continue
-            bx, by = base_anchors[attach[0][1:]]
+            # the nearest part before the mark that carries the anchor: the base, or the mark below in a stack
+            target = next((c for c in reversed(glyph.components[:index]) if attach[0][1:] in anchors(c.baseGlyph)), None)
+            if target is None:
+                continue
+            bx, by = anchors(target.baseGlyph)[attach[0][1:]]
             mx, my = mark_anchors[attach[0]]
-            dx = comp.transformation[4] - (bx + base.transformation[4] - mx)
-            dy = comp.transformation[5] - (by + base.transformation[5] - my)
+            dx = comp.transformation[4] - (bx + target.transformation[4] - mx)
+            dy = comp.transformation[5] - (by + target.transformation[5] - my)
             if abs(dx) > 10 or abs(dy) > 10:
                 bad.append((glyph.name, comp.baseGlyph, round(dx), round(dy)))
     assert not bad, bad

@@ -568,10 +568,13 @@
       <string>J.cv01</string>
       <string>Jcircumflex.cv01</string>
       <string>G.cv03</string>
+      <string>Gacute.cv03</string>
       <string>Gbreve.cv03</string>
+      <string>Gcaron.cv03</string>
       <string>Gcircumflex.cv03</string>
       <string>Gcommaaccent.cv03</string>
       <string>Gdotaccent.cv03</string>
+      <string>Gmacron.cv03</string>
       <string>a.cv04</string>
       <string>aacute.cv04</string>
       <string>abreve.cv04</string>
@@ -580,6 +583,7 @@
       <string>abrevegrave.cv04</string>
       <string>abrevehookabove.cv04</string>
       <string>abrevetilde.cv04</string>
+      <string>acaron.cv04</string>
       <string>acircumflex.cv04</string>
       <string>acircumflexacute.cv04</string>
       <string>acircumflexdotbelow.cv04</string>
@@ -588,6 +592,8 @@
       <string>acircumflextilde.cv04</string>
       <string>adblgrave.cv04</string>
       <string>adieresis.cv04</string>
+      <string>adieresismacron.cv04</string>
+      <string>adotaccent.cv04</string>
       <string>adotbelow.cv04</string>
       <string>agrave.cv04</string>
       <string>ahookabove.cv04</string>
@@ -600,9 +606,11 @@
       <string>I.cv05</string>
       <string>Iacute.cv05</string>
       <string>Ibreve.cv05</string>
+      <string>Icaron.cv05</string>
       <string>Icircumflex.cv05</string>
       <string>Idblgrave.cv05</string>
       <string>Idieresis.cv05</string>
+      <string>Idieresisacute.cv05</string>
       <string>Idotaccent.cv05</string>
       <string>Idotbelow.cv05</string>
       <string>Igrave.cv05</string>
@@ -2332,6 +2340,166 @@
       <key>aringacute.cv04</key>
       <string>base</string>
       <key>atilde.cv04</key>
+      <string>base</string>
+      <key>acaron.cv04</key>
+      <string>base</string>
+      <key>adieresismacron.cv04</key>
+      <string>base</string>
+      <key>adotaccent.cv04</key>
+      <string>base</string>
+      <key>Gacute.cv03</key>
+      <string>base</string>
+      <key>Gcaron.cv03</key>
+      <string>base</string>
+      <key>Gmacron.cv03</key>
+      <string>base</string>
+      <key>Icaron.cv05</key>
+      <string>base</string>
+      <key>Idieresisacute.cv05</key>
+      <string>base</string>
+      <key>Adieresismacron.ss03</key>
+      <string>base</string>
+      <key>Adotaccent.ss03</key>
+      <string>base</string>
+      <key>Bdotaccent.ss03</key>
+      <string>base</string>
+      <key>Ddotaccent.ss03</key>
+      <string>base</string>
+      <key>Fdotaccent.ss03</key>
+      <string>base</string>
+      <key>Hdieresis.ss03</key>
+      <string>base</string>
+      <key>Hdotaccent.ss03</key>
+      <string>base</string>
+      <key>Idieresisacute.ss03</key>
+      <string>base</string>
+      <key>Kdotbelow.ss03</key>
+      <string>base</string>
+      <key>Ldotbelow.ss03</key>
+      <string>base</string>
+      <key>Mdotaccent.ss03</key>
+      <string>base</string>
+      <key>Mdotbelow.ss03</key>
+      <string>base</string>
+      <key>Ndotbelow.ss03</key>
+      <string>base</string>
+      <key>Odieresismacron.ss03</key>
+      <string>base</string>
+      <key>Odotaccent.ss03</key>
+      <string>base</string>
+      <key>Odotaccentmacron.ss03</key>
+      <string>base</string>
+      <key>Pdotaccent.ss03</key>
+      <string>base</string>
+      <key>Rdotaccent.ss03</key>
+      <string>base</string>
+      <key>Sdotaccent.ss03</key>
+      <string>base</string>
+      <key>Tdotaccent.ss03</key>
+      <string>base</string>
+      <key>Udieresisacute.ss03</key>
+      <string>base</string>
+      <key>Udieresiscaron.ss03</key>
+      <string>base</string>
+      <key>Udieresisgrave.ss03</key>
+      <string>base</string>
+      <key>Udieresismacron.ss03</key>
+      <string>base</string>
+      <key>Wdotaccent.ss03</key>
+      <string>base</string>
+      <key>Xdieresis.ss03</key>
+      <string>base</string>
+      <key>Ydotaccent.ss03</key>
+      <string>base</string>
+      <key>adieresismacron.ss03</key>
+      <string>base</string>
+      <key>adotaccent.ss03</key>
+      <string>base</string>
+      <key>bdotaccent.ss03</key>
+      <string>base</string>
+      <key>candrabinducomb.ss03</key>
+      <string>mark</string>
+      <key>commaaboverightcomb.ss03</key>
+      <string>mark</string>
+      <key>ddotaccent.ss03</key>
+      <string>base</string>
+      <key>fdotaccent.ss03</key>
+      <string>base</string>
+      <key>hdieresis.ss03</key>
+      <string>base</string>
+      <key>hdotaccent.ss03</key>
+      <string>base</string>
+      <key>idotlessdieresisacute.ss03</key>
+      <string>base</string>
+      <key>ij.ss03</key>
+      <string>base</string>
+      <key>istroke.ss03</key>
+      <string>base</string>
+      <key>kdotbelow.ss03</key>
+      <string>base</string>
+      <key>ldotbelow.ss03</key>
+      <string>base</string>
+      <key>mdotaccent.ss03</key>
+      <string>base</string>
+      <key>mdotbelow.ss03</key>
+      <string>base</string>
+      <key>napostrophe.ss03</key>
+      <string>base</string>
+      <key>ndotbelow.ss03</key>
+      <string>base</string>
+      <key>odieresismacron.ss03</key>
+      <string>base</string>
+      <key>odotaccent.ss03</key>
+      <string>base</string>
+      <key>odotaccentmacron.ss03</key>
+      <string>base</string>
+      <key>pdotaccent.ss03</key>
+      <string>base</string>
+      <key>rdotaccent.ss03</key>
+      <string>base</string>
+      <key>sdotaccent.ss03</key>
+      <string>base</string>
+      <key>tdieresis.ss03</key>
+      <string>base</string>
+      <key>tdotaccent.ss03</key>
+      <string>base</string>
+      <key>udieresisacute.ss03</key>
+      <string>base</string>
+      <key>udieresiscaron.ss03</key>
+      <string>base</string>
+      <key>udieresisgrave.ss03</key>
+      <string>base</string>
+      <key>udieresismacron.ss03</key>
+      <string>base</string>
+      <key>wdotaccent.ss03</key>
+      <string>base</string>
+      <key>xdieresis.ss03</key>
+      <string>base</string>
+      <key>ydotaccent.ss03</key>
+      <string>base</string>
+      <key>Gcommaaccent.cv03.ss03</key>
+      <string>base</string>
+      <key>Gdotaccent.cv03.ss03</key>
+      <string>base</string>
+      <key>Idieresis.cv05.ss03</key>
+      <string>base</string>
+      <key>Idieresisacute.cv05.ss03</key>
+      <string>base</string>
+      <key>Idotaccent.cv05.ss03</key>
+      <string>base</string>
+      <key>Idotbelow.cv05.ss03</key>
+      <string>base</string>
+      <key>abrevedotbelow.cv04.ss03</key>
+      <string>base</string>
+      <key>acircumflexdotbelow.cv04.ss03</key>
+      <string>base</string>
+      <key>adieresis.cv04.ss03</key>
+      <string>base</string>
+      <key>adieresismacron.cv04.ss03</key>
+      <string>base</string>
+      <key>adotaccent.cv04.ss03</key>
+      <string>base</string>
+      <key>adotbelow.cv04.ss03</key>
       <string>base</string>
     </dict>
     <key>public.postscriptNames</key>

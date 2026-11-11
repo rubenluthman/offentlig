@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Mdotaccent.ss03" format="2">
+  <advance width="1706"/>
+  <anchor x="805" y="0" name="bottom"/>
+  <anchor x="853" y="1827" name="top"/>
+  <outline>
+    <component base="M"/>
+    <component base="dotaccentcomb.ss03" xOffset="795" yOffset="412"/>
+  </outline>
+</glyph>

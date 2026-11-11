@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Hdieresis.ss03" format="2">
+  <advance width="1531.90625"/>
+  <anchor x="781.22" y="0" name="bottom"/>
+  <anchor x="763.87" y="1856.33" name="top"/>
+  <outline>
+    <component base="H"/>
+    <component base="dieresiscomb.ss03" xOffset="468.281" yOffset="419.875"/>
+  </outline>
+</glyph>
