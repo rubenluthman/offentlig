@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="acutecomb.narrow" format="2">
   <anchor x="156.96875" y="1034.0" name="_top"/>
+  <anchor x="210.515" y="1415" name="top"/>
   <outline>
     <contour>
       <point x="239.28125" y="1155.0" type="line"/>

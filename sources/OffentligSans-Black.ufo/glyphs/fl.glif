@@ -4,6 +4,7 @@
   <unicode hex="FB02"/>
   <anchor x="1060" y="0" name="bottom_1"/>
   <anchor x="1275" y="1486" name="caron_1"/>
+  <anchor x="506" y="1446" name="top"/>
   <anchor x="1087" y="1530" name="top_1"/>
   <anchor x="750" y="0" name="caret_1"/>
   <outline>

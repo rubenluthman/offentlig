@@ -4,10 +4,10 @@
   <unicode hex="1EB7"/>
   <anchor x="468.8125" y="0.0" name="bottom"/>
   <anchor x="830.3125" y="25.25" name="ogonek"/>
-  <anchor x="617.65625" y="1034.0" name="top"/>
+  <anchor x="657.187" y="1338.219" name="top"/>
   <outline>
     <component base="a"/>
-    <component base="dotbelowcomb" xOffset="430.03125"/>
+    <component base="dotbelowcomb" xOffset="440.7"/>
     <component base="brevecomb" xOffset="232.5" yOffset="-2.625"/>
   </outline>
   <lib>

@@ -4,7 +4,7 @@
   <unicode hex="01FD"/>
   <anchor x="1154.3125" y="0.0" name="bottom"/>
   <anchor x="1309.90625" y="40.8125" name="ogonek"/>
-  <anchor x="951.09375" y="1034.0" name="top"/>
+  <anchor x="1011.922" y="1415" name="top"/>
   <outline>
     <component base="ae"/>
     <component base="acutecomb" xOffset="787.5625"/>

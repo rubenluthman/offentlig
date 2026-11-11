@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="icaron" format="2">
+  <advance width="571"/>
+  <unicode hex="01D0"/>
+  <anchor x="434" y="18" name="ogonek"/>
+  <anchor x="292" y="1417" name="top"/>
+  <outline>
+    <component base="idotless"/>
+    <component base="caroncomb" xOffset="-140" yOffset="0"/>
+  </outline>
+</glyph>

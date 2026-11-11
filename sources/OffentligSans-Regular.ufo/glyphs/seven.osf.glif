@@ -1,7 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="seven.osf" format="2">
-  <advance width="1201.21875"/>
+  <advance width="1201.219"/>
   <outline>
-    <component base="seven"/>
+    <contour>
+      <point x="353.531" y="-330" type="curve"/>
+      <point x="554.969" y="-330" type="line"/>
+      <point x="588.625" y="-47.925"/>
+      <point x="850.969" y="541.484"/>
+      <point x="1108.094" y="874.25" type="curve"/>
+      <point x="1108.094" y="1034" type="line"/>
+      <point x="93.125" y="1034" type="line"/>
+      <point x="93.125" y="874.25" type="line"/>
+      <point x="904.688" y="874.25" type="line"/>
+      <point x="572.875" y="427.488"/>
+      <point x="396.844" y="-83.163"/>
+    </contour>
   </outline>
 </glyph>
