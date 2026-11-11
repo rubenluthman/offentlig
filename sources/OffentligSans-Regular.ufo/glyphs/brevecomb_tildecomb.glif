@@ -20,26 +20,26 @@
       <point x="174.5" y="1155.34375"/>
     </contour>
     <contour>
-      <point x="58.5625" y="1488.21875" type="line"/>
-      <point x="99.5625" y="1518.9375"/>
-      <point x="133.6875" y="1544.46875"/>
-      <point x="199.0625" y="1544.46875" type="curve" smooth="yes"/>
-      <point x="290.0625" y="1544.46875"/>
-      <point x="346.5625" y="1492.6875"/>
-      <point x="453.375" y="1492.6875" type="curve" smooth="yes"/>
-      <point x="536.875" y="1492.6875"/>
-      <point x="591.375" y="1524.46875"/>
-      <point x="626.25" y="1550.71875" type="curve"/>
-      <point x="594.125" y="1672.28125" type="line"/>
-      <point x="554.0625" y="1642.53125"/>
-      <point x="513.625" y="1616.53125"/>
-      <point x="454.0" y="1616.53125" type="curve" smooth="yes"/>
-      <point x="365.9375" y="1616.53125"/>
-      <point x="289.4375" y="1672.375"/>
-      <point x="190.375" y="1672.375" type="curve" smooth="yes"/>
-      <point x="113.9375" y="1672.375"/>
-      <point x="68.375" y="1638.8125"/>
-      <point x="24.25" y="1597.53125" type="curve"/>
+      <point x="58.562" y="1487.75" type="line"/>
+      <point x="99.562" y="1526.75"/>
+      <point x="133.687" y="1558.75"/>
+      <point x="199.062" y="1558.75" type="curve" smooth="yes"/>
+      <point x="290.062" y="1558.75"/>
+      <point x="346.562" y="1493.75"/>
+      <point x="453.374" y="1493.75" type="curve" smooth="yes"/>
+      <point x="536.874" y="1493.75"/>
+      <point x="591.374" y="1533.75"/>
+      <point x="626.25" y="1566.75" type="curve"/>
+      <point x="594.124" y="1687.75" type="line"/>
+      <point x="554.062" y="1650.75"/>
+      <point x="513.624" y="1617.75"/>
+      <point x="454" y="1617.75" type="curve" smooth="yes"/>
+      <point x="365.937" y="1617.75"/>
+      <point x="289.437" y="1687.75"/>
+      <point x="190.37400000000002" y="1687.75" type="curve" smooth="yes"/>
+      <point x="113.937" y="1687.75"/>
+      <point x="68.3745" y="1645.75"/>
+      <point x="24.2495" y="1593.75" type="curve"/>
     </contour>
   </outline>
   <lib>

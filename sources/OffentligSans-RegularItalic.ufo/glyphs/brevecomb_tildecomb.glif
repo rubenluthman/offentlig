@@ -20,26 +20,26 @@
       <point x="277.5625" y="1155.34375"/>
     </contour>
     <contour>
-      <point x="190.375" y="1491.28125" type="line"/>
-      <point x="234.125" y="1521.65625"/>
-      <point x="270.25" y="1547.53125"/>
-      <point x="333.0" y="1547.53125" type="curve" smooth="yes"/>
-      <point x="419.375" y="1547.53125"/>
-      <point x="465.875" y="1495.40625"/>
-      <point x="566.125" y="1495.40625" type="curve" smooth="yes"/>
-      <point x="645.6875" y="1495.40625"/>
-      <point x="703.5625" y="1527.53125"/>
-      <point x="740.5" y="1553.78125" type="curve"/>
-      <point x="725.25" y="1669.21875" type="line"/>
-      <point x="683.8125" y="1639.78125"/>
-      <point x="640.625" y="1613.46875"/>
-      <point x="584.3125" y="1613.46875" type="curve" smooth="yes"/>
-      <point x="500.1875" y="1613.46875"/>
-      <point x="435.0" y="1668.96875"/>
-      <point x="341.875" y="1668.96875" type="curve" smooth="yes"/>
-      <point x="268.0625" y="1668.96875"/>
-      <point x="220.4375" y="1635.40625"/>
-      <point x="171.5625" y="1591.84375" type="curve"/>
+      <point x="190.37400000000002" y="1491.75" type="line"/>
+      <point x="234.12400000000002" y="1529.75"/>
+      <point x="270.25" y="1561.75"/>
+      <point x="333" y="1561.75" type="curve" smooth="yes"/>
+      <point x="419.374" y="1561.75"/>
+      <point x="465.874" y="1496.75"/>
+      <point x="566.124" y="1496.75" type="curve" smooth="yes"/>
+      <point x="645.687" y="1496.75"/>
+      <point x="703.562" y="1536.75"/>
+      <point x="740.5" y="1569.75" type="curve"/>
+      <point x="725.25" y="1684.75" type="line"/>
+      <point x="683.812" y="1647.75"/>
+      <point x="640.624" y="1614.75"/>
+      <point x="584.312" y="1614.75" type="curve" smooth="yes"/>
+      <point x="500.187" y="1614.75"/>
+      <point x="435" y="1684.75"/>
+      <point x="341.874" y="1684.75" type="curve" smooth="yes"/>
+      <point x="268.062" y="1684.75"/>
+      <point x="220.437" y="1642.75"/>
+      <point x="171.562" y="1587.75" type="curve"/>
     </contour>
   </outline>
   <lib>

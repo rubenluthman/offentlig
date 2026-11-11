@@ -101,3 +101,30 @@ def test_hook_over_breve_is_not_taller_than_hook_over_circumflex(weight, italic,
     top_breve = bounds(font, glyph_for(font, breve))[3]
     top_circ = bounds(font, glyph_for(font, circumflex))[3]
     assert top_breve <= top_circ + 2, f"{top_breve:.0f} vs {top_circ:.0f}"
+
+
+def _top_wave(font, name):
+    """(smallest stroke, rise of the upper edge) of the uppermost wave in a mark glyph."""
+    gs = font.getGlyphSet()
+    pen = _Flat(gs)
+    gs[name].draw(pen)
+    x0, _, x1, _ = bounds(font, name)
+    strokes, upper = [], []
+    for i in range(80):
+        x = x0 + (0.18 + 0.64 * i / 79) * (x1 - x0) + 0.37
+        ys = sorted(a[1] + (x - a[0]) / (b[0] - a[0]) * (b[1] - a[1]) for a, b in pen.segments
+                    if (a[0] - x) * (b[0] - x) < 0 and a[0] != b[0])
+        strokes.append(ys[-1] - ys[-2])
+        upper.append(ys[-1])
+    return min(strokes), max(upper) - min(upper)
+
+
+@pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
+@pytest.mark.parametrize("name", ["uni03060303", "uni03020303"])
+def test_stacked_tilde_marks_use_the_same_wave_as_the_tilde(weight, italic, name):
+    """The tilde inside breve + tilde and circumflex + tilde (`ẵ`, `ẫ`, `ễ`, `ỗ`) is the same wave as `tildecomb`."""
+    font = TTFont(static_path(weight, italic))
+    stroke, rise = _top_wave(font, name)
+    ref_stroke, ref_rise = _top_wave(font, "tildecomb")
+    assert abs(stroke - ref_stroke) <= 2, f"stroke {stroke:.0f} vs {ref_stroke:.0f}"
+    assert abs(rise - ref_rise) <= 2, f"rise {rise:.0f} vs {ref_rise:.0f}"
