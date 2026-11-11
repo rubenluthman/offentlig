@@ -42,7 +42,7 @@ This project follows a shared house style for wording, punctuation, and headings
 
 - Work on a branch and open a pull request into `main`.
 - Use Conventional Commits.
-- Run `make verify` before committing. It runs the house style check with `vale` ([install](https://vale.sh/docs/install)), and skips it with a notice when `vale` is missing, because CI runs it too. The rules are described under [House style](#house-style).
+- Run `make verify` before committing. It stops before the tests when `fonts/` is missing or older than `sources/`, because the tests read the built fonts. It runs the house style check with `vale` ([install](https://vale.sh/docs/install)), and skips it with a notice when `vale` is missing, because CI runs it too. The rules are described under [House style](#house-style).
 
 ## Releases
 
