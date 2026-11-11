@@ -1,4 +1,4 @@
-"""Stroke-weight invariants of `percent`, `asciitilde` and `approxequal` (Rosalie Wagner's list, uswds/public-sans#158)."""
+"""Stroke-weight invariants of `percent`, `perthousand`, `asciitilde` and `approxequal` (Rosalie Wagner's list, uswds/public-sans#158)."""
 import math
 
 import pytest
@@ -83,10 +83,11 @@ def hyphen_thickness(font):
 
 
 @pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
-def test_percent_slash_keeps_weight_of_zero_stems(weight, italic):
-    """The slash is at least 0.80 of the zero stem thickness (measured perpendicular to the slash axis)."""
+@pytest.mark.parametrize("name", ["percent", "perthousand"])
+def test_percent_slash_keeps_weight_of_zero_stems(weight, italic, name):
+    """The slash of % and of the per mille sign is at least 0.80 of the stroke of the small circles (measured perpendicular to the slash axis)."""
     font = TTFont(static_path(weight, italic))
-    segs = segments(font, "percent")
+    segs = segments(font, name)
     low = [spans_at_y(segs, y)[0] for y in (250, 450)]  # leftmost span is the slash: the zeros start higher and further right
     centres = [(a + b) / 2 for a, b in low]
     theta = math.atan((centres[1] - centres[0]) / 200)
