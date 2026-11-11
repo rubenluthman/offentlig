@@ -5,11 +5,17 @@ cd "$(dirname "$0")/.."
 fail=0
 
 echo "== tests"
-if [ -d fonts/OffentligSans/ttf ]; then
-  PATH="$PWD/venv/bin:$PATH" pytest -q tests || fail=1
-else
+built=fonts/OffentligSans/ttf/OffentligSans-Regular.ttf
+if [ ! -f "$built" ]; then
   echo "fonts/ missing: run 'make build' first" >&2
   fail=1
+elif [ -n "$(git ls-files -z --cached --others --exclude-standard sources | xargs -0 sh -c 'find "$@" -prune -newer "$0" 2>/dev/null' "$built" | head -n 1)" ]; then
+  # The tests read the built fonts, so a build older than sources/ reports false failures.
+  # Only source files count: the build writes ignored files (build.ninja, instance_ufos/) into sources/.
+  echo "fonts/ is older than sources/: run 'make build' first" >&2
+  fail=1
+else
+  PATH="$PWD/venv/bin:$PATH" pytest -q tests || fail=1
 fi
 
 files=$(git ls-files --cached --others --exclude-standard)
