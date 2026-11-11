@@ -9,6 +9,6 @@
   <outline>
     <component base="U"/>
     <component base="dieresiscomb" xOffset="555" yOffset="412"/>
-    <component base="caroncomb" xOffset="523.546" yOffset="793"/>
+    <component base="caroncomb" xOffset="515.9568" yOffset="739"/>
   </outline>
 </glyph>
