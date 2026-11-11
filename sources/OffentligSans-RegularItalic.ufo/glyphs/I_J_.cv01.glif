@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="IJ.cv01" format="2">
+  <advance width="1609.7648046514664"/>
+  <anchor x="419.25" y="1446.0" name="top"/>
+  <outline>
+    <component base="I"/>
+    <component base="J.cv01" xOffset="568.65625"/>
+  </outline>
+</glyph>

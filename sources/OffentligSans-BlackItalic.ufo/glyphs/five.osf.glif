@@ -2,6 +2,41 @@
 <glyph name="five.osf" format="2">
   <advance width="1411"/>
   <outline>
-    <component base="five"/>
+    <contour>
+      <point x="600.097" y="-350" type="curve" smooth="yes"/>
+      <point x="969.097" y="-350"/>
+      <point x="1224.097" y="-166"/>
+      <point x="1267.097" y="112.969" type="curve" smooth="yes"/>
+      <point x="1309.097" y="389.052"/>
+      <point x="1120.097" y="563.052"/>
+      <point x="807.097" y="563.052" type="curve" smooth="yes"/>
+      <point x="706.097" y="563.052"/>
+      <point x="636.097" y="545.052"/>
+      <point x="516.097" y="513.052" type="curve"/>
+      <point x="570.097" y="722" type="line"/>
+      <point x="1244.097" y="722" type="line"/>
+      <point x="1304.097" y="1034" type="line"/>
+      <point x="316.097" y="1034" type="line"/>
+      <point x="148.097" y="347.052" type="line"/>
+      <point x="449.097" y="203.052" type="line"/>
+      <point x="449.097" y="203.052"/>
+      <point x="449.097" y="203.052"/>
+      <point x="449.097" y="203.052" type="curve"/>
+      <point x="542.097" y="241.052"/>
+      <point x="590.097" y="255.052"/>
+      <point x="652.097" y="255.052" type="curve" smooth="yes"/>
+      <point x="803.097" y="255.052"/>
+      <point x="873.097" y="168.186"/>
+      <point x="860.097" y="103.81" type="curve" smooth="yes"/>
+      <point x="847.097" y="34"/>
+      <point x="741.097" y="-44"/>
+      <point x="598.097" y="-44" type="curve" smooth="yes"/>
+      <point x="441.097" y="-44"/>
+      <point x="378.097" y="46.074"/>
+      <point x="307.097" y="122.325" type="curve"/>
+      <point x="-9.903" y="-38" type="line"/>
+      <point x="72.097" y="-216"/>
+      <point x="299.097" y="-350"/>
+    </contour>
   </outline>
 </glyph>

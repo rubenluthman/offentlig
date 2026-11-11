@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="I.cv05" format="2">
+  <advance width="909"/>
+  <anchor x="475" y="0" name="bottom"/>
+  <anchor x="701.0" y="9" name="ogonek"/>
+  <anchor x="675" y="1446" name="top"/>
+  <outline>
+    <contour>
+      <point x="60.0" y="0" type="line"/>
+      <point x="849.0" y="0" type="line"/>
+      <point x="893.9730671047653" y="320" type="line"/>
+      <point x="693.9730671047653" y="320" type="line"/>
+      <point x="807.2489798748927" y="1126" type="line"/>
+      <point x="1007.2489798748927" y="1126" type="line"/>
+      <point x="1052.222046979658" y="1446" type="line"/>
+      <point x="263.222046979658" y="1446" type="line"/>
+      <point x="218.24897987489274" y="1126" type="line"/>
+      <point x="418.2489798748927" y="1126" type="line"/>
+      <point x="304.9730671047653" y="320" type="line"/>
+      <point x="104.97306710476525" y="320" type="line"/>
+    </contour>
+  </outline>
+</glyph>

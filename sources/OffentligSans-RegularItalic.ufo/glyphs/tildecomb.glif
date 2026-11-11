@@ -2,6 +2,7 @@
 <glyph name="tildecomb" format="2">
   <unicode hex="0303"/>
   <anchor x="396.875" y="1034.0" name="_top"/>
+  <anchor x="444.022" y="1369.46875" name="top"/>
   <outline>
     <contour>
       <point x="173.312" y="1223" type="line"/>

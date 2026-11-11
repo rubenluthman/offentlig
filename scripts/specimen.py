@@ -1,17 +1,23 @@
 """Render docs/specimen.png from the built static TTFs, quoting the statutes in docs/proof/allemansratten.txt.
 
+With --social it renders build/social-preview.png instead: the 1280 x 640 image GitHub shows when a link to the
+repository is shared, uploaded by hand under Settings > General > Social preview.
+
 HarfBuzz shapes each line (so GPOS kerning applies) and Pillow draws each glyph at its shaped position.
 The page is drawn at twice the output size and downsampled, which keeps glyph positions sub-pixel accurate.
 """
+import sys
 from pathlib import Path
 
 import uharfbuzz as hb
+from fontTools.pens.boundsPen import BoundsPen
 from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
 TTF = ROOT / "fonts" / "OffentligSans" / "ttf"
 OUT = ROOT / "docs" / "specimen.png"
+SOCIAL_OUT = ROOT / "build" / "social-preview.png"
 
 WIDTH, MARGIN, SS = 1600, 100, 2
 CONTENT = WIDTH - 2 * MARGIN
@@ -68,6 +74,22 @@ def draw_line(draw, style, text, size, x, baseline, fill):
         pen += pos.x_advance * scale
 
 
+def ink(style, text, size):
+    """Left and right ink edges of a shaped line, in pixels from its pen start."""
+    path, _, upem, _, order = font(style)
+    glyphs = TTFont(path).getGlyphSet()
+    infos, positions = shape(style, text)
+    scale, pen, edges = size / upem, 0, []
+    for info, pos in zip(infos, positions):
+        bounds = BoundsPen(glyphs)
+        glyphs[order[info.codepoint]].draw(bounds)
+        if bounds.bounds:
+            x_min, _, x_max, _ = bounds.bounds
+            edges += [pen + pos.x_offset + x_min, pen + pos.x_offset + x_max]
+        pen += pos.x_advance
+    return min(edges) * scale, max(edges) * scale
+
+
 def wrap(style, text, size, max_width):
     lines, line = [], ""
     for word in text.split():
@@ -115,13 +137,54 @@ def main():
         plan.append(("line", "Regular", weight, caption_size, left + (column - lw) / 2, y + 48, MUTED))
     height = round(y + 48 + MARGIN)
 
-    page = Image.new("RGB", (WIDTH * SS, height * SS), "white")
+    render(plan, WIDTH, height, OUT)
+
+
+def render(plan, page_width, page_height, out):
+    page = Image.new("RGB", (page_width * SS, page_height * SS), "white")
     draw = ImageDraw.Draw(page)
     for _, style, text, size, x, baseline, fill in plan:
         draw_line(draw, style, text, size, x, baseline, fill)
-    page.resize((WIDTH, height), Image.Resampling.LANCZOS).save(OUT, optimize=True)
-    print(f"wrote {OUT.relative_to(ROOT)} ({WIDTH} x {height})")
+    out.parent.mkdir(parents=True, exist_ok=True)
+    page.resize((page_width, page_height), Image.Resampling.LANCZOS).save(out, optimize=True)
+    print(f"wrote {out.relative_to(ROOT)} ({page_width} x {page_height})")
 
+
+def social():
+    """GitHub's recommended 1280 x 640, with wide side margins because some sites crop shared links to 1.91:1.
+
+    Every line is placed by its ink, not its advance, so all three share the same left edge, and the quote and the
+    weight row share the same right edge. The quote is set in italic, so both styles appear.
+    """
+    page_width, page_height, side = 1280, 640, 140
+    content = page_width - 2 * side
+    title, title_size = "Offentlig Sans", 104
+    quote = "Alla ska ha tillgång till naturen"
+    left, right = ink("Italic", quote, 1)
+    quote_size = content / (right - left)
+
+    # Weight row: the samples' ink spans the content width, with equal gaps between them.
+    sample_size = quote_size
+    while True:
+        spans = [ink(weight, WEIGHT_SAMPLE, sample_size) for weight in WEIGHTS]
+        gap = (content - sum(r - l for l, r in spans)) / (len(WEIGHTS) - 1)
+        if gap >= sample_size * 0.4:
+            break
+        sample_size -= 1
+
+    # Baselines relative to the top of the block, then the block is centred vertically. Cap height is 0.723 em.
+    y = 0.723 * title_size
+    rows = [("Bold", title, title_size, side - ink("Bold", title, title_size)[0], y)]
+    y += 0.723 * quote_size + 64
+    rows.append(("Italic", quote, quote_size, side - left * quote_size, y))
+    y += 0.723 * sample_size + 80
+    x = side
+    for weight, (l, r) in zip(WEIGHTS, spans):
+        rows.append((weight, WEIGHT_SAMPLE, sample_size, x - l, y))
+        x += (r - l) + gap
+    top = (page_height - y) / 2
+    plan = [("line", style, text, size, x, top + baseline, INK) for style, text, size, x, baseline in rows]
+    render(plan, page_width, page_height, SOCIAL_OUT)
 
 if __name__ == "__main__":
-    main()
+    social() if "--social" in sys.argv[1:] else main()

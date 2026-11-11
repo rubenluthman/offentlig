@@ -6,6 +6,7 @@
   <anchor x="423.90625" y="1520.375" name="caron"/>
   <anchor x="401.84375" y="584.25" name="center"/>
   <anchor x="464.65625" y="6.1875" name="_bottom"/>
+  <anchor x="388" y="1335" name="top"/>
   <outline>
     <contour>
       <point x="433.96875" y="-405.5625" type="curve" smooth="yes"/>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_hook.c" format="2">
+  <advance width="0"/>
+  <outline>
+    <contour>
+      <point x="972.46875" y="726.5" type="line"/>
+      <point x="972.46875" y="1247.86766" type="line" smooth="yes"/>
+      <point x="972.46875" y="1350.66855"/>
+      <point x="889.1373" y="1434"/>
+      <point x="786.33641" y="1434" type="curve" smooth="yes"/>
+      <point x="723.50609" y="1434.0" type="line"/>
+      <point x="723.50609" y="1329.28281" type="line"/>
+      <point x="786.33641" y="1329.28281" type="line" smooth="yes"/>
+      <point x="831.302" y="1329.28281"/>
+      <point x="867.75156" y="1292.83325"/>
+      <point x="867.75156" y="1247.86766" type="curve" smooth="yes"/>
+      <point x="867.75156" y="726.5" type="line"/>
+    </contour>
+  </outline>
+</glyph>

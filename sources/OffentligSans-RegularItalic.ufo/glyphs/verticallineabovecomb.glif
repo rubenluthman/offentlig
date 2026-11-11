@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="verticallineabovecomb" format="2">
+  <advance width="0"/>
+  <unicode hex="030D"/>
+  <anchor x="66.19375" y="1034" name="_top"/>
+  <anchor x="119.74" y="1415" name="top"/>
+  <outline>
+    <contour>
+      <point x="164.43278" y="1170" type="line"/>
+      <point x="296.82028" y="1170" type="line"/>
+      <point x="335.60955" y="1446" type="line"/>
+      <point x="203.22205" y="1446" type="line"/>
+    </contour>
+  </outline>
+</glyph>

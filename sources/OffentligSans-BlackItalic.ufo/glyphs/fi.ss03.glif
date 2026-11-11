@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="fi.ss03" format="2">
+  <advance width="1366"/>
+  <anchor x="1007" y="0" name="bottom_1"/>
+  <anchor x="1158" y="18" name="ogonek_1"/>
+  <anchor x="683" y="0" name="caret_1"/>
+  <anchor x="640.51896" y="1485.36" name="top"/>
+  <outline>
+    <component base="f"/>
+    <component base="i.ss03" xOffset="795"/>
+  </outline>
+</glyph>
