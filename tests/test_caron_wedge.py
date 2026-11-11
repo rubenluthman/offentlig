@@ -1,5 +1,6 @@
 """The straight wedge on ď ľ ť Ľ keeps clear of a following l, b, h or k, kerning included, in every weight."""
-import numpy as np
+import math
+
 import pytest
 import uharfbuzz as hb
 from fontTools.pens.basePen import BasePen
@@ -29,16 +30,18 @@ class _Flat(BasePen):
         self._cur.append(pt)
 
     def _curveToOne(self, a, b, c):
-        p0 = np.array(self._cur[-1])
-        for t in np.linspace(0, 1, 17)[1:]:
+        p0 = self._cur[-1]
+        for i in range(1, 17):
+            t = i / 16
             m = 1 - t
-            self._cur.append(tuple(m**3 * p0 + 3 * m * m * t * np.array(a) + 3 * m * t * t * np.array(b) + t**3 * np.array(c)))
+            self._cur.append(tuple(m**3 * p0[k] + 3 * m * m * t * a[k] + 3 * m * t * t * b[k] + t**3 * c[k] for k in (0, 1)))
 
     def _qCurveToOne(self, a, b):
-        p0 = np.array(self._cur[-1])
-        for t in np.linspace(0, 1, 13)[1:]:
+        p0 = self._cur[-1]
+        for i in range(1, 13):
+            t = i / 12
             m = 1 - t
-            self._cur.append(tuple(m * m * p0 + 2 * m * t * np.array(a) + t * t * np.array(b)))
+            self._cur.append(tuple(m * m * p0[k] + 2 * m * t * a[k] + t * t * b[k] for k in (0, 1)))
 
     def _closePath(self):
         self.contours.append(self._cur)
@@ -46,25 +49,26 @@ class _Flat(BasePen):
     _endPath = _closePath
 
 
-def _segments(contours, dx=0, dy=0):
-    out = []
-    for contour in contours:
-        pts = np.array(contour, float) + [dx, dy]
-        out.append(np.stack([pts, np.roll(pts, -1, 0)], 1))
-    return np.concatenate(out)
+def _points(contours, dx=0, dy=0):
+    return [[(x + dx, y + dy) for x, y in contour] for contour in contours]
+
+
+def _point_to_polyline(p, contour):
+    best = math.inf
+    for (ax, ay), (bx, by) in zip(contour, contour[1:] + contour[:1]):
+        abx, aby = bx - ax, by - ay
+        length = abx * abx + aby * aby
+        t = 0 if length == 0 else max(0, min(1, ((p[0] - ax) * abx + (p[1] - ay) * aby) / length))
+        best = min(best, math.hypot(p[0] - (ax + abx * t), p[1] - (ay + aby * t)))
+    return best
 
 
 def _distance(a, b):
-    """Smallest distance between two sets of segments (their outlines do not cross, or the gap is 0 anyway)."""
-    best = np.inf
-    for one, other in ((a, b), (b, a)):
-        p = one[:, 0][:, None, :]
-        start, end = other[None, :, 0], other[None, :, 1]
-        ab = end - start
-        length = np.where((ab**2).sum(-1) == 0, 1, (ab**2).sum(-1))
-        t = np.clip(((p - start) * ab).sum(-1) / length, 0, 1)
-        best = min(best, np.linalg.norm(p - (start + ab * t[..., None]), axis=-1).min())
-    return best
+    """Smallest distance between two outlines (they do not cross, or the gap is 0 anyway)."""
+    return min(
+        min(_point_to_polyline(p, other) for contour in one for p in contour for other in two)
+        for one, two in ((a, b), (b, a))
+    )
 
 
 def _wedge(font, glyph_name):
@@ -72,7 +76,7 @@ def _wedge(font, glyph_name):
     comp = font["glyf"][glyph_name].components[1]
     pen = _Flat(font.getGlyphSet())
     font.getGlyphSet()[comp.glyphName].draw(pen)
-    return _segments(pen.contours, comp.x, comp.y)
+    return _points(pen.contours, comp.x, comp.y)
 
 
 @pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
@@ -93,7 +97,7 @@ def test_wedge_clears_following_ascender(weight, italic):
             first, second = buf.glyph_positions
             pen = _Flat(glyph_set)
             glyph_set[font.getGlyphName(buf.glyph_infos[1].codepoint)].draw(pen)
-            gap = _distance(wedge, _segments(pen.contours, first.x_advance + second.x_offset, second.y_offset))
+            gap = _distance(wedge, _points(pen.contours, first.x_advance + second.x_offset, second.y_offset))
             if gap < MIN_GAP:
                 too_close.append((name, follower, round(gap)))
     assert not too_close, f"wedge closer than {MIN_GAP} units to the next letter: {too_close}"
