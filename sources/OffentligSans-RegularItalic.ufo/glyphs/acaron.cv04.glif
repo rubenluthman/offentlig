@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="acaron.cv04" format="2">
-  <advance width="1064.8125"/>
+  <advance width="1140.531"/>
   <anchor x="484.75" y="0.0" name="bottom"/>
   <anchor x="906.03" y="25.25" name="ogonek"/>
   <anchor x="662.66" y="1348.75" name="top"/>

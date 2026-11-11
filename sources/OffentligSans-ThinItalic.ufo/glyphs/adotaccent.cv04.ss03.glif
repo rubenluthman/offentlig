@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="adotaccent.cv04.ss03" format="2">
-  <advance width="1016"/>
+  <advance width="1090"/>
   <anchor x="449" y="0" name="bottom"/>
   <anchor x="850.0" y="28" name="ogonek"/>
   <anchor x="644.34" y="1415" name="top"/>

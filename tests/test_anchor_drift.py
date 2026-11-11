@@ -157,3 +157,48 @@ def test_ss03_marks_sit_on_their_anchors_or_where_the_plain_glyph_has_them(ufo):
                 bad.append((glyph.name, glyph.components[index].baseGlyph, round(dx, 1), round(dy, 1), want and tuple(round(v, 1) for v in want)))
     assert checked > 100
     assert not bad, f"{ufo}: marks off their anchor and not as in the plain glyph (glyph, mark, dx, dy, plain offset): {bad}"
+
+
+WIDTH_BASES = {"cv01": "J", "cv03": "G", "cv04": "a", "cv05": "I"}
+WIDTH_TOLERANCE = 0.5  # font units
+
+
+def _expected_width(font, name):
+    """Width an alternate must have, against its plain glyph, or None when the rule does not apply.
+
+    `X.cvNN` is as much wider than `X` as the alternate base is wider than the plain base:
+    width(X.cvNN) = width(X) + width(base.cvNN) - width(base). An `.ss03` form keeps the width of its non-`.ss03` glyph.
+    Deliberately different widths of the plain glyph (the accented italic a, `ď ľ ť`, `ő ű`) carry over, because the
+    comparison is alternate against plain, not plain against base.
+    """
+    if name.endswith(".ss03"):
+        plain = name.removesuffix(".ss03")
+        return font[plain].width if plain in font else None
+    stem, dot, tag = name.rpartition(".")
+    if not dot or tag not in WIDTH_BASES:
+        return None
+    base = WIDTH_BASES[tag]
+    if stem not in font or base not in font or f"{base}.{tag}" not in font:
+        return None
+    return font[stem].width + font[f"{base}.{tag}"].width - font[base].width
+
+
+@pytest.mark.parametrize("ufo", UFOS)
+def test_alternate_widths_follow_their_plain_glyph(ufo):
+    """Every `X.cvNN` and `X.ss03` glyph is as wide as its plain glyph plus the width the alternate base adds, within 0.5 units.
+
+    Not checked: the ligatures `IJ.*` (two letters, each with its own alternate form).
+    """
+    font = ufoLib2.Font.open(SOURCES / ufo)
+    bad, checked = [], 0
+    for glyph in font:
+        if glyph.name.startswith("IJ"):
+            continue
+        want = _expected_width(font, glyph.name)
+        if want is None:
+            continue
+        checked += 1
+        if abs(glyph.width - want) > WIDTH_TOLERANCE:
+            bad.append((glyph.name, round(glyph.width, 1), round(want, 1)))
+    assert checked > 200
+    assert not bad, f"{ufo}: width differs from the plain glyph plus the alternate base's extra width (glyph, width, expected): {bad}"
