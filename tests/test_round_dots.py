@@ -116,3 +116,16 @@ def test_italic_ss03_marks_sit_on_their_anchors(weight):
             if abs(dx) > 10 or abs(dy) > 10:
                 bad.append((glyph.name, comp.baseGlyph, round(dx), round(dy)))
     assert not bad, bad
+
+
+@pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
+def test_ss03_does_not_undo_letter_alternates(weight, italic):
+    """The `cv` features run before `ss03`, so a letter alternate keeps its shape (and square dots) under `ss03`."""
+    path = static_path(weight, italic)
+    assert shape(path, "ä", {"ss03": True, "cv04": True})[0] == ["adieresis.cv04"]
+    assert shape(path, "ạ", {"ss03": True, "cv04": True})[0] == ["adotbelow.cv04"]
+    assert shape(path, "Ï", {"ss03": True, "cv05": True})[0] == ["Idieresis.cv05"]
+    assert shape(path, "Ġ", {"ss03": True, "cv03": True})[0] == ["Gdotaccent.cv03"]
+    # letters the alternates do not touch still get round dots
+    assert shape(path, "öÄ", {"ss03": True, "cv04": True})[0] == ["odieresis.ss03", "Adieresis.ss03"]
+    assert shape(path, "1.5", {"ss03": True, "tnum": True})[0] == ["one.tf", "period.tf.ss03", "five.tf"]
