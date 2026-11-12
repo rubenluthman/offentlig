@@ -72,7 +72,9 @@ def in_scope(font, glyph, categories):
 
 
 # Glyphs left out although in scope. Each needs a one-line reason.
-EXCLUDED = {}
+EXCLUDED = {
+    "tcaron": "the caron stands beside the stem, so `top` sits above the caron (ink top) and not on the stem top (tests/test_mark_anchors.py)",
+}
 
 
 def drift(font):

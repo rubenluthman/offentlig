@@ -2,6 +2,7 @@
 <glyph name="idotbelow.ss03" format="2">
   <advance width="455"/>
   <anchor x="228" y="0" name="bottom"/>
+  <anchor x="243" y="26" name="ogonek"/>
   <outline>
     <component base="i.ss03"/>
     <component base="dotbelowcomb.ss03" xOffset="170"/>

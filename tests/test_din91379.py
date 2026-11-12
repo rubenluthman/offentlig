@@ -17,7 +17,7 @@ NEW_MARKS = [0x310, 0x315, 0x325, 0x32E, 0x331]
 ATTACHING = ["F̀", "F̄", "M̀", "M̂", "M̆", "P̀", "P̄", "P̣", "d̂", "f̀", "f̄", "k̀", "k̂", "k̄", "k̇",
              "m̀", "m̂", "m̆", "p̀", "p̄", "p̣", "t̀", "t̄", "K̛", "T̛", "k̛", "t̛", "Ç̆", "ç̆", "ṭ̄", "Ḳ̄", "ḳ̄",
              "C̕", "c̕", "K̕", "k̕", "P̕", "p̕", "T̕", "t̕", "Č̕", "č̕", "L̥", "l̥", "R̥", "r̥", "L̥̄", "l̥̄", "R̥̄", "r̥̄",
-             "H̱", "S̱", "s̱", "M̐", "m̐"]
+             "H̱", "S̱", "s̱", "M̐", "m̐", "C̨̆", "c̨̆", "S̛̄", "s̛̄"]
 # a second mark on an already accented letter must clear the first mark
 STACKED = ["Û̄", "û̄", "ÿ́", "Ī́", "ī́", "Ê̄", "ê̄", "Ê̌", "ê̌"]
 
@@ -153,3 +153,26 @@ def test_double_macron_below_spans_the_following_letter():
     mb = bounds(gs, mark[0])
     origin = k[1] + mark[2]
     assert origin + mb[2] > k[1] + 500
+
+
+@pytest.mark.parametrize("weight,italic", [("Thin", False), ("Regular", False), ("Black", False), ("Regular", True), ("Black", True)])
+@pytest.mark.parametrize("seq,kind", [("C̨", "ogonek"), ("c̨", "ogonek"), ("S̛", "horn"), ("s̛", "horn"),
+                                       ("C̨̆", "ogonek"), ("c̨̆", "ogonek"), ("S̛̄", "horn"), ("s̛̄", "horn")])
+def test_ogonek_and_horn_land_on_c_and_s(weight, italic, seq, kind):
+    """The mark is moved onto the letter, not left at offset 0,0 on its origin: an ogonek hangs from the lower right,
+    a horn leaves the upper right."""
+    path = static_path(weight, italic)
+    gs = TTFont(path).getGlyphSet()
+    items = shaped(path, seq)
+    base, mark = items[0], items[1]
+    assert (mark[2], mark[3]) != (0, 0), f"{seq!r}: the mark has no offset"
+    bb, mb = bounds(gs, base[0]), bounds(gs, mark[0])
+    left, right = mb[0] + base[1] + mark[2], mb[2] + base[1] + mark[2]
+    bottom, top = mb[1] + mark[3], mb[3] + mark[3]
+    width = bb[2] - bb[0]
+    if kind == "ogonek":
+        assert top > -40 and top < 120 and bottom < -150, f"{seq!r}: ogonek spans {bottom}..{top}"
+        assert bb[0] + 0.35 * width < (left + right) / 2 < bb[2] + 0.2 * width
+    else:
+        assert bottom > bb[1] + 0.35 * (bb[3] - bb[1]) and top < bb[3] + 400
+        assert (left + right) / 2 > bb[0] + 0.5 * width

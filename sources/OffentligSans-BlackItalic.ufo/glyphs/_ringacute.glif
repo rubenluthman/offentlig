@@ -2,6 +2,7 @@
 <glyph name="_ringacute" format="2">
   <advance width="1462"/>
   <anchor x="794" y="1034" name="_top"/>
+  <anchor x="868.1479" y="1561.59" name="top"/>
   <outline>
     <contour>
       <point x="1031" y="1592.59" type="line"/>
@@ -18,7 +19,7 @@
       <point x="1122.35" y="1219.73" type="curve" smooth="yes"/>
       <point x="1141.78" y="1343.82"/>
       <point x="1068.81" y="1438.92"/>
-      <point x="958.34" y="1463.30" type="curve"/>
+      <point x="958.34" y="1463.3" type="curve"/>
     </contour>
     <contour>
       <point x="955.51" y="1216.83" type="curve" smooth="yes"/>

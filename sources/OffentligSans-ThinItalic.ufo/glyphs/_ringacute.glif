@@ -2,6 +2,7 @@
 <glyph name="_ringacute" format="2">
   <advance width="1358"/>
   <anchor x="743" y="1034" name="_top"/>
+  <anchor x="803.7136" y="1466" name="top"/>
   <outline>
     <contour>
       <point x="923" y="1497" type="line"/>

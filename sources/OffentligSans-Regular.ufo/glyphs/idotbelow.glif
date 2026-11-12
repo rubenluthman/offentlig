@@ -3,6 +3,7 @@
   <advance width="494.53125"/>
   <unicode hex="1ECB"/>
   <anchor x="247.59375" y="0.0" name="bottom"/>
+  <anchor x="308.65625" y="23.25" name="ogonek"/>
   <outline>
     <component base="i"/>
     <component base="dotbelowcomb" xOffset="144.21875"/>

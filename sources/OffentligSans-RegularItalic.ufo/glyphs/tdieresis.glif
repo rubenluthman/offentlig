@@ -6,7 +6,7 @@
   <anchor x="560.15625" y="1520.375" name="caron"/>
   <anchor x="398.15625" y="584.25" name="center"/>
   <anchor x="684" y="920" name="horn"/>
-  <anchor x="542.9" y="1703.6" name="top"/>
+  <anchor x="539.8" y="1682.0" name="top"/>
   <outline>
     <component base="t"/>
     <component base="dieresiscomb" xOffset="151.33118" yOffset="301"/>
