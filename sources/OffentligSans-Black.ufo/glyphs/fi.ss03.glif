@@ -4,6 +4,7 @@
   <anchor x="1079" y="0" name="bottom_1"/>
   <anchor x="682" y="0" name="caret_1"/>
   <anchor x="506" y="1485.36" name="top"/>
+  <anchor x="1228" y="18" name="ogonek_1"/>
   <outline>
     <component base="f"/>
     <component base="i.ss03" xOffset="794"/>

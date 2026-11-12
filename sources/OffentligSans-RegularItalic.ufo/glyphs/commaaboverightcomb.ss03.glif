@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="commaaboverightcomb.ss03" format="2">
-  <anchor x="-376.09" y="1034" name="_top"/>
-  <anchor x="-376.09" y="1415" name="top"/>
+  <anchor x="-398.0612" y="1034" name="_top"/>
+  <anchor x="-344.5152" y="1415" name="top"/>
   <outline>
     <component base="commaaccentcomb.ss03" yOffset="1542.90625"/>
   </outline>

@@ -4,6 +4,8 @@
   <unicode hex="0063"/>
   <anchor x="475.0" y="0.0" name="bottom"/>
   <anchor x="618.9375" y="1034.0" name="top"/>
+  <anchor x="598.9062" y="27.3042" name="ogonek"/>
+  <anchor x="863.7988" y="695.0237" name="horn"/>
   <outline>
     <contour>
       <point x="467.78125" y="-20.0" type="curve" smooth="yes"/>
