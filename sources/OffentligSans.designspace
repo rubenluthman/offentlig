@@ -81,4 +81,13 @@
       </location>
     </instance>
   </instances>
+  <lib>
+    <dict>
+      <key>public.skipExportGlyphs</key>
+      <array>
+        <string>_hook.C</string>
+        <string>_hook.c</string>
+      </array>
+    </dict>
+  </lib>
 </designspace>
