@@ -81,3 +81,28 @@ def test_italic_marks_sit_on_anchors(ufo):
     font = ufoLib2.Font.open(SOURCES / ufo)
     bad = _misplaced(font)
     assert not bad, f"{ufo}: marks more than {TOLERANCE} units from their anchor (glyph, mark, dx, dy): {bad}"
+
+
+def _ink_centre_off_the_slant_line(font, name):
+    """Horizontal distance of the mark's ink centre from the slant line through its `_bottom` anchor, along the slant."""
+    from fontTools.pens.boundsPen import BoundsPen
+    from fontTools.pens.transformPen import TransformPen
+
+    slant = math.tan(math.radians(-font.info.italicAngle))
+    glyph = font[name]
+    bounds = BoundsPen(font)
+    glyph.draw(TransformPen(bounds, (1, 0, -slant, 1, 0, 0)))
+    anchor = next(a for a in glyph.anchors if a.name == "_bottom")
+    return (bounds.bounds[0] + bounds.bounds[2]) / 2 - (anchor.x - slant * anchor.y)
+
+
+@pytest.mark.parametrize("ufo", ["OffentligSans-ThinItalic.ufo", "OffentligSans-RegularItalic.ufo", "OffentligSans-BlackItalic.ufo"])
+@pytest.mark.parametrize("mark", ["dotbelowcomb", "macronbelowcomb", "brevebelowcomb"])
+def test_italic_marks_below_are_centred_on_the_slant_line_through_their_anchor(ufo, mark):
+    """U+0323, U+0331 and U+032E: the ink centre is on the slant line through `_bottom`, as in the upright (within 5 units).
+
+    A mark moved up from the baseline without shearing sits right of that line; the letters built with it follow the mark.
+    """
+    font = ufoLib2.Font.open(SOURCES / ufo)
+    off = _ink_centre_off_the_slant_line(font, mark)
+    assert abs(off) <= 5, f"{ufo}: {mark} ink centre is {off:.1f} units off the slant line"

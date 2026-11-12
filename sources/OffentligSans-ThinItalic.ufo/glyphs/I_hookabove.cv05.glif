@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Ihookabove.cv05" format="2">
   <advance width="672"/>
-  <anchor x="338" y="0" name="bottom"/>
-  <anchor x="464.0" y="20" name="ogonek"/>
-  <anchor x="592.3" y="1818.2" name="top"/>
+  <anchor x="265.3" y="0" name="bottom"/>
+  <anchor x="391.3" y="20" name="ogonek"/>
+  <anchor x="519.5999999999999" y="1818.2" name="top"/>
   <outline>
     <component base="I.cv05"/>
-    <component base="hookabovecomb" xOffset="-137" yOffset="386"/>
+    <component base="hookabovecomb" xOffset="-209.7" yOffset="386"/>
   </outline>
 </glyph>

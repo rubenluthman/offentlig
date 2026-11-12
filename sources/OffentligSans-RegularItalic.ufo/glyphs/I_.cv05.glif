@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="I.cv05" format="2">
   <advance width="753.46875"/>
-  <anchor x="385.09375" y="0.0" name="bottom"/>
-  <anchor x="545.46875" y="16.21875" name="ogonek"/>
-  <anchor x="586.40625" y="1446.0" name="top"/>
+  <anchor x="312.44375" y="0.0" name="bottom"/>
+  <anchor x="472.81875" y="16.21875" name="ogonek"/>
+  <anchor x="513.75625" y="1446.0" name="top"/>
   <outline>
     <contour>
-      <point x="86.25" y="0.0" type="line"/>
-      <point x="667.21875" y="0.0" type="line"/>
-      <point x="690.6100151757793" y="166.4375" type="line"/>
-      <point x="490.61001517577927" y="166.4375" type="line"/>
-      <point x="647.0495318038787" y="1279.5625" type="line"/>
-      <point x="847.0495318038787" y="1279.5625" type="line"/>
-      <point x="870.440796979658" y="1446.0" type="line"/>
-      <point x="289.472046979658" y="1446.0" type="line"/>
-      <point x="266.0807818038787" y="1279.5625" type="line"/>
-      <point x="466.0807818038787" y="1279.5625" type="line"/>
-      <point x="309.64126517577927" y="166.4375" type="line"/>
-      <point x="109.64126517577927" y="166.4375" type="line"/>
+      <point x="13.599999999999994" y="0.0" type="line"/>
+      <point x="594.56875" y="0.0" type="line"/>
+      <point x="617.9600151757793" y="166.4375" type="line"/>
+      <point x="417.9600151757793" y="166.4375" type="line"/>
+      <point x="574.3995318038787" y="1279.5625" type="line"/>
+      <point x="774.3995318038787" y="1279.5625" type="line"/>
+      <point x="797.790796979658" y="1446.0" type="line"/>
+      <point x="216.82204697965798" y="1446.0" type="line"/>
+      <point x="193.43078180387872" y="1279.5625" type="line"/>
+      <point x="393.43078180387874" y="1279.5625" type="line"/>
+      <point x="236.99126517577926" y="166.4375" type="line"/>
+      <point x="36.99126517577926" y="166.4375" type="line"/>
     </contour>
   </outline>
 </glyph>

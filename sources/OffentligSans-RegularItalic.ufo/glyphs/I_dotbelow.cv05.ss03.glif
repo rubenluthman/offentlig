@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Idotbelow.cv05.ss03" format="2">
   <advance width="753.46875"/>
-  <anchor x="385.09" y="0.0" name="bottom"/>
-  <anchor x="545.47" y="16.22" name="ogonek"/>
-  <anchor x="586.41" y="1446.0" name="top"/>
+  <anchor x="312.43999999999994" y="0.0" name="bottom"/>
+  <anchor x="472.82000000000005" y="16.22" name="ogonek"/>
+  <anchor x="513.76" y="1446.0" name="top"/>
   <outline>
     <component base="I.cv05"/>
-    <component base="dotbelowcomb.ss03" xOffset="357.0"/>
+    <component base="dotbelowcomb.ss03" xOffset="284.35"/>
   </outline>
 </glyph>
