@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Ibreve.cv05" format="2">
   <advance width="753.46875"/>
-  <anchor x="385.09375" y="0.0" name="bottom"/>
-  <anchor x="545.46875" y="16.21875" name="ogonek"/>
-  <anchor x="629.5" y="1752.8" name="top"/>
+  <anchor x="312.44375" y="0.0" name="bottom"/>
+  <anchor x="472.81875" y="16.21875" name="ogonek"/>
+  <anchor x="556.85" y="1752.8" name="top"/>
   <outline>
     <component base="I.cv05"/>
-    <component base="brevecomb" xOffset="204.84375" yOffset="412.0"/>
+    <component base="brevecomb" xOffset="132.19375" yOffset="412.0"/>
   </outline>
 </glyph>

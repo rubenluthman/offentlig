@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Icircumflex.cv05" format="2">
   <advance width="753.46875"/>
-  <anchor x="385.09375" y="0.0" name="bottom"/>
-  <anchor x="545.46875" y="16.21875" name="ogonek"/>
-  <anchor x="630.6" y="1760.7" name="top"/>
+  <anchor x="312.44375" y="0.0" name="bottom"/>
+  <anchor x="472.81875" y="16.21875" name="ogonek"/>
+  <anchor x="557.95" y="1760.7" name="top"/>
   <outline>
     <component base="I.cv05"/>
-    <component base="circumflexcomb" xOffset="202.53125" yOffset="412.0"/>
+    <component base="circumflexcomb" xOffset="129.88125" yOffset="412.0"/>
   </outline>
 </glyph>

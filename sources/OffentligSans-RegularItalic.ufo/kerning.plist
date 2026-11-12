@@ -126,6 +126,8 @@
       <real>6.875</real>
       <key>public.kern2.zero</key>
       <real>-13.125</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.B</key>
     <dict>
@@ -295,7 +297,7 @@
       <key>public.kern2.z</key>
       <real>6.875</real>
       <key>public.kern2.Icv05</key>
-      <real>13.125</real>
+      <real>77.125</real>
     </dict>
     <key>public.kern1.F</key>
     <dict>
@@ -343,6 +345,8 @@
       <real>-40.3125</real>
       <key>public.kern2.z</key>
       <real>-6.5625</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.G</key>
     <dict>
@@ -364,6 +368,8 @@
       <real>-80.625</real>
       <key>public.kern2.z</key>
       <real>6.5625</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.K</key>
     <dict>
@@ -397,6 +403,8 @@
       <real>-60.3125</real>
       <key>public.kern2.v</key>
       <real>-82.34375</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.L</key>
     <dict>
@@ -450,6 +458,8 @@
       <real>20.625</real>
       <key>public.kern2.z</key>
       <real>26.25</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.N</key>
     <dict>
@@ -465,6 +475,8 @@
       <real>-13.75</real>
       <key>public.kern2.t</key>
       <real>-10.3125</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.O</key>
     <dict>
@@ -650,6 +662,8 @@
       <real>-16.5625</real>
       <key>public.kern2.z</key>
       <real>-16.5625</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.S</key>
     <dict>
@@ -780,6 +794,8 @@
       <real>-98.90625</real>
       <key>public.kern2.z</key>
       <real>-80.3125</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.U</key>
     <dict>
@@ -795,6 +811,8 @@
       <real>-26.875</real>
       <key>public.kern2.t</key>
       <real>26.25</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.Uhorn</key>
     <dict>
@@ -893,6 +911,8 @@
       <real>-34.375</real>
       <key>public.kern2.z</key>
       <real>-13.75</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.W</key>
     <dict>
@@ -1001,6 +1021,8 @@
       <real>-76.4375</real>
       <key>public.kern2.x</key>
       <real>13.75</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.Y</key>
     <dict>
@@ -1072,6 +1094,8 @@
       <real>-74.0625</real>
       <key>space</key>
       <real>-24.0625</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.Z</key>
     <dict>
@@ -1113,6 +1137,8 @@
       <real>-26.875</real>
       <key>public.kern2.z</key>
       <real>13.75</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.comma</key>
     <dict>
@@ -1219,6 +1245,8 @@
       <real>13.75</real>
       <key>public.kern2.z</key>
       <real>-6.5625</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.five</key>
     <dict>
@@ -1375,6 +1403,8 @@
       <real>-23.125</real>
       <key>public.kern2.v</key>
       <real>26.875</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.l</key>
     <dict>
@@ -1420,6 +1450,8 @@
       <real>-40.3125</real>
       <key>public.kern2.z</key>
       <real>13.4375</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.n</key>
     <dict>
@@ -1453,6 +1485,8 @@
       <real>-23.125</real>
       <key>public.kern2.z</key>
       <real>-3.4375</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.nine</key>
     <dict>
@@ -1508,7 +1542,7 @@
       <key>v</key>
       <real>-20.3125</real>
       <key>public.kern2.Icv05</key>
-      <real>-13.75</real>
+      <real>-5.75</real>
     </dict>
     <key>public.kern1.ohorn</key>
     <dict>
@@ -1741,6 +1775,8 @@
       <real>-6.875</real>
       <key>space</key>
       <real>-6.875</real>
+      <key>public.kern2.Icv05</key>
+      <integer>36</integer>
     </dict>
     <key>public.kern1.seven</key>
     <dict>
@@ -1808,6 +1844,8 @@
       <real>3.4375</real>
       <key>public.kern2.z</key>
       <real>-3.4375</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.three</key>
     <dict>
@@ -1837,6 +1875,8 @@
       <real>13.125</real>
       <key>public.kern2.quotesingle</key>
       <real>-16.5625</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.uhorn</key>
     <dict>
@@ -1924,6 +1964,8 @@
       <real>-19.6875</real>
       <key>public.kern2.z</key>
       <real>6.5625</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.z</key>
     <dict>
@@ -1957,6 +1999,8 @@
       <real>-19.6875</real>
       <key>public.kern2.z</key>
       <real>20.3125</real>
+      <key>public.kern2.Icv05</key>
+      <integer>64</integer>
     </dict>
     <key>public.kern1.zero</key>
     <dict>
@@ -2016,49 +2060,47 @@
     <key>public.kern1.Icv05</key>
     <dict>
       <key>public.kern2.A</key>
-      <integer>144</integer>
+      <integer>65</integer>
       <key>public.kern2.J</key>
-      <integer>144</integer>
-      <key>public.kern2.S</key>
-      <integer>48</integer>
+      <integer>65</integer>
       <key>public.kern2.T</key>
-      <integer>136</integer>
+      <integer>65</integer>
       <key>public.kern2.U</key>
-      <real>129.6875</real>
+      <real>54.6875</real>
       <key>public.kern2.V</key>
-      <integer>136</integer>
+      <integer>65</integer>
       <key>public.kern2.X</key>
-      <integer>144</integer>
+      <integer>65</integer>
       <key>public.kern2.Y</key>
-      <integer>136</integer>
+      <integer>65</integer>
       <key>public.kern2.Z</key>
-      <integer>144</integer>
+      <integer>65</integer>
       <key>public.kern2.a</key>
-      <real>117.4375</real>
+      <real>38.4375</real>
       <key>public.kern2.n</key>
-      <integer>144</integer>
+      <integer>65</integer>
       <key>public.kern2.o</key>
-      <real>42.25</real>
+      <real>-13.75</real>
       <key>public.kern2.g</key>
-      <real>130.875</real>
+      <real>51.875</real>
       <key>public.kern2.j</key>
-      <integer>136</integer>
+      <integer>65</integer>
       <key>public.kern2.s</key>
-      <integer>100</integer>
+      <integer>21</integer>
       <key>public.kern2.t</key>
       <real>-10.3125</real>
       <key>public.kern2.u</key>
-      <integer>104</integer>
+      <integer>25</integer>
       <key>public.kern2.x</key>
-      <integer>144</integer>
+      <integer>65</integer>
       <key>public.kern2.z</key>
-      <integer>140</integer>
+      <integer>65</integer>
       <key>public.kern2.emdash</key>
       <real>20.9375</real>
       <key>public.kern2.N</key>
-      <integer>144</integer>
+      <integer>65</integer>
       <key>public.kern2.Icv05</key>
-      <integer>176</integer>
+      <integer>169</integer>
     </dict>
     <key>Lcaron</key>
     <dict>

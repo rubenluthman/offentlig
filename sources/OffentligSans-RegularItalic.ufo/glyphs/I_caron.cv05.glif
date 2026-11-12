@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Icaron.cv05" format="2">
   <advance width="753.469"/>
-  <anchor x="385.09" y="0.0" name="bottom"/>
-  <anchor x="545.47" y="16.22" name="ogonek"/>
-  <anchor x="630.64" y="1760.75" name="top"/>
+  <anchor x="312.43999999999994" y="0.0" name="bottom"/>
+  <anchor x="472.82000000000005" y="16.22" name="ogonek"/>
+  <anchor x="557.99" y="1760.75" name="top"/>
   <outline>
     <component base="I.cv05"/>
-    <component base="caroncomb" xOffset="198.438" yOffset="412.0"/>
+    <component base="caroncomb" xOffset="125.78799999999998" yOffset="412.0"/>
   </outline>
 </glyph>
