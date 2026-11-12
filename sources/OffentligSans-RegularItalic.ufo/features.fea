@@ -37,7 +37,6 @@ feature cv04;
 feature cv05;
 feature cv06;
 feature zero;
-feature tnum;
 
 } aalt;
 
@@ -67,35 +66,41 @@ lookup ccmp_latn_1;
 
 } ccmp;
 
-feature locl {
-# automatic
-lookup locl_latn_0 {
-	script latn;
-	language AZE;
-	language CRT;
-	language KAZ;
-	language TAT;
-	language TRK;
+lookup locl_tr {
 	sub i by idotaccent;
-} locl_latn_0;
+} locl_tr;
 
-lookup locl_latn_1 {
-	script latn;
-	language ROM;
-	language MOL;
+lookup locl_ro {
 	sub Scedilla by Scommaaccent;
 	sub scedilla by scommaaccent;
 	sub Tcedilla by Tcommaaccent;
 	sub tcedilla by tcommaaccent;
-} locl_latn_1;
+} locl_ro;
 
-lookup locl_latn_2 {
-	script latn;
-	language CAT;
+lookup locl_ca {
 	sub  l' periodcentered' l by ldot;
 	sub  L' periodcentered' L by Ldot;
-} locl_latn_2;
+} locl_ca;
 
+feature locl {
+# Each lookup is registered under every language it serves.
+script latn;
+language AZE;
+lookup locl_tr;
+language CRT;
+lookup locl_tr;
+language KAZ;
+lookup locl_tr;
+language TAT;
+lookup locl_tr;
+language TRK;
+lookup locl_tr;
+language ROM;
+lookup locl_ro;
+language MOL;
+lookup locl_ro;
+language CAT;
+lookup locl_ca;
 } locl;
 
 feature subs {
