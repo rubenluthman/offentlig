@@ -45,8 +45,8 @@
       <point x="960.4" y="286"/>
       <point x="909" y="330.68"/>
       <point x="909" y="440" type="curve"/>
-      <point x="565" y="440" type="line"/>
-      <point x="565" y="196"/>
+      <point x="589" y="440" type="line"/>
+      <point x="589" y="196"/>
       <point x="754" y="-18"/>
     </contour>
   </outline>

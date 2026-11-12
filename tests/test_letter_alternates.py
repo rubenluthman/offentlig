@@ -151,6 +151,10 @@ def test_italic_cv04_marks_sit_on_the_single_storey_a_anchors(ufo):
             dy = comp.transformation[5] - (by + target.transformation[5] - my)
             if abs(dx) > 10 or abs(dy) > 10:
                 bad.append((glyph.name, comp.baseGlyph, round(dx), round(dy)))
+    # Black Italic `aringacute.cv04` carries its ring 60 units above the anchor on purpose: on the anchor the ring
+    # closes a pinhole counter against the corner of the stem from weight 800 up (tests/test_outline_fixes.py).
+    if ufo == "Black":
+        bad = [b for b in bad if not (b[0] == "aringacute.cv04" and abs(b[2]) <= 10 and abs(b[3] - 60) <= 10)]
     assert not bad, bad
 
 

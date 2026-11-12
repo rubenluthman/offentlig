@@ -3,10 +3,10 @@
   <anchor x="0" y="1446" name="_caron"/>
   <outline>
     <contour>
-      <point x="102" y="1446" type="line"/>
-      <point x="344" y="1446" type="line"/>
-      <point x="265.35" y="966" type="line"/>
       <point x="180.65" y="966" type="line"/>
+      <point x="265.35" y="966" type="line"/>
+      <point x="344" y="1446" type="line"/>
+      <point x="102" y="1446" type="line"/>
     </contour>
   </outline>
   <lib>

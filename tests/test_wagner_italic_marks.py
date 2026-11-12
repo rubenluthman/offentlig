@@ -80,6 +80,9 @@ def _misplaced(font):
 def test_italic_marks_sit_on_anchors(ufo):
     font = ufoLib2.Font.open(SOURCES / ufo)
     bad = _misplaced(font)
+    # Black Italic `aringacute.cv04` carries its ring 60 units above the anchor on purpose (see test_outline_fixes.py).
+    if ufo == "OffentligSans-BlackItalic.ufo":
+        bad = [b for b in bad if not (b[0] == "aringacute.cv04" and abs(b[2]) <= TOLERANCE and abs(b[3] - 60) <= TOLERANCE)]
     assert not bad, f"{ufo}: marks more than {TOLERANCE} units from their anchor (glyph, mark, dx, dy): {bad}"
 
 
