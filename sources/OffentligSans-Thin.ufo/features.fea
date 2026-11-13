@@ -164,6 +164,12 @@ sub minus by minussuperior;
 sub equal by equalsuperior;
 sub parenleft by parenleftsuperior;
 sub parenright by parenrightsuperior;
+sub h by hmod;
+sub r by rmod;
+sub s by smod;
+sub d by dmod;
+sub t by tmod;
+sub n by nsuperior;
 } sups;
 
 feature numr {

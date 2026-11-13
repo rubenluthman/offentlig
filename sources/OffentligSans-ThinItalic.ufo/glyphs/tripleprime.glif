@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tripleprime" format="2">
+  <advance width="489.4000000000001"/>
+  <unicode hex="2034"/>
+  <outline>
+    <component base="primemod"/>
+    <component base="primemod" xOffset="120.6"/>
+    <component base="primemod" xOffset="241.2"/>
+  </outline>
+</glyph>

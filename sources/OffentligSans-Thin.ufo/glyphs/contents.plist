@@ -1080,6 +1080,8 @@
     <string>divisionslash.glif</string>
     <key>dlinebelow</key>
     <string>dlinebelow.glif</string>
+    <key>dmod</key>
+    <string>dmod.glif</string>
     <key>dollar</key>
     <string>dollar.glif</string>
     <key>dollar.tf</key>
@@ -1336,6 +1338,8 @@
     <string>hdotbelow.ss03.glif</string>
     <key>hlinebelow</key>
     <string>hlinebelow.glif</string>
+    <key>hmod</key>
+    <string>hmod.glif</string>
     <key>hookabovecomb</key>
     <string>hookabovecomb.glif</string>
     <key>horncomb</key>
@@ -1450,10 +1454,10 @@
     <string>ldot.glif</string>
     <key>ldot.ss02</key>
     <string>ldot.ss02.glif</string>
-    <key>ldot.ss03</key>
-    <string>ldot.ss03.glif</string>
     <key>ldot.ss02.ss03</key>
     <string>ldot.ss02.ss03.glif</string>
+    <key>ldot.ss03</key>
+    <string>ldot.ss03.glif</string>
     <key>ldotbelow</key>
     <string>ldotbelow.glif</string>
     <key>ldotbelow.ss03</key>
@@ -1508,6 +1512,8 @@
     <string>minus.subs.glif</string>
     <key>minussuperior</key>
     <string>minussuperior.glif</string>
+    <key>minute</key>
+    <string>minute.glif</string>
     <key>multiply</key>
     <string>multiply.glif</string>
     <key>n</key>
@@ -1560,6 +1566,8 @@
     <string>northW_estA_rrow.glif</string>
     <key>notequal</key>
     <string>notequal.glif</string>
+    <key>nsuperior</key>
+    <string>nsuperior.glif</string>
     <key>ntilde</key>
     <string>ntilde.glif</string>
     <key>numbersign</key>
@@ -1818,6 +1826,8 @@
     <string>rinvertedbreve.glif</string>
     <key>rlinebelow</key>
     <string>rlinebelow.glif</string>
+    <key>rmod</key>
+    <string>rmod.glif</string>
     <key>rupeeIndian</key>
     <string>rupeeI_ndian.glif</string>
     <key>rupeeIndian.tf</key>
@@ -1846,6 +1856,8 @@
     <string>sdotbelow.glif</string>
     <key>sdotbelow.ss03</key>
     <string>sdotbelow.ss03.glif</string>
+    <key>second</key>
+    <string>second.glif</string>
     <key>section</key>
     <string>section.glif</string>
     <key>semicolon</key>
@@ -1886,6 +1898,8 @@
     <string>sixsuperior.glif</string>
     <key>slash</key>
     <string>slash.glif</string>
+    <key>smod</key>
+    <string>smod.glif</string>
     <key>softhyphen</key>
     <string>softhyphen.glif</string>
     <key>southEastArrow</key>
@@ -1950,8 +1964,12 @@
     <string>tildecomb.glif</string>
     <key>tlinebelow</key>
     <string>tlinebelow.glif</string>
+    <key>tmod</key>
+    <string>tmod.glif</string>
     <key>trademark</key>
     <string>trademark.glif</string>
+    <key>tripleprime</key>
+    <string>tripleprime.glif</string>
     <key>two</key>
     <string>two.glif</string>
     <key>two.dnom</key>

@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+
+- Added the prime marks ′ ″ ‴ (U+2032 – 2034), drawn like the modifier letters ʹ ʺ, and the superscript modifier letters ʰ ʳ ˢ ᵈ ᵗ ⁿ (U+02B0, U+02B3, U+02E2, U+1D48, U+1D57, U+207F) of DIN 91379. The `sups` feature sets typed h, r, s, d, t and n as these letters, so `1st 2nd 3rd 4th` becomes 1ˢᵗ 2ⁿᵈ 3ʳᵈ 4ᵗʰ and `x(n)` becomes x⁽ⁿ⁾.
+
 ## [0.2.0] - 2026-11-13
 
 - Added the 18 pinyin tone letters and 108 precomposed Latin letters of DIN 91379 (Latin Extended-A, Extended-B and Extended Additional; Greek, Cyrillic and the superscript modifier letters are not covered), seven combining marks (U+030D, U+0310, U+0315, U+0325, U+032E, U+0331, U+035F), drawn Ƈ ƈ Ɨ ɨ Ǥ ǥ Ʒ ʒ, the modifier letters ʹ ʺ ʾ ʿ ˈ ˌ, eight arrows (← ↑ → ↓ ↖ ↗ ↘ ↙, drawn by Wayne Shih for Public Sans), the Bitcoin sign ₿, a drawn capital sharp s ẞ (U+1E9E), and the superscript and subscript signs ⁺ ⁻ ⁼ ⁽ ⁾ ₊ ₋ ₌ ₍ ₎. Marks typed after a letter now land where the precomposed letter puts them, also in the italic.
