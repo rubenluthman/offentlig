@@ -86,13 +86,14 @@ def test_letter_height_matches_the_ordinals(static_ttf, letter, cp, name):
     assert box[1] == pytest.approx(ordinal[1], abs=SIZE_TOLERANCE + 12)
 
 
-@pytest.mark.parametrize("letter,cp,name", [l for l in LETTERS if l[0] in "hnrt"], ids=list("hnrt"))
+@pytest.mark.parametrize("letter,cp,name", [l for l in LETTERS if l[0] in "hndrt"], ids=list("hndrt"))
 def test_letter_stem_matches_the_stem_of_the_ordinal(static_ttf, letter, cp, name):
     gs = static_ttf.getGlyphSet()
     xs = crossings(gs, "ordfeminine", 1060)
     reference = xs[-1] - xs[-2]
     # the left stem, below the arch or the crossbar
-    ys = crossings(gs, static_ttf.getBestCmap()[cp], 1000)
+    # d is measured on its ascender, above the bowl
+    ys = crossings(gs, static_ttf.getBestCmap()[cp], 1500 if letter == "d" else 1000)
     stem = ys[1] - ys[0]
     assert stem == pytest.approx(reference, rel=STEM_TOLERANCE), (letter, stem, reference)
 

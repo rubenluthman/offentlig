@@ -23,6 +23,8 @@ REDRAWN_TOLERANCE = 10
 
 # ʹ ʺ ˈ ˌ ʾ ʿ
 MODIFIER_LETTERS = ["primemod", "dblprimemod", "verticallinemod", "verticallinelowmod", "ringhalfright", "ringhalfleft"]
+# ʰ ʳ ˢ ᵈ ᵗ ⁿ and the primes ′ ″ ‴
+SMALL_LETTERS = ["hmod", "rmod", "smod", "dmod", "tmod", "nsuperior", "minute", "second", "tripleprime"]
 # ʒ ǯ (ǯ is ezh with a caron above), ẞ
 OTHERS = ["ezh", "ezhcaron", "Germandbls"]
 
@@ -43,14 +45,14 @@ def _bearings(font, name, slanted):
 def _names(italic):
     """Italic `.cvNN` glyphs that are drawn outlines (accented forms carry marks that lean on purpose), then the fixed lists."""
     cv = [g.name for g in italic if ".cv" in g.name and g.contours and not g.components]
-    return cv + MODIFIER_LETTERS + OTHERS
+    return cv + MODIFIER_LETTERS + SMALL_LETTERS + OTHERS
 
 
 @pytest.mark.parametrize("weight", WEIGHTS)
 def test_italic_bearings_follow_the_upright_glyph(weight):
     upright, italic = _fonts(weight)
     names = [n for n in _names(italic) if n in upright]
-    assert {"I.cv05", "one.cv06", "one.cv06.osf", "ezh", "ezhcaron", "Germandbls", "primemod"} <= set(names)
+    assert {"I.cv05", "one.cv06", "one.cv06.osf", "ezh", "ezhcaron", "Germandbls", "primemod", "dmod", "tmod", "smod"} <= set(names)
     bad = []
     for name in names:
         (ul, ur), (il, ir) = _bearings(upright, name, False), _bearings(italic, name, True)
