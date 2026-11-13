@@ -145,6 +145,7 @@ sub parenright by parenright.subs;
 
 feature sups {
 # automatic
+lookup sups_signs {
 sub zero by zerosuperior;
 sub one by onesuperior;
 sub two by twosuperior;
@@ -161,12 +162,14 @@ sub minus by minussuperior;
 sub equal by equalsuperior;
 sub parenleft by parenleftsuperior;
 sub parenright by parenrightsuperior;
-sub h by hmod;
-sub r by rmod;
-sub s by smod;
-sub d by dmod;
-sub t by tmod;
-sub n by nsuperior;
+} sups_signs;
+
+# The small letters follow a superior figure, a superior parenthesis or another small letter only,
+# so 1st 2nd 3rd 4th and x(n) are set, and 1er, Ste and century are not.
+@sups_before = [zerosuperior onesuperior twosuperior threesuperior foursuperior fivesuperior sixsuperior sevensuperior eightsuperior ninesuperior parenleftsuperior parenrightsuperior hmod rmod smod dmod tmod nsuperior];
+lookup sups_letters {
+sub @sups_before [h r s d t n]' by [hmod rmod smod dmod tmod nsuperior];
+} sups_letters;
 } sups;
 
 feature numr {
