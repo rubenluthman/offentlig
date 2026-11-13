@@ -59,6 +59,7 @@
       <string>Blinebelow</string>
       <string>Bdotaccent</string>
       <string>Bdotaccent.ss03</string>
+      <string>Germandbls</string>
     </array>
     <key>public.kern1.C</key>
     <array>
@@ -131,26 +132,16 @@
     <key>public.kern1.G</key>
     <array>
       <string>G</string>
-      <string>G.cv03</string>
-      <string>Gmacron.cv03</string>
-      <string>Gcaron.cv03</string>
-      <string>Gacute.cv03</string>
       <string>Gstroke</string>
       <string>Gmacron</string>
       <string>Gacute</string>
       <string>Gcaron</string>
       <string>Gbreve</string>
-      <string>Gbreve.cv03</string>
       <string>Gcircumflex</string>
-      <string>Gcircumflex.cv03</string>
       <string>Gcommaaccent</string>
       <string>Gcommaaccent.ss03</string>
-      <string>Gcommaaccent.cv03</string>
-      <string>Gcommaaccent.cv03.ss03</string>
       <string>Gdotaccent</string>
       <string>Gdotaccent.ss03</string>
-      <string>Gdotaccent.cv03</string>
-      <string>Gdotaccent.cv03.ss03</string>
     </array>
     <key>public.kern1.K</key>
     <array>
@@ -370,6 +361,10 @@
       <string>Uogonek</string>
       <string>Uring</string>
       <string>Utilde</string>
+      <string>IJ</string>
+      <string>IJ.cv01</string>
+      <string>IJ.cv05</string>
+      <string>IJ.cv01.cv05</string>
     </array>
     <key>public.kern1.Uhorn</key>
     <array>
@@ -627,6 +622,8 @@
       <string>ndotaccent.ss03</string>
       <string>eng</string>
       <string>ntilde</string>
+      <string>napostrophe</string>
+      <string>napostrophe.ss03</string>
     </array>
     <key>public.kern1.nine</key>
     <array>
@@ -946,6 +943,9 @@
       <string>fi</string>
       <string>fi.ss03</string>
       <string>micro</string>
+      <string>ij</string>
+      <string>ij.ss03</string>
+      <string>ucaron</string>
     </array>
     <key>public.kern1.uhorn</key>
     <array>
@@ -1240,6 +1240,9 @@
       <string>yen</string>
       <string>yen.tf</string>
       <string>numero</string>
+      <string>Germandbls</string>
+      <string>IJ</string>
+      <string>IJ.cv01</string>
     </array>
     <key>public.kern2.O</key>
     <array>
@@ -1687,6 +1690,8 @@
       <string>rinvertedbreve</string>
       <string>germandbls</string>
       <string>l.ss02</string>
+      <string>ij</string>
+      <string>ij.ss03</string>
     </array>
     <key>public.kern2.nine</key>
     <array>
@@ -1857,6 +1862,8 @@
       <string>quotedblright.ss03</string>
       <string>quoteright</string>
       <string>quoteright.ss03</string>
+      <string>napostrophe</string>
+      <string>napostrophe.ss03</string>
     </array>
     <key>public.kern2.quotesinglbase</key>
     <array>
@@ -1885,7 +1892,6 @@
     <key>public.kern2.seven</key>
     <array>
       <string>seven</string>
-      <string>seven.osf</string>
     </array>
     <key>public.kern2.six</key>
     <array>
@@ -1954,6 +1960,7 @@
       <string>uring</string>
       <string>utilde</string>
       <string>micro</string>
+      <string>ucaron</string>
     </array>
     <key>public.kern2.v</key>
     <array>
@@ -2072,6 +2079,25 @@
       <string>Imacron.cv05</string>
       <string>Iogonek.cv05</string>
       <string>Itilde.cv05</string>
+      <string>IJ.cv05</string>
+      <string>IJ.cv01.cv05</string>
+    </array>
+    <key>public.kern1.Gcv03</key>
+    <array>
+      <string>G.cv03</string>
+      <string>Gmacron.cv03</string>
+      <string>Gcaron.cv03</string>
+      <string>Gacute.cv03</string>
+      <string>Gbreve.cv03</string>
+      <string>Gcircumflex.cv03</string>
+      <string>Gcommaaccent.cv03</string>
+      <string>Gcommaaccent.cv03.ss03</string>
+      <string>Gdotaccent.cv03</string>
+      <string>Gdotaccent.cv03.ss03</string>
+    </array>
+    <key>public.kern2.sevenosf</key>
+    <array>
+      <string>seven.osf</string>
     </array>
   </dict>
 </plist>
