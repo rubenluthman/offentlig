@@ -884,6 +884,9 @@
       <string>istroke</string>
       <string>istroke.ss03</string>
       <string>idotless</string>
+      <string>istroke.dotless</string>
+      <string>idotbelow.dotless</string>
+      <string>idotbelow.dotless.ss03</string>
       <string>icaron</string>
       <string>idotlessdieresisacute</string>
       <string>idotlessdieresisacute.ss03</string>
@@ -1609,6 +1612,9 @@
       <string>istroke</string>
       <string>istroke.ss03</string>
       <string>idotless</string>
+      <string>istroke.dotless</string>
+      <string>idotbelow.dotless</string>
+      <string>idotbelow.dotless.ss03</string>
       <string>icaron</string>
       <string>idotlessdieresisacute</string>
       <string>idotlessdieresisacute.ss03</string>

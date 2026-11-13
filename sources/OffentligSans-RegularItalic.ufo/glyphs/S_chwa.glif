@@ -2,6 +2,8 @@
 <glyph name="Schwa" format="2">
   <advance width="1415.0625"/>
   <unicode hex="018F"/>
+  <anchor x="842.39818" y="1446.0" name="top"/>
+  <anchor x="640.46068" y="0.0" name="bottom"/>
   <outline>
     <contour>
       <point x="633.4375" y="-20.0" type="curve" smooth="yes"/>

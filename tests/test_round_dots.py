@@ -27,7 +27,7 @@ DOT_GLYPHS = """
     Ldotbelow Mdotaccent Mdotbelow Ndotbelow Odieresismacron Odotaccent Odotaccentmacron Pdotaccent Rdotaccent
     Sdotaccent Tdotaccent Udieresisacute Udieresiscaron Udieresisgrave Udieresismacron Wdotaccent Xdieresis
     Ydotaccent adieresismacron adotaccent bdotaccent candrabinducomb commaaboverightcomb ddotaccent fdotaccent
-    hdieresis hdotaccent idotlessdieresisacute ij istroke kdotbelow ldotbelow mdotaccent mdotbelow napostrophe
+    hdieresis hdotaccent idotbelow.dotless idotlessdieresisacute ij istroke kdotbelow ldotbelow mdotaccent mdotbelow napostrophe
     ndotbelow odieresismacron odotaccent odotaccentmacron pdotaccent rdotaccent sdotaccent tdieresis tdotaccent
     udieresisacute udieresiscaron udieresisgrave udieresismacron wdotaccent xdieresis ydotaccent
 """.split()

@@ -1378,6 +1378,12 @@
     <string>idotbelow.ss03.glif</string>
     <key>idotless</key>
     <string>idotless.glif</string>
+    <key>istroke.dotless</key>
+    <string>istroke.dotless.glif</string>
+    <key>idotbelow.dotless</key>
+    <string>idotbelow.dotless.glif</string>
+    <key>idotbelow.dotless.ss03</key>
+    <string>idotbelow.dotless.ss03.glif</string>
     <key>idotlessdieresisacute</key>
     <string>idotlessdieresisacute.glif</string>
     <key>idotlessdieresisacute.ss03</key>
