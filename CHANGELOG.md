@@ -4,6 +4,7 @@
 
 - Added the prime marks ′ ″ ‴ (U+2032 – 2034), drawn like the modifier letters ʹ ʺ, and the superscript modifier letters ʰ ʳ ˢ ᵈ ᵗ ⁿ (U+02B0, U+02B3, U+02E2, U+1D48, U+1D57, U+207F) of DIN 91379. The `sups` feature sets typed h, r, s, d, t and n as these letters, so `1st 2nd 3rd 4th` becomes 1ˢᵗ 2ⁿᵈ 3ʳᵈ 4ᵗʰ and `x(n)` becomes x⁽ⁿ⁾.
 - Fixed accented lowercase letters after `T V W Y` and their accented capitals: the accent no longer touches the arm (`Tȉ`, `Yö`, `Yë`, `Tè`, `Yŏ` and many more, worst in Black). Plain pairs such as `To`, `Ye` and `Wa` are unchanged.
+- Fixed the bar of `Ǥ` in Black and Black Italic: it no longer starts against the lower curve with a hairline gap, and now floats clear of the curve and the crossbar on the left of the stem.
 
 ## [0.2.0] - 2026-11-13
 
