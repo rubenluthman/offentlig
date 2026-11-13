@@ -44,6 +44,16 @@
       <integer>0</integer>
       <key>idieresis</key>
       <integer>0</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_caroncomb</key>
+      <integer>0</integer>
     </dict>
     <key>four.dnom</key>
     <dict>
@@ -193,6 +203,10 @@
       <integer>0</integer>
       <key>idieresis</key>
       <integer>0</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>0</integer>
     </dict>
     <key>public.kern1.C</key>
     <dict>
@@ -330,6 +344,16 @@
       <real>-26.25</real>
       <key>idieresis</key>
       <real>-26.25</real>
+      <key>idotbelow_dieresiscomb</key>
+      <real>-26.25</real>
+      <key>istroke_dieresiscomb</key>
+      <real>-26.25</real>
+      <key>idotbelow_caroncomb</key>
+      <real>-26.25</real>
+      <key>idotbelow_caroncomb.ss03</key>
+      <real>-26.25</real>
+      <key>istroke_caroncomb</key>
+      <real>-26.25</real>
     </dict>
     <key>public.kern1.F</key>
     <dict>
@@ -388,6 +412,16 @@
       <key>idotlessdieresisacute.ss03</key>
       <integer>0</integer>
       <key>idieresis</key>
+      <integer>0</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_caroncomb</key>
       <integer>0</integer>
     </dict>
     <key>public.kern1.G</key>
@@ -456,6 +490,16 @@
       <key>idotlessdieresisacute.ss03</key>
       <integer>0</integer>
       <key>idieresis</key>
+      <integer>0</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_caroncomb</key>
       <integer>0</integer>
     </dict>
     <key>public.kern1.L</key>
@@ -536,6 +580,16 @@
       <key>idotlessdieresisacute.ss03</key>
       <integer>0</integer>
       <key>idieresis</key>
+      <integer>0</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_caroncomb</key>
       <integer>0</integer>
     </dict>
     <key>public.kern1.O</key>
@@ -735,6 +789,10 @@
       <integer>0</integer>
       <key>idieresis</key>
       <integer>0</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>0</integer>
     </dict>
     <key>public.kern1.R</key>
     <dict>
@@ -787,6 +845,10 @@
       <key>idotlessdieresisacute.ss03</key>
       <real>-13.125</real>
       <key>idieresis</key>
+      <real>-13.125</real>
+      <key>idotbelow_dieresiscomb</key>
+      <real>-13.125</real>
+      <key>istroke_dieresiscomb</key>
       <real>-13.125</real>
     </dict>
     <key>public.kern1.S</key>
@@ -846,6 +908,10 @@
       <key>idotlessdieresisacute.ss03</key>
       <integer>0</integer>
       <key>idieresis</key>
+      <integer>0</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb</key>
       <integer>0</integer>
     </dict>
     <key>public.kern1.T</key>
@@ -1022,6 +1088,26 @@
       <integer>-118</integer>
       <key>idieresis.ss03</key>
       <integer>49</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>80</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>80</integer>
+      <key>istroke_brevecomb</key>
+      <integer>80</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>27</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>27</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>49</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>49</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>102</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>102</integer>
+      <key>istroke_caroncomb</key>
+      <integer>102</integer>
     </dict>
     <key>public.kern1.U</key>
     <dict>
@@ -1048,6 +1134,16 @@
       <key>idotlessdieresisacute.ss03</key>
       <integer>0</integer>
       <key>idieresis</key>
+      <integer>0</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_caroncomb</key>
       <integer>0</integer>
     </dict>
     <key>public.kern1.Uhorn</key>
@@ -1271,6 +1367,26 @@
       <integer>-87</integer>
       <key>idieresis.ss03</key>
       <integer>11</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>5</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>5</integer>
+      <key>istroke_brevecomb</key>
+      <integer>5</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>15</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>15</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>11</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>11</integer>
+      <key>idotbelow_caroncomb</key>
+      <real>17.25</real>
+      <key>idotbelow_caroncomb.ss03</key>
+      <real>17.25</real>
+      <key>istroke_caroncomb</key>
+      <real>17.25</real>
     </dict>
     <key>public.kern1.W</key>
     <dict>
@@ -1390,6 +1506,16 @@
       <key>idotlessdieresisacute.ss03</key>
       <real>-3.4375</real>
       <key>idieresis</key>
+      <real>-3.4375</real>
+      <key>idotbelow_dieresiscomb</key>
+      <real>-3.4375</real>
+      <key>istroke_dieresiscomb</key>
+      <real>-3.4375</real>
+      <key>idotbelow_caroncomb</key>
+      <real>-3.4375</real>
+      <key>idotbelow_caroncomb.ss03</key>
+      <real>-3.4375</real>
+      <key>istroke_caroncomb</key>
       <real>-3.4375</real>
     </dict>
     <key>public.kern1.Y</key>
@@ -1600,6 +1726,26 @@
       <integer>-125</integer>
       <key>acaron</key>
       <integer>-129</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>9</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>9</integer>
+      <key>istroke_brevecomb</key>
+      <integer>9</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>29</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>29</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>16</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>16</integer>
+      <key>idotbelow_caroncomb</key>
+      <real>32.0625</real>
+      <key>idotbelow_caroncomb.ss03</key>
+      <real>32.0625</real>
+      <key>istroke_caroncomb</key>
+      <real>32.0625</real>
     </dict>
     <key>public.kern1.Z</key>
     <dict>
@@ -1653,6 +1799,16 @@
       <real>-19.8125</real>
       <key>idieresis</key>
       <real>-32.8125</real>
+      <key>idotbelow_dieresiscomb</key>
+      <real>-32.8125</real>
+      <key>istroke_dieresiscomb</key>
+      <real>-32.8125</real>
+      <key>idotbelow_caroncomb</key>
+      <real>-9.8125</real>
+      <key>idotbelow_caroncomb.ss03</key>
+      <real>-9.8125</real>
+      <key>istroke_caroncomb</key>
+      <real>-9.8125</real>
     </dict>
     <key>public.kern1.comma</key>
     <dict>
@@ -1773,6 +1929,16 @@
       <integer>20</integer>
       <key>idieresis</key>
       <integer>0</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>30</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>30</integer>
+      <key>istroke_caroncomb</key>
+      <integer>30</integer>
     </dict>
     <key>public.kern1.five</key>
     <dict>
@@ -2234,6 +2400,16 @@
       <real>-31.4375</real>
       <key>idieresis</key>
       <real>-43.4375</real>
+      <key>idotbelow_dieresiscomb</key>
+      <real>-43.4375</real>
+      <key>istroke_dieresiscomb</key>
+      <real>-43.4375</real>
+      <key>idotbelow_caroncomb</key>
+      <real>-22.4375</real>
+      <key>idotbelow_caroncomb.ss03</key>
+      <real>-22.4375</real>
+      <key>istroke_caroncomb</key>
+      <real>-22.4375</real>
     </dict>
     <key>public.kern1.quotesingle</key>
     <dict>
@@ -2267,6 +2443,16 @@
       <real>-63.21875</real>
       <key>idieresis</key>
       <real>-89.21875</real>
+      <key>idotbelow_dieresiscomb</key>
+      <real>-89.21875</real>
+      <key>istroke_dieresiscomb</key>
+      <real>-89.21875</real>
+      <key>idotbelow_caroncomb</key>
+      <real>-59.21875</real>
+      <key>idotbelow_caroncomb.ss03</key>
+      <real>-59.21875</real>
+      <key>istroke_caroncomb</key>
+      <real>-59.21875</real>
     </dict>
     <key>public.kern1.r</key>
     <dict>
@@ -2384,6 +2570,16 @@
       <real>-17.6875</real>
       <key>idieresis</key>
       <real>-19.6875</real>
+      <key>idotbelow_dieresiscomb</key>
+      <real>-19.6875</real>
+      <key>istroke_dieresiscomb</key>
+      <real>-19.6875</real>
+      <key>idotbelow_caroncomb</key>
+      <real>-8.6875</real>
+      <key>idotbelow_caroncomb.ss03</key>
+      <real>-8.6875</real>
+      <key>istroke_caroncomb</key>
+      <real>-8.6875</real>
     </dict>
     <key>public.kern1.six</key>
     <dict>
@@ -2452,6 +2648,10 @@
       <integer>0</integer>
       <key>idieresis</key>
       <integer>0</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>0</integer>
     </dict>
     <key>public.kern1.u</key>
     <dict>
@@ -2472,6 +2672,16 @@
       <key>idotlessdieresisacute.ss03</key>
       <real>13.125</real>
       <key>idieresis</key>
+      <real>13.125</real>
+      <key>idotbelow_dieresiscomb</key>
+      <real>13.125</real>
+      <key>istroke_dieresiscomb</key>
+      <real>13.125</real>
+      <key>idotbelow_caroncomb</key>
+      <real>13.125</real>
+      <key>idotbelow_caroncomb.ss03</key>
+      <real>13.125</real>
+      <key>istroke_caroncomb</key>
       <real>13.125</real>
     </dict>
     <key>public.kern1.uhorn</key>
@@ -2874,6 +3084,16 @@
       <integer>0</integer>
       <key>jcircumflex</key>
       <integer>23</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_caroncomb</key>
+      <integer>0</integer>
     </dict>
     <key>bracketleft</key>
     <dict>
@@ -2956,6 +3176,16 @@
       <integer>0</integer>
       <key>idieresis</key>
       <integer>0</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_caroncomb</key>
+      <integer>0</integer>
     </dict>
     <key>braceleft</key>
     <dict>
@@ -3036,6 +3266,16 @@
       <integer>35</integer>
       <key>idieresis</key>
       <integer>5</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>5</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>5</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>32</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>32</integer>
+      <key>istroke_caroncomb</key>
+      <integer>32</integer>
     </dict>
     <key>public.kern1.i</key>
     <dict>
@@ -3050,6 +3290,16 @@
       <key>rlinebelow</key>
       <integer>0</integer>
       <key>idieresis</key>
+      <integer>0</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_caroncomb</key>
       <integer>0</integer>
     </dict>
     <key>icaron</key>
@@ -3148,6 +3398,10 @@
       <integer>0</integer>
       <key>idieresis</key>
       <integer>0</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>0</integer>
     </dict>
     <key>asterisk</key>
     <dict>
@@ -3164,6 +3418,10 @@
       <integer>0</integer>
       <key>idieresis</key>
       <integer>0</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>0</integer>
     </dict>
     <key>less</key>
     <dict>
@@ -3172,6 +3430,10 @@
       <key>idotlessdieresisacute.ss03</key>
       <integer>0</integer>
       <key>idieresis</key>
+      <integer>0</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb</key>
       <integer>0</integer>
     </dict>
     <key>idotlessdieresisacute</key>
@@ -3346,10 +3608,18 @@
     <dict>
       <key>idieresis</key>
       <integer>0</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>0</integer>
     </dict>
     <key>six</key>
     <dict>
       <key>idieresis</key>
+      <integer>0</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb</key>
       <integer>0</integer>
     </dict>
     <key>idieresis</key>

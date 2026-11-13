@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- Fixed kerning around `i` with a mark in the heavy weights: the typed `ị` and `ɨ` with a breve, diaeresis or caron now kern after `T V Y f`, quotes and brackets like `ĭ ï ǐ` (`Vị̈` was −145 against `Vï` 39); the round dots (`ss03`) of `ï ḯ ị̈ ɨ̈` no longer close up before `H l i b k h d` in Black Italic (`ïi`, `ɨ̈i`); and `ĭ` clears `l i b k h H` in Black and Black Italic (`ĭl` was −15, inherited from Public Sans), as does the typed `ị̆ ɨ̆`. Plain pairs are unchanged.
 - Fixed typed `ị` and `ɨ` with an acute, grave, macron, tilde, circumflex, breve, diaeresis or caron running into the next letter from Bold up (Igbo `ị́ ị̀` before `H` or `l`): they now space like `í ì ī ĩ î ĭ ï ǐ`.
 - Added the prime marks ′ ″ ‴ (U+2032 – 2034), drawn like the modifier letters ʹ ʺ, and the superscript modifier letters ʰ ʳ ˢ ᵈ ᵗ ⁿ (U+02B0, U+02B3, U+02E2, U+1D48, U+1D57, U+207F) of DIN 91379. The letters stand on the baseline of the superior figures and have close side bearings. The `sups` feature sets typed h, r, s, d, t and n as these letters only after a superior figure, a superior parenthesis or another of these letters, so `1st 2nd 3rd 4th` becomes ¹ˢᵗ ²ⁿᵈ ³ʳᵈ ⁴ᵗʰ and `x(n)` becomes `x` followed by ⁽ⁿ⁾, while `1er`, `Ste` and `century` stay as typed.
 - Fixed combining accents typed after `V v Q q ð þ Þ ŋ ĸ Ə ƒ ɨ ẞ ị`: they now sit on the letter instead of beside it, and `ị` and `ɨ` lose their dot under a top mark (`ị́ ị̀`).
