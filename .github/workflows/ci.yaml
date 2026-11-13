@@ -8,6 +8,7 @@ on:
       - "sources/**"
       - "tests/**"
       - "scripts/**"
+      - "docs/proof/**"
       - "Makefile"
       - "requirements*.txt"
       - ".github/**"
@@ -66,6 +67,7 @@ jobs:
         run: |
           if [ "${GITHUB_REF_TYPE}" = tag ]; then version="${GITHUB_REF_NAME#v}"; else version="dry-run-${GITHUB_SHA::7}"; fi
           (cd fonts && zip -r -q "../OffentligSans-${version}.zip" OffentligSans)
+          zip -q "OffentligSans-${version}.zip" LICENSE
           ls -l OffentligSans-*.zip
       - name: Upload zip as workflow artifact (dry run, any non-tag run)
         if: ${{ !startsWith(github.ref, 'refs/tags/v') }}
