@@ -750,6 +750,15 @@
       <string>ringhalfright</string>
       <string>dblprimemod</string>
       <string>primemod</string>
+      <string>minute</string>
+      <string>second</string>
+      <string>tripleprime</string>
+      <string>hmod</string>
+      <string>rmod</string>
+      <string>smod</string>
+      <string>dmod</string>
+      <string>tmod</string>
+      <string>nsuperior</string>
       <string>guillemetleft</string>
       <string>guillemetright</string>
       <string>guilsinglleft</string>
@@ -2233,6 +2242,24 @@
       <string>base</string>
       <key>primemod</key>
       <string>base</string>
+      <key>minute</key>
+      <string>base</string>
+      <key>second</key>
+      <string>base</string>
+      <key>tripleprime</key>
+      <string>base</string>
+      <key>hmod</key>
+      <string>base</string>
+      <key>rmod</key>
+      <string>base</string>
+      <key>smod</key>
+      <string>base</string>
+      <key>dmod</key>
+      <string>base</string>
+      <key>tmod</key>
+      <string>base</string>
+      <key>nsuperior</key>
+      <string>base</string>
       <key>dblprimemod</key>
       <string>base</string>
       <key>ringhalfright</key>
@@ -3216,6 +3243,18 @@
       <string>uni0292</string>
       <key>primemod</key>
       <string>uni02B9</string>
+      <key>hmod</key>
+      <string>uni02B0</string>
+      <key>rmod</key>
+      <string>uni02B3</string>
+      <key>smod</key>
+      <string>uni02E2</string>
+      <key>dmod</key>
+      <string>uni1D48</string>
+      <key>tmod</key>
+      <string>uni1D57</string>
+      <key>tripleprime</key>
+      <string>uni2034</string>
       <key>dblprimemod</key>
       <string>uni02BA</string>
       <key>ringhalfright</key>

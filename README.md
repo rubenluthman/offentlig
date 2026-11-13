@@ -27,6 +27,7 @@ Offentlig Sans starts from Public Sans `develop` at `e40fcf567`. Sizes are in fo
 | Spaced en dash | Kerning removes most of the space in every weight except Black | Spaces kept |
 | Capital `Ǔ` (U+01D3) | Missing | Added |
 | Pinyin and DIN 91379 | Pinyin tone letters, many Latin Extended letters and several combining marks missing | 18 pinyin letters, 108 composite letters, drawn Ƈ ƈ Ɨ ɨ Ǥ ǥ Ʒ ʒ and the combining marks they need; stacked marks land where the precomposed letter puts them |
+| Prime marks `′ ″ ‴` and small letters `ʰ ʳ ˢ ᵈ ᵗ ⁿ` | Missing | Added; the letters have the size and stem weight of `ª º`, and `sups` sets typed h r s d t n as them, so `1st 2nd 3rd 4th` becomes ¹ˢᵗ ²ⁿᵈ ³ʳᵈ ⁴ᵗʰ |
 | Arrows `← ↑ → ↓ ↖ ↗ ↘ ↙` | Missing | Added, drawn by Wayne Shih for Public Sans |
 | Em dash | Side bearings of 371 per side at Regular, and a `calt` rule that breaks its spacing across elements | Side bearings of the en dash (124), no `calt` |
 | `A` before `m n r p h b` | Not kerned | Kerned, never tighter than before `o` |

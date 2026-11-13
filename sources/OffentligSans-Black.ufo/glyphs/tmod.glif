@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="tmod" format="2">
+  <advance width="630.136"/>
+  <unicode hex="1D57"/>
+  <outline>
+    <contour>
+      <point x="410.528" y="799.615" type="curve" smooth="yes"/>
+      <point x="486.003" y="799.615"/>
+      <point x="520.937" y="809.724"/>
+      <point x="539.056" y="818.038" type="curve"/>
+      <point x="539.056" y="950.181" type="line"/>
+      <point x="438.792" y="950.181" type="line" smooth="yes"/>
+      <point x="409.586" y="950.181"/>
+      <point x="391.247" y="956.42"/>
+      <point x="391.247" y="991.976" type="curve" smooth="yes"/>
+      <point x="390.088" y="1302.549" type="line"/>
+      <point x="538.324" y="1302.549" type="line"/>
+      <point x="538.324" y="1454.631" type="line"/>
+      <point x="390.088" y="1454.631" type="line"/>
+      <point x="390.088" y="1652.159" type="line"/>
+      <point x="226.789" y="1652.159" type="line"/>
+      <point x="167.703" y="1453.523" type="line"/>
+      <point x="50" y="1453.523" type="line"/>
+      <point x="50" y="1302.549" type="line"/>
+      <point x="159.594" y="1302.549" type="line"/>
+      <point x="159.594" y="982.006" type="line" smooth="yes"/>
+      <point x="159.594" y="878.45"/>
+      <point x="210.306" y="799.615"/>
+    </contour>
+  </outline>
+</glyph>

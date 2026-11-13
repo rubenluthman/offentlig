@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="rmod" format="2">
+  <advance width="556.976"/>
+  <unicode hex="02B3"/>
+  <outline>
+    <contour>
+      <point x="192.911" y="804.539" type="line"/>
+      <point x="308.727" y="804.539" type="line"/>
+      <point x="364.824" y="1203.77" type="line" smooth="yes"/>
+      <point x="379.795" y="1310.435"/>
+      <point x="462.868" y="1354.289"/>
+      <point x="562.962" y="1347.602" type="curve"/>
+      <point x="575.107" y="1347.379"/>
+      <point x="595.97" y="1345.374"/>
+      <point x="606.468" y="1339.939" type="curve"/>
+      <point x="622.47" y="1454.044" type="line"/>
+      <point x="613.663" y="1459.657"/>
+      <point x="595.913" y="1462.062"/>
+      <point x="578.696" y="1462.062" type="curve"/>
+      <point x="499.124" y="1462.062"/>
+      <point x="419.777" y="1417.224"/>
+      <point x="376.551" y="1324.091" type="curve"/>
+      <point x="393.888" y="1449.586" type="line"/>
+      <point x="283.768" y="1449.586" type="line"/>
+    </contour>
+  </outline>
+</glyph>
