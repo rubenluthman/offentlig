@@ -6,10 +6,10 @@
   <anchor x="781" y="1446" name="top"/>
   <outline>
     <contour>
-      <point x="829.65" y="340" type="line"/>
-      <point x="1549.55" y="340" type="line"/>
-      <point x="1549.55" y="450" type="line"/>
-      <point x="829.65" y="450" type="line"/>
+      <point x="805" y="365" type="line"/>
+      <point x="1549.55" y="365" type="line"/>
+      <point x="1549.55" y="465" type="line"/>
+      <point x="805" y="465" type="line"/>
     </contour>
     <component base="G"/>
   </outline>
