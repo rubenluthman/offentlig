@@ -30,6 +30,7 @@ Offentlig Sans starts from Public Sans `develop` at `e40fcf567`. Sizes are in fo
 | Arrows `← ↑ → ↓ ↖ ↗ ↘ ↙` | Missing | Added, drawn by Wayne Shih for Public Sans |
 | Em dash | Side bearings of 371 per side at Regular, and a `calt` rule that breaks its spacing across elements | Side bearings of the en dash (124), no `calt` |
 | `A` before `m n r p h b` | Not kerned | Kerned, never tighter than before `o` |
+| Accented lowercase after `T V W Y` (`Yö`, `Tè`, `Tȉ`) | Accent touches the arm of the capital, worst in Black | Kerned apart, at least 30 units of space at every weight |
 | `™ ℠ ₿ $ ¢` | Marks sit low, `₿` missing, `$` and `¢` heavy in Bold and Black | Marks at cap height, `₿` added, lighter `$ ¢ ₿` strokes (about 0.56 of the `H` stem at Bold, 0.50 at Black) |
 | Ring and diaeresis | Thin ring at Black, close dot spacing in the italic, dots high above the letter | Thicker ring (Black stroke 164, hole 200), upright dot spacing in the italic, dots lower at Thin (54) and Regular (34) |
 | `ẞ` and Black `5` | No drawn `ẞ`; Black `5` has a notch at the join | `ẞ` drawn in every weight; clean `5` |

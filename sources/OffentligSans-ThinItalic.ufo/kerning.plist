@@ -714,7 +714,7 @@
       <key>public.kern2.Icv05</key>
       <integer>80</integer>
       <key>icaron</key>
-      <integer>-100</integer>
+      <integer>-56</integer>
       <key>jdotlesscaron</key>
       <integer>60</integer>
       <key>idotlessdieresisacute</key>
@@ -722,11 +722,63 @@
       <key>idotlessdieresisacute.ss03</key>
       <integer>-34</integer>
       <key>idieresis</key>
-      <integer>-64</integer>
+      <integer>-34</integer>
       <key>ij</key>
       <integer>0</integer>
       <key>ij.ss03</key>
       <integer>0</integer>
+      <key>adblgrave</key>
+      <integer>-112</integer>
+      <key>agrave</key>
+      <integer>-115</integer>
+      <key>edblgrave</key>
+      <integer>-125</integer>
+      <key>edieresis</key>
+      <integer>-125</integer>
+      <key>egrave</key>
+      <integer>-125</integer>
+      <key>ibreve</key>
+      <integer>-46</integer>
+      <key>icircumflex</key>
+      <integer>-100</integer>
+      <key>idblgrave</key>
+      <integer>163</integer>
+      <key>igrave</key>
+      <integer>-18</integer>
+      <key>iinvertedbreve</key>
+      <integer>-100</integer>
+      <key>imacron</key>
+      <integer>-51</integer>
+      <key>itilde</key>
+      <integer>-69</integer>
+      <key>jcircumflex</key>
+      <integer>60</integer>
+      <key>odblgrave</key>
+      <integer>-110</integer>
+      <key>odieresis</key>
+      <integer>-125</integer>
+      <key>odieresismacron</key>
+      <integer>-125</integer>
+      <key>ograve</key>
+      <integer>-125</integer>
+      <key>ohorngrave</key>
+      <integer>-125</integer>
+      <key>rdblgrave</key>
+      <integer>52</integer>
+      <key>scaron</key>
+      <integer>-105</integer>
+      <key>scircumflex</key>
+      <integer>-105</integer>
+      <key>udblgrave</key>
+      <integer>-100</integer>
+      <key>ugrave</key>
+      <integer>-100</integer>
+      <key>uhorngrave</key>
+      <integer>-100</integer>
+      <key>ydieresis</key>
+      <integer>-60</integer>
+      <key>ygrave</key>
+      <integer>-60</integer>
     </dict>
     <key>public.kern1.U</key>
     <dict>
@@ -845,6 +897,38 @@
       <key>idotlessdieresisacute.ss03</key>
       <integer>0</integer>
       <key>idieresis</key>
+      <integer>0</integer>
+      <key>adblgrave</key>
+      <integer>-70</integer>
+      <key>agrave</key>
+      <integer>-70</integer>
+      <key>edblgrave</key>
+      <integer>-70</integer>
+      <key>egrave</key>
+      <integer>-70</integer>
+      <key>ibreve</key>
+      <integer>0</integer>
+      <key>icircumflex</key>
+      <integer>0</integer>
+      <key>idblgrave</key>
+      <integer>164</integer>
+      <key>igrave</key>
+      <integer>0</integer>
+      <key>iinvertedbreve</key>
+      <integer>0</integer>
+      <key>imacron</key>
+      <integer>0</integer>
+      <key>itilde</key>
+      <integer>1</integer>
+      <key>odblgrave</key>
+      <integer>-70</integer>
+      <key>ograve</key>
+      <integer>-70</integer>
+      <key>ohorngrave</key>
+      <integer>-70</integer>
+      <key>rdblgrave</key>
+      <integer>53</integer>
+      <key>udblgrave</key>
       <integer>0</integer>
     </dict>
     <key>public.kern1.W</key>
@@ -1020,7 +1104,91 @@
       <key>ecaron</key>
       <integer>-60</integer>
       <key>idieresis</key>
+      <integer>-36</integer>
+      <key>adblgrave</key>
+      <integer>-100</integer>
+      <key>adieresis</key>
+      <integer>-100</integer>
+      <key>adieresismacron</key>
+      <integer>-100</integer>
+      <key>agrave</key>
+      <integer>-100</integer>
+      <key>ccaron</key>
       <integer>-60</integer>
+      <key>ebreve</key>
+      <integer>-60</integer>
+      <key>ecedillabreve</key>
+      <integer>-60</integer>
+      <key>edblgrave</key>
+      <integer>-60</integer>
+      <key>edieresis</key>
+      <integer>-60</integer>
+      <key>egrave</key>
+      <integer>-60</integer>
+      <key>emacron</key>
+      <integer>-60</integer>
+      <key>emacronacute</key>
+      <integer>-60</integer>
+      <key>gbreve</key>
+      <integer>-115</integer>
+      <key>gcaron</key>
+      <integer>-115</integer>
+      <key>ibreve</key>
+      <integer>-33</integer>
+      <key>idblgrave</key>
+      <integer>192</integer>
+      <key>igrave</key>
+      <integer>11</integer>
+      <key>imacron</key>
+      <integer>-45</integer>
+      <key>itilde</key>
+      <integer>-47</integer>
+      <key>obreve</key>
+      <integer>-60</integer>
+      <key>odblgrave</key>
+      <integer>-60</integer>
+      <key>odieresis</key>
+      <integer>-60</integer>
+      <key>odieresismacron</key>
+      <integer>-60</integer>
+      <key>ograve</key>
+      <integer>-60</integer>
+      <key>ohorngrave</key>
+      <integer>-60</integer>
+      <key>ohorntilde</key>
+      <integer>-60</integer>
+      <key>omacron</key>
+      <integer>-60</integer>
+      <key>omacronacute</key>
+      <integer>-60</integer>
+      <key>oogonekmacron</key>
+      <integer>-60</integer>
+      <key>rdblgrave</key>
+      <integer>81</integer>
+      <key>scaron</key>
+      <integer>-115</integer>
+      <key>udblgrave</key>
+      <integer>-60</integer>
+      <key>udieresis</key>
+      <integer>-60</integer>
+      <key>udieresisacute</key>
+      <integer>-60</integer>
+      <key>udieresiscaron</key>
+      <integer>-60</integer>
+      <key>udieresisgrave</key>
+      <integer>-60</integer>
+      <key>udieresismacron</key>
+      <integer>-60</integer>
+      <key>ugrave</key>
+      <integer>-60</integer>
+      <key>uhorngrave</key>
+      <integer>-60</integer>
+      <key>ydieresis</key>
+      <integer>-70</integer>
+      <key>ygrave</key>
+      <integer>-70</integer>
+      <key>zcaron</key>
+      <integer>-50</integer>
     </dict>
     <key>public.kern1.Z</key>
     <dict>

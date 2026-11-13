@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- Fixed accented lowercase letters after `T V W Y` and their accented capitals: the accent no longer touches the arm (`Tȉ`, `Yö`, `Yë`, `Tè`, `Yŏ` and many more, worst in Black). Plain pairs such as `To`, `Ye` and `Wa` are unchanged.
 - Fixed the bar of `Ǥ` in Black and Black Italic: it no longer starts against the lower curve with a hairline gap, and now floats clear of the curve and the crossbar on the left of the stem.
 
 ## [0.2.0] - 2026-11-13
