@@ -97,3 +97,16 @@ def test_italic_dots_sit_on_the_slanted_line(fonts, master):
         mid_y = sum(b[1] + b[3] for b in boxes) / 4
         _x, _y = anchors(glyph)["_top"]
         assert mid_x - (_x + (mid_y - _y) * TAN8) == pytest.approx(0, abs=8), name
+
+
+@pytest.mark.parametrize("master", MASTERS)
+def test_diaeresis_dot_is_never_larger_than_the_i_dot(fonts, master):
+    """Public Sans keeps the dots of the diaeresis at or under the dot of `i`; the measured range is 0.93 - 1.0 of the
+    width and 0.89 - 1.0 of the height. A dot above 1.0 or under 0.85 means the dots were resized."""
+    font = fonts[master]
+    i_dot = max((c.getBounds() for c in font["i"].contours), key=lambda b: b[3])
+    for contour in font["dieresiscomb"].contours:
+        box = contour.getBounds()
+        width, height = (box[2] - box[0]) / (i_dot[2] - i_dot[0]), (box[3] - box[1]) / (i_dot[3] - i_dot[1])
+        assert 0.85 <= width <= 1.005, f"{master}: dot width is {width:.3f} of the i dot"
+        assert 0.85 <= height <= 1.005, f"{master}: dot height is {height:.3f} of the i dot"

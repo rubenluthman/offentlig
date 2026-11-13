@@ -141,6 +141,7 @@ These values are identical in every master and are enforced by `tests/test_metri
 
 ## Round dots (`ss03`) and the diaeresis
 
+- The diaeresis dot is never larger than the `i` dot: 0.93 – 1.0 of its width and 0.89 – 1.0 of its height in every master, as in Public Sans (`tests/test_diaeresis_height.py`).
 - Each round dot is a circle with a diameter of 1.12 times the smaller side of the square dot it replaces, centred on that dot in every master. Italic circles are not sheared.
 - Dots over a letter keep the lower edge of the square dot, so the clearance to the letter is unchanged; the dot below a letter keeps its upper edge.
 - The two dots of `dieresiscomb.ss03` sit closer together as the weight rises: the gap between them is 0.9 times the dot diameter at Regular and 0.4 times in Black. Thin keeps the spacing of the square dots.

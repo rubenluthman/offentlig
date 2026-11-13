@@ -9,7 +9,7 @@ Offentlig is a planned open-source font superfamily. Offentlig Sans is the first
 <!-- vale HouseStyle.Headings = YES -->
 
 - Nine weights (Thin to Black) in upright and italic, plus variable fonts on the `wght` axis (default 400).
-- Swedish letters `å ä ö` with a thicker ring, lower diaeresis dots and a drawn capital sharp s `ẞ` (U+1E9E).
+- Swedish letters `å ä ö` with a thicker ring, lower diaeresis dots and a drawn capital sharp s `ẞ` (U+1E9E). Uppercasing `ß` still produces `SS`; `ẞ` appears only when typed as U+1E9E.
 - Coverage beyond Public Sans: pinyin tone letters, Latin letters of DIN 91379 (not Greek or Cyrillic), eight arrows, the Bitcoin sign `₿`, and superscript and subscript `+ − = ( )`, so `x⁽²⁾` and `H₍₂₎O` need no fallback font.
 - Optional features, all off by default: `ss01` alternate `g`, `ss02` alternate `l`, `salt` both; `cv01` wider `J`, `cv03` round `G`, `cv04` single-storey `a`, `cv05` `I` with serifs, `cv06` `1` with a base; `zero` slashed `0`; `onum` oldstyle figures; `ss03` round dots.
 - Formats: OTF, TTF, variable TTF and WOFF2.
