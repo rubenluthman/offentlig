@@ -241,18 +241,27 @@ CLEARANCE = {
     "ő": (8, "bhklBEFHKPRTVWXY7!'’\"()[]{}\\"),
 }
 ARM_ONLY = {"ǒ": (30, "TYVW"), "ě": (30, "TYVW")}  # on the right side of the capital with an arm
+# The diaeresis of ï ḯ and the typed ị̈ ɨ̈ against the tall letters, in the default form (the first two are in CLEARANCE above)
+# and with the round dots (`ss03`), the same floor of 8 (the masters aim at 12) as ARCHITECTURE.md holds for `ï`.
+DIAERESIS_TALL = {char: (8, "Hlibkhd") for char in ("ï", "ḯ", "ị\u0308", "ɨ\u0308")}
+CLEARANCE_DEFAULT = {**CLEARANCE, "ị\u0308": DIAERESIS_TALL["ị\u0308"], "ɨ\u0308": DIAERESIS_TALL["ɨ\u0308"]}
+CLEARANCE_SS03 = dict(DIAERESIS_TALL)
 
 
-@pytest.mark.parametrize("weight,italic", MASTER_FONTS, ids=MASTER_IDS)
-@pytest.mark.parametrize("char", list(CLEARANCE))
-def test_marks_and_hooks_keep_a_gap_to_their_neighbours(weight, italic, char):
+@pytest.mark.parametrize("features", [{}, {"ss03": True}], ids=["default", "ss03"])
+@pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
+@pytest.mark.parametrize("char", sorted(set(CLEARANCE_DEFAULT) | set(CLEARANCE_SS03)))
+def test_marks_and_hooks_keep_a_gap_to_their_neighbours(weight, italic, char, features):
     s = shaper(weight, italic)
-    floor, neighbours = CLEARANCE[char]
+    table = CLEARANCE_SS03 if features else CLEARANCE_DEFAULT
+    if char not in table:
+        pytest.skip("no round-dot form")
+    floor, neighbours = table[char]
     tight = []
     for n in neighbours:
         for text in (n + char, char + n):
             try:
-                gap = s.gap(text)
+                gap = s.gap(text, features)
             except AssertionError:
                 continue  # ligature or substitution
             if gap is not None and gap < floor:
@@ -316,6 +325,7 @@ def test_accented_lowercase_clears_the_arm_of_t_v_w_y(weight, italic, features):
 
 ROMANIAN_RIGHT = "abcdefghijklmnopqrstuvwxyzăâșț"
 HORN_CAPITALS = "ƠỜỚỞỠỢƯỪỨỬỮỰ"
+BREVE_TALL_RIGHT = "lbhkiH"
 
 
 def vietnamese_lowercase(font):
@@ -332,18 +342,23 @@ def vietnamese_lowercase(font):
 @pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
 def test_circumflex_i_and_horn_capitals_clear_the_lowercase_that_follows(weight, italic):
     """The circumflex of î (Romanian) and the horn of Ơ Ư and their accented forms (Vietnamese) closed on the next
-    lowercase letter in the heavy weights of Public Sans; pair exceptions aim at 40 units and the test fails below 30."""
+    lowercase letter in the heavy weights of Public Sans, and so did the breve of ĭ (and of the typed ị̆ ɨ̆) before
+    `l b h k i H`; pair exceptions aim at 40 units and the test fails below 30."""
     s = shaper(weight, italic)
     tight = []
-    texts = ["î" + r for r in ROMANIAN_RIGHT]
-    texts += [left + r for left in HORN_CAPITALS for r in vietnamese_lowercase(source("Regular"))]
-    for text in texts:
+    texts = [("î" + r, {}) for r in ROMANIAN_RIGHT]
+    texts += [(left + r, {}) for left in HORN_CAPITALS for r in vietnamese_lowercase(source("Regular"))]
+    # ĭ and the typed ị̆ ɨ̆ closed on the same letters in Black and Black Italic (Public Sans: ĭl -15); the round-dot `i` has its own glyph
+    for left in ("ĭ", "ị\u0306", "ɨ\u0306"):
+        for r in BREVE_TALL_RIGHT:
+            texts += [(left + r, {}), (left + r, {"ss03": True})]
+    for text, features in texts:
         try:
-            gap = s.gap(text)
+            gap = s.gap(text, features)
         except AssertionError:
             continue  # ligature or substitution
         if gap is not None and gap < 30:
-            tight.append((text, round(gap)))
+            tight.append((text, tuple(features), round(gap)))
     assert tight == []
 
 
@@ -449,3 +464,38 @@ def test_light_and_regular_masters_keep_the_spacing_where_the_punctuation_was_al
                 if moved > 10 and gap is not None and gap - moved >= 40:
                     loosened.append((text, round(gap - moved), round(moved)))
     assert sorted(set(loosened)) == []
+
+
+TYPED_ON_THE_RIGHT = [
+    (base + mark, precomposed)
+    for base in "ịɨ"
+    for mark, precomposed in (("̆", "ĭ"), ("̈", "ï"), ("̌", "ǐ"))
+]
+
+
+def left_neighbours(font):
+    """Every encoded letter, digit, punctuation mark and symbol: the glyphs that can stand before a typed letter."""
+    return sorted(
+        c
+        for c in (chr(g.unicodes[0]) for g in font if g.unicodes)
+        if unicodedata.category(c)[0] in "LNPS" and c not in "ịɨ"
+    )
+
+
+@pytest.mark.parametrize("features", [{}, {"ss03": True}], ids=["default", "ss03"])
+@pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
+def test_typed_i_with_breve_diaeresis_or_caron_kerns_after_a_letter_like_the_precomposed_letter(weight, italic, features):
+    """Typed ị and ɨ with a breve, diaeresis or caron are one glyph built on ĭ ï ǐ (`idotbelow_brevecomb`,
+    `istroke_dieresiscomb` and the others), so every pair with another glyph on the left kerns exactly like the
+    precomposed letter, at every weight, with and without `ss03`."""
+    s = shaper(weight, italic)
+    differing = []
+    for left in left_neighbours(source("Regular")):
+        for typed, precomposed in TYPED_ON_THE_RIGHT:
+            try:
+                a, b = s.kern(left + typed, features), s.kern(left + precomposed, features)
+            except AssertionError:
+                continue  # ligature or substitution
+            if a != b:
+                differing.append((left + typed, a, left + precomposed, b))
+    assert differing == []
