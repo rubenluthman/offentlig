@@ -2456,6 +2456,8 @@
       <integer>0</integer>
       <key>idieresis</key>
       <integer>0</integer>
+      <key>jcircumflex</key>
+      <integer>17</integer>
     </dict>
     <key>bracketleft</key>
     <dict>
@@ -2472,7 +2474,29 @@
       <key>rlinebelow</key>
       <integer>19</integer>
       <key>idieresis</key>
-      <integer>0</integer>
+      <integer>12</integer>
+      <key>ibreve</key>
+      <integer>23</integer>
+      <key>idieresis.ss03</key>
+      <integer>19</integer>
+      <key>idotbelow_gravecomb</key>
+      <integer>21</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>21</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>15</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>15</integer>
+      <key>igrave</key>
+      <integer>21</integer>
+      <key>imacron</key>
+      <integer>15</integer>
+      <key>istroke_gravecomb</key>
+      <integer>21</integer>
+      <key>istroke_macroncomb</key>
+      <integer>16</integer>
+      <key>jcircumflex</key>
+      <integer>59</integer>
     </dict>
     <key>bracketright</key>
     <dict>
@@ -2504,7 +2528,29 @@
       <key>rlinebelow</key>
       <integer>21</integer>
       <key>idieresis</key>
-      <integer>0</integer>
+      <integer>12</integer>
+      <key>ibreve</key>
+      <integer>23</integer>
+      <key>idieresis.ss03</key>
+      <integer>19</integer>
+      <key>idotbelow_gravecomb</key>
+      <integer>21</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>21</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>15</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>15</integer>
+      <key>igrave</key>
+      <integer>21</integer>
+      <key>imacron</key>
+      <integer>15</integer>
+      <key>istroke_gravecomb</key>
+      <integer>21</integer>
+      <key>istroke_macroncomb</key>
+      <integer>16</integer>
+      <key>jcircumflex</key>
+      <integer>61</integer>
     </dict>
     <key>slash</key>
     <dict>
@@ -3454,6 +3500,13 @@
       <integer>0</integer>
       <key>quotedblright.ss03</key>
       <integer>0</integer>
+    </dict>
+    <key>jcircumflex</key>
+    <dict>
+      <key>question</key>
+      <integer>12</integer>
+      <key>question.ss03</key>
+      <integer>12</integer>
     </dict>
   </dict>
 </plist>

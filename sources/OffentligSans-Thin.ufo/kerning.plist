@@ -2446,6 +2446,8 @@
       <integer>0</integer>
       <key>idieresis</key>
       <integer>0</integer>
+      <key>jcircumflex</key>
+      <integer>19</integer>
     </dict>
     <key>bracketleft</key>
     <dict>
@@ -2463,6 +2465,10 @@
       <integer>26</integer>
       <key>idieresis</key>
       <integer>0</integer>
+      <key>ibreve</key>
+      <integer>43</integer>
+      <key>jcircumflex</key>
+      <integer>58</integer>
     </dict>
     <key>bracketright</key>
     <dict>
@@ -2495,6 +2501,10 @@
       <integer>28</integer>
       <key>idieresis</key>
       <integer>0</integer>
+      <key>ibreve</key>
+      <integer>43</integer>
+      <key>jcircumflex</key>
+      <integer>60</integer>
     </dict>
     <key>slash</key>
     <dict>
@@ -3464,6 +3474,13 @@
       <integer>0</integer>
       <key>quotedblright.ss03</key>
       <integer>0</integer>
+    </dict>
+    <key>jcircumflex</key>
+    <dict>
+      <key>question</key>
+      <integer>13</integer>
+      <key>question.ss03</key>
+      <integer>13</integer>
     </dict>
   </dict>
 </plist>

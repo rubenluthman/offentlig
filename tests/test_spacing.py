@@ -369,3 +369,38 @@ def test_accented_i_clears_the_closing_punctuation_after_it(weight, italic, feat
             if gap is not None and gap < 30:
                 tight.append((left + right, round(gap)))
     assert tight == []
+
+
+OPENING_PUNCTUATION = "([{¿¡‘“«‹"
+# ȉ and ȑ (double grave) need more than 300 units of kerning; the ROADMAP Icebox plans a narrower double grave for them.
+LEFT_FOR_THE_ICEBOX = "ȉȑ"
+
+
+def accented_letters(font):
+    """Every encoded accented letter, lowercase and capital, and the typed `ị` and `ɨ` with a top mark, which shape as one glyph."""
+    letters = [
+        c
+        for c in (chr(g.unicodes[0]) for g in font if g.unicodes)
+        if unicodedata.category(c) in ("Lu", "Ll") and len(unicodedata.normalize("NFD", c)) > 1 and c not in LEFT_FOR_THE_ICEBOX
+    ]
+    return sorted(letters) + [base + mark for base in "ịɨ" for mark in "́̀̂̄̃"]
+
+
+@pytest.mark.parametrize("features", [{}, {"ss03": True}], ids=["default", "ss03"])
+@pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
+def test_accented_letters_clear_the_punctuation_next_to_them(weight, italic, features):
+    """The marks of accented letters (`ŕ) ĵ? ű) ơ? (ì (ĭ ¡ḻ`) closed on the bracket, quote or mark next to them in the heavy
+    weights of Public Sans. Glyph-to-glyph pair exceptions aim at 40 units on both sides of `) ] } ? ! ' " ’ ” » ›` and
+    `( [ { ¿ ¡ ‘ “ « ‹`; the test fails below 30. `ȉ` and `ȑ` are left for the Icebox item."""
+    s = shaper(weight, italic)
+    tight = []
+    for letter in accented_letters(source("Regular")):
+        texts = [letter + p for p in CLOSING_PUNCTUATION] + [p + letter for p in OPENING_PUNCTUATION]
+        for text in texts:
+            try:
+                gap = s.gap(text, features)
+            except AssertionError:
+                continue  # ligature or substitution
+            if gap is not None and gap < 30:
+                tight.append((text, round(gap)))
+    assert tight == []
