@@ -1,4 +1,5 @@
 """Vertical metrics match ARCHITECTURE.md; names never use Public Sans; coverage; variable default."""
+import plistlib
 import re
 
 import pytest
@@ -112,8 +113,23 @@ def test_static_weight_classes():
             assert f["OS/2"].usWeightClass == cls, (weight, italic)
 
 
-def test_version_is_0_100(static_ttf):
-    assert static_ttf["name"].getName(5, 3, 1, 0x409).toUnicode() == "Version 0.100"
+def source_version():
+    """`Version major.minor` from the six masters, which must agree with each other."""
+    versions = set()
+    for ufo in sorted((ROOT / "sources").glob("OffentligSans*.ufo")):
+        with open(ufo / "fontinfo.plist", "rb") as f:
+            info = plistlib.load(f)
+        versions.add(f"Version {info['versionMajor']}.{info['versionMinor']}")
+    assert len(versions) == 1, f"the masters carry different versions: {sorted(versions)}"
+    return versions.pop()
+
+
+def test_version_matches_the_sources(static_ttf):
+    assert static_ttf["name"].getName(5, 3, 1, 0x409).toUnicode() == source_version()
+
+
+def test_variable_version_matches_the_sources(variable_ttf):
+    assert variable_ttf["name"].getName(5, 3, 1, 0x409).toUnicode() == source_version()
 
 
 def test_proof_text_is_covered():

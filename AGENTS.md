@@ -15,9 +15,9 @@ Open-source font superfamily. Offentlig Sans is a renamed fork of Public Sans (u
 - Sources are `sources/*.designspace` and `sources/*.ufo` only (ADR-0001). Do not add `.glyphs` files.
 - Never commit `fonts/` or `build/` (ADR-0002), or `docs/private/`, which holds private notes.
 - Keep the vertical metrics in `ARCHITECTURE.md`; a test enforces them.
-- Never create tags or releases, and never make the repository public, without the owner's go-ahead.
-- Bug fixes go upstream to uswds/public-sans first.
-- Remote CI (`ubuntu-latest`) stays on while the repository is private: it is the only clean-build and Fontspector gate. Never gate it on repository visibility or remove it.
+- Never create tags or releases without the owner's go-ahead.
+- Fix bugs here. When uswds/public-sans has no issue for the bug, open one.
+- Remote CI (`ubuntu-latest`) is the only clean-build and Fontspector gate. Never remove it or gate it on repository visibility.
 - One SemVer version covers all families, `0.x.y`. Never bump to `1.0.0` without the owner's authorization.
 - No marketing wording; no em dashes in `.md` or `.txt` files.
 
