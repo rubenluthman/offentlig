@@ -629,6 +629,36 @@
       <real>-80.4375</real>
       <key>public.kern2.z</key>
       <real>-53.625</real>
+      <key>b</key>
+      <integer>-60</integer>
+      <key>h</key>
+      <integer>-60</integer>
+      <key>i</key>
+      <integer>-60</integer>
+      <key>k</key>
+      <integer>-60</integer>
+      <key>l</key>
+      <integer>-60</integer>
+      <key>agrave</key>
+      <integer>-60</integer>
+      <key>egrave</key>
+      <integer>-60</integer>
+      <key>igrave</key>
+      <integer>-17</integer>
+      <key>ograve</key>
+      <integer>-60</integer>
+      <key>ugrave</key>
+      <integer>-60</integer>
+      <key>itilde</key>
+      <integer>-39</integer>
+      <key>idotbelow</key>
+      <integer>-60</integer>
+      <key>ohorngrave</key>
+      <integer>-60</integer>
+      <key>uhorngrave</key>
+      <integer>-60</integer>
+      <key>ygrave</key>
+      <integer>-60</integer>
     </dict>
     <key>public.kern1.Oslash</key>
     <dict>
@@ -887,7 +917,7 @@
       <key>public.kern2.Icv05</key>
       <integer>64</integer>
       <key>icaron</key>
-      <integer>111</integer>
+      <integer>134</integer>
       <key>jdotlesscaron</key>
       <real>39.375</real>
       <key>idotlessdieresisacute</key>
@@ -919,11 +949,11 @@
       <key>igrave</key>
       <integer>15</integer>
       <key>iinvertedbreve</key>
-      <integer>2</integer>
+      <integer>14</integer>
       <key>imacron</key>
       <integer>68</integer>
       <key>itilde</key>
-      <integer>45</integer>
+      <integer>61</integer>
       <key>jcircumflex</key>
       <integer>39</integer>
       <key>odblgrave</key>
@@ -1016,6 +1046,36 @@
       <real>-81.09375</real>
       <key>public.kern2.z</key>
       <real>-94.6875</real>
+      <key>b</key>
+      <integer>-111</integer>
+      <key>h</key>
+      <integer>-111</integer>
+      <key>i</key>
+      <integer>-111</integer>
+      <key>k</key>
+      <integer>-111</integer>
+      <key>l</key>
+      <integer>-111</integer>
+      <key>agrave</key>
+      <integer>-101</integer>
+      <key>egrave</key>
+      <integer>-112</integer>
+      <key>igrave</key>
+      <integer>-23</integer>
+      <key>ograve</key>
+      <integer>-112</integer>
+      <key>otilde</key>
+      <integer>-112</integer>
+      <key>itilde</key>
+      <integer>-44</integer>
+      <key>etilde</key>
+      <integer>-112</integer>
+      <key>idotbelow</key>
+      <integer>-111</integer>
+      <key>ohorngrave</key>
+      <integer>-112</integer>
+      <key>ohorntilde</key>
+      <integer>-112</integer>
     </dict>
     <key>public.kern1.V</key>
     <dict>
@@ -1331,9 +1391,9 @@
       <key>public.kern2.Icv05</key>
       <integer>64</integer>
       <key>icaron</key>
-      <real>35.0625</real>
+      <real>48.0625</real>
       <key>jdotlesscaron</key>
-      <integer>3</integer>
+      <integer>17</integer>
       <key>idotlessdieresisacute</key>
       <real>37.0625</real>
       <key>idotlessdieresisacute.ss03</key>
@@ -1490,7 +1550,7 @@
       <key>public.kern2.Icv05</key>
       <integer>64</integer>
       <key>icaron</key>
-      <real>7.1875</real>
+      <real>21.1875</real>
       <key>jdotlesscaron</key>
       <integer>0</integer>
       <key>idotlessdieresisacute</key>
@@ -2223,7 +2283,7 @@
       <key>public.kern2.sevenosf</key>
       <real>26.25</real>
       <key>icaron</key>
-      <real>10.3125</real>
+      <real>22.3125</real>
       <key>jdotlesscaron</key>
       <integer>0</integer>
       <key>idotlessdieresisacute</key>
@@ -2722,7 +2782,7 @@
     <key>bracketleft</key>
     <dict>
       <key>icaron</key>
-      <integer>49</integer>
+      <integer>82</integer>
       <key>jdotlesscaron</key>
       <integer>31</integer>
       <key>idotlessdieresisacute</key>
@@ -2754,7 +2814,7 @@
     <key>braceleft</key>
     <dict>
       <key>icaron</key>
-      <integer>50</integer>
+      <integer>82</integer>
       <key>jdotlesscaron</key>
       <integer>33</integer>
       <key>idotlessdieresisacute</key>
@@ -2764,7 +2824,7 @@
       <key>llinebelow</key>
       <integer>24</integer>
       <key>rlinebelow</key>
-      <integer>42</integer>
+      <integer>43</integer>
       <key>idieresis</key>
       <integer>0</integer>
     </dict>
@@ -2773,7 +2833,7 @@
       <key>icaron</key>
       <integer>48</integer>
       <key>jdotlesscaron</key>
-      <integer>16</integer>
+      <integer>27</integer>
       <key>idotlessdieresisacute</key>
       <integer>39</integer>
       <key>idotlessdieresisacute.ss03</key>
@@ -2823,7 +2883,7 @@
       <key>bracketleft</key>
       <integer>0</integer>
       <key>backslash</key>
-      <integer>50</integer>
+      <integer>63</integer>
       <key>public.kern2.quotesingle</key>
       <real>-16.5625</real>
       <key>public.kern2.parenright</key>
@@ -2832,6 +2892,16 @@
       <integer>0</integer>
       <key>public.kern2.quoteright</key>
       <integer>0</integer>
+      <key>T</key>
+      <integer>80</integer>
+      <key>W</key>
+      <integer>46</integer>
+      <key>Y</key>
+      <integer>49</integer>
+      <key>bracketright</key>
+      <integer>85</integer>
+      <key>braceright</key>
+      <integer>91</integer>
     </dict>
     <key>jdotlesscaron</key>
     <dict>
@@ -2858,7 +2928,7 @@
       <key>bracketleft</key>
       <integer>0</integer>
       <key>backslash</key>
-      <integer>45</integer>
+      <integer>57</integer>
       <key>public.kern2.quotesingle</key>
       <real>-16.5625</real>
       <key>public.kern2.parenright</key>
@@ -2867,6 +2937,16 @@
       <integer>0</integer>
       <key>public.kern2.quoteright</key>
       <integer>0</integer>
+      <key>T</key>
+      <integer>74</integer>
+      <key>W</key>
+      <integer>40</integer>
+      <key>Y</key>
+      <integer>43</integer>
+      <key>bracketright</key>
+      <integer>79</integer>
+      <key>braceright</key>
+      <integer>85</integer>
     </dict>
     <key>question</key>
     <dict>
@@ -3056,6 +3136,8 @@
     <dict>
       <key>public.kern2.j</key>
       <integer>40</integer>
+      <key>j</key>
+      <integer>68</integer>
     </dict>
     <key>tlinebelow</key>
     <dict>
@@ -3063,6 +3145,8 @@
       <real>69.75</real>
       <key>public.kern2.parenright</key>
       <real>6.875</real>
+      <key>j</key>
+      <integer>106</integer>
     </dict>
     <key>three</key>
     <dict>
@@ -3161,11 +3245,60 @@
       <integer>-20</integer>
       <key>public.kern2.quoteright</key>
       <real>-86.25</real>
+      <key>B</key>
+      <integer>-14</integer>
+      <key>E</key>
+      <integer>-14</integer>
+      <key>F</key>
+      <integer>-14</integer>
+      <key>H</key>
+      <integer>-14</integer>
+      <key>K</key>
+      <integer>-14</integer>
+      <key>P</key>
+      <integer>-14</integer>
+      <key>R</key>
+      <integer>-14</integer>
+      <key>T</key>
+      <integer>-93</integer>
+      <key>V</key>
+      <integer>-87</integer>
+      <key>W</key>
+      <integer>-87</integer>
+      <key>X</key>
+      <integer>0</integer>
+      <key>Y</key>
+      <integer>-71</integer>
+      <key>seven</key>
+      <integer>0</integer>
+      <key>quotesingle</key>
+      <integer>-138</integer>
+      <key>quoteright</key>
+      <integer>-86</integer>
+      <key>quotedbl</key>
+      <integer>-138</integer>
+      <key>parenright</key>
+      <integer>-20</integer>
     </dict>
     <key>colon.ss03</key>
     <dict>
       <key>seven.osf</key>
       <real>-101.875</real>
+    </dict>
+    <key>icircumflex</key>
+    <dict>
+      <key>b</key>
+      <integer>13</integer>
+      <key>h</key>
+      <integer>13</integer>
+      <key>i</key>
+      <integer>13</integer>
+      <key>j</key>
+      <integer>0</integer>
+      <key>k</key>
+      <integer>13</integer>
+      <key>l</key>
+      <integer>13</integer>
     </dict>
   </dict>
 </plist>
