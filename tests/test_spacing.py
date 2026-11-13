@@ -88,7 +88,7 @@ def test_new_groups_hold_what_they_should(master):
 class Shaper:
     """HarfBuzz at one font file: kerning values and the horizontal ink gap between the two glyphs of a pair."""
 
-    STEP = 20
+    STEP = 4
 
     def __init__(self, path):
         self.font = hb.Font(hb.Face(hb.Blob.from_file_path(str(path))))
@@ -143,16 +143,23 @@ class Shaper:
                     pass
 
             self.font.draw_glyph_with_pen(gid, Pen(None))
+            low, high, step = -500, 2400, self.STEP
             rows = {}
-            for y in range(-500, 2400, self.STEP):
-                xs = []
-                for contour in points:
-                    for k, (x0, y0) in enumerate(contour):
-                        x1, y1 = contour[(k + 1) % len(contour)]
-                        if (y0 <= y < y1) or (y1 <= y < y0):
-                            xs.append(x0 + (y - y0) * (x1 - x0) / (y1 - y0))
-                if xs:
-                    rows[y] = (min(xs), max(xs))
+            for contour in points:
+                for k, (x0, y0) in enumerate(contour):
+                    x1, y1 = contour[(k + 1) % len(contour)]
+                    if y0 == y1:
+                        continue
+                    lo, hi = (y0, y1) if y0 < y1 else (y1, y0)
+                    # rows y with lo <= y < hi, on the grid low + n * step
+                    first = max(0, -((low - lo) // step) if lo > low else 0)
+                    y = low + first * step
+                    while y < hi and y < high:
+                        if y >= lo:
+                            x = x0 + (y - y0) * (x1 - x0) / (y1 - y0)
+                            span = rows.get(y)
+                            rows[y] = (x, x) if span is None else (min(span[0], x), max(span[1], x))
+                        y += step
             self.rows[gid] = rows
         return self.rows[gid]
 
@@ -304,4 +311,37 @@ def test_accented_lowercase_clears_the_arm_of_t_v_w_y(weight, italic, features):
                 continue  # ligature or substitution
             if gap is not None and gap < 30:
                 tight.append((left + right, round(gap)))
+    assert tight == []
+
+
+ROMANIAN_RIGHT = "abcdefghijklmnopqrstuvwxyzăâșț"
+HORN_CAPITALS = "ƠỜỚỞỠỢƯỪỨỬỮỰ"
+
+
+def vietnamese_lowercase(font):
+    """Basic Latin lowercase and the Vietnamese letters, the lowercase that follows Ơ and Ư in running text."""
+    letters = set("abcdefghijklmnopqrstuvwxyz")
+    for glyph in font:
+        if glyph.unicodes:
+            char = chr(glyph.unicodes[0])
+            if unicodedata.category(char) == "Ll" and (char in "đăâêôơưàáãèéẽìíĩòóõùúũỳýỹ" or 0x1EA0 <= ord(char) <= 0x1EF9):
+                letters.add(char)
+    return sorted(letters)
+
+
+@pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
+def test_circumflex_i_and_horn_capitals_clear_the_lowercase_that_follows(weight, italic):
+    """The circumflex of î (Romanian) and the horn of Ơ Ư and their accented forms (Vietnamese) closed on the next
+    lowercase letter in the heavy weights of Public Sans; pair exceptions aim at 40 units and the test fails below 30."""
+    s = shaper(weight, italic)
+    tight = []
+    texts = ["î" + r for r in ROMANIAN_RIGHT]
+    texts += [left + r for left in HORN_CAPITALS for r in vietnamese_lowercase(source("Regular"))]
+    for text in texts:
+        try:
+            gap = s.gap(text)
+        except AssertionError:
+            continue  # ligature or substitution
+        if gap is not None and gap < 30:
+            tight.append((text, round(gap)))
     assert tight == []
