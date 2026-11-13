@@ -19,6 +19,10 @@ make qa        # Fontspector universal and OpenType profiles, expected 0 FAIL
 make proof     # tester page (docs/proof/allemansratten.txt) and Diffenator2 proof pages in build/proof
 make specimen  # docs/specimen.png from the built TTFs and the Allemansrätten text
 make social-preview  # build/social-preview.png, 1280 x 640, uploaded by hand under Settings > General > Social preview
+make diff-public-sans  # Diffenator2 comparison with Public Sans at e40fcf567 (cloned into build/public-sans-reference), in build/diff-public-sans
+make diff-main  # Diffenator2 comparison with origin/main (built in the worktree build/main-reference), in build/diff-main
+make install   # copies the OTF files to ~/Library/Fonts
+make clean     # deletes fonts/ and build/
 make verify    # tests, links, house style, conflict markers, paths and secrets
 ```
 

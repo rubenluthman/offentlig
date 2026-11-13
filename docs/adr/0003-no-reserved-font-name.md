@@ -6,7 +6,7 @@ Status: Active · 2026-11-09
 Offentlig Sans reserves no font name under the SIL Open Font License 1.1.
 
 - The copyright notice in `LICENSE` and in the font `name` table carries no Reserved Font Name clause.
-- Do not add "with Reserved Font Name" to any later release, file header or `OFL.txt`.
+- Do not add "with Reserved Font Name" to any later release, file header or `LICENSE`.
 
 ## Why
 
