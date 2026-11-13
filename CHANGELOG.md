@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+
+- Fixed accented lowercase letters after `T V W Y` and their accented capitals: the accent no longer touches the arm (`Tȉ`, `Yö`, `Yë`, `Tè`, `Yŏ` and many more, worst in Black). Plain pairs such as `To`, `Ye` and `Wa` are unchanged.
+
 ## [0.2.0] - 2026-11-13
 
 - Added the 18 pinyin tone letters and 108 precomposed Latin letters of DIN 91379 (Latin Extended-A, Extended-B and Extended Additional; Greek, Cyrillic and the superscript modifier letters are not covered), seven combining marks (U+030D, U+0310, U+0315, U+0325, U+032E, U+0331, U+035F), drawn Ƈ ƈ Ɨ ɨ Ǥ ǥ Ʒ ʒ, the modifier letters ʹ ʺ ʾ ʿ ˈ ˌ, eight arrows (← ↑ → ↓ ↖ ↗ ↘ ↙, drawn by Wayne Shih for Public Sans), the Bitcoin sign ₿, a drawn capital sharp s ẞ (U+1E9E), and the superscript and subscript signs ⁺ ⁻ ⁼ ⁽ ⁾ ₊ ₋ ₌ ₍ ₎. Marks typed after a letter now land where the precomposed letter puts them, also in the italic.
