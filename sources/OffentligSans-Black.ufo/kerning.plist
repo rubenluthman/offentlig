@@ -3292,6 +3292,8 @@
       <integer>20</integer>
       <key>j</key>
       <integer>20</integer>
+      <key>j.ss03</key>
+      <integer>20</integer>
     </dict>
     <key>tlinebelow</key>
     <dict>
@@ -3300,6 +3302,8 @@
       <key>public.kern2.parenright</key>
       <integer>53</integer>
       <key>j</key>
+      <integer>83</integer>
+      <key>j.ss03</key>
       <integer>83</integer>
     </dict>
     <key>three</key>
