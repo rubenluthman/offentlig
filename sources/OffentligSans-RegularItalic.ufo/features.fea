@@ -42,6 +42,19 @@ feature zero;
 
 feature ccmp {
 # automatic
+lookup ccmp_Other_0 {
+	sub idotbelow acutecomb by idotbelow_acutecomb;
+	sub istroke acutecomb by istroke_acutecomb;
+	sub idotbelow gravecomb by idotbelow_gravecomb;
+	sub istroke gravecomb by istroke_gravecomb;
+	sub idotbelow macroncomb by idotbelow_macroncomb;
+	sub istroke macroncomb by istroke_macroncomb;
+	sub idotbelow tildecomb by idotbelow_tildecomb;
+	sub istroke tildecomb by istroke_tildecomb;
+	sub idotbelow circumflexcomb by idotbelow_circumflexcomb;
+	sub istroke circumflexcomb by istroke_circumflexcomb;
+} ccmp_Other_0;
+
 lookup ccmp_Other_1 {
 	@CombiningTopAccents = [acutecomb brevecomb breveinvertedcomb candrabinducomb caroncomb circumflexcomb commaaboverightcomb commaturnedabovecomb dblgravecomb dieresiscomb dotaccentcomb gravecomb hookabovecomb hungarumlautcomb macroncomb ringcomb tildecomb verticallineabovecomb];
 	@CombiningNonTopAccents = [brevebelowcomb cedillacomb dblmacronbelowcomb dotbelowcomb macronbelowcomb ogonekcomb ringbelowcomb horncomb];
@@ -624,6 +637,11 @@ sub idieresis by idieresis.ss03;
 sub idotaccent by idotaccent.ss03;
 sub idotbelow by idotbelow.ss03;
 sub idotbelow.dotless by idotbelow.dotless.ss03;
+sub idotbelow_acutecomb by idotbelow_acutecomb.ss03;
+sub idotbelow_gravecomb by idotbelow_gravecomb.ss03;
+sub idotbelow_macroncomb by idotbelow_macroncomb.ss03;
+sub idotbelow_tildecomb by idotbelow_tildecomb.ss03;
+sub idotbelow_circumflexcomb by idotbelow_circumflexcomb.ss03;
 sub idotlessdieresisacute by idotlessdieresisacute.ss03;
 sub ij by ij.ss03;
 sub iogonek by iogonek.ss03;

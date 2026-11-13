@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="idotbelow_circumflexcomb" format="2">
+  <advance width="438"/>
+  <anchor x="243" y="26" name="ogonek"/>
+  <anchor x="218" y="1314" name="top"/>
+  <anchor x="228" y="0" name="bottom"/>
+  <outline>
+    <component base="idotless"/>
+    <component base="circumflexcomb" xOffset="-52"/>
+    <component base="dotbelowcomb" xOffset="170"/>
+  </outline>
+</glyph>

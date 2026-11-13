@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="istroke_gravecomb" format="2">
+  <advance width="490.9375"/>
+  <anchor x="235.6875" y="23.25" name="ogonek"/>
+  <anchor x="374.89" y="1415" name="top"/>
+  <anchor x="173.28125" y="0" name="bottom"/>
+  <outline>
+    <contour>
+      <point x="28.363" y="501.938" type="line"/>
+      <point x="462.688" y="501.938" type="line"/>
+      <point x="479.008" y="618.062" type="line"/>
+      <point x="44.683" y="618.062" type="line"/>
+    </contour>
+    <component base="idotless"/>
+    <component base="gravecomb.narrow" xOffset="-19.625"/>
+  </outline>
+</glyph>

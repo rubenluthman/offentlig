@@ -510,11 +510,23 @@
       <integer>0</integer>
       <key>igrave</key>
       <integer>0</integer>
+      <key>idotbelow_gravecomb</key>
+      <integer>0</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_gravecomb</key>
+      <integer>0</integer>
       <key>ograve</key>
       <integer>0</integer>
       <key>ugrave</key>
       <integer>0</integer>
       <key>itilde</key>
+      <integer>0</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>0</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_tildecomb</key>
       <integer>0</integer>
       <key>idotbelow</key>
       <integer>0</integer>
@@ -771,15 +783,39 @@
       <integer>-35</integer>
       <key>icircumflex</key>
       <integer>-100</integer>
+      <key>idotbelow_circumflexcomb</key>
+      <integer>-100</integer>
+      <key>idotbelow_circumflexcomb.ss03</key>
+      <integer>-100</integer>
+      <key>istroke_circumflexcomb</key>
+      <integer>-100</integer>
       <key>idblgrave</key>
       <integer>172</integer>
       <key>igrave</key>
+      <integer>-13</integer>
+      <key>idotbelow_gravecomb</key>
+      <integer>-13</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>-13</integer>
+      <key>istroke_gravecomb</key>
       <integer>-13</integer>
       <key>iinvertedbreve</key>
       <integer>-54</integer>
       <key>imacron</key>
       <integer>-40</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>-40</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>-40</integer>
+      <key>istroke_macroncomb</key>
+      <integer>-40</integer>
       <key>itilde</key>
+      <integer>-28</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>-28</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>-28</integer>
+      <key>istroke_tildecomb</key>
       <integer>-28</integer>
       <key>jcircumflex</key>
       <integer>60</integer>
@@ -887,11 +923,23 @@
       <integer>-40</integer>
       <key>igrave</key>
       <integer>-72</integer>
+      <key>idotbelow_gravecomb</key>
+      <integer>-72</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>-72</integer>
+      <key>istroke_gravecomb</key>
+      <integer>-72</integer>
       <key>ograve</key>
       <integer>-40</integer>
       <key>otilde</key>
       <integer>-40</integer>
       <key>itilde</key>
+      <integer>-67</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>-67</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>-67</integer>
+      <key>istroke_tildecomb</key>
       <integer>-67</integer>
       <key>etilde</key>
       <integer>-40</integer>
@@ -976,15 +1024,39 @@
       <integer>0</integer>
       <key>icircumflex</key>
       <integer>0</integer>
+      <key>idotbelow_circumflexcomb</key>
+      <integer>0</integer>
+      <key>idotbelow_circumflexcomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_circumflexcomb</key>
+      <integer>0</integer>
       <key>idblgrave</key>
       <integer>171</integer>
       <key>igrave</key>
+      <integer>0</integer>
+      <key>idotbelow_gravecomb</key>
+      <integer>0</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_gravecomb</key>
       <integer>0</integer>
       <key>iinvertedbreve</key>
       <integer>0</integer>
       <key>imacron</key>
       <integer>0</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>0</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_macroncomb</key>
+      <integer>0</integer>
       <key>itilde</key>
+      <integer>0</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>0</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_tildecomb</key>
       <integer>0</integer>
       <key>odblgrave</key>
       <integer>-70</integer>
@@ -1211,9 +1283,27 @@
       <integer>196</integer>
       <key>igrave</key>
       <integer>11</integer>
+      <key>idotbelow_gravecomb</key>
+      <integer>11</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>11</integer>
+      <key>istroke_gravecomb</key>
+      <integer>11</integer>
       <key>imacron</key>
       <integer>-33</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>-33</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>-33</integer>
+      <key>istroke_macroncomb</key>
+      <integer>-33</integer>
       <key>itilde</key>
+      <integer>-31</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>-31</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>-31</integer>
+      <key>istroke_tildecomb</key>
       <integer>-31</integer>
       <key>obreve</key>
       <integer>-60</integer>
@@ -2864,6 +2954,51 @@
       <integer>-40</integer>
     </dict>
     <key>icircumflex</key>
+    <dict>
+      <key>b</key>
+      <integer>20</integer>
+      <key>h</key>
+      <integer>20</integer>
+      <key>i</key>
+      <integer>20</integer>
+      <key>j</key>
+      <integer>0</integer>
+      <key>k</key>
+      <integer>20</integer>
+      <key>l</key>
+      <integer>20</integer>
+    </dict>
+    <key>idotbelow_circumflexcomb</key>
+    <dict>
+      <key>b</key>
+      <integer>20</integer>
+      <key>h</key>
+      <integer>20</integer>
+      <key>i</key>
+      <integer>20</integer>
+      <key>j</key>
+      <integer>0</integer>
+      <key>k</key>
+      <integer>20</integer>
+      <key>l</key>
+      <integer>20</integer>
+    </dict>
+    <key>idotbelow_circumflexcomb.ss03</key>
+    <dict>
+      <key>b</key>
+      <integer>20</integer>
+      <key>h</key>
+      <integer>20</integer>
+      <key>i</key>
+      <integer>20</integer>
+      <key>j</key>
+      <integer>0</integer>
+      <key>k</key>
+      <integer>20</integer>
+      <key>l</key>
+      <integer>20</integer>
+    </dict>
+    <key>istroke_circumflexcomb</key>
     <dict>
       <key>b</key>
       <integer>20</integer>

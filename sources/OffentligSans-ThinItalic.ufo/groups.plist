@@ -900,6 +900,21 @@
       <string>idotaccent.ss03</string>
       <string>idotbelow</string>
       <string>idotbelow.ss03</string>
+      <string>idotbelow_acutecomb</string>
+      <string>idotbelow_acutecomb.ss03</string>
+      <string>istroke_acutecomb</string>
+      <string>idotbelow_gravecomb</string>
+      <string>idotbelow_gravecomb.ss03</string>
+      <string>istroke_gravecomb</string>
+      <string>idotbelow_macroncomb</string>
+      <string>idotbelow_macroncomb.ss03</string>
+      <string>istroke_macroncomb</string>
+      <string>idotbelow_tildecomb</string>
+      <string>idotbelow_tildecomb.ss03</string>
+      <string>istroke_tildecomb</string>
+      <string>idotbelow_circumflexcomb</string>
+      <string>idotbelow_circumflexcomb.ss03</string>
+      <string>istroke_circumflexcomb</string>
       <string>igrave</string>
       <string>ihookabove</string>
       <string>iinvertedbreve</string>
@@ -1628,6 +1643,21 @@
       <string>idotaccent.ss03</string>
       <string>idotbelow</string>
       <string>idotbelow.ss03</string>
+      <string>idotbelow_acutecomb</string>
+      <string>idotbelow_acutecomb.ss03</string>
+      <string>istroke_acutecomb</string>
+      <string>idotbelow_gravecomb</string>
+      <string>idotbelow_gravecomb.ss03</string>
+      <string>istroke_gravecomb</string>
+      <string>idotbelow_macroncomb</string>
+      <string>idotbelow_macroncomb.ss03</string>
+      <string>istroke_macroncomb</string>
+      <string>idotbelow_tildecomb</string>
+      <string>idotbelow_tildecomb.ss03</string>
+      <string>istroke_tildecomb</string>
+      <string>idotbelow_circumflexcomb</string>
+      <string>idotbelow_circumflexcomb.ss03</string>
+      <string>istroke_circumflexcomb</string>
       <string>igrave</string>
       <string>ihookabove</string>
       <string>iinvertedbreve</string>
