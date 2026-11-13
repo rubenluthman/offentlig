@@ -63,18 +63,26 @@ def test_precomposed_letter_keeps_base_advance(letter):
     nfd = unicodedata.normalize("NFD", letter)
     if len(nfd) == 1:
         pytest.skip("ligature")
-    base = "ı" if nfd[0] == "i" else nfd[0]
-    if nfd[0] == "j":
-        base = "ȷ" if ord("ȷ") in cmap else "j"
-    assert tt["hmtx"][cmap[ord(letter)]][0] == tt["hmtx"][cmap[ord(base)]][0] or base == "ȷ"
+    # the dot is dropped under a mark, so i and j are compared with their dotless forms
+    base = {"i": "ı", "j": "ȷ"}.get(nfd[0], nfd[0])
+    assert ord(base) in cmap, base
+    assert tt["hmtx"][cmap[ord(letter)]][0] == tt["hmtx"][cmap[ord(base)]][0], letter
+
+
+def assert_every_mark_is_positioned(path, seq):
+    """Each combining mark has an offset from GPOS; one moved mark among several is not enough."""
+    with_mark = shaped(path, seq)
+    without = shaped(path, seq, {"mark": False, "mkmk": False})
+    assert len(with_mark) == len(without) == len(seq), f"{seq!r}: glyphs were substituted: {with_mark}"
+    for char, placed, bare in zip(seq, with_mark, without):
+        if unicodedata.combining(char):
+            assert placed[2:] != bare[2:], f"{seq!r}: U+{ord(char):04X} is not positioned by GPOS"
 
 
 @pytest.mark.parametrize("seq", ATTACHING)
 def test_marks_attach_through_gpos(seq):
     path = static_path("Regular", False)
-    with_mark = shaped(path, seq)
-    without = shaped(path, seq, {"mark": False, "mkmk": False})
-    assert with_mark != without, f"{seq!r} marks are not positioned by GPOS"
+    assert_every_mark_is_positioned(path, seq)
 
 
 @pytest.mark.parametrize("seq", STACKED)
@@ -137,10 +145,25 @@ def test_ezh_has_a_flat_top_at_cap_height_and_lowercase_ezh_descends(static_ttf)
     assert bounds(gs, cmap[0x1EE])[3] > 1446 and bounds(gs, cmap[0x1EF])[3] > 1034
 
 
-@pytest.mark.parametrize("seq", ["K͟H", "k͟h", "a̍", "Ǯ", "ǯ"])
+@pytest.mark.parametrize("seq", ["K͟H", "k͟h", "a̍"])
 def test_new_marks_attach(seq):
-    path = static_path("Regular", False)
-    assert shaped(path, seq) != shaped(path, seq, {"mark": False, "mkmk": False}) or seq in ("Ǯ", "ǯ")
+    assert_every_mark_is_positioned(static_path("Regular", False), seq)
+
+
+@pytest.mark.parametrize("letter,base", [("Ǯ", "Ʒ"), ("ǯ", "ʒ")])
+def test_ezh_caron_sits_above_its_letter(static_ttf, letter, base):
+    """Ǯ and ǯ are composites of Ʒ or ʒ and a caron, so the caron's offset is in the glyph, not in GPOS."""
+    gs = static_ttf.getGlyphSet()
+    cmap = static_ttf.getBestCmap()
+    base = cmap[ord(base)]
+    parts = static_ttf["glyf"][cmap[ord(letter)]].components
+    assert [c.glyphName for c in parts][0] == base and len(parts) == 2, [c.glyphName for c in parts]
+    mark = parts[1]
+    assert (mark.x, mark.y) != (0, 0), "the caron has no offset"
+    assert bounds(gs, mark.glyphName)[1] + mark.y > bounds(gs, base)[3], "the caron does not clear the letter"
+    left, right = (b + mark.x for b in bounds(gs, mark.glyphName)[0::2])
+    base_box = bounds(gs, base)
+    assert base_box[0] < (left + right) / 2 < base_box[2], "the caron is not over the letter"
 
 
 def test_double_macron_below_spans_the_following_letter():

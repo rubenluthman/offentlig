@@ -79,7 +79,7 @@ def test_macron_over_diaeresis_dot_and_tilde_is_compared():
     tt = TTFont(static_path("Regular", True))
     cmap = tt.getBestCmap()
     stacks = [c for c in stacked_letters(tt) if unicodedata.normalize("NFD", c)[2] == "\u0304"]
-    assert {"ǖ", "Ǖ", "ǟ", "Ǟ", "ȯ", "ȱ", "ȭ"} <= set(stacks) or len(stacks) >= 6, stacks
+    assert {"ǖ", "Ǖ", "ǟ", "Ǟ", "Ȱ", "ȱ", "ȭ", "Ȭ", "ǭ", "Ǭ"} <= set(stacks), sorted(stacks)
 
 
 @pytest.mark.parametrize("italic", [False, True], ids=["roman", "italic"])
