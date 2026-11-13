@@ -433,6 +433,7 @@
       <string>lcaron</string>
       <string>lcommaaccent</string>
       <string>ldot</string>
+      <string>ldot.ss02</string>
       <string>lslash</string>
       <string>m</string>
       <string>mdotbelow</string>
@@ -631,6 +632,7 @@
       <string>IJ.cv05</string>
       <string>fi</string>
       <string>fl</string>
+      <string>fl.ss02</string>
       <string>ordfeminine</string>
       <string>ordmasculine</string>
       <string>pi</string>
@@ -1582,6 +1584,8 @@
       <string>ligature</string>
       <key>fl</key>
       <string>ligature</string>
+      <key>fl.ss02</key>
+      <string>ligature</string>
       <key>g</key>
       <string>base</string>
       <key>g.ss01</key>
@@ -1684,7 +1688,11 @@
       <string>base</string>
       <key>ldot</key>
       <string>base</string>
+      <key>ldot.ss02</key>
+      <string>base</string>
       <key>ldot.ss03</key>
+      <string>base</string>
+      <key>ldot.ss02.ss03</key>
       <string>base</string>
       <key>lslash</key>
       <string>base</string>

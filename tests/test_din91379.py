@@ -6,7 +6,8 @@ import uharfbuzz as hb
 from fontTools.pens.boundsPen import BoundsPen
 from fontTools.ttLib import TTFont
 
-from conftest import static_path
+from conftest import STATIC_IDS, STATICS, static_path
+from ink import mark_clearance
 
 PRECOMPOSED = (
     "ĲĳŉǞǟǢǣǦǧǨǩǬǭǰǴǵȞȟȦȧȨȩȪȫȬȭȮȯȰȱȲȳḂḃḆḇḊḋḎḏḐḑḖḗḜḝḞḟḠḡḢḣḦḧḨḩḪḫḮḯḰḱḲḳḴḵḶḷḺḻ"
@@ -199,3 +200,15 @@ def test_ogonek_and_horn_land_on_c_and_s(weight, italic, seq, kind):
     else:
         assert bottom > bb[1] + 0.35 * (bb[3] - bb[1]) and top < bb[3] + 400
         assert (left + right) / 2 > bb[0] + 0.5 * width
+
+
+# Letters whose upper right the comma above right (U+0315) has to clear.
+COMMA_ABOVE_RIGHT = ["C̕", "c̕", "K̕", "k̕", "P̕", "p̕", "T̕", "t̕", "Č̕", "č̕"]
+
+
+@pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
+@pytest.mark.parametrize("seq", COMMA_ABOVE_RIGHT)
+def test_comma_above_right_clears_its_base_at_every_weight(weight, italic, seq):
+    """The mark stays 40 units or more from the letter, from Thin to Black including the interpolated ExtraBold,
+    upright and italic (Black used to touch `p̕ Č̕ č̕` and come within 8 units of `K̕ T̕`)."""
+    assert mark_clearance(static_path(weight, italic), seq) >= 40

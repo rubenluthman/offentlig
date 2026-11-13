@@ -113,23 +113,36 @@ def test_static_weight_classes():
             assert f["OS/2"].usWeightClass == cls, (weight, italic)
 
 
-def source_version():
-    """`Version major.minor` from the six masters, which must agree with each other."""
+def source_numbers():
+    """`(versionMajor, versionMinor)` from the six masters, which must agree with each other."""
     versions = set()
     for ufo in sorted((ROOT / "sources").glob("OffentligSans*.ufo")):
         with open(ufo / "fontinfo.plist", "rb") as f:
             info = plistlib.load(f)
-        versions.add(f"Version {info['versionMajor']}.{info['versionMinor']}")
+        versions.add((info["versionMajor"], info["versionMinor"]))
     assert len(versions) == 1, f"the masters carry different versions: {sorted(versions)}"
     return versions.pop()
 
 
+def source_version():
+    major, minor = source_numbers()
+    return f"Version {major}.{minor}"
+
+
+def assert_revision_matches_the_sources(font):
+    """`head.fontRevision` is `versionMajor.versionMinor` (a 16.16 fixed-point number, so within 0.001)."""
+    major, minor = source_numbers()
+    assert font["head"].fontRevision == pytest.approx(float(f"{major}.{minor}"), abs=0.001)
+
+
 def test_version_matches_the_sources(static_ttf):
     assert static_ttf["name"].getName(5, 3, 1, 0x409).toUnicode() == source_version()
+    assert_revision_matches_the_sources(static_ttf)
 
 
 def test_variable_version_matches_the_sources(variable_ttf):
     assert variable_ttf["name"].getName(5, 3, 1, 0x409).toUnicode() == source_version()
+    assert_revision_matches_the_sources(variable_ttf)
 
 
 def test_proof_text_is_covered():

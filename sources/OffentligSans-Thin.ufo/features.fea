@@ -321,6 +321,8 @@ feature salt {
 # automatic
 sub g by g.ss01;
 sub l by l.ss02;
+sub fl by fl.ss02;
+sub ldot by ldot.ss02;
 
 } salt;
 
@@ -336,6 +338,8 @@ featureNames {
 feature ss02 {
 # automatic
 sub l by l.ss02;
+sub fl by fl.ss02;
+sub ldot by ldot.ss02;
 featureNames {
     name "Alternate l";
 };
@@ -620,6 +624,7 @@ sub kcommaaccent by kcommaaccent.ss03;
 sub kdotbelow by kdotbelow.ss03;
 sub lcommaaccent by lcommaaccent.ss03;
 sub ldot by ldot.ss03;
+sub ldot.ss02 by ldot.ss02.ss03;
 sub ldotbelow by ldotbelow.ss03;
 sub mdotaccent by mdotaccent.ss03;
 sub mdotbelow by mdotbelow.ss03;

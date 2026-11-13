@@ -68,13 +68,13 @@ These values are identical in every master and are enforced by `tests/test_metri
 | Tag | Effect |
 | --- | --- |
 | `ss01` | Alternate `g` (`g.ss01`) |
-| `ss02` | Alternate `l` (`l.ss02`) |
-| `salt` | Both alternates and nothing else, as in Public Sans. Apps that offer one alternates button use `salt`, so it keeps doing what it did there; later alternates are reached only by their own tags. |
+| `ss02` | Alternate `l` (`l.ss02`), also in the `fl` ligature (`fl.ss02`) and the Catalan `ŀ` (`ldot.ss02`, `ldot.ss02.ss03` under `ss03`), so one word never shows both forms of `l` |
+| `salt` | Both alternates, with the `fl` and `ŀ` forms of `ss02`, and nothing else, as in Public Sans. Apps that offer one alternates button use `salt`, so it keeps doing what it did there; later alternates are reached only by their own tags. |
 | `cv01` | Wider `J` (`J.cv01`, `Jcircumflex.cv01`) and the Ĳ forms that use it |
 | `cv03` | Round `G` without spur, with its accented forms |
 | `cv04` | Single-storey `a`, with its accented forms |
 | `cv05` | `I` with serifs, with its accented forms and the Ĳ forms that use it |
-| `ss03` | Round dots in place of the square ones: `i`, `j`, the dot accents and diaeresis with every letter built on them, `. : ; ! ? ¡ ¿ ÷ …` and the comma heads (180 `.ss03` glyphs). It runs after the `cv` features, so a dotted letter alternate has its own round-dot form (`adieresis.cv04.ss03`) and `ss03` keeps the alternate |
+| `ss03` | Round dots in place of the square ones: `i`, `j`, the dot accents and diaeresis with every letter built on them, `. : ; ! ? ¡ ¿ ÷ …` and the comma heads (181 `.ss03` glyphs). It runs after the `cv` features, so a dotted letter alternate has its own round-dot form (`adieresis.cv04.ss03`) and `ss03` keeps the alternate |
 | `cv06` | `1` with a base (`one.cv06`, `one.cv06.osf`); the tabular `1` already has its own base |
 | `zero` | Slashed `0` (`zero.slash`, `zero.slash.tf`, `zero.slash.osf`) |
 | `onum` | Oldstyle figures: `0 1 2` at x-height, `3 4 5 7 9` hanging below the baseline, `6 8` at full height (`zero.osf` to `nine.osf`) |
@@ -88,7 +88,7 @@ These values are identical in every master and are enforced by `tests/test_metri
 - A spaced en dash keeps both spaces at every weight.
 - The em dash has the en dash's side bearings, no `calt` feature exists, and an em dash between two spaces shapes the same whether or not the text is split into runs after the dash.
 - `A` is kerned against the stem-letter group (`m n r p h b`, accented n and r letters included) at every weight, in upright and italic, and never tighter than against `o` (`-20`, `-26`, `-38` in Thin, Regular, Black).
-- The `name` table uses Offentlig Sans as the family and never Public Sans, and name ID 5 equals `Version versionMajor.versionMinor` of the masters in every static and variable font (`tests/test_metrics_and_names.py`).
+- The `name` table uses Offentlig Sans as the family and never Public Sans, and name ID 5 equals `Version versionMajor.versionMinor` and `head.fontRevision` equals `versionMajor.versionMinor` of the masters in every static and variable font (`tests/test_metrics_and_names.py`).
 - Å Ä Ö å ä ö É é exist in every font.
 - The variable default is 400, and the default named instance has the same PostScript name as the font itself.
 - `Ǔ` (U+01D3) exists, so every cased letter has its counterpart (Fontspector `case_mapping`).
@@ -99,16 +99,16 @@ These values are identical in every master and are enforced by `tests/test_metri
 - U+20BF (Bitcoin sign) is mapped in every font and has a 1400-wide tabular form under `tnum`.
 - The 20 pinyin letters of uswds/public-sans#258 (Ǎ Ǐ Ǒ Ǔ Ǖ Ǘ Ǚ Ǜ Ḿ Ǹ and lowercase) are mapped, keep the width of their base letter and rise above it; the tone mark of a stacked letter clears the diaeresis.
 - `M` and `m` take combining marks: base plus mark shapes to the same ink extents as the precomposed Ḿ ḿ Ǹ ǹ Ǎ Ǐ Ǒ ǎ ǐ ǒ.
-- The DIN 91379 letters that are composites of existing parts (Ĳ ĳ ŉ and the Latin Extended-A/B and Extended Additional letters listed in uswds/public-sans#277) are mapped and keep the advance of their base letter. U+0310, U+0315, U+0325, U+032E and U+0331 exist as zero-width marks.
+- The DIN 91379 letters that are composites of existing parts (Ĳ ĳ ŉ and the Latin Extended-A/B and Extended Additional letters listed in uswds/public-sans#277) are mapped and keep the advance of their base letter. U+0310, U+0315, U+0325, U+032E and U+0331 exist as zero-width marks. The comma above right (U+0315) stays at least 40 units from the ink of `C c K k P p T t Č č` at every weight, upright and italic (the `_top` anchor of the mark is 65 units lower in Black, so the mark rides higher there).
 - Combining marks attach through GPOS on every base the DIN 91379 sequence list needs (F f K k M m P p T t d and the others in `tests/test_din91379.py`), and a second mark on an accented letter clears the first (mark-to-mark stacking).
 - The letters drawn for DIN 91379 (Ƈ ƈ Ɨ ɨ Ǥ ǥ Ʒ ʒ, the modifier letters ʹ ʺ ʾ ʿ ˈ ˌ, and U+030D, U+035F) are mapped in every font. The barred and hooked letters keep the advance of their base letter (ǥ is built on the single-storey `g.ss01`), Ʒ has a flat top at cap height, ʒ descends below the baseline, and U+035F is a fixed-length bar that reaches into the following letter. Ǯ and ǯ are composites of Ʒ or ʒ and a caron, with the caron above the letter.
-- `ss01` swaps the plain `g` only, `ss02` swaps the plain `l` only, `salt` swaps both. The accented forms of `g` and `l` do not change.
+- `ss01` swaps the plain `g` only. `ss02` swaps the plain `l`, `fl` and `ŀ` (Catalan `l·l` shapes as `ldot.ss02` and `l.ss02`), and `salt` swaps both letters with those forms. The accented forms `ĝ ğ ġ ģ ĺ ļ ľ ł` do not change. `fl.ss02` is in the kerning groups of `fl` on the left and of `l.ss02` on the right; `ldot.ss02` is in those of `l.ss02` on the left and of `ldot` on the right (`tests/test_features.py`, `tests/test_spacing.py`).
 - In the italic masters every accent composite places its mark's `_name` anchor within 10 units of the base's `name` anchor.
 - `cv01` (wider `J`), `cv03` (round `G`), `cv04` (single-storey `a`) and `cv05` (`I` with serifs) each swap their letter and its accented forms only. Every encoded letter built on `G`, `a` or `I` has its alternate, with its marks placed on the alternate base's anchors (`tests/test_alternate_coverage.py`). No feature changes default shaping, and `salt` stays `g` and `l`.
 - In `cv03` the outer lower right is about 7% fuller than the lower left in the diagonal part, in every master. The `cv04` step is the step of `q`.
 - `zero` (slashed `0`) and `cv06` (`1` with base) are opt-in. The default digits never change, and each alternate has matching tabular and oldstyle forms, except the `1`, whose tabular form already has its own base. The small digits (numerators, subscripts) keep the default design.
 - The 16 `.cv05` letters (`I.cv05` and its accented forms) have their own kerning groups `public.kern1.Icv05` and `public.kern2.Icv05`, because the serifs reach into the side bearings. Each pair carries the plain `I` value plus the extra space that keeps the serifed pair within 20 units of the plain pair's closest ink distance; `tests/test_letter_alternates.py` fails if any pair with a letter touches or comes closer than 30 units.
-- Every encoded letter and every `cv` or `ss` form of a letter is in a `kern1` and a `kern2` group, except the letters named in `tests/test_spacing.py`. `ẞ` follows `B` on the right and `H` on the left, `Ĳ ĳ ŉ` follow the letters they are made of, the `G.cv03` forms have their own right-hand group `public.kern1.Gcv03` (the pairs of `G` plus the space that makes them close like `O`), and `seven.osf` has its own left-hand group `public.kern2.sevenosf`. Pair exceptions keep a gap of 40 units (8 for the diaeresis of `ï ő`) between the marks of `ǐ ǰ ḯ ǒ ě ḻ ṟ ṯ`, the hook of `ƈ` and their neighbours.
+- Every encoded letter and every `cv` or `ss` form of a letter is in a `kern1` and a `kern2` group, except the letters named in `tests/test_spacing.py`. `ẞ` follows `B` on the right and `H` on the left, `Ĳ ĳ ŉ` follow the letters they are made of, the `G.cv03` forms have their own right-hand group `public.kern1.Gcv03` (the pairs of `G` plus the space that makes them close like `O`), and `seven.osf` has its own left-hand group `public.kern2.sevenosf`. Pair exceptions aim at a gap of 40 units (8 for the diaeresis of `ï ő`) between the marks of `ǐ ǰ ḯ ǒ ě ḻ ṟ ṯ`, the hook of `ƈ` and their neighbours; the tests fail below 30.
 - U+1E9E is mapped and wider than `S`; U+00DF still maps to `germandbls`.
 - The ten `.tf` digits share one advance at every weight, static and variable (`tnum`).
 - Black and Black Italic `five` have no tiny smooth curve at the join between the diagonal and the bowl.
@@ -130,14 +130,14 @@ These values are identical in every master and are enforced by `tests/test_metri
 - A mark's `top` sits 31 units under its own ink top (`ringcomb`, `macroncomb`, `_ringacute`), in the italic on the slant line through `_top`. A `_bottom` or `_top` anchor lies under or over the ink centre of the mark, in the italic on the slant line through it. `C c S s` carry `ogonek` and `horn` anchors like `O o`, and `tcaron` stores a `top` at its ink top because the caron stands beside the stem (`tests/test_mark_anchors.py`, `tests/test_din91379.py`). Every encoded glyph has the same non-underscore anchors upright and italic.
 - The round comma heads (`commaaccentcomb.ss03`, `commaturnedabovecomb.ss03`) end at the same inner edge as the square heads and carry at least 85 % of their ink (77 % in Thin).
 - `locl` registers each lookup under every language it serves: the dotted `i` for AZE, CRT, KAZ, TAT and TRK, the comma forms of Ş Ţ ş ţ for ROM and MOL, and the Catalan `l·l` for CAT (`tests/test_locl.py`).
-- Drawn parts that overlap their base (the hooks of Ƈ and ƈ) are separate component glyphs named `_hook.*`, listed in `public.skipExportGlyphs` in the lib of both designspaces (the builder reads the designspace lib, not the UFO lib), so no built font contains them. Tangent-continuous joins in drawn contours carry `smooth="yes"`; without it the `eraseOpenCorners` filter can remove a point in one master only and break compatibility.
+- Drawn parts that overlap their base (the hooks of Ƈ and ƈ) are separate component glyphs named `_hook.*`. They are listed in `public.skipExportGlyphs` in the lib of both designspaces (the builder reads the designspace lib, not the UFO lib), together with the other helpers that are never typed (`__horn`, `espaciador`, `_ringacute`, `_j-hook`, `_dot`, `_emdash`). The builder decomposes them into the glyphs that use them, so no built font contains them (`tests/test_helper_glyphs.py`). Tests that measure the ring of `_ringacute` read it from the source masters. Tangent-continuous joins in drawn contours carry `smooth="yes"`; without it the `eraseOpenCorners` filter can remove a point in one master only and break compatibility.
 - `aringacute.cv04` in Black and Black Italic carries its ring 60 units above the `_top` anchor. Its other counters stay at two at every weight (`tests/test_outline_fixes.py`).
 - The slot of `ẞ` between the stem and the lower terminal is 60 units or more at every weight.
 - The hook of `Ƈ ƈ` is 0.62 – 0.80 of the `H` stem in Bold and Black.
 - `acutecomb.viet`, `gravecomb.viet` and `fraction.alt` are in the fonts, but no cmap entry, feature or component reaches them. They come from Public Sans and are kept.
 - The combining tilde swing is at least 0.55 of its stroke at every weight, and in Black the tilde and macron strokes are at most 201 units.
 - The tilde inside the stacked marks (`uni03060303`, `uni03020303`: `ẫ ẵ ễ ỗ` and capitals) has the stroke and wave of `tildecomb`.
-- A hook above a breve (`Ẳ`, `ẳ`) reaches no higher than the same hook above a circumflex.
+- A hook above a breve (`Ẳ`, `ẳ`) reaches no higher than the same hook above a circumflex in the upright. In the italic the hook is raised along the slant (28 units at Thin and Regular, 34 at Black), so its ink gap to the breve is at least 40 units at every weight (Public Sans: 54 – 69); the italic mark may then stand up to 36 units higher than the circumflex stack. Both rules are in `tests/test_wagner_marks.py`.
 
 ## Round dots (`ss03`) and the diaeresis
 

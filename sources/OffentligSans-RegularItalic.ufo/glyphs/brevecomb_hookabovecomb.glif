@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="brevecomb_hookabovecomb" format="2">
   <anchor x="383.4375" y="1034.0" name="_top"/>
-  <anchor x="471.188" y="1658.375" name="top"/>
+  <anchor x="475.1231" y="1686.375" name="top"/>
   <outline>
     <contour>
       <point x="395.625" y="1155.34375" type="curve" smooth="yes"/>
@@ -20,23 +20,23 @@
       <point x="243.3125" y="1155.34375"/>
     </contour>
     <contour>
-      <point x="430.312" y="1285.69" type="line"/>
-      <point x="554.25" y="1357.94"/>
-      <point x="604.125" y="1461.62"/>
-      <point x="555.938" y="1562" type="curve" smooth="yes"/>
-      <point x="533.156" y="1610.56"/>
-      <point x="485.906" y="1637.38"/>
-      <point x="427.938" y="1637.38" type="curve" smooth="yes"/>
-      <point x="385.812" y="1637.38"/>
-      <point x="337.031" y="1622.69"/>
-      <point x="286.938" y="1592.31" type="curve"/>
-      <point x="326.625" y="1508.31" type="line"/>
-      <point x="383.125" y="1544.19"/>
-      <point x="444.375" y="1547.38"/>
-      <point x="463" y="1503.5" type="curve" smooth="yes"/>
-      <point x="482.344" y="1458.16"/>
-      <point x="449.188" y="1406.31"/>
-      <point x="390.625" y="1369.75" type="curve"/>
+      <point x="434.2471" y="1313.69" type="line"/>
+      <point x="558.1851" y="1385.94"/>
+      <point x="608.0601" y="1489.62"/>
+      <point x="559.8731" y="1590" type="curve" smooth="yes"/>
+      <point x="537.0911" y="1638.56"/>
+      <point x="489.8411" y="1665.38"/>
+      <point x="431.8731" y="1665.38" type="curve" smooth="yes"/>
+      <point x="389.7471" y="1665.38"/>
+      <point x="340.9661" y="1650.69"/>
+      <point x="290.8731" y="1620.31" type="curve"/>
+      <point x="330.5601" y="1536.31" type="line"/>
+      <point x="387.0601" y="1572.19"/>
+      <point x="448.3101" y="1575.38"/>
+      <point x="466.9351" y="1531.5" type="curve" smooth="yes"/>
+      <point x="486.2791" y="1486.16"/>
+      <point x="453.1231" y="1434.31"/>
+      <point x="394.5601" y="1397.75" type="curve"/>
     </contour>
   </outline>
   <lib>

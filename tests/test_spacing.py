@@ -38,6 +38,8 @@ EXEMPT = {
     "Ldot.ss03": "inherited from Public Sans: the italic masters have no right-hand group",
     "ldot": "inherited from Public Sans: the italic masters have no right-hand group",
     "ldot.ss03": "inherited from Public Sans: the italic masters have no right-hand group",
+    "ldot.ss02": "follows ldot: the italic masters have no right-hand group",
+    "ldot.ss02.ss03": "follows ldot: the italic masters have no right-hand group",
 }
 
 
@@ -258,3 +260,18 @@ def test_caron_clears_the_arm_of_t_y_v_w(weight, italic, char):
     floor, neighbours = ARM_ONLY[char]
     tight = [(n + char, s.gap(n + char)) for n in neighbours if (s.gap(n + char) or floor) < floor]
     assert tight == []
+
+
+@pytest.mark.parametrize("master", MASTERS)
+def test_ss02_forms_of_fl_and_ldot_sit_in_the_groups_of_their_parts(master):
+    """`fl.ss02` is left like `fl` and right like `l.ss02`; `ldot.ss02` is left like `l.ss02` and right like `ldot`."""
+    font = source(master)
+
+    def group(side, glyph):
+        return [n for n, members in font.groups.items() if n.startswith(f"public.{side}.") and glyph in members]
+
+    assert group("kern1", "fl.ss02") == group("kern1", "l.ss02") and group("kern2", "fl.ss02") == group("kern2", "fl")
+    assert group("kern1", "ldot.ss02") == group("kern1", "ldot") and group("kern2", "ldot.ss02") == group("kern2", "l.ss02")
+    assert group("kern1", "ldot.ss02.ss03") == group("kern1", "ldot.ss03")
+    assert group("kern2", "ldot.ss02.ss03") == group("kern2", "ldot.ss03")
+    assert group("kern1", "fl.ss02") and group("kern2", "ldot.ss02")

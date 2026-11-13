@@ -1,10 +1,11 @@
 """Swedish diacritics: ring weight against the `o`, ring roundness, and italic dot pitch against the upright."""
 import pytest
+import ufoLib2
 from fontTools.pens.boundsPen import BoundsPen
 from fontTools.pens.recordingPen import DecomposingRecordingPen
 from fontTools.ttLib import TTFont
 
-from conftest import WEIGHTS, static_path
+from conftest import ROOT, WEIGHTS, static_path
 
 
 def contour_bounds(font, glyph_name):
@@ -69,28 +70,44 @@ def test_italic_dot_pitch_matches_upright(weight):
     assert abs(dot_pitch(upright) - dot_pitch(italic)) * scale <= 3
 
 
-def test_ring_with_acute_matches_the_plain_ring(static_ttf):
-    """`ǻ` and `Ǻ` draw their ring as part of `_ringacute`; its stroke share of the ring width follows the plain ring's (within 0.04)."""
-    (r_in, r_out), _ = ring_and_o(static_ttf)
-    plain = 1 - (r_in[2] - r_in[0]) / (r_out[2] - r_out[0])
-    bounds = sorted(contour_bounds(static_ttf, "_ringacute"), key=lambda b: (b[2] - b[0]) * (b[3] - b[1]))
+MASTER_WEIGHTS = ["Thin", "Regular", "Black"]
+
+
+def source_ring_acute(weight, italic):
+    """Outer and inner ring contour bounds of `_ringacute` in the source master. The built fonts do not ship the
+    helper glyph: it is decomposed into `ǻ` and `Ǻ`, where its outer contour merges with the letter."""
+    font = ufoLib2.Font.open(ROOT / "sources" / f"OffentligSans-{weight}{'Italic' if italic else ''}.ufo")
+    bounds = sorted((c.bounds for c in font["_ringacute"].contours), key=lambda b: (b[2] - b[0]) * (b[3] - b[1]))
     assert len(bounds) == 2
+    return bounds
+
+
+@pytest.mark.parametrize("italic", [False, True], ids=["roman", "italic"])
+@pytest.mark.parametrize("weight", MASTER_WEIGHTS)
+def test_ring_with_acute_matches_the_plain_ring(weight, italic):
+    """`ǻ` and `Ǻ` draw their ring as part of `_ringacute`; its stroke share of the ring width follows the plain ring's (within 0.04)."""
+    font = TTFont(static_path(weight, italic))
+    (r_in, r_out), _ = ring_and_o(font)
+    plain = 1 - (r_in[2] - r_in[0]) / (r_out[2] - r_out[0])
+    bounds = source_ring_acute(weight, italic)
     acute = 1 - (bounds[0][2] - bounds[0][0]) / (bounds[1][2] - bounds[1][0])
     assert abs(plain - acute) <= 0.04
     # Its ring is a little smaller than the plain ring, so its stroke only has to reach 42 % of the `o` stroke (0.45 at Black).
-    _, (o_in, o_out) = ring_and_o(static_ttf)
+    _, (o_in, o_out) = ring_and_o(font)
     o_stroke = ((o_out[2] - o_out[0]) - (o_in[2] - o_in[0])) / 2
     acute_stroke = ((bounds[1][2] - bounds[1][0]) - (bounds[0][2] - bounds[0][0])) / 2
     assert acute_stroke / o_stroke >= 0.42
 
 
-@pytest.mark.parametrize("glyph", ["uni030A", "_ringacute"])
 @pytest.mark.parametrize("italic", [False, True], ids=["roman", "italic"])
-def test_black_ring_hole_is_at_least_1_2_times_the_stroke(glyph, italic):
-    """In Black the hole of `uni030A` and `_ringacute` is at least 1.2 times the ring stroke, so the opening stays visible at text sizes."""
-    font = TTFont(static_path("Black", italic))
-    bounds = sorted(contour_bounds(font, glyph), key=lambda b: (b[2] - b[0]) * (b[3] - b[1]))
-    assert len(bounds) == 2
+def test_black_ring_hole_is_at_least_1_2_times_the_stroke(italic):
+    """In Black the hole of `_ringacute` is at least 1.2 times the ring stroke, so the opening stays visible at text sizes."""
+    bounds = source_ring_acute("Black", italic)
     hole = bounds[0][2] - bounds[0][0]
     stroke = ((bounds[1][2] - bounds[1][0]) - hole) / 2
     assert hole >= 1.2 * stroke
+    font = TTFont(static_path("Black", italic))
+    ring = sorted(contour_bounds(font, "uni030A"), key=lambda b: (b[2] - b[0]) * (b[3] - b[1]))
+    assert len(ring) == 2
+    ring_hole = ring[0][2] - ring[0][0]
+    assert ring_hole >= 1.2 * (((ring[1][2] - ring[1][0]) - ring_hole) / 2)

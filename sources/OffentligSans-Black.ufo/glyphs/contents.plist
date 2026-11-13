@@ -1236,6 +1236,8 @@
     <string>fivesuperior.glif</string>
     <key>fl</key>
     <string>fl.glif</string>
+    <key>fl.ss02</key>
+    <string>fl.ss02.glif</string>
     <key>florin</key>
     <string>florin.glif</string>
     <key>florin.tf</key>
@@ -1446,8 +1448,12 @@
     <string>lcommaaccent.ss03.glif</string>
     <key>ldot</key>
     <string>ldot.glif</string>
+    <key>ldot.ss02</key>
+    <string>ldot.ss02.glif</string>
     <key>ldot.ss03</key>
     <string>ldot.ss03.glif</string>
+    <key>ldot.ss02.ss03</key>
+    <string>ldot.ss02.ss03.glif</string>
     <key>ldotbelow</key>
     <string>ldotbelow.glif</string>
     <key>ldotbelow.ss03</key>

@@ -2,7 +2,7 @@
 <glyph name="commaaboverightcomb" format="2">
   <advance width="0"/>
   <unicode hex="0315"/>
-  <anchor x="-240" y="1034" name="_top"/>
+  <anchor x="-240" y="969" name="_top"/>
   <anchor x="-240" y="1415" name="top"/>
   <outline>
     <component base="commaaccentcomb" yOffset="1537"/>
