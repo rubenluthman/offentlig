@@ -2868,24 +2868,6 @@
       <integer>23</integer>
       <key>idieresis</key>
       <integer>0</integer>
-      <key>ibreve</key>
-      <integer>53</integer>
-      <key>idotbelow_gravecomb</key>
-      <integer>26</integer>
-      <key>idotbelow_gravecomb.ss03</key>
-      <integer>26</integer>
-      <key>igrave</key>
-      <integer>26</integer>
-      <key>istroke_gravecomb</key>
-      <integer>26</integer>
-      <key>jcircumflex</key>
-      <integer>19</integer>
-      <key>adblgrave</key>
-      <integer>13</integer>
-      <key>edblgrave</key>
-      <integer>19</integer>
-      <key>odblgrave</key>
-      <integer>27</integer>
     </dict>
     <key>bracketleft</key>
     <dict>
@@ -2903,22 +2885,6 @@
       <integer>40</integer>
       <key>idieresis</key>
       <integer>0</integer>
-      <key>ibreve</key>
-      <integer>58</integer>
-      <key>idotbelow_gravecomb</key>
-      <integer>20</integer>
-      <key>idotbelow_gravecomb.ss03</key>
-      <integer>20</integer>
-      <key>igrave</key>
-      <integer>20</integer>
-      <key>istroke_gravecomb</key>
-      <integer>20</integer>
-      <key>jcircumflex</key>
-      <integer>46</integer>
-      <key>edblgrave</key>
-      <integer>13</integer>
-      <key>odblgrave</key>
-      <integer>21</integer>
     </dict>
     <key>bracketright</key>
     <dict>
@@ -2951,22 +2917,6 @@
       <integer>43</integer>
       <key>idieresis</key>
       <integer>0</integer>
-      <key>ibreve</key>
-      <integer>59</integer>
-      <key>idotbelow_gravecomb</key>
-      <integer>21</integer>
-      <key>idotbelow_gravecomb.ss03</key>
-      <integer>21</integer>
-      <key>igrave</key>
-      <integer>21</integer>
-      <key>istroke_gravecomb</key>
-      <integer>21</integer>
-      <key>jcircumflex</key>
-      <integer>48</integer>
-      <key>edblgrave</key>
-      <integer>14</integer>
-      <key>odblgrave</key>
-      <integer>22</integer>
     </dict>
     <key>slash</key>
     <dict>
@@ -3089,8 +3039,6 @@
       <integer>79</integer>
       <key>braceright</key>
       <integer>85</integer>
-      <key>exclam.ss03</key>
-      <integer>46</integer>
     </dict>
     <key>question</key>
     <dict>
@@ -3434,17 +3382,13 @@
       <key>seven</key>
       <integer>0</integer>
       <key>quotesingle</key>
-      <integer>-121</integer>
+      <integer>-138</integer>
       <key>quoteright</key>
       <integer>-86</integer>
       <key>quotedbl</key>
-      <integer>-121</integer>
+      <integer>-138</integer>
       <key>parenright</key>
       <integer>-20</integer>
-      <key>braceright</key>
-      <integer>-7</integer>
-      <key>quotedblright</key>
-      <integer>-73</integer>
     </dict>
     <key>colon.ss03</key>
     <dict>
@@ -3943,97 +3887,411 @@
       <key>quotedblright.ss03</key>
       <integer>0</integer>
     </dict>
-    <key>jcircumflex</key>
+    <key>idotbelow_brevecomb</key>
     <dict>
       <key>braceright</key>
-      <integer>13</integer>
-      <key>exclam</key>
-      <integer>22</integer>
-      <key>exclam.ss03</key>
-      <integer>22</integer>
-      <key>question</key>
-      <integer>110</integer>
-      <key>question.ss03</key>
-      <integer>110</integer>
-      <key>quotedblright</key>
-      <integer>27</integer>
-      <key>quoteright</key>
-      <integer>27</integer>
-    </dict>
-    <key>racute</key>
-    <dict>
-      <key>braceright</key>
-      <integer>61</integer>
+      <integer>65</integer>
       <key>bracketright</key>
-      <integer>11</integer>
+      <integer>49</integer>
+      <key>exclam</key>
+      <integer>0</integer>
+      <key>exclam.ss03</key>
+      <integer>0</integer>
       <key>parenright</key>
-      <integer>58</integer>
+      <integer>0</integer>
+      <key>quotedbl</key>
+      <integer>-17</integer>
+      <key>quotedblright</key>
+      <integer>0</integer>
+      <key>quotedblright.ss03</key>
+      <integer>0</integer>
+      <key>quoteright</key>
+      <integer>0</integer>
+      <key>quoteright.ss03</key>
+      <integer>0</integer>
+      <key>quotesingle</key>
+      <integer>-17</integer>
     </dict>
-    <key>rcaron</key>
+    <key>idotbelow_brevecomb.ss03</key>
     <dict>
       <key>braceright</key>
-      <integer>13</integer>
+      <integer>65</integer>
+      <key>bracketright</key>
+      <integer>49</integer>
+      <key>exclam</key>
+      <integer>0</integer>
+      <key>exclam.ss03</key>
+      <integer>0</integer>
       <key>parenright</key>
-      <integer>2</integer>
+      <integer>0</integer>
+      <key>quotedbl</key>
+      <integer>-17</integer>
+      <key>quotedblright</key>
+      <integer>0</integer>
+      <key>quotedblright.ss03</key>
+      <integer>0</integer>
+      <key>quoteright</key>
+      <integer>0</integer>
+      <key>quoteright.ss03</key>
+      <integer>0</integer>
+      <key>quotesingle</key>
+      <integer>-17</integer>
     </dict>
-    <key>uhungarumlaut</key>
+    <key>idotbelow_caroncomb</key>
     <dict>
+      <key>T</key>
+      <integer>80</integer>
+      <key>W</key>
+      <integer>46</integer>
+      <key>Y</key>
+      <integer>49</integer>
+      <key>backslash</key>
+      <integer>63</integer>
       <key>braceright</key>
-      <integer>43</integer>
-      <key>parenright</key>
-      <integer>40</integer>
+      <integer>91</integer>
+      <key>bracketleft</key>
+      <integer>0</integer>
+      <key>bracketright</key>
+      <integer>85</integer>
+      <key>exclam</key>
+      <integer>0</integer>
+      <key>exclam.ss03</key>
+      <integer>0</integer>
+      <key>public.kern2.N</key>
+      <integer>0</integer>
+      <key>public.kern2.T</key>
+      <integer>56</integer>
+      <key>public.kern2.U</key>
+      <integer>0</integer>
+      <key>public.kern2.V</key>
+      <integer>34</integer>
+      <key>public.kern2.X</key>
+      <integer>0</integer>
+      <key>public.kern2.Y</key>
+      <integer>33</integer>
+      <key>public.kern2.Z</key>
+      <integer>0</integer>
+      <key>public.kern2.i</key>
+      <integer>0</integer>
+      <key>public.kern2.j</key>
+      <integer>0</integer>
+      <key>public.kern2.n</key>
+      <real>13.125</real>
+      <key>public.kern2.parenright</key>
+      <integer>64</integer>
+      <key>public.kern2.quoteright</key>
+      <integer>0</integer>
+      <key>public.kern2.quotesingle</key>
+      <real>-16.5625</real>
+      <key>public.kern2.seven</key>
+      <integer>9</integer>
     </dict>
-    <key>rinvertedbreve</key>
+    <key>idotbelow_caroncomb.ss03</key>
     <dict>
+      <key>T</key>
+      <integer>80</integer>
+      <key>W</key>
+      <integer>46</integer>
+      <key>Y</key>
+      <integer>49</integer>
+      <key>backslash</key>
+      <integer>63</integer>
+      <key>braceright</key>
+      <integer>91</integer>
+      <key>bracketleft</key>
+      <integer>0</integer>
+      <key>bracketright</key>
+      <integer>85</integer>
+      <key>exclam</key>
+      <integer>0</integer>
+      <key>exclam.ss03</key>
+      <integer>0</integer>
+      <key>public.kern2.N</key>
+      <integer>0</integer>
+      <key>public.kern2.T</key>
+      <integer>56</integer>
+      <key>public.kern2.U</key>
+      <integer>0</integer>
+      <key>public.kern2.V</key>
+      <integer>34</integer>
+      <key>public.kern2.X</key>
+      <integer>0</integer>
+      <key>public.kern2.Y</key>
+      <integer>33</integer>
+      <key>public.kern2.Z</key>
+      <integer>0</integer>
+      <key>public.kern2.i</key>
+      <integer>0</integer>
+      <key>public.kern2.j</key>
+      <integer>0</integer>
+      <key>public.kern2.n</key>
+      <real>13.125</real>
+      <key>public.kern2.parenright</key>
+      <integer>64</integer>
+      <key>public.kern2.quoteright</key>
+      <integer>0</integer>
+      <key>public.kern2.quotesingle</key>
+      <real>-16.5625</real>
+      <key>public.kern2.seven</key>
+      <integer>9</integer>
+    </dict>
+    <key>idotbelow_dieresiscomb</key>
+    <dict>
+      <key>asterisk</key>
+      <integer>0</integer>
+      <key>backslash</key>
+      <integer>0</integer>
+      <key>braceright</key>
+      <integer>0</integer>
+      <key>bracketleft</key>
+      <integer>0</integer>
+      <key>bracketright</key>
+      <integer>0</integer>
+      <key>dollar</key>
+      <integer>0</integer>
+      <key>exclam</key>
+      <integer>0</integer>
+      <key>greater</key>
+      <integer>0</integer>
+      <key>parenright</key>
+      <integer>0</integer>
+      <key>percent</key>
+      <integer>0</integer>
+      <key>public.kern2.N</key>
+      <integer>0</integer>
+      <key>public.kern2.S</key>
+      <integer>0</integer>
+      <key>public.kern2.T</key>
+      <integer>0</integer>
+      <key>public.kern2.U</key>
+      <integer>0</integer>
+      <key>public.kern2.V</key>
+      <integer>0</integer>
+      <key>public.kern2.X</key>
+      <integer>0</integer>
+      <key>public.kern2.Y</key>
+      <integer>0</integer>
+      <key>public.kern2.i</key>
+      <integer>0</integer>
+      <key>public.kern2.j</key>
+      <integer>0</integer>
+      <key>public.kern2.n</key>
+      <real>13.125</real>
+      <key>public.kern2.one</key>
+      <integer>0</integer>
+      <key>public.kern2.parenright</key>
+      <integer>0</integer>
+      <key>public.kern2.quoteleft</key>
+      <integer>0</integer>
+      <key>public.kern2.quoteright</key>
+      <integer>0</integer>
+      <key>public.kern2.quotesingle</key>
+      <real>-16.5625</real>
+      <key>public.kern2.seven</key>
+      <integer>0</integer>
+      <key>public.kern2.two</key>
+      <integer>0</integer>
+      <key>public.kern2.zero</key>
+      <integer>0</integer>
       <key>question</key>
-      <integer>15</integer>
-      <key>question.ss03</key>
-      <integer>15</integer>
+      <integer>0</integer>
+      <key>quotedbl</key>
+      <integer>-17</integer>
+      <key>quotedblright</key>
+      <integer>0</integer>
+      <key>quoteleft</key>
+      <integer>0</integer>
+      <key>quoteright</key>
+      <integer>0</integer>
+      <key>quotesingle</key>
+      <integer>-17</integer>
     </dict>
-    <key>ydotbelow</key>
+    <key>idotbelow_dieresiscomb.ss03</key>
     <dict>
       <key>braceright</key>
-      <integer>-48</integer>
+      <integer>0</integer>
+      <key>bracketright</key>
+      <integer>0</integer>
+      <key>exclam.ss03</key>
+      <integer>0</integer>
       <key>parenright</key>
-      <integer>-45</integer>
+      <integer>0</integer>
+      <key>question.ss03</key>
+      <integer>0</integer>
+      <key>quotedbl</key>
+      <integer>-17</integer>
+      <key>quotedblright.ss03</key>
+      <integer>0</integer>
+      <key>quoteright.ss03</key>
+      <integer>0</integer>
+      <key>quotesingle</key>
+      <integer>-17</integer>
     </dict>
-    <key>exclamdown.ss03</key>
+    <key>istroke_brevecomb</key>
     <dict>
-      <key>llinebelow</key>
-      <integer>40</integer>
-      <key>rlinebelow</key>
-      <integer>24</integer>
+      <key>braceright</key>
+      <integer>65</integer>
+      <key>bracketright</key>
+      <integer>49</integer>
+      <key>exclam</key>
+      <integer>0</integer>
+      <key>exclam.ss03</key>
+      <integer>0</integer>
+      <key>parenright</key>
+      <integer>0</integer>
+      <key>quotedbl</key>
+      <integer>-17</integer>
+      <key>quotedblright</key>
+      <integer>0</integer>
+      <key>quotedblright.ss03</key>
+      <integer>0</integer>
+      <key>quoteright</key>
+      <integer>0</integer>
+      <key>quoteright.ss03</key>
+      <integer>0</integer>
+      <key>quotesingle</key>
+      <integer>-17</integer>
     </dict>
-    <key>exclamdown</key>
+    <key>istroke_caroncomb</key>
     <dict>
-      <key>llinebelow</key>
-      <integer>40</integer>
-      <key>rlinebelow</key>
-      <integer>24</integer>
+      <key>T</key>
+      <integer>80</integer>
+      <key>W</key>
+      <integer>46</integer>
+      <key>Y</key>
+      <integer>49</integer>
+      <key>backslash</key>
+      <integer>63</integer>
+      <key>braceright</key>
+      <integer>91</integer>
+      <key>bracketleft</key>
+      <integer>0</integer>
+      <key>bracketright</key>
+      <integer>85</integer>
+      <key>exclam</key>
+      <integer>0</integer>
+      <key>exclam.ss03</key>
+      <integer>0</integer>
+      <key>public.kern2.N</key>
+      <integer>0</integer>
+      <key>public.kern2.T</key>
+      <integer>56</integer>
+      <key>public.kern2.U</key>
+      <integer>0</integer>
+      <key>public.kern2.V</key>
+      <integer>34</integer>
+      <key>public.kern2.X</key>
+      <integer>0</integer>
+      <key>public.kern2.Y</key>
+      <integer>33</integer>
+      <key>public.kern2.Z</key>
+      <integer>0</integer>
+      <key>public.kern2.i</key>
+      <integer>0</integer>
+      <key>public.kern2.j</key>
+      <integer>0</integer>
+      <key>public.kern2.n</key>
+      <real>13.125</real>
+      <key>public.kern2.parenright</key>
+      <integer>64</integer>
+      <key>public.kern2.quoteright</key>
+      <integer>0</integer>
+      <key>public.kern2.quotesingle</key>
+      <real>-16.5625</real>
+      <key>public.kern2.seven</key>
+      <integer>9</integer>
     </dict>
-    <key>quotedblleft.ss03</key>
+    <key>istroke_dieresiscomb</key>
     <dict>
-      <key>edblgrave</key>
-      <integer>-71</integer>
-      <key>odblgrave</key>
-      <integer>-63</integer>
+      <key>asterisk</key>
+      <integer>0</integer>
+      <key>backslash</key>
+      <integer>0</integer>
+      <key>braceright</key>
+      <integer>0</integer>
+      <key>bracketleft</key>
+      <integer>0</integer>
+      <key>bracketright</key>
+      <integer>0</integer>
+      <key>dollar</key>
+      <integer>0</integer>
+      <key>exclam</key>
+      <integer>0</integer>
+      <key>greater</key>
+      <integer>0</integer>
+      <key>parenright</key>
+      <integer>0</integer>
+      <key>percent</key>
+      <integer>0</integer>
+      <key>public.kern2.N</key>
+      <integer>0</integer>
+      <key>public.kern2.S</key>
+      <integer>0</integer>
+      <key>public.kern2.T</key>
+      <integer>0</integer>
+      <key>public.kern2.U</key>
+      <integer>0</integer>
+      <key>public.kern2.V</key>
+      <integer>0</integer>
+      <key>public.kern2.X</key>
+      <integer>0</integer>
+      <key>public.kern2.Y</key>
+      <integer>0</integer>
+      <key>public.kern2.i</key>
+      <integer>0</integer>
+      <key>public.kern2.j</key>
+      <integer>0</integer>
+      <key>public.kern2.n</key>
+      <real>13.125</real>
+      <key>public.kern2.one</key>
+      <integer>0</integer>
+      <key>public.kern2.parenright</key>
+      <integer>0</integer>
+      <key>public.kern2.quoteleft</key>
+      <integer>0</integer>
+      <key>public.kern2.quoteright</key>
+      <integer>0</integer>
+      <key>public.kern2.quotesingle</key>
+      <real>-16.5625</real>
+      <key>public.kern2.seven</key>
+      <integer>0</integer>
+      <key>public.kern2.two</key>
+      <integer>0</integer>
+      <key>public.kern2.zero</key>
+      <integer>0</integer>
+      <key>question</key>
+      <integer>0</integer>
+      <key>quotedbl</key>
+      <integer>-17</integer>
+      <key>quotedblright</key>
+      <integer>0</integer>
+      <key>quoteleft</key>
+      <integer>0</integer>
+      <key>quoteright</key>
+      <integer>0</integer>
+      <key>quotesingle</key>
+      <integer>-17</integer>
     </dict>
-    <key>quotedblleft</key>
+    <key>istroke_dieresiscomb.ss03</key>
     <dict>
-      <key>edblgrave</key>
-      <integer>-71</integer>
-      <key>odblgrave</key>
-      <integer>-63</integer>
-    </dict>
-    <key>quoteleft.ss03</key>
-    <dict>
-      <key>odblgrave</key>
-      <integer>-88</integer>
-    </dict>
-    <key>quoteleft</key>
-    <dict>
-      <key>odblgrave</key>
-      <integer>-88</integer>
+      <key>braceright</key>
+      <integer>0</integer>
+      <key>bracketright</key>
+      <integer>0</integer>
+      <key>exclam.ss03</key>
+      <integer>0</integer>
+      <key>parenright</key>
+      <integer>0</integer>
+      <key>question.ss03</key>
+      <integer>0</integer>
+      <key>quotedbl</key>
+      <integer>-17</integer>
+      <key>quotedblright.ss03</key>
+      <integer>0</integer>
+      <key>quoteright.ss03</key>
+      <integer>0</integer>
+      <key>quotesingle</key>
+      <integer>-17</integer>
     </dict>
   </dict>
 </plist>

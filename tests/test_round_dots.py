@@ -27,8 +27,8 @@ DOT_GLYPHS = """
     Ldotbelow Mdotaccent Mdotbelow Ndotbelow Odieresismacron Odotaccent Odotaccentmacron Pdotaccent Rdotaccent
     Sdotaccent Tdotaccent Udieresisacute Udieresiscaron Udieresisgrave Udieresismacron Wdotaccent Xdieresis
     Ydotaccent adieresismacron adotaccent bdotaccent candrabinducomb commaaboverightcomb ddotaccent fdotaccent
-    hdieresis hdotaccent idotbelow.dotless idotbelow_acutecomb idotbelow_circumflexcomb idotbelow_gravecomb idotbelow_macroncomb
-    idotbelow_tildecomb idotlessdieresisacute ij istroke kdotbelow ldotbelow mdotaccent mdotbelow napostrophe
+    hdieresis hdotaccent idotbelow.dotless idotbelow_acutecomb idotbelow_brevecomb idotbelow_caroncomb idotbelow_circumflexcomb
+    idotbelow_dieresiscomb idotbelow_gravecomb idotbelow_macroncomb idotbelow_tildecomb istroke_dieresiscomb idotlessdieresisacute ij istroke kdotbelow ldotbelow mdotaccent mdotbelow napostrophe
     ndotbelow odieresismacron odotaccent odotaccentmacron pdotaccent rdotaccent sdotaccent tdieresis tdotaccent
     udieresisacute udieresiscaron udieresisgrave udieresismacron wdotaccent xdieresis ydotaccent
 """.split()

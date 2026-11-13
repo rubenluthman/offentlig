@@ -1412,6 +1412,26 @@
     <string>idotbelow_circumflexcomb.ss03.glif</string>
     <key>istroke_circumflexcomb</key>
     <string>istroke_circumflexcomb.glif</string>
+    <key>idotbelow_brevecomb</key>
+    <string>idotbelow_brevecomb.glif</string>
+    <key>idotbelow_brevecomb.ss03</key>
+    <string>idotbelow_brevecomb.ss03.glif</string>
+    <key>istroke_brevecomb</key>
+    <string>istroke_brevecomb.glif</string>
+    <key>idotbelow_dieresiscomb</key>
+    <string>idotbelow_dieresiscomb.glif</string>
+    <key>idotbelow_dieresiscomb.ss03</key>
+    <string>idotbelow_dieresiscomb.ss03.glif</string>
+    <key>istroke_dieresiscomb</key>
+    <string>istroke_dieresiscomb.glif</string>
+    <key>istroke_dieresiscomb.ss03</key>
+    <string>istroke_dieresiscomb.ss03.glif</string>
+    <key>idotbelow_caroncomb</key>
+    <string>idotbelow_caroncomb.glif</string>
+    <key>idotbelow_caroncomb.ss03</key>
+    <string>idotbelow_caroncomb.ss03.glif</string>
+    <key>istroke_caroncomb</key>
+    <string>istroke_caroncomb.glif</string>
     <key>idotlessdieresisacute</key>
     <string>idotlessdieresisacute.glif</string>
     <key>idotlessdieresisacute.ss03</key>

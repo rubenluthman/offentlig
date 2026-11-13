@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-- Fixed typed `ị` and `ɨ` with an acute, grave, macron, tilde or circumflex running into the next letter from Bold up (Igbo `ị́ ị̀` before `H` or `l`): they now space like `í ì ī ĩ î`.
+- Fixed typed `ị` and `ɨ` with an acute, grave, macron, tilde, circumflex, breve, diaeresis or caron running into the next letter from Bold up (Igbo `ị́ ị̀` before `H` or `l`): they now space like `í ì ī ĩ î ĭ ï ǐ`.
 - Added the prime marks ′ ″ ‴ (U+2032 – 2034), drawn like the modifier letters ʹ ʺ, and the superscript modifier letters ʰ ʳ ˢ ᵈ ᵗ ⁿ (U+02B0, U+02B3, U+02E2, U+1D48, U+1D57, U+207F) of DIN 91379. The letters stand on the baseline of the superior figures and have close side bearings. The `sups` feature sets typed h, r, s, d, t and n as these letters only after a superior figure, a superior parenthesis or another of these letters, so `1st 2nd 3rd 4th` becomes ¹ˢᵗ ²ⁿᵈ ³ʳᵈ ⁴ᵗʰ and `x(n)` becomes `x` followed by ⁽ⁿ⁾, while `1er`, `Ste` and `century` stay as typed.
 - Fixed combining accents typed after `V v Q q ð þ Þ ŋ ĸ Ə ƒ ɨ ẞ ị`: they now sit on the letter instead of beside it, and `ị` and `ɨ` lose their dot under a top mark (`ị́ ị̀`).
 - Fixed accented lowercase letters after `T V W Y` and their accented capitals: the accent no longer touches the arm (`Tȉ`, `Yö`, `Yë`, `Tè`, `Yŏ` and many more, worst in Black), also with the single-storey `a` (`cv04`) and the round dots (`ss03`) on. Plain pairs such as `To`, `Ye` and `Wa` are unchanged.
