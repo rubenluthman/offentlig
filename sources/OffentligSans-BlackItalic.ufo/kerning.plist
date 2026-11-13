@@ -3745,7 +3745,7 @@
       <key>backslash</key>
       <integer>46</integer>
       <key>hbar</key>
-      <integer>12</integer>
+      <integer>13</integer>
       <key>seven</key>
       <integer>34</integer>
       <key>W</key>
@@ -4473,7 +4473,7 @@
       <key>backslash</key>
       <integer>46</integer>
       <key>hbar</key>
-      <integer>12</integer>
+      <integer>13</integer>
       <key>seven</key>
       <integer>34</integer>
       <key>W</key>
@@ -4811,7 +4811,7 @@
       <key>backslash</key>
       <integer>46</integer>
       <key>hbar</key>
-      <integer>12</integer>
+      <integer>13</integer>
       <key>seven</key>
       <integer>34</integer>
       <key>W</key>
@@ -4917,11 +4917,11 @@
       <key>parenright</key>
       <integer>1</integer>
       <key>idieresis.ss03</key>
-      <integer>84</integer>
+      <integer>88</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>84</integer>
+      <integer>88</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>84</integer>
+      <integer>88</integer>
     </dict>
     <key>gbreve</key>
     <dict>
@@ -5318,101 +5318,110 @@
     <key>seven</key>
     <dict>
       <key>idieresis.ss03</key>
-      <integer>20</integer>
+      <integer>24</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>20</integer>
+      <integer>24</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>20</integer>
+      <integer>24</integer>
     </dict>
     <key>Z</key>
     <dict>
       <key>idieresis.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
     </dict>
     <key>f</key>
     <dict>
       <key>idieresis.ss03</key>
-      <integer>84</integer>
+      <integer>88</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>84</integer>
+      <integer>88</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>84</integer>
+      <integer>88</integer>
     </dict>
     <key>Zacute</key>
     <dict>
       <key>idieresis.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
     </dict>
     <key>Zcaron</key>
     <dict>
       <key>idieresis.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
     </dict>
     <key>Zcircumflex</key>
     <dict>
       <key>idieresis.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
     </dict>
     <key>Zlinebelow</key>
     <dict>
       <key>idieresis.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
+    </dict>
+    <key>ihookabove</key>
+    <dict>
+      <key>idieresis.ss03</key>
+      <integer>18</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>18</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>18</integer>
     </dict>
     <key>Zdotaccent.ss03</key>
     <dict>
       <key>idieresis.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
     </dict>
     <key>Zdotbelow.ss03</key>
     <dict>
       <key>idieresis.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>26</integer>
+      <integer>27</integer>
     </dict>
     <key>quoteright.ss03</key>
     <dict>
       <key>idieresis.ss03</key>
-      <integer>-22</integer>
+      <integer>-21</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>-22</integer>
+      <integer>-21</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>-22</integer>
+      <integer>-21</integer>
     </dict>
     <key>quotedblright.ss03</key>
     <dict>
       <key>idieresis.ss03</key>
-      <integer>-22</integer>
+      <integer>-21</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>-22</integer>
+      <integer>-21</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>-22</integer>
+      <integer>-21</integer>
     </dict>
     <key>F</key>
     <dict>
