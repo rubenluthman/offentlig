@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+
+- Fixed the bar of `Ǥ` in Black and Black Italic: it no longer starts against the lower curve with a hairline gap, and now floats clear of the curve and the crossbar on the left of the stem.
+
 ## [0.2.0] - 2026-11-13
 
 - Added the 18 pinyin tone letters and 108 precomposed Latin letters of DIN 91379 (Latin Extended-A, Extended-B and Extended Additional; Greek, Cyrillic and the superscript modifier letters are not covered), seven combining marks (U+030D, U+0310, U+0315, U+0325, U+032E, U+0331, U+035F), drawn Ƈ ƈ Ɨ ɨ Ǥ ǥ Ʒ ʒ, the modifier letters ʹ ʺ ʾ ʿ ˈ ˌ, eight arrows (← ↑ → ↓ ↖ ↗ ↘ ↙, drawn by Wayne Shih for Public Sans), the Bitcoin sign ₿, a drawn capital sharp s ẞ (U+1E9E), and the superscript and subscript signs ⁺ ⁻ ⁼ ⁽ ⁾ ₊ ₋ ₌ ₍ ₎. Marks typed after a letter now land where the precomposed letter puts them, also in the italic.
