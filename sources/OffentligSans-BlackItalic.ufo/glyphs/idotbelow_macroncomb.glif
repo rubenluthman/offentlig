@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="idotbelow_macroncomb" format="2">
+  <advance width="600"/>
+  <anchor x="363" y="18" name="ogonek"/>
+  <anchor x="429.0" y="1347.0" name="top"/>
+  <anchor x="212" y="0" name="bottom"/>
+  <outline>
+    <component base="idotless"/>
+    <component base="macroncomb" xOffset="-126"/>
+    <component base="dotbelowcomb" xOffset="94"/>
+  </outline>
+</glyph>

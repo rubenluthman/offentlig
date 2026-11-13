@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="istroke_circumflexcomb" format="2">
+  <advance width="571"/>
+  <anchor x="363" y="18" name="ogonek"/>
+  <anchor x="438.546" y="1415" name="top"/>
+  <anchor x="212" y="0" name="bottom"/>
+  <outline>
+    <contour>
+      <point x="5.976" y="456" type="line"/>
+      <point x="546.976" y="456" type="line"/>
+      <point x="576.208" y="664" type="line"/>
+      <point x="35.208" y="664" type="line"/>
+    </contour>
+    <component base="idotless"/>
+    <component base="circumflexcomb" xOffset="-117"/>
+  </outline>
+</glyph>

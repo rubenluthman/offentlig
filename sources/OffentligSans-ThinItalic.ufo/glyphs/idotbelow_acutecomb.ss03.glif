@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="idotbelow_acutecomb.ss03" format="2">
+  <advance width="433"/>
+  <anchor x="169" y="26" name="ogonek"/>
+  <anchor x="341.546" y="1415" name="top"/>
+  <anchor x="153" y="0" name="bottom"/>
+  <outline>
+    <component base="idotless"/>
+    <component base="acutecomb.narrow" xOffset="174"/>
+    <component base="dotbelowcomb.ss03" xOffset="172"/>
+  </outline>
+</glyph>
