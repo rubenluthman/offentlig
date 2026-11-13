@@ -357,9 +357,10 @@ def test_accented_i_clears_the_closing_punctuation_after_it(weight, italic, feat
     weights of Public Sans (`(sí)`, `¿sí?`). Glyph-to-glyph pair exceptions aim at 40 units; the test fails below 30."""
     s = shaper(weight, italic)
     tight = []
-    for left in accented_lowercase(source("Regular")):
-        if unicodedata.normalize("NFD", left)[0] != "i":
-            continue
+    lefts = [c for c in accented_lowercase(source("Regular")) if unicodedata.normalize("NFD", c)[0] == "i"]
+    # typed ị and ɨ with a top mark shape as one glyph (`idotbelow_acutecomb` and the others)
+    lefts += [base + mark for base in "ịɨ" for mark in "\u0301\u0300\u0302\u0304\u0303"]
+    for left in lefts:
         for right in CLOSING_PUNCTUATION:
             try:
                 gap = s.gap(left + right, features)
