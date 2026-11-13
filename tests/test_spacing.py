@@ -404,3 +404,48 @@ def test_accented_letters_clear_the_punctuation_next_to_them(weight, italic, fea
             if gap is not None and gap < 30:
                 tight.append((text, round(gap)))
     assert tight == []
+
+
+def ufo_glyph_name(font, shaped_name):
+    """The source name of a shaped glyph: the built font calls encoded glyphs without a production name `uniXXXX`."""
+    base, dot, suffix = shaped_name.partition(".")
+    if base.startswith("uni") and len(base) in (7, 8):
+        code = int(base[3:], 16)
+        base = next(g.name for g in font if code in g.unicodes)
+    return base + dot + suffix
+
+
+def resolved_kern(font, left, right):
+    """Group kerning of a pair, ignoring a glyph-to-glyph exception."""
+    kern1 = next((n for n, m in font.groups.items() if n.startswith("public.kern1.") and left in m), None)
+    kern2 = next((n for n, m in font.groups.items() if n.startswith("public.kern2.") and right in m), None)
+    for a, b in ((kern1, right), (left, kern2), (kern1, kern2)):
+        if a and b and (a, b) in font.kerning:
+            return font.kerning[(a, b)]
+    return 0
+
+
+@pytest.mark.parametrize("master,weight,italic", [("Thin", "Thin", False), ("Regular", "Regular", False), ("ThinItalic", "Thin", True), ("RegularItalic", "Regular", True)])
+def test_light_and_regular_masters_keep_the_spacing_where_the_punctuation_was_already_clear(master, weight, italic):
+    """The exceptions that clear a heavy-weight collision must not loosen Thin and Regular where the pair was already
+    clear: an exception that moves a pair by more than 10 units at a master must have been needed there (the pair
+    without it sat under 40, or the neighbouring weights between this master and Black or Thin forced it)."""
+    s = shaper(weight, italic)
+    font = source(master)
+    loosened = []
+    for letter in accented_letters(source("Regular")):
+        if "\u030c" in unicodedata.normalize("NFD", letter) and unicodedata.normalize("NFD", letter)[0] in "ijɨ":
+            continue  # ǐ ǰ and typed ị̌ ɨ̌: their caron tip has its own mark-gap exceptions, and ExtraLight between Thin and Regular forces them
+        for text in [letter + p for p in CLOSING_PUNCTUATION] + [p + letter for p in OPENING_PUNCTUATION]:
+            for features in ({}, {"ss03": True}):
+                shaped = s.shape(text, features)
+                if len(shaped) != 2:
+                    continue
+                left, right = (ufo_glyph_name(font, s.font.glyph_to_string(gid)) for gid, _ in shaped)
+                if (left, right) not in font.kerning:
+                    continue
+                moved = font.kerning[(left, right)] - resolved_kern(font, left, right)
+                gap = s.gap(text, features)
+                if moved > 10 and gap is not None and gap - moved >= 40:
+                    loosened.append((text, round(gap - moved), round(moved)))
+    assert sorted(set(loosened)) == []

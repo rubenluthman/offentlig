@@ -2569,7 +2569,7 @@
       <key>rlinebelow</key>
       <integer>69</integer>
       <key>idieresis</key>
-      <integer>115</integer>
+      <integer>116</integer>
       <key>ibreve</key>
       <integer>55</integer>
       <key>idieresis.ss03</key>
@@ -2583,39 +2583,39 @@
       <key>idotbelow_caroncomb.ss03</key>
       <integer>76</integer>
       <key>idotbelow_dieresiscomb</key>
-      <integer>115</integer>
+      <integer>116</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
       <integer>31</integer>
       <key>idotbelow_gravecomb</key>
-      <integer>90</integer>
+      <integer>91</integer>
       <key>idotbelow_gravecomb.ss03</key>
-      <integer>90</integer>
+      <integer>91</integer>
       <key>idotbelow_macroncomb</key>
-      <integer>12</integer>
+      <integer>13</integer>
       <key>idotbelow_macroncomb.ss03</key>
-      <integer>12</integer>
+      <integer>13</integer>
       <key>igrave</key>
-      <integer>90</integer>
+      <integer>91</integer>
       <key>imacron</key>
-      <integer>12</integer>
+      <integer>13</integer>
       <key>istroke_brevecomb</key>
       <integer>55</integer>
       <key>istroke_caroncomb</key>
       <integer>76</integer>
       <key>istroke_dieresiscomb</key>
-      <integer>115</integer>
+      <integer>116</integer>
       <key>istroke_dieresiscomb.ss03</key>
       <integer>31</integer>
       <key>istroke_gravecomb</key>
-      <integer>90</integer>
+      <integer>91</integer>
       <key>istroke_macroncomb</key>
-      <integer>12</integer>
+      <integer>13</integer>
       <key>edblgrave</key>
-      <integer>74</integer>
+      <integer>75</integer>
       <key>odblgrave</key>
-      <integer>81</integer>
+      <integer>82</integer>
       <key>udblgrave</key>
-      <integer>64</integer>
+      <integer>65</integer>
     </dict>
     <key>bracketleft</key>
     <dict>
@@ -2632,11 +2632,11 @@
       <key>rlinebelow</key>
       <integer>51</integer>
       <key>idieresis</key>
-      <integer>96</integer>
+      <integer>99</integer>
       <key>ibreve</key>
       <integer>36</integer>
       <key>idieresis.ss03</key>
-      <integer>45</integer>
+      <integer>46</integer>
       <key>idotbelow_brevecomb</key>
       <integer>36</integer>
       <key>idotbelow_brevecomb.ss03</key>
@@ -2646,13 +2646,13 @@
       <key>idotbelow_caroncomb.ss03</key>
       <integer>57</integer>
       <key>idotbelow_dieresiscomb</key>
-      <integer>96</integer>
+      <integer>100</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>45</integer>
+      <integer>46</integer>
       <key>idotbelow_gravecomb</key>
-      <integer>71</integer>
+      <integer>72</integer>
       <key>idotbelow_gravecomb.ss03</key>
-      <integer>71</integer>
+      <integer>72</integer>
       <key>idotbelow_macroncomb</key>
       <integer>31</integer>
       <key>idotbelow_macroncomb.ss03</key>
@@ -2662,7 +2662,7 @@
       <key>idotbelow_tildecomb.ss03</key>
       <integer>19</integer>
       <key>igrave</key>
-      <integer>71</integer>
+      <integer>72</integer>
       <key>imacron</key>
       <integer>31</integer>
       <key>istroke_brevecomb</key>
@@ -2670,25 +2670,23 @@
       <key>istroke_caroncomb</key>
       <integer>57</integer>
       <key>istroke_dieresiscomb</key>
-      <integer>96</integer>
+      <integer>97</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>45</integer>
+      <integer>46</integer>
       <key>istroke_gravecomb</key>
-      <integer>71</integer>
+      <integer>72</integer>
       <key>istroke_macroncomb</key>
       <integer>31</integer>
       <key>istroke_tildecomb</key>
-      <integer>20</integer>
+      <integer>24</integer>
       <key>itilde</key>
       <integer>19</integer>
-      <key>jcircumflex</key>
-      <integer>17</integer>
       <key>edblgrave</key>
-      <integer>55</integer>
+      <integer>56</integer>
       <key>odblgrave</key>
-      <integer>62</integer>
+      <integer>63</integer>
       <key>udblgrave</key>
-      <integer>45</integer>
+      <integer>46</integer>
     </dict>
     <key>bracketright</key>
     <dict>
@@ -2720,11 +2718,11 @@
       <key>rlinebelow</key>
       <integer>49</integer>
       <key>idieresis</key>
-      <integer>96</integer>
+      <integer>99</integer>
       <key>ibreve</key>
       <integer>36</integer>
       <key>idieresis.ss03</key>
-      <integer>45</integer>
+      <integer>47</integer>
       <key>idotbelow_brevecomb</key>
       <integer>36</integer>
       <key>idotbelow_brevecomb.ss03</key>
@@ -2734,23 +2732,23 @@
       <key>idotbelow_caroncomb.ss03</key>
       <integer>57</integer>
       <key>idotbelow_dieresiscomb</key>
-      <integer>96</integer>
+      <integer>100</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>45</integer>
+      <integer>47</integer>
       <key>idotbelow_gravecomb</key>
-      <integer>71</integer>
+      <integer>74</integer>
       <key>idotbelow_gravecomb.ss03</key>
-      <integer>71</integer>
+      <integer>74</integer>
       <key>idotbelow_macroncomb</key>
       <integer>31</integer>
       <key>idotbelow_macroncomb.ss03</key>
       <integer>31</integer>
       <key>idotbelow_tildecomb</key>
-      <integer>19</integer>
+      <integer>24</integer>
       <key>idotbelow_tildecomb.ss03</key>
-      <integer>19</integer>
+      <integer>24</integer>
       <key>igrave</key>
-      <integer>71</integer>
+      <integer>74</integer>
       <key>imacron</key>
       <integer>31</integer>
       <key>istroke_brevecomb</key>
@@ -2758,25 +2756,23 @@
       <key>istroke_caroncomb</key>
       <integer>57</integer>
       <key>istroke_dieresiscomb</key>
-      <integer>96</integer>
+      <integer>97</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>45</integer>
+      <integer>47</integer>
       <key>istroke_gravecomb</key>
-      <integer>71</integer>
+      <integer>74</integer>
       <key>istroke_macroncomb</key>
       <integer>31</integer>
       <key>istroke_tildecomb</key>
-      <integer>20</integer>
+      <integer>30</integer>
       <key>itilde</key>
-      <integer>19</integer>
-      <key>jcircumflex</key>
-      <integer>17</integer>
+      <integer>24</integer>
       <key>edblgrave</key>
-      <integer>55</integer>
+      <integer>56</integer>
       <key>odblgrave</key>
-      <integer>62</integer>
+      <integer>63</integer>
       <key>udblgrave</key>
-      <integer>45</integer>
+      <integer>46</integer>
     </dict>
     <key>slash</key>
     <dict>
@@ -2894,7 +2890,7 @@
       <key>braceright</key>
       <integer>102</integer>
       <key>exclam.ss03</key>
-      <integer>67</integer>
+      <integer>68</integer>
     </dict>
     <key>question</key>
     <dict>
@@ -3232,11 +3228,11 @@
       <key>seven</key>
       <integer>48</integer>
       <key>quotesingle</key>
-      <integer>67</integer>
+      <integer>68</integer>
       <key>quoteright</key>
       <integer>47</integer>
       <key>quotedbl</key>
-      <integer>67</integer>
+      <integer>68</integer>
       <key>parenright</key>
       <integer>128</integer>
       <key>braceright</key>
@@ -4232,38 +4228,43 @@
     <key>cacute</key>
     <dict>
       <key>quotedbl</key>
-      <integer>-87</integer>
+      <integer>-86</integer>
       <key>quotesingle</key>
-      <integer>-87</integer>
+      <integer>-86</integer>
+    </dict>
+    <key>fdotaccent.ss03</key>
+    <dict>
+      <key>parenright</key>
+      <integer>1</integer>
     </dict>
     <key>gbreve</key>
     <dict>
       <key>question</key>
-      <integer>23</integer>
+      <integer>24</integer>
       <key>question.ss03</key>
-      <integer>23</integer>
+      <integer>24</integer>
     </dict>
     <key>gcircumflex</key>
     <dict>
       <key>question</key>
-      <integer>23</integer>
+      <integer>24</integer>
       <key>question.ss03</key>
-      <integer>23</integer>
+      <integer>24</integer>
     </dict>
     <key>gcommaaccent.ss03</key>
     <dict>
       <key>question.ss03</key>
-      <integer>23</integer>
+      <integer>24</integer>
     </dict>
     <key>gdotaccent.ss03</key>
     <dict>
       <key>question.ss03</key>
-      <integer>23</integer>
+      <integer>24</integer>
     </dict>
     <key>gdotaccent</key>
     <dict>
       <key>question</key>
-      <integer>23</integer>
+      <integer>24</integer>
     </dict>
     <key>jcircumflex</key>
     <dict>
@@ -4274,30 +4275,30 @@
       <key>exclam.ss03</key>
       <integer>47</integer>
       <key>question</key>
-      <integer>125</integer>
+      <integer>210</integer>
       <key>question.ss03</key>
-      <integer>125</integer>
+      <integer>210</integer>
       <key>quotedbl</key>
-      <integer>19</integer>
+      <integer>20</integer>
       <key>quotedblright</key>
-      <integer>40</integer>
+      <integer>41</integer>
       <key>quoteright</key>
-      <integer>40</integer>
+      <integer>41</integer>
       <key>quotesingle</key>
-      <integer>19</integer>
+      <integer>20</integer>
     </dict>
     <key>racute</key>
     <dict>
       <key>braceright</key>
-      <integer>75</integer>
+      <integer>76</integer>
       <key>bracketright</key>
-      <integer>17</integer>
+      <integer>18</integer>
       <key>exclam</key>
-      <integer>46</integer>
+      <integer>47</integer>
       <key>exclam.ss03</key>
-      <integer>46</integer>
+      <integer>47</integer>
       <key>parenright</key>
-      <integer>86</integer>
+      <integer>87</integer>
     </dict>
     <key>rcaron</key>
     <dict>
@@ -4328,25 +4329,29 @@
       <integer>17</integer>
       <key>parenright</key>
       <integer>57</integer>
+      <key>quotedbl</key>
+      <integer>-3</integer>
+      <key>quotesingle</key>
+      <integer>-3</integer>
     </dict>
     <key>gcommaaccent</key>
     <dict>
       <key>question</key>
-      <integer>23</integer>
+      <integer>24</integer>
     </dict>
     <key>gcaron</key>
     <dict>
       <key>question</key>
-      <integer>23</integer>
+      <integer>24</integer>
       <key>question.ss03</key>
-      <integer>23</integer>
+      <integer>24</integer>
     </dict>
     <key>gacute</key>
     <dict>
       <key>question</key>
-      <integer>23</integer>
+      <integer>24</integer>
       <key>question.ss03</key>
-      <integer>23</integer>
+      <integer>24</integer>
     </dict>
     <key>rinvertedbreve</key>
     <dict>
@@ -4357,26 +4362,31 @@
       <key>question.ss03</key>
       <integer>67</integer>
     </dict>
+    <key>fdotaccent</key>
+    <dict>
+      <key>parenright</key>
+      <integer>1</integer>
+    </dict>
     <key>gmacron</key>
     <dict>
       <key>question</key>
-      <integer>23</integer>
+      <integer>24</integer>
       <key>question.ss03</key>
-      <integer>23</integer>
+      <integer>24</integer>
     </dict>
     <key>acircumflexgrave</key>
     <dict>
       <key>quotedbl</key>
-      <integer>-70</integer>
+      <integer>-69</integer>
       <key>quotesingle</key>
-      <integer>-70</integer>
+      <integer>-69</integer>
     </dict>
     <key>ecircumflexgrave</key>
     <dict>
       <key>quotedbl</key>
-      <integer>-70</integer>
+      <integer>-69</integer>
       <key>quotesingle</key>
-      <integer>-70</integer>
+      <integer>-69</integer>
     </dict>
     <key>uhornacute</key>
     <dict>
@@ -4414,16 +4424,16 @@
     <key>ydotbelow</key>
     <dict>
       <key>braceright</key>
-      <integer>-51</integer>
+      <integer>-50</integer>
       <key>parenright</key>
-      <integer>-42</integer>
+      <integer>-41</integer>
     </dict>
     <key>ydotbelow.ss03</key>
     <dict>
       <key>braceright</key>
       <integer>-62</integer>
       <key>parenright</key>
-      <integer>-64</integer>
+      <integer>-63</integer>
     </dict>
     <key>exclamdown.ss03</key>
     <dict>
@@ -4442,24 +4452,24 @@
     <key>questiondown.ss03</key>
     <dict>
       <key>AEacute</key>
-      <integer>12</integer>
+      <integer>15</integer>
       <key>jcircumflex</key>
-      <integer>14</integer>
+      <integer>15</integer>
       <key>AEmacron</key>
-      <integer>12</integer>
+      <integer>15</integer>
       <key>jdotlesscaron</key>
-      <integer>14</integer>
+      <integer>15</integer>
     </dict>
     <key>questiondown</key>
     <dict>
       <key>AEacute</key>
-      <integer>12</integer>
+      <integer>15</integer>
       <key>jcircumflex</key>
-      <integer>14</integer>
+      <integer>15</integer>
       <key>AEmacron</key>
-      <integer>12</integer>
+      <integer>15</integer>
       <key>jdotlesscaron</key>
-      <integer>14</integer>
+      <integer>15</integer>
     </dict>
     <key>quotedblleft.ss03</key>
     <dict>
@@ -4484,9 +4494,9 @@
     <key>quoteleft.ss03</key>
     <dict>
       <key>edblgrave</key>
-      <integer>-36</integer>
+      <integer>-35</integer>
       <key>odblgrave</key>
-      <integer>-29</integer>
+      <integer>-20</integer>
     </dict>
     <key>quoteleft</key>
     <dict>
@@ -4497,9 +4507,9 @@
       <key>istroke_dieresiscomb</key>
       <integer>15</integer>
       <key>edblgrave</key>
-      <integer>-36</integer>
+      <integer>-35</integer>
       <key>odblgrave</key>
-      <integer>-29</integer>
+      <integer>-20</integer>
     </dict>
   </dict>
 </plist>

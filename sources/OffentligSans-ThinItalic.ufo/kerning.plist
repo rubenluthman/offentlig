@@ -2457,7 +2457,7 @@
       <key>idieresis</key>
       <integer>0</integer>
       <key>jcircumflex</key>
-      <integer>17</integer>
+      <integer>1</integer>
     </dict>
     <key>bracketleft</key>
     <dict>
@@ -2474,47 +2474,23 @@
       <key>rlinebelow</key>
       <integer>19</integer>
       <key>idieresis</key>
-      <integer>12</integer>
-      <key>ibreve</key>
-      <integer>23</integer>
-      <key>idieresis.ss03</key>
-      <integer>19</integer>
-      <key>idotbelow_brevecomb</key>
-      <integer>23</integer>
-      <key>idotbelow_brevecomb.ss03</key>
-      <integer>23</integer>
+      <integer>0</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>38</integer>
+      <integer>26</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>38</integer>
-      <key>idotbelow_dieresiscomb</key>
-      <integer>12</integer>
-      <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>19</integer>
+      <integer>26</integer>
       <key>idotbelow_gravecomb</key>
-      <integer>21</integer>
+      <integer>6</integer>
       <key>idotbelow_gravecomb.ss03</key>
-      <integer>21</integer>
-      <key>idotbelow_macroncomb</key>
-      <integer>15</integer>
-      <key>idotbelow_macroncomb.ss03</key>
-      <integer>15</integer>
+      <integer>6</integer>
       <key>igrave</key>
-      <integer>21</integer>
-      <key>imacron</key>
-      <integer>15</integer>
+      <integer>6</integer>
       <key>istroke_brevecomb</key>
-      <integer>24</integer>
+      <integer>1</integer>
       <key>istroke_caroncomb</key>
-      <integer>38</integer>
-      <key>istroke_dieresiscomb</key>
-      <integer>12</integer>
-      <key>istroke_dieresiscomb.ss03</key>
-      <integer>19</integer>
+      <integer>26</integer>
       <key>istroke_gravecomb</key>
-      <integer>21</integer>
-      <key>istroke_macroncomb</key>
-      <integer>16</integer>
+      <integer>7</integer>
       <key>jcircumflex</key>
       <integer>59</integer>
     </dict>
@@ -2548,47 +2524,23 @@
       <key>rlinebelow</key>
       <integer>21</integer>
       <key>idieresis</key>
-      <integer>12</integer>
-      <key>ibreve</key>
-      <integer>23</integer>
-      <key>idieresis.ss03</key>
-      <integer>19</integer>
-      <key>idotbelow_brevecomb</key>
-      <integer>23</integer>
-      <key>idotbelow_brevecomb.ss03</key>
-      <integer>23</integer>
+      <integer>0</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>38</integer>
+      <integer>26</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>38</integer>
-      <key>idotbelow_dieresiscomb</key>
-      <integer>12</integer>
-      <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>19</integer>
+      <integer>26</integer>
       <key>idotbelow_gravecomb</key>
-      <integer>21</integer>
+      <integer>6</integer>
       <key>idotbelow_gravecomb.ss03</key>
-      <integer>21</integer>
-      <key>idotbelow_macroncomb</key>
-      <integer>15</integer>
-      <key>idotbelow_macroncomb.ss03</key>
-      <integer>15</integer>
+      <integer>6</integer>
       <key>igrave</key>
-      <integer>21</integer>
-      <key>imacron</key>
-      <integer>15</integer>
+      <integer>6</integer>
       <key>istroke_brevecomb</key>
-      <integer>24</integer>
+      <integer>1</integer>
       <key>istroke_caroncomb</key>
-      <integer>38</integer>
-      <key>istroke_dieresiscomb</key>
-      <integer>12</integer>
-      <key>istroke_dieresiscomb.ss03</key>
-      <integer>19</integer>
+      <integer>26</integer>
       <key>istroke_gravecomb</key>
-      <integer>21</integer>
-      <key>istroke_macroncomb</key>
-      <integer>16</integer>
+      <integer>6</integer>
       <key>jcircumflex</key>
       <integer>61</integer>
     </dict>
@@ -3942,13 +3894,6 @@
       <integer>0</integer>
       <key>quotesingle</key>
       <integer>-20</integer>
-    </dict>
-    <key>jcircumflex</key>
-    <dict>
-      <key>question</key>
-      <integer>12</integer>
-      <key>question.ss03</key>
-      <integer>12</integer>
     </dict>
   </dict>
 </plist>
