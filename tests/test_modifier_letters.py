@@ -1,11 +1,15 @@
 """Prime marks U+2032 – 2034 and the DIN 91379 small letters ʰ ʳ ˢ ᵈ ᵗ ⁿ.
 
-The primes are copies of `primemod`. The letters are drawn small at the size of `ª º` and the superior figures, with stems
-as heavy as the stems of `ª`, and the `sups` feature maps h r s d t n to them.
+The primes are copies of `primemod`. The letters are drawn small at the size of `ª º`, with stems as heavy as the stems
+of `ª`. They stand on the baseline of the superior figures and have their side bearings in proportion, and the `sups`
+feature maps h r s d t n to them only after a superior figure, a superior parenthesis or another small letter.
 """
+import math
+
 import pytest
 import uharfbuzz as hb
 from fontTools.pens.boundsPen import BoundsPen
+from fontTools.pens.transformPen import TransformPen
 from fontTools.ttLib import TTFont
 
 from conftest import STATIC_IDS, STATICS, static_path
@@ -14,6 +18,8 @@ from ink import Polyline
 PRIMES = [(0x2032, "minute", "primemod", 1), (0x2033, "second", "dblprimemod", None), (0x2034, "tripleprime", "primemod", 3)]
 LETTERS = [("h", 0x02B0, "hmod"), ("r", 0x02B3, "rmod"), ("s", 0x02E2, "smod"),
            ("d", 0x1D48, "dmod"), ("t", 0x1D57, "tmod"), ("n", 0x207F, "nsuperior")]
+BASELINE_TOLERANCE = 20  # font units, against the bottom of `onesuperior`
+BEARING_RATIO = (0.5, 0.85)  # side bearing of a small letter over that of the full-size letter; the superior figures use 0.49 – 0.74
 SIZE_TOLERANCE = 20      # font units, against the height of ª
 STEM_TOLERANCE = 0.10    # share of the stem of ª
 
@@ -76,14 +82,39 @@ def test_primes_are_made_of_the_wedge_of_primemod(static_ttf):
 @pytest.mark.parametrize("letter,cp,name", LETTERS, ids=[l[0] for l in LETTERS])
 def test_letter_height_matches_the_ordinals(static_ttf, letter, cp, name):
     gs = static_ttf.getGlyphSet()
+    cmap = static_ttf.getBestCmap()
     ordinal = bounds(gs, "ordfeminine")
-    box = bounds(gs, static_ttf.getBestCmap()[cp])
+    box = bounds(gs, cmap[cp])
+    height, reference = box[3] - box[1], ordinal[3] - ordinal[1]
     if letter in "hdt":
-        # the ascender of a small ascender letter rises above the ordinals, but its body stands on them
-        assert box[3] > ordinal[3] + 100
+        # the ascender of a small ascender letter rises above the ordinals, but its body has their height
+        assert height > reference + 100
     else:
-        assert box[3] == pytest.approx(ordinal[3], abs=SIZE_TOLERANCE)
-    assert box[1] == pytest.approx(ordinal[1], abs=SIZE_TOLERANCE + 12)
+        assert height == pytest.approx(reference, abs=SIZE_TOLERANCE + 12)
+    figure = bounds(gs, cmap[0xB9])
+    assert box[1] == pytest.approx(figure[1], abs=BASELINE_TOLERANCE), "bottom edge against the superior figures"
+
+
+@pytest.mark.parametrize("letter,cp,name", LETTERS, ids=[l[0] for l in LETTERS])
+def test_letter_side_bearings_follow_the_superior_figures(static_ttf, letter, cp, name):
+    gs = static_ttf.getGlyphSet()
+    cmap = static_ttf.getBestCmap()
+    # italic outlines are brought back along the slant, so upright and italic are measured alike
+    shear = math.tan(math.radians(-static_ttf["post"].italicAngle))
+    shift = static_ttf["OS/2"].sxHeight / 2 * shear
+
+    def bearings(glyph):
+        pen = BoundsPen(gs)
+        gs[glyph].draw(TransformPen(pen, (1, 0, -shear, 1, shift, 0)))
+        return pen.bounds[0], gs[glyph].width - pen.bounds[2]
+
+    small, full = bearings(cmap[cp]), bearings(cmap[ord(letter)])
+    for side, (s, f) in zip("lr", zip(small, full)):
+        if letter == "t" and side == "l":
+            # the bar of t leans out to the left, where the figure before it ends: it keeps at least 40 units
+            assert s >= 0.3 * f and s >= 40, (letter, side, s, f)
+        elif f >= 40:  # a full-size bearing under 40 (r on the right) says nothing about the ratio
+            assert BEARING_RATIO[0] <= s / f <= BEARING_RATIO[1], (letter, side, s, f)
 
 
 @pytest.mark.parametrize("letter,cp,name", [l for l in LETTERS if l[0] in "hndrt"], ids=list("hndrt"))
@@ -108,3 +139,15 @@ def test_sups_sets_ordinal_suffixes_and_x_n(weight, italic):
     assert shaped(path, "3rd") == [cmap[0xB3], rmod, dmod]
     assert shaped(path, "4th") == [cmap[0x2074], tmod, hmod]
     assert shaped(path, "x(n)")[2] == nmod
+
+
+@pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
+def test_sups_leaves_ordinary_words_alone(weight, italic):
+    path = static_path(weight, italic)
+    cmap = TTFont(path).getBestCmap()
+    small = {cmap[l[1]] for l in LETTERS}
+    for text in ("1er", "Ste", "Mme", "century", "21st century"):
+        out = shaped(path, text)
+        letters = [g for g in out if g in small]
+        # only the st after 21 is set
+        assert len(letters) == (2 if text == "21st century" else 0), (text, out)

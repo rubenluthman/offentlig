@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-- Added the prime marks ′ ″ ‴ (U+2032 – 2034), drawn like the modifier letters ʹ ʺ, and the superscript modifier letters ʰ ʳ ˢ ᵈ ᵗ ⁿ (U+02B0, U+02B3, U+02E2, U+1D48, U+1D57, U+207F) of DIN 91379. The `sups` feature sets typed h, r, s, d, t and n as these letters, so `1st 2nd 3rd 4th` becomes ¹ˢᵗ ²ⁿᵈ ³ʳᵈ ⁴ᵗʰ and `x(n)` becomes `x` followed by ⁽ⁿ⁾.
+- Added the prime marks ′ ″ ‴ (U+2032 – 2034), drawn like the modifier letters ʹ ʺ, and the superscript modifier letters ʰ ʳ ˢ ᵈ ᵗ ⁿ (U+02B0, U+02B3, U+02E2, U+1D48, U+1D57, U+207F) of DIN 91379. The letters stand on the baseline of the superior figures and have close side bearings. The `sups` feature sets typed h, r, s, d, t and n as these letters only after a superior figure, a superior parenthesis or another of these letters, so `1st 2nd 3rd 4th` becomes ¹ˢᵗ ²ⁿᵈ ³ʳᵈ ⁴ᵗʰ and `x(n)` becomes `x` followed by ⁽ⁿ⁾, while `1er`, `Ste` and `century` stay as typed.
 - Fixed accented lowercase letters after `T V W Y` and their accented capitals: the accent no longer touches the arm (`Tȉ`, `Yö`, `Yë`, `Tè`, `Yŏ` and many more, worst in Black), also with the single-storey `a` (`cv04`) and the round dots (`ss03`) on. Plain pairs such as `To`, `Ye` and `Wa` are unchanged.
 - Fixed the bar of `Ǥ` in the heavier weights, most in Black: it no longer starts against the lower curve with a hairline gap, and now floats clear of the curve and the crossbar on the left of the stem.
 
