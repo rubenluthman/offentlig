@@ -345,3 +345,27 @@ def test_circumflex_i_and_horn_capitals_clear_the_lowercase_that_follows(weight,
         if gap is not None and gap < 30:
             tight.append((text, round(gap)))
     assert tight == []
+
+
+CLOSING_PUNCTUATION = ")]}?!'\"’”»›"
+
+
+@pytest.mark.parametrize("features", [{}, {"ss03": True}], ids=["default", "ss03"])
+@pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
+def test_accented_i_clears_the_closing_punctuation_after_it(weight, italic, features):
+    """The accent of í î ï ĩ ī ĭ ǐ ȉ ȋ ḯ reaches over the stem and closed on `) ] } ? ! ' " ’ ” » ›` in the heavy
+    weights of Public Sans (`(sí)`, `¿sí?`). Glyph-to-glyph pair exceptions aim at 40 units; the test fails below 30."""
+    s = shaper(weight, italic)
+    tight = []
+    lefts = [c for c in accented_lowercase(source("Regular")) if unicodedata.normalize("NFD", c)[0] == "i"]
+    # typed ị and ɨ with a top mark shape as one glyph (`idotbelow_acutecomb` and the others)
+    lefts += [base + mark for base in "ịɨ" for mark in "\u0301\u0300\u0302\u0304\u0303"]
+    for left in lefts:
+        for right in CLOSING_PUNCTUATION:
+            try:
+                gap = s.gap(left + right, features)
+            except AssertionError:
+                continue  # ligature or substitution
+            if gap is not None and gap < 30:
+                tight.append((left + right, round(gap)))
+    assert tight == []
