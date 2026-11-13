@@ -2463,6 +2463,28 @@
       <integer>26</integer>
       <key>idieresis</key>
       <integer>0</integer>
+      <key>ibreve</key>
+      <integer>1</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>1</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>1</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>45</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>45</integer>
+      <key>idotbelow_gravecomb</key>
+      <integer>6</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>6</integer>
+      <key>igrave</key>
+      <integer>6</integer>
+      <key>istroke_caroncomb</key>
+      <integer>47</integer>
+      <key>istroke_gravecomb</key>
+      <integer>6</integer>
+      <key>jcircumflex</key>
+      <integer>59</integer>
     </dict>
     <key>bracketright</key>
     <dict>
@@ -2495,6 +2517,28 @@
       <integer>28</integer>
       <key>idieresis</key>
       <integer>0</integer>
+      <key>ibreve</key>
+      <integer>1</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>1</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>1</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>45</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>45</integer>
+      <key>idotbelow_gravecomb</key>
+      <integer>6</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>6</integer>
+      <key>igrave</key>
+      <integer>6</integer>
+      <key>istroke_caroncomb</key>
+      <integer>46</integer>
+      <key>istroke_gravecomb</key>
+      <integer>6</integer>
+      <key>jcircumflex</key>
+      <integer>61</integer>
     </dict>
     <key>slash</key>
     <dict>

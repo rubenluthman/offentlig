@@ -2872,6 +2872,8 @@
       <integer>15</integer>
       <key>idieresis</key>
       <integer>0</integer>
+      <key>jcircumflex</key>
+      <integer>23</integer>
     </dict>
     <key>bracketleft</key>
     <dict>
@@ -2888,7 +2890,57 @@
       <key>rlinebelow</key>
       <integer>32</integer>
       <key>idieresis</key>
-      <integer>0</integer>
+      <integer>23</integer>
+      <key>ibreve</key>
+      <integer>32</integer>
+      <key>idieresis.ss03</key>
+      <integer>30</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>32</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>32</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>42</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>42</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>23</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>30</integer>
+      <key>idotbelow_gravecomb</key>
+      <integer>29</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>29</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>21</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>21</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>19</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>19</integer>
+      <key>igrave</key>
+      <integer>29</integer>
+      <key>imacron</key>
+      <integer>21</integer>
+      <key>istroke_brevecomb</key>
+      <integer>33</integer>
+      <key>istroke_caroncomb</key>
+      <integer>42</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>23</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>30</integer>
+      <key>istroke_gravecomb</key>
+      <integer>29</integer>
+      <key>istroke_macroncomb</key>
+      <integer>22</integer>
+      <key>istroke_tildecomb</key>
+      <integer>18</integer>
+      <key>itilde</key>
+      <integer>19</integer>
+      <key>jcircumflex</key>
+      <integer>27</integer>
     </dict>
     <key>bracketright</key>
     <dict>
@@ -2920,7 +2972,57 @@
       <key>rlinebelow</key>
       <integer>32</integer>
       <key>idieresis</key>
-      <integer>0</integer>
+      <integer>23</integer>
+      <key>ibreve</key>
+      <integer>32</integer>
+      <key>idieresis.ss03</key>
+      <integer>29</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>32</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>32</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>42</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>42</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>23</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>29</integer>
+      <key>idotbelow_gravecomb</key>
+      <integer>29</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>29</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>21</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>21</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>17</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>17</integer>
+      <key>igrave</key>
+      <integer>29</integer>
+      <key>imacron</key>
+      <integer>21</integer>
+      <key>istroke_brevecomb</key>
+      <integer>33</integer>
+      <key>istroke_caroncomb</key>
+      <integer>42</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>23</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>29</integer>
+      <key>istroke_gravecomb</key>
+      <integer>28</integer>
+      <key>istroke_macroncomb</key>
+      <integer>22</integer>
+      <key>istroke_tildecomb</key>
+      <integer>16</integer>
+      <key>itilde</key>
+      <integer>17</integer>
+      <key>jcircumflex</key>
+      <integer>28</integer>
     </dict>
     <key>slash</key>
     <dict>
@@ -4272,6 +4374,13 @@
       <integer>0</integer>
       <key>quotesingle</key>
       <integer>-17</integer>
+    </dict>
+    <key>jcircumflex</key>
+    <dict>
+      <key>question</key>
+      <integer>35</integer>
+      <key>question.ss03</key>
+      <integer>35</integer>
     </dict>
   </dict>
 </plist>

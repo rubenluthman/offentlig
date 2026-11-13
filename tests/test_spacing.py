@@ -369,3 +369,83 @@ def test_accented_i_clears_the_closing_punctuation_after_it(weight, italic, feat
             if gap is not None and gap < 30:
                 tight.append((left + right, round(gap)))
     assert tight == []
+
+
+OPENING_PUNCTUATION = "([{¿¡‘“«‹"
+# ȉ and ȑ (double grave) need more than 300 units of kerning; the ROADMAP Icebox plans a narrower double grave for them.
+LEFT_FOR_THE_ICEBOX = "ȉȑ"
+
+
+def accented_letters(font):
+    """Every encoded accented letter, lowercase and capital, and the typed `ị` and `ɨ` with a top mark, which shape as one glyph."""
+    letters = [
+        c
+        for c in (chr(g.unicodes[0]) for g in font if g.unicodes)
+        if unicodedata.category(c) in ("Lu", "Ll") and len(unicodedata.normalize("NFD", c)) > 1 and c not in LEFT_FOR_THE_ICEBOX
+    ]
+    return sorted(letters) + [base + mark for base in "ịɨ" for mark in "\u0301\u0300\u0302\u0304\u0303\u0306\u0308\u030c"]
+
+
+@pytest.mark.parametrize("features", [{}, {"ss03": True}], ids=["default", "ss03"])
+@pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
+def test_accented_letters_clear_the_punctuation_next_to_them(weight, italic, features):
+    """The marks of accented letters (`ŕ) ĵ? ű) ơ? (ì (ĭ ¡ḻ`) closed on the bracket, quote or mark next to them in the heavy
+    weights of Public Sans. Glyph-to-glyph pair exceptions aim at 40 units on both sides of `) ] } ? ! ' " ’ ” » ›` and
+    `( [ { ¿ ¡ ‘ “ « ‹`; the test fails below 30. `ȉ` and `ȑ` are left for the Icebox item."""
+    s = shaper(weight, italic)
+    tight = []
+    for letter in accented_letters(source("Regular")):
+        texts = [letter + p for p in CLOSING_PUNCTUATION] + [p + letter for p in OPENING_PUNCTUATION]
+        for text in texts:
+            try:
+                gap = s.gap(text, features)
+            except AssertionError:
+                continue  # ligature or substitution
+            if gap is not None and gap < 30:
+                tight.append((text, round(gap)))
+    assert tight == []
+
+
+def ufo_glyph_name(font, shaped_name):
+    """The source name of a shaped glyph: the built font calls encoded glyphs without a production name `uniXXXX`."""
+    base, dot, suffix = shaped_name.partition(".")
+    if base.startswith("uni") and len(base) in (7, 8):
+        code = int(base[3:], 16)
+        base = next(g.name for g in font if code in g.unicodes)
+    return base + dot + suffix
+
+
+def resolved_kern(font, left, right):
+    """Group kerning of a pair, ignoring a glyph-to-glyph exception."""
+    kern1 = next((n for n, m in font.groups.items() if n.startswith("public.kern1.") and left in m), None)
+    kern2 = next((n for n, m in font.groups.items() if n.startswith("public.kern2.") and right in m), None)
+    for a, b in ((kern1, right), (left, kern2), (kern1, kern2)):
+        if a and b and (a, b) in font.kerning:
+            return font.kerning[(a, b)]
+    return 0
+
+
+@pytest.mark.parametrize("master,weight,italic", [("Thin", "Thin", False), ("Regular", "Regular", False), ("ThinItalic", "Thin", True), ("RegularItalic", "Regular", True)])
+def test_light_and_regular_masters_keep_the_spacing_where_the_punctuation_was_already_clear(master, weight, italic):
+    """The exceptions that clear a heavy-weight collision must not loosen Thin and Regular where the pair was already
+    clear: an exception that moves a pair by more than 10 units at a master must have been needed there (the pair
+    without it sat under 40, or the neighbouring weights between this master and Black or Thin forced it)."""
+    s = shaper(weight, italic)
+    font = source(master)
+    loosened = []
+    for letter in accented_letters(source("Regular")):
+        if "\u030c" in unicodedata.normalize("NFD", letter) and unicodedata.normalize("NFD", letter)[0] in "ijɨ":
+            continue  # ǐ ǰ and typed ị̌ ɨ̌: their caron tip has its own mark-gap exceptions, and ExtraLight between Thin and Regular forces them
+        for text in [letter + p for p in CLOSING_PUNCTUATION] + [p + letter for p in OPENING_PUNCTUATION]:
+            for features in ({}, {"ss03": True}):
+                shaped = s.shape(text, features)
+                if len(shaped) != 2:
+                    continue
+                left, right = (ufo_glyph_name(font, s.font.glyph_to_string(gid)) for gid, _ in shaped)
+                if (left, right) not in font.kerning:
+                    continue
+                moved = font.kerning[(left, right)] - resolved_kern(font, left, right)
+                gap = s.gap(text, features)
+                if moved > 10 and gap is not None and gap - moved >= 40:
+                    loosened.append((text, round(gap - moved), round(moved)))
+    assert sorted(set(loosened)) == []
