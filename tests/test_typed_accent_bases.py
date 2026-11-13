@@ -61,7 +61,7 @@ def test_mark_attaches_and_clears_base_and_next_letter(weight, italic, seq):
     with_mark = shape(weight, italic, seq)
     without = shape(weight, italic, seq, {"mark": False, "mkmk": False})
     if len(with_mark) == 1:
-        # ị and ɨ with ´ ` ¯ ~ ˆ shape as one glyph with the accent drawn in (like í ì ī ĩ î); the spacing test covers them
+        # ị and ɨ with ´ ` ¯ ~ ˆ ˘ ¨ ˇ shape as one glyph with the accent drawn in (like í ì ī ĩ î); the spacing test covers them
         assert seq[0] in "ịɨ" and seq[1] != "\u0323", with_mark
         return
     assert len(with_mark) == len(without) == 2, with_mark
@@ -88,7 +88,7 @@ def test_top_mark_drops_the_dot(weight, italic, base, dotted, mark):
 
 ALL = [(w, i) for i in (False, True) for w in WEIGHTS]
 ALL_IDS = [f"{w}{'-italic' if i else ''}" for w, i in ALL]
-TOP_MARKS = {"\u0301": "í", "\u0300": "ì", "\u0304": "ī", "\u0303": "ĩ", "\u0302": "î"}
+TOP_MARKS = {"\u0301": "í", "\u0300": "ì", "\u0304": "ī", "\u0303": "ĩ", "\u0302": "î", "\u0306": "ĭ", "\u0308": "ï", "\u030c": "ǐ"}
 
 
 def gap_to_next(weight, italic, text):
@@ -126,7 +126,8 @@ def test_typed_dot_below_and_acute_matches_precomposed_i_dot_below(weight, itali
 def test_round_dots_follow_the_dotless_dot_below(weight, italic):
     names = [n for n, *_ in shape(weight, italic, "ị́", {"ss03": True})]
     assert names[0] == "idotbelow_acutecomb.ss03"
-    assert shape(weight, italic, "ị̆", {"ss03": True})[0][0] == "idotbelow.dotless.ss03"
+    assert shape(weight, italic, "ị̆", {"ss03": True})[0][0] == "idotbelow_brevecomb.ss03"
+    assert shape(weight, italic, "ị̉", {"ss03": True})[0][0] == "idotbelow.dotless.ss03"  # hook above: still two glyphs
 
 
 def test_nothing_in_the_precomposed_letters_changed():

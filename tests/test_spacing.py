@@ -358,8 +358,8 @@ def test_accented_i_clears_the_closing_punctuation_after_it(weight, italic, feat
     s = shaper(weight, italic)
     tight = []
     lefts = [c for c in accented_lowercase(source("Regular")) if unicodedata.normalize("NFD", c)[0] == "i"]
-    # typed ị and ɨ with a top mark shape as one glyph (`idotbelow_acutecomb` and the others)
-    lefts += [base + mark for base in "ịɨ" for mark in "\u0301\u0300\u0302\u0304\u0303"]
+    # typed ị and ɨ with a top mark shape as one glyph (`idotbelow_acutecomb`, `istroke_brevecomb` and the others)
+    lefts += [base + mark for base in "ịɨ" for mark in "\u0301\u0300\u0302\u0304\u0303\u0306\u0308\u030c"]
     for left in lefts:
         for right in CLOSING_PUNCTUATION:
             try:

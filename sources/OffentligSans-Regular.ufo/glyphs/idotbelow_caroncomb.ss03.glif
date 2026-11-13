@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="idotbelow_caroncomb.ss03" format="2">
+  <advance width="483.71875"/>
+  <anchor x="308.65625" y="23.25" name="ogonek"/>
+  <anchor x="243.4375" y="1349.40625" name="top"/>
+  <anchor x="247.59375" y="0" name="bottom"/>
+  <outline>
+    <component base="idotless"/>
+    <component base="caroncomb" xOffset="-82.25"/>
+    <component base="dotbelowcomb.ss03" xOffset="144.21875"/>
+  </outline>
+</glyph>
