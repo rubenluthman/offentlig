@@ -87,6 +87,12 @@
       <array>
         <string>_hook.C</string>
         <string>_hook.c</string>
+        <string>__horn</string>
+        <string>espaciador</string>
+        <string>_ringacute</string>
+        <string>_j-hook</string>
+        <string>_dot</string>
+        <string>_emdash</string>
       </array>
     </dict>
   </lib>

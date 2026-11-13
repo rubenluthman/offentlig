@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="fl.ss02" format="2">
+  <advance width="1349.1562"/>
+  <anchor x="1066.9062" y="0" name="bottom_1"/>
+  <anchor x="414" y="1446" name="top"/>
+  <anchor x="1075.7188" y="1488.0625" name="top_1"/>
+  <anchor x="675.0781" y="0" name="caret_1"/>
+  <outline>
+    <component base="f"/>
+    <component base="l.ss02" xOffset="792.0312"/>
+  </outline>
+</glyph>

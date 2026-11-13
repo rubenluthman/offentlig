@@ -32,11 +32,11 @@ DOT_GLYPHS = """
     udieresisacute udieresiscaron udieresisgrave udieresismacron wdotaccent xdieresis ydotaccent
 """.split()
 
-# Letter alternates that carry a dot: the `cv` features run first, so these need their own round-dot forms.
+# Letter alternates that carry a dot: the `cv` and `ss02` features run first, so these need their own round-dot forms.
 DOT_ALTERNATES = """
     Gcommaaccent.cv03 Gdotaccent.cv03 Idieresis.cv05 Idieresisacute.cv05 Idotaccent.cv05 Idotbelow.cv05
     abrevedotbelow.cv04 acircumflexdotbelow.cv04 adieresis.cv04 adieresismacron.cv04 adotaccent.cv04
-    adotbelow.cv04
+    adotbelow.cv04 ldot.ss02
 """.split()
 DOT_GLYPHS += DOT_ALTERNATES
 

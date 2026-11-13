@@ -5,6 +5,10 @@ from fontTools.pens.boundsPen import BoundsPen
 from fontTools.ttLib import TTFont
 
 from conftest import STATIC_IDS, STATICS, static_path
+from ink import Polyline, outline_distance
+
+# production name of `brevecomb_hookabovecomb` (U+0306 U+0309), the mark inside Ẳ ẳ
+BREVE_HOOK_MARK = "uni03060309"
 
 
 class _Flat(BasePen):
@@ -96,11 +100,24 @@ def test_black_tilde_and_macron_stay_below_stroke_ceiling(italic):
 @pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
 @pytest.mark.parametrize("breve,circumflex", [("Ẳ", "Ể"), ("ẳ", "ể")], ids=["upper", "lower"])
 def test_hook_over_breve_is_not_taller_than_hook_over_circumflex(weight, italic, breve, circumflex):
-    """The hook above a breve sits no higher than the same hook above a circumflex (sources: the stack is lowered by the measured difference)."""
+    """Upright: the hook above a breve sits no higher than the same hook above a circumflex. Italic: the hook is raised
+    to keep a gap to the breve, so it may stand at most 36 units higher (28 – 34 are measured)."""
     font = TTFont(static_path(weight, italic))
     top_breve = bounds(font, glyph_for(font, breve))[3]
     top_circ = bounds(font, glyph_for(font, circumflex))[3]
-    assert top_breve <= top_circ + 2, f"{top_breve:.0f} vs {top_circ:.0f}"
+    assert top_breve <= top_circ + (36 if italic else 2), f"{top_breve:.0f} vs {top_circ:.0f}"
+
+
+@pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
+def test_hook_over_breve_keeps_a_gap_to_the_breve(weight, italic):
+    """The ink gap between the hook and the breve of the mark is 40 units or more at every weight (italic: Public Sans has 54 – 69)."""
+    font = TTFont(static_path(weight, italic))
+    glyph_set = font.getGlyphSet()
+    pen = Polyline(glyph_set)
+    glyph_set[BREVE_HOOK_MARK].draw(pen)
+    contours = sorted(pen.contours, key=lambda c: max(y for _, y in c))
+    assert len(contours) == 2
+    assert outline_distance([contours[0]], [contours[1]]) >= 40
 
 
 def _top_wave(font, name):

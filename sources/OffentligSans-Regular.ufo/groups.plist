@@ -516,7 +516,9 @@
       <string>lcommaaccent</string>
       <string>lcommaaccent.ss03</string>
       <string>ldot</string>
+      <string>ldot.ss02</string>
       <string>ldot.ss03</string>
+      <string>ldot.ss02.ss03</string>
       <string>lslash</string>
       <string>fl</string>
     </array>
@@ -940,6 +942,7 @@
       <string>uring</string>
       <string>utilde</string>
       <string>l.ss02</string>
+      <string>fl.ss02</string>
       <string>fi</string>
       <string>fi.ss03</string>
       <string>micro</string>
@@ -1651,6 +1654,7 @@
       <string>lcommaaccent.ss03</string>
       <string>ldot</string>
       <string>ldot.ss03</string>
+      <string>ldot.ss02.ss03</string>
       <string>lslash</string>
       <string>m</string>
       <string>macute</string>
@@ -1690,6 +1694,7 @@
       <string>rinvertedbreve</string>
       <string>germandbls</string>
       <string>l.ss02</string>
+      <string>ldot.ss02</string>
       <string>ij</string>
       <string>ij.ss03</string>
     </array>
@@ -1915,6 +1920,7 @@
       <string>fi</string>
       <string>fi.ss03</string>
       <string>fl</string>
+      <string>fl.ss02</string>
     </array>
     <key>public.kern2.three</key>
     <array>
