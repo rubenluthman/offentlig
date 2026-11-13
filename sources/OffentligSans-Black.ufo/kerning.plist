@@ -534,11 +534,23 @@
       <integer>-124</integer>
       <key>igrave</key>
       <integer>72</integer>
+      <key>idotbelow_gravecomb</key>
+      <integer>72</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>72</integer>
+      <key>istroke_gravecomb</key>
+      <integer>72</integer>
       <key>ograve</key>
       <integer>-116</integer>
       <key>ugrave</key>
       <integer>-136</integer>
       <key>itilde</key>
+      <integer>-12</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>-12</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>-12</integer>
+      <key>istroke_tildecomb</key>
       <integer>-12</integer>
       <key>idotbelow</key>
       <integer>-91</integer>
@@ -797,15 +809,39 @@
       <integer>111</integer>
       <key>icircumflex</key>
       <integer>147</integer>
+      <key>idotbelow_circumflexcomb</key>
+      <integer>147</integer>
+      <key>idotbelow_circumflexcomb.ss03</key>
+      <integer>147</integer>
+      <key>istroke_circumflexcomb</key>
+      <integer>147</integer>
       <key>idblgrave</key>
       <integer>392</integer>
       <key>igrave</key>
+      <integer>69</integer>
+      <key>idotbelow_gravecomb</key>
+      <integer>69</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>69</integer>
+      <key>istroke_gravecomb</key>
       <integer>69</integer>
       <key>iinvertedbreve</key>
       <integer>5</integer>
       <key>imacron</key>
       <integer>0</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>0</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_macroncomb</key>
+      <integer>0</integer>
       <key>itilde</key>
+      <integer>0</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>0</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_tildecomb</key>
       <integer>0</integer>
       <key>jcircumflex</key>
       <integer>84</integer>
@@ -909,11 +945,23 @@
       <integer>-130</integer>
       <key>igrave</key>
       <integer>66</integer>
+      <key>idotbelow_gravecomb</key>
+      <integer>66</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>66</integer>
+      <key>istroke_gravecomb</key>
+      <integer>66</integer>
       <key>ograve</key>
       <integer>-122</integer>
       <key>otilde</key>
       <integer>-218</integer>
       <key>itilde</key>
+      <integer>-19</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>-19</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>-19</integer>
+      <key>istroke_tildecomb</key>
       <integer>-19</integer>
       <key>etilde</key>
       <integer>-226</integer>
@@ -1012,15 +1060,39 @@
       <integer>109</integer>
       <key>icircumflex</key>
       <integer>36</integer>
+      <key>idotbelow_circumflexcomb</key>
+      <integer>36</integer>
+      <key>idotbelow_circumflexcomb.ss03</key>
+      <integer>36</integer>
+      <key>istroke_circumflexcomb</key>
+      <integer>36</integer>
       <key>idblgrave</key>
       <integer>390</integer>
       <key>igrave</key>
+      <integer>67</integer>
+      <key>idotbelow_gravecomb</key>
+      <integer>67</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>67</integer>
+      <key>istroke_gravecomb</key>
       <integer>67</integer>
       <key>iinvertedbreve</key>
       <integer>-40</integer>
       <key>imacron</key>
       <integer>-26</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>-26</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>-26</integer>
+      <key>istroke_macroncomb</key>
+      <integer>-26</integer>
       <key>itilde</key>
+      <integer>-40</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>-40</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>-40</integer>
+      <key>istroke_tildecomb</key>
       <integer>-40</integer>
       <key>odblgrave</key>
       <integer>96</integer>
@@ -1265,9 +1337,27 @@
       <integer>404</integer>
       <key>igrave</key>
       <integer>81</integer>
+      <key>idotbelow_gravecomb</key>
+      <integer>81</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>81</integer>
+      <key>istroke_gravecomb</key>
+      <integer>81</integer>
       <key>imacron</key>
       <integer>10</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>10</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>10</integer>
+      <key>istroke_macroncomb</key>
+      <integer>10</integer>
       <key>itilde</key>
+      <integer>10</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>10</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>10</integer>
+      <key>istroke_tildecomb</key>
       <integer>10</integer>
       <key>obreve</key>
       <integer>-172</integer>
@@ -3198,6 +3288,62 @@
       <integer>0</integer>
       <key>quotedblright.ss03</key>
       <integer>0</integer>
+    </dict>
+    <key>idotbelow_circumflexcomb</key>
+    <dict>
+      <key>b</key>
+      <integer>61</integer>
+      <key>h</key>
+      <integer>61</integer>
+      <key>i</key>
+      <integer>61</integer>
+      <key>j</key>
+      <integer>26</integer>
+      <key>k</key>
+      <integer>61</integer>
+      <key>l</key>
+      <integer>61</integer>
+      <key>public.kern2.N</key>
+      <integer>20</integer>
+    </dict>
+    <key>idotbelow_circumflexcomb.ss03</key>
+    <dict>
+      <key>b</key>
+      <integer>61</integer>
+      <key>h</key>
+      <integer>61</integer>
+      <key>i</key>
+      <integer>61</integer>
+      <key>j</key>
+      <integer>26</integer>
+      <key>k</key>
+      <integer>61</integer>
+      <key>l</key>
+      <integer>61</integer>
+      <key>public.kern2.N</key>
+      <integer>20</integer>
+    </dict>
+    <key>istroke_circumflexcomb</key>
+    <dict>
+      <key>b</key>
+      <integer>61</integer>
+      <key>h</key>
+      <integer>61</integer>
+      <key>i</key>
+      <integer>61</integer>
+      <key>j</key>
+      <integer>26</integer>
+      <key>k</key>
+      <integer>61</integer>
+      <key>l</key>
+      <integer>61</integer>
+      <key>public.kern2.N</key>
+      <integer>21</integer>
+    </dict>
+    <key>istroke_acutecomb</key>
+    <dict>
+      <key>public.kern2.n</key>
+      <integer>2</integer>
     </dict>
   </dict>
 </plist>

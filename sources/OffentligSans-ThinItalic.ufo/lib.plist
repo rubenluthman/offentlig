@@ -398,6 +398,21 @@
       <string>istroke.dotless</string>
       <string>idotbelow.dotless</string>
       <string>idotbelow.dotless.ss03</string>
+      <string>idotbelow_acutecomb</string>
+      <string>idotbelow_acutecomb.ss03</string>
+      <string>istroke_acutecomb</string>
+      <string>idotbelow_gravecomb</string>
+      <string>idotbelow_gravecomb.ss03</string>
+      <string>istroke_gravecomb</string>
+      <string>idotbelow_macroncomb</string>
+      <string>idotbelow_macroncomb.ss03</string>
+      <string>istroke_macroncomb</string>
+      <string>idotbelow_tildecomb</string>
+      <string>idotbelow_tildecomb.ss03</string>
+      <string>istroke_tildecomb</string>
+      <string>idotbelow_circumflexcomb</string>
+      <string>idotbelow_circumflexcomb.ss03</string>
+      <string>istroke_circumflexcomb</string>
       <string>idotlessdieresisacute</string>
       <string>icaron</string>
       <string>iacute</string>
@@ -1659,6 +1674,36 @@
       <key>idotbelow.dotless</key>
       <string>base</string>
       <key>idotbelow.dotless.ss03</key>
+      <string>base</string>
+      <key>idotbelow_acutecomb</key>
+      <string>base</string>
+      <key>idotbelow_acutecomb.ss03</key>
+      <string>base</string>
+      <key>istroke_acutecomb</key>
+      <string>base</string>
+      <key>idotbelow_gravecomb</key>
+      <string>base</string>
+      <key>idotbelow_gravecomb.ss03</key>
+      <string>base</string>
+      <key>istroke_gravecomb</key>
+      <string>base</string>
+      <key>idotbelow_macroncomb</key>
+      <string>base</string>
+      <key>idotbelow_macroncomb.ss03</key>
+      <string>base</string>
+      <key>istroke_macroncomb</key>
+      <string>base</string>
+      <key>idotbelow_tildecomb</key>
+      <string>base</string>
+      <key>idotbelow_tildecomb.ss03</key>
+      <string>base</string>
+      <key>istroke_tildecomb</key>
+      <string>base</string>
+      <key>idotbelow_circumflexcomb</key>
+      <string>base</string>
+      <key>idotbelow_circumflexcomb.ss03</key>
+      <string>base</string>
+      <key>istroke_circumflexcomb</key>
       <string>base</string>
       <key>igrave</key>
       <string>base</string>

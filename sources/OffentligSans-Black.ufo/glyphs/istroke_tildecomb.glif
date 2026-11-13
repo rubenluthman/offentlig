@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="istroke_tildecomb" format="2">
+  <advance width="789"/>
+  <anchor x="530" y="18" name="ogonek"/>
+  <anchor x="388" y="1448" name="top"/>
+  <anchor x="381" y="0" name="bottom"/>
+  <outline>
+    <contour>
+      <point x="111" y="456" type="line"/>
+      <point x="651" y="456" type="line"/>
+      <point x="651" y="664" type="line"/>
+      <point x="111" y="664" type="line"/>
+    </contour>
+    <component base="idotless" xOffset="96"/>
+    <component base="tildecomb" xOffset="-80"/>
+  </outline>
+</glyph>
