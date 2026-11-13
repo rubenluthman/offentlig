@@ -288,19 +288,20 @@ def accented_lowercase(font):
     return found
 
 
+@pytest.mark.parametrize("features", [{}, {"cv04": True}, {"ss03": True}, {"cv04": True, "ss03": True}], ids=["default", "cv04", "ss03", "cv04-ss03"])
 @pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
-def test_accented_lowercase_clears_the_arm_of_t_v_w_y(weight, italic):
+def test_accented_lowercase_clears_the_arm_of_t_v_w_y(weight, italic, features):
     """Pair exceptions between the T, V and Y kern1 groups and each accented lowercase keep at least 30 units of ink
-    between the arm and the mark, at every weight (the masters aim at 40)."""
+    between the arm and the mark, at every weight (the masters aim at 40), with no features and with the
+    single-storey `a` (`cv04`), the round dots (`ss03`) or both."""
     s = shaper(weight, italic)
     tight = []
     for left in "TVWYŤẂŶ":
         for right in accented_lowercase(source("Regular")):
             try:
-                gap = s.gap(left + right)
+                gap = s.gap(left + right, features)
             except AssertionError:
                 continue  # ligature or substitution
             if gap is not None and gap < 30:
                 tight.append((left + right, round(gap)))
     assert tight == []
-

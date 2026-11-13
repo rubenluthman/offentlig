@@ -803,6 +803,12 @@
       <integer>-114</integer>
       <key>ygrave</key>
       <integer>-17</integer>
+      <key>adblgrave.cv04</key>
+      <integer>-57</integer>
+      <key>agrave.cv04</key>
+      <integer>-55</integer>
+      <key>idieresis.ss03</key>
+      <integer>94</integer>
     </dict>
     <key>public.kern1.U</key>
     <dict>
@@ -964,6 +970,12 @@
       <integer>209</integer>
       <key>udblgrave</key>
       <integer>88</integer>
+      <key>adblgrave.cv04</key>
+      <integer>-59</integer>
+      <key>agrave.cv04</key>
+      <integer>-57</integer>
+      <key>idieresis.ss03</key>
+      <integer>71</integer>
     </dict>
     <key>public.kern1.W</key>
     <dict>
@@ -1241,6 +1253,24 @@
       <integer>-6</integer>
       <key>zcaron</key>
       <integer>-99</integer>
+      <key>acaron.cv04</key>
+      <integer>-172</integer>
+      <key>adblgrave.cv04</key>
+      <integer>-46</integer>
+      <key>adieresis.cv04</key>
+      <integer>-129</integer>
+      <key>adieresismacron.cv04</key>
+      <integer>-129</integer>
+      <key>agrave.cv04</key>
+      <integer>-44</integer>
+      <key>edieresis.ss03</key>
+      <integer>-211</integer>
+      <key>idieresis.ss03</key>
+      <integer>71</integer>
+      <key>odieresis.ss03</key>
+      <integer>-204</integer>
+      <key>odieresismacron.ss03</key>
+      <integer>-204</integer>
     </dict>
     <key>public.kern1.Z</key>
     <dict>
