@@ -487,10 +487,13 @@ def left_neighbours(font):
 def test_typed_i_with_breve_diaeresis_or_caron_kerns_after_a_letter_like_the_precomposed_letter(weight, italic, features):
     """Typed ị and ɨ with a breve, diaeresis or caron are one glyph built on ĭ ï ǐ (`idotbelow_brevecomb`,
     `istroke_dieresiscomb` and the others), so every pair with another glyph on the left kerns exactly like the
-    precomposed letter, at every weight, with and without `ss03`."""
+    precomposed letter, at every weight, with and without `ss03`. The opening punctuation `( [ { ¿ ¡ ‘ “ « ‹` is left
+    out: its exceptions are fitted per glyph to the 30-unit floor."""
     s = shaper(weight, italic)
     differing = []
     for left in left_neighbours(source("Regular")):
+        if left in OPENING_PUNCTUATION:
+            continue  # fitted per typed glyph to the 30-unit floor, see test_accented_letters_clear_the_punctuation_next_to_them
         for typed, precomposed in TYPED_ON_THE_RIGHT:
             try:
                 a, b = s.kern(left + typed, features), s.kern(left + precomposed, features)

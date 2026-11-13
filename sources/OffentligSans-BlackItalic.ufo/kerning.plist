@@ -2789,9 +2789,9 @@
       <key>idotbelow_brevecomb.ss03</key>
       <integer>55</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>70</integer>
+      <integer>76</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>70</integer>
+      <integer>76</integer>
       <key>idotbelow_dieresiscomb</key>
       <integer>116</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
@@ -2811,7 +2811,7 @@
       <key>istroke_brevecomb</key>
       <integer>55</integer>
       <key>istroke_caroncomb</key>
-      <integer>70</integer>
+      <integer>76</integer>
       <key>istroke_dieresiscomb</key>
       <integer>116</integer>
       <key>istroke_dieresiscomb.ss03</key>
@@ -2856,7 +2856,7 @@
       <key>idotbelow_caroncomb.ss03</key>
       <integer>57</integer>
       <key>idotbelow_dieresiscomb</key>
-      <integer>99</integer>
+      <integer>100</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
       <integer>46</integer>
       <key>idotbelow_gravecomb</key>
@@ -2880,7 +2880,7 @@
       <key>istroke_caroncomb</key>
       <integer>57</integer>
       <key>istroke_dieresiscomb</key>
-      <integer>99</integer>
+      <integer>97</integer>
       <key>istroke_dieresiscomb.ss03</key>
       <integer>46</integer>
       <key>istroke_gravecomb</key>
@@ -2952,7 +2952,7 @@
       <key>idotbelow_caroncomb.ss03</key>
       <integer>57</integer>
       <key>idotbelow_dieresiscomb</key>
-      <integer>99</integer>
+      <integer>100</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
       <integer>47</integer>
       <key>idotbelow_gravecomb</key>
@@ -2976,7 +2976,7 @@
       <key>istroke_caroncomb</key>
       <integer>57</integer>
       <key>istroke_dieresiscomb</key>
-      <integer>99</integer>
+      <integer>97</integer>
       <key>istroke_dieresiscomb.ss03</key>
       <integer>47</integer>
       <key>istroke_gravecomb</key>

@@ -3114,9 +3114,9 @@
       <key>idotbelow_brevecomb.ss03</key>
       <integer>59</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>82</integer>
+      <integer>59</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>82</integer>
+      <integer>59</integer>
       <key>idotbelow_gravecomb</key>
       <integer>12</integer>
       <key>idotbelow_gravecomb.ss03</key>
@@ -3134,9 +3134,9 @@
       <key>imacron</key>
       <integer>12</integer>
       <key>istroke_brevecomb</key>
-      <integer>59</integer>
+      <integer>61</integer>
       <key>istroke_caroncomb</key>
-      <integer>82</integer>
+      <integer>59</integer>
       <key>istroke_gravecomb</key>
       <integer>12</integer>
       <key>istroke_macroncomb</key>
@@ -3200,9 +3200,9 @@
       <key>idotbelow_brevecomb.ss03</key>
       <integer>59</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>82</integer>
+      <integer>59</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>82</integer>
+      <integer>59</integer>
       <key>idotbelow_gravecomb</key>
       <integer>13</integer>
       <key>idotbelow_gravecomb.ss03</key>
@@ -3220,9 +3220,9 @@
       <key>imacron</key>
       <integer>12</integer>
       <key>istroke_brevecomb</key>
-      <integer>59</integer>
+      <integer>61</integer>
       <key>istroke_caroncomb</key>
-      <integer>82</integer>
+      <integer>60</integer>
       <key>istroke_gravecomb</key>
       <integer>13</integer>
       <key>istroke_macroncomb</key>

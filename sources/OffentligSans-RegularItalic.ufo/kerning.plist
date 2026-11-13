@@ -3120,9 +3120,9 @@
       <key>idotbelow_brevecomb.ss03</key>
       <integer>32</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>54</integer>
+      <integer>42</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>54</integer>
+      <integer>42</integer>
       <key>idotbelow_dieresiscomb</key>
       <integer>23</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
@@ -3144,9 +3144,9 @@
       <key>imacron</key>
       <integer>21</integer>
       <key>istroke_brevecomb</key>
-      <integer>32</integer>
+      <integer>33</integer>
       <key>istroke_caroncomb</key>
-      <integer>54</integer>
+      <integer>42</integer>
       <key>istroke_dieresiscomb</key>
       <integer>23</integer>
       <key>istroke_dieresiscomb.ss03</key>
@@ -3212,9 +3212,9 @@
       <key>idotbelow_brevecomb.ss03</key>
       <integer>32</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>54</integer>
+      <integer>42</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>54</integer>
+      <integer>42</integer>
       <key>idotbelow_dieresiscomb</key>
       <integer>23</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
@@ -3236,9 +3236,9 @@
       <key>imacron</key>
       <integer>21</integer>
       <key>istroke_brevecomb</key>
-      <integer>32</integer>
+      <integer>33</integer>
       <key>istroke_caroncomb</key>
-      <integer>54</integer>
+      <integer>42</integer>
       <key>istroke_dieresiscomb</key>
       <integer>23</integer>
       <key>istroke_dieresiscomb.ss03</key>

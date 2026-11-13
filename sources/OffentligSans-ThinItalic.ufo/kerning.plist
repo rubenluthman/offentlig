@@ -2696,9 +2696,9 @@
       <key>idieresis</key>
       <integer>0</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>16</integer>
+      <integer>26</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>16</integer>
+      <integer>26</integer>
       <key>idotbelow_gravecomb</key>
       <integer>6</integer>
       <key>idotbelow_gravecomb.ss03</key>
@@ -2706,7 +2706,7 @@
       <key>igrave</key>
       <integer>6</integer>
       <key>istroke_caroncomb</key>
-      <integer>16</integer>
+      <integer>26</integer>
       <key>istroke_gravecomb</key>
       <integer>7</integer>
       <key>jcircumflex</key>
@@ -2715,6 +2715,8 @@
       <integer>0</integer>
       <key>istroke_dieresiscomb</key>
       <integer>0</integer>
+      <key>istroke_brevecomb</key>
+      <integer>1</integer>
     </dict>
     <key>bracketright</key>
     <dict>
@@ -2758,9 +2760,9 @@
       <key>idieresis</key>
       <integer>0</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>16</integer>
+      <integer>26</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>16</integer>
+      <integer>26</integer>
       <key>idotbelow_gravecomb</key>
       <integer>6</integer>
       <key>idotbelow_gravecomb.ss03</key>
@@ -2768,7 +2770,7 @@
       <key>igrave</key>
       <integer>6</integer>
       <key>istroke_caroncomb</key>
-      <integer>16</integer>
+      <integer>26</integer>
       <key>istroke_gravecomb</key>
       <integer>6</integer>
       <key>jcircumflex</key>
@@ -2777,6 +2779,8 @@
       <integer>0</integer>
       <key>istroke_dieresiscomb</key>
       <integer>0</integer>
+      <key>istroke_brevecomb</key>
+      <integer>1</integer>
     </dict>
     <key>slash</key>
     <dict>

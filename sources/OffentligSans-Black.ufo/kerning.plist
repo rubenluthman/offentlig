@@ -2789,9 +2789,9 @@
       <key>idotbelow_brevecomb.ss03</key>
       <integer>81</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>85</integer>
+      <integer>92</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>85</integer>
+      <integer>92</integer>
       <key>idotbelow_gravecomb</key>
       <integer>42</integer>
       <key>idotbelow_gravecomb.ss03</key>
@@ -2801,7 +2801,7 @@
       <key>istroke_brevecomb</key>
       <integer>81</integer>
       <key>istroke_caroncomb</key>
-      <integer>85</integer>
+      <integer>92</integer>
       <key>istroke_gravecomb</key>
       <integer>42</integer>
       <key>adblgrave</key>
