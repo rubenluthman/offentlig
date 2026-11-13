@@ -420,6 +420,16 @@
       <string>idotbelow_circumflexcomb</string>
       <string>idotbelow_circumflexcomb.ss03</string>
       <string>istroke_circumflexcomb</string>
+      <string>idotbelow_brevecomb</string>
+      <string>idotbelow_brevecomb.ss03</string>
+      <string>istroke_brevecomb</string>
+      <string>idotbelow_dieresiscomb</string>
+      <string>idotbelow_dieresiscomb.ss03</string>
+      <string>istroke_dieresiscomb</string>
+      <string>istroke_dieresiscomb.ss03</string>
+      <string>idotbelow_caroncomb</string>
+      <string>idotbelow_caroncomb.ss03</string>
+      <string>istroke_caroncomb</string>
       <string>idotlessdieresisacute</string>
       <string>icaron</string>
       <string>iacute</string>
@@ -1711,6 +1721,26 @@
       <key>idotbelow_circumflexcomb.ss03</key>
       <string>base</string>
       <key>istroke_circumflexcomb</key>
+      <string>base</string>
+      <key>idotbelow_brevecomb</key>
+      <string>base</string>
+      <key>idotbelow_brevecomb.ss03</key>
+      <string>base</string>
+      <key>istroke_brevecomb</key>
+      <string>base</string>
+      <key>idotbelow_dieresiscomb</key>
+      <string>base</string>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <string>base</string>
+      <key>istroke_dieresiscomb</key>
+      <string>base</string>
+      <key>istroke_dieresiscomb.ss03</key>
+      <string>base</string>
+      <key>idotbelow_caroncomb</key>
+      <string>base</string>
+      <key>idotbelow_caroncomb.ss03</key>
+      <string>base</string>
+      <key>istroke_caroncomb</key>
       <string>base</string>
       <key>igrave</key>
       <string>base</string>

@@ -894,14 +894,24 @@
       <string>idotbelow.dotless</string>
       <string>idotbelow.dotless.ss03</string>
       <string>icaron</string>
+      <string>idotbelow_caroncomb</string>
+      <string>idotbelow_caroncomb.ss03</string>
+      <string>istroke_caroncomb</string>
       <string>idotlessdieresisacute</string>
       <string>idotlessdieresisacute.ss03</string>
       <string>iacute</string>
       <string>ibreve</string>
+      <string>idotbelow_brevecomb</string>
+      <string>idotbelow_brevecomb.ss03</string>
+      <string>istroke_brevecomb</string>
       <string>icircumflex</string>
       <string>idblgrave</string>
       <string>idieresis</string>
+      <string>idotbelow_dieresiscomb</string>
+      <string>istroke_dieresiscomb</string>
       <string>idieresis.ss03</string>
+      <string>idotbelow_dieresiscomb.ss03</string>
+      <string>istroke_dieresiscomb.ss03</string>
       <string>idotaccent</string>
       <string>idotaccent.ss03</string>
       <string>idotbelow</string>
@@ -1637,14 +1647,24 @@
       <string>idotbelow.dotless</string>
       <string>idotbelow.dotless.ss03</string>
       <string>icaron</string>
+      <string>idotbelow_caroncomb</string>
+      <string>idotbelow_caroncomb.ss03</string>
+      <string>istroke_caroncomb</string>
       <string>idotlessdieresisacute</string>
       <string>idotlessdieresisacute.ss03</string>
       <string>iacute</string>
       <string>ibreve</string>
+      <string>idotbelow_brevecomb</string>
+      <string>idotbelow_brevecomb.ss03</string>
+      <string>istroke_brevecomb</string>
       <string>icircumflex</string>
       <string>idblgrave</string>
       <string>idieresis</string>
+      <string>idotbelow_dieresiscomb</string>
+      <string>istroke_dieresiscomb</string>
       <string>idieresis.ss03</string>
+      <string>idotbelow_dieresiscomb.ss03</string>
+      <string>istroke_dieresiscomb.ss03</string>
       <string>idotaccent</string>
       <string>idotaccent.ss03</string>
       <string>idotbelow</string>
