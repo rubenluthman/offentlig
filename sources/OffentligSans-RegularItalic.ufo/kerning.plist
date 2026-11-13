@@ -3594,6 +3594,8 @@
       <integer>35</integer>
       <key>j</key>
       <integer>60</integer>
+      <key>j.ss03</key>
+      <integer>67</integer>
     </dict>
     <key>tlinebelow</key>
     <dict>
@@ -3603,6 +3605,8 @@
       <real>6.875</real>
       <key>j</key>
       <integer>97</integer>
+      <key>j.ss03</key>
+      <integer>114</integer>
     </dict>
     <key>three</key>
     <dict>
@@ -3954,6 +3958,24 @@
       <integer>0</integer>
       <key>quotedblright.ss03</key>
       <integer>0</integer>
+      <key>T</key>
+      <integer>13</integer>
+      <key>Tcedilla</key>
+      <integer>13</integer>
+      <key>Tcaron</key>
+      <integer>13</integer>
+      <key>Tbar</key>
+      <integer>13</integer>
+      <key>Tcommaaccent.ss03</key>
+      <integer>13</integer>
+      <key>Tdotaccent.ss03</key>
+      <integer>13</integer>
+      <key>Tdotbelow.ss03</key>
+      <integer>13</integer>
+      <key>Tlinebelow</key>
+      <integer>13</integer>
+      <key>hbar</key>
+      <integer>19</integer>
     </dict>
     <key>idotbelow_circumflexcomb</key>
     <dict>
@@ -4478,6 +4500,24 @@
       <integer>0</integer>
       <key>quotesingle</key>
       <integer>-17</integer>
+      <key>T</key>
+      <integer>13</integer>
+      <key>Tcedilla</key>
+      <integer>13</integer>
+      <key>Tcaron</key>
+      <integer>13</integer>
+      <key>Tbar</key>
+      <integer>13</integer>
+      <key>Tcommaaccent.ss03</key>
+      <integer>13</integer>
+      <key>Tdotaccent.ss03</key>
+      <integer>13</integer>
+      <key>Tdotbelow.ss03</key>
+      <integer>13</integer>
+      <key>Tlinebelow</key>
+      <integer>13</integer>
+      <key>hbar</key>
+      <integer>19</integer>
     </dict>
     <key>istroke_brevecomb</key>
     <dict>
@@ -4644,6 +4684,24 @@
       <integer>0</integer>
       <key>quotesingle</key>
       <integer>-17</integer>
+      <key>T</key>
+      <integer>13</integer>
+      <key>Tcedilla</key>
+      <integer>13</integer>
+      <key>Tcaron</key>
+      <integer>13</integer>
+      <key>Tbar</key>
+      <integer>13</integer>
+      <key>Tcommaaccent.ss03</key>
+      <integer>13</integer>
+      <key>Tdotaccent.ss03</key>
+      <integer>13</integer>
+      <key>Tdotbelow.ss03</key>
+      <integer>13</integer>
+      <key>Tlinebelow</key>
+      <integer>13</integer>
+      <key>hbar</key>
+      <integer>19</integer>
     </dict>
     <key>jcircumflex</key>
     <dict>
@@ -4651,6 +4709,105 @@
       <integer>35</integer>
       <key>question.ss03</key>
       <integer>35</integer>
+    </dict>
+    <key>Z</key>
+    <dict>
+      <key>idieresis.ss03</key>
+      <integer>-26</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>-26</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>-26</integer>
+    </dict>
+    <key>f</key>
+    <dict>
+      <key>idieresis.ss03</key>
+      <integer>6</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>6</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>6</integer>
+    </dict>
+    <key>Zacute</key>
+    <dict>
+      <key>idieresis.ss03</key>
+      <integer>-26</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>-26</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>-26</integer>
+    </dict>
+    <key>Zcaron</key>
+    <dict>
+      <key>idieresis.ss03</key>
+      <integer>-26</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>-26</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>-26</integer>
+    </dict>
+    <key>Zcircumflex</key>
+    <dict>
+      <key>idieresis.ss03</key>
+      <integer>-26</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>-26</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>-26</integer>
+    </dict>
+    <key>Zlinebelow</key>
+    <dict>
+      <key>idieresis.ss03</key>
+      <integer>-26</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>-26</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>-26</integer>
+    </dict>
+    <key>Zdotaccent.ss03</key>
+    <dict>
+      <key>idieresis.ss03</key>
+      <integer>-26</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>-26</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>-26</integer>
+    </dict>
+    <key>fdotaccent.ss03</key>
+    <dict>
+      <key>idieresis.ss03</key>
+      <integer>6</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>6</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>6</integer>
+    </dict>
+    <key>Zdotbelow.ss03</key>
+    <dict>
+      <key>idieresis.ss03</key>
+      <integer>-26</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>-26</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>-26</integer>
+    </dict>
+    <key>quoteright.ss03</key>
+    <dict>
+      <key>idieresis.ss03</key>
+      <integer>-29</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>-29</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>-29</integer>
+    </dict>
+    <key>quotedblright.ss03</key>
+    <dict>
+      <key>idieresis.ss03</key>
+      <integer>-29</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>-29</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>-29</integer>
     </dict>
   </dict>
 </plist>

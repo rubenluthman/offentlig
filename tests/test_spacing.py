@@ -13,6 +13,7 @@ import pytest
 import ufoLib2
 import uharfbuzz as hb
 from fontTools.pens.basePen import BasePen
+from fontTools.ttLib import TTFont
 
 from conftest import WEIGHTS, static_path
 
@@ -266,6 +267,44 @@ def test_marks_and_hooks_keep_a_gap_to_their_neighbours(weight, italic, char, fe
                 continue  # ligature or substitution
             if gap is not None and gap < floor:
                 tight.append((text, gap))
+    assert tight == []
+
+
+# Pairs where the default form and the round-dot form both overlap by design (the tilde and macron of ĩ ī meet the
+# diaeresis of ï): the rule below leaves them out.
+ROUND_DOT_OVERLAP = {"ïï", "ïĩ", "ïī", "īï"}
+ROUND_DOT_AIM = 30
+ROUND_DOT_SLACK = 2
+
+
+@lru_cache(maxsize=None)
+def round_dot_characters(weight, italic):
+    """Encoded characters ss03 swaps for a round-dot glyph, and every encoded base character (no marks, no spaces)."""
+    s = shaper(weight, italic)
+    cmap = TTFont(static_path(weight, italic)).getBestCmap()
+    chars = [chr(c) for c in sorted(cmap) if c > 32 and chr(c).isprintable() and not unicodedata.category(chr(c)).startswith("M")]
+    dotted = [c for c in chars if s.shape(c, {"ss03": True})[0][0] != s.shape(c)[0][0]]
+    return dotted, chars
+
+
+@pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
+def test_round_dot_pairs_keep_the_gap_of_the_default_pairs(weight, italic):
+    """Every pair of encoded characters with a round-dot form on either side, whose kerning differs from the default
+    pair, keeps at least the smaller of the default gap and 30 units, less 2: `ss03` shares the default glyph's groups
+    but not its glyph-to-glyph exceptions, so each exception needs a copy for the `.ss03` sibling."""
+    s = shaper(weight, italic)
+    dotted, chars = round_dot_characters(weight, italic)
+    texts = {d + c for d in dotted for c in chars} | {c + d for d in dotted for c in chars}
+    tight = []
+    for text in sorted(texts - ROUND_DOT_OVERLAP):
+        plain, rounded = s.shape(text), s.shape(text, {"ss03": True})
+        if len(plain) != 2 or len(rounded) != 2 or plain[0][1] == rounded[0][1]:
+            continue  # ligature or substitution, or the same kerning as the default pair
+        gap_plain, gap_rounded = s.gap(text), s.gap(text, {"ss03": True})
+        if gap_plain is None or gap_rounded is None:
+            continue
+        if gap_rounded < min(gap_plain, ROUND_DOT_AIM) - ROUND_DOT_SLACK:
+            tight.append((text, round(gap_plain), round(gap_rounded)))
     assert tight == []
 
 

@@ -3584,6 +3584,8 @@
       <integer>40</integer>
       <key>j</key>
       <integer>68</integer>
+      <key>j.ss03</key>
+      <integer>79</integer>
     </dict>
     <key>tlinebelow</key>
     <dict>
@@ -3593,6 +3595,8 @@
       <real>6.875</real>
       <key>j</key>
       <integer>106</integer>
+      <key>j.ss03</key>
+      <integer>127</integer>
     </dict>
     <key>three</key>
     <dict>
