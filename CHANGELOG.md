@@ -6,6 +6,7 @@
 - Fixed combining accents typed after `V v Q q ð þ Þ ŋ ĸ Ə ƒ ɨ ẞ ị`: they now sit on the letter instead of beside it, and `ị` and `ɨ` lose their dot under a top mark (`ị́ ị̀`).
 - Fixed accented lowercase letters after `T V W Y` and their accented capitals: the accent no longer touches the arm (`Tȉ`, `Yö`, `Yë`, `Tè`, `Yŏ` and many more, worst in Black), also with the single-storey `a` (`cv04`) and the round dots (`ss03`) on. Plain pairs such as `To`, `Ye` and `Wa` are unchanged.
 - Fixed thin mark tips that still came close to a neighbour after `T V W Y` and next to `ǐ ǰ ő ï` and brackets (`Tǐ`, `Yǐ`, `Yē`, `Tĩ`, `Tȋ`), and the heavy-weight collisions inherited from Public Sans: `îl îb îh îk îi` (Romanian), and `Ơ Ư` with their accented forms before the lowercase that follows, such as `Ời`, `Ơi`, `Ườ` and `Ưi` (Vietnamese). Plain pairs are unchanged.
+- Fixed closing punctuation touching an accented `i`, inherited from Public Sans and worst in Black: `(sí)`, `¿sí?`, `île?`, also `í ï ĩ ī ĭ ǐ ȉ ȋ ḯ` before `) ] } ? ! ' " ’ ” » ›`, with the round dots (`ss03`) on as well. Plain pairs are unchanged.
 - Fixed the bar of `Ǥ` in the heavier weights, most in Black: it no longer starts against the lower curve with a hairline gap, and now floats clear of the curve and the crossbar on the left of the stem.
 
 ## [0.2.0] - 2026-11-13
