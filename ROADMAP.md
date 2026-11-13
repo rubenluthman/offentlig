@@ -19,7 +19,7 @@
 - [x] Superscript and subscript `+ − = ( )`, and the DIN 91379 modifier letters `ʹ ʺ ʾ ʿ ˈ ˌ`.
 - [x] Prime marks `′ ″ ‴` and the DIN 91379 superscript modifier letters `ʰ ʳ ˢ ᵈ ᵗ ⁿ`.
 - [ ] In Black, the bar of `Ǥ` sits mostly inside the lower curve on the left; refine it.
-- [ ] Kern accented lowercase letters after T V W Y so the accent clears the arm (inherited from Public Sans; Yö, Yë, Tè and the double-grave letters collide in Black).
+- [x] Kern accented lowercase letters after T V W Y so the accent clears the arm (inherited from Public Sans; Yö, Yë, Tè and the double-grave letters collide in Black).
 
 <!-- vale HouseStyle.Headings = NO -->
 ### Offentlig Serif

@@ -3,7 +3,7 @@
 Every letter and every letter alternate belongs to a kerning group on both sides (or is named in `EXEMPT` with a
 reason), and the pairs that were fixed keep their targets: the right side of ẞ follows B and its left side H, Ĳ ĳ ŉ
 follow the letters they are made of, `G.cv03` closes like O, the old-style 7 clears a colon, the hook of ƈ clears the
-bar of T, and the marks of ǐ ǰ ḯ ǒ ě ḻ ṟ ṯ (and the diaeresis of ï ő) keep a gap to their neighbours.
+bar of T, and the marks of ǐ ǰ ḯ ǒ ě ḻ ṟ ṯ (and the diaeresis of ï ő) keep a gap to their neighbours. Accented lowercase letters clear the arm of T V W Y.
 """
 import unicodedata
 from functools import lru_cache
@@ -275,3 +275,32 @@ def test_ss02_forms_of_fl_and_ldot_sit_in_the_groups_of_their_parts(master):
     assert group("kern1", "ldot.ss02.ss03") == group("kern1", "ldot.ss03")
     assert group("kern2", "ldot.ss02.ss03") == group("kern2", "ldot.ss03")
     assert group("kern1", "fl.ss02") and group("kern2", "ldot.ss02")
+
+
+def accented_lowercase(font):
+    """Encoded lowercase letters that decompose into a base letter and a mark."""
+    found = []
+    for glyph in font:
+        if glyph.unicodes:
+            char = chr(glyph.unicodes[0])
+            if unicodedata.category(char) == "Ll" and len(unicodedata.normalize("NFD", char)) > 1:
+                found.append(char)
+    return found
+
+
+@pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
+def test_accented_lowercase_clears_the_arm_of_t_v_w_y(weight, italic):
+    """Pair exceptions between the T, V and Y kern1 groups and each accented lowercase keep at least 30 units of ink
+    between the arm and the mark, at every weight (the masters aim at 40)."""
+    s = shaper(weight, italic)
+    tight = []
+    for left in "TVWYŤẂŶ":
+        for right in accented_lowercase(source("Regular")):
+            try:
+                gap = s.gap(left + right)
+            except AssertionError:
+                continue  # ligature or substitution
+            if gap is not None and gap < 30:
+                tight.append((left + right, round(gap)))
+    assert tight == []
+
