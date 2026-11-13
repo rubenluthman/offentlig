@@ -400,6 +400,9 @@
       <string>istroke</string>
       <string>ij</string>
       <string>idotless</string>
+      <string>istroke.dotless</string>
+      <string>idotbelow.dotless</string>
+      <string>idotbelow.dotless.ss03</string>
       <string>idotlessdieresisacute</string>
       <string>icaron</string>
       <string>iacute</string>
@@ -1659,6 +1662,12 @@
       <string>base</string>
       <key>idotless</key>
       <string>base</string>
+      <key>istroke.dotless</key>
+      <string>base</string>
+      <key>idotbelow.dotless</key>
+      <string>base</string>
+      <key>idotbelow.dotless.ss03</key>
+      <string>base</string>
       <key>igrave</key>
       <string>base</string>
       <key>ihookabove</key>
@@ -2542,6 +2551,28 @@
       <key>adotaccent.cv04.ss03</key>
       <string>base</string>
       <key>adotbelow.cv04.ss03</key>
+      <string>base</string>
+      <key>v</key>
+      <string>base</string>
+      <key>Q</key>
+      <string>base</string>
+      <key>q</key>
+      <string>base</string>
+      <key>eth</key>
+      <string>base</string>
+      <key>thorn</key>
+      <string>base</string>
+      <key>Thorn</key>
+      <string>base</string>
+      <key>eng</key>
+      <string>base</string>
+      <key>kgreenlandic</key>
+      <string>base</string>
+      <key>Schwa</key>
+      <string>base</string>
+      <key>florin</key>
+      <string>base</string>
+      <key>germandbls</key>
       <string>base</string>
     </dict>
     <key>public.postscriptNames</key>

@@ -2,6 +2,8 @@
 <glyph name="Germandbls" format="2">
   <advance width="1466"/>
   <unicode hex="1E9E"/>
+  <anchor x="771.0" y="1446" name="top"/>
+  <anchor x="771.0" y="0" name="bottom"/>
   <outline>
     <contour>
       <point x="921" y="-20" type="curve" smooth="yes"/>

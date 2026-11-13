@@ -50,6 +50,8 @@ lookup ccmp_Other_1 {
 	@CombiningNonTopAccents = [brevebelowcomb cedillacomb dblmacronbelowcomb dotbelowcomb macronbelowcomb ogonekcomb ringbelowcomb horncomb];
 	sub [i j]' @CombiningTopAccents by [idotless jdotless];
 	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
+	sub [idotbelow istroke]' @CombiningTopAccents by [idotbelow.dotless istroke.dotless];
+	sub [idotbelow istroke]' @CombiningNonTopAccents @CombiningTopAccents by [idotbelow.dotless istroke.dotless];
 } ccmp_Other_1;
 
 lookup ccmp_latn_1 {
@@ -624,6 +626,7 @@ sub i by i.ss03;
 sub idieresis by idieresis.ss03;
 sub idotaccent by idotaccent.ss03;
 sub idotbelow by idotbelow.ss03;
+sub idotbelow.dotless by idotbelow.dotless.ss03;
 sub idotlessdieresisacute by idotlessdieresisacute.ss03;
 sub ij by ij.ss03;
 sub iogonek by iogonek.ss03;
