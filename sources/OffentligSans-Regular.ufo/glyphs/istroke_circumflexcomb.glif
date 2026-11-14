@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="istroke_circumflexcomb" format="2">
-  <advance width="494.53125"/>
+  <advance width="483.71875"/>
   <anchor x="308.65625" y="23.25" name="ogonek"/>
   <anchor x="243.4375" y="1348.71875" name="top"/>
   <anchor x="247.59375" y="0" name="bottom"/>

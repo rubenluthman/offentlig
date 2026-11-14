@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="istroke_dieresiscomb.ss03" format="2">
-  <advance width="449"/>
+  <advance width="433"/>
   <anchor x="169" y="26" name="ogonek"/>
   <anchor x="334" y="1361" name="top"/>
   <anchor x="153" y="0" name="bottom"/>

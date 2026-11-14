@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- Fixed the dotless `ı` in Bold to Black Italic, inherited from Public Sans: it was darker and wider than `i` (stem 388 against 370, advance 600 against 571 in Black Italic), and so were all accented `i` built on it (`í ì î ï ī ĭ ǐ ȉ ȋ ḯ`). They now match `i` and are up to 29 units narrower. The typed `ɨ` and `ị` with an accent now have the same advance as the precomposed letter at every weight, so the accent no longer hangs to the left of it.
 - Fixed `sups` after a raised plus, minus or equals: `x(n+t)`, `x(n−t)` and `x(n=t)` now set `ⁿ` and `ᵗ` like `x(n)`. A typed hyphen-minus stays as it is.
 - Fixed the Turkish `i` with round dots (`ss03`): its dot now has the size of the dot of `i` in every weight (it was up to 12 percent smaller).
 - Fixed `į` with a top accent: it loses its dot like `i`, `ị` and `ɨ` (`į́`); a typed U+0307 still brings the dot back.

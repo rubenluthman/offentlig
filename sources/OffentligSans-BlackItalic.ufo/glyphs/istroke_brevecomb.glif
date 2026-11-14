@@ -2,7 +2,7 @@
 <glyph name="istroke_brevecomb" format="2">
   <advance width="571"/>
   <anchor x="363" y="18" name="ogonek"/>
-  <anchor x="438.546" y="1415" name="top"/>
+  <anchor x="417.546" y="1415" name="top"/>
   <anchor x="212" y="0" name="bottom"/>
   <outline>
     <contour>
@@ -12,6 +12,6 @@
       <point x="35.208" y="664" type="line"/>
     </contour>
     <component base="idotless"/>
-    <component base="brevecomb" xOffset="-116"/>
+    <component base="brevecomb" xOffset="-137"/>
   </outline>
 </glyph>

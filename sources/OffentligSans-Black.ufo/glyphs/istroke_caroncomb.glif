@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="istroke_caroncomb" format="2">
-  <advance width="570"/>
+  <advance width="571"/>
   <anchor x="434" y="18" name="ogonek"/>
   <anchor x="292" y="1417" name="top"/>
   <anchor x="285" y="0" name="bottom"/>
