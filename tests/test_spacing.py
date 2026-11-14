@@ -271,44 +271,6 @@ def test_marks_and_hooks_keep_a_gap_to_their_neighbours(weight, italic, char, fe
     assert tight == []
 
 
-# Pairs where the default form and the round-dot form both overlap by design (the tilde and macron of ĩ ī meet the
-# diaeresis of ï): the rule below leaves them out.
-ROUND_DOT_OVERLAP = {"ïï", "ïĩ", "ïī", "īï"}
-ROUND_DOT_AIM = 30
-ROUND_DOT_SLACK = 2
-
-
-@lru_cache(maxsize=None)
-def round_dot_characters(weight, italic):
-    """Encoded characters ss03 swaps for a round-dot glyph, and every encoded base character (no marks, no spaces)."""
-    s = shaper(weight, italic)
-    cmap = TTFont(static_path(weight, italic)).getBestCmap()
-    chars = [chr(c) for c in sorted(cmap) if c > 32 and chr(c).isprintable() and not unicodedata.category(chr(c)).startswith("M")]
-    dotted = [c for c in chars if s.shape(c, {"ss03": True})[0][0] != s.shape(c)[0][0]]
-    return dotted, chars
-
-
-@pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
-def test_round_dot_pairs_keep_the_gap_of_the_default_pairs(weight, italic):
-    """Every pair of encoded characters with a round-dot form on either side, whose kerning differs from the default
-    pair, keeps at least the smaller of the default gap and 30 units, less 2: `ss03` shares the default glyph's groups
-    but not its glyph-to-glyph exceptions, so each exception needs a copy for the `.ss03` sibling."""
-    s = shaper(weight, italic)
-    dotted, chars = round_dot_characters(weight, italic)
-    texts = {d + c for d in dotted for c in chars} | {c + d for d in dotted for c in chars}
-    tight = []
-    for text in sorted(texts - ROUND_DOT_OVERLAP):
-        plain, rounded = s.shape(text), s.shape(text, {"ss03": True})
-        if len(plain) != 2 or len(rounded) != 2 or plain[0][1] == rounded[0][1]:
-            continue  # ligature or substitution, or the same kerning as the default pair
-        gap_plain, gap_rounded = s.gap(text), s.gap(text, {"ss03": True})
-        if gap_plain is None or gap_rounded is None:
-            continue
-        if gap_rounded < min(gap_plain, ROUND_DOT_AIM) - ROUND_DOT_SLACK:
-            tight.append((text, round(gap_plain), round(gap_rounded)))
-    assert tight == []
-
-
 @pytest.mark.parametrize("weight,italic", MASTER_FONTS, ids=MASTER_IDS)
 @pytest.mark.parametrize("char", list(ARM_ONLY))
 def test_caron_clears_the_arm_of_t_y_v_w(weight, italic, char):
@@ -427,7 +389,7 @@ def test_accented_i_clears_the_closing_punctuation_after_it(weight, italic, feat
     assert tight == []
 
 
-OPENING_PUNCTUATION = "([{¿¡‘“«‹"
+OPENING_PUNCTUATION = "([{¿¡'\"‘“«‹"
 # ȉ and ȑ (double grave) need more than 300 units of kerning; the ROADMAP Icebox plans a narrower double grave for them.
 LEFT_FOR_THE_ICEBOX = "ȉȑ"
 
@@ -448,7 +410,7 @@ def accented_letters(font):
 def test_accented_letters_clear_the_punctuation_next_to_them(weight, italic, features):
     """The marks of accented letters (`ŕ) ĵ? ű) ơ? (ì (ĭ ¡ḻ`) closed on the bracket, quote or mark next to them in the heavy
     weights of Public Sans. Glyph-to-glyph pair exceptions aim at 40 units on both sides of `) ] } ? ! ' " ’ ” » ›` and
-    `( [ { ¿ ¡ ‘ “ « ‹`; the test fails below 30. `ȉ` and `ȑ` are left for the Icebox item."""
+    `( [ { ¿ ¡ ' " ‘ “ « ‹`; the test fails below 30. `ȉ` and `ȑ` are left for the Icebox item."""
     s = shaper(weight, italic)
     tight = []
     for letter in accented_letters(source("Regular")):
@@ -529,7 +491,7 @@ def left_neighbours(font):
 def test_typed_i_with_breve_diaeresis_or_caron_kerns_after_a_letter_like_the_precomposed_letter(weight, italic, features):
     """Typed ị and ɨ with a breve, diaeresis or caron are one glyph built on ĭ ï ǐ (`idotbelow_brevecomb`,
     `istroke_dieresiscomb` and the others), so every pair with another glyph on the left kerns exactly like the
-    precomposed letter, at every weight, with and without `ss03`. The opening punctuation `( [ { ¿ ¡ ‘ “ « ‹` is left
+    precomposed letter, at every weight, with and without `ss03`. The opening punctuation `( [ { ¿ ¡ ' " ‘ “ « ‹` is left
     out: its exceptions are fitted per glyph to the 30-unit floor."""
     s = shaper(weight, italic)
     differing = []

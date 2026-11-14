@@ -23,4 +23,4 @@ Open-source font superfamily. Offentlig Sans is a renamed fork of Public Sans (u
 
 ## Dependencies
 
-gftools builder, fontmake, ufo2ft, fontTools, uharfbuzz, pytest (see `requirements.txt`). QA: Fontspector 1.9.0, Diffenator2 0.0.7. Verification: `vale` (`brew install vale`).
+gftools builder, fontmake, ufo2ft, fontTools, uharfbuzz, numpy, pytest (see `requirements.txt`). QA: Fontspector 1.9.0, Diffenator2 0.0.7. Verification: `vale` (`brew install vale`).
