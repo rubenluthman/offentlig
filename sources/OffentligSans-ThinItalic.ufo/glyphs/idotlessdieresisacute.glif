@@ -4,6 +4,7 @@
   <unicode hex="1E2F"/>
   <anchor x="169" y="26" name="ogonek"/>
   <anchor x="387.5" y="1742" name="top"/>
+  <anchor x="144" y="0" name="bottom"/>
   <outline>
     <component base="idotless"/>
     <component base="dieresiscomb" xOffset="50"/>

@@ -405,6 +405,7 @@
       <string>istroke.dotless</string>
       <string>idotbelow.dotless</string>
       <string>idotbelow.dotless.ss03</string>
+      <string>iogonek.dotless</string>
       <string>idotbelow_acutecomb</string>
       <string>idotbelow_acutecomb.ss03</string>
       <string>istroke_acutecomb</string>
@@ -1692,6 +1693,8 @@
       <string>base</string>
       <key>idotbelow.dotless.ss03</key>
       <string>base</string>
+      <key>iogonek.dotless</key>
+      <string>base</string>
       <key>idotbelow_acutecomb</key>
       <string>base</string>
       <key>idotbelow_acutecomb.ss03</key>
@@ -1757,6 +1760,10 @@
       <key>itilde</key>
       <string>base</string>
       <key>jcircumflex</key>
+      <string>base</string>
+      <key>j</key>
+      <string>base</string>
+      <key>j.ss03</key>
       <string>base</string>
       <key>jdotless</key>
       <string>base</string>

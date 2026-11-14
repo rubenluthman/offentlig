@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+- Fixed `sups` after a raised plus, minus or equals: `x(n+t)`, `x(n−t)` and `x(n=t)` now set `ⁿ` and `ᵗ` like `x(n)`. A typed hyphen-minus stays as it is.
+- Fixed the Turkish `i` with round dots (`ss03`): its dot now has the size of the dot of `i` in every weight (it was up to 12 percent smaller).
+- Fixed `į` with a top accent: it loses its dot like `i`, `ị` and `ɨ` (`į́`); a typed U+0307 still brings the dot back.
+- Fixed a mark below `j`, `ı` and `ȷ`: `j̣ ı̣ ȷ̣` now put the dot under the letter instead of on top of it.
 - Fixed kerning around `i` with a mark in the heavy weights: the typed `ị` and `ɨ` with a breve, diaeresis or caron now kern after `T V Y f`, quotes and brackets like `ĭ ï ǐ` (`Vị̈` was −145 against `Vï` 39); the round dots (`ss03`) of `ï ḯ ị̈ ɨ̈` no longer close up before `H l i b k h d` in Black Italic (`ïi`, `ɨ̈i`); and `ĭ` clears `l i b k h H` in Black and Black Italic (`ĭl` was −15, inherited from Public Sans), as does the typed `ị̆ ɨ̆`. Plain pairs are unchanged.
 - Fixed the round dots (`ss03`) closing up where the default dots do not, in the heavy weights and above all in Black Italic: `fï ḟï` (−75 against 10), `Ơi Ới Ời` and the other `Ơ Ư` forms before `i`, `ïT ïW ïV ïY` and their accented letters, `"ï 'ï ’ï ”ï /ï ₣ï Fï Zï 7ï`, `ïħ ï\ ï7 ïŉ ï1`, `!ǐ ?ḯ !ḯ !ǰ` and `ṯj ḻj` in Light. Every pair with a round-dot glyph now keeps at least the gap of its default pair, up to 30 units (2 units less at most), at all 18 weights. Plain pairs and every pair with `ss03` off are unchanged.
 - Fixed typed `ị` and `ɨ` with an acute, grave, macron, tilde, circumflex, breve, diaeresis or caron running into the next letter from Bold up (Igbo `ị́ ị̀` before `H` or `l`): they now space like `í ì ī ĩ î ĭ ï ǐ`.

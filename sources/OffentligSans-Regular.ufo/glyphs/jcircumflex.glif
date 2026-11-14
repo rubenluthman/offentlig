@@ -3,6 +3,7 @@
   <advance width="520.96875"/>
   <unicode hex="0135"/>
   <anchor x="275.1875" y="1348.71875" name="top"/>
+  <anchor x="84" y="-332" name="bottom"/>
   <outline>
     <component base="jdotless"/>
     <component base="circumflexcomb" xOffset="-50.5"/>
