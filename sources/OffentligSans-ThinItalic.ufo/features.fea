@@ -64,8 +64,8 @@ lookup ccmp_Other_0 {
 lookup ccmp_Other_1 {
 	@CombiningTopAccents = [acutecomb brevecomb breveinvertedcomb candrabinducomb caroncomb circumflexcomb commaaboverightcomb commaturnedabovecomb dblgravecomb dieresiscomb dotaccentcomb gravecomb hookabovecomb hungarumlautcomb macroncomb ringcomb tildecomb verticallineabovecomb];
 	@CombiningNonTopAccents = [brevebelowcomb cedillacomb dblmacronbelowcomb dotbelowcomb macronbelowcomb ogonekcomb ringbelowcomb horncomb];
-	sub [i j]' @CombiningTopAccents by [idotless jdotless];
-	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
+	sub [i j iogonek]' @CombiningTopAccents by [idotless jdotless iogonek.dotless];
+	sub [i j iogonek]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless iogonek.dotless];
 	sub [idotbelow istroke]' @CombiningTopAccents by [idotbelow.dotless istroke.dotless];
 	sub [idotbelow istroke]' @CombiningNonTopAccents @CombiningTopAccents by [idotbelow.dotless istroke.dotless];
 } ccmp_Other_1;
@@ -185,9 +185,9 @@ sub parenleft by parenleftsuperior;
 sub parenright by parenrightsuperior;
 } sups_signs;
 
-# The small letters follow a superior figure, a superior parenthesis or another small letter only,
+# The small letters follow a superior figure, sign or parenthesis, or another small letter only,
 # so 1st 2nd 3rd 4th and x(n) are set, and 1er, Ste and century are not.
-@sups_before = [zerosuperior onesuperior twosuperior threesuperior foursuperior fivesuperior sixsuperior sevensuperior eightsuperior ninesuperior parenleftsuperior parenrightsuperior hmod rmod smod dmod tmod nsuperior];
+@sups_before = [zerosuperior onesuperior twosuperior threesuperior foursuperior fivesuperior sixsuperior sevensuperior eightsuperior ninesuperior plussuperior minussuperior equalsuperior parenleftsuperior parenrightsuperior hmod rmod smod dmod tmod nsuperior];
 lookup sups_letters {
 sub @sups_before [h r s d t n]' by [hmod rmod smod dmod tmod nsuperior];
 } sups_letters;
