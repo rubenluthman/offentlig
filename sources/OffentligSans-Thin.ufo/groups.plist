@@ -786,6 +786,15 @@
     <key>public.kern1.q</key>
     <array>
       <string>g.ss01</string>
+      <string>gacute.ss01</string>
+      <string>gbreve.ss01</string>
+      <string>gcaron.ss01</string>
+      <string>gcircumflex.ss01</string>
+      <string>gcommaaccent.ss01</string>
+      <string>gdotaccent.ss01</string>
+      <string>gmacron.ss01</string>
+      <string>gcommaaccent.ss01.ss03</string>
+      <string>gdotaccent.ss01.ss03</string>
     </array>
     <key>public.kern1.quoteleft</key>
     <array>
@@ -978,6 +987,14 @@
       <string>ij</string>
       <string>ij.ss03</string>
       <string>ucaron</string>
+      <string>lacute.ss02</string>
+      <string>lcaron.ss02</string>
+      <string>lcommaaccent.ss02</string>
+      <string>ldotbelow.ss02</string>
+      <string>llinebelow.ss02</string>
+      <string>lcommaaccent.ss02.ss03</string>
+      <string>ldotbelow.ss02.ss03</string>
+      <string>lslash.ss02</string>
     </array>
     <key>public.kern1.uhorn</key>
     <array>
@@ -1349,6 +1366,7 @@
       <string>OE</string>
       <string>Q</string>
       <string>Schwa</string>
+      <string>Gstroke.cv03</string>
     </array>
     <key>public.kern2.Oslash</key>
     <array>
@@ -1755,6 +1773,14 @@
       <string>ldot.ss02</string>
       <string>ij</string>
       <string>ij.ss03</string>
+      <string>lacute.ss02</string>
+      <string>lcaron.ss02</string>
+      <string>lcommaaccent.ss02</string>
+      <string>ldotbelow.ss02</string>
+      <string>llinebelow.ss02</string>
+      <string>lcommaaccent.ss02.ss03</string>
+      <string>ldotbelow.ss02.ss03</string>
+      <string>lslash.ss02</string>
     </array>
     <key>public.kern2.nine</key>
     <array>
@@ -1853,6 +1879,15 @@
       <string>q</string>
       <string>g.ss01</string>
       <string>at</string>
+      <string>gacute.ss01</string>
+      <string>gbreve.ss01</string>
+      <string>gcaron.ss01</string>
+      <string>gcircumflex.ss01</string>
+      <string>gcommaaccent.ss01</string>
+      <string>gdotaccent.ss01</string>
+      <string>gmacron.ss01</string>
+      <string>gcommaaccent.ss01.ss03</string>
+      <string>gdotaccent.ss01.ss03</string>
     </array>
     <key>public.kern2.one</key>
     <array>
@@ -2120,6 +2155,7 @@
       <string>Imacron.cv05</string>
       <string>Iogonek.cv05</string>
       <string>Itilde.cv05</string>
+      <string>Istroke.cv05</string>
     </array>
     <key>public.kern2.Icv05</key>
     <array>
@@ -2145,6 +2181,7 @@
       <string>Itilde.cv05</string>
       <string>IJ.cv05</string>
       <string>IJ.cv01.cv05</string>
+      <string>Istroke.cv05</string>
     </array>
     <key>public.kern1.Gcv03</key>
     <array>
@@ -2158,6 +2195,7 @@
       <string>Gcommaaccent.cv03.ss03</string>
       <string>Gdotaccent.cv03</string>
       <string>Gdotaccent.cv03.ss03</string>
+      <string>Gstroke.cv03</string>
     </array>
     <key>public.kern2.sevenosf</key>
     <array>

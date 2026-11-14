@@ -527,6 +527,8 @@
       <integer>54</integer>
       <key>rlinebelow</key>
       <integer>27</integer>
+      <key>llinebelow.ss02</key>
+      <integer>54</integer>
     </dict>
     <key>public.kern1.Ohorn</key>
     <dict>
@@ -1563,6 +1565,10 @@
       <integer>121</integer>
       <key>istroke_caroncomb</key>
       <integer>121</integer>
+      <key>gbreve.ss01</key>
+      <integer>-224</integer>
+      <key>gcaron.ss01</key>
+      <integer>-224</integer>
     </dict>
     <key>public.kern1.Z</key>
     <dict>
@@ -1775,6 +1781,8 @@
       <key>public.kern2.z</key>
       <integer>20</integer>
       <key>llinebelow</key>
+      <integer>12</integer>
+      <key>llinebelow.ss02</key>
       <integer>12</integer>
     </dict>
     <key>public.kern1.guilsinglleft</key>
@@ -2618,6 +2626,13 @@
       <key>parenright</key>
       <integer>14</integer>
     </dict>
+    <key>lcaron.ss02</key>
+    <dict>
+      <key>braceright</key>
+      <integer>3</integer>
+      <key>parenright</key>
+      <integer>14</integer>
+    </dict>
     <key>public.kern1.Gcv03</key>
     <dict>
       <key>public.kern2.0.tf</key>
@@ -2826,6 +2841,8 @@
       <integer>82</integer>
       <key>udblgrave</key>
       <integer>65</integer>
+      <key>llinebelow.ss02</key>
+      <integer>96</integer>
     </dict>
     <key>bracketleft</key>
     <dict>
@@ -2897,6 +2914,8 @@
       <integer>63</integer>
       <key>udblgrave</key>
       <integer>46</integer>
+      <key>llinebelow.ss02</key>
+      <integer>77</integer>
     </dict>
     <key>bracketright</key>
     <dict>
@@ -2922,6 +2941,8 @@
       <integer>29</integer>
       <key>istroke_caroncomb</key>
       <integer>29</integer>
+      <key>llinebelow.ss02</key>
+      <integer>37</integer>
     </dict>
     <key>braceleft</key>
     <dict>
@@ -2993,6 +3014,8 @@
       <integer>63</integer>
       <key>udblgrave</key>
       <integer>46</integer>
+      <key>llinebelow.ss02</key>
+      <integer>75</integer>
     </dict>
     <key>slash</key>
     <dict>
@@ -3047,6 +3070,8 @@
       <integer>0</integer>
       <key>istroke_caroncomb</key>
       <integer>0</integer>
+      <key>llinebelow.ss02</key>
+      <integer>21</integer>
     </dict>
     <key>icaron</key>
     <dict>
@@ -3358,6 +3383,8 @@
       <integer>76</integer>
       <key>rlinebelow</key>
       <integer>49</integer>
+      <key>llinebelow.ss02</key>
+      <integer>76</integer>
     </dict>
     <key>underscore</key>
     <dict>
@@ -3365,6 +3392,8 @@
       <integer>52</integer>
       <key>rlinebelow</key>
       <integer>25</integer>
+      <key>llinebelow.ss02</key>
+      <integer>52</integer>
     </dict>
     <key>llinebelow</key>
     <dict>
@@ -3899,6 +3928,16 @@
       <key>llinebelow</key>
       <integer>12</integer>
       <key>hlinebelow</key>
+      <integer>12</integer>
+      <key>lacute.ss02</key>
+      <integer>12</integer>
+      <key>lcommaaccent.ss02.ss03</key>
+      <integer>12</integer>
+      <key>lcaron.ss02</key>
+      <integer>12</integer>
+      <key>ldotbelow.ss02.ss03</key>
+      <integer>12</integer>
+      <key>llinebelow.ss02</key>
       <integer>12</integer>
     </dict>
     <key>idotbelow_circumflexcomb</key>
@@ -4644,6 +4683,16 @@
       <integer>12</integer>
       <key>hlinebelow</key>
       <integer>12</integer>
+      <key>lacute.ss02</key>
+      <integer>12</integer>
+      <key>lcommaaccent.ss02.ss03</key>
+      <integer>12</integer>
+      <key>lcaron.ss02</key>
+      <integer>12</integer>
+      <key>ldotbelow.ss02.ss03</key>
+      <integer>12</integer>
+      <key>llinebelow.ss02</key>
+      <integer>12</integer>
     </dict>
     <key>istroke_brevecomb</key>
     <dict>
@@ -4976,6 +5025,16 @@
       <integer>12</integer>
       <key>hlinebelow</key>
       <integer>12</integer>
+      <key>lacute.ss02</key>
+      <integer>12</integer>
+      <key>lcommaaccent.ss02.ss03</key>
+      <integer>12</integer>
+      <key>lcaron.ss02</key>
+      <integer>12</integer>
+      <key>ldotbelow.ss02.ss03</key>
+      <integer>12</integer>
+      <key>llinebelow.ss02</key>
+      <integer>12</integer>
     </dict>
     <key>cacute</key>
     <dict>
@@ -5199,6 +5258,8 @@
       <integer>76</integer>
       <key>rlinebelow</key>
       <integer>49</integer>
+      <key>llinebelow.ss02</key>
+      <integer>76</integer>
     </dict>
     <key>exclamdown</key>
     <dict>
@@ -5206,6 +5267,8 @@
       <integer>76</integer>
       <key>rlinebelow</key>
       <integer>49</integer>
+      <key>llinebelow.ss02</key>
+      <integer>76</integer>
     </dict>
     <key>questiondown.ss03</key>
     <dict>
@@ -6463,6 +6526,74 @@
     <dict>
       <key>idotlessdieresisacute</key>
       <integer>88</integer>
+    </dict>
+    <key>llinebelow.ss02</key>
+    <dict>
+      <key>public.kern2.j</key>
+      <integer>24</integer>
+      <key>j</key>
+      <integer>24</integer>
+      <key>parenright</key>
+      <integer>93</integer>
+      <key>bracketright</key>
+      <integer>26</integer>
+      <key>braceright</key>
+      <integer>86</integer>
+    </dict>
+    <key>gbreve.ss01</key>
+    <dict>
+      <key>question</key>
+      <integer>24</integer>
+      <key>question.ss03</key>
+      <integer>24</integer>
+    </dict>
+    <key>gcircumflex.ss01</key>
+    <dict>
+      <key>question</key>
+      <integer>24</integer>
+      <key>question.ss03</key>
+      <integer>24</integer>
+    </dict>
+    <key>gcommaaccent.ss01.ss03</key>
+    <dict>
+      <key>question.ss03</key>
+      <integer>24</integer>
+    </dict>
+    <key>gdotaccent.ss01.ss03</key>
+    <dict>
+      <key>question.ss03</key>
+      <integer>24</integer>
+    </dict>
+    <key>gdotaccent.ss01</key>
+    <dict>
+      <key>question</key>
+      <integer>24</integer>
+    </dict>
+    <key>gcommaaccent.ss01</key>
+    <dict>
+      <key>question</key>
+      <integer>24</integer>
+    </dict>
+    <key>gcaron.ss01</key>
+    <dict>
+      <key>question</key>
+      <integer>24</integer>
+      <key>question.ss03</key>
+      <integer>24</integer>
+    </dict>
+    <key>gacute.ss01</key>
+    <dict>
+      <key>question</key>
+      <integer>24</integer>
+      <key>question.ss03</key>
+      <integer>24</integer>
+    </dict>
+    <key>gmacron.ss01</key>
+    <dict>
+      <key>question</key>
+      <integer>24</integer>
+      <key>question.ss03</key>
+      <integer>24</integer>
     </dict>
   </dict>
 </plist>

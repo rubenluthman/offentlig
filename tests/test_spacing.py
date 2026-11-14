@@ -5,6 +5,7 @@ reason), and the pairs that were fixed keep their targets: the right side of ẞ
 follow the letters they are made of, `G.cv03` closes like O, the old-style 7 clears a colon, the hook of ƈ clears the
 bar of T, and the marks of ǐ ǰ ḯ ǒ ě ḻ ṟ ṯ (and the diaeresis of ï ő) keep a gap to their neighbours. Accented lowercase letters clear the arm of T V W Y.
 """
+import re
 import unicodedata
 from functools import lru_cache
 from pathlib import Path
@@ -343,12 +344,13 @@ def accented_lowercase(font):
     return found
 
 
-@pytest.mark.parametrize("features", [{}, {"cv04": True}, {"ss03": True}, {"cv04": True, "ss03": True}], ids=["default", "cv04", "ss03", "cv04-ss03"])
+@pytest.mark.parametrize("features", [{}, {"cv04": True}, {"ss03": True}, {"cv04": True, "ss03": True}, {"ss01": True}, {"ss02": True}, {"salt": True, "ss03": True}],
+                         ids=["default", "cv04", "ss03", "cv04-ss03", "ss01", "ss02", "salt-ss03"])
 @pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
 def test_accented_lowercase_clears_the_arm_of_t_v_w_y(weight, italic, features):
     """Pair exceptions between the T, V and Y kern1 groups and each accented lowercase keep at least 30 units of ink
     between the arm and the mark, at every weight (the masters aim at 40), with no features and with the
-    single-storey `a` (`cv04`), the round dots (`ss03`) or both."""
+    single-storey `a` (`cv04`), the round dots (`ss03`) or both, and with the alternate `g` and `l` (`ss01`, `ss02`, `salt`)."""
     s = shaper(weight, italic)
     tight = []
     for left in "TVWYŤẂŶ":
@@ -440,7 +442,8 @@ def accented_letters(font):
     return sorted(letters) + [base + mark for base in "ịɨ" for mark in "\u0301\u0300\u0302\u0304\u0303\u0306\u0308\u030c"]
 
 
-@pytest.mark.parametrize("features", [{}, {"ss03": True}], ids=["default", "ss03"])
+@pytest.mark.parametrize("features", [{}, {"ss03": True}, {"ss01": True}, {"ss02": True}, {"salt": True, "ss03": True}],
+                         ids=["default", "ss03", "ss01", "ss02", "salt-ss03"])
 @pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
 def test_accented_letters_clear_the_punctuation_next_to_them(weight, italic, features):
     """The marks of accented letters (`ŕ) ĵ? ű) ơ? (ì (ĭ ¡ḻ`) closed on the bracket, quote or mark next to them in the heavy
@@ -541,3 +544,22 @@ def test_typed_i_with_breve_diaeresis_or_caron_kerns_after_a_letter_like_the_pre
             if a != b:
                 differing.append((left + typed, a, left + precomposed, b))
     assert differing == []
+
+
+@pytest.mark.parametrize("master", MASTERS)
+def test_accented_and_barred_alternates_sit_in_the_groups_of_their_alternate_base(master):
+    """`gbreve.ss01`, `lacute.ss02`, `Ǥ.cv03`, `Ɨ.cv05` and the others share both kerning groups with their alternate base."""
+    font = source(master)
+
+    def group(side, glyph):
+        return [n for n, members in font.groups.items() if n.startswith(f"public.{side}.") and glyph in members]
+
+    pairs = {"g.ss01": r"g.*\.ss01(\.ss03)?", "l.ss02": r"(?!ldot\.)l.*\.ss02(\.ss03)?", "G.cv03": r"Gstroke\.cv03", "I.cv05": r"Istroke\.cv05"}
+    checked = 0
+    for base, pattern in pairs.items():
+        for name in font.keys():
+            if re.fullmatch(pattern, name) and name != base:
+                checked += 1
+                assert group("kern1", name) == group("kern1", base), name
+                assert group("kern2", name) == group("kern2", base), name
+    assert checked >= 19

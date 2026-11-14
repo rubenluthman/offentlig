@@ -27,7 +27,6 @@
 <!-- vale HouseStyle.Headings = YES -->
 
 - [ ] Greek and Cyrillic, to complete DIN 91379 (see public-sans issue #17).
-- [ ] Accented forms of the `ss01` `g` and the `ss02` `l`.
 - [ ] The shape of the ogonek (public-sans issue #158 gives no target).
 - [ ] Contextual kerning for an accent typed after a base letter that has no precomposed form, after `T V W Y` (Yoruba `ọ̀ ẹ̀`, `Tc̏`).
 - [ ] A narrower double grave on `ȉ ȑ`, which collides with neighbours, and with `cv05` `Iȉ`.

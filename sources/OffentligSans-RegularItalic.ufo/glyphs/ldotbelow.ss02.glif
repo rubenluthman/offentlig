@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ldotbelow.ss02" format="2">
+  <advance width="563.375"/>
+  <anchor x="214.049" y="0.0" name="bottom"/>
+  <anchor x="411.791" y="1488.062" name="top"/>
+  <anchor x="648.062" y="1505.062" name="topright"/>
+  <anchor x="505.953" y="1486.0" name="caron"/>
+  <outline>
+    <component base="l.ss02"/>
+    <component base="dotbelowcomb" xOffset="185.955"/>
+  </outline>
+</glyph>

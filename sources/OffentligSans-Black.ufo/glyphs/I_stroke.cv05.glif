@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Istroke.cv05" format="2">
+  <advance width="909"/>
+  <anchor x="476" y="0" name="bottom"/>
+  <anchor x="702.0" y="8" name="ogonek"/>
+  <anchor x="456" y="1446" name="top"/>
+  <outline>
+    <contour>
+      <point x="60.0" y="619" type="line"/>
+      <point x="849.0" y="619" type="line"/>
+      <point x="849.0" y="827" type="line"/>
+      <point x="60.0" y="827" type="line"/>
+    </contour>
+    <component base="I.cv05"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>_dx</key>
+      <real>125.0</real>
+    </dict>
+  </lib>
+</glyph>

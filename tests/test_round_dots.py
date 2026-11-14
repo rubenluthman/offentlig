@@ -38,6 +38,7 @@ DOT_ALTERNATES = """
     Gcommaaccent.cv03 Gdotaccent.cv03 Idieresis.cv05 Idieresisacute.cv05 Idotaccent.cv05 Idotbelow.cv05
     abrevedotbelow.cv04 acircumflexdotbelow.cv04 adieresis.cv04 adieresismacron.cv04 adotaccent.cv04
     adotbelow.cv04 ldot.ss02
+    gcommaaccent.ss01 gdotaccent.ss01 lcommaaccent.ss02 ldotbelow.ss02
 """.split()
 DOT_GLYPHS += DOT_ALTERNATES
 

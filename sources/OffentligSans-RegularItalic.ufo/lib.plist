@@ -119,6 +119,7 @@
       <string>Fdotaccent</string>
       <string>G</string>
       <string>Gstroke</string>
+      <string>Gstroke.cv03</string>
       <string>Gmacron</string>
       <string>Gacute</string>
       <string>Gcaron</string>
@@ -138,6 +139,7 @@
       <string>Hdotbelow</string>
       <string>I</string>
       <string>Istroke</string>
+      <string>Istroke.cv05</string>
       <string>Idieresisacute</string>
       <string>IJ</string>
       <string>Icaron</string>
@@ -382,12 +384,21 @@
       <string>g</string>
       <string>gstroke</string>
       <string>gmacron</string>
+      <string>gmacron.ss01</string>
       <string>gacute</string>
+      <string>gacute.ss01</string>
       <string>gcaron</string>
+      <string>gcaron.ss01</string>
       <string>gbreve</string>
+      <string>gbreve.ss01</string>
       <string>gcircumflex</string>
+      <string>gcircumflex.ss01</string>
       <string>gcommaaccent</string>
+      <string>gcommaaccent.ss01.ss03</string>
+      <string>gcommaaccent.ss01</string>
       <string>gdotaccent</string>
+      <string>gdotaccent.ss01.ss03</string>
+      <string>gdotaccent.ss01</string>
       <string>h</string>
       <string>hlinebelow</string>
       <string>hbrevebelow</string>
@@ -459,13 +470,21 @@
       <string>kgreenlandic</string>
       <string>l</string>
       <string>llinebelow</string>
+      <string>llinebelow.ss02</string>
       <string>ldotbelow</string>
+      <string>ldotbelow.ss02.ss03</string>
+      <string>ldotbelow.ss02</string>
       <string>lacute</string>
+      <string>lacute.ss02</string>
       <string>lcaron</string>
+      <string>lcaron.ss02</string>
       <string>lcommaaccent</string>
+      <string>lcommaaccent.ss02.ss03</string>
+      <string>lcommaaccent.ss02</string>
       <string>ldot</string>
       <string>ldot.ss02</string>
       <string>lslash</string>
+      <string>lslash.ss02</string>
       <string>m</string>
       <string>mdotbelow</string>
       <string>mdotaccent</string>
@@ -2378,6 +2397,44 @@
       <key>ezhcaron</key>
       <string>base</string>
       <key>G.cv03</key>
+      <string>base</string>
+      <key>lslash.ss02</key>
+      <string>base</string>
+      <key>Istroke.cv05</key>
+      <string>base</string>
+      <key>Gstroke.cv03</key>
+      <string>base</string>
+      <key>ldotbelow.ss02.ss03</key>
+      <string>base</string>
+      <key>lcommaaccent.ss02.ss03</key>
+      <string>base</string>
+      <key>llinebelow.ss02</key>
+      <string>base</string>
+      <key>ldotbelow.ss02</key>
+      <string>base</string>
+      <key>lcommaaccent.ss02</key>
+      <string>base</string>
+      <key>lcaron.ss02</key>
+      <string>base</string>
+      <key>lacute.ss02</key>
+      <string>base</string>
+      <key>gdotaccent.ss01.ss03</key>
+      <string>base</string>
+      <key>gcommaaccent.ss01.ss03</key>
+      <string>base</string>
+      <key>gmacron.ss01</key>
+      <string>base</string>
+      <key>gdotaccent.ss01</key>
+      <string>base</string>
+      <key>gcommaaccent.ss01</key>
+      <string>base</string>
+      <key>gcircumflex.ss01</key>
+      <string>base</string>
+      <key>gcaron.ss01</key>
+      <string>base</string>
+      <key>gbreve.ss01</key>
+      <string>base</string>
+      <key>gacute.ss01</key>
       <string>base</string>
       <key>Gbreve.cv03</key>
       <string>base</string>

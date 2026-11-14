@@ -234,6 +234,8 @@
     <string>G_macron.cv03.glif</string>
     <key>Gstroke</key>
     <string>G_stroke.glif</string>
+    <key>Gstroke.cv03</key>
+    <string>G_stroke.cv03.glif</string>
     <key>H</key>
     <string>H_.glif</string>
     <key>Hbar</key>
@@ -344,6 +346,8 @@
     <string>I_ogonek.cv05.glif</string>
     <key>Istroke</key>
     <string>I_stroke.glif</string>
+    <key>Istroke.cv05</key>
+    <string>I_stroke.cv05.glif</string>
     <key>Itilde</key>
     <string>I_tilde.glif</string>
     <key>Itilde.cv05</key>
@@ -1270,24 +1274,42 @@
     <string>g.ss01.glif</string>
     <key>gacute</key>
     <string>gacute.glif</string>
+    <key>gacute.ss01</key>
+    <string>gacute.ss01.glif</string>
     <key>gbreve</key>
     <string>gbreve.glif</string>
+    <key>gbreve.ss01</key>
+    <string>gbreve.ss01.glif</string>
     <key>gcaron</key>
     <string>gcaron.glif</string>
+    <key>gcaron.ss01</key>
+    <string>gcaron.ss01.glif</string>
     <key>gcircumflex</key>
     <string>gcircumflex.glif</string>
+    <key>gcircumflex.ss01</key>
+    <string>gcircumflex.ss01.glif</string>
     <key>gcommaaccent</key>
     <string>gcommaaccent.glif</string>
+    <key>gcommaaccent.ss01</key>
+    <string>gcommaaccent.ss01.glif</string>
     <key>gcommaaccent.ss03</key>
     <string>gcommaaccent.ss03.glif</string>
+    <key>gcommaaccent.ss01.ss03</key>
+    <string>gcommaaccent.ss01.ss03.glif</string>
     <key>gdotaccent</key>
     <string>gdotaccent.glif</string>
+    <key>gdotaccent.ss01</key>
+    <string>gdotaccent.ss01.glif</string>
     <key>gdotaccent.ss03</key>
     <string>gdotaccent.ss03.glif</string>
+    <key>gdotaccent.ss01.ss03</key>
+    <string>gdotaccent.ss01.ss03.glif</string>
     <key>germandbls</key>
     <string>germandbls.glif</string>
     <key>gmacron</key>
     <string>gmacron.glif</string>
+    <key>gmacron.ss01</key>
+    <string>gmacron.ss01.glif</string>
     <key>grave</key>
     <string>grave.glif</string>
     <key>gravecomb</key>
@@ -1500,12 +1522,20 @@
     <string>l.ss02.glif</string>
     <key>lacute</key>
     <string>lacute.glif</string>
+    <key>lacute.ss02</key>
+    <string>lacute.ss02.glif</string>
     <key>lcaron</key>
     <string>lcaron.glif</string>
+    <key>lcaron.ss02</key>
+    <string>lcaron.ss02.glif</string>
     <key>lcommaaccent</key>
     <string>lcommaaccent.glif</string>
+    <key>lcommaaccent.ss02</key>
+    <string>lcommaaccent.ss02.glif</string>
     <key>lcommaaccent.ss03</key>
     <string>lcommaaccent.ss03.glif</string>
+    <key>lcommaaccent.ss02.ss03</key>
+    <string>lcommaaccent.ss02.ss03.glif</string>
     <key>ldot</key>
     <string>ldot.glif</string>
     <key>ldot.ss02</key>
@@ -1516,8 +1546,12 @@
     <string>ldot.ss03.glif</string>
     <key>ldotbelow</key>
     <string>ldotbelow.glif</string>
+    <key>ldotbelow.ss02</key>
+    <string>ldotbelow.ss02.glif</string>
     <key>ldotbelow.ss03</key>
     <string>ldotbelow.ss03.glif</string>
+    <key>ldotbelow.ss02.ss03</key>
+    <string>ldotbelow.ss02.ss03.glif</string>
     <key>leftArrow</key>
     <string>leftA_rrow.glif</string>
     <key>less</key>
@@ -1536,12 +1570,16 @@
     <string>literS_ign.glif</string>
     <key>llinebelow</key>
     <string>llinebelow.glif</string>
+    <key>llinebelow.ss02</key>
+    <string>llinebelow.ss02.glif</string>
     <key>logicalnot</key>
     <string>logicalnot.glif</string>
     <key>lozenge</key>
     <string>lozenge.glif</string>
     <key>lslash</key>
     <string>lslash.glif</string>
+    <key>lslash.ss02</key>
+    <string>lslash.ss02.glif</string>
     <key>m</key>
     <string>m.glif</string>
     <key>macron</key>
