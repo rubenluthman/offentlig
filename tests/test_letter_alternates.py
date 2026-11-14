@@ -12,12 +12,12 @@ from fontTools.ttLib import TTFont
 from conftest import static_path
 
 # tag -> (base letter, glyphs ending in the tag, encoded letters the feature changes)
-# cv01 and cv05 also reach the ligature letter IJ (U+0132); IJ.cv01.cv05 is the glyph for both features on.
+# cv01 and cv05 also reach the ligature letter IJ (U+0132); cv03 and cv05 reach the barred Ǥ and Ɨ; IJ.cv01.cv05 is the glyph for both features on.
 FEATURES = {
     "cv01": ("J", 3, 3),
-    "cv03": ("G", 8, 8),
+    "cv03": ("G", 9, 9),
     "cv04": ("a", 28, 28),
-    "cv05": ("I", 18, 17),
+    "cv05": ("I", 19, 18),
 }
 LIGATURE = "\u0132"
 SHAPED = [("Thin", False), ("Regular", False), ("Black", False), ("Thin", True), ("Regular", True), ("Black", True)]
@@ -75,7 +75,9 @@ def test_feature_maps_exactly_its_letters(tag, weight, italic):
     assert swapped, tag
     # only the feature's own letter, with any accent, changes
     bases = {unicodedata.normalize("NFD", chr(cp))[0] for cp in swapped}
-    assert bases == ({letter, LIGATURE} if tag in ("cv01", "cv05") else {letter}), tag
+    # the barred letters Ǥ and Ɨ are drawn, not built from G and I, so they are their own base
+    drawn = {"cv03": {"\u01e4"}, "cv05": {"\u0197"}}.get(tag, set())
+    assert bases == ({letter, LIGATURE} if tag in ("cv01", "cv05") else {letter}) | drawn, tag
     # every alternate glyph is reachable from an encoded letter
     assert len(swapped) == count, (tag, len(swapped))
 

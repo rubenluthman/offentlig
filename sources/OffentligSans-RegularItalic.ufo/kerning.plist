@@ -648,6 +648,8 @@
       <real>-13.75</real>
       <key>rlinebelow</key>
       <real>-13.75</real>
+      <key>llinebelow.ss02</key>
+      <real>-13.75</real>
     </dict>
     <key>public.kern1.Ohorn</key>
     <dict>
@@ -1746,6 +1748,10 @@
       <real>32.0625</real>
       <key>istroke_caroncomb</key>
       <real>32.0625</real>
+      <key>gbreve.ss01</key>
+      <integer>-152</integer>
+      <key>gcaron.ss01</key>
+      <integer>-152</integer>
     </dict>
     <key>public.kern1.Z</key>
     <dict>
@@ -2003,6 +2009,8 @@
       <key>public.kern2.z</key>
       <real>6.875</real>
       <key>llinebelow</key>
+      <integer>0</integer>
+      <key>llinebelow.ss02</key>
       <integer>0</integer>
     </dict>
     <key>public.kern1.guilsinglleft</key>
@@ -2943,6 +2951,13 @@
       <key>parenright</key>
       <integer>0</integer>
     </dict>
+    <key>lcaron.ss02</key>
+    <dict>
+      <key>braceright</key>
+      <integer>0</integer>
+      <key>parenright</key>
+      <integer>0</integer>
+    </dict>
     <key>public.kern1.Gcv03</key>
     <dict>
       <key>public.kern2.0.tf</key>
@@ -3124,6 +3139,8 @@
       <integer>0</integer>
       <key>istroke_macroncomb</key>
       <integer>0</integer>
+      <key>llinebelow.ss02</key>
+      <integer>0</integer>
     </dict>
     <key>bracketleft</key>
     <dict>
@@ -3191,6 +3208,8 @@
       <integer>19</integer>
       <key>jcircumflex</key>
       <integer>27</integer>
+      <key>llinebelow.ss02</key>
+      <integer>8</integer>
     </dict>
     <key>bracketright</key>
     <dict>
@@ -3215,6 +3234,8 @@
       <key>idotbelow_caroncomb.ss03</key>
       <integer>0</integer>
       <key>istroke_caroncomb</key>
+      <integer>0</integer>
+      <key>llinebelow.ss02</key>
       <integer>0</integer>
     </dict>
     <key>braceleft</key>
@@ -3283,6 +3304,8 @@
       <integer>17</integer>
       <key>jcircumflex</key>
       <integer>28</integer>
+      <key>llinebelow.ss02</key>
+      <integer>8</integer>
     </dict>
     <key>slash</key>
     <dict>
@@ -3336,6 +3359,8 @@
       <key>idotbelow_caroncomb.ss03</key>
       <integer>0</integer>
       <key>istroke_caroncomb</key>
+      <integer>0</integer>
+      <key>llinebelow.ss02</key>
       <integer>0</integer>
     </dict>
     <key>icaron</key>
@@ -3646,12 +3671,16 @@
       <real>13.125</real>
       <key>rlinebelow</key>
       <real>13.125</real>
+      <key>llinebelow.ss02</key>
+      <real>13.125</real>
     </dict>
     <key>underscore</key>
     <dict>
       <key>llinebelow</key>
       <integer>0</integer>
       <key>rlinebelow</key>
+      <integer>0</integer>
+      <key>llinebelow.ss02</key>
       <integer>0</integer>
     </dict>
     <key>llinebelow</key>
@@ -4168,6 +4197,16 @@
       <real>13.125</real>
       <key>seven</key>
       <integer>0</integer>
+      <key>lacute.ss02</key>
+      <integer>13</integer>
+      <key>lcommaaccent.ss02.ss03</key>
+      <integer>13</integer>
+      <key>lcaron.ss02</key>
+      <integer>13</integer>
+      <key>ldotbelow.ss02.ss03</key>
+      <integer>13</integer>
+      <key>llinebelow.ss02</key>
+      <integer>13</integer>
     </dict>
     <key>idotbelow_circumflexcomb</key>
     <dict>
@@ -4822,6 +4861,16 @@
       <real>13.125</real>
       <key>i.ss03</key>
       <real>13.125</real>
+      <key>lacute.ss02</key>
+      <integer>13</integer>
+      <key>lcommaaccent.ss02.ss03</key>
+      <integer>13</integer>
+      <key>lcaron.ss02</key>
+      <integer>13</integer>
+      <key>ldotbelow.ss02.ss03</key>
+      <integer>13</integer>
+      <key>llinebelow.ss02</key>
+      <integer>13</integer>
     </dict>
     <key>istroke_brevecomb</key>
     <dict>
@@ -5097,6 +5146,16 @@
       <key>llinebelow</key>
       <integer>13</integer>
       <key>hlinebelow</key>
+      <integer>13</integer>
+      <key>lacute.ss02</key>
+      <integer>13</integer>
+      <key>lcommaaccent.ss02.ss03</key>
+      <integer>13</integer>
+      <key>lcaron.ss02</key>
+      <integer>13</integer>
+      <key>ldotbelow.ss02.ss03</key>
+      <integer>13</integer>
+      <key>llinebelow.ss02</key>
       <integer>13</integer>
     </dict>
     <key>jcircumflex</key>
@@ -6336,6 +6395,24 @@
     <dict>
       <key>idotlessdieresisacute</key>
       <integer>0</integer>
+    </dict>
+    <key>lslash.ss02</key>
+    <dict>
+      <key>public.kern2.a</key>
+      <real>-29.6875</real>
+    </dict>
+    <key>llinebelow.ss02</key>
+    <dict>
+      <key>public.kern2.j</key>
+      <integer>35</integer>
+      <key>j</key>
+      <integer>60</integer>
+      <key>j.ss03</key>
+      <integer>60</integer>
+      <key>parenright</key>
+      <integer>7</integer>
+      <key>braceright</key>
+      <integer>9</integer>
     </dict>
   </dict>
 </plist>

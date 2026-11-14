@@ -1,4 +1,4 @@
-"""The straight wedge on ď ľ ť Ľ keeps clear of a following l, b, h or k, kerning included, in every weight."""
+"""The straight wedge on ď ľ ť Ľ keeps clear of a following l, b, h or k, kerning included, in every weight, and so does the ľ of `ss02`."""
 import math
 
 import pytest
@@ -97,8 +97,17 @@ def _wedge(font, glyph_name):
     return _points(pen.contours, comp.x, comp.y)
 
 
+def shape(hb_font, text, features):
+    buf = hb.Buffer()
+    buf.add_str(text)
+    buf.guess_segment_properties()
+    hb.shape(hb_font, buf, features)
+    return [hb_font.glyph_to_string(i.codepoint) for i in buf.glyph_infos]
+
+
 @pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
-def test_wedge_clears_the_next_letter(weight, italic):
+@pytest.mark.parametrize("features", [{}, {"ss02": True}], ids=["default", "ss02"])
+def test_wedge_clears_the_next_letter(weight, italic, features):
     path = static_path(weight, italic)
     font = TTFont(path)
     glyph_set = font.getGlyphSet()
@@ -107,14 +116,17 @@ def test_wedge_clears_the_next_letter(weight, italic):
     hb_font = hb.Font(hb.Face(hb.Blob.from_file_path(str(path))))
     too_close = []
     for name, followers, minimum in CHECKS:
-        wedge = _wedge(font, name)
+        if features and name != "lcaron":
+            continue
+        letter = shape(hb_font, chr(cmap[name]), features)[0]
+        wedge = _wedge(font, letter)
         for follower in followers:
             if ord(follower) not in present:
                 continue
             buf = hb.Buffer()
             buf.add_str(chr(cmap[name]) + follower)
             buf.guess_segment_properties()
-            hb.shape(hb_font, buf)
+            hb.shape(hb_font, buf, features)
             first, second = buf.glyph_positions
             pen = _Flat(glyph_set)
             glyph_set[font.getGlyphName(buf.glyph_infos[1].codepoint)].draw(pen)

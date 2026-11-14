@@ -353,12 +353,32 @@ sub g by g.ss01;
 sub l by l.ss02;
 sub fl by fl.ss02;
 sub ldot by ldot.ss02;
+sub gacute by gacute.ss01;
+sub gbreve by gbreve.ss01;
+sub gcaron by gcaron.ss01;
+sub gcircumflex by gcircumflex.ss01;
+sub gcommaaccent by gcommaaccent.ss01;
+sub gdotaccent by gdotaccent.ss01;
+sub gmacron by gmacron.ss01;
+sub lacute by lacute.ss02;
+sub lcaron by lcaron.ss02;
+sub lcommaaccent by lcommaaccent.ss02;
+sub ldotbelow by ldotbelow.ss02;
+sub llinebelow by llinebelow.ss02;
+sub lslash by lslash.ss02;
 
 } salt;
 
 feature ss01 {
 # automatic
 sub g by g.ss01;
+sub gacute by gacute.ss01;
+sub gbreve by gbreve.ss01;
+sub gcaron by gcaron.ss01;
+sub gcircumflex by gcircumflex.ss01;
+sub gcommaaccent by gcommaaccent.ss01;
+sub gdotaccent by gdotaccent.ss01;
+sub gmacron by gmacron.ss01;
 featureNames {
     name "Alternate g";
 };
@@ -370,6 +390,12 @@ feature ss02 {
 sub l by l.ss02;
 sub fl by fl.ss02;
 sub ldot by ldot.ss02;
+sub lacute by lacute.ss02;
+sub lcaron by lcaron.ss02;
+sub lcommaaccent by lcommaaccent.ss02;
+sub ldotbelow by ldotbelow.ss02;
+sub llinebelow by llinebelow.ss02;
+sub lslash by lslash.ss02;
 featureNames {
     name "Alternate l";
 };
@@ -406,6 +432,7 @@ sub Gcircumflex by Gcircumflex.cv03;
 sub Gcommaaccent by Gcommaaccent.cv03;
 sub Gdotaccent by Gdotaccent.cv03;
 sub Gmacron by Gmacron.cv03;
+sub Gstroke by Gstroke.cv03;
 cvParameters {
     FeatUILabelNameID {
         name "G without spur";
@@ -484,6 +511,7 @@ sub Iogonek by Iogonek.cv05;
 sub Itilde by Itilde.cv05;
 sub IJ by IJ.cv05;
 sub IJ.cv01 by IJ.cv01.cv05;
+sub Istroke by Istroke.cv05;
 cvParameters {
     FeatUILabelNameID {
         name "I with serifs";
@@ -717,6 +745,10 @@ sub ydotaccent by ydotaccent.ss03;
 sub ydotbelow by ydotbelow.ss03;
 sub zdotaccent by zdotaccent.ss03;
 sub zdotbelow by zdotbelow.ss03;
+sub gcommaaccent.ss01 by gcommaaccent.ss01.ss03;
+sub gdotaccent.ss01 by gdotaccent.ss01.ss03;
+sub lcommaaccent.ss02 by lcommaaccent.ss02.ss03;
+sub ldotbelow.ss02 by ldotbelow.ss02.ss03;
 featureNames {
     name "Round dots";
 };

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Gstroke.cv03" format="2">
+  <advance width="1565"/>
+  <anchor x="773" y="0" name="bottom"/>
+  <anchor x="781" y="1446" name="top"/>
+  <outline>
+    <contour>
+      <point x="805" y="365" type="line"/>
+      <point x="1549.55" y="365" type="line"/>
+      <point x="1549.55" y="465" type="line"/>
+      <point x="805" y="465" type="line"/>
+    </contour>
+    <component base="G.cv03"/>
+  </outline>
+</glyph>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="lslash.ss02" format="2">
+  <advance width="732.6875"/>
+  <anchor x="278.0281527880006" y="0.0" name="bottom"/>
+  <anchor x="475.77015278800064" y="1488.0625" name="top"/>
+  <anchor x="712.0416527880006" y="1505.0625" name="topright"/>
+  <anchor x="569.9321527880006" y="1486.0" name="caron"/>
+  <outline>
+    <contour>
+      <point x="70.375" y="348.25" type="line"/>
+      <point x="659.21875" y="798.6875" type="line"/>
+      <point x="659.21875" y="960.3125" type="line"/>
+      <point x="70.375" y="518.6875" type="line"/>
+    </contour>
+    <component base="l.ss02" xOffset="63.97915278800065"/>
+  </outline>
+</glyph>

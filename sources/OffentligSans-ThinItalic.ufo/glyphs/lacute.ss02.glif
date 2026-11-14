@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="lacute.ss02" format="2">
+  <advance width="507"/>
+  <anchor x="188.261" y="0" name="bottom"/>
+  <anchor x="434.763" y="1867" name="top"/>
+  <anchor x="536" y="1492" name="topright"/>
+  <anchor x="420.769" y="1486" name="caron"/>
+  <outline>
+    <component base="l.ss02"/>
+    <component base="acutecomb" xOffset="237.217" yOffset="452"/>
+  </outline>
+</glyph>
