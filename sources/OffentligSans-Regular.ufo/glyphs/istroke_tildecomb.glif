@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="istroke_tildecomb" format="2">
-  <advance width="569.8125"/>
+  <advance width="559.0"/>
   <anchor x="341.65625" y="23.25" name="ogonek"/>
   <anchor x="276.4375" y="1372.625" name="top"/>
   <anchor x="280.59375" y="0" name="bottom"/>

@@ -2,7 +2,7 @@
 <glyph name="istroke_dieresiscomb.ss03" format="2">
   <advance width="571"/>
   <anchor x="363" y="18" name="ogonek"/>
-  <anchor x="438.5" y="1449.9" name="top"/>
+  <anchor x="417.5" y="1449.9" name="top"/>
   <anchor x="212" y="0" name="bottom"/>
   <outline>
     <contour>
@@ -12,6 +12,6 @@
       <point x="35.208" y="664" type="line"/>
     </contour>
     <component base="idotless"/>
-    <component base="dieresiscomb.ss03" xOffset="-149"/>
+    <component base="dieresiscomb.ss03" xOffset="-170"/>
   </outline>
 </glyph>

@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="idotbelow_tildecomb.ss03" format="2">
-  <advance width="600"/>
+  <advance width="571"/>
   <anchor x="363" y="18" name="ogonek"/>
-  <anchor x="442.2" y="1441" name="top"/>
+  <anchor x="421.2" y="1441" name="top"/>
   <anchor x="212" y="0" name="bottom"/>
   <outline>
     <component base="idotless"/>
-    <component base="tildecomb" xOffset="-151"/>
+    <component base="tildecomb" xOffset="-172"/>
     <component base="dotbelowcomb.ss03" xOffset="94"/>
   </outline>
 </glyph>

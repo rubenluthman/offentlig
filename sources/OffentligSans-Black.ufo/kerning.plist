@@ -3892,7 +3892,7 @@
       <key>braceright</key>
       <integer>64</integer>
       <key>question</key>
-      <integer>159</integer>
+      <integer>162</integer>
       <key>exclam</key>
       <integer>57</integer>
       <key>quotesingle</key>
@@ -3904,7 +3904,7 @@
       <key>quotedblright</key>
       <integer>58</integer>
       <key>question.ss03</key>
-      <integer>159</integer>
+      <integer>162</integer>
       <key>exclam.ss03</key>
       <integer>57</integer>
       <key>quoteright.ss03</key>
@@ -4028,7 +4028,7 @@
       <key>bracketright</key>
       <integer>0</integer>
       <key>braceright</key>
-      <integer>11</integer>
+      <integer>16</integer>
       <key>question</key>
       <integer>0</integer>
       <key>exclam</key>
