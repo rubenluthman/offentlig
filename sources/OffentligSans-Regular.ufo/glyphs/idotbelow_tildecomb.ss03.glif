@@ -3,7 +3,7 @@
   <advance width="559"/>
   <anchor x="341.65625" y="23.25" name="ogonek"/>
   <anchor x="276.4375" y="1372.625" name="top"/>
-  <anchor x="280.59375" y="0" name="bottom"/>
+  <anchor x="275" y="0" name="bottom"/>
   <outline>
     <component base="idotless" xOffset="33.0"/>
     <component base="tildecomb" xOffset="-62.9375"/>
