@@ -1374,66 +1374,46 @@
     <string>idotaccent.ss03.glif</string>
     <key>idotbelow</key>
     <string>idotbelow.glif</string>
-    <key>idotbelow.ss03</key>
-    <string>idotbelow.ss03.glif</string>
-    <key>idotless</key>
-    <string>idotless.glif</string>
-    <key>istroke.dotless</key>
-    <string>istroke.dotless.glif</string>
     <key>idotbelow.dotless</key>
     <string>idotbelow.dotless.glif</string>
     <key>idotbelow.dotless.ss03</key>
     <string>idotbelow.dotless.ss03.glif</string>
+    <key>idotbelow.ss03</key>
+    <string>idotbelow.ss03.glif</string>
     <key>idotbelow_acutecomb</key>
     <string>idotbelow_acutecomb.glif</string>
     <key>idotbelow_acutecomb.ss03</key>
     <string>idotbelow_acutecomb.ss03.glif</string>
-    <key>istroke_acutecomb</key>
-    <string>istroke_acutecomb.glif</string>
-    <key>idotbelow_gravecomb</key>
-    <string>idotbelow_gravecomb.glif</string>
-    <key>idotbelow_gravecomb.ss03</key>
-    <string>idotbelow_gravecomb.ss03.glif</string>
-    <key>istroke_gravecomb</key>
-    <string>istroke_gravecomb.glif</string>
-    <key>idotbelow_macroncomb</key>
-    <string>idotbelow_macroncomb.glif</string>
-    <key>idotbelow_macroncomb.ss03</key>
-    <string>idotbelow_macroncomb.ss03.glif</string>
-    <key>istroke_macroncomb</key>
-    <string>istroke_macroncomb.glif</string>
-    <key>idotbelow_tildecomb</key>
-    <string>idotbelow_tildecomb.glif</string>
-    <key>idotbelow_tildecomb.ss03</key>
-    <string>idotbelow_tildecomb.ss03.glif</string>
-    <key>istroke_tildecomb</key>
-    <string>istroke_tildecomb.glif</string>
-    <key>idotbelow_circumflexcomb</key>
-    <string>idotbelow_circumflexcomb.glif</string>
-    <key>idotbelow_circumflexcomb.ss03</key>
-    <string>idotbelow_circumflexcomb.ss03.glif</string>
-    <key>istroke_circumflexcomb</key>
-    <string>istroke_circumflexcomb.glif</string>
     <key>idotbelow_brevecomb</key>
     <string>idotbelow_brevecomb.glif</string>
     <key>idotbelow_brevecomb.ss03</key>
     <string>idotbelow_brevecomb.ss03.glif</string>
-    <key>istroke_brevecomb</key>
-    <string>istroke_brevecomb.glif</string>
-    <key>idotbelow_dieresiscomb</key>
-    <string>idotbelow_dieresiscomb.glif</string>
-    <key>idotbelow_dieresiscomb.ss03</key>
-    <string>idotbelow_dieresiscomb.ss03.glif</string>
-    <key>istroke_dieresiscomb</key>
-    <string>istroke_dieresiscomb.glif</string>
-    <key>istroke_dieresiscomb.ss03</key>
-    <string>istroke_dieresiscomb.ss03.glif</string>
     <key>idotbelow_caroncomb</key>
     <string>idotbelow_caroncomb.glif</string>
     <key>idotbelow_caroncomb.ss03</key>
     <string>idotbelow_caroncomb.ss03.glif</string>
-    <key>istroke_caroncomb</key>
-    <string>istroke_caroncomb.glif</string>
+    <key>idotbelow_circumflexcomb</key>
+    <string>idotbelow_circumflexcomb.glif</string>
+    <key>idotbelow_circumflexcomb.ss03</key>
+    <string>idotbelow_circumflexcomb.ss03.glif</string>
+    <key>idotbelow_dieresiscomb</key>
+    <string>idotbelow_dieresiscomb.glif</string>
+    <key>idotbelow_dieresiscomb.ss03</key>
+    <string>idotbelow_dieresiscomb.ss03.glif</string>
+    <key>idotbelow_gravecomb</key>
+    <string>idotbelow_gravecomb.glif</string>
+    <key>idotbelow_gravecomb.ss03</key>
+    <string>idotbelow_gravecomb.ss03.glif</string>
+    <key>idotbelow_macroncomb</key>
+    <string>idotbelow_macroncomb.glif</string>
+    <key>idotbelow_macroncomb.ss03</key>
+    <string>idotbelow_macroncomb.ss03.glif</string>
+    <key>idotbelow_tildecomb</key>
+    <string>idotbelow_tildecomb.glif</string>
+    <key>idotbelow_tildecomb.ss03</key>
+    <string>idotbelow_tildecomb.ss03.glif</string>
+    <key>idotless</key>
+    <string>idotless.glif</string>
     <key>idotlessdieresisacute</key>
     <string>idotlessdieresisacute.glif</string>
     <key>idotlessdieresisacute.ss03</key>
@@ -1462,8 +1442,28 @@
     <string>iogonek.ss03.glif</string>
     <key>istroke</key>
     <string>istroke.glif</string>
+    <key>istroke.dotless</key>
+    <string>istroke.dotless.glif</string>
     <key>istroke.ss03</key>
     <string>istroke.ss03.glif</string>
+    <key>istroke_acutecomb</key>
+    <string>istroke_acutecomb.glif</string>
+    <key>istroke_brevecomb</key>
+    <string>istroke_brevecomb.glif</string>
+    <key>istroke_caroncomb</key>
+    <string>istroke_caroncomb.glif</string>
+    <key>istroke_circumflexcomb</key>
+    <string>istroke_circumflexcomb.glif</string>
+    <key>istroke_dieresiscomb</key>
+    <string>istroke_dieresiscomb.glif</string>
+    <key>istroke_dieresiscomb.ss03</key>
+    <string>istroke_dieresiscomb.ss03.glif</string>
+    <key>istroke_gravecomb</key>
+    <string>istroke_gravecomb.glif</string>
+    <key>istroke_macroncomb</key>
+    <string>istroke_macroncomb.glif</string>
+    <key>istroke_tildecomb</key>
+    <string>istroke_tildecomb.glif</string>
     <key>itilde</key>
     <string>itilde.glif</string>
     <key>j</key>

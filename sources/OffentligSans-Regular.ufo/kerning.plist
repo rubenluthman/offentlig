@@ -4224,9 +4224,9 @@
       <key>parenright</key>
       <integer>0</integer>
       <key>bracketright</key>
-      <integer>0</integer>
+      <integer>2</integer>
       <key>braceright</key>
-      <integer>16</integer>
+      <integer>18</integer>
       <key>exclam</key>
       <integer>0</integer>
       <key>quotesingle</key>
@@ -4247,7 +4247,7 @@
       <key>bracketright</key>
       <integer>0</integer>
       <key>braceright</key>
-      <integer>4</integer>
+      <integer>7</integer>
       <key>question</key>
       <integer>0</integer>
       <key>exclam</key>
@@ -4276,7 +4276,7 @@
       <key>bracketright</key>
       <integer>0</integer>
       <key>braceright</key>
-      <integer>5</integer>
+      <integer>7</integer>
       <key>question</key>
       <integer>0</integer>
       <key>exclam</key>

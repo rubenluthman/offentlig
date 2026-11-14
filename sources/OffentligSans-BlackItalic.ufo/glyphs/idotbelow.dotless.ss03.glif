@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="idotbelow.dotless.ss03" format="2">
   <advance width="571"/>
-  <anchor x="385" y="1034" name="top"/>
+  <anchor x="364" y="1034" name="top"/>
   <anchor x="212" y="0" name="bottom"/>
   <anchor x="363" y="18" name="ogonek"/>
   <outline>

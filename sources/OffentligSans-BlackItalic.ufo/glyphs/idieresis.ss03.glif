@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="idieresis.ss03" format="2">
-  <advance width="600"/>
+  <advance width="571"/>
   <anchor x="363" y="18" name="ogonek"/>
-  <anchor x="438.5" y="1449.9" name="top"/>
+  <anchor x="417.5" y="1449.9" name="top"/>
   <outline>
     <component base="idotless"/>
-    <component base="dieresiscomb.ss03" xOffset="-149"/>
+    <component base="dieresiscomb.ss03" xOffset="-170"/>
   </outline>
 </glyph>
