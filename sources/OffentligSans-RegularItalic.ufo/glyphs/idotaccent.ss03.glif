@@ -5,6 +5,19 @@
   <anchor x="374.9" y="1436.5" name="top"/>
   <outline>
     <component base="idotless"/>
-    <component base="dotaccentcomb.ss03" xOffset="147.9375"/>
+    <contour>
+      <point x="360.6562" y="1254.5" type="curve" smooth="yes"/>
+      <point x="417.8537" y="1254.5"/>
+      <point x="464.2212" y="1300.8676"/>
+      <point x="464.2212" y="1358.065" type="curve" smooth="yes"/>
+      <point x="464.2212" y="1415.2624"/>
+      <point x="417.8537" y="1461.63"/>
+      <point x="360.6562" y="1461.63" type="curve" smooth="yes"/>
+      <point x="303.4588" y="1461.63"/>
+      <point x="257.0913" y="1415.2624"/>
+      <point x="257.0913" y="1358.065" type="curve" smooth="yes"/>
+      <point x="257.0913" y="1300.8676"/>
+      <point x="303.4588" y="1254.5"/>
+    </contour>
   </outline>
 </glyph>
