@@ -6,6 +6,20 @@
     <dict>
       <key>public.kern2.period</key>
       <real>-72.5</real>
+      <key>florin</key>
+      <integer>18</integer>
+      <key>AE</key>
+      <integer>-168</integer>
+      <key>x</key>
+      <integer>-36</integer>
+      <key>AEmacron</key>
+      <integer>-168</integer>
+      <key>AEacute</key>
+      <integer>-168</integer>
+      <key>xdieresis</key>
+      <integer>-36</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-36</integer>
     </dict>
     <key>ampersand</key>
     <dict>
@@ -24,6 +38,10 @@
       <real>-6.5625</real>
       <key>public.kern2.v</key>
       <real>-13.75</real>
+      <key>Lslash</key>
+      <integer>-14</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>dcroat</key>
     <dict>
@@ -413,6 +431,8 @@
     <dict>
       <key>public.kern2.a</key>
       <real>-29.6875</real>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>ohorn</key>
     <dict>
@@ -3269,6 +3289,8 @@
     <dict>
       <key>public.kern2.t</key>
       <real>-99.0625</real>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>two.numr</key>
     <dict>
@@ -3361,6 +3383,8 @@
       <key>odblgrave</key>
       <integer>-39</integer>
       <key>rdblgrave</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>dcaron</key>
@@ -3923,6 +3947,14 @@
       <integer>0</integer>
       <key>idieresis.ss03</key>
       <integer>0</integer>
+      <key>j</key>
+      <integer>16</integer>
+      <key>florin</key>
+      <integer>94</integer>
+      <key>jdotless</key>
+      <integer>16</integer>
+      <key>j.ss03</key>
+      <integer>16</integer>
     </dict>
     <key>bracketleft</key>
     <dict>
@@ -4000,6 +4032,8 @@
       <integer>0</integer>
       <key>idieresis.ss03</key>
       <integer>0</integer>
+      <key>florin</key>
+      <integer>121</integer>
     </dict>
     <key>bracketright</key>
     <dict>
@@ -4050,6 +4084,8 @@
       <key>istroke_dieresiscomb.ss03</key>
       <integer>0</integer>
       <key>idieresis.ss03</key>
+      <integer>0</integer>
+      <key>florin</key>
       <integer>0</integer>
     </dict>
     <key>braceleft</key>
@@ -4128,6 +4164,8 @@
       <integer>0</integer>
       <key>idieresis.ss03</key>
       <integer>0</integer>
+      <key>florin</key>
+      <integer>123</integer>
     </dict>
     <key>slash</key>
     <dict>
@@ -4190,6 +4228,8 @@
       <key>odblgrave</key>
       <integer>0</integer>
       <key>udblgrave</key>
+      <integer>0</integer>
+      <key>yen</key>
       <integer>0</integer>
     </dict>
     <key>public.kern1.i</key>
@@ -4850,6 +4890,8 @@
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>less</key>
@@ -5631,11 +5673,21 @@
       <integer>0</integer>
       <key>jcircumflex</key>
       <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>colon</key>
     <dict>
       <key>seven.osf</key>
       <real>-101.875</real>
+      <key>napostrophe</key>
+      <integer>-162</integer>
+      <key>quoteright</key>
+      <integer>-162</integer>
+      <key>quotedblright</key>
+      <integer>-162</integer>
     </dict>
     <key>q</key>
     <dict>
@@ -5657,6 +5709,8 @@
       <integer>13</integer>
       <key>idieresis.ss03</key>
       <integer>13</integer>
+      <key>florin</key>
+      <integer>24</integer>
     </dict>
     <key>underscore</key>
     <dict>
@@ -5666,6 +5720,8 @@
       <integer>0</integer>
       <key>llinebelow.ss02</key>
       <integer>0</integer>
+      <key>florin</key>
+      <integer>36</integer>
     </dict>
     <key>llinebelow</key>
     <dict>
@@ -5691,6 +5747,8 @@
       <integer>31</integer>
       <key>rlinebelow</key>
       <integer>52</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>tlinebelow</key>
     <dict>
@@ -5724,6 +5782,8 @@
       <integer>0</integer>
       <key>rlinebelow</key>
       <integer>83</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>three</key>
     <dict>
@@ -5741,6 +5801,8 @@
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>six</key>
     <dict>
@@ -5757,6 +5819,8 @@
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>idieresis</key>
@@ -6498,6 +6562,10 @@
       <integer>-23</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>colon.ss03</key>
     <dict>
@@ -9168,6 +9236,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>59</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>13</integer>
     </dict>
     <key>idotbelow_circumflexcomb.ss03</key>
     <dict>
@@ -9515,6 +9585,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>59</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>13</integer>
     </dict>
     <key>istroke_circumflexcomb</key>
     <dict>
@@ -9709,7 +9781,7 @@
       <key>equalsuperior</key>
       <integer>0</integer>
       <key>euro</key>
-      <integer>17</integer>
+      <integer>44</integer>
       <key>fiveeighths</key>
       <integer>0</integer>
       <key>foursuperior</key>
@@ -10074,7 +10146,7 @@
       <key>istroke_brevecomb</key>
       <integer>72</integer>
       <key>istroke_caroncomb</key>
-      <integer>97</integer>
+      <integer>96</integer>
       <key>istroke_dieresiscomb</key>
       <integer>13</integer>
       <key>istroke_gravecomb</key>
@@ -10125,6 +10197,10 @@
       <integer>59</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>72</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>96</integer>
     </dict>
     <key>idotbelow_macroncomb</key>
     <dict>
@@ -10199,9 +10275,9 @@
       <key>imacron</key>
       <integer>68</integer>
       <key>istroke_brevecomb</key>
-      <integer>114</integer>
+      <integer>113</integer>
       <key>istroke_caroncomb</key>
-      <integer>111</integer>
+      <integer>110</integer>
       <key>istroke_circumflexcomb</key>
       <integer>36</integer>
       <key>istroke_dieresiscomb</key>
@@ -10248,6 +10324,10 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>113</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>110</integer>
     </dict>
     <key>idotbelow_tildecomb</key>
     <dict>
@@ -10387,6 +10467,10 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>103</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>111</integer>
     </dict>
     <key>istroke_acutecomb</key>
     <dict>
@@ -10503,7 +10587,7 @@
       <key>equalsuperior</key>
       <integer>0</integer>
       <key>euro</key>
-      <integer>17</integer>
+      <integer>44</integer>
       <key>fraction</key>
       <integer>5</integer>
       <key>grave</key>
@@ -10547,7 +10631,7 @@
       <key>istroke_brevecomb</key>
       <integer>72</integer>
       <key>istroke_caroncomb</key>
-      <integer>97</integer>
+      <integer>96</integer>
       <key>istroke_dieresiscomb</key>
       <integer>13</integer>
       <key>istroke_gravecomb</key>
@@ -10696,15 +10780,15 @@
       <key>imacron</key>
       <integer>68</integer>
       <key>istroke_brevecomb</key>
-      <integer>114</integer>
+      <integer>113</integer>
       <key>istroke_caroncomb</key>
-      <integer>111</integer>
+      <integer>110</integer>
       <key>istroke_circumflexcomb</key>
       <integer>36</integer>
       <key>istroke_dieresiscomb</key>
       <integer>38</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>42</integer>
+      <integer>43</integer>
       <key>istroke_gravecomb</key>
       <integer>13</integer>
       <key>istroke_macroncomb</key>
@@ -10875,9 +10959,9 @@
       <key>istroke_circumflexcomb</key>
       <integer>13</integer>
       <key>istroke_dieresiscomb</key>
-      <integer>46</integer>
+      <integer>47</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>46</integer>
+      <integer>47</integer>
       <key>istroke_gravecomb</key>
       <integer>35</integer>
       <key>istroke_macroncomb</key>
@@ -11036,7 +11120,7 @@
       <key>istroke_brevecomb</key>
       <integer>72</integer>
       <key>istroke_caroncomb</key>
-      <integer>97</integer>
+      <integer>96</integer>
       <key>istroke_gravecomb</key>
       <integer>95</integer>
       <key>istroke_macroncomb</key>
@@ -11085,6 +11169,10 @@
       <integer>59</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>72</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>96</integer>
     </dict>
     <key>idotbelow_macroncomb.ss03</key>
     <dict>
@@ -11157,9 +11245,9 @@
       <key>imacron</key>
       <integer>68</integer>
       <key>istroke_brevecomb</key>
-      <integer>114</integer>
+      <integer>113</integer>
       <key>istroke_caroncomb</key>
-      <integer>111</integer>
+      <integer>110</integer>
       <key>istroke_circumflexcomb</key>
       <integer>36</integer>
       <key>istroke_dieresiscomb.ss03</key>
@@ -11206,6 +11294,10 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>113</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>110</integer>
     </dict>
     <key>idotbelow_tildecomb.ss03</key>
     <dict>
@@ -11298,7 +11390,7 @@
       <key>istroke_circumflexcomb</key>
       <integer>13</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>46</integer>
+      <integer>47</integer>
       <key>istroke_gravecomb</key>
       <integer>35</integer>
       <key>istroke_macroncomb</key>
@@ -11341,6 +11433,10 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>103</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>111</integer>
     </dict>
     <key>idotbelow_brevecomb</key>
     <dict>
@@ -11787,9 +11883,9 @@
       <key>istroke</key>
       <integer>13</integer>
       <key>istroke_brevecomb</key>
-      <integer>168</integer>
+      <integer>167</integer>
       <key>istroke_caroncomb</key>
-      <integer>169</integer>
+      <integer>168</integer>
       <key>istroke_circumflexcomb</key>
       <integer>13</integer>
       <key>istroke_dieresiscomb</key>
@@ -11928,6 +12024,10 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>40</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>167</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>168</integer>
     </dict>
     <key>idotbelow_brevecomb.ss03</key>
     <dict>
@@ -12368,13 +12468,13 @@
       <key>istroke.ss03</key>
       <integer>13</integer>
       <key>istroke_brevecomb</key>
-      <integer>168</integer>
+      <integer>167</integer>
       <key>istroke_caroncomb</key>
-      <integer>169</integer>
+      <integer>168</integer>
       <key>istroke_circumflexcomb</key>
       <integer>13</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>89</integer>
+      <integer>90</integer>
       <key>istroke_gravecomb</key>
       <integer>74</integer>
       <key>istroke_macroncomb</key>
@@ -12501,6 +12601,10 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>40</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>167</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>168</integer>
     </dict>
     <key>idotbelow_caroncomb</key>
     <dict>
@@ -12655,11 +12759,11 @@
       <key>imacron</key>
       <integer>112</integer>
       <key>istroke_brevecomb</key>
-      <integer>165</integer>
+      <integer>164</integer>
       <key>istroke_caroncomb</key>
       <integer>183</integer>
       <key>istroke_dieresiscomb</key>
-      <integer>95</integer>
+      <integer>96</integer>
       <key>istroke_gravecomb</key>
       <integer>93</integer>
       <key>istroke_macroncomb</key>
@@ -12756,6 +12860,10 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>38</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>164</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>183</integer>
     </dict>
     <key>idotbelow_caroncomb.ss03</key>
     <dict>
@@ -12906,11 +13014,11 @@
       <key>imacron</key>
       <integer>112</integer>
       <key>istroke_brevecomb</key>
-      <integer>165</integer>
+      <integer>164</integer>
       <key>istroke_caroncomb</key>
       <integer>183</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>90</integer>
+      <integer>91</integer>
       <key>istroke_gravecomb</key>
       <integer>93</integer>
       <key>istroke_macroncomb</key>
@@ -12999,6 +13107,10 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>38</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>164</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>183</integer>
     </dict>
     <key>idotbelow_dieresiscomb</key>
     <dict>
@@ -13123,7 +13235,7 @@
       <key>imacron</key>
       <integer>38</integer>
       <key>istroke_brevecomb</key>
-      <integer>87</integer>
+      <integer>86</integer>
       <key>istroke_caroncomb</key>
       <integer>95</integer>
       <key>istroke_circumflexcomb</key>
@@ -13206,6 +13318,10 @@
       <integer>0</integer>
       <key>parenleft</key>
       <integer>0</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>86</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>95</integer>
     </dict>
     <key>idotbelow_dieresiscomb.ss03</key>
     <dict>
@@ -13368,9 +13484,9 @@
       <key>imacron</key>
       <integer>43</integer>
       <key>istroke_brevecomb</key>
-      <integer>86</integer>
+      <integer>85</integer>
       <key>istroke_caroncomb</key>
-      <integer>90</integer>
+      <integer>89</integer>
       <key>istroke_macroncomb</key>
       <integer>43</integer>
       <key>istroke_tildecomb</key>
@@ -13425,6 +13541,10 @@
       <integer>0</integer>
       <key>parenleft</key>
       <integer>0</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>85</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>89</integer>
     </dict>
     <key>istroke_brevecomb</key>
     <dict>
@@ -13897,7 +14017,7 @@
       <key>equalsuperior</key>
       <integer>45</integer>
       <key>euro</key>
-      <integer>17</integer>
+      <integer>44</integer>
       <key>fivesuperior</key>
       <integer>0</integer>
       <key>fraction</key>
@@ -13999,9 +14119,9 @@
       <key>istroke.ss03</key>
       <integer>13</integer>
       <key>istroke_brevecomb</key>
-      <integer>167</integer>
+      <integer>166</integer>
       <key>istroke_caroncomb</key>
-      <integer>168</integer>
+      <integer>167</integer>
       <key>istroke_circumflexcomb</key>
       <integer>13</integer>
       <key>istroke_dieresiscomb</key>
@@ -14282,7 +14402,7 @@
       <key>equalsuperior</key>
       <integer>41</integer>
       <key>euro</key>
-      <integer>17</integer>
+      <integer>44</integer>
       <key>fivesuperior</key>
       <integer>0</integer>
       <key>fraction</key>
@@ -14338,13 +14458,13 @@
       <key>imacron</key>
       <integer>112</integer>
       <key>istroke_brevecomb</key>
-      <integer>165</integer>
+      <integer>164</integer>
       <key>istroke_caroncomb</key>
       <integer>183</integer>
       <key>istroke_dieresiscomb</key>
-      <integer>95</integer>
+      <integer>96</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>90</integer>
+      <integer>91</integer>
       <key>istroke_gravecomb</key>
       <integer>93</integer>
       <key>istroke_macroncomb</key>
@@ -14561,7 +14681,7 @@
       <key>imacron</key>
       <integer>38</integer>
       <key>istroke_brevecomb</key>
-      <integer>87</integer>
+      <integer>86</integer>
       <key>istroke_caroncomb</key>
       <integer>95</integer>
       <key>istroke_circumflexcomb</key>
@@ -14644,6 +14764,10 @@
       <integer>0</integer>
       <key>parenleft</key>
       <integer>0</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>86</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>95</integer>
     </dict>
     <key>istroke_dieresiscomb.ss03</key>
     <dict>
@@ -14804,9 +14928,9 @@
       <key>imacron</key>
       <integer>43</integer>
       <key>istroke_brevecomb</key>
-      <integer>86</integer>
+      <integer>85</integer>
       <key>istroke_caroncomb</key>
-      <integer>90</integer>
+      <integer>89</integer>
       <key>istroke_macroncomb</key>
       <integer>43</integer>
       <key>istroke_tildecomb</key>
@@ -14861,6 +14985,10 @@
       <integer>0</integer>
       <key>parenleft</key>
       <integer>0</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>85</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>89</integer>
     </dict>
     <key>jcircumflex</key>
     <dict>
@@ -15366,6 +15494,8 @@
       <key>verticallinemod</key>
       <integer>0</integer>
       <key>yen</key>
+      <integer>0</integer>
+      <key>Lslash</key>
       <integer>0</integer>
     </dict>
     <key>question.ss03</key>
@@ -17882,6 +18012,8 @@
       <integer>-33</integer>
       <key>idieresis</key>
       <integer>-33</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>Zacute</key>
     <dict>
@@ -17919,6 +18051,8 @@
       <integer>-30</integer>
       <key>udblgrave</key>
       <integer>-7</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>Zcaron</key>
     <dict>
@@ -17956,6 +18090,8 @@
       <integer>-30</integer>
       <key>udblgrave</key>
       <integer>-7</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>Zcircumflex</key>
     <dict>
@@ -17991,6 +18127,8 @@
       <integer>-30</integer>
       <key>udblgrave</key>
       <integer>-7</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>Zlinebelow</key>
     <dict>
@@ -18026,6 +18164,8 @@
       <integer>-30</integer>
       <key>udblgrave</key>
       <integer>-7</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>ihookabove</key>
     <dict>
@@ -18116,6 +18256,8 @@
       <integer>-7</integer>
       <key>idotbelow_brevecomb</key>
       <integer>7</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>Zdotbelow.ss03</key>
     <dict>
@@ -18147,6 +18289,8 @@
       <integer>-7</integer>
       <key>idotbelow_brevecomb</key>
       <integer>7</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>quoteright.ss03</key>
     <dict>
@@ -18242,6 +18386,12 @@
       <integer>-13</integer>
       <key>idotbelow_brevecomb</key>
       <integer>-26</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>E</key>
     <dict>
@@ -18285,6 +18435,12 @@
       <integer>-26</integer>
       <key>idieresis</key>
       <integer>-26</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>AE</key>
     <dict>
@@ -18316,6 +18472,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-80</integer>
+      <key>AEmacron</key>
+      <integer>-80</integer>
+      <key>AEacute</key>
+      <integer>-80</integer>
     </dict>
     <key>Egrave</key>
     <dict>
@@ -18353,6 +18515,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Eacute</key>
     <dict>
@@ -18394,6 +18562,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Ecircumflex</key>
     <dict>
@@ -18431,6 +18605,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Emacron</key>
     <dict>
@@ -18470,6 +18650,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Ebreve</key>
     <dict>
@@ -18509,6 +18695,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Eogonek</key>
     <dict>
@@ -18519,11 +18711,11 @@
       <key>istroke_dieresiscomb.ss03</key>
       <integer>-26</integer>
       <key>AE</key>
-      <integer>-159</integer>
+      <integer>-67</integer>
       <key>AEacute</key>
-      <integer>-159</integer>
+      <integer>-67</integer>
       <key>AEmacron</key>
-      <integer>-159</integer>
+      <integer>-67</integer>
       <key>adblgrave</key>
       <integer>-13</integer>
       <key>adblgrave.cv04</key>
@@ -18631,6 +18823,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>OE</key>
     <dict>
@@ -18668,6 +18866,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-80</integer>
+      <key>AEmacron</key>
+      <integer>-80</integer>
+      <key>AEacute</key>
+      <integer>-80</integer>
     </dict>
     <key>AEmacron</key>
     <dict>
@@ -18699,6 +18903,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-80</integer>
+      <key>AEmacron</key>
+      <integer>-80</integer>
+      <key>AEacute</key>
+      <integer>-80</integer>
     </dict>
     <key>AEacute</key>
     <dict>
@@ -18732,6 +18942,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-80</integer>
+      <key>AEmacron</key>
+      <integer>-80</integer>
+      <key>AEacute</key>
+      <integer>-80</integer>
     </dict>
     <key>Edblgrave</key>
     <dict>
@@ -18769,6 +18985,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Einvertedbreve</key>
     <dict>
@@ -18806,6 +19028,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Ecedilla</key>
     <dict>
@@ -18843,6 +19071,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Emacronacute</key>
     <dict>
@@ -18882,6 +19116,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Ecedillabreve</key>
     <dict>
@@ -18921,6 +19161,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Ehookabove</key>
     <dict>
@@ -18958,6 +19204,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Etilde</key>
     <dict>
@@ -18997,6 +19249,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Ecircumflexacute</key>
     <dict>
@@ -19040,6 +19298,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Ecircumflexgrave</key>
     <dict>
@@ -19091,6 +19355,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Ecircumflexhookabove</key>
     <dict>
@@ -19130,6 +19400,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Ecircumflextilde</key>
     <dict>
@@ -19167,6 +19443,12 @@
       <integer>-13</integer>
       <key>udblgrave</key>
       <integer>-13</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Edotaccent.ss03</key>
     <dict>
@@ -19200,6 +19482,12 @@
       <integer>-13</integer>
       <key>idotbelow_brevecomb</key>
       <integer>-26</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Edotbelow.ss03</key>
     <dict>
@@ -19233,6 +19521,12 @@
       <integer>-13</integer>
       <key>idotbelow_brevecomb</key>
       <integer>-26</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Ecircumflexdotbelow.ss03</key>
     <dict>
@@ -19266,6 +19560,12 @@
       <integer>-13</integer>
       <key>idotbelow_brevecomb</key>
       <integer>-26</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>lslash.ss02</key>
     <dict>
@@ -19291,51 +19591,107 @@
     <dict>
       <key>Idblgrave</key>
       <integer>0</integer>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
     </dict>
     <key>Abreve</key>
     <dict>
       <key>Idblgrave</key>
       <integer>0</integer>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
     </dict>
     <key>Abreveacute</key>
     <dict>
       <key>Idblgrave</key>
       <integer>0</integer>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
     </dict>
     <key>Abrevedotbelow</key>
     <dict>
       <key>Idblgrave</key>
       <integer>0</integer>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
     </dict>
     <key>Abrevedotbelow.ss03</key>
     <dict>
       <key>Idblgrave</key>
       <integer>0</integer>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
     </dict>
     <key>Abrevegrave</key>
     <dict>
       <key>Idblgrave</key>
       <integer>0</integer>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
     </dict>
     <key>Abrevehookabove</key>
     <dict>
       <key>Idblgrave</key>
       <integer>0</integer>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
     </dict>
     <key>Abrevetilde</key>
     <dict>
       <key>Idblgrave</key>
       <integer>0</integer>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
     </dict>
     <key>Acaron</key>
     <dict>
       <key>Idblgrave</key>
       <integer>0</integer>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
     </dict>
     <key>Acircumflexacute</key>
     <dict>
       <key>Idblgrave</key>
       <integer>0</integer>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
     </dict>
     <key>Acircumflexgrave</key>
     <dict>
@@ -19343,21 +19699,41 @@
       <integer>0</integer>
       <key>hdieresis</key>
       <integer>-26</integer>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
     </dict>
     <key>Acircumflexhookabove</key>
     <dict>
       <key>Idblgrave</key>
       <integer>0</integer>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
     </dict>
     <key>Adieresis</key>
     <dict>
       <key>Idblgrave</key>
       <integer>0</integer>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
     </dict>
     <key>Adieresismacron</key>
     <dict>
       <key>Idblgrave</key>
       <integer>0</integer>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
     </dict>
     <key>Aogonek</key>
     <dict>
@@ -19429,6 +19805,12 @@
       <integer>-91</integer>
       <key>ytilde</key>
       <integer>-91</integer>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
     </dict>
     <key>B</key>
     <dict>
@@ -19452,6 +19834,8 @@
       <integer>0</integer>
       <key>idieresis.ss03</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>Bdotaccent</key>
     <dict>
@@ -19461,6 +19845,8 @@
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>Bdotaccent.ss03</key>
     <dict>
@@ -19469,6 +19855,8 @@
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>Blinebelow</key>
@@ -19480,6 +19868,8 @@
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>Cacute</key>
@@ -19576,6 +19966,12 @@
       <integer>-13</integer>
       <key>idotbelow_brevecomb.ss03</key>
       <integer>-26</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Edieresis</key>
     <dict>
@@ -19609,6 +20005,12 @@
       <integer>-13</integer>
       <key>idotbelow_brevecomb.ss03</key>
       <integer>-26</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Edotaccent</key>
     <dict>
@@ -19638,6 +20040,12 @@
       <integer>-13</integer>
       <key>idotbelow_brevecomb.ss03</key>
       <integer>-26</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Edotbelow</key>
     <dict>
@@ -19667,6 +20075,12 @@
       <integer>-13</integer>
       <key>idotbelow_brevecomb.ss03</key>
       <integer>-26</integer>
+      <key>AE</key>
+      <integer>-79</integer>
+      <key>AEmacron</key>
+      <integer>-79</integer>
+      <key>AEacute</key>
+      <integer>-79</integer>
     </dict>
     <key>Eng</key>
     <dict>
@@ -19684,6 +20098,8 @@
       <integer>0</integer>
       <key>odblgrave</key>
       <integer>-14</integer>
+      <key>florin</key>
+      <integer>0</integer>
     </dict>
     <key>Ezh</key>
     <dict>
@@ -19726,6 +20142,8 @@
       <key>odblgrave</key>
       <integer>0</integer>
       <key>udblgrave</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>Ezhcaron</key>
@@ -19771,6 +20189,8 @@
       <key>odblgrave</key>
       <integer>0</integer>
       <key>udblgrave</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>F</key>
@@ -19958,6 +20378,10 @@
       <integer>0</integer>
       <key>jcircumflex</key>
       <integer>54</integer>
+      <key>circumflex</key>
+      <integer>0</integer>
+      <key>rupeeIndian</key>
+      <integer>0</integer>
     </dict>
     <key>Hbrevebelow</key>
     <dict>
@@ -20967,6 +21391,40 @@
       <integer>0</integer>
       <key>odblgrave</key>
       <integer>-14</integer>
+      <key>Lslash</key>
+      <integer>0</integer>
+      <key>t</key>
+      <integer>-10</integer>
+      <key>tbar</key>
+      <integer>-10</integer>
+      <key>fi</key>
+      <integer>-10</integer>
+      <key>fl</key>
+      <integer>-10</integer>
+      <key>fi.ss03</key>
+      <integer>-10</integer>
+      <key>tcedilla</key>
+      <integer>-10</integer>
+      <key>tcaron</key>
+      <integer>-10</integer>
+      <key>tcommaaccent</key>
+      <integer>-10</integer>
+      <key>tdotaccent</key>
+      <integer>-10</integer>
+      <key>tdotbelow</key>
+      <integer>-10</integer>
+      <key>tlinebelow</key>
+      <integer>-10</integer>
+      <key>tdieresis</key>
+      <integer>-10</integer>
+      <key>tcommaaccent.ss03</key>
+      <integer>-10</integer>
+      <key>tdotaccent.ss03</key>
+      <integer>-10</integer>
+      <key>tdotbelow.ss03</key>
+      <integer>-10</integer>
+      <key>tdieresis.ss03</key>
+      <integer>-10</integer>
     </dict>
     <key>Itilde</key>
     <dict>
@@ -21311,6 +21769,8 @@
     <dict>
       <key>llinebelow</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>M</key>
     <dict>
@@ -21598,6 +22058,8 @@
     <dict>
       <key>idotlessdieresisacute</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>Ohorndotbelow</key>
     <dict>
@@ -21835,6 +22297,12 @@
       <integer>38</integer>
       <key>jcircumflex</key>
       <integer>0</integer>
+      <key>periodcentered</key>
+      <integer>-149</integer>
+      <key>euro</key>
+      <integer>0</integer>
+      <key>periodcentered.ss03</key>
+      <integer>-173</integer>
     </dict>
     <key>Pacute</key>
     <dict>
@@ -21852,6 +22320,12 @@
       <integer>38</integer>
       <key>jcircumflex</key>
       <integer>0</integer>
+      <key>periodcentered</key>
+      <integer>-149</integer>
+      <key>euro</key>
+      <integer>0</integer>
+      <key>periodcentered.ss03</key>
+      <integer>-173</integer>
     </dict>
     <key>Pdotaccent</key>
     <dict>
@@ -21862,6 +22336,10 @@
       <key>istroke_circumflexcomb</key>
       <integer>38</integer>
       <key>jcircumflex</key>
+      <integer>0</integer>
+      <key>periodcentered</key>
+      <integer>-149</integer>
+      <key>euro</key>
       <integer>0</integer>
     </dict>
     <key>Pdotaccent.ss03</key>
@@ -21874,6 +22352,10 @@
       <integer>38</integer>
       <key>jcircumflex</key>
       <integer>0</integer>
+      <key>euro</key>
+      <integer>0</integer>
+      <key>periodcentered.ss03</key>
+      <integer>-173</integer>
     </dict>
     <key>R</key>
     <dict>
@@ -22009,6 +22491,8 @@
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>Sacute</key>
     <dict>
@@ -22021,6 +22505,8 @@
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>Scaron</key>
@@ -22035,6 +22521,8 @@
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>Scedilla</key>
     <dict>
@@ -22045,6 +22533,8 @@
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>Schwa</key>
@@ -22070,6 +22560,8 @@
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>Scommaaccent</key>
     <dict>
@@ -22078,6 +22570,8 @@
       <key>idotbelow_circumflexcomb</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>Scommaaccent.ss03</key>
@@ -22088,6 +22582,8 @@
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>Sdotaccent</key>
     <dict>
@@ -22096,6 +22592,8 @@
       <key>idotbelow_circumflexcomb</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>Sdotaccent.ss03</key>
@@ -22106,6 +22604,8 @@
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>Sdotbelow</key>
     <dict>
@@ -22114,6 +22614,8 @@
       <key>idotbelow_circumflexcomb</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>Sdotbelow.ss03</key>
@@ -22124,10 +22626,16 @@
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>Tcaron</key>
     <dict>
       <key>Idblgrave</key>
+      <integer>0</integer>
+      <key>hbar</key>
+      <integer>-47</integer>
+      <key>yen</key>
       <integer>0</integer>
     </dict>
     <key>U</key>
@@ -22976,25 +23484,43 @@
     <dict>
       <key>Idblgrave</key>
       <integer>0</integer>
+      <key>yen</key>
+      <integer>0</integer>
+      <key>dotaccent</key>
+      <integer>0</integer>
     </dict>
     <key>Ydieresis</key>
     <dict>
       <key>Idblgrave</key>
+      <integer>0</integer>
+      <key>yen</key>
+      <integer>0</integer>
+      <key>dotaccent</key>
       <integer>0</integer>
     </dict>
     <key>Ydieresis.ss03</key>
     <dict>
       <key>Idblgrave</key>
       <integer>0</integer>
+      <key>yen</key>
+      <integer>0</integer>
     </dict>
     <key>Ymacron</key>
     <dict>
       <key>Idblgrave</key>
       <integer>0</integer>
+      <key>yen</key>
+      <integer>0</integer>
+      <key>dotaccent</key>
+      <integer>0</integer>
     </dict>
     <key>Ytilde</key>
     <dict>
       <key>Idblgrave</key>
+      <integer>0</integer>
+      <key>yen</key>
+      <integer>0</integer>
+      <key>dotaccent</key>
       <integer>0</integer>
     </dict>
     <key>Zdotaccent</key>
@@ -23023,6 +23549,8 @@
       <integer>-7</integer>
       <key>idotbelow_brevecomb.ss03</key>
       <integer>7</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>Zdotbelow</key>
     <dict>
@@ -23050,6 +23578,8 @@
       <integer>-7</integer>
       <key>idotbelow_brevecomb.ss03</key>
       <integer>7</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>aacute</key>
     <dict>
@@ -24132,6 +24662,20 @@
       <integer>0</integer>
       <key>udblgrave</key>
       <integer>0</integer>
+      <key>grave</key>
+      <integer>16</integer>
+      <key>dotaccent</key>
+      <integer>18</integer>
+      <key>rupeeIndian</key>
+      <integer>0</integer>
+      <key>yen</key>
+      <integer>17</integer>
+      <key>parenright</key>
+      <integer>0</integer>
+      <key>Y</key>
+      <integer>0</integer>
+      <key>dieresis</key>
+      <integer>0</integer>
     </dict>
     <key>adieresis</key>
     <dict>
@@ -24559,6 +25103,8 @@
       <integer>0</integer>
       <key>idieresis.ss03</key>
       <integer>0</integer>
+      <key>florin</key>
+      <integer>0</integer>
     </dict>
     <key>bitcoin</key>
     <dict>
@@ -24572,6 +25118,8 @@
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>blinebelow</key>
     <dict>
@@ -24579,6 +25127,10 @@
       <integer>0</integer>
       <key>rlinebelow</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>breve</key>
     <dict>
@@ -24656,6 +25208,18 @@
       <integer>0</integer>
       <key>dotaccent.ss03</key>
       <integer>8</integer>
+      <key>dieresis</key>
+      <integer>0</integer>
+      <key>macron</key>
+      <integer>0</integer>
+      <key>caron</key>
+      <integer>0</integer>
+      <key>breve</key>
+      <integer>0</integer>
+      <key>dotaccent</key>
+      <integer>0</integer>
+      <key>yen</key>
+      <integer>0</integer>
     </dict>
     <key>brokenbar</key>
     <dict>
@@ -24676,6 +25240,8 @@
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
+      <integer>0</integer>
+      <key>florin</key>
       <integer>0</integer>
     </dict>
     <key>cacute</key>
@@ -24790,6 +25356,10 @@
       <integer>-3</integer>
       <key>yen</key>
       <integer>-14</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>caron</key>
     <dict>
@@ -24865,6 +25435,20 @@
       <integer>0</integer>
       <key>dotaccent.ss03</key>
       <integer>6</integer>
+      <key>dieresis</key>
+      <integer>0</integer>
+      <key>caron</key>
+      <integer>0</integer>
+      <key>dotaccent</key>
+      <integer>0</integer>
+      <key>ring</key>
+      <integer>0</integer>
+      <key>rupeeIndian</key>
+      <integer>0</integer>
+      <key>yen</key>
+      <integer>0</integer>
+      <key>dieresis.ss03</key>
+      <integer>0</integer>
     </dict>
     <key>ccaron</key>
     <dict>
@@ -24938,6 +25522,10 @@
       <integer>0</integer>
       <key>rdblgrave</key>
       <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>ccircumflex</key>
     <dict>
@@ -24975,10 +25563,18 @@
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
       <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>cdotaccent</key>
     <dict>
       <key>idblgrave</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>cedilla</key>
@@ -24991,6 +25587,18 @@
       <integer>53</integer>
       <key>rlinebelow</key>
       <integer>64</integer>
+      <key>j</key>
+      <integer>53</integer>
+      <key>florin</key>
+      <integer>135</integer>
+      <key>jdotless</key>
+      <integer>53</integer>
+      <key>j.ss03</key>
+      <integer>53</integer>
+      <key>jcircumflex</key>
+      <integer>53</integer>
+      <key>jdotlesscaron</key>
+      <integer>53</integer>
     </dict>
     <key>circumflex</key>
     <dict>
@@ -25008,6 +25616,14 @@
       <integer>103</integer>
       <key>jcircumflex</key>
       <integer>71</integer>
+      <key>acute</key>
+      <integer>19</integer>
+      <key>Hbar</key>
+      <integer>0</integer>
+      <key>circumflex</key>
+      <integer>18</integer>
+      <key>hungarumlaut</key>
+      <integer>18</integer>
     </dict>
     <key>commaturnedmod</key>
     <dict>
@@ -25365,6 +25981,54 @@
       <integer>91</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>101</integer>
+      <key>dieresis</key>
+      <integer>19</integer>
+      <key>macron</key>
+      <integer>0</integer>
+      <key>caron</key>
+      <integer>18</integer>
+      <key>breve</key>
+      <integer>0</integer>
+      <key>dotaccent</key>
+      <integer>20</integer>
+      <key>ring</key>
+      <integer>11</integer>
+      <key>tilde</key>
+      <integer>0</integer>
+      <key>rupeeIndian</key>
+      <integer>0</integer>
+      <key>trademark</key>
+      <integer>0</integer>
+      <key>yen</key>
+      <integer>0</integer>
+      <key>parenright</key>
+      <integer>0</integer>
+      <key>Y</key>
+      <integer>0</integer>
+      <key>grave</key>
+      <integer>0</integer>
+      <key>acute</key>
+      <integer>0</integer>
+      <key>hungarumlaut</key>
+      <integer>0</integer>
+      <key>Yacute</key>
+      <integer>0</integer>
+      <key>Ycircumflex</key>
+      <integer>0</integer>
+      <key>Ydieresis</key>
+      <integer>0</integer>
+      <key>Ymacron</key>
+      <integer>0</integer>
+      <key>Ydotaccent</key>
+      <integer>0</integer>
+      <key>Ygrave</key>
+      <integer>0</integer>
+      <key>Ydotbelow</key>
+      <integer>0</integer>
+      <key>Yhookabove</key>
+      <integer>0</integer>
+      <key>Ytilde</key>
+      <integer>0</integer>
     </dict>
     <key>dieresis.ss03</key>
     <dict>
@@ -25407,9 +26071,9 @@
       <key>breve</key>
       <integer>0</integer>
       <key>dieresis.ss03</key>
-      <integer>12</integer>
+      <integer>30</integer>
       <key>dotaccent.ss03</key>
-      <integer>9</integer>
+      <integer>29</integer>
       <key>macron</key>
       <integer>3</integer>
       <key>ring</key>
@@ -25422,6 +26086,10 @@
       <integer>91</integer>
       <key>idotbelow_caroncomb</key>
       <integer>96</integer>
+      <key>caron</key>
+      <integer>14</integer>
+      <key>trademark</key>
+      <integer>11</integer>
     </dict>
     <key>divisionslash</key>
     <dict>
@@ -25679,6 +26347,52 @@
       <integer>91</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>101</integer>
+      <key>grave</key>
+      <integer>19</integer>
+      <key>dieresis</key>
+      <integer>20</integer>
+      <key>macron</key>
+      <integer>0</integer>
+      <key>caron</key>
+      <integer>18</integer>
+      <key>breve</key>
+      <integer>0</integer>
+      <key>dotaccent</key>
+      <integer>20</integer>
+      <key>ring</key>
+      <integer>11</integer>
+      <key>rupeeIndian</key>
+      <integer>0</integer>
+      <key>yen</key>
+      <integer>20</integer>
+      <key>Y</key>
+      <integer>0</integer>
+      <key>parenright</key>
+      <integer>0</integer>
+      <key>acute</key>
+      <integer>0</integer>
+      <key>hungarumlaut</key>
+      <integer>0</integer>
+      <key>trademark</key>
+      <integer>0</integer>
+      <key>Yacute</key>
+      <integer>0</integer>
+      <key>Ycircumflex</key>
+      <integer>0</integer>
+      <key>Ydieresis</key>
+      <integer>0</integer>
+      <key>Ymacron</key>
+      <integer>0</integer>
+      <key>Ydotaccent</key>
+      <integer>0</integer>
+      <key>Ygrave</key>
+      <integer>0</integer>
+      <key>Ydotbelow</key>
+      <integer>0</integer>
+      <key>Yhookabove</key>
+      <integer>0</integer>
+      <key>Ytilde</key>
+      <integer>0</integer>
     </dict>
     <key>dotaccent.ss03</key>
     <dict>
@@ -25739,13 +26453,13 @@
       <key>breve</key>
       <integer>8</integer>
       <key>caron</key>
-      <integer>9</integer>
+      <integer>25</integer>
       <key>dieresis.ss03</key>
-      <integer>10</integer>
+      <integer>30</integer>
       <key>dotaccent.ss03</key>
-      <integer>13</integer>
+      <integer>33</integer>
       <key>ring</key>
-      <integer>7</integer>
+      <integer>18</integer>
       <key>rupeeIndian</key>
       <integer>7</integer>
       <key>trademark</key>
@@ -25754,6 +26468,8 @@
       <integer>118</integer>
       <key>idotbelow_caroncomb</key>
       <integer>113</integer>
+      <key>macron</key>
+      <integer>11</integer>
     </dict>
     <key>eacute</key>
     <dict>
@@ -25827,6 +26543,8 @@
       <integer>0</integer>
       <key>rdblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>ebreve</key>
     <dict>
@@ -25859,6 +26577,8 @@
       <key>idblgrave</key>
       <integer>0</integer>
       <key>rdblgrave</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>ecaron</key>
@@ -25934,10 +26654,14 @@
       <integer>0</integer>
       <key>rdblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>ecircumflex</key>
     <dict>
       <key>idotlessdieresisacute</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>ecircumflexacute</key>
@@ -26096,10 +26820,14 @@
       <integer>-46</integer>
       <key>udblgrave</key>
       <integer>-3</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>ecircumflexdotbelow</key>
     <dict>
       <key>idotlessdieresisacute</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>ecircumflexgrave</key>
@@ -26230,6 +26958,8 @@
       <integer>-3</integer>
       <key>yen</key>
       <integer>-14</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>ecircumflexhookabove</key>
     <dict>
@@ -26317,12 +27047,16 @@
       <integer>0</integer>
       <key>rdblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>ecircumflextilde</key>
     <dict>
       <key>Idblgrave</key>
       <integer>-14</integer>
       <key>idotlessdieresisacute</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>edieresis</key>
@@ -26391,6 +27125,8 @@
       <integer>0</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>edieresis.ss03</key>
     <dict>
@@ -26416,15 +27152,21 @@
       <integer>-125</integer>
       <key>idblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>edotaccent</key>
     <dict>
       <key>idblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>ehookabove</key>
     <dict>
       <key>idblgrave</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>eight.subs</key>
@@ -26433,6 +27175,8 @@
       <integer>0</integer>
       <key>rlinebelow</key>
       <integer>0</integer>
+      <key>florin</key>
+      <integer>58</integer>
     </dict>
     <key>eightsuperior</key>
     <dict>
@@ -26485,6 +27229,8 @@
       <integer>0</integer>
       <key>idotlessdieresisacute</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>emacron</key>
     <dict>
@@ -26517,6 +27263,8 @@
       <key>idblgrave</key>
       <integer>0</integer>
       <key>idotlessdieresisacute</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>emacronacute</key>
@@ -26566,6 +27314,8 @@
       <key>idblgrave</key>
       <integer>0</integer>
       <key>idotlessdieresisacute</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>emptyset</key>
@@ -26626,6 +27376,58 @@
       <integer>0</integer>
       <key>idotlessdieresisacute.ss03</key>
       <integer>0</integer>
+      <key>T</key>
+      <integer>-157</integer>
+      <key>Tbar</key>
+      <integer>-157</integer>
+      <key>Y</key>
+      <integer>-125</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Tcedilla</key>
+      <integer>-157</integer>
+      <key>Tcaron</key>
+      <integer>-157</integer>
+      <key>Tcommaaccent</key>
+      <integer>-157</integer>
+      <key>Tdotaccent</key>
+      <integer>-157</integer>
+      <key>Tdotbelow</key>
+      <integer>-157</integer>
+      <key>Tlinebelow</key>
+      <integer>-157</integer>
+      <key>Tcommaaccent.ss03</key>
+      <integer>-157</integer>
+      <key>Tdotaccent.ss03</key>
+      <integer>-157</integer>
+      <key>Tdotbelow.ss03</key>
+      <integer>-157</integer>
+      <key>Yacute</key>
+      <integer>-125</integer>
+      <key>Ycircumflex</key>
+      <integer>-125</integer>
+      <key>Ydieresis</key>
+      <integer>-125</integer>
+      <key>Ymacron</key>
+      <integer>-125</integer>
+      <key>Ydotaccent</key>
+      <integer>-125</integer>
+      <key>Ygrave</key>
+      <integer>-125</integer>
+      <key>Ydotbelow</key>
+      <integer>-125</integer>
+      <key>Yhookabove</key>
+      <integer>-125</integer>
+      <key>Ytilde</key>
+      <integer>-125</integer>
+      <key>Ydieresis.ss03</key>
+      <integer>-125</integer>
+      <key>Ydotaccent.ss03</key>
+      <integer>-125</integer>
+      <key>Ydotbelow.ss03</key>
+      <integer>-125</integer>
     </dict>
     <key>etilde</key>
     <dict>
@@ -26659,6 +27461,8 @@
       <integer>0</integer>
       <key>rdblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>euro</key>
     <dict>
@@ -26673,6 +27477,8 @@
       <key>idotlessdieresisacute.ss03</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>exclam.ss03</key>
@@ -26781,6 +27587,22 @@
       <integer>0</integer>
       <key>idieresis.ss03</key>
       <integer>0</integer>
+      <key>yen</key>
+      <integer>0</integer>
+      <key>Y</key>
+      <integer>0</integer>
+      <key>grave</key>
+      <integer>0</integer>
+      <key>dieresis</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>0</integer>
+      <key>dotaccent</key>
+      <integer>0</integer>
+      <key>ring</key>
+      <integer>0</integer>
+      <key>trademark</key>
+      <integer>0</integer>
     </dict>
     <key>fdotaccent</key>
     <dict>
@@ -26850,6 +27672,18 @@
       <integer>0</integer>
       <key>idotbelow_brevecomb.ss03</key>
       <integer>46</integer>
+      <key>yen</key>
+      <integer>0</integer>
+      <key>grave</key>
+      <integer>0</integer>
+      <key>dieresis</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>0</integer>
+      <key>dotaccent</key>
+      <integer>0</integer>
+      <key>ring</key>
+      <integer>0</integer>
     </dict>
     <key>fdotaccent.ss03</key>
     <dict>
@@ -26899,6 +27733,14 @@
       <integer>0</integer>
       <key>idotbelow_brevecomb</key>
       <integer>46</integer>
+      <key>yen</key>
+      <integer>0</integer>
+      <key>grave</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>0</integer>
+      <key>ring</key>
+      <integer>0</integer>
     </dict>
     <key>fi</key>
     <dict>
@@ -26934,6 +27776,18 @@
       <key>llinebelow</key>
       <integer>0</integer>
       <key>rlinebelow</key>
+      <integer>0</integer>
+      <key>florin</key>
+      <integer>58</integer>
+      <key>j</key>
+      <integer>0</integer>
+      <key>jdotless</key>
+      <integer>0</integer>
+      <key>j.ss03</key>
+      <integer>0</integer>
+      <key>jcircumflex</key>
+      <integer>0</integer>
+      <key>jdotlesscaron</key>
       <integer>0</integer>
     </dict>
     <key>fivesuperior</key>
@@ -27011,6 +27865,8 @@
       <integer>0</integer>
       <key>udblgrave</key>
       <integer>0</integer>
+      <key>yen</key>
+      <integer>0</integer>
     </dict>
     <key>foursuperior</key>
     <dict>
@@ -27074,20 +27930,28 @@
       <integer>0</integer>
       <key>rdblgrave</key>
       <integer>0</integer>
+      <key>Lslash</key>
+      <integer>0</integer>
     </dict>
     <key>gbreve</key>
     <dict>
       <key>idblgrave</key>
+      <integer>0</integer>
+      <key>Lslash</key>
       <integer>0</integer>
     </dict>
     <key>gcaron</key>
     <dict>
       <key>idblgrave</key>
       <integer>0</integer>
+      <key>Lslash</key>
+      <integer>0</integer>
     </dict>
     <key>gmacron</key>
     <dict>
       <key>idblgrave</key>
+      <integer>0</integer>
+      <key>Lslash</key>
       <integer>0</integer>
     </dict>
     <key>grave</key>
@@ -27114,6 +27978,16 @@
       <integer>0</integer>
       <key>jcircumflex</key>
       <integer>71</integer>
+      <key>acute</key>
+      <integer>19</integer>
+      <key>circumflex</key>
+      <integer>19</integer>
+      <key>hungarumlaut</key>
+      <integer>18</integer>
+      <key>dieresis</key>
+      <integer>0</integer>
+      <key>dotaccent</key>
+      <integer>0</integer>
     </dict>
     <key>hmod</key>
     <dict>
@@ -27173,6 +28047,20 @@
       <key>odblgrave</key>
       <integer>0</integer>
       <key>udblgrave</key>
+      <integer>0</integer>
+      <key>grave</key>
+      <integer>17</integer>
+      <key>dotaccent</key>
+      <integer>18</integer>
+      <key>rupeeIndian</key>
+      <integer>0</integer>
+      <key>yen</key>
+      <integer>18</integer>
+      <key>parenright</key>
+      <integer>0</integer>
+      <key>Y</key>
+      <integer>0</integer>
+      <key>dieresis</key>
       <integer>0</integer>
     </dict>
     <key>i</key>
@@ -27309,6 +28197,8 @@
       <integer>0</integer>
       <key>idotbelow_brevecomb.ss03</key>
       <integer>13</integer>
+      <key>florin</key>
+      <integer>0</integer>
     </dict>
     <key>integral</key>
     <dict>
@@ -27447,13 +28337,17 @@
       <integer>0</integer>
       <key>idotbelow_brevecomb.ss03</key>
       <integer>13</integer>
+      <key>euro</key>
+      <integer>33</integer>
+      <key>Lslash</key>
+      <integer>0</integer>
     </dict>
     <key>istroke_gravecomb</key>
     <dict>
       <key>Lslash</key>
       <integer>0</integer>
       <key>euro</key>
-      <integer>17</integer>
+      <integer>44</integer>
       <key>fraction</key>
       <integer>5</integer>
     </dict>
@@ -27491,6 +28385,8 @@
       <integer>13</integer>
       <key>idotbelow_brevecomb.ss03</key>
       <integer>13</integer>
+      <key>florin</key>
+      <integer>0</integer>
     </dict>
     <key>lacute</key>
     <dict>
@@ -27514,6 +28410,8 @@
       <integer>-10</integer>
       <key>kcaron</key>
       <integer>-10</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>lessequal</key>
     <dict>
@@ -27531,6 +28429,8 @@
     <key>lira</key>
     <dict>
       <key>idotlessdieresisacute</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>macron</key>
@@ -27586,6 +28486,14 @@
       <key>jdotlesscaron</key>
       <integer>32</integer>
       <key>dieresis.ss03</key>
+      <integer>0</integer>
+      <key>dieresis</key>
+      <integer>0</integer>
+      <key>caron</key>
+      <integer>0</integer>
+      <key>breve</key>
+      <integer>0</integer>
+      <key>dotaccent</key>
       <integer>0</integer>
     </dict>
     <key>minussuperior</key>
@@ -27685,6 +28593,10 @@
     <key>nine.subs</key>
     <dict>
       <key>llinebelow</key>
+      <integer>0</integer>
+      <key>florin</key>
+      <integer>20</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>ninesuperior</key>
@@ -27847,6 +28759,10 @@
       <integer>0</integer>
       <key>rdblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>obreve</key>
     <dict>
@@ -27880,6 +28796,10 @@
       <integer>0</integer>
       <key>rdblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>ocaron</key>
     <dict>
@@ -27913,11 +28833,19 @@
       <integer>0</integer>
       <key>rdblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>ocircumflex</key>
     <dict>
       <key>idotlessdieresisacute</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>ocircumflexacute</key>
     <dict>
@@ -28069,11 +28997,19 @@
       <integer>-46</integer>
       <key>tdieresis.ss03</key>
       <integer>-46</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>ocircumflexdotbelow</key>
     <dict>
       <key>idotlessdieresisacute</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>ocircumflexgrave</key>
     <dict>
@@ -28201,6 +29137,10 @@
       <integer>-3</integer>
       <key>yen</key>
       <integer>-14</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>ocircumflexhookabove</key>
     <dict>
@@ -28280,6 +29220,10 @@
       <integer>0</integer>
       <key>rdblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>ocircumflextilde</key>
     <dict>
@@ -28287,6 +29231,10 @@
       <integer>-14</integer>
       <key>idotlessdieresisacute</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>odieresis</key>
     <dict>
@@ -28346,6 +29294,10 @@
       <integer>0</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>odieresis.ss03</key>
     <dict>
@@ -28371,6 +29323,10 @@
       <integer>-125</integer>
       <key>idblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>odieresismacron</key>
     <dict>
@@ -28438,6 +29394,10 @@
       <integer>0</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>odieresismacron.ss03</key>
     <dict>
@@ -28465,11 +29425,19 @@
       <integer>-125</integer>
       <key>idblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>odotaccent</key>
     <dict>
       <key>idblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>odotaccentmacron</key>
     <dict>
@@ -28483,10 +29451,18 @@
       <integer>0</integer>
       <key>idblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>odotaccentmacron.ss03</key>
     <dict>
       <key>Idblgrave</key>
+      <integer>-14</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
       <integer>-14</integer>
     </dict>
     <key>ogonek</key>
@@ -28499,11 +29475,29 @@
       <integer>54</integer>
       <key>rlinebelow</key>
       <integer>63</integer>
+      <key>j</key>
+      <integer>53</integer>
+      <key>florin</key>
+      <integer>138</integer>
+      <key>jdotless</key>
+      <integer>53</integer>
+      <key>integral</key>
+      <integer>0</integer>
+      <key>j.ss03</key>
+      <integer>53</integer>
+      <key>jcircumflex</key>
+      <integer>53</integer>
+      <key>jdotlesscaron</key>
+      <integer>53</integer>
     </dict>
     <key>ohookabove</key>
     <dict>
       <key>idblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>ohornacute</key>
     <dict>
@@ -28997,6 +29991,10 @@
     <dict>
       <key>idblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>omacron</key>
     <dict>
@@ -29030,6 +30028,10 @@
       <integer>0</integer>
       <key>idotlessdieresisacute</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>omacronacute</key>
     <dict>
@@ -29073,6 +30075,10 @@
       <integer>0</integer>
       <key>idotlessdieresisacute</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>one.subs</key>
     <dict>
@@ -29080,6 +30086,8 @@
       <integer>0</integer>
       <key>rlinebelow</key>
       <integer>0</integer>
+      <key>florin</key>
+      <integer>45</integer>
     </dict>
     <key>onesuperior</key>
     <dict>
@@ -29162,6 +30170,10 @@
       <integer>0</integer>
       <key>idotlessdieresisacute</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>ordfeminine</key>
     <dict>
@@ -29260,6 +30272,10 @@
       <integer>0</integer>
       <key>rdblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>otildemacron</key>
     <dict>
@@ -29301,6 +30317,10 @@
       <integer>0</integer>
       <key>rdblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>pacute</key>
     <dict>
@@ -29358,6 +30378,10 @@
       <integer>0</integer>
       <key>rdblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>paragraph</key>
     <dict>
@@ -29408,6 +30432,8 @@
       <integer>0</integer>
       <key>rlinebelow</key>
       <integer>0</integer>
+      <key>florin</key>
+      <integer>62</integer>
     </dict>
     <key>parenleftsuperior</key>
     <dict>
@@ -29449,6 +30475,10 @@
       <key>llinebelow</key>
       <integer>0</integer>
       <key>rlinebelow</key>
+      <integer>0</integer>
+      <key>florin</key>
+      <integer>34</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>parenrightsuperior</key>
@@ -29910,6 +30940,8 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
+      <key>Lslash</key>
+      <integer>0</integer>
     </dict>
     <key>rdblgrave</key>
     <dict>
@@ -29932,10 +30964,14 @@
       <integer>32</integer>
       <key>rdblgrave</key>
       <integer>0</integer>
+      <key>Lslash</key>
+      <integer>0</integer>
     </dict>
     <key>rdotaccent.ss03</key>
     <dict>
       <key>idblgrave</key>
+      <integer>0</integer>
+      <key>Lslash</key>
       <integer>0</integer>
     </dict>
     <key>registered</key>
@@ -29949,6 +30985,8 @@
       <key>idotlessdieresisacute</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
+      <integer>0</integer>
+      <key>euro</key>
       <integer>0</integer>
     </dict>
     <key>ring</key>
@@ -30031,6 +31069,18 @@
       <integer>4</integer>
       <key>dotaccent.ss03</key>
       <integer>6</integer>
+      <key>dieresis</key>
+      <integer>0</integer>
+      <key>caron</key>
+      <integer>0</integer>
+      <key>breve</key>
+      <integer>0</integer>
+      <key>dotaccent</key>
+      <integer>0</integer>
+      <key>rupeeIndian</key>
+      <integer>0</integer>
+      <key>yen</key>
+      <integer>0</integer>
     </dict>
     <key>ringhalfleft</key>
     <dict>
@@ -30166,6 +31216,8 @@
       <integer>0</integer>
       <key>won</key>
       <integer>0</integer>
+      <key>Lslash</key>
+      <integer>0</integer>
     </dict>
     <key>rmod</key>
     <dict>
@@ -30234,6 +31286,8 @@
       <key>odblgrave</key>
       <integer>0</integer>
       <key>udblgrave</key>
+      <integer>0</integer>
+      <key>yen</key>
       <integer>0</integer>
     </dict>
     <key>rupeeIndian</key>
@@ -30331,6 +31385,8 @@
       <integer>0</integer>
       <key>udblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>scaron</key>
     <dict>
@@ -30348,6 +31404,8 @@
       <integer>0</integer>
       <key>rdblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>scircumflex</key>
     <dict>
@@ -30363,10 +31421,14 @@
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>sdotaccent</key>
     <dict>
       <key>idblgrave</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>second</key>
@@ -30407,6 +31469,8 @@
     <key>section</key>
     <dict>
       <key>idotlessdieresisacute</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>servicemark</key>
@@ -30530,12 +31594,28 @@
       <integer>0</integer>
       <key>udblgrave</key>
       <integer>0</integer>
+      <key>yen</key>
+      <integer>0</integer>
     </dict>
     <key>six.subs</key>
     <dict>
       <key>llinebelow</key>
       <integer>0</integer>
       <key>rlinebelow</key>
+      <integer>0</integer>
+      <key>florin</key>
+      <integer>58</integer>
+      <key>j</key>
+      <integer>0</integer>
+      <key>jdotless</key>
+      <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>j.ss03</key>
+      <integer>0</integer>
+      <key>jcircumflex</key>
+      <integer>0</integer>
+      <key>jdotlesscaron</key>
       <integer>0</integer>
     </dict>
     <key>sixsuperior</key>
@@ -30615,10 +31695,14 @@
       <integer>0</integer>
       <key>jcircumflex</key>
       <integer>0</integer>
+      <key>euro</key>
+      <integer>0</integer>
     </dict>
     <key>sterling</key>
     <dict>
       <key>idotlessdieresisacute</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>summation</key>
@@ -30652,6 +31736,8 @@
       <key>istroke_circumflexcomb</key>
       <integer>0</integer>
       <key>odblgrave</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>tcaron</key>
@@ -30731,6 +31817,8 @@
       <integer>0</integer>
       <key>rlinebelow</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>tdieresis</key>
     <dict>
@@ -30764,6 +31852,8 @@
       <integer>0</integer>
       <key>tdieresis</key>
       <integer>-79</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>tdieresis.ss03</key>
     <dict>
@@ -30783,15 +31873,21 @@
       <integer>0</integer>
       <key>hdieresis.ss03</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>tdotbelow</key>
     <dict>
       <key>florin</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>tdotbelow.ss03</key>
     <dict>
       <key>florin</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>three.subs</key>
@@ -30799,6 +31895,10 @@
       <key>llinebelow</key>
       <integer>0</integer>
       <key>rlinebelow</key>
+      <integer>0</integer>
+      <key>florin</key>
+      <integer>61</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>threesuperior</key>
@@ -30903,6 +32003,8 @@
       <key>jdotlesscaron</key>
       <integer>7</integer>
       <key>dieresis.ss03</key>
+      <integer>0</integer>
+      <key>dieresis</key>
       <integer>0</integer>
     </dict>
     <key>tmod</key>
@@ -31045,6 +32147,20 @@
       <integer>20</integer>
       <key>rlinebelow</key>
       <integer>48</integer>
+      <key>j</key>
+      <integer>29</integer>
+      <key>florin</key>
+      <integer>120</integer>
+      <key>jdotless</key>
+      <integer>29</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>j.ss03</key>
+      <integer>29</integer>
+      <key>jcircumflex</key>
+      <integer>29</integer>
+      <key>jdotlesscaron</key>
+      <integer>29</integer>
     </dict>
     <key>twosuperior</key>
     <dict>
@@ -31095,6 +32211,8 @@
       <key>odblgrave</key>
       <integer>0</integer>
       <key>udblgrave</key>
+      <integer>0</integer>
+      <key>yen</key>
       <integer>0</integer>
     </dict>
     <key>uacute</key>
@@ -31479,6 +32597,18 @@
       <integer>0</integer>
       <key>rlinebelow</key>
       <integer>15</integer>
+      <key>j</key>
+      <integer>0</integer>
+      <key>florin</key>
+      <integer>94</integer>
+      <key>jdotless</key>
+      <integer>0</integer>
+      <key>j.ss03</key>
+      <integer>0</integer>
+      <key>jcircumflex</key>
+      <integer>0</integer>
+      <key>jdotlesscaron</key>
+      <integer>0</integer>
     </dict>
     <key>verticallinemod</key>
     <dict>
@@ -31567,6 +32697,8 @@
       <integer>0</integer>
       <key>jcircumflex</key>
       <integer>0</integer>
+      <key>euro</key>
+      <integer>0</integer>
     </dict>
     <key>xdieresis</key>
     <dict>
@@ -31580,11 +32712,31 @@
       <integer>-37</integer>
       <key>rdblgrave</key>
       <integer>0</integer>
+      <key>AE</key>
+      <integer>0</integer>
+      <key>AEmacron</key>
+      <integer>0</integer>
+      <key>AEacute</key>
+      <integer>0</integer>
+      <key>x</key>
+      <integer>-20</integer>
+      <key>xdieresis</key>
+      <integer>-20</integer>
     </dict>
     <key>xdieresis.ss03</key>
     <dict>
       <key>idblgrave</key>
       <integer>0</integer>
+      <key>AE</key>
+      <integer>0</integer>
+      <key>AEmacron</key>
+      <integer>0</integer>
+      <key>AEacute</key>
+      <integer>0</integer>
+      <key>x</key>
+      <integer>-20</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-20</integer>
     </dict>
     <key>yacute</key>
     <dict>
@@ -31636,10 +32788,14 @@
       <integer>-20</integer>
       <key>rdblgrave</key>
       <integer>0</integer>
+      <key>naira</key>
+      <integer>0</integer>
     </dict>
     <key>ycircumflex</key>
     <dict>
       <key>idotlessdieresisacute</key>
+      <integer>0</integer>
+      <key>naira</key>
       <integer>0</integer>
     </dict>
     <key>ydieresis</key>
@@ -31678,15 +32834,21 @@
       <integer>-20</integer>
       <key>rdblgrave</key>
       <integer>0</integer>
+      <key>naira</key>
+      <integer>0</integer>
     </dict>
     <key>ydieresis.ss03</key>
     <dict>
       <key>idblgrave</key>
       <integer>0</integer>
+      <key>naira</key>
+      <integer>0</integer>
     </dict>
     <key>ydotaccent</key>
     <dict>
       <key>idblgrave</key>
+      <integer>0</integer>
+      <key>naira</key>
       <integer>0</integer>
     </dict>
     <key>ydotbelow</key>
@@ -31697,6 +32859,8 @@
       <integer>0</integer>
       <key>rlinebelow</key>
       <integer>0</integer>
+      <key>naira</key>
+      <integer>0</integer>
     </dict>
     <key>ydotbelow.ss03</key>
     <dict>
@@ -31705,6 +32869,8 @@
       <key>llinebelow</key>
       <integer>0</integer>
       <key>rlinebelow</key>
+      <integer>0</integer>
+      <key>naira</key>
       <integer>0</integer>
     </dict>
     <key>yen</key>
@@ -31763,15 +32929,121 @@
       <integer>-14</integer>
       <key>udblgrave</key>
       <integer>0</integer>
+      <key>grave</key>
+      <integer>18</integer>
+      <key>dotaccent</key>
+      <integer>20</integer>
+      <key>yen</key>
+      <integer>20</integer>
+      <key>Y</key>
+      <integer>0</integer>
+      <key>trademark</key>
+      <integer>0</integer>
+      <key>backslash</key>
+      <integer>0</integer>
+      <key>dieresis</key>
+      <integer>0</integer>
+      <key>ring</key>
+      <integer>0</integer>
+      <key>T</key>
+      <integer>0</integer>
+      <key>V</key>
+      <integer>0</integer>
+      <key>W</key>
+      <integer>0</integer>
+      <key>braceright</key>
+      <integer>0</integer>
+      <key>Tbar</key>
+      <integer>0</integer>
+      <key>product</key>
+      <integer>0</integer>
+      <key>parenright</key>
+      <integer>0</integer>
+      <key>onesuperior</key>
+      <integer>0</integer>
+      <key>caron</key>
+      <integer>0</integer>
+      <key>breve</key>
+      <integer>0</integer>
+      <key>seveneighths</key>
+      <integer>0</integer>
+      <key>X</key>
+      <integer>0</integer>
+      <key>twosuperior</key>
+      <integer>0</integer>
+      <key>Yacute</key>
+      <integer>0</integer>
+      <key>Ycircumflex</key>
+      <integer>0</integer>
+      <key>Ydieresis</key>
+      <integer>0</integer>
+      <key>Ymacron</key>
+      <integer>0</integer>
+      <key>Ydotaccent</key>
+      <integer>0</integer>
+      <key>Ygrave</key>
+      <integer>0</integer>
+      <key>Ydotbelow</key>
+      <integer>0</integer>
+      <key>Yhookabove</key>
+      <integer>0</integer>
+      <key>Ytilde</key>
+      <integer>0</integer>
+      <key>Ydieresis.ss03</key>
+      <integer>0</integer>
+      <key>Ydotaccent.ss03</key>
+      <integer>0</integer>
+      <key>Ydotbelow.ss03</key>
+      <integer>0</integer>
+      <key>Tcedilla</key>
+      <integer>0</integer>
+      <key>Tcaron</key>
+      <integer>0</integer>
+      <key>Wcircumflex</key>
+      <integer>0</integer>
+      <key>Tcommaaccent</key>
+      <integer>0</integer>
+      <key>Tdotaccent</key>
+      <integer>0</integer>
+      <key>Tdotbelow</key>
+      <integer>0</integer>
+      <key>Tlinebelow</key>
+      <integer>0</integer>
+      <key>Wgrave</key>
+      <integer>0</integer>
+      <key>Wacute</key>
+      <integer>0</integer>
+      <key>Wdieresis</key>
+      <integer>0</integer>
+      <key>Wdotaccent</key>
+      <integer>0</integer>
+      <key>Tcommaaccent.ss03</key>
+      <integer>0</integer>
+      <key>Tdotaccent.ss03</key>
+      <integer>0</integer>
+      <key>Tdotbelow.ss03</key>
+      <integer>0</integer>
+      <key>Wdieresis.ss03</key>
+      <integer>0</integer>
+      <key>Wdotaccent.ss03</key>
+      <integer>0</integer>
+      <key>Xdieresis</key>
+      <integer>0</integer>
+      <key>Xdieresis.ss03</key>
+      <integer>0</integer>
     </dict>
     <key>yhookabove</key>
     <dict>
       <key>idblgrave</key>
       <integer>0</integer>
+      <key>naira</key>
+      <integer>0</integer>
     </dict>
     <key>ymacron</key>
     <dict>
       <key>idblgrave</key>
+      <integer>0</integer>
+      <key>naira</key>
       <integer>0</integer>
     </dict>
     <key>ytilde</key>
@@ -31779,6 +33051,8 @@
       <key>idblgrave</key>
       <integer>0</integer>
       <key>rdblgrave</key>
+      <integer>0</integer>
+      <key>naira</key>
       <integer>0</integer>
     </dict>
     <key>zacute</key>
@@ -31875,6 +33149,8 @@
       <integer>0</integer>
       <key>udblgrave</key>
       <integer>-3</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>zcaron</key>
     <dict>
@@ -31904,6 +33180,8 @@
       <integer>-7</integer>
       <key>rdblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>zcircumflex</key>
     <dict>
@@ -31919,20 +33197,30 @@
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>zdotaccent</key>
     <dict>
       <key>idblgrave</key>
+      <integer>0</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>zdotaccent.ss03</key>
     <dict>
       <key>idblgrave</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>zero.subs</key>
     <dict>
       <key>llinebelow</key>
+      <integer>0</integer>
+      <key>florin</key>
+      <integer>31</integer>
+      <key>franc</key>
       <integer>0</integer>
     </dict>
     <key>zerosuperior</key>
@@ -32000,6 +33288,8 @@
       <integer>0</integer>
       <key>rlinebelow</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>Ldot.ss03</key>
     <dict>
@@ -32031,11 +33321,39 @@
       <integer>-103</integer>
       <key>tlinebelow</key>
       <integer>-103</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>v</key>
+      <integer>-77</integer>
+      <key>w</key>
+      <integer>-77</integer>
+      <key>y</key>
+      <integer>-77</integer>
+      <key>wcircumflex</key>
+      <integer>-77</integer>
+      <key>wgrave</key>
+      <integer>-77</integer>
+      <key>wacute</key>
+      <integer>-77</integer>
+      <key>wdieresis.ss03</key>
+      <integer>-77</integer>
+      <key>wdotaccent.ss03</key>
+      <integer>-77</integer>
     </dict>
     <key>Thorn</key>
     <dict>
       <key>periodcentered.ss03</key>
-      <integer>-200</integer>
+      <integer>-118</integer>
+      <key>periodcentered</key>
+      <integer>-127</integer>
+      <key>euro</key>
+      <integer>0</integer>
+      <key>AE</key>
+      <integer>-239</integer>
+      <key>AEmacron</key>
+      <integer>-239</integer>
+      <key>AEacute</key>
+      <integer>-239</integer>
     </dict>
     <key>braceright</key>
     <dict>
@@ -32059,13 +33377,13 @@
       <key>Istroke</key>
       <integer>0</integer>
       <key>Lslash</key>
-      <integer>9</integer>
+      <integer>37</integer>
       <key>dagger</key>
-      <integer>11</integer>
+      <integer>26</integer>
       <key>daggerdbl</key>
-      <integer>12</integer>
+      <integer>26</integer>
       <key>euro</key>
-      <integer>0</integer>
+      <integer>65</integer>
       <key>f</key>
       <integer>-47</integer>
       <key>fdotaccent.ss03</key>
@@ -32075,7 +33393,7 @@
       <key>fl</key>
       <integer>-77</integer>
       <key>rupeeIndian</key>
-      <integer>9</integer>
+      <integer>36</integer>
       <key>t</key>
       <integer>-77</integer>
       <key>tbar</key>
@@ -32095,7 +33413,29 @@
       <key>tlinebelow</key>
       <integer>-77</integer>
       <key>won</key>
-      <integer>8</integer>
+      <integer>29</integer>
+      <key>liraTurkish</key>
+      <integer>16</integer>
+      <key>d</key>
+      <integer>-50</integer>
+      <key>q</key>
+      <integer>-50</integer>
+      <key>dcroat</key>
+      <integer>-50</integer>
+      <key>at</key>
+      <integer>-50</integer>
+      <key>schwa</key>
+      <integer>-50</integer>
+      <key>dcaron</key>
+      <integer>-50</integer>
+      <key>ddotaccent.ss03</key>
+      <integer>-50</integer>
+      <key>ddotbelow.ss03</key>
+      <integer>-50</integer>
+      <key>dlinebelow</key>
+      <integer>-50</integer>
+      <key>dcedilla</key>
+      <integer>-50</integer>
     </dict>
     <key>T</key>
     <dict>
@@ -32110,6 +33450,10 @@
       <key>idieresis</key>
       <integer>-22</integer>
       <key>idieresis.ss03</key>
+      <integer>0</integer>
+      <key>hbar</key>
+      <integer>-47</integer>
+      <key>yen</key>
       <integer>0</integer>
     </dict>
     <key>V</key>
@@ -32126,6 +33470,8 @@
       <integer>-14</integer>
       <key>idieresis.ss03</key>
       <integer>-14</integer>
+      <key>yen</key>
+      <integer>0</integer>
     </dict>
     <key>W</key>
     <dict>
@@ -32141,6 +33487,8 @@
       <integer>-14</integer>
       <key>idieresis.ss03</key>
       <integer>-14</integer>
+      <key>yen</key>
+      <integer>0</integer>
     </dict>
     <key>Y</key>
     <dict>
@@ -32156,6 +33504,14 @@
       <integer>-30</integer>
       <key>idieresis.ss03</key>
       <integer>-36</integer>
+      <key>rupeeIndian</key>
+      <integer>0</integer>
+      <key>yen</key>
+      <integer>0</integer>
+      <key>dotaccent</key>
+      <integer>0</integer>
+      <key>grave</key>
+      <integer>0</integer>
     </dict>
     <key>b</key>
     <dict>
@@ -32171,6 +33527,10 @@
       <integer>0</integer>
       <key>idieresis.ss03</key>
       <integer>0</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
     </dict>
     <key>h</key>
     <dict>
@@ -32204,6 +33564,8 @@
       <integer>13</integer>
       <key>idieresis.ss03</key>
       <integer>13</integer>
+      <key>florin</key>
+      <integer>0</integer>
     </dict>
     <key>k</key>
     <dict>
@@ -32218,6 +33580,18 @@
       <key>idieresis</key>
       <integer>0</integer>
       <key>idieresis.ss03</key>
+      <integer>0</integer>
+      <key>AE</key>
+      <integer>0</integer>
+      <key>x</key>
+      <integer>0</integer>
+      <key>AEmacron</key>
+      <integer>0</integer>
+      <key>AEacute</key>
+      <integer>0</integer>
+      <key>xdieresis</key>
+      <integer>0</integer>
+      <key>xdieresis.ss03</key>
       <integer>0</integer>
     </dict>
     <key>l</key>
@@ -32234,6 +33608,8 @@
       <integer>-10</integer>
       <key>idieresis.ss03</key>
       <integer>-10</integer>
+      <key>franc</key>
+      <integer>0</integer>
     </dict>
     <key>parenright</key>
     <dict>
@@ -32249,6 +33625,1378 @@
       <integer>0</integer>
       <key>idieresis.ss03</key>
       <integer>0</integer>
+    </dict>
+    <key>exclamdown</key>
+    <dict>
+      <key>florin</key>
+      <integer>30</integer>
+    </dict>
+    <key>copyright</key>
+    <dict>
+      <key>euro</key>
+      <integer>0</integer>
+    </dict>
+    <key>ldot</key>
+    <dict>
+      <key>Lslash</key>
+      <integer>28</integer>
+      <key>dagger</key>
+      <integer>17</integer>
+      <key>daggerdbl</key>
+      <integer>17</integer>
+      <key>euro</key>
+      <integer>67</integer>
+      <key>rupeeIndian</key>
+      <integer>27</integer>
+      <key>liraTurkish</key>
+      <integer>18</integer>
+      <key>won</key>
+      <integer>21</integer>
+      <key>naira</key>
+      <integer>35</integer>
+      <key>f</key>
+      <integer>-47</integer>
+      <key>t</key>
+      <integer>-77</integer>
+      <key>tbar</key>
+      <integer>-77</integer>
+      <key>fi</key>
+      <integer>-77</integer>
+      <key>fl</key>
+      <integer>-77</integer>
+      <key>d</key>
+      <integer>-50</integer>
+      <key>q</key>
+      <integer>-50</integer>
+      <key>v</key>
+      <integer>-40</integer>
+      <key>w</key>
+      <integer>-40</integer>
+      <key>dcroat</key>
+      <integer>-50</integer>
+      <key>istroke</key>
+      <integer>-10</integer>
+      <key>at</key>
+      <integer>-50</integer>
+      <key>c</key>
+      <integer>-50</integer>
+      <key>o</key>
+      <integer>-50</integer>
+      <key>y</key>
+      <integer>-40</integer>
+      <key>eth</key>
+      <integer>-50</integer>
+      <key>oe</key>
+      <integer>-50</integer>
+      <key>chook</key>
+      <integer>-50</integer>
+      <key>schwa</key>
+      <integer>-50</integer>
+      <key>e</key>
+      <integer>-50</integer>
+      <key>tcedilla</key>
+      <integer>-77</integer>
+      <key>tcaron</key>
+      <integer>-77</integer>
+      <key>tcommaaccent</key>
+      <integer>-77</integer>
+      <key>fdotaccent</key>
+      <integer>-47</integer>
+      <key>tdotaccent</key>
+      <integer>-77</integer>
+      <key>tdotbelow</key>
+      <integer>-77</integer>
+      <key>tlinebelow</key>
+      <integer>-77</integer>
+      <key>tdieresis</key>
+      <integer>-77</integer>
+      <key>wcircumflex</key>
+      <integer>-40</integer>
+      <key>wgrave</key>
+      <integer>-40</integer>
+      <key>wacute</key>
+      <integer>-40</integer>
+      <key>wdieresis</key>
+      <integer>-40</integer>
+      <key>wdotaccent</key>
+      <integer>-40</integer>
+      <key>istroke_acutecomb</key>
+      <integer>-10</integer>
+      <key>istroke_gravecomb</key>
+      <integer>-10</integer>
+      <key>istroke_circumflexcomb</key>
+      <integer>-10</integer>
+      <key>istroke_brevecomb</key>
+      <integer>-10</integer>
+      <key>istroke_caroncomb</key>
+      <integer>-10</integer>
+      <key>ccedilla</key>
+      <integer>-50</integer>
+      <key>ograve</key>
+      <integer>-50</integer>
+      <key>oacute</key>
+      <integer>-50</integer>
+      <key>ocircumflex</key>
+      <integer>-50</integer>
+      <key>otilde</key>
+      <integer>-50</integer>
+      <key>odieresis</key>
+      <integer>-50</integer>
+      <key>yacute</key>
+      <integer>-40</integer>
+      <key>ydieresis</key>
+      <integer>-40</integer>
+      <key>cacute</key>
+      <integer>-50</integer>
+      <key>ccircumflex</key>
+      <integer>-50</integer>
+      <key>cdotaccent</key>
+      <integer>-50</integer>
+      <key>ccaron</key>
+      <integer>-50</integer>
+      <key>dcaron</key>
+      <integer>-50</integer>
+      <key>omacron</key>
+      <integer>-50</integer>
+      <key>obreve</key>
+      <integer>-50</integer>
+      <key>ohungarumlaut</key>
+      <integer>-50</integer>
+      <key>ycircumflex</key>
+      <integer>-40</integer>
+      <key>ohorn</key>
+      <integer>-50</integer>
+      <key>ocaron</key>
+      <integer>-50</integer>
+      <key>oogonek</key>
+      <integer>-50</integer>
+      <key>oogonekmacron</key>
+      <integer>-50</integer>
+      <key>odblgrave</key>
+      <integer>-50</integer>
+      <key>oinvertedbreve</key>
+      <integer>-50</integer>
+      <key>odieresismacron</key>
+      <integer>-50</integer>
+      <key>otildemacron</key>
+      <integer>-50</integer>
+      <key>odotaccent</key>
+      <integer>-50</integer>
+      <key>odotaccentmacron</key>
+      <integer>-50</integer>
+      <key>ymacron</key>
+      <integer>-40</integer>
+      <key>ddotaccent</key>
+      <integer>-50</integer>
+      <key>ddotbelow</key>
+      <integer>-50</integer>
+      <key>dlinebelow</key>
+      <integer>-50</integer>
+      <key>dcedilla</key>
+      <integer>-50</integer>
+      <key>omacronacute</key>
+      <integer>-50</integer>
+      <key>ydotaccent</key>
+      <integer>-40</integer>
+      <key>odotbelow</key>
+      <integer>-50</integer>
+      <key>ohookabove</key>
+      <integer>-50</integer>
+      <key>ocircumflexacute</key>
+      <integer>-50</integer>
+      <key>ocircumflexgrave</key>
+      <integer>-50</integer>
+      <key>ocircumflexhookabove</key>
+      <integer>-50</integer>
+      <key>ocircumflextilde</key>
+      <integer>-50</integer>
+      <key>ocircumflexdotbelow</key>
+      <integer>-50</integer>
+      <key>ohornacute</key>
+      <integer>-50</integer>
+      <key>ohorngrave</key>
+      <integer>-50</integer>
+      <key>ohornhookabove</key>
+      <integer>-50</integer>
+      <key>ohorntilde</key>
+      <integer>-50</integer>
+      <key>ohorndotbelow</key>
+      <integer>-50</integer>
+      <key>ygrave</key>
+      <integer>-40</integer>
+      <key>ydotbelow</key>
+      <integer>-40</integer>
+      <key>yhookabove</key>
+      <integer>-40</integer>
+      <key>ytilde</key>
+      <integer>-40</integer>
+      <key>egrave</key>
+      <integer>-50</integer>
+      <key>eacute</key>
+      <integer>-50</integer>
+      <key>ecircumflex</key>
+      <integer>-50</integer>
+      <key>edieresis</key>
+      <integer>-50</integer>
+      <key>emacron</key>
+      <integer>-50</integer>
+      <key>ebreve</key>
+      <integer>-50</integer>
+      <key>edotaccent</key>
+      <integer>-50</integer>
+      <key>eogonek</key>
+      <integer>-50</integer>
+      <key>ecaron</key>
+      <integer>-50</integer>
+      <key>edblgrave</key>
+      <integer>-50</integer>
+      <key>einvertedbreve</key>
+      <integer>-50</integer>
+      <key>ecedilla</key>
+      <integer>-50</integer>
+      <key>emacronacute</key>
+      <integer>-50</integer>
+      <key>ecedillabreve</key>
+      <integer>-50</integer>
+      <key>edotbelow</key>
+      <integer>-50</integer>
+      <key>ehookabove</key>
+      <integer>-50</integer>
+      <key>etilde</key>
+      <integer>-50</integer>
+      <key>ecircumflexacute</key>
+      <integer>-50</integer>
+      <key>ecircumflexgrave</key>
+      <integer>-50</integer>
+      <key>ecircumflexhookabove</key>
+      <integer>-50</integer>
+      <key>ecircumflextilde</key>
+      <integer>-50</integer>
+      <key>ecircumflexdotbelow</key>
+      <integer>-50</integer>
+      <key>ibreve</key>
+      <integer>-10</integer>
+      <key>icaron</key>
+      <integer>-10</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>-10</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>-10</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>-10</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>-10</integer>
+    </dict>
+    <key>eng</key>
+    <dict>
+      <key>florin</key>
+      <integer>0</integer>
+    </dict>
+    <key>jdotless</key>
+    <dict>
+      <key>florin</key>
+      <integer>0</integer>
+    </dict>
+    <key>dagger</key>
+    <dict>
+      <key>naira</key>
+      <integer>0</integer>
+      <key>euro</key>
+      <integer>21</integer>
+      <key>rupeeIndian</key>
+      <integer>0</integer>
+    </dict>
+    <key>daggerdbl</key>
+    <dict>
+      <key>franc</key>
+      <integer>16</integer>
+      <key>naira</key>
+      <integer>0</integer>
+      <key>euro</key>
+      <integer>21</integer>
+      <key>rupeeIndian</key>
+      <integer>0</integer>
+    </dict>
+    <key>four.subs</key>
+    <dict>
+      <key>florin</key>
+      <integer>0</integer>
+      <key>j</key>
+      <integer>0</integer>
+      <key>jdotless</key>
+      <integer>0</integer>
+      <key>j.ss03</key>
+      <integer>0</integer>
+      <key>jcircumflex</key>
+      <integer>0</integer>
+      <key>jdotlesscaron</key>
+      <integer>0</integer>
+    </dict>
+    <key>seven.subs</key>
+    <dict>
+      <key>euro</key>
+      <integer>33</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>0</integer>
+    </dict>
+    <key>naira</key>
+    <dict>
+      <key>braceleft</key>
+      <integer>0</integer>
+      <key>dagger</key>
+      <integer>0</integer>
+      <key>daggerdbl</key>
+      <integer>0</integer>
+      <key>naira</key>
+      <integer>13</integer>
+      <key>euro</key>
+      <integer>45</integer>
+      <key>Lslash</key>
+      <integer>0</integer>
+      <key>v</key>
+      <integer>0</integer>
+      <key>w</key>
+      <integer>0</integer>
+      <key>y</key>
+      <integer>0</integer>
+    </dict>
+    <key>published</key>
+    <dict>
+      <key>euro</key>
+      <integer>0</integer>
+    </dict>
+    <key>Tbar</key>
+    <dict>
+      <key>hbar</key>
+      <integer>-47</integer>
+      <key>yen</key>
+      <integer>0</integer>
+    </dict>
+    <key>onequarter</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>threequarters</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>Gstroke</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>four</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>Ldot</key>
+    <dict>
+      <key>napostrophe</key>
+      <integer>-192</integer>
+      <key>quoteright</key>
+      <integer>-192</integer>
+      <key>quotedblright</key>
+      <integer>-192</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>v</key>
+      <integer>-77</integer>
+      <key>w</key>
+      <integer>-77</integer>
+      <key>y</key>
+      <integer>-77</integer>
+      <key>yacute</key>
+      <integer>-77</integer>
+      <key>ydieresis</key>
+      <integer>-77</integer>
+      <key>wcircumflex</key>
+      <integer>-77</integer>
+      <key>ycircumflex</key>
+      <integer>-77</integer>
+      <key>ymacron</key>
+      <integer>-77</integer>
+      <key>wgrave</key>
+      <integer>-77</integer>
+      <key>wacute</key>
+      <integer>-77</integer>
+      <key>wdieresis</key>
+      <integer>-77</integer>
+      <key>wdotaccent</key>
+      <integer>-77</integer>
+      <key>ydotaccent</key>
+      <integer>-77</integer>
+      <key>ygrave</key>
+      <integer>-77</integer>
+      <key>ydotbelow</key>
+      <integer>-77</integer>
+      <key>yhookabove</key>
+      <integer>-77</integer>
+      <key>ytilde</key>
+      <integer>-77</integer>
+    </dict>
+    <key>onethird</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>twothirds</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>oneeighth</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>threeeighths</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>fiveeighths</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>seveneighths</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>A</key>
+    <dict>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
+    </dict>
+    <key>L</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>e</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>o</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
+    </dict>
+    <key>p</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
+    </dict>
+    <key>s</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>x</key>
+    <dict>
+      <key>AE</key>
+      <integer>0</integer>
+      <key>x</key>
+      <integer>-20</integer>
+      <key>AEmacron</key>
+      <integer>0</integer>
+      <key>AEacute</key>
+      <integer>0</integer>
+      <key>xdieresis</key>
+      <integer>-20</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-20</integer>
+    </dict>
+    <key>z</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>periodcentered</key>
+    <dict>
+      <key>napostrophe</key>
+      <integer>-162</integer>
+      <key>quoteright</key>
+      <integer>-162</integer>
+      <key>quotedblright</key>
+      <integer>-162</integer>
+    </dict>
+    <key>germandbls</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>ae</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>thorn</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
+    </dict>
+    <key>kgreenlandic</key>
+    <dict>
+      <key>AE</key>
+      <integer>0</integer>
+      <key>x</key>
+      <integer>0</integer>
+      <key>AEmacron</key>
+      <integer>0</integer>
+      <key>AEacute</key>
+      <integer>0</integer>
+      <key>xdieresis</key>
+      <integer>0</integer>
+      <key>xdieresis.ss03</key>
+      <integer>0</integer>
+    </dict>
+    <key>Lslash</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>oe</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>equal.subs</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>five</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>eight</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>at</key>
+    <dict>
+      <key>Lslash</key>
+      <integer>-14</integer>
+    </dict>
+    <key>asciicircum</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>g</key>
+    <dict>
+      <key>question</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>0</integer>
+      <key>question.ss03</key>
+      <integer>0</integer>
+    </dict>
+    <key>r</key>
+    <dict>
+      <key>Lslash</key>
+      <integer>0</integer>
+    </dict>
+    <key>v</key>
+    <dict>
+      <key>naira</key>
+      <integer>0</integer>
+    </dict>
+    <key>w</key>
+    <dict>
+      <key>naira</key>
+      <integer>0</integer>
+    </dict>
+    <key>y</key>
+    <dict>
+      <key>naira</key>
+      <integer>0</integer>
+    </dict>
+    <key>questiondown</key>
+    <dict>
+      <key>j</key>
+      <integer>0</integer>
+      <key>AE</key>
+      <integer>0</integer>
+      <key>jdotless</key>
+      <integer>0</integer>
+    </dict>
+    <key>tbar</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>gstroke</key>
+    <dict>
+      <key>Lslash</key>
+      <integer>0</integer>
+    </dict>
+    <key>schwa</key>
+    <dict>
+      <key>Lslash</key>
+      <integer>-14</integer>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>plus.subs</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>minus.subs</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>literSign</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>fl</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>exclamdown.ss03</key>
+    <dict>
+      <key>florin</key>
+      <integer>30</integer>
+    </dict>
+    <key>ij.ss03</key>
+    <dict>
+      <key>florin</key>
+      <integer>0</integer>
+    </dict>
+    <key>istroke.ss03</key>
+    <dict>
+      <key>euro</key>
+      <integer>33</integer>
+      <key>Lslash</key>
+      <integer>0</integer>
+    </dict>
+    <key>periodcentered.ss03</key>
+    <dict>
+      <key>napostrophe.ss03</key>
+      <integer>-162</integer>
+      <key>quoteright.ss03</key>
+      <integer>-162</integer>
+      <key>quotedblright.ss03</key>
+      <integer>-162</integer>
+    </dict>
+    <key>questiondown.ss03</key>
+    <dict>
+      <key>j.ss03</key>
+      <integer>0</integer>
+      <key>AE</key>
+      <integer>0</integer>
+      <key>jdotless</key>
+      <integer>0</integer>
+    </dict>
+    <key>Tcedilla</key>
+    <dict>
+      <key>hbar</key>
+      <integer>-47</integer>
+      <key>yen</key>
+      <integer>0</integer>
+    </dict>
+    <key>Tcommaaccent</key>
+    <dict>
+      <key>hbar</key>
+      <integer>-47</integer>
+      <key>yen</key>
+      <integer>0</integer>
+    </dict>
+    <key>Tdotaccent</key>
+    <dict>
+      <key>hbar</key>
+      <integer>-47</integer>
+      <key>yen</key>
+      <integer>0</integer>
+    </dict>
+    <key>Tdotbelow</key>
+    <dict>
+      <key>hbar</key>
+      <integer>-47</integer>
+      <key>yen</key>
+      <integer>0</integer>
+    </dict>
+    <key>Tlinebelow</key>
+    <dict>
+      <key>hbar</key>
+      <integer>-47</integer>
+      <key>yen</key>
+      <integer>0</integer>
+    </dict>
+    <key>Tcommaaccent.ss03</key>
+    <dict>
+      <key>hbar</key>
+      <integer>-47</integer>
+      <key>yen</key>
+      <integer>0</integer>
+    </dict>
+    <key>Tdotaccent.ss03</key>
+    <dict>
+      <key>hbar</key>
+      <integer>-47</integer>
+      <key>yen</key>
+      <integer>0</integer>
+    </dict>
+    <key>Tdotbelow.ss03</key>
+    <dict>
+      <key>hbar</key>
+      <integer>-47</integer>
+      <key>yen</key>
+      <integer>0</integer>
+    </dict>
+    <key>Ycircumflex</key>
+    <dict>
+      <key>yen</key>
+      <integer>0</integer>
+      <key>dotaccent</key>
+      <integer>0</integer>
+    </dict>
+    <key>Ydotaccent</key>
+    <dict>
+      <key>yen</key>
+      <integer>0</integer>
+      <key>dotaccent</key>
+      <integer>0</integer>
+    </dict>
+    <key>Ygrave</key>
+    <dict>
+      <key>yen</key>
+      <integer>0</integer>
+      <key>dotaccent</key>
+      <integer>0</integer>
+    </dict>
+    <key>Ydotbelow</key>
+    <dict>
+      <key>yen</key>
+      <integer>0</integer>
+      <key>dotaccent</key>
+      <integer>0</integer>
+    </dict>
+    <key>Yhookabove</key>
+    <dict>
+      <key>yen</key>
+      <integer>0</integer>
+      <key>dotaccent</key>
+      <integer>0</integer>
+    </dict>
+    <key>Ydotaccent.ss03</key>
+    <dict>
+      <key>yen</key>
+      <integer>0</integer>
+    </dict>
+    <key>Ydotbelow.ss03</key>
+    <dict>
+      <key>yen</key>
+      <integer>0</integer>
+    </dict>
+    <key>egrave</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>ograve</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
+    </dict>
+    <key>eogonek</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>kcommaaccent</key>
+    <dict>
+      <key>AE</key>
+      <integer>0</integer>
+      <key>AEmacron</key>
+      <integer>0</integer>
+      <key>AEacute</key>
+      <integer>0</integer>
+      <key>x</key>
+      <integer>0</integer>
+      <key>xdieresis</key>
+      <integer>0</integer>
+    </dict>
+    <key>Lacute</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>Lcommaaccent</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>scedilla</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>Wcircumflex</key>
+    <dict>
+      <key>yen</key>
+      <integer>0</integer>
+    </dict>
+    <key>aemacron</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>kcaron</key>
+    <dict>
+      <key>AE</key>
+      <integer>0</integer>
+      <key>AEmacron</key>
+      <integer>0</integer>
+      <key>AEacute</key>
+      <integer>0</integer>
+      <key>x</key>
+      <integer>0</integer>
+      <key>xdieresis</key>
+      <integer>0</integer>
+      <key>xdieresis.ss03</key>
+      <integer>0</integer>
+    </dict>
+    <key>oogonek</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
+    </dict>
+    <key>aeacute</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>edblgrave</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>odblgrave</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
+    </dict>
+    <key>scommaaccent</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>ecedilla</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>bdotaccent</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
+    </dict>
+    <key>kacute</key>
+    <dict>
+      <key>AE</key>
+      <integer>0</integer>
+      <key>AEmacron</key>
+      <integer>0</integer>
+      <key>AEacute</key>
+      <integer>0</integer>
+      <key>x</key>
+      <integer>0</integer>
+      <key>xdieresis</key>
+      <integer>0</integer>
+      <key>xdieresis.ss03</key>
+      <integer>0</integer>
+    </dict>
+    <key>kdotbelow</key>
+    <dict>
+      <key>AE</key>
+      <integer>0</integer>
+      <key>AEmacron</key>
+      <integer>0</integer>
+      <key>AEacute</key>
+      <integer>0</integer>
+      <key>x</key>
+      <integer>0</integer>
+      <key>xdieresis</key>
+      <integer>0</integer>
+    </dict>
+    <key>klinebelow</key>
+    <dict>
+      <key>AE</key>
+      <integer>0</integer>
+      <key>AEmacron</key>
+      <integer>0</integer>
+      <key>AEacute</key>
+      <integer>0</integer>
+      <key>x</key>
+      <integer>0</integer>
+      <key>xdieresis</key>
+      <integer>0</integer>
+      <key>xdieresis.ss03</key>
+      <integer>0</integer>
+    </dict>
+    <key>Ldotbelow</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>pdotaccent</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
+    </dict>
+    <key>sdotbelow</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>Wgrave</key>
+    <dict>
+      <key>yen</key>
+      <integer>0</integer>
+    </dict>
+    <key>Wacute</key>
+    <dict>
+      <key>yen</key>
+      <integer>0</integer>
+    </dict>
+    <key>Wdieresis</key>
+    <dict>
+      <key>yen</key>
+      <integer>0</integer>
+    </dict>
+    <key>Wdotaccent</key>
+    <dict>
+      <key>yen</key>
+      <integer>0</integer>
+    </dict>
+    <key>zdotbelow</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>edotbelow</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>odotbelow</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
+    </dict>
+    <key>edotaccent.ss03</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>kcommaaccent.ss03</key>
+    <dict>
+      <key>AE</key>
+      <integer>0</integer>
+      <key>AEmacron</key>
+      <integer>0</integer>
+      <key>AEacute</key>
+      <integer>0</integer>
+      <key>x</key>
+      <integer>0</integer>
+      <key>xdieresis.ss03</key>
+      <integer>0</integer>
+    </dict>
+    <key>Lcommaaccent.ss03</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>scommaaccent.ss03</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>odotaccent.ss03</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
+    </dict>
+    <key>bdotaccent.ss03</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
+    </dict>
+    <key>kdotbelow.ss03</key>
+    <dict>
+      <key>AE</key>
+      <integer>0</integer>
+      <key>AEmacron</key>
+      <integer>0</integer>
+      <key>AEacute</key>
+      <integer>0</integer>
+      <key>x</key>
+      <integer>0</integer>
+      <key>xdieresis.ss03</key>
+      <integer>0</integer>
+    </dict>
+    <key>Ldotbelow.ss03</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>pdotaccent.ss03</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
+    </dict>
+    <key>sdotaccent.ss03</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>sdotbelow.ss03</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>Wdieresis.ss03</key>
+    <dict>
+      <key>yen</key>
+      <integer>0</integer>
+    </dict>
+    <key>Wdotaccent.ss03</key>
+    <dict>
+      <key>yen</key>
+      <integer>0</integer>
+    </dict>
+    <key>zdotbelow.ss03</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>edotbelow.ss03</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>ecircumflexdotbelow.ss03</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>odotbelow.ss03</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
+    </dict>
+    <key>ocircumflexdotbelow.ss03</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>Lslash</key>
+      <integer>-14</integer>
+    </dict>
+    <key>Agrave</key>
+    <dict>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
+    </dict>
+    <key>Acircumflex</key>
+    <dict>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
+    </dict>
+    <key>Atilde</key>
+    <dict>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
+    </dict>
+    <key>Aring</key>
+    <dict>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
+    </dict>
+    <key>ccedilla</key>
+    <dict>
+      <key>Lslash</key>
+      <integer>-14</integer>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>Amacron</key>
+    <dict>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
+    </dict>
+    <key>gcircumflex</key>
+    <dict>
+      <key>Lslash</key>
+      <integer>0</integer>
+    </dict>
+    <key>gdotaccent</key>
+    <dict>
+      <key>Lslash</key>
+      <integer>0</integer>
+    </dict>
+    <key>gcommaaccent</key>
+    <dict>
+      <key>Lslash</key>
+      <integer>0</integer>
+    </dict>
+    <key>lcommaaccent</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>rcommaaccent</key>
+    <dict>
+      <key>Lslash</key>
+      <integer>0</integer>
+    </dict>
+    <key>Aringacute</key>
+    <dict>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
+    </dict>
+    <key>Adblgrave</key>
+    <dict>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
+    </dict>
+    <key>Ainvertedbreve</key>
+    <dict>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
+    </dict>
+    <key>tcommaaccent</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>Adotaccent</key>
+    <dict>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+    </dict>
+    <key>ldotbelow</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>rdotbelow</key>
+    <dict>
+      <key>Lslash</key>
+      <integer>0</integer>
+    </dict>
+    <key>rlinebelow</key>
+    <dict>
+      <key>Lslash</key>
+      <integer>0</integer>
+    </dict>
+    <key>tdotaccent</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>Adotbelow</key>
+    <dict>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+    </dict>
+    <key>Ahookabove</key>
+    <dict>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
+    </dict>
+    <key>Acircumflextilde</key>
+    <dict>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
+    </dict>
+    <key>Acircumflexdotbelow</key>
+    <dict>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis</key>
+      <integer>-27</integer>
+    </dict>
+    <key>ygrave</key>
+    <dict>
+      <key>naira</key>
+      <integer>0</integer>
+    </dict>
+    <key>Adieresis.ss03</key>
+    <dict>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
+    </dict>
+    <key>cdotaccent.ss03</key>
+    <dict>
+      <key>Lslash</key>
+      <integer>-14</integer>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>gdotaccent.ss03</key>
+    <dict>
+      <key>Lslash</key>
+      <integer>0</integer>
+    </dict>
+    <key>gcommaaccent.ss03</key>
+    <dict>
+      <key>Lslash</key>
+      <integer>0</integer>
+    </dict>
+    <key>lcommaaccent.ss03</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>rcommaaccent.ss03</key>
+    <dict>
+      <key>Lslash</key>
+      <integer>0</integer>
+    </dict>
+    <key>Adieresismacron.ss03</key>
+    <dict>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
+    </dict>
+    <key>tcommaaccent.ss03</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>Adotaccent.ss03</key>
+    <dict>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
+    </dict>
+    <key>ldotbelow.ss03</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>rdotbelow.ss03</key>
+    <dict>
+      <key>Lslash</key>
+      <integer>0</integer>
+    </dict>
+    <key>tdotaccent.ss03</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>ydotaccent.ss03</key>
+    <dict>
+      <key>naira</key>
+      <integer>0</integer>
+    </dict>
+    <key>Adotbelow.ss03</key>
+    <dict>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
+    </dict>
+    <key>Acircumflexdotbelow.ss03</key>
+    <dict>
+      <key>x</key>
+      <integer>-27</integer>
+      <key>xdieresis.ss03</key>
+      <integer>-27</integer>
     </dict>
   </dict>
 </plist>
