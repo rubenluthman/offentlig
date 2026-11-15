@@ -5766,6 +5766,8 @@
       <integer>78</integer>
       <key>Idotbelow.cv05.ss03</key>
       <integer>78</integer>
+      <key>IJ.cv05</key>
+      <integer>79</integer>
     </dict>
     <key>chook</key>
     <dict>
@@ -12365,6 +12367,8 @@
       <integer>78</integer>
       <key>one.cv06</key>
       <integer>25</integer>
+      <key>IJ.cv05</key>
+      <integer>79</integer>
     </dict>
     <key>idotbelow_circumflexcomb</key>
     <dict>
@@ -13209,6 +13213,8 @@
       <integer>92</integer>
       <key>one.cv06</key>
       <integer>61</integer>
+      <key>IJ.cv05</key>
+      <integer>93</integer>
     </dict>
     <key>istroke_circumflexcomb</key>
     <dict>
@@ -14269,6 +14275,8 @@
       <key>Ihookabove.cv05</key>
       <integer>48</integer>
       <key>Idotbelow.cv05.ss03</key>
+      <integer>48</integer>
+      <key>IJ.cv05</key>
       <integer>48</integer>
     </dict>
     <key>istroke_acutecomb</key>
@@ -15521,6 +15529,8 @@
       <integer>107</integer>
       <key>one.cv06</key>
       <integer>66</integer>
+      <key>IJ.cv05</key>
+      <integer>108</integer>
     </dict>
     <key>istroke_macroncomb</key>
     <dict>
@@ -16754,6 +16764,8 @@
       <integer>79</integer>
       <key>Idotbelow.cv05.ss03</key>
       <integer>79</integer>
+      <key>IJ.cv05</key>
+      <integer>80</integer>
     </dict>
     <key>istroke_tildecomb</key>
     <dict>
@@ -18099,6 +18111,8 @@
       <integer>86</integer>
       <key>Idotbelow.cv05.ss03</key>
       <integer>86</integer>
+      <key>IJ.cv05</key>
+      <integer>86</integer>
     </dict>
     <key>idotbelow_caroncomb</key>
     <dict>
@@ -18767,6 +18781,8 @@
       <integer>83</integer>
       <key>won</key>
       <integer>33</integer>
+      <key>IJ.cv05</key>
+      <integer>83</integer>
     </dict>
     <key>idotbelow_dieresiscomb</key>
     <dict>
@@ -20089,6 +20105,8 @@
       <integer>78</integer>
       <key>one.cv06</key>
       <integer>25</integer>
+      <key>IJ.cv05</key>
+      <integer>79</integer>
     </dict>
     <key>istroke_brevecomb</key>
     <dict>
@@ -22387,6 +22405,8 @@
       <integer>78</integer>
       <key>one.cv06</key>
       <integer>25</integer>
+      <key>IJ.cv05</key>
+      <integer>79</integer>
     </dict>
     <key>cacute</key>
     <dict>
@@ -32059,6 +32079,10 @@
       <integer>21</integer>
       <key>ydotbelow.ss03</key>
       <integer>21</integer>
+      <key>gdotaccent.ss03</key>
+      <integer>5</integer>
+      <key>gcommaaccent.ss03</key>
+      <integer>5</integer>
     </dict>
     <key>gbreve.ss01</key>
     <dict>
@@ -53205,6 +53229,10 @@
       <integer>28</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>40</integer>
+      <key>Idieresis.ss03</key>
+      <integer>66</integer>
+      <key>Idieresisacute.ss03</key>
+      <integer>66</integer>
     </dict>
     <key>l.ss02</key>
     <dict>
@@ -53435,6 +53463,22 @@
       <integer>80</integer>
       <key>idotbelow_caroncomb</key>
       <integer>40</integer>
+      <key>idieresis.ss03</key>
+      <integer>29</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>29</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>55</integer>
+      <key>idotbelow_circumflexcomb.ss03</key>
+      <integer>33</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>17</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>19</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>29</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>41</integer>
     </dict>
     <key>G.cv03</key>
     <dict>
@@ -54457,6 +54501,22 @@
       <integer>79</integer>
       <key>idotbelow_caroncomb</key>
       <integer>40</integer>
+      <key>idieresis.ss03</key>
+      <integer>29</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>29</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>55</integer>
+      <key>idotbelow_circumflexcomb.ss03</key>
+      <integer>33</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>16</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>19</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>29</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>41</integer>
     </dict>
     <key>Istroke.cv05</key>
     <dict>

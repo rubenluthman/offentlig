@@ -5618,6 +5618,8 @@
       <integer>82</integer>
       <key>Idotbelow.cv05.ss03</key>
       <integer>82</integer>
+      <key>IJ.cv05</key>
+      <integer>83</integer>
     </dict>
     <key>chook</key>
     <dict>
@@ -9897,6 +9899,8 @@
       <integer>91</integer>
       <key>one.cv06</key>
       <integer>81</integer>
+      <key>IJ.cv05</key>
+      <integer>91</integer>
     </dict>
     <key>istroke_circumflexcomb</key>
     <dict>
@@ -13131,6 +13135,10 @@
       <integer>85</integer>
       <key>Idotbelow.cv05.ss03</key>
       <integer>85</integer>
+      <key>IJ.cv01</key>
+      <integer>11</integer>
+      <key>IJ.cv05</key>
+      <integer>86</integer>
     </dict>
     <key>idotbelow_caroncomb</key>
     <dict>
@@ -13733,6 +13741,8 @@
       <integer>88</integer>
       <key>won</key>
       <integer>39</integer>
+      <key>IJ.cv05</key>
+      <integer>88</integer>
     </dict>
     <key>idotbelow_dieresiscomb</key>
     <dict>
@@ -22584,6 +22594,10 @@
       <integer>64</integer>
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>6</integer>
+      <key>gdotaccent.ss03</key>
+      <integer>16</integer>
+      <key>gcommaaccent.ss03</key>
+      <integer>16</integer>
     </dict>
     <key>gbreve.ss01</key>
     <dict>
@@ -27362,6 +27376,10 @@
       <integer>57</integer>
       <key>Idieresisacute.cv05</key>
       <integer>163</integer>
+      <key>Idieresis.cv05.ss03</key>
+      <integer>104</integer>
+      <key>Idieresisacute.cv05.ss03</key>
+      <integer>104</integer>
     </dict>
     <key>acircumflexacute.cv04</key>
     <dict>
@@ -37215,6 +37233,10 @@
       <integer>38</integer>
       <key>idotbelow_brevecomb</key>
       <integer>24</integer>
+      <key>idotbelow_circumflexcomb.ss03</key>
+      <integer>38</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>25</integer>
     </dict>
     <key>Jcircumflex.cv01</key>
     <dict>
@@ -37282,6 +37304,10 @@
       <integer>38</integer>
       <key>idotbelow_brevecomb.ss03</key>
       <integer>24</integer>
+      <key>Idieresis.ss03</key>
+      <integer>95</integer>
+      <key>Idieresisacute.ss03</key>
+      <integer>95</integer>
     </dict>
     <key>G.cv03</key>
     <dict>
@@ -37882,6 +37908,10 @@
       <integer>38</integer>
       <key>idotbelow_brevecomb</key>
       <integer>24</integer>
+      <key>idotbelow_circumflexcomb.ss03</key>
+      <integer>38</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>25</integer>
     </dict>
     <key>Istroke.cv05</key>
     <dict>
@@ -38408,6 +38438,8 @@
       <integer>83</integer>
       <key>franc</key>
       <integer>30</integer>
+      <key>adblgrave</key>
+      <integer>46</integer>
     </dict>
     <key>Idotaccent.cv05.ss03</key>
     <dict>
@@ -38445,6 +38477,8 @@
       <integer>83</integer>
       <key>franc</key>
       <integer>30</integer>
+      <key>adblgrave</key>
+      <integer>46</integer>
     </dict>
     <key>IJ.cv01.cv05</key>
     <dict>
@@ -38505,6 +38539,8 @@
       <integer>83</integer>
       <key>franc</key>
       <integer>30</integer>
+      <key>adblgrave</key>
+      <integer>46</integer>
     </dict>
     <key>Idotbelow.cv05.ss03</key>
     <dict>
@@ -38542,6 +38578,8 @@
       <integer>83</integer>
       <key>franc</key>
       <integer>30</integer>
+      <key>adblgrave</key>
+      <integer>46</integer>
     </dict>
   </dict>
 </plist>

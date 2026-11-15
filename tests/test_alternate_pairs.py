@@ -22,7 +22,7 @@ def test_pairs_with_an_alternate_keep_the_gap_of_the_rules(weight, italic, featu
     assert [(text, gap, ref, rule) for _, _, text, gap, ref, rule in found] == []
 
 
-@pytest.mark.parametrize("features_name", ["ss01", "ss02", "cv01", "cv03", "cv05", "cv06", "zero", "onum", "all"])
+@pytest.mark.parametrize("features_name", ["ss01", "ss02", "cv01", "cv03", "cv05", "cv06", "zero", "onum", "all", *[f"{n}+ss03" for n in ("ss01", "ss02", "cv01", "cv03", "cv05", "cv06", "zero", "onum")]])
 @pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
 def test_an_alternate_never_closes_a_pair_below_the_default_pair(weight, italic, features_name):
     """A pair with an alternate keeps at least the smaller of the gap of the same characters without the feature and 30 units,

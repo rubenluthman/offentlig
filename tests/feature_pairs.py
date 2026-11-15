@@ -23,7 +23,7 @@ ALTERNATE_SETS = {
     "cv04+ss03": {"cv04": True, "ss03": True},
     "salt+ss03": {"salt": True, "ss03": True},
     "onum+zero+cv06": {"onum": True, "zero": True, "cv06": True},
-    "cv06+ss03": {"cv06": True, "ss03": True},
+    **{f"{name}+ss03": {name: True, "ss03": True} for name in ("ss01", "ss02", "cv01", "cv03", "cv05", "cv06", "zero", "onum")},
     "all": {name: True for name in ALL_FEATURES},
     "all, lining figures": {name: True for name in ALL_FEATURES if name != "onum"},
 }
