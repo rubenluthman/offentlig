@@ -6,8 +6,8 @@
   <outline>
     <contour>
       <point x="905.609" y="481.9" type="line"/>
-      <point x="1023.237" y="481.9" type="line"/>
-      <point x="1022.538" y="552.1" type="line"/>
+      <point x="1036.237" y="481.9" type="line"/>
+      <point x="1035.538" y="552.1" type="line"/>
       <point x="904.589" y="552.1" type="line"/>
     </contour>
     <component base="g.ss01"/>

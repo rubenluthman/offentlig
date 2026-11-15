@@ -38,3 +38,13 @@ def test_typed_accent_ligatures_have_the_precomposed_advance(weight, italic, fea
         expected = advance(s, precomposed, features)
         for base in "ɨị":
             assert abs(advance(s, base + mark, features) - expected) <= 1, (base, mark)
+
+
+@pytest.mark.parametrize("weight,italic", ALL, ids=IDS)
+def test_letters_built_on_the_dotless_i_have_its_advance(weight, italic):
+    """`ỉ ȉ į` (not `į` in the light italics) keep the advance of `ı`, so the kerning groups they share with it give the same gaps. `ȋ` is left out: its
+    inverted breve is wider than the stem and sets its advance in most weights."""
+    s = Shaper(static_path(weight, italic))
+    expected = advance(s, "ı")
+    letters = "ỉȉ" if italic and weight in ("Thin", "ExtraLight", "Light") else "ỉȉį"  # the ogonek of the light italic `į` sets its advance
+    assert {ch: advance(s, ch) for ch in letters if abs(advance(s, ch) - expected) > 1} == {}

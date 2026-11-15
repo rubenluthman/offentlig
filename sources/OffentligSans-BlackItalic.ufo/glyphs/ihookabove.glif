@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ihookabove" format="2">
-  <advance width="586"/>
+  <advance width="571"/>
   <unicode hex="1EC9"/>
   <anchor x="363" y="18" name="ogonek"/>
   <anchor x="435.064" y="1539.645" name="top"/>

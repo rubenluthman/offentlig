@@ -14,9 +14,10 @@ ROWS = np.arange(LOW, HIGH, STEP)
 
 
 class PairTable:
-    def __init__(self, path, features, texts):
-        """`texts`: strings that shape alone to one glyph; the others are dropped (`self.texts` keeps the survivors)."""
-        self.shaper = Shaper(path)
+    def __init__(self, path, features, texts, shaper=None):
+        """`texts`: strings that shape alone to one glyph; the others are dropped (`self.texts` keeps the survivors).
+        `shaper`: a `Shaper` of the same font to share, so the outline rows of a glyph are measured once."""
+        self.shaper = shaper or Shaper(path)
         self.features = dict(features or {}, kern=True)
         self.hmtx = TTFont(path)["hmtx"].metrics
         order = TTFont(path).getGlyphOrder()
@@ -38,20 +39,30 @@ class PairTable:
                 self.lmax[i, k] = hi
                 self.rmin[i, k] = lo
 
+    def codepoint_of(self, name):
+        """The code point the built font encodes `name` at, or None."""
+        if not hasattr(self, "_codes"):
+            self._codes = {n: c for c, n in TTFont(self.shaper.path).getBestCmap().items()}
+        return self._codes.get(name)
+
     def glyph_name(self, i):
         return self.names[self.gids[i]]
 
     def kerning(self, left, right, chunk=2000):
         """Matrix of the kerning of the first glyph for `left` x `right` (indexes into `self.texts`), NaN where the pair
         is not two glyphs (a ligature or a substitution)."""
-        out = np.full((len(left), len(right)), np.nan)
-        pairs = [(a, b) for a in range(len(left)) for b in range(len(right))]
+        values = self.kerning_pairs([(a, b) for a in left for b in right], chunk)
+        return np.array(values).reshape(len(left), len(right))
+
+    def kerning_pairs(self, pairs, chunk=2000):
+        """List of the kerning of the first glyph of each (left, right) pair of indexes into `self.texts` (NaN as in `kerning`)."""
+        out = []
         for start in range(0, len(pairs), chunk):
             part = pairs[start : start + chunk]
             text, offsets = "", []
             for a, b in part:
                 offsets.append(len(text))
-                text += self.texts[left[a]] + self.texts[right[b]] + " "
+                text += self.texts[a] + self.texts[b] + " "
             buf = hb.Buffer()
             buf.add_str(text)
             buf.guess_segment_properties()
@@ -64,8 +75,10 @@ class PairTable:
                 while at < len(infos) and infos[at].cluster < end:
                     members.append(at)
                     at += 1
-                if len(members) == 3 and infos[members[0]].codepoint == self.gids[left[a]] and infos[members[1]].codepoint == self.gids[right[b]]:
-                    out[a, b] = positions[members[0]].x_advance - self.hmtx[self.names[self.gids[left[a]]]][0]
+                value = np.nan
+                if len(members) == 3 and infos[members[0]].codepoint == self.gids[a] and infos[members[1]].codepoint == self.gids[b]:
+                    value = positions[members[0]].x_advance - self.hmtx[self.names[self.gids[a]]][0]
+                out.append(value)
         return out
 
     def gaps(self, left, right, kern):
@@ -75,3 +88,9 @@ class PairTable:
         for a, i in enumerate(left):
             out[a] = (right_rows - self.lmax[i]).min(axis=1)
         return out + self.advance[left][:, None] + kern
+
+    def gaps_pairs(self, pairs, kern):
+        """List of the ink gap of each (left, right) pair of indexes (inf where the glyphs share no row), with `kern` from `kerning_pairs`."""
+        return [
+            float((self.rmin[b] - self.lmax[a]).min()) + self.advance[a] + k for (a, b), k in zip(pairs, kern)
+        ]

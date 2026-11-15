@@ -461,7 +461,6 @@
     <key>public.kern1.g</key>
     <array>
       <string>g</string>
-      <string>gstroke</string>
       <string>gmacron</string>
       <string>gacute</string>
       <string>gcaron</string>
@@ -789,6 +788,7 @@
       <string>gmacron.ss01</string>
       <string>gcommaaccent.ss01.ss03</string>
       <string>gdotaccent.ss01.ss03</string>
+      <string>gstroke</string>
     </array>
     <key>public.kern1.quoteleft</key>
     <array>
@@ -1594,7 +1594,6 @@
     <key>public.kern2.g</key>
     <array>
       <string>g</string>
-      <string>gstroke</string>
       <string>gmacron</string>
       <string>gacute</string>
       <string>gcaron</string>
@@ -1882,6 +1881,7 @@
       <string>gmacron.ss01</string>
       <string>gcommaaccent.ss01.ss03</string>
       <string>gdotaccent.ss01.ss03</string>
+      <string>gstroke</string>
     </array>
     <key>public.kern2.one</key>
     <array>

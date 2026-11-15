@@ -81,23 +81,30 @@ def test_an_accent_never_closes_a_pair_below_the_unaccented_pair(weight, italic,
     xs, ys = np.nonzero((accented[:, None] | accented[None, :]) & ~np.isnan(kern))
     tight = []
     for x, y in zip(xs, ys):
-        a, b = texts[x], texts[y]
-        if any(c in a + b for c in LEFT_FOR_THE_ICEBOX) or diaeresis_twin(a) + diaeresis_twin(b) in OVERLAP_BY_DESIGN:
-            continue
-        ta, tb = diaeresis_twin(a), diaeresis_twin(b)
-        if (len(b) == 1 and b in CLOSING_PUNCTUATION and accented[x]) or (len(a) == 1 and a in OPENING_PUNCTUATION and accented[y]):
-            # brackets and quotes keep the 30 units of test_accented_letters_clear_the_punctuation_next_to_them, with no slack
-            if gap[x, y] < AIM:
-                tight.append((a + b, round(float(gap[x, y])), None))
-            continue
-        if (ta in DIAERESIS_FLOOR and b in DIAERESIS_FLOOR[ta]) or (tb in DIAERESIS_FLOOR and a in DIAERESIS_FLOOR[tb]):
-            continue
         ref = np.inf
         if reference[x] >= 0 and reference[y] >= 0 and not np.isnan(gap[reference[x], reference[y]]):
             ref = gap[reference[x], reference[y]]
-        if gap[x, y] < min(ref, AIM) - ACCENT_SLACK:
-            tight.append((a + b, round(float(gap[x, y])), round(float(ref)) if ref != np.inf else None))
+        found = accent_violation(texts[x], texts[y], accented[x], accented[y], gap[x, y], ref)
+        if found:
+            tight.append(found)
     assert tight == []
+
+
+def accent_violation(a, b, accented_a, accented_b, gap, ref):
+    """None, or (pair, gap, reference gap) when a pair with an accented letter breaks the rule above: `ref` is the gap of the
+    same pair with the unaccented base letters (inf when there is none). Pairs with `ȉ ȑ`, the diaeresis pairs held to 8 and the
+    pairs that overlap by design pass."""
+    if any(c in a + b for c in LEFT_FOR_THE_ICEBOX) or diaeresis_twin(a) + diaeresis_twin(b) in OVERLAP_BY_DESIGN:
+        return None
+    ta, tb = diaeresis_twin(a), diaeresis_twin(b)
+    if (len(b) == 1 and b in CLOSING_PUNCTUATION and accented_a) or (len(a) == 1 and a in OPENING_PUNCTUATION and accented_b):
+        # brackets and quotes keep the 30 units of test_accented_letters_clear_the_punctuation_next_to_them, with no slack
+        return (a + b, round(float(gap)), None) if gap < AIM else None
+    if (ta in DIAERESIS_FLOOR and b in DIAERESIS_FLOOR[ta]) or (tb in DIAERESIS_FLOOR and a in DIAERESIS_FLOOR[tb]):
+        return None
+    if gap < min(ref, AIM) - ACCENT_SLACK:
+        return (a + b, round(float(gap)), round(float(ref)) if ref != np.inf else None)
+    return None
 
 
 ROUND_DOT_SLACK = 2

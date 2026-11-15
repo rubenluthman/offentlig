@@ -48,20 +48,67 @@ def _point_segment(p, a, b):
     return math.hypot(p[0] - a[0] - t * dx, p[1] - a[1] - t * dy)
 
 
+def _cross(o, a, b):
+    return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0])
+
+
+def _on_segment(p, a, b):
+    return min(a[0], b[0]) <= p[0] <= max(a[0], b[0]) and min(a[1], b[1]) <= p[1] <= max(a[1], b[1])
+
+
+def _segments_meet(a1, a2, b1, b2):
+    """True when two segments cross, touch or share an edge."""
+    d1, d2 = _cross(b1, b2, a1), _cross(b1, b2, a2)
+    d3, d4 = _cross(a1, a2, b1), _cross(a1, a2, b2)
+    if ((d1 > 0 > d2) or (d1 < 0 < d2)) and ((d3 > 0 > d4) or (d3 < 0 < d4)):
+        return True
+    return (
+        (d1 == 0 and _on_segment(a1, b1, b2))
+        or (d2 == 0 and _on_segment(a2, b1, b2))
+        or (d3 == 0 and _on_segment(b1, a1, a2))
+        or (d4 == 0 and _on_segment(b2, a1, a2))
+    )
+
+
+def _inside(p, contours):
+    """Even-odd test: is the point inside the ink of the closed polylines?"""
+    inside = False
+    for c in contours:
+        for (x0, y0), (x1, y1) in zip(c, c[1:]):
+            if (y0 > p[1]) != (y1 > p[1]) and p[0] < x0 + (p[1] - y0) * (x1 - x0) / (y1 - y0):
+                inside = not inside
+    return inside
+
+
 def outline_distance(a, b):
-    """Smallest distance between two sets of closed polylines (contours of points)."""
-    pa = [p for c in a for p in c]
-    pb = [p for c in b for p in c]
+    """Smallest distance between two sets of closed polylines (contours of points); 0 when they touch, cross or one lies in the other.
+
+    Contact is found for outlines that cross or share an edge as well as for a point on a segment, so a pair of glyphs whose ink
+    meets along a near-vertical edge is not read as clear."""
     sa, sb = _segments(a), _segments(b)
+    for s in sa:
+        lo_x, hi_x = min(s[0][0], s[1][0]), max(s[0][0], s[1][0])
+        lo_y, hi_y = min(s[0][1], s[1][1]), max(s[0][1], s[1][1])
+        for t in sb:
+            if max(t[0][0], t[1][0]) < lo_x or min(t[0][0], t[1][0]) > hi_x:
+                continue
+            if max(t[0][1], t[1][1]) < lo_y or min(t[0][1], t[1][1]) > hi_y:
+                continue
+            if _segments_meet(s[0], s[1], t[0], t[1]):
+                return 0.0
+    if any(_inside(c[0], b) for c in a if c) or any(_inside(c[0], a) for c in b if c):
+        return 0.0
     best = math.inf
-    for p in pa:
-        for s in sb:
-            if min(s[0][0], s[1][0]) - best < p[0] < max(s[0][0], s[1][0]) + best:
-                best = min(best, _point_segment(p, *s))
-    for p in pb:
-        for s in sa:
-            if min(s[0][0], s[1][0]) - best < p[0] < max(s[0][0], s[1][0]) + best:
-                best = min(best, _point_segment(p, *s))
+    for points, segments in ((a, sb), (b, sa)):
+        for c in points:
+            for p in c:
+                for s in segments:
+                    # a segment farther than `best` from the point in either axis cannot hold a nearer point
+                    if (
+                        min(s[0][0], s[1][0]) - best < p[0] < max(s[0][0], s[1][0]) + best
+                        and min(s[0][1], s[1][1]) - best < p[1] < max(s[0][1], s[1][1]) + best
+                    ):
+                        best = min(best, _point_segment(p, *s))
     return best
 
 
