@@ -55105,6 +55105,8 @@
       <integer>1</integer>
       <key>l.ss02</key>
       <integer>-35</integer>
+      <key>naira</key>
+      <integer>0</integer>
     </dict>
     <key>ldotbelow.ss02.ss03</key>
     <dict>

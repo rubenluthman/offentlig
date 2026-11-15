@@ -53234,7 +53234,7 @@
       <key>daggerdbl</key>
       <integer>0</integer>
       <key>naira</key>
-      <integer>14</integer>
+      <integer>15</integer>
       <key>euro</key>
       <integer>47</integer>
       <key>rupeeIndian</key>
@@ -55053,6 +55053,8 @@
       <integer>0</integer>
       <key>l.ss02</key>
       <integer>-36</integer>
+      <key>naira</key>
+      <integer>29</integer>
     </dict>
     <key>ldotbelow.ss02.ss03</key>
     <dict>

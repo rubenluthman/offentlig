@@ -38347,6 +38347,8 @@
       <integer>5</integer>
       <key>tdieresis.ss03</key>
       <integer>5</integer>
+      <key>naira</key>
+      <integer>0</integer>
     </dict>
     <key>ldotbelow.ss02.ss03</key>
     <dict>

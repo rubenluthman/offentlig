@@ -35909,7 +35909,7 @@
     <key>ldot.ss02</key>
     <dict>
       <key>naira</key>
-      <integer>0</integer>
+      <integer>52</integer>
       <key>at</key>
       <integer>-40</integer>
       <key>c</key>
@@ -35955,7 +35955,7 @@
       <key>daggerdbl</key>
       <integer>62</integer>
       <key>won</key>
-      <integer>14</integer>
+      <integer>32</integer>
       <key>euro</key>
       <integer>102</integer>
       <key>rupeeIndian</key>
@@ -37534,7 +37534,7 @@
       <key>daggerdbl</key>
       <integer>58</integer>
       <key>won</key>
-      <integer>0</integer>
+      <integer>38</integer>
       <key>euro</key>
       <integer>68</integer>
       <key>rupeeIndian</key>
@@ -37573,6 +37573,8 @@
       <integer>-80</integer>
       <key>tdieresis.ss03</key>
       <integer>-80</integer>
+      <key>naira</key>
+      <integer>58</integer>
     </dict>
     <key>ldotbelow.ss02.ss03</key>
     <dict>
