@@ -12,7 +12,7 @@ import numpy as np
 
 from conftest import static_path
 from pairs import PairTable
-from test_accent_pairs import AIM, accent_violation, base_of, encoded_texts, is_accented
+from test_accent_pairs import AIM, accent_violation, base_of, diaeresis_pair, encoded_texts, is_accented
 from test_plain_pairs import plain_violation
 from test_spacing import LEFT_FOR_THE_ICEBOX, shaper, source, ufo_glyph_name
 
@@ -23,7 +23,9 @@ ALTERNATE_SETS = {
     "cv04+ss03": {"cv04": True, "ss03": True},
     "salt+ss03": {"salt": True, "ss03": True},
     "onum+zero+cv06": {"onum": True, "zero": True, "cv06": True},
+    "cv06+ss03": {"cv06": True, "ss03": True},
     "all": {name: True for name in ALL_FEATURES},
+    "all, lining figures": {name: True for name in ALL_FEATURES if name != "onum"},
 }
 
 
@@ -90,6 +92,8 @@ class FeaturePairs:
             probe = accent_violation(ta, tb, self.accented[a], self.accented[b], -1e9, ref)
             if probe is None:
                 return None
+            if diaeresis_pair(ta, tb):
+                return 8, 8, 12
             if probe[2] is None:
                 return AIM, AIM, 40
             return min(ref, AIM) - 2, min(ref, AIM), min(ref, 40)

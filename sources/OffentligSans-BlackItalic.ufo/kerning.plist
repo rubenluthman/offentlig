@@ -12363,6 +12363,8 @@
       <integer>78</integer>
       <key>Idotbelow.cv05.ss03</key>
       <integer>78</integer>
+      <key>one.cv06</key>
+      <integer>25</integer>
     </dict>
     <key>idotbelow_circumflexcomb</key>
     <dict>
@@ -13205,6 +13207,8 @@
       <integer>92</integer>
       <key>Idotbelow.cv05.ss03</key>
       <integer>92</integer>
+      <key>one.cv06</key>
+      <integer>61</integer>
     </dict>
     <key>istroke_circumflexcomb</key>
     <dict>
@@ -15515,6 +15519,8 @@
       <integer>107</integer>
       <key>Idotbelow.cv05.ss03</key>
       <integer>107</integer>
+      <key>one.cv06</key>
+      <integer>66</integer>
     </dict>
     <key>istroke_macroncomb</key>
     <dict>
@@ -20081,6 +20087,8 @@
       <integer>78</integer>
       <key>Idotbelow.cv05.ss03</key>
       <integer>78</integer>
+      <key>one.cv06</key>
+      <integer>25</integer>
     </dict>
     <key>istroke_brevecomb</key>
     <dict>
@@ -22377,6 +22385,8 @@
       <integer>78</integer>
       <key>Idotbelow.cv05.ss03</key>
       <integer>78</integer>
+      <key>one.cv06</key>
+      <integer>25</integer>
     </dict>
     <key>cacute</key>
     <dict>
@@ -24775,11 +24785,11 @@
       <key>istroke_caroncomb</key>
       <integer>46</integer>
       <key>idieresis.ss03</key>
-      <integer>3</integer>
+      <integer>4</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>3</integer>
+      <integer>4</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>3</integer>
+      <integer>4</integer>
       <key>idotbelow_caroncomb</key>
       <integer>46</integer>
       <key>edblgrave</key>
@@ -30693,7 +30703,7 @@
       <key>idieresis</key>
       <integer>58</integer>
       <key>idieresis.ss03</key>
-      <integer>5</integer>
+      <integer>7</integer>
       <key>idotlessdieresisacute</key>
       <integer>80</integer>
       <key>idotbelow_dieresiscomb</key>
@@ -30701,9 +30711,9 @@
       <key>istroke_dieresiscomb</key>
       <integer>58</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>5</integer>
+      <integer>7</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>5</integer>
+      <integer>7</integer>
       <key>idotbelow_caroncomb</key>
       <integer>41</integer>
       <key>istroke_caroncomb</key>
@@ -53366,6 +53376,18 @@
       <integer>19</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>40</integer>
+      <key>idieresis</key>
+      <integer>58</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>58</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>58</integer>
+      <key>idieresis.ss03</key>
+      <integer>7</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>7</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>7</integer>
     </dict>
     <key>IJ.cv01</key>
     <dict>

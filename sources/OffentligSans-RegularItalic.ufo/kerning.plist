@@ -12669,6 +12669,8 @@
       <integer>64</integer>
       <key>Idotbelow.cv05.ss03</key>
       <integer>64</integer>
+      <key>one.cv06</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_circumflexcomb</key>
     <dict>
@@ -13507,6 +13509,8 @@
       <integer>64</integer>
       <key>Idotbelow.cv05.ss03</key>
       <integer>64</integer>
+      <key>one.cv06</key>
+      <integer>0</integer>
     </dict>
     <key>istroke_circumflexcomb</key>
     <dict>
@@ -17066,6 +17070,8 @@
       <integer>64</integer>
       <key>Idotbelow.cv05.ss03</key>
       <integer>64</integer>
+      <key>one.cv06</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_tildecomb.ss03</key>
     <dict>
@@ -20311,6 +20317,8 @@
       <integer>64</integer>
       <key>Idotbelow.cv05.ss03</key>
       <integer>64</integer>
+      <key>one.cv06</key>
+      <integer>0</integer>
     </dict>
     <key>istroke_brevecomb</key>
     <dict>
@@ -22577,6 +22585,8 @@
       <integer>64</integer>
       <key>Idotbelow.cv05.ss03</key>
       <integer>64</integer>
+      <key>one.cv06</key>
+      <integer>0</integer>
     </dict>
     <key>jcircumflex</key>
     <dict>
@@ -53313,6 +53323,18 @@
       <key>idotbelow_brevecomb.ss03</key>
       <integer>0</integer>
       <key>idotbelow_caroncomb.ss03</key>
+      <integer>0</integer>
+      <key>idieresis</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>0</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>0</integer>
+      <key>idieresis.ss03</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>0</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
       <integer>0</integer>
     </dict>
     <key>IJ.cv01</key>

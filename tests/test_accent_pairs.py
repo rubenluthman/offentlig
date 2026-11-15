@@ -90,18 +90,27 @@ def test_an_accent_never_closes_a_pair_below_the_unaccented_pair(weight, italic,
     assert tight == []
 
 
+DIAERESIS_MIN = 8
+
+
+def diaeresis_pair(a, b):
+    """True for the pairs of a diaeresis letter with a tall neighbour, which keep 8 units instead of the accent rule (see DIAERESIS_FLOOR)."""
+    ta, tb = diaeresis_twin(a), diaeresis_twin(b)
+    return (ta in DIAERESIS_FLOOR and b in DIAERESIS_FLOOR[ta]) or (tb in DIAERESIS_FLOOR and a in DIAERESIS_FLOOR[tb])
+
+
 def accent_violation(a, b, accented_a, accented_b, gap, ref):
     """None, or (pair, gap, reference gap) when a pair with an accented letter breaks the rule above: `ref` is the gap of the
-    same pair with the unaccented base letters (inf when there is none). Pairs with `ȉ ȑ`, the diaeresis pairs held to 8 and the
-    pairs that overlap by design pass."""
+    same pair with the unaccented base letters (inf when there is none). Pairs with `ȉ ȑ` and the pairs that overlap by design pass;
+    the diaeresis pairs held to 8 fail below 8 units."""
     if any(c in a + b for c in LEFT_FOR_THE_ICEBOX) or diaeresis_twin(a) + diaeresis_twin(b) in OVERLAP_BY_DESIGN:
         return None
     ta, tb = diaeresis_twin(a), diaeresis_twin(b)
     if (len(b) == 1 and b in CLOSING_PUNCTUATION and accented_a) or (len(a) == 1 and a in OPENING_PUNCTUATION and accented_b):
         # brackets and quotes keep the 30 units of test_accented_letters_clear_the_punctuation_next_to_them, with no slack
         return (a + b, round(float(gap)), None) if gap < AIM else None
-    if (ta in DIAERESIS_FLOOR and b in DIAERESIS_FLOOR[ta]) or (tb in DIAERESIS_FLOOR and a in DIAERESIS_FLOOR[tb]):
-        return None
+    if diaeresis_pair(a, b):
+        return (a + b, round(float(gap)), None) if gap < DIAERESIS_MIN else None
     if gap < min(ref, AIM) - ACCENT_SLACK:
         return (a + b, round(float(gap)), round(float(ref)) if ref != np.inf else None)
     return None
