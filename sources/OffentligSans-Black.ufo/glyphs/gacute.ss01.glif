@@ -2,6 +2,7 @@
 <glyph name="gacute.ss01" format="2">
   <advance width="1232"/>
   <anchor x="736" y="1413" name="top"/>
+  <anchor x="570.7" y="-336" name="bottom"/>
   <outline>
     <component base="g.ss01"/>
     <component base="acutecomb" xOffset="591" yOffset="-2"/>

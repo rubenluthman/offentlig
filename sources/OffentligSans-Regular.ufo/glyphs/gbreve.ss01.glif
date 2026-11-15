@@ -2,6 +2,7 @@
 <glyph name="gbreve.ss01" format="2">
   <advance width="1189.34375"/>
   <anchor x="650.031" y="1336.219" name="top"/>
+  <anchor x="591" y="-337" name="bottom"/>
   <outline>
     <component base="g.ss01"/>
     <component base="brevecomb" xOffset="326.281" yOffset="-4.625"/>

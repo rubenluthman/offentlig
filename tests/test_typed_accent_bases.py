@@ -47,6 +47,56 @@ def placed(weight, italic, text):
     return out
 
 
+LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+FEATURES = [None, "ss01", "ss02", "cv01", "cv03", "cv04", "cv05"]
+ALL_MARKS = ["\u0301", "\u0323", "\u0331"]  # above, dot below, line below
+SKIP = {"ỵ̣", "ị̣"}
+
+
+def _single_glyph(weight, italic, text, feature):
+    return len(shape(weight, italic, text, {feature: True} if feature else None)) == 1
+
+
+@pytest.mark.parametrize("weight,italic", CASES, ids=CASE_IDS)
+@pytest.mark.parametrize("feature", FEATURES, ids=[f or "plain" for f in FEATURES])
+def test_every_basic_letter_takes_marks_above_and_below(weight, italic, feature):
+    """A-Z a-z (and their alternates with ss01 ss02 cv01 cv03 cv04 cv05) take U+0301, U+0323 and U+0331.
+
+    Each typed mark is moved by GPOS (offset differs from the run without mark features) and clears its base by 40
+    units. A pair that shapes as one precomposed glyph is skipped; its glyph is checked by the other tests.
+    Letters without a `bottom` anchor (W w g y x f J) left U+0323 and U+0331 at the pen position.
+    """
+    feats = {feature: True} if feature else {}
+    bad, checked = [], 0
+    for letter in LETTERS:
+        base = shape(weight, italic, letter, feats or None)[0][0]
+        if feature and base == shape(weight, italic, letter)[0][0]:
+            continue  # the feature does not change this letter
+        for mark in ALL_MARKS:
+            seq = letter + mark
+            on = shape(weight, italic, seq, feats or None)
+            if len(on) != 2:
+                continue
+            off = shape(weight, italic, seq, {**feats, "mark": False, "mkmk": False})
+            checked += 1
+            if on[1][2:] == off[1][2:]:
+                bad.append((seq, "not positioned"))
+                continue
+            _, gs, _, _ = _load(weight, italic)
+            glyphs = []
+            x = 0
+            for name, adv, dx, dy in on:
+                poly = Polyline(gs)
+                gs[name].draw(TransformPen(poly, (1, 0, 0, 1, x + dx, dy)))
+                glyphs.append(poly.contours)
+                x += adv
+            gap = outline_distance(glyphs[0], glyphs[1])
+            if gap < MIN_GAP:
+                bad.append((seq, round(gap)))
+    assert checked > 50 or feature, checked  # most letters with a precomposed glyph shape as one glyph and are skipped
+    assert not bad, f"{feature or 'plain'}: {bad}"
+
+
 def sequences():
     for base in BASES:
         for mark in MARKS:

@@ -2,6 +2,7 @@
 <glyph name="Wdieresis.ss03" format="2">
   <advance width="1952"/>
   <anchor x="1159.5" y="1861.9" name="top"/>
+  <anchor x="902.8" y="0" name="bottom"/>
   <outline>
     <component base="W"/>
     <component base="dieresiscomb.ss03" xOffset="572" yOffset="412"/>

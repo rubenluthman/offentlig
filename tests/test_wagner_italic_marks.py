@@ -42,6 +42,11 @@ def _off_slant(font, glyph):
     return bad
 
 
+# `ỵ` keeps the dot beside the tail that it has had since Public Sans. `y` has a `bottom` anchor under the tail (like
+# `q p j`) for typed marks below, so the dot is deliberately off it; typed `y` + U+0323 composes to `ỵ`.
+KEEPS_PUBLIC_SANS_DOT = {"ydotbelow", "ydotbelow.ss03"}
+
+
 def _misplaced(font):
     """Match each mark to the nearest preceding component that carries the anchor name it attaches to.
 
@@ -51,6 +56,8 @@ def _misplaced(font):
     bad = []
     for glyph in font:
         if len(glyph.components) < 2 or glyph.contours:
+            continue
+        if glyph.name in KEEPS_PUBLIC_SANS_DOT:
             continue
         if all(_is_combining_mark(font, c.baseGlyph) for c in glyph.components):
             bad.extend(_off_slant(font, glyph))

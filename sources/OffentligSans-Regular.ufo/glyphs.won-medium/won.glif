@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="won" format="2">
+  <advance width="2106.375"/>
+  <anchor x="1039.375" y="1446" name="top"/>
+  <outline>
+    <contour>
+      <point x="546.438" y="0" type="line"/>
+      <point x="729.5" y="0" type="line"/>
+      <point x="1038.25" y="1072.875" type="line"/>
+      <point x="1343.062" y="0" type="line"/>
+      <point x="1531.25" y="0" type="line"/>
+      <point x="1954.25" y="1446" type="line"/>
+      <point x="1741.375" y="1446" type="line"/>
+      <point x="1430.875" y="348.25" type="line"/>
+      <point x="1120.812" y="1446" type="line"/>
+      <point x="957.375" y="1446" type="line"/>
+      <point x="647.438" y="348.25" type="line"/>
+      <point x="340.75" y="1446" type="line"/>
+      <point x="127.312" y="1446" type="line"/>
+    </contour>
+    <contour>
+      <point x="25.625" y="640" type="line"/>
+      <point x="2072" y="640" type="line"/>
+      <point x="2072" y="740" type="line"/>
+      <point x="25.625" y="740" type="line"/>
+    </contour>
+    <contour>
+      <point x="25.625" y="1025" type="line"/>
+      <point x="2072" y="1025" type="line"/>
+      <point x="2072" y="1125" type="line"/>
+      <point x="25.625" y="1125" type="line"/>
+    </contour>
+  </outline>
+</glyph>

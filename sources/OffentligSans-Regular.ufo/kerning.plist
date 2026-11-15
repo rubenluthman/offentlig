@@ -363,7 +363,7 @@
       <key>rdotaccent.ss03</key>
       <integer>0</integer>
       <key>rinvertedbreve</key>
-      <integer>93</integer>
+      <integer>99</integer>
       <key>scaron</key>
       <integer>96</integer>
       <key>scircumflex</key>
@@ -4543,6 +4543,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>38</integer>
+      <key>won</key>
+      <integer>0</integer>
     </dict>
     <key>jdotlesscaron</key>
     <dict>
@@ -4806,6 +4808,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>33</integer>
+      <key>won</key>
+      <integer>0</integer>
     </dict>
     <key>question</key>
     <dict>
@@ -5347,6 +5351,8 @@
       <integer>154</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>162</integer>
+      <key>rinvertedbreve</key>
+      <integer>13</integer>
     </dict>
     <key>idotlessdieresisacute.ss03</key>
     <dict>
@@ -6566,6 +6572,8 @@
       <integer>0</integer>
       <key>Lslash</key>
       <integer>-14</integer>
+      <key>won</key>
+      <integer>-14</integer>
     </dict>
     <key>colon.ss03</key>
     <dict>
@@ -7265,7 +7273,7 @@
       <key>verticallinemod</key>
       <integer>40</integer>
       <key>won</key>
-      <integer>0</integer>
+      <integer>53</integer>
       <key>ydieresis</key>
       <integer>0</integer>
       <key>yen</key>
@@ -7448,6 +7456,8 @@
       <key>yen</key>
       <integer>0</integer>
       <key>zerosuperior</key>
+      <integer>0</integer>
+      <key>won</key>
       <integer>0</integer>
     </dict>
     <key>imacron</key>
@@ -9229,7 +9239,7 @@
       <key>verticallinemod</key>
       <integer>40</integer>
       <key>won</key>
-      <integer>0</integer>
+      <integer>53</integer>
       <key>ydieresis</key>
       <integer>0</integer>
       <key>zcircumflex</key>
@@ -9580,7 +9590,7 @@
       <key>verticallinemod</key>
       <integer>40</integer>
       <key>won</key>
-      <integer>0</integer>
+      <integer>53</integer>
       <key>zcircumflex</key>
       <integer>0</integer>
       <key>zerosuperior</key>
@@ -10017,7 +10027,7 @@
       <key>verticallinemod</key>
       <integer>40</integer>
       <key>won</key>
-      <integer>0</integer>
+      <integer>53</integer>
       <key>ydieresis</key>
       <integer>0</integer>
       <key>zcircumflex</key>
@@ -10471,6 +10481,8 @@
       <integer>103</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>111</integer>
+      <key>won</key>
+      <integer>0</integer>
     </dict>
     <key>istroke_acutecomb</key>
     <dict>
@@ -11006,6 +11018,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
+      <key>won</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_acutecomb.ss03</key>
     <dict>
@@ -11437,6 +11451,8 @@
       <integer>103</integer>
       <key>idotbelow_caroncomb</key>
       <integer>111</integer>
+      <key>won</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_brevecomb</key>
     <dict>
@@ -12864,6 +12880,8 @@
       <integer>164</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>183</integer>
+      <key>won</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_caroncomb.ss03</key>
     <dict>
@@ -13111,6 +13129,8 @@
       <integer>164</integer>
       <key>idotbelow_caroncomb</key>
       <integer>183</integer>
+      <key>won</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_dieresiscomb</key>
     <dict>
@@ -14559,6 +14579,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>38</integer>
+      <key>won</key>
+      <integer>0</integer>
     </dict>
     <key>istroke_dieresiscomb</key>
     <dict>
@@ -15309,7 +15331,7 @@
       <key>verticallinemod</key>
       <integer>33</integer>
       <key>won</key>
-      <integer>0</integer>
+      <integer>53</integer>
       <key>zcircumflex</key>
       <integer>0</integer>
       <key>zerosuperior</key>
@@ -31199,7 +31221,7 @@
       <key>idotbelow_macroncomb.ss03</key>
       <integer>0</integer>
       <key>idotlessdieresisacute</key>
-      <integer>0</integer>
+      <integer>20</integer>
       <key>idotlessdieresisacute.ss03</key>
       <integer>0</integer>
       <key>iinvertedbreve</key>
@@ -31217,6 +31239,18 @@
       <key>won</key>
       <integer>0</integer>
       <key>Lslash</key>
+      <integer>0</integer>
+      <key>braceright</key>
+      <integer>-33</integer>
+      <key>circumflex</key>
+      <integer>0</integer>
+      <key>ibreve</key>
+      <integer>0</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>0</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_brevecomb</key>
       <integer>0</integer>
     </dict>
     <key>rmod</key>
@@ -32678,15 +32712,15 @@
       <key>ibreve</key>
       <integer>0</integer>
       <key>icircumflex</key>
-      <integer>0</integer>
+      <integer>60</integer>
       <key>idotbelow_brevecomb</key>
       <integer>0</integer>
       <key>idotbelow_brevecomb.ss03</key>
       <integer>0</integer>
       <key>idotbelow_circumflexcomb</key>
-      <integer>0</integer>
+      <integer>60</integer>
       <key>idotbelow_circumflexcomb.ss03</key>
-      <integer>0</integer>
+      <integer>60</integer>
       <key>idotlessdieresisacute</key>
       <integer>0</integer>
       <key>idotlessdieresisacute.ss03</key>
@@ -32694,11 +32728,11 @@
       <key>istroke_brevecomb</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
-      <integer>0</integer>
+      <integer>60</integer>
       <key>jcircumflex</key>
-      <integer>0</integer>
+      <integer>35</integer>
       <key>euro</key>
-      <integer>0</integer>
+      <integer>26</integer>
     </dict>
     <key>xdieresis</key>
     <dict>
@@ -33413,7 +33447,7 @@
       <key>tlinebelow</key>
       <integer>-77</integer>
       <key>won</key>
-      <integer>29</integer>
+      <integer>30</integer>
       <key>liraTurkish</key>
       <integer>16</integer>
       <key>d</key>
@@ -33436,6 +33470,8 @@
       <integer>-50</integer>
       <key>dcedilla</key>
       <integer>-50</integer>
+      <key>naira</key>
+      <integer>45</integer>
     </dict>
     <key>T</key>
     <dict>
@@ -33961,6 +33997,12 @@
       <integer>0</integer>
       <key>y</key>
       <integer>0</integer>
+      <key>question</key>
+      <integer>0</integer>
+      <key>question.ss03</key>
+      <integer>0</integer>
+      <key>rupeeIndian</key>
+      <integer>7</integer>
     </dict>
     <key>published</key>
     <dict>

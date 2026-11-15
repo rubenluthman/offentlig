@@ -3165,6 +3165,8 @@
       <integer>9</integer>
       <key>ygrave</key>
       <integer>0</integer>
+      <key>won</key>
+      <integer>0</integer>
     </dict>
     <key>lcaron</key>
     <dict>
@@ -4271,6 +4273,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>4</integer>
+      <key>won</key>
+      <integer>0</integer>
     </dict>
     <key>jdotlesscaron</key>
     <dict>
@@ -4496,6 +4500,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>5</integer>
+      <key>won</key>
+      <integer>0</integer>
     </dict>
     <key>question</key>
     <dict>
@@ -16670,6 +16676,8 @@
       <integer>83</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>102</integer>
+      <key>won</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_caroncomb.ss03</key>
     <dict>
@@ -16949,6 +16957,8 @@
       <integer>83</integer>
       <key>idotbelow_caroncomb</key>
       <integer>102</integer>
+      <key>won</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_dieresiscomb</key>
     <dict>
@@ -19013,6 +19023,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>4</integer>
+      <key>won</key>
+      <integer>0</integer>
     </dict>
     <key>istroke_dieresiscomb</key>
     <dict>
@@ -38528,6 +38540,8 @@
       <integer>0</integer>
       <key>Ytilde</key>
       <integer>0</integer>
+      <key>won</key>
+      <integer>0</integer>
     </dict>
     <key>dieresis.ss03</key>
     <dict>
@@ -39658,6 +39672,8 @@
       <key>yen</key>
       <integer>0</integer>
       <key>ygrave</key>
+      <integer>0</integer>
+      <key>won</key>
       <integer>0</integer>
     </dict>
     <key>ecircumflexhookabove</key>
@@ -43232,6 +43248,8 @@
       <integer>0</integer>
       <key>idotbelow_brevecomb.ss03</key>
       <integer>0</integer>
+      <key>won</key>
+      <integer>0</integer>
     </dict>
     <key>ocircumflexdotbelow</key>
     <dict>
@@ -44628,6 +44646,8 @@
       <key>ydotaccent.ss03</key>
       <integer>0</integer>
       <key>ydotbelow.ss03</key>
+      <integer>0</integer>
+      <key>naira</key>
       <integer>0</integer>
     </dict>
     <key>partialdiff</key>
@@ -47891,6 +47911,16 @@
       <integer>20</integer>
       <key>daggerdbl</key>
       <integer>19</integer>
+      <key>idotbelow_gravecomb</key>
+      <integer>0</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>0</integer>
+      <key>igrave</key>
+      <integer>0</integer>
+      <key>istroke_gravecomb</key>
+      <integer>0</integer>
+      <key>rupeeIndian</key>
+      <integer>20</integer>
     </dict>
     <key>xdieresis</key>
     <dict>
@@ -48002,6 +48032,8 @@
       <integer>0</integer>
       <key>parenleftsuperior</key>
       <integer>0</integer>
+      <key>naira</key>
+      <integer>0</integer>
     </dict>
     <key>ydieresis</key>
     <dict>
@@ -48029,6 +48061,8 @@
       <integer>0</integer>
       <key>parenleftsuperior</key>
       <integer>0</integer>
+      <key>naira</key>
+      <integer>0</integer>
     </dict>
     <key>ydieresis.ss03</key>
     <dict>
@@ -48036,12 +48070,16 @@
       <integer>0</integer>
       <key>parenleftsuperior</key>
       <integer>0</integer>
+      <key>naira</key>
+      <integer>0</integer>
     </dict>
     <key>ydotaccent</key>
     <dict>
       <key>idblgrave</key>
       <integer>0</integer>
       <key>parenleftsuperior</key>
+      <integer>0</integer>
+      <key>naira</key>
       <integer>0</integer>
     </dict>
     <key>ydotbelow</key>
@@ -48054,6 +48092,8 @@
       <integer>0</integer>
       <key>parenleftsuperior</key>
       <integer>0</integer>
+      <key>naira</key>
+      <integer>0</integer>
     </dict>
     <key>ydotbelow.ss03</key>
     <dict>
@@ -48064,6 +48104,8 @@
       <key>rlinebelow</key>
       <integer>0</integer>
       <key>parenleftsuperior</key>
+      <integer>0</integer>
+      <key>naira</key>
       <integer>0</integer>
     </dict>
     <key>yen</key>
@@ -48249,6 +48291,8 @@
       <integer>0</integer>
       <key>parenleftsuperior</key>
       <integer>0</integer>
+      <key>naira</key>
+      <integer>0</integer>
     </dict>
     <key>ymacron</key>
     <dict>
@@ -48264,12 +48308,16 @@
       <integer>0</integer>
       <key>parenleftsuperior</key>
       <integer>0</integer>
+      <key>naira</key>
+      <integer>0</integer>
     </dict>
     <key>ytilde</key>
     <dict>
       <key>idblgrave</key>
       <integer>0</integer>
       <key>parenleftsuperior</key>
+      <integer>0</integer>
+      <key>naira</key>
       <integer>0</integer>
     </dict>
     <key>zacute</key>
@@ -48506,7 +48554,7 @@
       <key>rupeeIndian</key>
       <integer>51</integer>
       <key>won</key>
-      <integer>0</integer>
+      <integer>11</integer>
       <key>f</key>
       <integer>0</integer>
       <key>t</key>
@@ -48515,6 +48563,8 @@
       <integer>0</integer>
       <key>fl</key>
       <integer>0</integer>
+      <key>naira</key>
+      <integer>31</integer>
     </dict>
     <key>r</key>
     <dict>
@@ -48768,6 +48818,12 @@
       <integer>0</integer>
       <key>y</key>
       <integer>0</integer>
+      <key>question</key>
+      <integer>0</integer>
+      <key>question.ss03</key>
+      <integer>0</integer>
+      <key>rupeeIndian</key>
+      <integer>30</integer>
     </dict>
     <key>published</key>
     <dict>
@@ -49019,15 +49075,21 @@
     <dict>
       <key>parenleftsuperior</key>
       <integer>0</integer>
+      <key>naira</key>
+      <integer>0</integer>
     </dict>
     <key>w</key>
     <dict>
       <key>parenleftsuperior</key>
       <integer>0</integer>
+      <key>naira</key>
+      <integer>0</integer>
     </dict>
     <key>y</key>
     <dict>
       <key>parenleftsuperior</key>
+      <integer>0</integer>
+      <key>naira</key>
       <integer>0</integer>
     </dict>
     <key>gstroke</key>
@@ -49279,6 +49341,8 @@
     <key>ycircumflex</key>
     <dict>
       <key>parenleftsuperior</key>
+      <integer>0</integer>
+      <key>naira</key>
       <integer>0</integer>
     </dict>
     <key>aemacron</key>
@@ -49550,6 +49614,8 @@
     <dict>
       <key>parenleftsuperior</key>
       <integer>0</integer>
+      <key>naira</key>
+      <integer>0</integer>
     </dict>
     <key>Adieresis.ss03</key>
     <dict>
@@ -49684,6 +49750,8 @@
     <key>ydotaccent.ss03</key>
     <dict>
       <key>parenleftsuperior</key>
+      <integer>0</integer>
+      <key>naira</key>
       <integer>0</integer>
     </dict>
     <key>Adotbelow.ss03</key>

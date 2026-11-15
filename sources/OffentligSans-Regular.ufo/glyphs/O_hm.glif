@@ -2,6 +2,7 @@
 <glyph name="Ohm" format="2">
   <advance width="1531.4375"/>
   <unicode hex="2126"/>
+  <unicode hex="03A9"/>
   <outline>
     <contour>
       <point x="168.625" y="0.0" type="line"/>

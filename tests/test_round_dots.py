@@ -118,6 +118,8 @@ def test_italic_ss03_marks_sit_on_their_anchors(weight):
     for glyph in font:
         if not glyph.name.endswith(".ss03") or glyph.contours or len(glyph.components) < 2:
             continue
+        if glyph.name == "ydotbelow.ss03":
+            continue  # the dot stays beside the tail as in `ydotbelow`; `y`'s `bottom` anchor is under the tail (test_wagner_italic_marks)
         if glyph.name == "candrabinducomb.ss03":
             continue  # a dot centred on a breve: it has no anchor to attach to, test_wagner_italic_marks checks its slant
         for index, comp in enumerate(glyph.components[1:], start=1):

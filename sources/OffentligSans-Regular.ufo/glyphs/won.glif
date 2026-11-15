@@ -20,16 +20,16 @@
       <point x="110.53125" y="1446.0" type="line"/>
     </contour>
     <contour>
-      <point x="26.5625" y="642.0" type="line"/>
-      <point x="2024.0" y="643.3125" type="line"/>
-      <point x="2024.0" y="759.25" type="line"/>
-      <point x="26.5625" y="757.9375" type="line"/>
+      <point x="26.562" y="619" type="line"/>
+      <point x="2024" y="619" type="line"/>
+      <point x="2024" y="730" type="line"/>
+      <point x="26.562" y="730" type="line"/>
     </contour>
     <contour>
-      <point x="26.5625" y="954.0" type="line"/>
-      <point x="2024.0" y="955.3125" type="line"/>
-      <point x="2024.0" y="1071.25" type="line"/>
-      <point x="26.5625" y="1069.9375" type="line"/>
+      <point x="26.562" y="863" type="line"/>
+      <point x="2024" y="863" type="line"/>
+      <point x="2024" y="974" type="line"/>
+      <point x="26.562" y="974" type="line"/>
     </contour>
   </outline>
 </glyph>
