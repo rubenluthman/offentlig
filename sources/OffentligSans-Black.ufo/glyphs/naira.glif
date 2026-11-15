@@ -18,16 +18,16 @@
       <point x="229" y="1446" type="line"/>
     </contour>
     <contour>
-      <point x="20" y="420" type="line"/>
-      <point x="1770" y="420" type="line"/>
-      <point x="1770" y="596" type="line"/>
-      <point x="20" y="596" type="line"/>
+      <point x="20" y="468" type="line"/>
+      <point x="1770" y="468" type="line"/>
+      <point x="1770" y="635" type="line"/>
+      <point x="20" y="635" type="line"/>
     </contour>
     <contour>
-      <point x="20" y="888" type="line"/>
-      <point x="1770" y="888" type="line"/>
-      <point x="1770" y="1064" type="line"/>
-      <point x="20" y="1064" type="line"/>
+      <point x="20" y="969" type="line"/>
+      <point x="1770" y="969" type="line"/>
+      <point x="1770" y="1136" type="line"/>
+      <point x="20" y="1136" type="line"/>
     </contour>
   </outline>
 </glyph>

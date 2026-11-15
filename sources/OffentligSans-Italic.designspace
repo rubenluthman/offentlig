@@ -33,6 +33,16 @@
         <dimension name="Weight" xvalue="900"/>
       </location>
     </source>
+    <source filename="OffentligSans-RegularItalic.ufo" name="Offentlig Sans won medium italic" layer="won-medium">
+      <location>
+        <dimension name="Weight" xvalue="450"/>
+      </location>
+    </source>
+    <source filename="OffentligSans-RegularItalic.ufo" name="Offentlig Sans won extrabold italic" layer="won-extrabold">
+      <location>
+        <dimension name="Weight" xvalue="775"/>
+      </location>
+    </source>
   </sources>
   <instances>
     <instance name="Offentlig Sans Thin Italic" familyname="Offentlig Sans" stylename="Thin Italic" filename="instance_ufos/OffentligSans-ThinItalic.ufo" stylemapfamilyname="Offentlig Sans Thin" stylemapstylename="italic">
