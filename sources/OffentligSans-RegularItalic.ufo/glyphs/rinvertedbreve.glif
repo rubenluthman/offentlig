@@ -6,6 +6,6 @@
   <anchor x="498.258" y="1356.25" name="top"/>
   <outline>
     <component base="r"/>
-    <component base="breveinvertedcomb" xOffset="76.125"/>
+    <component base="breveinvertedcomb" xOffset="76.125" yOffset="0"/>
   </outline>
 </glyph>

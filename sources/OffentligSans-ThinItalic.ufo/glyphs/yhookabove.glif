@@ -3,6 +3,7 @@
   <advance width="944"/>
   <unicode hex="1EF7"/>
   <anchor x="603.307" y="1406.183" name="top"/>
+  <anchor x="100.3" y="-330" name="bottom"/>
   <outline>
     <component base="y"/>
     <component base="hookabovecomb" xOffset="-126" yOffset="-26"/>

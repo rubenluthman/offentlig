@@ -2,6 +2,7 @@
 <glyph name="ydotaccent.ss03" format="2">
   <advance width="1021.34375"/>
   <anchor x="636.86" y="1436.45" name="top"/>
+  <anchor x="129.8" y="-330" name="bottom"/>
   <outline>
     <component base="y"/>
     <component base="dotaccentcomb.ss03" xOffset="409.906"/>

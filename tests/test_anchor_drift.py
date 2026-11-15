@@ -204,3 +204,26 @@ def test_alternate_widths_follow_their_plain_glyph(ufo):
             bad.append((glyph.name, round(glyph.width, 1), round(want, 1)))
     assert checked > 200
     assert not bad, f"{ufo}: width differs from the plain glyph plus the alternate base's extra width (glyph, width, expected): {bad}"
+
+
+HORN_MARK_FIRST = "ohornacute ohorngrave ohornhookabove ohorntilde uhorngrave uhornhookabove uhorntilde".split()
+
+
+@pytest.mark.parametrize("ufo", UFOS)
+def test_horn_composites_have_their_top_anchor_on_the_mark_top(ufo):
+    """The o-horn and u-horn letters list the mark first, so the drift test skips them; check them here.
+
+    The stored `top` is the `top` of the mark moved by the mark's offset. In the italic the mark's own `top` is on the
+    8 degree slant, so a `top` straight above `_top` (43 - 71 units off) put a typed extra mark beside the accent.
+    """
+    font = ufoLib2.Font.open(SOURCES / ufo)
+    bad = []
+    for name in HORN_MARK_FIRST:
+        glyph = font[name]
+        mark = glyph.components[0]
+        top = _anchors(font, mark.baseGlyph)["top"]
+        want = (top[0] + mark.transformation[4], top[1] + mark.transformation[5])
+        have = _anchors(font, name)["top"]
+        if abs(have[0] - want[0]) > TOLERANCE or abs(have[1] - want[1]) > TOLERANCE:
+            bad.append((name, tuple(round(v, 1) for v in have), tuple(round(v, 1) for v in want)))
+    assert not bad, f"{ufo}: top anchor off the mark top (glyph, stored, expected): {bad}"

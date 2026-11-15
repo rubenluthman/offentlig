@@ -2,6 +2,7 @@
 <glyph name="gcommaaccent.ss01.ss03" format="2">
   <advance width="1189.34375"/>
   <anchor x="650.031" y="1032.0" name="top"/>
+  <anchor x="591" y="-337" name="bottom"/>
   <outline>
     <component base="g.ss01"/>
     <component base="commaturnedabovecomb.ss03" xOffset="437.281" yOffset="-2.0"/>
