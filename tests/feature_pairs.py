@@ -19,7 +19,7 @@ from test_spacing import LEFT_FOR_THE_ICEBOX, shaper, source, ufo_glyph_name
 ALL_FEATURES = ["ss01", "ss02", "ss03", "cv01", "cv03", "cv04", "cv05", "cv06", "zero", "onum"]
 # Each alternate on its own, then the combinations where two alternates meet in one pair.
 ALTERNATE_SETS = {
-    **{name: {name: True} for name in ("ss01", "ss02", "cv01", "cv03", "cv05", "cv06", "zero", "onum")},
+    **{name: {name: True} for name in ("ss01", "ss02", "cv01", "cv03", "cv04", "cv05", "cv06", "zero", "onum")},
     "cv04+ss03": {"cv04": True, "ss03": True},
     "salt+ss03": {"salt": True, "ss03": True},
     "onum+zero+cv06": {"onum": True, "zero": True, "cv06": True},

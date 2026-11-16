@@ -1935,10 +1935,6 @@
       <integer>121</integer>
       <key>istroke_caroncomb</key>
       <integer>121</integer>
-      <key>gbreve.ss01</key>
-      <integer>-224</integer>
-      <key>gcaron.ss01</key>
-      <integer>-224</integer>
     </dict>
     <key>public.kern1.Z</key>
     <dict>
@@ -6512,7 +6508,7 @@
       <key>idotbelow_circumflexcomb</key>
       <integer>317</integer>
       <key>idotbelow_dieresiscomb</key>
-      <integer>69</integer>
+      <integer>363</integer>
       <key>idotbelow_gravecomb</key>
       <integer>339</integer>
       <key>idotbelow_macroncomb</key>
@@ -6538,7 +6534,7 @@
       <key>istroke_circumflexcomb</key>
       <integer>317</integer>
       <key>istroke_dieresiscomb</key>
-      <integer>69</integer>
+      <integer>363</integer>
       <key>istroke_gravecomb</key>
       <integer>339</integer>
       <key>istroke_macroncomb</key>
@@ -6744,7 +6740,7 @@
       <key>zerosuperior</key>
       <integer>155</integer>
       <key>idieresis</key>
-      <integer>69</integer>
+      <integer>363</integer>
       <key>idotbelow_brevecomb.ss03</key>
       <integer>303</integer>
       <key>idotbelow_caroncomb.ss03</key>
@@ -6793,6 +6789,10 @@
       <integer>10</integer>
       <key>eight.osf</key>
       <integer>38</integer>
+      <key>itilde</key>
+      <integer>286</integer>
+      <key>imacron</key>
+      <integer>300</integer>
     </dict>
     <key>ohungarumlaut</key>
     <dict>
@@ -9781,9 +9781,9 @@
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>263</integer>
       <key>idotbelow_dieresiscomb</key>
-      <integer>48</integer>
+      <integer>335</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>0</integer>
+      <integer>282</integer>
       <key>idotbelow_gravecomb</key>
       <integer>243</integer>
       <key>idotbelow_gravecomb.ss03</key>
@@ -9827,9 +9827,9 @@
       <key>istroke_circumflexcomb</key>
       <integer>263</integer>
       <key>istroke_dieresiscomb</key>
-      <integer>48</integer>
+      <integer>335</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>0</integer>
+      <integer>282</integer>
       <key>istroke_gravecomb</key>
       <integer>243</integer>
       <key>istroke_macroncomb</key>
@@ -10037,9 +10037,9 @@
       <key>zerosuperior</key>
       <integer>122</integer>
       <key>idieresis</key>
-      <integer>48</integer>
+      <integer>335</integer>
       <key>idieresis.ss03</key>
-      <integer>0</integer>
+      <integer>282</integer>
       <key>l.ss02</key>
       <integer>28</integer>
       <key>lacute.ss02</key>
@@ -12190,7 +12190,7 @@
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>191</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>0</integer>
+      <integer>251</integer>
       <key>idotbelow_gravecomb.ss03</key>
       <integer>205</integer>
       <key>idotbelow_macroncomb.ss03</key>
@@ -12210,7 +12210,7 @@
       <key>istroke_circumflexcomb</key>
       <integer>191</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>0</integer>
+      <integer>251</integer>
       <key>istroke_gravecomb</key>
       <integer>205</integer>
       <key>istroke_macroncomb</key>
@@ -12324,7 +12324,7 @@
       <key>zerosuperior</key>
       <integer>97</integer>
       <key>idieresis.ss03</key>
-      <integer>0</integer>
+      <integer>251</integer>
       <key>idotbelow_brevecomb</key>
       <integer>200</integer>
       <key>idotbelow_caroncomb</key>
@@ -12369,6 +12369,10 @@
       <integer>25</integer>
       <key>IJ.cv05</key>
       <integer>79</integer>
+      <key>itilde</key>
+      <integer>223</integer>
+      <key>imacron</key>
+      <integer>240</integer>
     </dict>
     <key>idotbelow_circumflexcomb</key>
     <dict>

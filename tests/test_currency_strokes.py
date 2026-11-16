@@ -72,3 +72,78 @@ def test_currency_strokes_stay_lighter_than_the_stem(weight, italic):
     over = {ch: round(first_run(font, ch, y) / stem, 2) for ch, y in PROBES.items()
             if first_run(font, ch, y) / stem > BOUNDS[weight]}
     assert over == {}, f"stroke over stem too heavy at {weight}: {over}"
+
+
+# Smallest counter of ₩ and ₦ (the diameter of the largest circle that fits inside the smallest enclosed shape of the glyph, in units of
+# 2000 per em) at the nine weights, upright then italic. The bars sit apart so that no counter is a pinhole: before the bars were
+# redrawn the smallest counter of ₩ was 13.
+SMALLEST_COUNTER = {
+    "₩": {False: [56, 86, 100, 60, 119, 107, 53, 54, 203], True: [56, 86, 89, 54, 106, 95, 48, 53, 196]},
+    "₦": {False: [56, 96, 114, 80, 58, 35, 173, 141, 108], True: [56, 96, 104, 76, 57, 32, 169, 143, 108]},
+}
+COUNTER_SLACK = 1
+
+
+def counters(font, ch):
+    """Every enclosed shape of a glyph made of straight lines, as an array of points."""
+    import numpy as np
+    import pathops
+
+    gs = font.getGlyphSet()
+    recorded = DecomposingRecordingPen(gs)
+    gs[font.getBestCmap()[ord(ch)]].draw(recorded)
+    path = pathops.Path()
+    pen = path.getPen()
+    for op, args in recorded.value:
+        if op == "moveTo":
+            pen.moveTo(args[0])
+        elif op == "lineTo":
+            pen.lineTo(args[0])
+        elif op in ("closePath", "endPath"):
+            pen.closePath()
+        else:
+            raise AssertionError(f"{ch} has a curve ({op}); the counter measure takes straight lines")
+    path.simplify(fix_winding=True)
+    return [
+        np.array([seg[1][-1] for seg in contour.segments if seg[0] != "closePath"], dtype=float)
+        for contour in path.contours
+        if contour.clockwise
+    ]
+
+
+def inscribed_diameter(poly, step=6):
+    """Diameter of the largest circle inside a polygon, found on a grid of `step` units."""
+    import numpy as np
+
+    (x0, y0), (x1, y1) = poly.min(0), poly.max(0)
+    grid = np.array([(x, y) for y in np.arange(y0, y1, step) for x in np.arange(x0, x1, step)])
+    inside = np.zeros(len(grid), bool)
+    edges = list(zip(poly, np.roll(poly, -1, axis=0)))
+    for a, b in edges:
+        crossing = (a[1] > grid[:, 1]) != (b[1] > grid[:, 1])
+        with np.errstate(divide="ignore", invalid="ignore"):
+            x = (b[0] - a[0]) * (grid[:, 1] - a[1]) / (b[1] - a[1]) + a[0]
+        inside ^= crossing & (grid[:, 0] < x)
+    points = grid[inside]
+    if not len(points):
+        return 0.0
+    nearest = np.full(len(points), np.inf)
+    for a, b in edges:
+        ab = b - a
+        t = np.clip(((points - a) @ ab) / max(float(ab @ ab), 1e-9), 0, 1)
+        nearest = np.minimum(nearest, np.hypot(*(points - (a + t[:, None] * ab)).T))
+    return 2 * float(nearest.max())
+
+
+@pytest.mark.parametrize("italic", [False, True], ids=["roman", "italic"])
+@pytest.mark.parametrize("ch", ["₩", "₦"])
+def test_won_and_naira_keep_their_smallest_counter(ch, italic):
+    """The smallest counter of ₩ and ₦ is no smaller than today's value at each of the nine weights (1 unit of slack)."""
+    weights = ["Thin", "ExtraLight", "Light", "Regular", "Medium", "SemiBold", "Bold", "ExtraBold", "Black"]
+    found = {}
+    for weight, want in zip(weights, SMALLEST_COUNTER[ch][italic]):
+        sizes = [inscribed_diameter(c) for c in counters(TTFont(static_path(weight, italic)), ch)]
+        assert sizes, f"{ch} has no counter at {weight}"
+        if min(sizes) < want - COUNTER_SLACK:
+            found[weight] = (round(min(sizes)), want)
+    assert found == {}, f"smallest counter of {ch} (found, today's value): {found}"

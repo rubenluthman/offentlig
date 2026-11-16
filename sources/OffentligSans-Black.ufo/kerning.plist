@@ -5894,7 +5894,7 @@
       <key>idotbelow_circumflexcomb</key>
       <integer>142</integer>
       <key>idotbelow_dieresiscomb</key>
-      <integer>0</integer>
+      <integer>16</integer>
       <key>idotbelow_gravecomb</key>
       <integer>104</integer>
       <key>idotbelow_macroncomb</key>
@@ -5914,7 +5914,7 @@
       <key>istroke_circumflexcomb</key>
       <integer>142</integer>
       <key>istroke_dieresiscomb</key>
-      <integer>0</integer>
+      <integer>16</integer>
       <key>istroke_gravecomb</key>
       <integer>104</integer>
       <key>istroke_macroncomb</key>
@@ -5938,11 +5938,15 @@
       <key>yen</key>
       <integer>54</integer>
       <key>idieresis</key>
-      <integer>0</integer>
+      <integer>16</integer>
       <key>idotbelow_brevecomb.ss03</key>
       <integer>130</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>139</integer>
+      <key>itilde</key>
+      <integer>18</integer>
+      <key>imacron</key>
+      <integer>20</integer>
     </dict>
     <key>ohungarumlaut</key>
     <dict>
@@ -7619,7 +7623,7 @@
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>123</integer>
       <key>idotbelow_dieresiscomb</key>
-      <integer>0</integer>
+      <integer>20</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
       <integer>0</integer>
       <key>idotbelow_gravecomb</key>
@@ -7651,7 +7655,7 @@
       <key>istroke_circumflexcomb</key>
       <integer>123</integer>
       <key>istroke_dieresiscomb</key>
-      <integer>0</integer>
+      <integer>20</integer>
       <key>istroke_dieresiscomb.ss03</key>
       <integer>0</integer>
       <key>istroke_gravecomb</key>
@@ -7697,7 +7701,7 @@
       <key>yen</key>
       <integer>18</integer>
       <key>idieresis</key>
-      <integer>0</integer>
+      <integer>20</integer>
       <key>idieresis.ss03</key>
       <integer>0</integer>
     </dict>

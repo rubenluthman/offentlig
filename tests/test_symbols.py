@@ -36,3 +36,14 @@ def test_bitcoin_sign_has_a_tabular_form():
     tabular = shape(path, "\u20bf", features={"tnum": True})[1].glyph_positions[0].x_advance
     assert plain != TABULAR_WIDTH
     assert tabular == TABULAR_WIDTH
+
+
+def test_greek_capital_omega_shapes_to_the_ohm_sign(static_ttf):
+    """Text normalized to NFC turns U+2126 into U+03A9; both code points map to one glyph, so the font keeps its Ω."""
+    cmap = static_ttf.getBestCmap()
+    assert cmap[0x03A9] == cmap[0x2126]
+
+
+def test_greek_capital_omega_is_mapped_in_variable(variable_ttf):
+    cmap = variable_ttf.getBestCmap()
+    assert cmap[0x03A9] == cmap[0x2126]
