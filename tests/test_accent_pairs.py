@@ -26,8 +26,9 @@ for _table in (CLEARANCE_DEFAULT, DIAERESIS_TALL):
     for _char, (_floor, _neighbours) in _table.items():
         if _floor == 8:
             DIAERESIS_FLOOR[_char] = DIAERESIS_FLOOR.get(_char, "") + _neighbours
-# The diaeresis meets the tilde or macron of the next letter in both forms of the dots.
-OVERLAP_BY_DESIGN = {"ïï", "ïĩ", "ïī", "īï"}
+# The diaeresis meets the tilde or macron of the next letter in both forms of the dots (in italic the marks collide from
+# ExtraLight up, as in Public Sans). Left out until the design-decision audit in the ROADMAP decides them.
+OVERLAP_PENDING_AUDIT = {"ïï", "ïĩ", "ïī", "īï"}
 FEATURE_SETS = {"default": {}, "ss03": {"ss03": True}, "cv04": {"cv04": True}}
 
 
@@ -73,7 +74,7 @@ def whole_table(weight, italic, features_name):
 def test_an_accent_never_closes_a_pair_below_the_unaccented_pair(weight, italic, features_name):
     """Every pair with an accented letter, on either side, keeps at least the smaller of the gap of the same pair with the
     unaccented base letters and 30 units, less 2. Pairs with `ȉ ȑ` (the narrower double grave is in the ROADMAP Icebox),
-    the diaeresis pairs held to 8 and the pairs that overlap by design are left out."""
+    the diaeresis pairs held to 8 and the pairs in `OVERLAP_PENDING_AUDIT` are left out."""
     table, kern, gap = whole_table(weight, italic, features_name)
     texts = table.texts
     accented = np.array([is_accented(t) and t not in LEFT_FOR_THE_ICEBOX for t in texts])
@@ -101,9 +102,9 @@ def diaeresis_pair(a, b):
 
 def accent_violation(a, b, accented_a, accented_b, gap, ref):
     """None, or (pair, gap, reference gap) when a pair with an accented letter breaks the rule above: `ref` is the gap of the
-    same pair with the unaccented base letters (inf when there is none). Pairs with `ȉ ȑ` and the pairs that overlap by design pass;
+    same pair with the unaccented base letters (inf when there is none). Pairs with `ȉ ȑ` and the pairs in `OVERLAP_PENDING_AUDIT` pass;
     the diaeresis pairs held to 8 fail below 8 units."""
-    if any(c in a + b for c in LEFT_FOR_THE_ICEBOX) or diaeresis_twin(a) + diaeresis_twin(b) in OVERLAP_BY_DESIGN:
+    if any(c in a + b for c in LEFT_FOR_THE_ICEBOX) or diaeresis_twin(a) + diaeresis_twin(b) in OVERLAP_PENDING_AUDIT:
         return None
     ta, tb = diaeresis_twin(a), diaeresis_twin(b)
     if (len(b) == 1 and b in CLOSING_PUNCTUATION and accented_a) or (len(a) == 1 and a in OPENING_PUNCTUATION and accented_b):
@@ -137,13 +138,13 @@ def round_dot_tables(weight, italic):
 def test_round_dot_pairs_keep_the_gap_of_the_default_pairs(weight, italic):
     """Every pair of encoded characters with a round-dot form on either side keeps at least the smaller of the default
     pair's gap and 30 units, less 2: `ss03` shares the default glyph's groups but not its glyph-to-glyph exceptions, so each
-    exception needs a copy for the `.ss03` sibling. Pairs that overlap by design in both forms are left out."""
+    exception needs a copy for the `.ss03` sibling. The pairs in `OVERLAP_PENDING_AUDIT` are left out."""
     chars, dotted, plain, rounded = round_dot_tables(weight, italic)
     xs, ys = np.nonzero((dotted[:, None] | dotted[None, :]) & ~np.isnan(plain) & ~np.isnan(rounded))
     tight = []
     for x, y in zip(xs, ys):
         text = chars[x] + chars[y]
-        if text in OVERLAP_BY_DESIGN or np.isinf(plain[x, y]) or np.isinf(rounded[x, y]):
+        if text in OVERLAP_PENDING_AUDIT or np.isinf(plain[x, y]) or np.isinf(rounded[x, y]):
             continue
         if rounded[x, y] < min(plain[x, y], AIM) - ROUND_DOT_SLACK:
             tight.append((text, round(float(plain[x, y])), round(float(rounded[x, y]))))

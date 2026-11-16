@@ -17,20 +17,20 @@ import unicodedata
 
 FLOOR = 30
 FRACTION_SLASH = "⁄"
-# Pairs left alone on purpose, each with the reason.
-BY_DESIGN = {
+# Pairs the test leaves alone, each with the reason given; the design-decision audit in the ROADMAP reviews each of them.
+LEFT_OUT = {
     # The fraction slash overlaps the figures around it; `frac` builds the fractions and the slash is kerned for them, not for letters or signs.
     "fraction slash": lambda a, b: FRACTION_SLASH in a + b,
     # The double grave is too wide for a pair at 30 units; the narrower double grave is in the ROADMAP Icebox.
     "ȉ ȑ (Icebox)": lambda a, b: any(c in a + b for c in LEFT_FOR_THE_ICEBOX),
-    # Doubled daggers read as one mark and meet on purpose.
+    # Doubled daggers read as one mark and meet.
     "doubled daggers": lambda a, b: a in "†‡" and b in "†‡",
 }
 
 
 def plain_violation(a, b, gap):
-    """None, or (pair, gap) when a pair of plain characters is closer than 30 units and is not left alone on purpose."""
-    if gap < FLOOR and not any(rule(a, b) for rule in BY_DESIGN.values()):
+    """None, or (pair, gap) when a pair of plain characters is closer than 30 units and is not in `LEFT_OUT`."""
+    if gap < FLOOR and not any(rule(a, b) for rule in LEFT_OUT.values()):
         return (a + b, round(float(gap)))
     return None
 

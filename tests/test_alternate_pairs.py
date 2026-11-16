@@ -40,7 +40,7 @@ def test_an_alternate_never_closes_a_pair_below_the_default_pair(weight, italic,
         if np.isnan(x) or np.isnan(y) or np.isinf(y):
             continue
         if any(c in texts[a] + texts[b] for c in "⁄ȉȑ") or diaeresis_pair(texts[a], texts[b]):
-            continue  # the fraction slash overlaps figures by design; `ȉ ȑ` are in the ROADMAP Icebox; the diaeresis pairs keep 8 (above)
+            continue  # the fraction slash overlaps figures (`frac` builds fractions); `ȉ ȑ` are in the ROADMAP Icebox; the diaeresis pairs keep 8 (above)
         if x < min(y, AIM) - 2 and (on.requirement(a, b, np.inf) is not None):
             tight.append((texts[a] + texts[b], round(float(x)), round(float(y))))
     assert tight == []

@@ -50,7 +50,6 @@ def placed(weight, italic, text):
 LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 FEATURES = [None, "ss01", "ss02", "cv01", "cv03", "cv04", "cv05"]
 ALL_MARKS = ["\u0301", "\u0323", "\u0331"]  # above, dot below, line below
-SKIP = {"ỵ̣", "ị̣"}
 
 
 def _single_glyph(weight, italic, text, feature):
