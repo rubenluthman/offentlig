@@ -44,6 +44,12 @@ Offentlig Sans starts from Public Sans `develop` at `e40fcf567`. Sizes are in fo
 | `+ − = ( )` as superscript and subscript | Missing | Added |
 | Accents on italic letters | Off their letter in some weights, up to 169 units (`ž ź š ś Ȓ Â` and 32 more) | On the letter's anchor |
 | Caron on `ď ľ ť Ľ` | Curved, runs into a following `b h l` in Black | Straight wedge; `ď ľ` wider so it clears the next letter |
+| Marks typed below `J W f g w x y Q` | No anchor below, so a typed dot or macron stays beside the letter | Anchored under the letter and clear of the descender |
+| `ȓ` | Breve not where typed `r` + U+0311 puts it | Breve on the anchor of `r`, as in `ȃ ȇ ȏ` |
+| Italic `ờ ừ` and the other o-horn and u-horn letters with a stacked mark | A further typed mark lands beside the accent | `top` anchor on the accent, on the slant |
+| `Ω` (U+03A9) | Not mapped; only U+2126 is | Both code points use the same glyph |
+| `₩ ₦` | Heavy bars close to each other, small counters | Lighter bars set apart, so no counter is a pinhole |
+| Diaeresis pairs `ïï ïĩ ïī īï` and thin doubled daggers `†† †‡ ‡† ‡‡` | Marks run into each other in the italic; the daggers meet in Thin | Kerned to at least 30 units at every weight |
 | Stylistic sets | `ss01` switches `g` and `l` | `ss01` switches `g`, `ss02` switches `l`, `salt` both |
 | Variable font default | Thin (100) | Regular (400) |
 

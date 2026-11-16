@@ -15,16 +15,22 @@ from test_accent_pairs import encoded_texts
 from test_spacing import ALL_FONTS, ALL_IDS, MASTER_FONTS, MASTER_IDS, shaper
 
 MIN_DISTANCE = 30
-# Pairs that touched in Regular or Black Italic before their exceptions were fitted.
+# Pairs that touched in Regular or Black Italic before their exceptions were fitted, and `ŀ` with `t f ﬁ ﬂ`.
 TOUCHING = {
-    False: ["ḯĦ", "Ħḯ", "īĦ", "Ħī", "ǐ²", "ǰ²", "ĭ²", "ị̌²", "ɨ̌²"],
-    True: ["ïĦ", "Ħï", "ḯĦ", "Ħḯ", "īĦ", "Ħī", "ị̈Ħ", "Ħị̈", "ấǐ", "ếì", "ố¥", "ốǐ", "ốǰ", "ốȅ"],
+    False: ["ḯĦ", "Ħḯ", "īĦ", "Ħī", "ǐ²", "ǰ²", "ĭ²", "ị̌²", "ɨ̌²", "ŀt", "ŀf", "ŀﬁ", "ŀﬂ"],
+    True: ["ŀt", "ŀf", "ŀﬁ", "ŀﬂ", "ïĦ", "Ħï", "ḯĦ", "Ħḯ", "īĦ", "Ħī", "ị̈Ħ", "Ħị̈", "ấǐ", "ếì", "ố¥", "ốǐ", "ốǰ", "ốȅ"],
 }
+# Pairs with a feature on that were under 30 apart by outline distance, though their row gap passed: `ŀ` with `t f ﬁ ﬂ` under
+# `ss02`+`ss03` and `salt`+`ss03`, the diaeresis and macron `i` against `Ħ` under `ss03`, and the doubled daggers at Thin Italic.
+FEATURE_PAIRS = (
+    [({"ss02": 1, "ss03": 1}, t) for t in ("ŀt", "ŀf", "ŀﬁ", "ŀﬂ")]
+    + [({"salt": 1, "ss03": 1}, t) for t in ("ŀt", "ŀf", "ŀﬁ", "ŀﬂ")]
+    + [({"ss03": 1}, t) for t in ("ḯĦ", "Ħḯ", "ïĦ", "Ħï", "īĦ", "Ħī")]
+    + [({}, t) for t in ("††", "†‡", "‡†", "‡‡")]
+)
 # Pairs the test leaves alone, each reviewed by the design-decision audit in the ROADMAP: the fraction slash and the figures it
-# builds fractions with, the double grave (Icebox in the ROADMAP), doubled daggers, and the diaeresis that meets the tilde or
-# macron of the next letter.
+# builds fractions with, and the double grave (Icebox in the ROADMAP).
 LEFT_OUT = ("⁄", "ȉ", "ȑ")
-OVERLAP = {"††", "†‡", "‡†", "‡‡", "ïï", "ïĩ", "ïī", "īï", "ïị̈", "ïɨ̈", "īị̈", "īɨ̈"}
 
 
 @pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
@@ -36,6 +42,16 @@ def test_the_pairs_that_touched_keep_clear(weight, italic):
             d = outline_distance(*glyphs)
             if d < MIN_DISTANCE:
                 close.append((text, round(d)))
+    assert close == []
+
+
+@pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
+def test_pairs_with_a_feature_on_keep_clear_by_outline_distance(weight, italic):
+    close = []
+    for features, text in FEATURE_PAIRS:
+        glyphs = placed_contours(static_path(weight, italic), text, features)
+        if len(glyphs) == 2 and outline_distance(*glyphs) < MIN_DISTANCE:
+            close.append((sorted(features), text, round(outline_distance(*glyphs), 1)))
     assert close == []
 
 
@@ -61,7 +77,7 @@ def test_no_two_glyphs_touch_in_the_masters(weight, italic):
         near = (rmin - lmax[a]).min(axis=1) + table.advance[a] + kern[a]
         for b in np.nonzero(near <= 0)[0]:
             text = table.texts[a] + table.texts[b]
-            if np.isnan(kern[a, b]) or any(c in text for c in LEFT_OUT) or text in OVERLAP:
+            if np.isnan(kern[a, b]) or any(c in text for c in LEFT_OUT):
                 continue
             glyphs = placed_contours(static_path(weight, italic), text)
             if len(glyphs) == 2 and outline_distance(*glyphs) <= 0:

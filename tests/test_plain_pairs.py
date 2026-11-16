@@ -23,8 +23,6 @@ LEFT_OUT = {
     "fraction slash": lambda a, b: FRACTION_SLASH in a + b,
     # The double grave is too wide for a pair at 30 units; the narrower double grave is in the ROADMAP Icebox.
     "ȉ ȑ (Icebox)": lambda a, b: any(c in a + b for c in LEFT_FOR_THE_ICEBOX),
-    # Doubled daggers read as one mark and meet.
-    "doubled daggers": lambda a, b: a in "†‡" and b in "†‡",
 }
 
 

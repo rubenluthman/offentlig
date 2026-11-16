@@ -208,24 +208,56 @@ def test_alternate_widths_follow_their_plain_glyph(ufo):
     assert not bad, f"{ufo}: width differs from the plain glyph plus the alternate base's extra width (glyph, width, expected): {bad}"
 
 
-HORN_MARK_FIRST = "ohornacute ohorngrave ohornhookabove ohorntilde uhorngrave uhornhookabove uhorntilde".split()
+def skipped_composites(font):
+    """Composites with a mark that `in_scope` skips (the o-horn and u-horn letters list the mark first, `__horn` being a base
+    in the categories) and that carry a `top` or `bottom` anchor of their own: (glyph, marks with that anchor)."""
+    categories = _categories(font)
+    out = []
+    for glyph in font:
+        if glyph.contours or len(glyph.components) < 2 or in_scope(font, glyph, categories) or categories.get(glyph.name) == "mark":
+            continue
+        marks = [c for c in glyph.components if categories.get(c.baseGlyph) == "mark"]
+        if marks:
+            out.append((glyph, marks))
+    return out
+
+
+def skipped_drift(font):
+    """(glyph, anchor name, stored, expected) for each skipped composite whose stored anchor is off the anchor of its last mark
+    that has one (the mark's anchor moved by the mark's offset) by more than TOLERANCE."""
+    bad = []
+    for glyph, marks in skipped_composites(font):
+        stored = {a.name: (a.x, a.y) for a in glyph.anchors}
+        for name in NAMES:
+            carriers = [(c, _anchors(font, c.baseGlyph)[name]) for c in marks if name in _anchors(font, c.baseGlyph)]
+            if not carriers or name not in stored:
+                continue
+            mark, (x, y) = carriers[-1]
+            want = (x + mark.transformation[4], y + mark.transformation[5])
+            if abs(stored[name][0] - want[0]) > TOLERANCE or abs(stored[name][1] - want[1]) > TOLERANCE:
+                bad.append((glyph.name, name, tuple(round(v, 1) for v in stored[name]), tuple(round(v, 1) for v in want)))
+    return bad
 
 
 @pytest.mark.parametrize("ufo", UFOS)
-def test_horn_composites_have_their_top_anchor_on_the_mark_top(ufo):
-    """The o-horn and u-horn letters list the mark first, so the drift test skips them; check them here.
+def test_skipped_composites_have_their_anchors_on_the_mark(ufo):
+    """Every composite with a mark that the drift test skips (the o-horn and u-horn letters, with the mark listed first) keeps its
+    stored `top` and `bottom` on the anchor of its last mark, moved by the mark's offset.
 
-    The stored `top` is the `top` of the mark moved by the mark's offset. In the italic the mark's own `top` is on the
-    8 degree slant, so a `top` straight above `_top` (43 - 71 units off) put a typed extra mark beside the accent.
+    In the italic the mark's own `top` is on the 8 degree slant, so a `top` straight above `_top` (43 - 71 units off) put a typed
+    extra mark beside the accent.
     """
     font = ufoLib2.Font.open(SOURCES / ufo)
-    bad = []
-    for name in HORN_MARK_FIRST:
-        glyph = font[name]
-        mark = glyph.components[0]
-        top = _anchors(font, mark.baseGlyph)["top"]
-        want = (top[0] + mark.transformation[4], top[1] + mark.transformation[5])
-        have = _anchors(font, name)["top"]
-        if abs(have[0] - want[0]) > TOLERANCE or abs(have[1] - want[1]) > TOLERANCE:
-            bad.append((name, tuple(round(v, 1) for v in have), tuple(round(v, 1) for v in want)))
-    assert not bad, f"{ufo}: top anchor off the mark top (glyph, stored, expected): {bad}"
+    assert len(skipped_composites(font)) >= 11
+    bad = skipped_drift(font)
+    assert not bad, f"{ufo}: anchor off the mark's anchor (glyph, anchor, stored, expected): {bad}"
+
+
+@pytest.mark.parametrize("ufo", UFOS)
+def test_rinvertedbreve_puts_the_breve_on_the_top_anchor_of_r(ufo):
+    """`ȓ` is `r` plus `breveinvertedcomb` on the `top` anchor of `r`, as `ȃ ȇ ȏ` are, upright and italic (typed `r` + U+0311 gives the same)."""
+    font = ufoLib2.Font.open(SOURCES / ufo)
+    offsets = mark_offsets(font, font["rinvertedbreve"])
+    assert len(offsets) == 1
+    (_, dx, dy), = offsets
+    assert abs(dx) <= MARK_TOLERANCE and abs(dy) <= MARK_TOLERANCE, f"{ufo}: breve of ȓ is ({dx:.1f}, {dy:.1f}) off the anchor of r"

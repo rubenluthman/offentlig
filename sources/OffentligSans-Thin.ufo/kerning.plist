@@ -5711,6 +5711,10 @@
       <integer>61</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>74</integer>
+      <key>itilde</key>
+      <integer>58</integer>
+      <key>imacron</key>
+      <integer>48</integer>
     </dict>
     <key>ohungarumlaut</key>
     <dict>
@@ -7381,9 +7385,9 @@
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>20</integer>
       <key>idotbelow_dieresiscomb</key>
-      <integer>20</integer>
+      <integer>46</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>20</integer>
+      <integer>51</integer>
       <key>idotbelow_gravecomb</key>
       <integer>20</integer>
       <key>idotbelow_gravecomb.ss03</key>
@@ -7413,9 +7417,9 @@
       <key>istroke_circumflexcomb</key>
       <integer>20</integer>
       <key>istroke_dieresiscomb</key>
-      <integer>20</integer>
+      <integer>46</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>20</integer>
+      <integer>51</integer>
       <key>istroke_gravecomb</key>
       <integer>20</integer>
       <key>istroke_macroncomb</key>
@@ -7459,9 +7463,9 @@
       <key>yen</key>
       <integer>0</integer>
       <key>idieresis</key>
-      <integer>20</integer>
+      <integer>46</integer>
       <key>idieresis.ss03</key>
-      <integer>20</integer>
+      <integer>51</integer>
     </dict>
     <key>ibreve</key>
     <dict>
@@ -8745,6 +8749,12 @@
       <integer>66</integer>
       <key>idotbelow_caroncomb</key>
       <integer>72</integer>
+      <key>itilde</key>
+      <integer>63</integer>
+      <key>imacron</key>
+      <integer>53</integer>
+      <key>Hbar</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_circumflexcomb</key>
     <dict>
@@ -17783,6 +17793,8 @@
       <key>istroke_dieresiscomb</key>
       <integer>0</integer>
       <key>istroke_dieresiscomb.ss03</key>
+      <integer>0</integer>
+      <key>idieresis.ss03</key>
       <integer>0</integer>
     </dict>
     <key>Hbrevebelow</key>
@@ -34806,6 +34818,10 @@
       <integer>84</integer>
       <key>rupeeIndian</key>
       <integer>27</integer>
+      <key>dagger</key>
+      <integer>30</integer>
+      <key>daggerdbl</key>
+      <integer>30</integer>
     </dict>
     <key>daggerdbl</key>
     <dict>
@@ -34817,6 +34833,10 @@
       <integer>84</integer>
       <key>rupeeIndian</key>
       <integer>27</integer>
+      <key>dagger</key>
+      <integer>30</integer>
+      <key>daggerdbl</key>
+      <integer>30</integer>
     </dict>
     <key>four.subs</key>
     <dict>
