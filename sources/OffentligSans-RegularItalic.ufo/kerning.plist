@@ -5811,7 +5811,7 @@
       <key>Egrave</key>
       <integer>0</integer>
       <key>Hbar</key>
-      <integer>0</integer>
+      <integer>27</integer>
       <key>Ibreve</key>
       <integer>86</integer>
       <key>Icaron</key>
@@ -9635,7 +9635,7 @@
       <key>H</key>
       <integer>0</integer>
       <key>Hbar</key>
-      <integer>60</integer>
+      <integer>67</integer>
       <key>Hbrevebelow</key>
       <integer>0</integer>
       <key>Hcaron</key>
@@ -12412,7 +12412,7 @@
       <key>llinebelow.ss02</key>
       <integer>13</integer>
       <key>Hbar</key>
-      <integer>0</integer>
+      <integer>27</integer>
       <key>Hbrevebelow</key>
       <integer>0</integer>
       <key>Hcaron</key>
@@ -31458,7 +31458,7 @@
       <key>idieresis</key>
       <integer>41</integer>
       <key>idieresis.ss03</key>
-      <integer>0</integer>
+      <integer>5</integer>
       <key>idotbelow_circumflexcomb</key>
       <integer>66</integer>
       <key>idotbelow_circumflexcomb.ss03</key>
@@ -31466,7 +31466,7 @@
       <key>idotbelow_dieresiscomb</key>
       <integer>41</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>0</integer>
+      <integer>5</integer>
       <key>idotbelow_macroncomb</key>
       <integer>45</integer>
       <key>idotbelow_macroncomb.ss03</key>
@@ -31478,17 +31478,17 @@
       <key>idotlessdieresisacute</key>
       <integer>41</integer>
       <key>idotlessdieresisacute.ss03</key>
-      <integer>0</integer>
+      <integer>5</integer>
       <key>iinvertedbreve</key>
       <integer>59</integer>
       <key>imacron</key>
-      <integer>45</integer>
+      <integer>51</integer>
       <key>istroke_circumflexcomb</key>
       <integer>66</integer>
       <key>istroke_dieresiscomb</key>
       <integer>41</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>0</integer>
+      <integer>5</integer>
       <key>istroke_macroncomb</key>
       <integer>45</integer>
       <key>istroke_tildecomb</key>

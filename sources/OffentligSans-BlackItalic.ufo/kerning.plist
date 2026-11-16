@@ -9315,7 +9315,7 @@
       <key>H</key>
       <integer>42</integer>
       <key>Hbar</key>
-      <integer>126</integer>
+      <integer>139</integer>
       <key>Hbrevebelow</key>
       <integer>42</integer>
       <key>Hcaron</key>
@@ -33409,7 +33409,7 @@
       <key>idieresis</key>
       <integer>159</integer>
       <key>idieresis.ss03</key>
-      <integer>96</integer>
+      <integer>104</integer>
       <key>idotbelow_circumflexcomb</key>
       <integer>113</integer>
       <key>idotbelow_circumflexcomb.ss03</key>
@@ -33417,7 +33417,7 @@
       <key>idotbelow_dieresiscomb</key>
       <integer>159</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>96</integer>
+      <integer>104</integer>
       <key>idotbelow_macroncomb</key>
       <integer>96</integer>
       <key>idotbelow_macroncomb.ss03</key>
@@ -33429,17 +33429,17 @@
       <key>idotlessdieresisacute</key>
       <integer>159</integer>
       <key>idotlessdieresisacute.ss03</key>
-      <integer>97</integer>
+      <integer>104</integer>
       <key>iinvertedbreve</key>
       <integer>77</integer>
       <key>imacron</key>
-      <integer>96</integer>
+      <integer>102</integer>
       <key>istroke_circumflexcomb</key>
       <integer>113</integer>
       <key>istroke_dieresiscomb</key>
       <integer>159</integer>
       <key>istroke_dieresiscomb.ss03</key>
-      <integer>96</integer>
+      <integer>104</integer>
       <key>istroke_macroncomb</key>
       <integer>96</integer>
       <key>istroke_tildecomb</key>
@@ -55168,9 +55168,9 @@
     <key>ldot.ss02.ss03</key>
     <dict>
       <key>f</key>
-      <integer>1</integer>
+      <integer>18</integer>
       <key>t</key>
-      <integer>1</integer>
+      <integer>18</integer>
       <key>Lslash</key>
       <integer>33</integer>
       <key>Istroke</key>
@@ -55186,9 +55186,9 @@
       <key>rupeeIndian</key>
       <integer>0</integer>
       <key>fi.ss03</key>
-      <integer>1</integer>
+      <integer>18</integer>
       <key>fl.ss02</key>
-      <integer>1</integer>
+      <integer>18</integer>
       <key>l.ss02</key>
       <integer>-35</integer>
       <key>naira</key>

@@ -5645,7 +5645,7 @@
       <key>Edblgrave</key>
       <integer>0</integer>
       <key>Hbar</key>
-      <integer>0</integer>
+      <integer>20</integer>
       <key>Ibreve</key>
       <integer>125</integer>
       <key>Icaron</key>
@@ -7879,7 +7879,7 @@
       <key>quotedblright.ss03</key>
       <integer>0</integer>
       <key>Hbar</key>
-      <integer>23</integer>
+      <integer>32</integer>
       <key>adblgrave</key>
       <integer>0</integer>
       <key>adblgrave.cv04</key>
@@ -9347,6 +9347,8 @@
       <integer>18</integer>
       <key>istroke_dieresiscomb.ss03</key>
       <integer>18</integer>
+      <key>Hbar</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_circumflexcomb</key>
     <dict>
@@ -21697,11 +21699,11 @@
       <key>idotlessdieresisacute</key>
       <integer>51</integer>
       <key>idotlessdieresisacute.ss03</key>
-      <integer>0</integer>
+      <integer>18</integer>
       <key>iinvertedbreve</key>
       <integer>58</integer>
       <key>imacron</key>
-      <integer>26</integer>
+      <integer>34</integer>
       <key>istroke_brevecomb</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
@@ -21721,6 +21723,8 @@
       <key>istroke_dieresiscomb</key>
       <integer>0</integer>
       <key>istroke_dieresiscomb.ss03</key>
+      <integer>0</integer>
+      <key>idieresis.ss03</key>
       <integer>0</integer>
     </dict>
     <key>Hbrevebelow</key>
@@ -38250,9 +38254,9 @@
       <key>liraTurkish</key>
       <integer>13</integer>
       <key>fi.ss03</key>
-      <integer>-77</integer>
+      <integer>-59</integer>
       <key>fl.ss02</key>
-      <integer>-77</integer>
+      <integer>-59</integer>
       <key>l.ss02</key>
       <integer>-63</integer>
       <key>dcaron</key>

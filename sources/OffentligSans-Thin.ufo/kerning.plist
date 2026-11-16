@@ -8753,6 +8753,8 @@
       <integer>63</integer>
       <key>imacron</key>
       <integer>53</integer>
+      <key>Hbar</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_circumflexcomb</key>
     <dict>
@@ -17791,6 +17793,8 @@
       <key>istroke_dieresiscomb</key>
       <integer>0</integer>
       <key>istroke_dieresiscomb.ss03</key>
+      <integer>0</integer>
+      <key>idieresis.ss03</key>
       <integer>0</integer>
     </dict>
     <key>Hbrevebelow</key>
