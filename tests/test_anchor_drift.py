@@ -161,8 +161,10 @@ def test_ss03_marks_sit_on_their_anchors_or_where_the_plain_glyph_has_them(ufo):
     assert not bad, f"{ufo}: marks off their anchor and not as in the plain glyph (glyph, mark, dx, dy, plain offset): {bad}"
 
 
-WIDTH_BASES = {"cv01": "J", "cv03": "G", "cv04": "a", "cv05": "I"}
+WIDTH_BASES = {"cv01": "J", "cv03": "G", "cv04": "a", "cv05": "I", "ss01": "g", "ss02": "l"}
 WIDTH_TOLERANCE = 0.5  # font units
+# `ss02` letters whose width is set by their own mark, not by `l.ss02`: the acute, the caron, the middle dot and the bar are wider than the stem.
+OWN_WIDTH = {"lacute.ss02", "lcaron.ss02", "ldot.ss02", "lslash.ss02"}
 
 
 def _expected_width(font, name):
@@ -177,7 +179,7 @@ def _expected_width(font, name):
         plain = name.removesuffix(".ss03")
         return font[plain].width if plain in font else None
     stem, dot, tag = name.rpartition(".")
-    if not dot or tag not in WIDTH_BASES:
+    if not dot or tag not in WIDTH_BASES or name in OWN_WIDTH:
         return None
     base = WIDTH_BASES[tag]
     if stem not in font or base not in font or f"{base}.{tag}" not in font:

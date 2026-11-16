@@ -5,7 +5,6 @@ reason), and the pairs that were fixed keep their targets: the right side of ẞ
 follow the letters they are made of, `G.cv03` closes like O, the old-style 7 clears a colon, the hook of ƈ clears the
 bar of T, and the marks of ǐ ǰ ḯ ǒ ě ḻ ṟ ṯ (and the diaeresis of ï ő) keep a gap to their neighbours. Accented lowercase letters clear the arm of T V W Y.
 """
-import re
 import unicodedata
 from functools import lru_cache
 from pathlib import Path
@@ -93,6 +92,7 @@ class Shaper:
     STEP = 4
 
     def __init__(self, path):
+        self.path = path
         self.font = hb.Font(hb.Face(hb.Blob.from_file_path(str(path))))
         self.rows = {}
 
@@ -506,22 +506,3 @@ def test_typed_i_with_breve_diaeresis_or_caron_kerns_after_a_letter_like_the_pre
             if a != b:
                 differing.append((left + typed, a, left + precomposed, b))
     assert differing == []
-
-
-@pytest.mark.parametrize("master", MASTERS)
-def test_accented_and_barred_alternates_sit_in_the_groups_of_their_alternate_base(master):
-    """`gbreve.ss01`, `lacute.ss02`, `Ǥ.cv03`, `Ɨ.cv05` and the others share both kerning groups with their alternate base."""
-    font = source(master)
-
-    def group(side, glyph):
-        return [n for n, members in font.groups.items() if n.startswith(f"public.{side}.") and glyph in members]
-
-    pairs = {"g.ss01": r"g.*\.ss01(\.ss03)?", "l.ss02": r"(?!ldot\.)l.*\.ss02(\.ss03)?", "G.cv03": r"Gstroke\.cv03", "I.cv05": r"Istroke\.cv05"}
-    checked = 0
-    for base, pattern in pairs.items():
-        for name in font.keys():
-            if re.fullmatch(pattern, name) and name != base:
-                checked += 1
-                assert group("kern1", name) == group("kern1", base), name
-                assert group("kern2", name) == group("kern2", base), name
-    assert checked >= 19

@@ -28,6 +28,13 @@ BY_DESIGN = {
 }
 
 
+def plain_violation(a, b, gap):
+    """None, or (pair, gap) when a pair of plain characters is closer than 30 units and is not left alone on purpose."""
+    if gap < FLOOR and not any(rule(a, b) for rule in BY_DESIGN.values()):
+        return (a + b, round(float(gap)))
+    return None
+
+
 def plain_texts(weight, italic):
     chars = [chr(c) for c in cmap_characters(weight, italic) if c > 32 and unicodedata.category(chr(c))[0] in "LNPS"]
     return [c for c in chars if not is_accented(c) or c in LEFT_FOR_THE_ICEBOX]
@@ -41,9 +48,5 @@ def test_plain_pairs_keep_30_units(weight, italic, features_name):
     kern = table.kerning(everything, everything)
     gap = table.gaps(everything, everything, kern)
     xs, ys = np.nonzero((gap < FLOOR) & ~np.isnan(kern))
-    tight = []
-    for x, y in zip(xs, ys):
-        a, b = table.texts[x], table.texts[y]
-        if not any(rule(a, b) for rule in BY_DESIGN.values()):
-            tight.append((a + b, round(float(gap[x, y]))))
+    tight = [found for x, y in zip(xs, ys) if (found := plain_violation(table.texts[x], table.texts[y], gap[x, y]))]
     assert tight == []
