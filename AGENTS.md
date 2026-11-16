@@ -20,6 +20,20 @@ Open-source font superfamily. Offentlig Sans is a renamed fork of Public Sans (u
 - Remote CI (`ubuntu-latest`) is the only clean-build and Fontspector gate. Never remove it or gate it on repository visibility.
 - One SemVer version covers all families, `0.x.y`. Never bump to `1.0.0` without the owner's authorization.
 - No marketing wording; no em dashes in `.md` or `.txt` files.
+- Bump the minor version for anything that moves existing text (widths, kerning, metrics, redrawn glyphs, renamed features), the patch version for fixes and additions that leave layout unchanged.
+- Commits, PR descriptions and public docs state the change, its reason and its measurements, with PR and upstream links. Notes on process and review history go in `docs/private/`.
+- Never rename a branch that is the head of an open PR: GitHub closes the PR. Retarget a stacked PR to `main` before deleting its base branch.
+
+## Working rules
+
+- Measure every claim on the built fonts before acting on it or writing it down, including the reason for each entry in a test's exemption list. A review's verdict or an approval is not a measurement.
+- Apply and test every fix in all six masters, upright and italic, and with the alternate forms on.
+- Check that nothing became worse than Public Sans `e40fcf567` by accident: Diffenator2 for outlines, widths, kerning and marks, plus measured counters, stroke weights and mark gaps.
+- The Public Sans docs and issue history explain why a shape was drawn as it is. They inform a decision but never rule out an alternate or an improvement.
+- Added slashes and bars (`zero.slash`, `Ǥ ǥ Ɨ ɨ`, currency bars) stay lighter than the main stems in Bold and Black.
+- Show drawn changes to the owner as before-and-after images, with the comparison fonts, before they merge.
+- The development Mac has 8 GB of memory: run one font build, full test run or whole-font pair scan at a time.
+- `make diff-public-sans` skips the run and keeps the old report when `build/diff-public-sans/` exists. Move that folder aside first.
 
 ## Dependencies
 
