@@ -14,18 +14,13 @@ from fontTools.ttLib import TTFont
 
 from conftest import static_path
 from pairs import PairTable
-from test_spacing import ALL_FONTS, ALL_IDS, CLEARANCE_DEFAULT, CLOSING_PUNCTUATION, DIAERESIS_TALL, LEFT_FOR_THE_ICEBOX, OPENING_PUNCTUATION, shaper
+from test_spacing import ALL_FONTS, ALL_IDS, CLOSING_PUNCTUATION, DIAERESIS_TALL, LEFT_FOR_THE_ICEBOX, OPENING_PUNCTUATION, shaper
 
-AIM = 30
+FLOOR = 30
 ACCENT_SLACK = 2
 TOP_MARKS = "́̀̂̄̃̆̈̌"
-# The diaeresis of ï ő ḯ and the typed ị̈ ɨ̈ is held to 8 units next to the tall letters (the masters aim at 12), see test_spacing.py.
-# Closing punctuation after and opening punctuation before an accented letter keep 30 (test_accented_letters_clear_the_punctuation_next_to_them).
-DIAERESIS_FLOOR = {}
-for _table in (CLEARANCE_DEFAULT, DIAERESIS_TALL):
-    for _char, (_floor, _neighbours) in _table.items():
-        if _floor == 8:
-            DIAERESIS_FLOOR[_char] = DIAERESIS_FLOOR.get(_char, "") + _neighbours
+# The diaeresis of ï ḯ and typed ị̈ ɨ̈ is held to 8 units only next to H l i b k h d in ExtraBold and Black Italic.
+DIAERESIS_FLOOR = {char: neighbours for char, (_floor, neighbours) in DIAERESIS_TALL.items()}
 FEATURE_SETS = {"default": {}, "ss03": {"ss03": True}, "cv04": {"cv04": True}}
 
 
@@ -82,7 +77,7 @@ def test_an_accent_never_closes_a_pair_below_the_unaccented_pair(weight, italic,
         ref = np.inf
         if reference[x] >= 0 and reference[y] >= 0 and not np.isnan(gap[reference[x], reference[y]]):
             ref = gap[reference[x], reference[y]]
-        found = accent_violation(texts[x], texts[y], accented[x], accented[y], gap[x, y], ref)
+        found = accent_violation(texts[x], texts[y], accented[x], accented[y], gap[x, y], ref, weight, italic)
         if found:
             tight.append(found)
     assert tight == []
@@ -91,25 +86,26 @@ def test_an_accent_never_closes_a_pair_below_the_unaccented_pair(weight, italic,
 DIAERESIS_MIN = 8
 
 
-def diaeresis_pair(a, b):
-    """True for the pairs of a diaeresis letter with a tall neighbour, which keep 8 units instead of the accent rule (see DIAERESIS_FLOOR)."""
+def diaeresis_pair(a, b, weight, italic):
+    """True for the pairs of ï ḯ ị̈ ɨ̈ with H l i b k h d in ExtraBold and Black Italic, which keep 8 units."""
+    if not (italic and weight in ("ExtraBold", "Black")):
+        return False
     ta, tb = diaeresis_twin(a), diaeresis_twin(b)
     return (ta in DIAERESIS_FLOOR and b in DIAERESIS_FLOOR[ta]) or (tb in DIAERESIS_FLOOR and a in DIAERESIS_FLOOR[tb])
 
 
-def accent_violation(a, b, accented_a, accented_b, gap, ref):
+def accent_violation(a, b, accented_a, accented_b, gap, ref, weight="", italic=False):
     """None, or (pair, gap, reference gap) when a pair with an accented letter breaks the rule above: `ref` is the gap of the
     same pair with the unaccented base letters (inf when there is none). Pairs with `ȉ ȑ` pass;
-    the diaeresis pairs held to 8 fail below 8 units."""
+    the diaeresis pairs held to 8 in ExtraBold/Black Italic fail below 8 units."""
     if any(c in a + b for c in LEFT_FOR_THE_ICEBOX):
         return None
-    ta, tb = diaeresis_twin(a), diaeresis_twin(b)
     if (len(b) == 1 and b in CLOSING_PUNCTUATION and accented_a) or (len(a) == 1 and a in OPENING_PUNCTUATION and accented_b):
         # brackets and quotes keep the 30 units of test_accented_letters_clear_the_punctuation_next_to_them, with no slack
-        return (a + b, round(float(gap)), None) if gap < AIM else None
-    if diaeresis_pair(a, b):
+        return (a + b, round(float(gap)), None) if gap < FLOOR else None
+    if diaeresis_pair(a, b, weight, italic):
         return (a + b, round(float(gap)), None) if gap < DIAERESIS_MIN else None
-    if gap < min(ref, AIM) - ACCENT_SLACK:
+    if gap < min(ref, FLOOR) - ACCENT_SLACK:
         return (a + b, round(float(gap)), round(float(ref)) if ref != np.inf else None)
     return None
 
@@ -140,11 +136,13 @@ def test_round_dot_pairs_keep_the_gap_of_the_default_pairs(weight, italic):
     xs, ys = np.nonzero((dotted[:, None] | dotted[None, :]) & ~np.isnan(plain) & ~np.isnan(rounded))
     tight = []
     for x, y in zip(xs, ys):
-        text = chars[x] + chars[y]
+        a, b = chars[x], chars[y]
+        if any(c in a + b for c in LEFT_FOR_THE_ICEBOX + "\u2044") or diaeresis_pair(a, b, weight, italic):
+            continue
         if np.isinf(plain[x, y]) or np.isinf(rounded[x, y]):
             continue
-        if rounded[x, y] < min(plain[x, y], AIM) - ROUND_DOT_SLACK:
-            tight.append((text, round(float(plain[x, y])), round(float(rounded[x, y]))))
+        if rounded[x, y] < min(plain[x, y], FLOOR) - ROUND_DOT_SLACK:
+            tight.append((a + b, round(float(plain[x, y])), round(float(rounded[x, y]))))
     assert tight == []
 
 

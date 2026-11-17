@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Wdieresis.ss03" format="2">
   <advance width="1814.1875"/>
-  <anchor x="1089.6" y="1814.6" name="top"/>
+  <anchor x="1089.9376543593073" y="1817.0018410377381" name="top"/>
   <anchor x="834.5" y="0" name="bottom"/>
   <outline>
     <component base="W"/>

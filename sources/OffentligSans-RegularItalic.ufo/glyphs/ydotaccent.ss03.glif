@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ydotaccent.ss03" format="2">
   <advance width="1021.34375"/>
-  <anchor x="636.86" y="1436.45" name="top"/>
+  <anchor x="640.2324969993981" y="1438.9903713507028" name="top"/>
   <anchor x="129.8" y="-330" name="bottom"/>
   <outline>
     <component base="y"/>

@@ -143,6 +143,44 @@
       <string>Gdotaccent</string>
       <string>Gdotaccent.ss03</string>
     </array>
+    <key>public.kern1.Gcv03</key>
+    <array>
+      <string>G.cv03</string>
+      <string>Gmacron.cv03</string>
+      <string>Gcaron.cv03</string>
+      <string>Gacute.cv03</string>
+      <string>Gbreve.cv03</string>
+      <string>Gcircumflex.cv03</string>
+      <string>Gcommaaccent.cv03</string>
+      <string>Gcommaaccent.cv03.ss03</string>
+      <string>Gdotaccent.cv03</string>
+      <string>Gdotaccent.cv03.ss03</string>
+      <string>Gstroke.cv03</string>
+    </array>
+    <key>public.kern1.Icv05</key>
+    <array>
+      <string>I.cv05</string>
+      <string>Idieresisacute.cv05</string>
+      <string>Idieresisacute.cv05.ss03</string>
+      <string>Icaron.cv05</string>
+      <string>Iacute.cv05</string>
+      <string>Ibreve.cv05</string>
+      <string>Icircumflex.cv05</string>
+      <string>Idblgrave.cv05</string>
+      <string>Idieresis.cv05</string>
+      <string>Idieresis.cv05.ss03</string>
+      <string>Idotaccent.cv05</string>
+      <string>Idotaccent.cv05.ss03</string>
+      <string>Idotbelow.cv05</string>
+      <string>Idotbelow.cv05.ss03</string>
+      <string>Igrave.cv05</string>
+      <string>Ihookabove.cv05</string>
+      <string>Iinvertedbreve.cv05</string>
+      <string>Imacron.cv05</string>
+      <string>Iogonek.cv05</string>
+      <string>Itilde.cv05</string>
+      <string>Istroke.cv05</string>
+    </array>
     <key>public.kern1.K</key>
     <array>
       <string>K</string>
@@ -989,6 +1027,7 @@
       <string>lcommaaccent.ss02.ss03</string>
       <string>ldotbelow.ss02.ss03</string>
       <string>lslash.ss02</string>
+      <string>dcroat</string>
     </array>
     <key>public.kern1.uhorn</key>
     <array>
@@ -1137,6 +1176,32 @@
     <array>
       <string>franc</string>
       <string>franc.tf</string>
+    </array>
+    <key>public.kern2.Icv05</key>
+    <array>
+      <string>I.cv05</string>
+      <string>Idieresisacute.cv05</string>
+      <string>Idieresisacute.cv05.ss03</string>
+      <string>Icaron.cv05</string>
+      <string>Iacute.cv05</string>
+      <string>Ibreve.cv05</string>
+      <string>Icircumflex.cv05</string>
+      <string>Idblgrave.cv05</string>
+      <string>Idieresis.cv05</string>
+      <string>Idieresis.cv05.ss03</string>
+      <string>Idotaccent.cv05</string>
+      <string>Idotaccent.cv05.ss03</string>
+      <string>Idotbelow.cv05</string>
+      <string>Idotbelow.cv05.ss03</string>
+      <string>Igrave.cv05</string>
+      <string>Ihookabove.cv05</string>
+      <string>Iinvertedbreve.cv05</string>
+      <string>Imacron.cv05</string>
+      <string>Iogonek.cv05</string>
+      <string>Itilde.cv05</string>
+      <string>IJ.cv05</string>
+      <string>IJ.cv01.cv05</string>
+      <string>Istroke.cv05</string>
     </array>
     <key>public.kern2.J</key>
     <array>
@@ -1985,6 +2050,10 @@
     <array>
       <string>seven</string>
     </array>
+    <key>public.kern2.sevenosf</key>
+    <array>
+      <string>seven.osf</string>
+    </array>
     <key>public.kern2.six</key>
     <array>
       <string>six.osf</string>
@@ -2126,74 +2195,6 @@
       <string>six.numr</string>
       <string>eight.numr</string>
       <string>nine.numr</string>
-    </array>
-    <key>public.kern1.Icv05</key>
-    <array>
-      <string>I.cv05</string>
-      <string>Idieresisacute.cv05</string>
-      <string>Idieresisacute.cv05.ss03</string>
-      <string>Icaron.cv05</string>
-      <string>Iacute.cv05</string>
-      <string>Ibreve.cv05</string>
-      <string>Icircumflex.cv05</string>
-      <string>Idblgrave.cv05</string>
-      <string>Idieresis.cv05</string>
-      <string>Idieresis.cv05.ss03</string>
-      <string>Idotaccent.cv05</string>
-      <string>Idotaccent.cv05.ss03</string>
-      <string>Idotbelow.cv05</string>
-      <string>Idotbelow.cv05.ss03</string>
-      <string>Igrave.cv05</string>
-      <string>Ihookabove.cv05</string>
-      <string>Iinvertedbreve.cv05</string>
-      <string>Imacron.cv05</string>
-      <string>Iogonek.cv05</string>
-      <string>Itilde.cv05</string>
-      <string>Istroke.cv05</string>
-    </array>
-    <key>public.kern2.Icv05</key>
-    <array>
-      <string>I.cv05</string>
-      <string>Idieresisacute.cv05</string>
-      <string>Idieresisacute.cv05.ss03</string>
-      <string>Icaron.cv05</string>
-      <string>Iacute.cv05</string>
-      <string>Ibreve.cv05</string>
-      <string>Icircumflex.cv05</string>
-      <string>Idblgrave.cv05</string>
-      <string>Idieresis.cv05</string>
-      <string>Idieresis.cv05.ss03</string>
-      <string>Idotaccent.cv05</string>
-      <string>Idotaccent.cv05.ss03</string>
-      <string>Idotbelow.cv05</string>
-      <string>Idotbelow.cv05.ss03</string>
-      <string>Igrave.cv05</string>
-      <string>Ihookabove.cv05</string>
-      <string>Iinvertedbreve.cv05</string>
-      <string>Imacron.cv05</string>
-      <string>Iogonek.cv05</string>
-      <string>Itilde.cv05</string>
-      <string>IJ.cv05</string>
-      <string>IJ.cv01.cv05</string>
-      <string>Istroke.cv05</string>
-    </array>
-    <key>public.kern1.Gcv03</key>
-    <array>
-      <string>G.cv03</string>
-      <string>Gmacron.cv03</string>
-      <string>Gcaron.cv03</string>
-      <string>Gacute.cv03</string>
-      <string>Gbreve.cv03</string>
-      <string>Gcircumflex.cv03</string>
-      <string>Gcommaaccent.cv03</string>
-      <string>Gcommaaccent.cv03.ss03</string>
-      <string>Gdotaccent.cv03</string>
-      <string>Gdotaccent.cv03.ss03</string>
-      <string>Gstroke.cv03</string>
-    </array>
-    <key>public.kern2.sevenosf</key>
-    <array>
-      <string>seven.osf</string>
     </array>
   </dict>
 </plist>

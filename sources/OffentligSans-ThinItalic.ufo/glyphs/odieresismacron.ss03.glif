@@ -8,6 +8,6 @@
   <outline>
     <component base="o"/>
     <component base="dieresiscomb.ss03" xOffset="323"/>
-    <component base="macroncomb" xOffset="289.957" yOffset="327"/>
+    <component base="macroncomb" xOffset="289.9568" yOffset="327"/>
   </outline>
 </glyph>

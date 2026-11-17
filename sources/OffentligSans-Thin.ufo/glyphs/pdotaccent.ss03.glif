@@ -2,7 +2,7 @@
 <glyph name="pdotaccent.ss03" format="2">
   <advance width="1168"/>
   <anchor x="224" y="-322" name="bottom"/>
-  <anchor x="619" y="1415" name="top"/>
+  <anchor x="619" y="1416.1103610569678" name="top"/>
   <outline>
     <component base="p"/>
     <component base="dotaccentcomb.ss03" xOffset="561"/>

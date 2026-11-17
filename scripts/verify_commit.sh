@@ -15,7 +15,7 @@ elif [ -n "$(git ls-files -z --cached --others --exclude-standard sources | xarg
   echo "fonts/ is older than sources/: run 'make build' first" >&2
   fail=1
 else
-  PATH="$PWD/venv/bin:$PATH" pytest -q tests || fail=1
+  PATH="$PWD/venv/bin:$PATH" pytest -q -n "${PYTEST_JOBS:-2}" tests || fail=1
 fi
 
 files=$(git ls-files --cached --others --exclude-standard)

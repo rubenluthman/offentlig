@@ -2,7 +2,7 @@
 <glyph name="Fdotaccent.ss03" format="2">
   <advance width="1187.53125"/>
   <anchor x="641.38" y="0" name="bottom"/>
-  <anchor x="641.37" y="1848.45" name="top"/>
+  <anchor x="641.37" y="1854.7738776137353" name="top"/>
   <outline>
     <component base="F"/>
     <component base="dotaccentcomb.ss03" xOffset="537.312" yOffset="412"/>

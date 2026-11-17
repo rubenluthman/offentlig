@@ -3,7 +3,7 @@
   <advance width="1135.78125"/>
   <anchor x="510.19" y="2.62" name="bottom"/>
   <anchor x="1181" y="1380" name="horn"/>
-  <anchor x="771.92" y="1848.45" name="top"/>
+  <anchor x="775.292496999398" y="1850.9903713507028" name="top"/>
   <outline>
     <component base="T"/>
     <component base="dotaccentcomb.ss03" xOffset="544.969" yOffset="412.0"/>

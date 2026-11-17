@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="iogonek.ss03" format="2">
-  <advance width="438"/>
-  <anchor x="243" y="26" name="ogonek"/>
-  <anchor x="218" y="1415" name="top"/>
-  <anchor x="219" y="0" name="bottom"/>
+  <advance width="455"/>
+  <anchor x="252" y="26" name="ogonek"/>
+  <anchor x="227" y="1416.1103610569678" name="top"/>
+  <anchor x="228" y="0" name="bottom"/>
   <outline>
     <component base="idotless"/>
-    <component base="dotaccentcomb.ss03" xOffset="160"/>
-    <component base="ogonekcomb" xOffset="-47" yOffset="2"/>
+    <component base="dotaccentcomb.ss03" xOffset="169"/>
+    <component base="ogonekcomb" xOffset="-38" yOffset="2"/>
   </outline>
 </glyph>

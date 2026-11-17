@@ -11,6 +11,7 @@ brotli==1.2.1
 ninja==1.13.2
 protobuf==7.36.2
 pytest==9.2.0
+pytest-xdist==3.8.0
 uharfbuzz==0.57.0
 pillow==13.0.0
 numpy==2.5.4

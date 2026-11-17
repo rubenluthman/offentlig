@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="idotlessdieresisacute" format="2">
-  <advance width="483.71875"/>
+  <advance width="494.53125"/>
   <unicode hex="1E2F"/>
-  <anchor x="308.65625" y="23.25" name="ogonek"/>
-  <anchor x="243.4" y="1762.0" name="top"/>
-  <anchor x="242" y="0" name="bottom"/>
+  <anchor x="314.5625" y="23.25" name="ogonek"/>
+  <anchor x="249.30625" y="1762.0" name="top"/>
+  <anchor x="247.90625" y="0" name="bottom"/>
   <outline>
     <component base="idotless"/>
-    <component base="dieresiscomb" xOffset="-52.15625"/>
-    <component base="acutecomb" xOffset="152.25" yOffset="347.0"/>
+    <component base="dieresiscomb" xOffset="-46.25"/>
+    <component base="acutecomb" xOffset="158.15625" yOffset="347.0"/>
   </outline>
 </glyph>

@@ -228,3 +228,33 @@ def test_round_dots_keep_the_clearances_of_the_square_dots(weight, italic):
             bad.append((glyph.name, "mark", round(plain[1], 1), round(rounded[1], 1)))
     assert checked > 80
     assert not bad, bad
+
+
+@pytest.mark.parametrize("weight", ["Thin", "Regular", "Black"])
+@pytest.mark.parametrize("italic", [False, True], ids=["roman", "italic"])
+def test_round_dots_match_square_dot_area(weight, italic):
+    """D27: each round dot has the same ink area as the square dot, measured on the contours (the italic square is a parallelogram, so its bounding box overstates its area). Only the Black `dieresiscomb.ss03` is clamped to a 364.0 diameter so stacked `Udieresiscaron.ss03` stays within winAscent 2315."""
+    import math
+    from pathlib import Path
+    import ufoLib2
+    from fontTools.pens.areaPen import AreaPen
+
+    def area(font, contour):
+        pen = AreaPen(font)
+        contour.draw(pen)
+        return abs(pen.value)
+
+    font = ufoLib2.Font.open(Path(__file__).resolve().parent.parent / "sources" / f"OffentligSans-{weight}{'Italic' if italic else ''}.ufo")
+    for ss_name, si, base_name, bi in [
+        ("i.ss03", 1, "i", 1),
+        ("dieresiscomb.ss03", 0, "dieresiscomb", 0),
+        ("dieresiscomb.ss03", 1, "dieresiscomb", 1),
+        ("dotaccentcomb.ss03", 0, "dotaccentcomb", 0),
+        ("dotbelowcomb.ss03", 0, "dotbelowcomb", 0),
+        ("period.ss03", 0, "period", 0),
+        ("periodcentered.ss03", 0, "periodcentered", 0),
+    ]:
+        want = area(font, font[base_name].contours[bi])
+        if ss_name == "dieresiscomb.ss03" and weight == "Black":
+            want = min(want, math.pi / 4 * 364.0 ** 2)
+        assert area(font, font[ss_name].contours[si]) == pytest.approx(want, rel=0.01), ss_name

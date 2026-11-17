@@ -8,6 +8,6 @@
   <anchor x="566.3125" y="1349.40625" name="top"/>
   <outline>
     <component base="o"/>
-    <component base="caroncomb" xOffset="240.625" yOffset="0"/>
+    <component base="caroncomb" xOffset="240.625"/>
   </outline>
 </glyph>

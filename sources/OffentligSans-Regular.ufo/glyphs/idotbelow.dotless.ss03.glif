@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="idotbelow.dotless.ss03" format="2">
   <advance width="494.53125"/>
-  <anchor x="243.4375" y="1034.0" name="top"/>
-  <anchor x="242" y="0" name="bottom"/>
-  <anchor x="308.65625" y="23.25" name="ogonek"/>
+  <anchor x="249.34375" y="1034.0" name="top"/>
+  <anchor x="247.90625" y="0" name="bottom"/>
+  <anchor x="314.5625" y="23.25" name="ogonek"/>
   <outline>
     <component base="idotless"/>
-    <component base="dotbelowcomb.ss03" xOffset="144.21875"/>
+    <component base="dotbelowcomb.ss03" xOffset="150.125"/>
   </outline>
 </glyph>

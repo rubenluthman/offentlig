@@ -8,7 +8,7 @@
   <anchor x="606" y="1796" name="top"/>
   <outline>
     <component base="u"/>
-    <component base="dieresiscomb" xOffset="147" yOffset="0"/>
+    <component base="dieresiscomb" xOffset="147"/>
     <component base="gravecomb" xOffset="132" yOffset="381"/>
   </outline>
 </glyph>

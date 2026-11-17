@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="idotbelow_dieresiscomb" format="2">
   <advance width="603.0"/>
-  <anchor x="364.34375" y="23.25" name="ogonek"/>
-  <anchor x="300.8" y="1378.9" name="top"/>
-  <anchor x="297.7" y="0" name="bottom"/>
+  <anchor x="370.25" y="23.25" name="ogonek"/>
+  <anchor x="306.70625" y="1378.9" name="top"/>
+  <anchor x="303.60625" y="0" name="bottom"/>
   <outline>
     <component base="idotless" xOffset="55.6875"/>
-    <component base="dieresiscomb" xOffset="5.25" yOffset="-2.0625"/>
-    <component base="dotbelowcomb" xOffset="199.90625"/>
+    <component base="dieresiscomb" xOffset="11.15625" yOffset="-2.0625"/>
+    <component base="dotbelowcomb" xOffset="205.8125"/>
   </outline>
 </glyph>

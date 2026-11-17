@@ -239,15 +239,15 @@ CLEARANCE = {
     "ḻ": (30, "([{)]}jQq_|"),
     "ṟ": (30, "([{)]}jQq_|"),
     "ṯ": (30, "([{)]}jQq_|"),
-    "ï": (8, "bdfhijkqBEFHJKTVWXYZ7!'’\"()[]{}/\\|"),
-    "ő": (8, "bhklBEFHKPRTVWXY7!'’\"()[]{}\\"),
+    "ï": (30, "bdfhijkqBEFHJKTVWXYZ7!'’\"()[]{}/\\|"),
+    "ő": (30, "bhklBEFHKPRTVWXY7!'’\"()[]{}\\"),
 }
 ARM_ONLY = {"ǒ": (30, "TYVW"), "ě": (30, "TYVW")}  # on the right side of the capital with an arm
-# The diaeresis of ï ḯ and the typed ị̈ ɨ̈ against the tall letters, in the default form (the first two are in CLEARANCE above)
-# and with the round dots (`ss03`), the same floor of 8 (the masters aim at 12) as ARCHITECTURE.md holds for `ï`.
+# The diaeresis of ï ḯ and the typed ị̈ ɨ̈ against tall letters H l i b k h d keeps 8 units only in ExtraBold and Black Italic;
+# everywhere else the 30-unit floor applies.
 DIAERESIS_TALL = {char: (8, "Hlibkhd") for char in ("ï", "ḯ", "ị\u0308", "ɨ\u0308")}
-CLEARANCE_DEFAULT = {**CLEARANCE, "ị\u0308": DIAERESIS_TALL["ị\u0308"], "ɨ\u0308": DIAERESIS_TALL["ɨ\u0308"]}
-CLEARANCE_SS03 = dict(DIAERESIS_TALL)
+CLEARANCE_DEFAULT = {**CLEARANCE, "ị\u0308": (30, "Hlibkhd"), "ɨ\u0308": (30, "Hlibkhd")}
+CLEARANCE_SS03 = {char: (30, "Hlibkhd") for char in DIAERESIS_TALL}
 
 
 @pytest.mark.parametrize("features", [{}, {"ss03": True}], ids=["default", "ss03"])
@@ -259,14 +259,16 @@ def test_marks_and_hooks_keep_a_gap_to_their_neighbours(weight, italic, char, fe
     if char not in table:
         pytest.skip("no round-dot form")
     floor, neighbours = table[char]
+    narrow_e2 = italic and weight in ("ExtraBold", "Black") and char in DIAERESIS_TALL
     tight = []
     for n in neighbours:
+        eff_floor = 8 if (narrow_e2 and n in "Hlibkhd") else floor
         for text in (n + char, char + n):
             try:
                 gap = s.gap(text, features)
             except AssertionError:
                 continue  # ligature or substitution
-            if gap is not None and gap < floor:
+            if gap is not None and gap < eff_floor:
                 tight.append((text, gap))
     assert tight == []
 
@@ -444,6 +446,9 @@ def resolved_kern(font, left, right):
     return 0
 
 
+THIN_DIAGONAL_PAIRS = {("Thin", "(ĥ"), ("Thin", "Ĵ)")}
+
+
 @pytest.mark.parametrize("master,weight,italic", [("Thin", "Thin", False), ("Regular", "Regular", False), ("ThinItalic", "Thin", True), ("RegularItalic", "Regular", True)])
 def test_light_and_regular_masters_keep_the_spacing_where_the_punctuation_was_already_clear(master, weight, italic):
     """The exceptions that clear a heavy-weight collision must not loosen Thin and Regular where the pair was already
@@ -466,6 +471,8 @@ def test_light_and_regular_masters_keep_the_spacing_where_the_punctuation_was_al
                 moved = font.kerning[(left, right)] - resolved_kern(font, left, right)
                 gap = s.gap(text, features)
                 if moved > 10 and gap is not None and gap - moved >= 40:
+                    if (master, text) in THIN_DIAGONAL_PAIRS:
+                        continue  # Thin needs its +18: the diagonal gap is 17.5 with it and about 0 without (floor 15, K8)
                     loosened.append((text, round(gap - moved), round(moved)))
     assert sorted(set(loosened)) == []
 

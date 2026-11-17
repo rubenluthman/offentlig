@@ -19,8 +19,10 @@ venv:
 build:
 	cd sources && gftools builder config-OffentligSans.yaml
 
+PYTEST_JOBS ?= 2
+
 test:
-	$(VENV)/bin/pytest -q tests
+	$(VENV)/bin/pytest -q -n $(PYTEST_JOBS) tests
 
 proof:
 	$(VENV)/bin/python scripts/proof_page.py

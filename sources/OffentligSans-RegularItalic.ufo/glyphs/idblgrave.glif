@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="idblgrave" format="2">
-  <advance width="490.40625"/>
+  <advance width="490.9375"/>
   <unicode hex="0209"/>
-  <anchor x="235.6875" y="23.25" name="ogonek"/>
-  <anchor x="374.889" y="1415" name="top"/>
-  <anchor x="170" y="0" name="bottom"/>
+  <anchor x="240.28125" y="23.25" name="ogonek"/>
+  <anchor x="379.48275" y="1415" name="top"/>
+  <anchor x="174.59375" y="0" name="bottom"/>
   <outline>
     <component base="idotless"/>
-    <component base="dblgravecomb" xOffset="-264.3125"/>
+    <component base="dblgravecomb" xOffset="-259.71875"/>
   </outline>
 </glyph>

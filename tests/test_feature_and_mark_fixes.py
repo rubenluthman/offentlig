@@ -92,7 +92,7 @@ def test_turkish_round_dot_i_has_the_dot_of_i_ss03(weight, italic):
 @ALL
 def test_round_dot_letters_keep_the_accent_dot(weight, italic):
     """ċ ė ġ ż İ keep the shared accent dot (smaller than the i dot in every weight, as in the default style)."""
-    for ch in "ċėġż":
+    for ch in "ċėġżİ":
         out = names(weight, italic, ch, features={"ss03": True})
         assert out[0].endswith(".ss03") and "dotaccent" in out[0], out
 

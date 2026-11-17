@@ -4,7 +4,7 @@
   <anchor x="450.75" y="0" name="bottom"/>
   <anchor x="886.34" y="698.19" name="horn"/>
   <anchor x="574.66" y="20" name="ogonek"/>
-  <anchor x="648.58" y="1436.45" name="top"/>
+  <anchor x="651.9524969993981" y="1438.9903713507028" name="top"/>
   <outline>
     <component base="o"/>
     <component base="dotaccentcomb.ss03" xOffset="421.625"/>

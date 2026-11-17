@@ -12,7 +12,7 @@ import numpy as np
 
 from conftest import static_path
 from pairs import PairTable
-from test_accent_pairs import AIM, accent_violation, base_of, diaeresis_pair, encoded_texts, is_accented
+from test_accent_pairs import FLOOR, accent_violation, base_of, diaeresis_pair, encoded_texts, is_accented
 from test_plain_pairs import plain_violation
 from test_spacing import LEFT_FOR_THE_ICEBOX, shaper, source, ufo_glyph_name
 
@@ -33,6 +33,8 @@ class FeaturePairs:
     """The pair table of every encoded text at one static, shaped with one feature set, and which texts the features change."""
 
     def __init__(self, weight, italic, features):
+        self.weight = weight
+        self.italic = italic
         s = shaper(weight, italic)
         self.table = PairTable(static_path(weight, italic), features, encoded_texts(weight, italic), shaper=s)
         t = self.table
@@ -89,17 +91,17 @@ class FeaturePairs:
         """(floor of the test, floor to fit to, aim) in units for a pair, or None where the pair is left out of the rules."""
         ta, tb = self.table.texts[a], self.table.texts[b]
         if self.accented[a] or self.accented[b]:
-            probe = accent_violation(ta, tb, self.accented[a], self.accented[b], -1e9, ref)
+            probe = accent_violation(ta, tb, self.accented[a], self.accented[b], -1e9, ref, self.weight, self.italic)
             if probe is None:
                 return None
-            if diaeresis_pair(ta, tb):
+            if diaeresis_pair(ta, tb, self.weight, self.italic):
                 return 8, 8, 12
             if probe[2] is None:
-                return AIM, AIM, 40
-            return min(ref, AIM) - 2, min(ref, AIM), min(ref, 40)
+                return FLOOR, FLOOR, 40
+            return min(ref, FLOOR) - 2, min(ref, FLOOR), min(ref, 40)
         if plain_violation(ta, tb, -1e9) is None:
             return None
-        return AIM, AIM, 40
+        return FLOOR, FLOOR, 40
 
     def glyph_names(self, index):
         """The source name of a shaped glyph; the built font uses production names (`Euro` for `euro`, `uni01E5` for `gstroke`)."""

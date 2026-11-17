@@ -6,7 +6,7 @@ Open-source font superfamily. Offentlig Sans is a renamed fork of Public Sans (u
 
 - `make venv` creates `venv/` and `venv/diffenator`. Activate nothing: the Makefile puts `venv/bin` on `PATH`.
 - `make build` runs gftools builder in `sources/` and writes `fonts/OffentligSans/`.
-- `make test` runs pytest against the built fonts. Build first.
+- `make test` runs `pytest -n 2` locally (`PYTEST_JOBS=auto` in CI) against the built fonts. Build first.
 - `make qa` runs Fontspector (`venv/bin/fontspector`, universal and opentype profiles). `make proof` runs Diffenator2.
 - `make verify` is the pre-commit check (`scripts/verify_commit.sh`).
 
@@ -14,7 +14,9 @@ Open-source font superfamily. Offentlig Sans is a renamed fork of Public Sans (u
 
 - Sources are `sources/*.designspace` and `sources/*.ufo` only (ADR-0001). Do not add `.glyphs` files.
 - Never commit `fonts/` or `build/` (ADR-0002), or `docs/private/`, which holds private notes.
-- Keep the vertical metrics in `ARCHITECTURE.md`; a test enforces them.
+- Keep the vertical metrics in `ARCHITECTURE.md` (`typo`/`hhea` shared; each family sets `win` to cover its own glyphs); a test enforces them.
+- Keep `docs/design-decisions.md` and `ARCHITECTURE.md` in sync with code and test changes. Superfamily feature tags follow Sans (`ss01=g`, `ss02=l`, `ss03=round dots`, `cv04=a`, `zero=slashed 0`).
+- Plex Serif and Mono `sources.zip` use `1000` UPM (scale 2× to `2000` UPM) and true italics (`14°` Serif, `9.5°` Mono; Mono has no `kern` table).
 - Never create tags or releases without the owner's go-ahead.
 - Fix bugs here. When uswds/public-sans has no issue for the bug, open one.
 - Remote CI (`ubuntu-latest`) is the only clean-build and Fontspector gate. Never remove it or gate it on repository visibility.

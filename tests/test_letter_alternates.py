@@ -241,7 +241,7 @@ def _pair_gap(path, ttf, text, features, cache):
 
 @pytest.mark.parametrize("weight,italic", SHAPED, ids=IDS)
 def test_cv05_i_never_touches_a_neighbour_or_sits_tighter_than_the_plain_i(weight, italic):
-    """A serifed I next to any letter is never tighter than the plain I there by more than 30 units, and never touches."""
+    """A serifed I next to any letter stays within 30 units (per 1000 em) of the plain I both tighter and looser, and never touches."""
     import string
 
     path = static_path(weight, italic)
@@ -252,6 +252,6 @@ def test_cv05_i_never_touches_a_neighbour_or_sits_tighter_than_the_plain_i(weigh
         for text in ("I" + letter, letter + "I"):
             plain = _pair_gap(path, ttf, text, {}, cache)
             serifed = _pair_gap(path, ttf, text, {"cv05": True}, cache)
-            if serifed <= 0 or serifed < plain - 30:
+            if serifed <= 0 or abs(serifed - plain) > 30:
                 bad.append((text, round(plain), round(serifed)))
     assert not bad, bad

@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="istroke_dieresiscomb" format="2">
-  <advance width="490.40625"/>
-  <anchor x="235.6875" y="23.25" name="ogonek"/>
-  <anchor x="370.1" y="1381" name="top"/>
-  <anchor x="173.28125" y="0" name="bottom"/>
+  <advance width="490.9375"/>
+  <anchor x="240.28125" y="23.25" name="ogonek"/>
+  <anchor x="374.69375" y="1381" name="top"/>
+  <anchor x="177.875" y="0" name="bottom"/>
   <outline>
     <contour>
-      <point x="28.363" y="501.938" type="line"/>
-      <point x="462.688" y="501.938" type="line"/>
-      <point x="479.008" y="618.062" type="line"/>
-      <point x="44.683" y="618.062" type="line"/>
+      <point x="32.95675" y="501.938" type="line"/>
+      <point x="467.28175" y="501.938" type="line"/>
+      <point x="483.60175" y="618.062" type="line"/>
+      <point x="49.27675" y="618.062" type="line"/>
     </contour>
     <component base="idotless"/>
-    <component base="dieresiscomb" xOffset="-18.40625"/>
+    <component base="dieresiscomb" xOffset="-13.8125"/>
   </outline>
 </glyph>

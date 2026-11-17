@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="iogonek.ss03" format="2">
-  <advance width="571"/>
+  <advance width="570"/>
   <anchor x="434" y="18" name="ogonek"/>
-  <anchor x="292" y="1449.92" name="top"/>
+  <anchor x="292" y="1490.231620865118" name="top"/>
   <anchor x="285" y="0" name="bottom"/>
   <outline>
     <component base="idotless"/>

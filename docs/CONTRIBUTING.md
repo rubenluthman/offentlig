@@ -14,7 +14,7 @@ QA tools: Diffenator2 is installed by `make venv` into `venv/diffenator`. Fontsp
 
 ```bash
 make build     # fonts/OffentligSans/{otf,ttf,variable,webfonts}
-make test      # pytest against the built fonts
+make test      # pytest -n 2 against the built fonts (override with PYTEST_JOBS=auto)
 make qa        # Fontspector universal and OpenType profiles, expected 0 FAIL
 make proof     # tester page (docs/proof/allemansratten.txt) and Diffenator2 proof pages in build/proof
 make specimen  # docs/specimen.png from the built TTFs and the Allemansrätten text

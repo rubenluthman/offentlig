@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="istroke.dotless" format="2">
   <advance width="494.53125"/>
-  <anchor x="243.4375" y="1034.0" name="top"/>
-  <anchor x="247.59375" y="0" name="bottom"/>
-  <anchor x="308.65625" y="23.25" name="ogonek"/>
+  <anchor x="249.34375" y="1034.0" name="top"/>
+  <anchor x="253.5" y="0" name="bottom"/>
+  <anchor x="314.5625" y="23.25" name="ogonek"/>
   <outline>
     <contour>
-      <point x="25.378" y="501.938" type="line"/>
-      <point x="469.153" y="501.938" type="line"/>
-      <point x="469.153" y="618.062" type="line"/>
-      <point x="25.378" y="618.062" type="line"/>
+      <point x="31.28425" y="501.938" type="line"/>
+      <point x="475.05925" y="501.938" type="line"/>
+      <point x="475.05925" y="618.062" type="line"/>
+      <point x="31.28425" y="618.062" type="line"/>
     </contour>
     <component base="idotless"/>
   </outline>

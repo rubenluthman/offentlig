@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.4.0] - 2026-11-17
+
+- Fixed the dotless `ı` (and the Turkish `i` under `locl`): its advance now equals `i` in every weight, so Turkish, Azerbaijani, Kazakh, Tatar and Crimean Tatar text no longer sets `i` narrower. Every accented `i` built on it is wider by the same amount (`í ì î ǐ ĭ į ȉ ỉ`, the typed `ị ɨ` with marks, and `ï ĩ ī` in Thin and the italics): +17 units in Thin, +16 in Thin Italic, about +11 in Regular, −1 in Black, so they now equal `i` in all 18 statics.
+- Fixed kerning: serifed `I` (`cv05`) stays within 60 units of plain `I` against `v f t r` and round letters (it was up to 96 units looser in Regular and 125 in Black); the diaeresis floor of 8 units now applies only to `ï ḯ ị̈ ɨ̈` next to `H l i b k h d` in ExtraBold and Black Italic, and 14 pairs that were tighter than in Public Sans (such as Regular Italic `ïT`, `fï`) keep at least its gap; every pair of two characters keeps at least 15 units between diagonal outlines (`ốV`, `î₹`, `ťĪ`, `(ĥ`, `ïb` and others); `đ` kerns like `d`.
+- Changed drawings: the round dots of `ss03` have the same area as the square dots, upright and italic; the lower right wall of `G` with `cv03` is thicker in Bold and Black; the stress marks `ˈ ˌ` are longer (440 instead of 330 units).
+
 ## [0.3.0] - 2026-11-16
 
 - Added the prime marks ′ ″ ‴ (U+2032 – 2034) and the superscript modifier letters ʰ ʳ ˢ ᵈ ᵗ ⁿ of DIN 91379. The `sups` feature sets typed h, r, s, d, t and n as these letters after a superior figure, so `1st 2nd 3rd 4th` becomes ¹ˢᵗ ²ⁿᵈ ³ʳᵈ ⁴ᵗʰ, while `1er`, `Ste` and `century` stay as typed. The optional letters now also change the accented and barred letters built on them (`ss01` `ĝ ğ ģ`, `ss02` `ľ ł`, `cv03` `Ǥ`, `cv05` `Ɨ`), so a word never mixes two designs.

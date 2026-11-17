@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ibreve" format="2">
-  <advance width="433"/>
+  <advance width="449"/>
   <unicode hex="012D"/>
-  <anchor x="169" y="26" name="ogonek"/>
-  <anchor x="325.665" y="1302" name="top"/>
-  <anchor x="144" y="0" name="bottom"/>
+  <anchor x="176" y="26" name="ogonek"/>
+  <anchor x="332.665" y="1302" name="top"/>
+  <anchor x="151" y="0" name="bottom"/>
   <outline>
     <component base="idotless"/>
-    <component base="brevecomb" xOffset="-31"/>
+    <component base="brevecomb" xOffset="-24"/>
   </outline>
 </glyph>

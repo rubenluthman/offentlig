@@ -2,7 +2,7 @@
 <glyph name="Rdotaccent.ss03" format="2">
   <advance width="1244"/>
   <anchor x="545" y="0" name="bottom"/>
-  <anchor x="788.55" y="1827" name="top"/>
+  <anchor x="788.546" y="1827" name="top"/>
   <outline>
     <component base="R"/>
     <component base="dotaccentcomb.ss03" xOffset="608" yOffset="412"/>

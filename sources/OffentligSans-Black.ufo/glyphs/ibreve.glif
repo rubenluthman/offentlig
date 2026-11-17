@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ibreve" format="2">
-  <advance width="571"/>
+  <advance width="570"/>
   <unicode hex="012D"/>
   <anchor x="434" y="18" name="ogonek"/>
   <anchor x="292" y="1415" name="top"/>

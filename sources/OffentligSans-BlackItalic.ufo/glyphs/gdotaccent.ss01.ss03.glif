@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="gdotaccent.ss01.ss03" format="2">
   <advance width="1146"/>
-  <anchor x="807.546" y="1447.92" name="top"/>
+  <anchor x="817.8386177971818" y="1486.235368192925" name="top"/>
   <anchor x="410.7" y="-336" name="bottom"/>
   <outline>
     <component base="g.ss01"/>

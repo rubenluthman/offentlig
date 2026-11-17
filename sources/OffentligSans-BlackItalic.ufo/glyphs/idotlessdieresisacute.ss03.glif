@@ -2,11 +2,11 @@
 <glyph name="idotlessdieresisacute.ss03" format="2">
   <advance width="571"/>
   <anchor x="363" y="18" name="ogonek"/>
-  <anchor x="471.09" y="1830.92" name="top"/>
+  <anchor x="481.3354848714154" y="1868.9" name="top"/>
   <anchor x="212" y="0" name="bottom"/>
   <outline>
     <component base="idotless"/>
     <component base="dieresiscomb.ss03" xOffset="-170"/>
-    <component base="acutecomb" xOffset="195.546" yOffset="415.92"/>
+    <component base="acutecomb" xOffset="205.7914848714154" yOffset="453.8999999999999"/>
   </outline>
 </glyph>

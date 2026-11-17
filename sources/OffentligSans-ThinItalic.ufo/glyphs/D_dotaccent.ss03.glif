@@ -3,7 +3,7 @@
   <advance width="1266"/>
   <anchor x="502" y="0" name="bottom"/>
   <anchor x="658" y="724" name="center"/>
-  <anchor x="902.55" y="1827" name="top"/>
+  <anchor x="902.546" y="1827" name="top"/>
   <outline>
     <component base="D"/>
     <component base="dotaccentcomb.ss03" xOffset="722" yOffset="412"/>

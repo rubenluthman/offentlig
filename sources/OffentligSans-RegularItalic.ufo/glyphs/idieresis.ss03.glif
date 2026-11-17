@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="idieresis.ss03" format="2">
-  <advance width="490.40625"/>
-  <anchor x="235.6875" y="23.25" name="ogonek"/>
-  <anchor x="373.1" y="1402.6" name="top"/>
-  <anchor x="170" y="0" name="bottom"/>
+  <advance width="490.9375"/>
+  <anchor x="240.28125" y="23.25" name="ogonek"/>
+  <anchor x="378.0314043593074" y="1405.0018410377381" name="top"/>
+  <anchor x="174.59375" y="0" name="bottom"/>
   <outline>
     <component base="idotless"/>
-    <component base="dieresiscomb.ss03" xOffset="-18.40625"/>
+    <component base="dieresiscomb.ss03" xOffset="-13.8125"/>
   </outline>
 </glyph>
