@@ -7,7 +7,7 @@
 <!-- vale HouseStyle.Headings = YES -->
 
 - [x] Audit every design and spacing decision before work on Offentlig Serif and Offentlig Mono starts, since they will reuse these rules (completed in 0.4.0; see [docs/design-decisions.md](docs/design-decisions.md) and `tests/test_diagonal_gaps.py`).
-- [ ] Follow the three fixes this fork carries that Public Sans has not merged yet: uswds/public-sans PRs #396 (italic `å`), #397 (subscript digits) and #398 (Thin kerning of space and dashes).
+- [ ] Follow the three fixes this fork carries that Public Sans has not merged yet: uswds/public-sans PRs #396 (italic `å`), #397 (subscript digits) and #398 (Thin kerning of space and dashes). Checked at each release (see the release steps in [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md#releases)).
 
 <!-- vale HouseStyle.Headings = NO -->
 ### Offentlig Serif

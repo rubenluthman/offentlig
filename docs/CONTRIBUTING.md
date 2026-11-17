@@ -50,13 +50,14 @@ This project follows a shared house style for wording, punctuation, and headings
 
 ## Releases
 
-1. Rename `## [Unreleased]` in `CHANGELOG.md` to `## [X.Y.Z] - YYYY-MM-DD`, and update the version in `sources/*.ufo/fontinfo.plist` (`versionMajor`, `versionMinor`). Package version `0.X.Y` becomes font version `0.(X × 100 + Y)`.
-2. Run `make build test qa`. The version test compares name ID 5 of every built font with `versionMajor` and `versionMinor` in the masters, so it fails on a stale build or masters that disagree.
-3. Run `make specimen` to refresh `docs/specimen.png` and `make social-preview` to write `build/social-preview.png`, and upload the preview by hand.
-4. Run `scripts/release_notes.sh X.Y.Z` to check the release notes before tagging: the release job fails without them, and a tag is never moved.
-5. Commit the release, then tag it as an annotated tag named `vX.Y.Z` with the release commit's subject as the message (`git tag -a vX.Y.Z -m "<subject>"`), and push the tag. Tags are never moved or reused.
-6. CI builds the fonts, runs the tests and Fontspector, zips `fonts/OffentligSans/` and `LICENSE` as `OffentligSans-X.Y.Z.zip` and creates a draft GitHub release with the zip attached (ADR-0002) and that version's `CHANGELOG.md` section as its notes. The release job fails if the section is missing or empty.
-7. Review the draft release and publish it.
+1. Check the pull requests this fork sent to Public Sans ([#396](https://github.com/uswds/public-sans/pull/396), [#397](https://github.com/uswds/public-sans/pull/397), [#398](https://github.com/uswds/public-sans/pull/398)). When one has merged or closed, say so in `README.md` and `ROADMAP.md`, and compare the merged change with this fork's fix.
+2. Rename `## [Unreleased]` in `CHANGELOG.md` to `## [X.Y.Z] - YYYY-MM-DD`, and update the version in `sources/*.ufo/fontinfo.plist` (`versionMajor`, `versionMinor`). Package version `0.X.Y` becomes font version `0.(X × 100 + Y)`.
+3. Run `make build test qa`. The version test compares name ID 5 of every built font with `versionMajor` and `versionMinor` in the masters, so it fails on a stale build or masters that disagree.
+4. Run `make specimen` to refresh `docs/specimen.png` and `make social-preview` to write `build/social-preview.png`, and upload the preview by hand.
+5. Run `scripts/release_notes.sh X.Y.Z` to check the release notes before tagging: the release job fails without them, and a tag is never moved.
+6. Commit the release, then tag it as an annotated tag named `vX.Y.Z` with the release commit's subject as the message (`git tag -a vX.Y.Z -m "<subject>"`), and push the tag. Tags are never moved or reused.
+7. CI builds the fonts, runs the tests and Fontspector, zips `fonts/OffentligSans/` and `LICENSE` as `OffentligSans-X.Y.Z.zip` and creates a draft GitHub release with the zip attached (ADR-0002) and that version's `CHANGELOG.md` section as its notes. The release job fails if the section is missing or empty.
+8. Review the draft release and publish it.
 
 CI runs on pushes and pull requests to `main` that touch `sources/`, `tests/`, `scripts/`, `docs/proof/` (the tester text is read by a test), `Makefile`, `requirements*.txt` or `.github/`, and fails on any test failure or Fontspector FAIL. Every run that is not a tag push also builds the zip and uploads it as the `release-zip` workflow artifact, so the release job's input can be inspected without a tag. The workflow can also be started manually (`workflow_dispatch`).
 
