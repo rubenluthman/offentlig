@@ -39,14 +39,20 @@ diff-public-sans: $(SANS_REF)/fonts/ttf
 	@test -d $(FONTS)/ttf || (echo "Run 'make build' first" && exit 1)
 	$(DIFFENATOR2) diff -fb $(SANS_REF)/fonts/ttf/*.ttf -fa $(FONTS)/ttf/*.ttf -o build/diff-public-sans
 
-# Build origin/main in a separate worktree (MAIN_REF), then compare the current build with it.
-# Delete MAIN_REF to rebuild it. Output: build/diff-main
+# Build origin/main in a plain copy of its files (MAIN_REF, made with git archive rather than
+# a registered worktree, which would outlive the checkout it sits in), then compare the
+# current build with it. The copy is rebuilt when origin/main has moved. Output: build/diff-main
 diff-main:
 	@test -d $(FONTS)/ttf || (echo "Run 'make build' first" && exit 1)
-	@if [ ! -d $(MAIN_REF)/$(FONTS)/ttf ]; then \
-	  git worktree remove --force $(MAIN_REF) 2>/dev/null || true; \
-	  git worktree add --detach $(MAIN_REF) origin/main && \
-	  (cd $(MAIN_REF)/sources && gftools builder config-OffentligSans.yaml); \
+	@test -n "$(MAIN_REF)" || (echo "MAIN_REF is empty" && exit 1)
+	@ref=$$(git rev-parse origin/main) || exit 1; \
+	if [ ! -d "$(MAIN_REF)/$(FONTS)/ttf" ] || [ "$$(cat "$(MAIN_REF)/.main-commit" 2>/dev/null)" != "$$ref" ]; then \
+	  echo "Building origin/main $$ref in $(MAIN_REF)"; \
+	  git worktree remove --force "$(MAIN_REF)" 2>/dev/null; \
+	  rm -rf "$(MAIN_REF)" && mkdir -p "$(MAIN_REF)" && \
+	  git archive "$$ref" | tar -x -C "$(MAIN_REF)" && \
+	  (cd "$(MAIN_REF)/sources" && gftools builder config-OffentligSans.yaml) && \
+	  echo "$$ref" > "$(MAIN_REF)/.main-commit" || exit 1; \
 	fi
 	$(DIFFENATOR2) diff -fb $(MAIN_REF)/$(FONTS)/ttf/*.ttf -fa $(FONTS)/ttf/*.ttf -o build/diff-main
 
