@@ -14,7 +14,7 @@ QA tools: Diffenator2 is installed by `make venv` into `venv/diffenator`. Fontsp
 
 ```bash
 make build     # fonts/OffentligSans/{otf,ttf,variable,webfonts}
-make test      # pytest -n 2 against the built fonts (override with PYTEST_JOBS=auto)
+make test      # pytest -n 3 --dist worksteal against the built fonts (override with PYTEST_JOBS=auto)
 make qa        # Fontspector universal and OpenType profiles, expected 0 FAIL
 make proof     # tester page (docs/proof/allemansratten.txt) and Diffenator2 proof pages in build/proof
 make specimen  # docs/specimen.png from the built TTFs and the Allemansrätten text
@@ -25,6 +25,8 @@ make install   # copies the OTF files to ~/Library/Fonts
 make clean     # deletes fonts/ and build/
 make verify    # tests, links, house style, conflict markers, paths and secrets
 ```
+
+`make test` and `make verify` use `--dist worksteal`: a worker that runs out of tests takes queued ones from another, so no worker is left running the longest tests alone. On the 8 GB development Mac, on `v0.5.0` with the same tests collected and passing: two workers with the default distribution took 71 minutes, with one worker idle for the last 60; three workers with `worksteal` took 33 minutes, all busy until the last 16 seconds. Each worker peaks near 1 GB and swap was already 6 – 7.5 GB of 8 GB, so the local default stays at three; raise `PYTEST_JOBS` only on a machine with more memory. CI uses `PYTEST_JOBS=auto`.
 
 ## Editing sources
 
