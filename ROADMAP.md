@@ -16,8 +16,8 @@
 - [x] Name `cv01` – `cv06` in the font, as `ss01` – `ss03` already are, so apps such as the macOS Typography panel show what each one does. Done since #8 and #17: the font carries `cvParameters` (label, tooltip, sample text), and Core Text (`CTFontCopyFeatures`, the list behind the panel) returns them as the features Wider J, G without spur, Single-storey a, I with serifs and 1 with base, each with Off and On. `cv02` does not exist and `cv06` is the 1 with base.
 - [ ] The ring on `Å` and the diaeresis on `ä ö`: measure their size, height and gap against the reference fonts before redrawing. The ring of `Å` reaches above the ascender used for line spacing.
 - [ ] Joins in Bold to Black (the link of `g`, the crotches of `M N W`, the bowl joins of `a b d p q`): measure how dark they get against the reference fonts before thinning any or adding ink traps.
-- [ ] In Black, the narrow double grave on `ȉ` still overhangs the advance by 35 units more than the breve on `ĭ`.
-- [ ] Replace the single-pair kerning exceptions added for the narrow double grave with group kerning where the result is the same.
+- [x] In Black, the narrow double grave on `ȉ` still overhangs the advance by 35 units more than the breve on `ĭ`.
+- [x] Replace the single-pair kerning exceptions added for the narrow double grave with group kerning where the result is the same.
 - [ ] Even out `make test`: one worker runs the longest tests alone at the end of the run.
 - [ ] Review which alternates should become the default form, which would revisit decision F4 (alternates are opt-in). Do this after every other Offentlig Sans item above.
 
