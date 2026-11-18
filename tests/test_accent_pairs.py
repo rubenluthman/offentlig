@@ -14,7 +14,7 @@ from fontTools.ttLib import TTFont
 
 from conftest import static_path
 from pairs import PairTable
-from test_spacing import ALL_FONTS, ALL_IDS, CLOSING_PUNCTUATION, DIAERESIS_TALL, LEFT_FOR_THE_ICEBOX, OPENING_PUNCTUATION, shaper
+from test_spacing import ALL_FONTS, ALL_IDS, CLOSING_PUNCTUATION, DIAERESIS_TALL, OPENING_PUNCTUATION, shaper
 
 FLOOR = 30
 ACCENT_SLACK = 2
@@ -43,7 +43,7 @@ def diaeresis_twin(text):
 def is_accented(text):
     if len(text) == 2:
         return True
-    return unicodedata.category(text) in ("Lu", "Ll") and len(unicodedata.normalize("NFD", text)) > 1 and text not in LEFT_FOR_THE_ICEBOX
+    return unicodedata.category(text) in ("Lu", "Ll") and len(unicodedata.normalize("NFD", text)) > 1
 
 
 def base_of(text):
@@ -65,11 +65,10 @@ def whole_table(weight, italic, features_name):
 @pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
 def test_an_accent_never_closes_a_pair_below_the_unaccented_pair(weight, italic, features_name):
     """Every pair with an accented letter, on either side, keeps at least the smaller of the gap of the same pair with the
-    unaccented base letters and 30 units, less 2. Pairs with `ȉ ȑ` (the narrower double grave is in the ROADMAP Icebox),
-    and the diaeresis pairs held to 8 are left out."""
+    unaccented base letters and 30 units, less 2. The diaeresis pairs held to 8 are left out."""
     table, kern, gap = whole_table(weight, italic, features_name)
     texts = table.texts
-    accented = np.array([is_accented(t) and t not in LEFT_FOR_THE_ICEBOX for t in texts])
+    accented = np.array([is_accented(t) for t in texts])
     reference = np.array([table.index.get(base_of(t), -1) if a else i for i, (t, a) in enumerate(zip(texts, accented))])
     xs, ys = np.nonzero((accented[:, None] | accented[None, :]) & ~np.isnan(kern))
     tight = []
@@ -96,10 +95,7 @@ def diaeresis_pair(a, b, weight, italic):
 
 def accent_violation(a, b, accented_a, accented_b, gap, ref, weight="", italic=False):
     """None, or (pair, gap, reference gap) when a pair with an accented letter breaks the rule above: `ref` is the gap of the
-    same pair with the unaccented base letters (inf when there is none). Pairs with `ȉ ȑ` pass;
-    the diaeresis pairs held to 8 in ExtraBold/Black Italic fail below 8 units."""
-    if any(c in a + b for c in LEFT_FOR_THE_ICEBOX):
-        return None
+    same pair with the unaccented base letters (inf when there is none). The diaeresis pairs held to 8 in ExtraBold/Black Italic fail below 8 units."""
     if (len(b) == 1 and b in CLOSING_PUNCTUATION and accented_a) or (len(a) == 1 and a in OPENING_PUNCTUATION and accented_b):
         # brackets and quotes keep the 30 units of test_accented_letters_clear_the_punctuation_next_to_them, with no slack
         return (a + b, round(float(gap)), None) if gap < FLOOR else None
@@ -137,7 +133,7 @@ def test_round_dot_pairs_keep_the_gap_of_the_default_pairs(weight, italic):
     tight = []
     for x, y in zip(xs, ys):
         a, b = chars[x], chars[y]
-        if any(c in a + b for c in LEFT_FOR_THE_ICEBOX + "\u2044") or diaeresis_pair(a, b, weight, italic):
+        if any(c in a + b for c in "\u2044") or diaeresis_pair(a, b, weight, italic):
             continue
         if np.isinf(plain[x, y]) or np.isinf(rounded[x, y]):
             continue

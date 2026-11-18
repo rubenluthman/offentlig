@@ -1046,6 +1046,8 @@
     <string>daggerdbl.glif</string>
     <key>dblgravecomb</key>
     <string>dblgravecomb.glif</string>
+    <key>dblgravecomb.narrow</key>
+    <string>dblgravecomb.narrow.glif</string>
     <key>dblmacronbelowcomb</key>
     <string>dblmacronbelowcomb.glif</string>
     <key>dblprimemod</key>

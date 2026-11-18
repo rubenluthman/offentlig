@@ -7,6 +7,6 @@
   <anchor x="174.59375" y="0" name="bottom"/>
   <outline>
     <component base="idotless"/>
-    <component base="dblgravecomb" xOffset="-259.71875"/>
+    <component base="dblgravecomb.narrow" xOffset="-53.839"/>
   </outline>
 </glyph>

@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 - Added tabular oldstyle figures: with `tnum` and `onum` both on, in either order, figures are oldstyle on the shared 1400-unit width (they were lining), and `zero` and `cv06` carry through. The oldstyle `1` keeps its base. Nothing else changes.
+- Changed the double grave on `ȉ ȑ` and on typed `i ı r` followed by U+030F: a narrow mark, centred on the letter, replaces the full-width one. It no longer overhangs the letter by up to 390 units in Black, so `Tȉ Vȉ Yȉ`, `fȉ`, `ȉl`, brackets, quotes and `cv05` `Iȉ` keep at least 30 units of clearance in every weight. `ȁ ȅ ȍ ȕ` and the capitals are unchanged.
 
 ## [0.4.0] - 2026-11-17
 

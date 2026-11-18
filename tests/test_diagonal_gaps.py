@@ -20,7 +20,7 @@ from test_accent_pairs import cmap_characters
 from test_spacing import ALL_FONTS, ALL_IDS, shaper
 
 DIAGONAL_FLOOR = 15.0
-LEFT_OUT = set("⁄ȉȑ")
+LEFT_OUT = set("⁄")
 # Narrowed E2 floor: only ExtraBold-italic and Black-italic ï/ḯ/ị̈/ɨ̈ next to tall letters H l i b k h d.
 E2_NARROW_LEFT = set("ïḯ")
 E2_NARROW_RIGHT = set("Hlibkhd")

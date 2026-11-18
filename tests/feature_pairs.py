@@ -14,7 +14,7 @@ from conftest import static_path
 from pairs import PairTable
 from test_accent_pairs import FLOOR, accent_violation, base_of, diaeresis_pair, encoded_texts, is_accented
 from test_plain_pairs import plain_violation
-from test_spacing import LEFT_FOR_THE_ICEBOX, shaper, source, ufo_glyph_name
+from test_spacing import shaper, source, ufo_glyph_name
 
 ALL_FEATURES = ["ss01", "ss02", "ss03", "cv01", "cv03", "cv04", "cv05", "cv06", "zero", "onum"]
 # Each alternate on its own, then the combinations where two alternates meet in one pair.
@@ -40,7 +40,7 @@ class FeaturePairs:
         t = self.table
         default = [s.shape(text) for text in t.texts]
         self.changed = np.array([len(d) != 1 or d[0][0] != gid for d, gid in zip(default, t.gids)])
-        self.accented = np.array([is_accented(x) and x not in LEFT_FOR_THE_ICEBOX for x in t.texts])
+        self.accented = np.array([is_accented(x) for x in t.texts])
         self.reference = np.array([t.index.get(base_of(x), -1) if a else i for i, (x, a) in enumerate(zip(t.texts, self.accented))])
 
     def pairs(self, focus=()):
