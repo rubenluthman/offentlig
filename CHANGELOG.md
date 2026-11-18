@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 - Added tabular oldstyle figures: with `tnum` and `onum` both on, in either order, figures are oldstyle on the shared 1400-unit width (they were lining), and `zero` and `cv06` carry through. The oldstyle `1` keeps its base. Nothing else changes.
+- Fixed spacing: a grave, macron, tilde, breve or caron typed after `T V W Y` on a letter with no precomposed form (the lowercase DIN 91379 sequences, Yoruba `ẹ̀ ọ̄ ṣ̀`, Igbo `ụ̀`, Lithuanian `ą̀ į̃`) no longer runs into the capital, at every weight. Hidden copies of the capitals, swapped in by `rclt`, carry the extra kerning.
 
 ## [0.4.0] - 2026-11-17
 
