@@ -1,13 +1,15 @@
 """`tnum` and `onum` together give oldstyle figures on the tabular advance (register F14, F26).
 
-Each `.tf.osf` glyph is the matching `.osf` outline, placed so its ink centre is where the `.tf` figure's ink centre is. The tabular 1 keeps its base
+Each `.tf.osf` glyph is the matching `.osf` outline, placed the way the `.tf` figure sits relative to its proportional lining figure. The tabular 1 keeps its base
 (`one.tf`), so the tabular oldstyle 1 is the oldstyle 1 with a base (`one.cv06.osf`).
 """
 import itertools
+import math
 
 import pytest
 import uharfbuzz as hb
 from fontTools.pens.boundsPen import BoundsPen
+from fontTools.pens.transformPen import TransformPen
 from fontTools.ttLib import TTFont
 
 from conftest import static_path
@@ -47,23 +49,38 @@ def test_tabular_oldstyle_glyphs_share_the_tabular_advance(static_ttf):
         assert hmtx[name][0] == CELL == hmtx["zero.tf"][0], name
 
 
-def test_tabular_oldstyle_glyphs_keep_the_oldstyle_outline_and_sit_where_the_lining_tabular_figure_sits(static_ttf):
-    """The lining `.tf` figures are not centred on the cell (`five.tf` sits 24 units right of centre at Regular):
-    upstream placed each one on purpose. `onum` therefore moves no figure sideways: each `.tf.osf` ink has the same
-    centre as its `.tf`, and where the two drawings have the same ink width (every figure but 1 and 7, and 0 and 2 in
-    the italics) the same left side bearing.
+LINING = {f"{n}.tf.osf": n for n in NAMES}
+LINING["one.tf.osf"] = "one.cv06"  # the tabular 1 has a base, so its proportional counterpart is the 1 with a base
+LINING["zero.slash.tf.osf"] = "zero.slash"
 
-    Measured 2026-11-18: the six masters are within 0.65 units of the `.tf` ink centre (whole-unit offsets plus curve
-    conversion). Interpolated statics drift further because offsets and outlines interpolate linearly while the ink
-    bounds of a round figure do not; 2 units is 0.14 % of the cell.
+
+def _deslanted_centre(tt, name):
+    """Ink centre along the slant: x + y * tan(italicAngle), so italic and upright compare the same way."""
+    tan = math.tan(math.radians(tt["post"].italicAngle))
+    pen = BoundsPen(tt.getGlyphSet())
+    tt.getGlyphSet()[name].draw(TransformPen(pen, (1, 0, tan, 1, 0, 0)))
+    return (pen.bounds[0] + pen.bounds[2]) / 2
+
+
+def test_tabular_oldstyle_glyphs_keep_the_oldstyle_outline_and_sit_as_the_tabular_figure_does(static_ttf):
+    """The lining `.tf` figures are not centred on the cell (`five.tf` sits 24 units right of centre at Regular):
+    upstream placed each one on purpose. A `.tf.osf` sits relative to its `.tf` exactly as the proportional `.osf`
+    sits relative to its lining figure, measured along the slant, so `onum` moves no figure sideways in either
+    style. In the upright that is the same left side bearing as the `.tf` wherever the ink widths match.
+
+    Measured 2026-11-18: the six masters are within 0.65 units (whole-unit offsets plus curve conversion).
+    Interpolated statics drift further, up to 1.5 units, because offsets and outlines interpolate linearly while the
+    ink bounds of a round figure do not; 2 units is 0.14 % of the cell.
     """
     for new, src in SOURCE.items():
         tf = new.replace(".osf", "")
         a, b, t = _ink(static_ttf, new), _ink(static_ttf, src), _ink(static_ttf, tf)
         assert (a[1], a[3]) == (b[1], b[3]), f"{new} moved vertically"
         assert a[2] - a[0] == pytest.approx(b[2] - b[0], abs=1), f"{new} changed width"
-        assert (a[0] + a[2]) / 2 == pytest.approx((t[0] + t[2]) / 2, abs=2), new
-        if abs((t[2] - t[0]) - (a[2] - a[0])) <= 2:
+        shift_osf = _deslanted_centre(static_ttf, new) - _deslanted_centre(static_ttf, src)
+        shift_tf = _deslanted_centre(static_ttf, tf) - _deslanted_centre(static_ttf, LINING[new])
+        assert shift_osf == pytest.approx(shift_tf, abs=2), f"{new} sits {shift_osf - shift_tf:+.1f} units off {tf}"
+        if static_ttf["post"].italicAngle == 0 and abs((t[2] - t[0]) - (a[2] - a[0])) <= 2:
             assert a[0] == pytest.approx(t[0], abs=2), f"{new} sits {a[0] - t[0]:.1f} units from {tf}"
 
 
