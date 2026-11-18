@@ -917,6 +917,132 @@
     <array>
       <string>three.osf</string>
     </array>
+    <key>public.kern1.tk01T0</key>
+    <array>
+      <string>T.tk01</string>
+      <string>Tbar.tk01</string>
+      <string>Tcaron.tk01</string>
+      <string>Tcedilla.tk01</string>
+      <string>Tcommaaccent.tk01</string>
+      <string>Tcommaaccent.ss03.tk01</string>
+      <string>Tdotaccent.tk01</string>
+      <string>Tdotaccent.ss03.tk01</string>
+      <string>Tdotbelow.tk01</string>
+      <string>Tdotbelow.ss03.tk01</string>
+      <string>Tlinebelow.tk01</string>
+    </array>
+    <key>public.kern1.tk01V0</key>
+    <array>
+      <string>V.tk01</string>
+      <string>W.tk01</string>
+      <string>Wacute.tk01</string>
+      <string>Wcircumflex.tk01</string>
+      <string>Wdieresis.tk01</string>
+      <string>Wdieresis.ss03.tk01</string>
+      <string>Wdotaccent.tk01</string>
+      <string>Wdotaccent.ss03.tk01</string>
+      <string>Wgrave.tk01</string>
+    </array>
+    <key>public.kern1.tk01Y0</key>
+    <array>
+      <string>Y.tk01</string>
+      <string>Yacute.tk01</string>
+      <string>Ycircumflex.tk01</string>
+      <string>Ydieresis.tk01</string>
+      <string>Ydieresis.ss03.tk01</string>
+      <string>Ydotaccent.tk01</string>
+      <string>Ydotaccent.ss03.tk01</string>
+      <string>Ydotbelow.tk01</string>
+      <string>Ydotbelow.ss03.tk01</string>
+      <string>Ygrave.tk01</string>
+      <string>Yhookabove.tk01</string>
+      <string>Ymacron.tk01</string>
+      <string>Ytilde.tk01</string>
+    </array>
+    <key>public.kern1.tk02T0</key>
+    <array>
+      <string>T.tk02</string>
+      <string>Tbar.tk02</string>
+      <string>Tcaron.tk02</string>
+      <string>Tcedilla.tk02</string>
+      <string>Tcommaaccent.tk02</string>
+      <string>Tcommaaccent.ss03.tk02</string>
+      <string>Tdotaccent.tk02</string>
+      <string>Tdotaccent.ss03.tk02</string>
+      <string>Tdotbelow.tk02</string>
+      <string>Tdotbelow.ss03.tk02</string>
+      <string>Tlinebelow.tk02</string>
+    </array>
+    <key>public.kern1.tk02V0</key>
+    <array>
+      <string>V.tk02</string>
+      <string>W.tk02</string>
+      <string>Wacute.tk02</string>
+      <string>Wcircumflex.tk02</string>
+      <string>Wdieresis.tk02</string>
+      <string>Wdieresis.ss03.tk02</string>
+      <string>Wdotaccent.tk02</string>
+      <string>Wdotaccent.ss03.tk02</string>
+      <string>Wgrave.tk02</string>
+    </array>
+    <key>public.kern1.tk02Y0</key>
+    <array>
+      <string>Y.tk02</string>
+      <string>Yacute.tk02</string>
+      <string>Ycircumflex.tk02</string>
+      <string>Ydieresis.tk02</string>
+      <string>Ydieresis.ss03.tk02</string>
+      <string>Ydotaccent.tk02</string>
+      <string>Ydotaccent.ss03.tk02</string>
+      <string>Ydotbelow.tk02</string>
+      <string>Ydotbelow.ss03.tk02</string>
+      <string>Ygrave.tk02</string>
+      <string>Yhookabove.tk02</string>
+      <string>Ymacron.tk02</string>
+      <string>Ytilde.tk02</string>
+    </array>
+    <key>public.kern1.tk03T0</key>
+    <array>
+      <string>T.tk03</string>
+      <string>Tbar.tk03</string>
+      <string>Tcaron.tk03</string>
+      <string>Tcedilla.tk03</string>
+      <string>Tcommaaccent.tk03</string>
+      <string>Tcommaaccent.ss03.tk03</string>
+      <string>Tdotaccent.tk03</string>
+      <string>Tdotaccent.ss03.tk03</string>
+      <string>Tdotbelow.tk03</string>
+      <string>Tdotbelow.ss03.tk03</string>
+      <string>Tlinebelow.tk03</string>
+    </array>
+    <key>public.kern1.tk03V0</key>
+    <array>
+      <string>V.tk03</string>
+      <string>W.tk03</string>
+      <string>Wacute.tk03</string>
+      <string>Wcircumflex.tk03</string>
+      <string>Wdieresis.tk03</string>
+      <string>Wdieresis.ss03.tk03</string>
+      <string>Wdotaccent.tk03</string>
+      <string>Wdotaccent.ss03.tk03</string>
+      <string>Wgrave.tk03</string>
+    </array>
+    <key>public.kern1.tk03Y0</key>
+    <array>
+      <string>Y.tk03</string>
+      <string>Yacute.tk03</string>
+      <string>Ycircumflex.tk03</string>
+      <string>Ydieresis.tk03</string>
+      <string>Ydieresis.ss03.tk03</string>
+      <string>Ydotaccent.tk03</string>
+      <string>Ydotaccent.ss03.tk03</string>
+      <string>Ydotbelow.tk03</string>
+      <string>Ydotbelow.ss03.tk03</string>
+      <string>Ygrave.tk03</string>
+      <string>Yhookabove.tk03</string>
+      <string>Ymacron.tk03</string>
+      <string>Ytilde.tk03</string>
+    </array>
     <key>public.kern1.two</key>
     <array>
       <string>two</string>
@@ -1465,6 +1591,39 @@
       <string>Tcommaaccent.ss03</string>
       <string>Tdotbelow</string>
       <string>Tdotbelow.ss03</string>
+      <string>T.tk01</string>
+      <string>T.tk02</string>
+      <string>T.tk03</string>
+      <string>Tbar.tk01</string>
+      <string>Tbar.tk02</string>
+      <string>Tbar.tk03</string>
+      <string>Tcaron.tk01</string>
+      <string>Tcaron.tk02</string>
+      <string>Tcaron.tk03</string>
+      <string>Tcedilla.tk01</string>
+      <string>Tcedilla.tk02</string>
+      <string>Tcedilla.tk03</string>
+      <string>Tcommaaccent.ss03.tk01</string>
+      <string>Tcommaaccent.ss03.tk02</string>
+      <string>Tcommaaccent.ss03.tk03</string>
+      <string>Tcommaaccent.tk01</string>
+      <string>Tcommaaccent.tk02</string>
+      <string>Tcommaaccent.tk03</string>
+      <string>Tdotaccent.ss03.tk01</string>
+      <string>Tdotaccent.ss03.tk02</string>
+      <string>Tdotaccent.ss03.tk03</string>
+      <string>Tdotaccent.tk01</string>
+      <string>Tdotaccent.tk02</string>
+      <string>Tdotaccent.tk03</string>
+      <string>Tdotbelow.ss03.tk01</string>
+      <string>Tdotbelow.ss03.tk02</string>
+      <string>Tdotbelow.ss03.tk03</string>
+      <string>Tdotbelow.tk01</string>
+      <string>Tdotbelow.tk02</string>
+      <string>Tdotbelow.tk03</string>
+      <string>Tlinebelow.tk01</string>
+      <string>Tlinebelow.tk02</string>
+      <string>Tlinebelow.tk03</string>
     </array>
     <key>public.kern2.U</key>
     <array>
@@ -1513,6 +1672,33 @@
       <string>Wdieresis</string>
       <string>Wdieresis.ss03</string>
       <string>Wgrave</string>
+      <string>V.tk01</string>
+      <string>V.tk02</string>
+      <string>V.tk03</string>
+      <string>W.tk01</string>
+      <string>W.tk02</string>
+      <string>W.tk03</string>
+      <string>Wacute.tk01</string>
+      <string>Wacute.tk02</string>
+      <string>Wacute.tk03</string>
+      <string>Wcircumflex.tk01</string>
+      <string>Wcircumflex.tk02</string>
+      <string>Wcircumflex.tk03</string>
+      <string>Wdieresis.ss03.tk01</string>
+      <string>Wdieresis.ss03.tk02</string>
+      <string>Wdieresis.ss03.tk03</string>
+      <string>Wdieresis.tk01</string>
+      <string>Wdieresis.tk02</string>
+      <string>Wdieresis.tk03</string>
+      <string>Wdotaccent.ss03.tk01</string>
+      <string>Wdotaccent.ss03.tk02</string>
+      <string>Wdotaccent.ss03.tk03</string>
+      <string>Wdotaccent.tk01</string>
+      <string>Wdotaccent.tk02</string>
+      <string>Wdotaccent.tk03</string>
+      <string>Wgrave.tk01</string>
+      <string>Wgrave.tk02</string>
+      <string>Wgrave.tk03</string>
     </array>
     <key>public.kern2.X</key>
     <array>
@@ -1535,6 +1721,45 @@
       <string>Ygrave</string>
       <string>Yhookabove</string>
       <string>Ytilde</string>
+      <string>Y.tk01</string>
+      <string>Y.tk02</string>
+      <string>Y.tk03</string>
+      <string>Yacute.tk01</string>
+      <string>Yacute.tk02</string>
+      <string>Yacute.tk03</string>
+      <string>Ycircumflex.tk01</string>
+      <string>Ycircumflex.tk02</string>
+      <string>Ycircumflex.tk03</string>
+      <string>Ydieresis.ss03.tk01</string>
+      <string>Ydieresis.ss03.tk02</string>
+      <string>Ydieresis.ss03.tk03</string>
+      <string>Ydieresis.tk01</string>
+      <string>Ydieresis.tk02</string>
+      <string>Ydieresis.tk03</string>
+      <string>Ydotaccent.ss03.tk01</string>
+      <string>Ydotaccent.ss03.tk02</string>
+      <string>Ydotaccent.ss03.tk03</string>
+      <string>Ydotaccent.tk01</string>
+      <string>Ydotaccent.tk02</string>
+      <string>Ydotaccent.tk03</string>
+      <string>Ydotbelow.ss03.tk01</string>
+      <string>Ydotbelow.ss03.tk02</string>
+      <string>Ydotbelow.ss03.tk03</string>
+      <string>Ydotbelow.tk01</string>
+      <string>Ydotbelow.tk02</string>
+      <string>Ydotbelow.tk03</string>
+      <string>Ygrave.tk01</string>
+      <string>Ygrave.tk02</string>
+      <string>Ygrave.tk03</string>
+      <string>Yhookabove.tk01</string>
+      <string>Yhookabove.tk02</string>
+      <string>Yhookabove.tk03</string>
+      <string>Ymacron.tk01</string>
+      <string>Ymacron.tk02</string>
+      <string>Ymacron.tk03</string>
+      <string>Ytilde.tk01</string>
+      <string>Ytilde.tk02</string>
+      <string>Ytilde.tk03</string>
     </array>
     <key>public.kern2.Z</key>
     <array>

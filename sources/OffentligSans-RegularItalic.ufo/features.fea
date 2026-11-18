@@ -767,3 +767,67 @@ featureNames {
 };
 
 } ss03;
+
+# Typed-accent kerning: helper capitals (docs/design-decisions.md).
+# A capital followed by a lowercase base and a top mark is swapped for a copy that draws the same and has its own kerning groups.
+
+@tkMid = [horncomb ogonekcomb ringbelowcomb];
+@tkTop01 = [brevecomb caroncomb];
+@tkTop02 = [gravecomb];
+@tkTop03 = [macroncomb tildecomb];
+@tkBase000 = [iogonek.dotless s sdotbelow sdotbelow.ss03];
+@tkBase001 = [aogonek aogonek.cv04 c ccedilla edotbelow edotbelow.ss03 eogonek iogonek.dotless odotbelow odotbelow.ss03 r s sdotbelow sdotbelow.ss03 udotbelow udotbelow.ss03 uogonek];
+@tkBase002 = [iogonek.dotless];
+@tkBase003 = [aogonek aogonek.cv04 c ccedilla edotbelow edotbelow.ss03 eogonek iogonek.dotless k kdotbelow kdotbelow.ss03 odotbelow odotbelow.ss03 r s sdotbelow sdotbelow.ss03 udotbelow udotbelow.ss03 uogonek];
+@tkBase004 = [iogonek.dotless s sdotbelow];
+@tkBase005 = [aogonek c ccedilla edotbelow eogonek iogonek.dotless odotbelow r s sdotbelow udotbelow uogonek];
+@tkBase006 = [iogonek.dotless s sdotbelow.ss03];
+@tkBase007 = [aogonek.cv04 c ccedilla edotbelow.ss03 eogonek iogonek.dotless odotbelow.ss03 r s sdotbelow.ss03 udotbelow.ss03 uogonek];
+@tkBase008 = [aogonek aogonek.cv04 c ccedilla edotbelow edotbelow.ss03 eogonek iogonek.dotless odotbelow odotbelow.ss03 r s sdotbelow sdotbelow.ss03];
+@tkBase009 = [aogonek c ccedilla edotbelow eogonek iogonek.dotless odotbelow r s sdotbelow];
+@tkBase010 = [aogonek.cv04 c ccedilla edotbelow.ss03 eogonek iogonek.dotless odotbelow.ss03 r s sdotbelow.ss03];
+@tkBase011 = [aogonek aogonek.cv04 c ccedilla edotbelow edotbelow.ss03 eogonek iogonek.dotless odotbelow odotbelow.ss03 s sdotbelow sdotbelow.ss03];
+@tkBase012 = [c ccedilla edotbelow edotbelow.ss03 eogonek iogonek.dotless odotbelow odotbelow.ss03];
+@tkBase013 = [aogonek c ccedilla edotbelow eogonek iogonek.dotless odotbelow s sdotbelow];
+@tkBase014 = [c ccedilla edotbelow eogonek iogonek.dotless odotbelow];
+@tkBase015 = [aogonek.cv04 c ccedilla edotbelow.ss03 eogonek iogonek.dotless odotbelow.ss03 s sdotbelow.ss03];
+@tkBase016 = [c ccedilla edotbelow.ss03 eogonek iogonek.dotless odotbelow.ss03];
+
+feature rclt {
+    sub [Y Yacute Ycircumflex Ygrave Yhookabove Ymacron Ytilde]' @tkBase011 @tkTop01 by [Y.tk01 Yacute.tk01 Ycircumflex.tk01 Ygrave.tk01 Yhookabove.tk01 Ymacron.tk01 Ytilde.tk01];
+    sub [Y Yacute Ycircumflex Ygrave Yhookabove Ymacron Ytilde]' @tkBase011 @tkMid @tkTop01 by [Y.tk01 Yacute.tk01 Ycircumflex.tk01 Ygrave.tk01 Yhookabove.tk01 Ymacron.tk01 Ytilde.tk01];
+    sub [Ydieresis Ydotaccent Ydotbelow]' @tkBase013 @tkTop01 by [Ydieresis.tk01 Ydotaccent.tk01 Ydotbelow.tk01];
+    sub [Ydieresis Ydotaccent Ydotbelow]' @tkBase013 @tkMid @tkTop01 by [Ydieresis.tk01 Ydotaccent.tk01 Ydotbelow.tk01];
+    sub [Ydieresis.ss03 Ydotaccent.ss03 Ydotbelow.ss03]' @tkBase015 @tkTop01 by [Ydieresis.ss03.tk01 Ydotaccent.ss03.tk01 Ydotbelow.ss03.tk01];
+    sub [Ydieresis.ss03 Ydotaccent.ss03 Ydotbelow.ss03]' @tkBase015 @tkMid @tkTop01 by [Ydieresis.ss03.tk01 Ydotaccent.ss03.tk01 Ydotbelow.ss03.tk01];
+    sub [V W Wacute Wcircumflex Wdieresis Wdieresis.ss03 Wdotaccent Wdotaccent.ss03 Wgrave]' @tkBase002 @tkTop01 by [V.tk01 W.tk01 Wacute.tk01 Wcircumflex.tk01 Wdieresis.tk01 Wdieresis.ss03.tk01 Wdotaccent.tk01 Wdotaccent.ss03.tk01 Wgrave.tk01];
+    sub [V W Wacute Wcircumflex Wdieresis Wdieresis.ss03 Wdotaccent Wdotaccent.ss03 Wgrave]' @tkBase002 @tkMid @tkTop01 by [V.tk01 W.tk01 Wacute.tk01 Wcircumflex.tk01 Wdieresis.tk01 Wdieresis.ss03.tk01 Wdotaccent.tk01 Wdotaccent.ss03.tk01 Wgrave.tk01];
+    sub [Tcommaaccent Tdotaccent Tdotbelow]' @tkBase004 @tkTop01 by [Tcommaaccent.tk01 Tdotaccent.tk01 Tdotbelow.tk01];
+    sub [Tcommaaccent Tdotaccent Tdotbelow]' @tkBase004 @tkMid @tkTop01 by [Tcommaaccent.tk01 Tdotaccent.tk01 Tdotbelow.tk01];
+    sub [T Tbar Tcaron Tcedilla Tlinebelow]' @tkBase000 @tkTop01 by [T.tk01 Tbar.tk01 Tcaron.tk01 Tcedilla.tk01 Tlinebelow.tk01];
+    sub [T Tbar Tcaron Tcedilla Tlinebelow]' @tkBase000 @tkMid @tkTop01 by [T.tk01 Tbar.tk01 Tcaron.tk01 Tcedilla.tk01 Tlinebelow.tk01];
+    sub [Tcommaaccent.ss03 Tdotaccent.ss03 Tdotbelow.ss03]' @tkBase006 @tkTop01 by [Tcommaaccent.ss03.tk01 Tdotaccent.ss03.tk01 Tdotbelow.ss03.tk01];
+    sub [Tcommaaccent.ss03 Tdotaccent.ss03 Tdotbelow.ss03]' @tkBase006 @tkMid @tkTop01 by [Tcommaaccent.ss03.tk01 Tdotaccent.ss03.tk01 Tdotbelow.ss03.tk01];
+    sub Tcaron' @tkBase003 @tkTop02 by Tcaron.tk02;
+    sub Tcaron' @tkBase003 @tkMid @tkTop02 by Tcaron.tk02;
+    sub [V W Wacute Wcircumflex Wgrave]' @tkBase008 @tkTop02 by [V.tk02 W.tk02 Wacute.tk02 Wcircumflex.tk02 Wgrave.tk02];
+    sub [V W Wacute Wcircumflex Wgrave]' @tkBase008 @tkMid @tkTop02 by [V.tk02 W.tk02 Wacute.tk02 Wcircumflex.tk02 Wgrave.tk02];
+    sub [T Tbar Tcedilla Tlinebelow Y Yacute Ycircumflex Ygrave Yhookabove Ymacron Ytilde]' @tkBase001 @tkTop02 by [T.tk02 Tbar.tk02 Tcedilla.tk02 Tlinebelow.tk02 Y.tk02 Yacute.tk02 Ycircumflex.tk02 Ygrave.tk02 Yhookabove.tk02 Ymacron.tk02 Ytilde.tk02];
+    sub [T Tbar Tcedilla Tlinebelow Y Yacute Ycircumflex Ygrave Yhookabove Ymacron Ytilde]' @tkBase001 @tkMid @tkTop02 by [T.tk02 Tbar.tk02 Tcedilla.tk02 Tlinebelow.tk02 Y.tk02 Yacute.tk02 Ycircumflex.tk02 Ygrave.tk02 Yhookabove.tk02 Ymacron.tk02 Ytilde.tk02];
+    sub [Wdieresis Wdotaccent]' @tkBase009 @tkTop02 by [Wdieresis.tk02 Wdotaccent.tk02];
+    sub [Wdieresis Wdotaccent]' @tkBase009 @tkMid @tkTop02 by [Wdieresis.tk02 Wdotaccent.tk02];
+    sub [Tcommaaccent Tdotaccent Tdotbelow Ydieresis Ydotaccent Ydotbelow]' @tkBase005 @tkTop02 by [Tcommaaccent.tk02 Tdotaccent.tk02 Tdotbelow.tk02 Ydieresis.tk02 Ydotaccent.tk02 Ydotbelow.tk02];
+    sub [Tcommaaccent Tdotaccent Tdotbelow Ydieresis Ydotaccent Ydotbelow]' @tkBase005 @tkMid @tkTop02 by [Tcommaaccent.tk02 Tdotaccent.tk02 Tdotbelow.tk02 Ydieresis.tk02 Ydotaccent.tk02 Ydotbelow.tk02];
+    sub [Wdieresis.ss03 Wdotaccent.ss03]' @tkBase010 @tkTop02 by [Wdieresis.ss03.tk02 Wdotaccent.ss03.tk02];
+    sub [Wdieresis.ss03 Wdotaccent.ss03]' @tkBase010 @tkMid @tkTop02 by [Wdieresis.ss03.tk02 Wdotaccent.ss03.tk02];
+    sub [Tcommaaccent.ss03 Tdotaccent.ss03 Tdotbelow.ss03 Ydieresis.ss03 Ydotaccent.ss03 Ydotbelow.ss03]' @tkBase007 @tkTop02 by [Tcommaaccent.ss03.tk02 Tdotaccent.ss03.tk02 Tdotbelow.ss03.tk02 Ydieresis.ss03.tk02 Ydotaccent.ss03.tk02 Ydotbelow.ss03.tk02];
+    sub [Tcommaaccent.ss03 Tdotaccent.ss03 Tdotbelow.ss03 Ydieresis.ss03 Ydotaccent.ss03 Ydotbelow.ss03]' @tkBase007 @tkMid @tkTop02 by [Tcommaaccent.ss03.tk02 Tdotaccent.ss03.tk02 Tdotbelow.ss03.tk02 Ydieresis.ss03.tk02 Ydotaccent.ss03.tk02 Ydotbelow.ss03.tk02];
+    sub [Y Yacute Ycircumflex Ygrave Yhookabove Ymacron Ytilde]' @tkBase012 @tkTop03 by [Y.tk03 Yacute.tk03 Ycircumflex.tk03 Ygrave.tk03 Yhookabove.tk03 Ymacron.tk03 Ytilde.tk03];
+    sub [Y Yacute Ycircumflex Ygrave Yhookabove Ymacron Ytilde]' @tkBase012 @tkMid @tkTop03 by [Y.tk03 Yacute.tk03 Ycircumflex.tk03 Ygrave.tk03 Yhookabove.tk03 Ymacron.tk03 Ytilde.tk03];
+    sub [Ydieresis Ydotaccent Ydotbelow]' @tkBase014 @tkTop03 by [Ydieresis.tk03 Ydotaccent.tk03 Ydotbelow.tk03];
+    sub [Ydieresis Ydotaccent Ydotbelow]' @tkBase014 @tkMid @tkTop03 by [Ydieresis.tk03 Ydotaccent.tk03 Ydotbelow.tk03];
+    sub [Ydieresis.ss03 Ydotaccent.ss03 Ydotbelow.ss03]' @tkBase016 @tkTop03 by [Ydieresis.ss03.tk03 Ydotaccent.ss03.tk03 Ydotbelow.ss03.tk03];
+    sub [Ydieresis.ss03 Ydotaccent.ss03 Ydotbelow.ss03]' @tkBase016 @tkMid @tkTop03 by [Ydieresis.ss03.tk03 Ydotaccent.ss03.tk03 Ydotbelow.ss03.tk03];
+    sub [T Tbar Tcaron Tcedilla Tcommaaccent Tcommaaccent.ss03 Tdotaccent Tdotaccent.ss03 Tdotbelow Tdotbelow.ss03 Tlinebelow V W Wacute Wcircumflex Wdieresis Wdieresis.ss03 Wdotaccent Wdotaccent.ss03 Wgrave]' @tkBase002 @tkTop03 by [T.tk03 Tbar.tk03 Tcaron.tk03 Tcedilla.tk03 Tcommaaccent.tk03 Tcommaaccent.ss03.tk03 Tdotaccent.tk03 Tdotaccent.ss03.tk03 Tdotbelow.tk03 Tdotbelow.ss03.tk03 Tlinebelow.tk03 V.tk03 W.tk03 Wacute.tk03 Wcircumflex.tk03 Wdieresis.tk03 Wdieresis.ss03.tk03 Wdotaccent.tk03 Wdotaccent.ss03.tk03 Wgrave.tk03];
+    sub [T Tbar Tcaron Tcedilla Tcommaaccent Tcommaaccent.ss03 Tdotaccent Tdotaccent.ss03 Tdotbelow Tdotbelow.ss03 Tlinebelow V W Wacute Wcircumflex Wdieresis Wdieresis.ss03 Wdotaccent Wdotaccent.ss03 Wgrave]' @tkBase002 @tkMid @tkTop03 by [T.tk03 Tbar.tk03 Tcaron.tk03 Tcedilla.tk03 Tcommaaccent.tk03 Tcommaaccent.ss03.tk03 Tdotaccent.tk03 Tdotaccent.ss03.tk03 Tdotbelow.tk03 Tdotbelow.ss03.tk03 Tlinebelow.tk03 V.tk03 W.tk03 Wacute.tk03 Wcircumflex.tk03 Wdieresis.tk03 Wdieresis.ss03.tk03 Wdotaccent.tk03 Wdotaccent.ss03.tk03 Wgrave.tk03];
+} rclt;
