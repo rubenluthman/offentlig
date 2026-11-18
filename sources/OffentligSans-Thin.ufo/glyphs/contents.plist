@@ -2248,6 +2248,28 @@
     <string>zero.slash.tf.glif</string>
     <key>zero.subs</key>
     <string>zero.subs.glif</string>
+    <key>zero.tf.osf</key>
+    <string>zero.tf.osf.glif</string>
+    <key>one.tf.osf</key>
+    <string>one.tf.osf.glif</string>
+    <key>two.tf.osf</key>
+    <string>two.tf.osf.glif</string>
+    <key>three.tf.osf</key>
+    <string>three.tf.osf.glif</string>
+    <key>four.tf.osf</key>
+    <string>four.tf.osf.glif</string>
+    <key>five.tf.osf</key>
+    <string>five.tf.osf.glif</string>
+    <key>six.tf.osf</key>
+    <string>six.tf.osf.glif</string>
+    <key>seven.tf.osf</key>
+    <string>seven.tf.osf.glif</string>
+    <key>eight.tf.osf</key>
+    <string>eight.tf.osf.glif</string>
+    <key>nine.tf.osf</key>
+    <string>nine.tf.osf.glif</string>
+    <key>zero.slash.tf.osf</key>
+    <string>zero.slash.tf.osf.glif</string>
     <key>zero.tf</key>
     <string>zero.tf.glif</string>
     <key>zerosuperior</key>

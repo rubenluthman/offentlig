@@ -333,6 +333,16 @@ sub six by six.osf;
 sub seven by seven.osf;
 sub eight by eight.osf;
 sub nine by nine.osf;
+sub zero.tf by zero.tf.osf;
+sub one.tf by one.tf.osf;
+sub two.tf by two.tf.osf;
+sub three.tf by three.tf.osf;
+sub four.tf by four.tf.osf;
+sub five.tf by five.tf.osf;
+sub six.tf by six.tf.osf;
+sub seven.tf by seven.tf.osf;
+sub eight.tf by eight.tf.osf;
+sub nine.tf by nine.tf.osf;
 
 } onum;
 
@@ -528,6 +538,7 @@ feature zero {
 sub zero by zero.slash;
 sub zero.tf by zero.slash.tf;
 sub zero.osf by zero.slash.osf;
+sub zero.tf.osf by zero.slash.tf.osf;
 
 } zero;
 

@@ -2,8 +2,8 @@
 
 Every digit alternate is opt-in. The default digits, `salt`, `ss01` and `ss02` never reach one. `onum` and a digit
 feature work together through the old-style alternates, which sit at x-height like `zero.osf` and `one.osf`. `tnum` and
-a digit feature work together on lining tabular figures. With `tnum` and `onum` both on, `tnum` wins: the font has no
-tabular old-style (`.tf.osf`) glyphs, so the figures stay lining and tabular.
+a digit feature work together on lining tabular figures. With `tnum` and `onum` both on the figures are tabular
+old-style (`.tf.osf`); `tests/test_tabular_oldstyle.py` covers those.
 """
 import pytest
 import uharfbuzz as hb
@@ -13,7 +13,7 @@ from conftest import static_path
 
 # feature: (digit -> alternate marker, glyph count per master)
 FEATURES = {
-    "zero": ({"0": "zero.slash"}, 3),
+    "zero": ({"0": "zero.slash"}, 4),
     "cv06": ({"1": "one.cv06"}, 2),
 }
 ALT_MARKERS = (".cv06", ".slash")
@@ -46,7 +46,7 @@ def test_every_alternate_exists_in_every_font(static_ttf):
 
 def test_every_alternate_exists_in_the_variable_fonts(variable_ttf):
     names = alt_glyphs(variable_ttf)
-    assert len(names) == 5
+    assert len(names) == 6
 
 
 def test_alternates_are_not_in_the_default_cmap(static_ttf):
@@ -100,13 +100,6 @@ def test_features_have_names(static_ttf):
         assert params is not None, tag
         assert static_ttf["name"].getName(params.FeatUILabelNameID, 3, 1, 0x409), tag
     assert "zero" in tags
-
-
-@pytest.mark.parametrize("weight,italic", SHAPED, ids=IDS)
-def test_digit_features_with_tnum_and_onum_stay_lining_and_tabular(weight, italic):
-    path = static_path(weight, italic)
-    assert shape(path, "0", {"zero": True, "tnum": True, "onum": True}) == ["zero.slash.tf"]
-    assert shape(path, "1", {"cv06": True, "tnum": True, "onum": True}) == ["one.tf"]
 
 
 def _bounds(ttf, name):
