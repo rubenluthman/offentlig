@@ -11,7 +11,7 @@ Offentlig is a planned open-source font superfamily. Offentlig Sans is the first
 - Nine weights (Thin to Black) in upright and italic, plus variable fonts on the `wght` axis (default 400).
 - Swedish letters `å ä ö` with a thicker ring, lower diaeresis dots and a drawn capital sharp s `ẞ` (U+1E9E). Uppercasing `ß` still produces `SS`; `ẞ` appears only when typed as U+1E9E.
 - Coverage beyond Public Sans: pinyin tone letters, Latin letters of DIN 91379 (not Greek or Cyrillic), eight arrows, the Bitcoin sign `₿`, the prime marks `′ ″ ‴`, the small letters `ʰ ʳ ˢ ᵈ ᵗ ⁿ`, and superscript and subscript `+ − = ( )`, so `x⁽²⁾` and `H₍₂₎O` need no fallback font.
-- Optional features, all off by default: `ss01` alternate `g`, `ss02` alternate `l`, `salt` both; `cv01` wider `J`, `cv03` round `G`, `cv04` single-storey `a`, `cv05` `I` with serifs, `cv06` `1` with a base; `zero` slashed `0`; `onum` oldstyle figures; `ss03` round dots. Each letter form also changes the accented and barred letters built on it (`ĝ ľ ł Ǥ Ɨ`), so a word never mixes two designs.
+- Optional features, all off by default: `ss01` alternate `g`, `ss02` alternate `l`, `salt` both; `cv01` wider `J`, `cv03` round `G`, `cv04` single-storey `a`, `cv05` `I` with serifs, `cv06` `1` with a base; `zero` slashed `0`; `onum` oldstyle figures (with `tnum`, oldstyle figures of equal width); `ss03` round dots. Each letter form also changes the accented and barred letters built on it (`ĝ ľ ł Ǥ Ɨ`), so a word never mixes two designs.
 - Formats: OTF, TTF, variable TTF and WOFF2.
 
 <!-- vale HouseStyle.Headings = NO -->
@@ -36,7 +36,7 @@ Offentlig Sans starts from Public Sans `develop` at `e40fcf567`. Sizes are in fo
 | `™ ℠ ₿ $ ¢` | Marks sit low, `₿` missing, `$` and `¢` heavy in Bold and Black | Marks at cap height, `₿` added, lighter `$ ¢ ₿` strokes (about 0.56 of the `H` stem at Bold, 0.50 at Black) |
 | Ring and diaeresis | Thin ring at Black, close dot spacing in the italic, dots high above the letter | Thicker ring (Black stroke 164, hole 200), upright dot spacing in the italic, dots lower at Thin (54) and Regular (34) |
 | `ẞ` and Black `5` | No drawn `ẞ`; Black `5` has a notch at the join | `ẞ` drawn in every weight; clean `5` |
-| Oldstyle figures (`onum`) | Components of the lining figures, so nothing changes | Ten drawn oldstyle figures |
+| Oldstyle figures (`onum`) | Components of the lining figures, so nothing changes | Ten drawn oldstyle figures, also on the tabular width with `tnum` |
 | Alternates `cv01` `cv03` `cv04` `cv05` `cv06` `zero` `ss03` | None | Optional forms, with matching accented letters and figure variants |
 | `%` `‰` `~` `≈` | Thin slash, thin wave in Black | Thicker slash in Regular and Black, stronger Black wave |
 | Tilde, macron and hook above a breve | Black tilde and macron heavy, tilde close to the macron, hook above a breve taller than above a circumflex | Black strokes of 200, a wider tilde wave, a lower hook above a breve |

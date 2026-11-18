@@ -28,7 +28,6 @@
 <!-- vale HouseStyle.Headings = YES -->
 
 - [ ] A narrower double grave on `ȉ ȑ`, which collides with neighbours, and with `cv05` `Iȉ`.
-- [ ] Tabular oldstyle figures (`tnum` + `onum` together currently show tabular lining figures, as `tnum` runs after `onum`).
 - [ ] The shape of the ogonek. Public-sans issue #158 names it without a target, so take one from a reference design, such as Libre Franklin (the source of Public Sans), and check it on the Polish and Lithuanian letters.
 - [ ] Contextual kerning for an accent typed after a base letter that has no precomposed form, after `T V W Y` (Yoruba `ọ̀ ẹ̀`, `Tc̏`).
 - [ ] Survey the whole font for places where a contextual swap to a hidden helper glyph would fix a collision or a fit that kerning alone cannot, such as a shorter `T` crossbar before a tall accent. List each case with its measurements before drawing any.

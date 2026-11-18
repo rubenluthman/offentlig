@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+
+- Added tabular oldstyle figures: with `tnum` and `onum` both on, in either order, figures are oldstyle on the shared 1400-unit width (they were lining), and `zero` and `cv06` carry through. The oldstyle `1` keeps its base. Nothing else changes.
+
 ## [0.4.0] - 2026-11-17
 
 - Fixed the dotless `ı` (and the Turkish `i` under `locl`): its advance now equals `i` in every weight, so Turkish, Azerbaijani, Kazakh, Tatar and Crimean Tatar text no longer sets `i` narrower. Every accented `i` built on it is wider by the same amount (`í ì î ǐ ĭ į ȉ ỉ`, the typed `ị ɨ` with marks, and `ï ĩ ī` in Thin and the italics): +17 units in Thin, +16 in Thin Italic, about +11 in Regular, −1 in Black, so they now equal `i` in all 18 statics.

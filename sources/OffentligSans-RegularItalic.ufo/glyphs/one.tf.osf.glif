@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="one.tf.osf" format="2">
+  <advance width="1400"/>
+  <outline>
+    <component base="one.cv06.osf" xOffset="259"/>
+  </outline>
+</glyph>
