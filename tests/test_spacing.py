@@ -392,16 +392,13 @@ def test_accented_i_clears_the_closing_punctuation_after_it(weight, italic, feat
 
 
 OPENING_PUNCTUATION = "([{¿¡'\"‘“«‹"
-# ȉ and ȑ (double grave) need more than 300 units of kerning; the ROADMAP Icebox plans a narrower double grave for them.
-LEFT_FOR_THE_ICEBOX = "ȉȑ"
-
 
 def accented_letters(font):
     """Every encoded accented letter, lowercase and capital, and the typed `ị` and `ɨ` with a top mark, which shape as one glyph."""
     letters = [
         c
         for c in (chr(g.unicodes[0]) for g in font if g.unicodes)
-        if unicodedata.category(c) in ("Lu", "Ll") and len(unicodedata.normalize("NFD", c)) > 1 and c not in LEFT_FOR_THE_ICEBOX
+        if unicodedata.category(c) in ("Lu", "Ll") and len(unicodedata.normalize("NFD", c)) > 1
     ]
     return sorted(letters) + [base + mark for base in "ịɨ" for mark in "\u0301\u0300\u0302\u0304\u0303\u0306\u0308\u030c"]
 
@@ -412,7 +409,7 @@ def accented_letters(font):
 def test_accented_letters_clear_the_punctuation_next_to_them(weight, italic, features):
     """The marks of accented letters (`ŕ) ĵ? ű) ơ? (ì (ĭ ¡ḻ`) closed on the bracket, quote or mark next to them in the heavy
     weights of Public Sans. Glyph-to-glyph pair exceptions aim at 40 units on both sides of `) ] } ? ! ' " ’ ” » ›` and
-    `( [ { ¿ ¡ ' " ‘ “ « ‹`; the test fails below 30. `ȉ` and `ȑ` are left for the Icebox item."""
+    `( [ { ¿ ¡ ' " ‘ “ « ‹`; the test fails below 30."""
     s = shaper(weight, italic)
     tight = []
     for letter in accented_letters(source("Regular")):

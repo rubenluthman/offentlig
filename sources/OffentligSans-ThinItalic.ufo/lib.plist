@@ -929,6 +929,7 @@
       <string>macroncomb</string>
       <string>hookabovecomb</string>
       <string>dblgravecomb</string>
+      <string>dblgravecomb.narrow</string>
       <string>breveinvertedcomb</string>
       <string>commaturnedabovecomb</string>
       <string>horncomb</string>
@@ -1945,6 +1946,8 @@
       <key>d</key>
       <string>base</string>
       <key>dblgravecomb</key>
+      <string>mark</string>
+      <key>dblgravecomb.narrow</key>
       <string>mark</string>
       <key>dblmacronbelowcomb</key>
       <string>mark</string>

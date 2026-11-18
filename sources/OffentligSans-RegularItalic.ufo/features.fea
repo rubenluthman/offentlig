@@ -70,6 +70,11 @@ lookup ccmp_Other_1 {
 	sub [idotbelow istroke]' @CombiningNonTopAccents @CombiningTopAccents by [idotbelow.dotless istroke.dotless];
 } ccmp_Other_1;
 
+lookup ccmp_Other_2 {
+	# The double grave is as wide as two letters over `ı` and `r`: the narrow mark sits on them, as on ȉ and ȑ.
+	sub [idotless r] dblgravecomb' by dblgravecomb.narrow;
+} ccmp_Other_2;
+
 lookup ccmp_latn_1 {
 	lookupflag 0;
 	sub brevecomb acutecomb by brevecomb_acutecomb;

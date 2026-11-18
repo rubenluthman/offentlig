@@ -11,7 +11,7 @@ import numpy as np
 from conftest import static_path
 from pairs import PairTable
 from test_accent_pairs import FEATURE_SETS, cmap_characters, is_accented
-from test_spacing import ALL_FONTS, ALL_IDS, LEFT_FOR_THE_ICEBOX
+from test_spacing import ALL_FONTS, ALL_IDS
 
 import unicodedata
 
@@ -21,8 +21,6 @@ FRACTION_SLASH = "⁄"
 LEFT_OUT = {
     # The fraction slash overlaps the figures around it; `frac` builds the fractions and the slash is kerned for them, not for letters or signs.
     "fraction slash": lambda a, b: FRACTION_SLASH in a + b,
-    # The double grave is too wide for a pair at 30 units; the narrower double grave is in the ROADMAP Icebox.
-    "ȉ ȑ (Icebox)": lambda a, b: any(c in a + b for c in LEFT_FOR_THE_ICEBOX),
 }
 
 
@@ -35,7 +33,7 @@ def plain_violation(a, b, gap):
 
 def plain_texts(weight, italic):
     chars = [chr(c) for c in cmap_characters(weight, italic) if c > 32 and unicodedata.category(chr(c))[0] in "LNPS"]
-    return [c for c in chars if not is_accented(c) or c in LEFT_FOR_THE_ICEBOX]
+    return [c for c in chars if not is_accented(c)]
 
 
 @pytest.mark.parametrize("features_name", list(FEATURE_SETS))

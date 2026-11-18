@@ -29,8 +29,8 @@ FEATURE_PAIRS = (
     + [({}, t) for t in ("††", "†‡", "‡†", "‡‡")]
 )
 # Pairs the test leaves alone, each reviewed by the design-decision audit in the ROADMAP: the fraction slash and the figures it
-# builds fractions with, and the double grave (Icebox in the ROADMAP).
-LEFT_OUT = ("⁄", "ȉ", "ȑ")
+# builds fractions with.
+LEFT_OUT = ("⁄",)
 
 
 @pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
