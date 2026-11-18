@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased]
+## [0.5.0] - 2026-11-18
 
-- Added tabular oldstyle figures: with `tnum` and `onum` both on, in either order, figures are oldstyle on the shared 1400-unit width (they were lining), and `zero` and `cv06` carry through. The oldstyle `1` keeps its base. Nothing else changes.
+- Added tabular oldstyle figures: with `tnum` and `onum` both on, in either order, figures are oldstyle on the shared 1400-unit width (they were lining), and `zero` and `cv06` carry through. The oldstyle `1` keeps its base. Nothing else changed.
 - Changed the double grave on `ȉ ȑ` and on typed `i ı r` followed by U+030F: a narrow mark, centred on the letter, replaces the full-width one. It no longer overhangs the letter by up to 390 units in Black, so `Tȉ Vȉ Yȉ`, `fȉ`, `ȉl`, brackets, quotes and `cv05` `Iȉ` keep at least 30 units of clearance in every weight. `ȁ ȅ ȍ ȕ` and the capitals are unchanged.
 - Fixed spacing: a grave, macron, tilde, breve or caron typed after `T V W Y` on a letter with no precomposed form (the lowercase DIN 91379 sequences, Yoruba `ẹ̀ ọ̄ ṣ̀`, Igbo `ụ̀`, Lithuanian `ą̀ į̃`) no longer runs into the capital, at every weight. Hidden copies of the capitals, swapped in by `rclt`, carry the extra kerning.
 

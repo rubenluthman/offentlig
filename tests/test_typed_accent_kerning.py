@@ -22,10 +22,10 @@ from conftest import STATICS, STATIC_IDS, static_path
 from ink import Polyline, outline_distance
 from test_spacing import Shaper
 
-FLOOR = 28  # 30 units in the brief, 28 in the row tests (4-unit rows)
+FLOOR = 28  # 30 units in K19, 28 in the row tests (4-unit rows)
 FEATURES = {"default": {}, "all": {"cv04": True, "ss03": True, "ss01": True, "ss02": True}}
 
-CAPS = "TVWYŤŦŴŶŸÝẀẂẄỲ"
+CAPS = "TŤŦŢȚṪṬṮYÝŶŸẎỴỲỶȲỸVWẂŴẄẆẀ"
 DIN = ["k̀", "k̂", "k̄", "k̇", "t̀", "t̄", "ç̆", "ṭ̄", "ḳ̄", "c̨̆", "s̛̄", "l̥̄", "r̥̄", "d̂", "f̀", "f̄", "m̀", "m̂", "m̆",
        "p̀", "p̄", "k̛", "t̛", "c̕", "k̕", "t̕", "p̕", "č̕", "l̥", "r̥", "m̐", "s̱", "p̣", "û̄", "ê̄", "ê̌", "ī́", "ÿ́"]
 YORUBA = [b + m for b in "ẹọṣ" for m in "\u0300\u0301\u0304"] + ["m̀", "m̄"]
@@ -86,7 +86,7 @@ def _gap_and_distance(weight, italic, char, seq, features):
 
 @pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
 def test_typed_accent_clears_the_capital(weight, italic):
-    """Row gap and outline distance between the capital and the last mark are at least 28 units (30 in the brief)."""
+    """Row gap and outline distance between the capital and the last mark are at least 28 units (30 in K19)."""
     tight = []
     for char, seq, features in SEQUENCES:
         shaped = _shape(_font(weight, italic)[3], char + seq, FEATURES[features])

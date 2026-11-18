@@ -1,7 +1,7 @@
 """The narrow double grave on `ȉ ȑ` and on typed `i ı r` + U+030F.
 
-`ȉ ȑ` use `dblgravecomb.narrow`, drawn in the six masters to be no wider over the stem than the breve of `ĭ` (the full-width
-mark made pairs with `ȉ` need over 300 units of kerning, register E4). Typed `i ı r` + U+030F swap to the narrow mark in `ccmp`,
+`ȉ ȑ` use `dblgravecomb.narrow`, drawn in the six masters to overhang the stem by no more than the breve of `ĭ` plus 40 units
+(the full-width mark made pairs with `ȉ` need over 300 units of kerning). Typed `i ı r` + U+030F swap to the narrow mark in `ccmp`,
 so they set exactly like `ȉ ȑ`; every other base keeps the full-width mark.
 """
 import pytest
