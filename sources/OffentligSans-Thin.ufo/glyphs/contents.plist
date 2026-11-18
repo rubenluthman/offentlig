@@ -580,28 +580,94 @@
     <string>S_dotbelow.ss03.glif</string>
     <key>T</key>
     <string>T_.glif</string>
+    <key>T.tk01</key>
+    <string>T_.tk01.glif</string>
+    <key>T.tk02</key>
+    <string>T_.tk02.glif</string>
+    <key>T.tk03</key>
+    <string>T_.tk03.glif</string>
     <key>Tbar</key>
     <string>T_bar.glif</string>
+    <key>Tbar.tk01</key>
+    <string>T_bar.tk01.glif</string>
+    <key>Tbar.tk02</key>
+    <string>T_bar.tk02.glif</string>
+    <key>Tbar.tk03</key>
+    <string>T_bar.tk03.glif</string>
     <key>Tcaron</key>
     <string>T_caron.glif</string>
+    <key>Tcaron.tk01</key>
+    <string>T_caron.tk01.glif</string>
+    <key>Tcaron.tk02</key>
+    <string>T_caron.tk02.glif</string>
+    <key>Tcaron.tk03</key>
+    <string>T_caron.tk03.glif</string>
     <key>Tcedilla</key>
     <string>T_cedilla.glif</string>
+    <key>Tcedilla.tk01</key>
+    <string>T_cedilla.tk01.glif</string>
+    <key>Tcedilla.tk02</key>
+    <string>T_cedilla.tk02.glif</string>
+    <key>Tcedilla.tk03</key>
+    <string>T_cedilla.tk03.glif</string>
     <key>Tcommaaccent</key>
     <string>T_commaaccent.glif</string>
     <key>Tcommaaccent.ss03</key>
     <string>T_commaaccent.ss03.glif</string>
+    <key>Tcommaaccent.ss03.tk01</key>
+    <string>T_commaaccent.ss03.tk01.glif</string>
+    <key>Tcommaaccent.ss03.tk02</key>
+    <string>T_commaaccent.ss03.tk02.glif</string>
+    <key>Tcommaaccent.ss03.tk03</key>
+    <string>T_commaaccent.ss03.tk03.glif</string>
+    <key>Tcommaaccent.tk01</key>
+    <string>T_commaaccent.tk01.glif</string>
+    <key>Tcommaaccent.tk02</key>
+    <string>T_commaaccent.tk02.glif</string>
+    <key>Tcommaaccent.tk03</key>
+    <string>T_commaaccent.tk03.glif</string>
     <key>Tdotaccent</key>
     <string>T_dotaccent.glif</string>
     <key>Tdotaccent.ss03</key>
     <string>T_dotaccent.ss03.glif</string>
+    <key>Tdotaccent.ss03.tk01</key>
+    <string>T_dotaccent.ss03.tk01.glif</string>
+    <key>Tdotaccent.ss03.tk02</key>
+    <string>T_dotaccent.ss03.tk02.glif</string>
+    <key>Tdotaccent.ss03.tk03</key>
+    <string>T_dotaccent.ss03.tk03.glif</string>
+    <key>Tdotaccent.tk01</key>
+    <string>T_dotaccent.tk01.glif</string>
+    <key>Tdotaccent.tk02</key>
+    <string>T_dotaccent.tk02.glif</string>
+    <key>Tdotaccent.tk03</key>
+    <string>T_dotaccent.tk03.glif</string>
     <key>Tdotbelow</key>
     <string>T_dotbelow.glif</string>
     <key>Tdotbelow.ss03</key>
     <string>T_dotbelow.ss03.glif</string>
+    <key>Tdotbelow.ss03.tk01</key>
+    <string>T_dotbelow.ss03.tk01.glif</string>
+    <key>Tdotbelow.ss03.tk02</key>
+    <string>T_dotbelow.ss03.tk02.glif</string>
+    <key>Tdotbelow.ss03.tk03</key>
+    <string>T_dotbelow.ss03.tk03.glif</string>
+    <key>Tdotbelow.tk01</key>
+    <string>T_dotbelow.tk01.glif</string>
+    <key>Tdotbelow.tk02</key>
+    <string>T_dotbelow.tk02.glif</string>
+    <key>Tdotbelow.tk03</key>
+    <string>T_dotbelow.tk03.glif</string>
     <key>Thorn</key>
     <string>T_horn.glif</string>
     <key>Tlinebelow</key>
     <string>T_linebelow.glif</string>
+    <key>Tlinebelow.tk01</key>
+    <string>T_linebelow.tk01.glif</string>
+    <key>Tlinebelow.tk02</key>
+    <string>T_linebelow.tk02.glif</string>
+    <key>Tlinebelow.tk03</key>
+    <string>T_linebelow.tk03.glif</string>
     <key>U</key>
     <string>U_.glif</string>
     <key>Uacute</key>
@@ -670,22 +736,76 @@
     <string>U_tilde.glif</string>
     <key>V</key>
     <string>V_.glif</string>
+    <key>V.tk01</key>
+    <string>V_.tk01.glif</string>
+    <key>V.tk02</key>
+    <string>V_.tk02.glif</string>
+    <key>V.tk03</key>
+    <string>V_.tk03.glif</string>
     <key>W</key>
     <string>W_.glif</string>
+    <key>W.tk01</key>
+    <string>W_.tk01.glif</string>
+    <key>W.tk02</key>
+    <string>W_.tk02.glif</string>
+    <key>W.tk03</key>
+    <string>W_.tk03.glif</string>
     <key>Wacute</key>
     <string>W_acute.glif</string>
+    <key>Wacute.tk01</key>
+    <string>W_acute.tk01.glif</string>
+    <key>Wacute.tk02</key>
+    <string>W_acute.tk02.glif</string>
+    <key>Wacute.tk03</key>
+    <string>W_acute.tk03.glif</string>
     <key>Wcircumflex</key>
     <string>W_circumflex.glif</string>
+    <key>Wcircumflex.tk01</key>
+    <string>W_circumflex.tk01.glif</string>
+    <key>Wcircumflex.tk02</key>
+    <string>W_circumflex.tk02.glif</string>
+    <key>Wcircumflex.tk03</key>
+    <string>W_circumflex.tk03.glif</string>
     <key>Wdieresis</key>
     <string>W_dieresis.glif</string>
     <key>Wdieresis.ss03</key>
     <string>W_dieresis.ss03.glif</string>
+    <key>Wdieresis.ss03.tk01</key>
+    <string>W_dieresis.ss03.tk01.glif</string>
+    <key>Wdieresis.ss03.tk02</key>
+    <string>W_dieresis.ss03.tk02.glif</string>
+    <key>Wdieresis.ss03.tk03</key>
+    <string>W_dieresis.ss03.tk03.glif</string>
+    <key>Wdieresis.tk01</key>
+    <string>W_dieresis.tk01.glif</string>
+    <key>Wdieresis.tk02</key>
+    <string>W_dieresis.tk02.glif</string>
+    <key>Wdieresis.tk03</key>
+    <string>W_dieresis.tk03.glif</string>
     <key>Wdotaccent</key>
     <string>W_dotaccent.glif</string>
     <key>Wdotaccent.ss03</key>
     <string>W_dotaccent.ss03.glif</string>
+    <key>Wdotaccent.ss03.tk01</key>
+    <string>W_dotaccent.ss03.tk01.glif</string>
+    <key>Wdotaccent.ss03.tk02</key>
+    <string>W_dotaccent.ss03.tk02.glif</string>
+    <key>Wdotaccent.ss03.tk03</key>
+    <string>W_dotaccent.ss03.tk03.glif</string>
+    <key>Wdotaccent.tk01</key>
+    <string>W_dotaccent.tk01.glif</string>
+    <key>Wdotaccent.tk02</key>
+    <string>W_dotaccent.tk02.glif</string>
+    <key>Wdotaccent.tk03</key>
+    <string>W_dotaccent.tk03.glif</string>
     <key>Wgrave</key>
     <string>W_grave.glif</string>
+    <key>Wgrave.tk01</key>
+    <string>W_grave.tk01.glif</string>
+    <key>Wgrave.tk02</key>
+    <string>W_grave.tk02.glif</string>
+    <key>Wgrave.tk03</key>
+    <string>W_grave.tk03.glif</string>
     <key>X</key>
     <string>X_.glif</string>
     <key>Xdieresis</key>
@@ -694,30 +814,108 @@
     <string>X_dieresis.ss03.glif</string>
     <key>Y</key>
     <string>Y_.glif</string>
+    <key>Y.tk01</key>
+    <string>Y_.tk01.glif</string>
+    <key>Y.tk02</key>
+    <string>Y_.tk02.glif</string>
+    <key>Y.tk03</key>
+    <string>Y_.tk03.glif</string>
     <key>Yacute</key>
     <string>Y_acute.glif</string>
+    <key>Yacute.tk01</key>
+    <string>Y_acute.tk01.glif</string>
+    <key>Yacute.tk02</key>
+    <string>Y_acute.tk02.glif</string>
+    <key>Yacute.tk03</key>
+    <string>Y_acute.tk03.glif</string>
     <key>Ycircumflex</key>
     <string>Y_circumflex.glif</string>
+    <key>Ycircumflex.tk01</key>
+    <string>Y_circumflex.tk01.glif</string>
+    <key>Ycircumflex.tk02</key>
+    <string>Y_circumflex.tk02.glif</string>
+    <key>Ycircumflex.tk03</key>
+    <string>Y_circumflex.tk03.glif</string>
     <key>Ydieresis</key>
     <string>Y_dieresis.glif</string>
     <key>Ydieresis.ss03</key>
     <string>Y_dieresis.ss03.glif</string>
+    <key>Ydieresis.ss03.tk01</key>
+    <string>Y_dieresis.ss03.tk01.glif</string>
+    <key>Ydieresis.ss03.tk02</key>
+    <string>Y_dieresis.ss03.tk02.glif</string>
+    <key>Ydieresis.ss03.tk03</key>
+    <string>Y_dieresis.ss03.tk03.glif</string>
+    <key>Ydieresis.tk01</key>
+    <string>Y_dieresis.tk01.glif</string>
+    <key>Ydieresis.tk02</key>
+    <string>Y_dieresis.tk02.glif</string>
+    <key>Ydieresis.tk03</key>
+    <string>Y_dieresis.tk03.glif</string>
     <key>Ydotaccent</key>
     <string>Y_dotaccent.glif</string>
     <key>Ydotaccent.ss03</key>
     <string>Y_dotaccent.ss03.glif</string>
+    <key>Ydotaccent.ss03.tk01</key>
+    <string>Y_dotaccent.ss03.tk01.glif</string>
+    <key>Ydotaccent.ss03.tk02</key>
+    <string>Y_dotaccent.ss03.tk02.glif</string>
+    <key>Ydotaccent.ss03.tk03</key>
+    <string>Y_dotaccent.ss03.tk03.glif</string>
+    <key>Ydotaccent.tk01</key>
+    <string>Y_dotaccent.tk01.glif</string>
+    <key>Ydotaccent.tk02</key>
+    <string>Y_dotaccent.tk02.glif</string>
+    <key>Ydotaccent.tk03</key>
+    <string>Y_dotaccent.tk03.glif</string>
     <key>Ydotbelow</key>
     <string>Y_dotbelow.glif</string>
     <key>Ydotbelow.ss03</key>
     <string>Y_dotbelow.ss03.glif</string>
+    <key>Ydotbelow.ss03.tk01</key>
+    <string>Y_dotbelow.ss03.tk01.glif</string>
+    <key>Ydotbelow.ss03.tk02</key>
+    <string>Y_dotbelow.ss03.tk02.glif</string>
+    <key>Ydotbelow.ss03.tk03</key>
+    <string>Y_dotbelow.ss03.tk03.glif</string>
+    <key>Ydotbelow.tk01</key>
+    <string>Y_dotbelow.tk01.glif</string>
+    <key>Ydotbelow.tk02</key>
+    <string>Y_dotbelow.tk02.glif</string>
+    <key>Ydotbelow.tk03</key>
+    <string>Y_dotbelow.tk03.glif</string>
     <key>Ygrave</key>
     <string>Y_grave.glif</string>
+    <key>Ygrave.tk01</key>
+    <string>Y_grave.tk01.glif</string>
+    <key>Ygrave.tk02</key>
+    <string>Y_grave.tk02.glif</string>
+    <key>Ygrave.tk03</key>
+    <string>Y_grave.tk03.glif</string>
     <key>Yhookabove</key>
     <string>Y_hookabove.glif</string>
+    <key>Yhookabove.tk01</key>
+    <string>Y_hookabove.tk01.glif</string>
+    <key>Yhookabove.tk02</key>
+    <string>Y_hookabove.tk02.glif</string>
+    <key>Yhookabove.tk03</key>
+    <string>Y_hookabove.tk03.glif</string>
     <key>Ymacron</key>
     <string>Y_macron.glif</string>
+    <key>Ymacron.tk01</key>
+    <string>Y_macron.tk01.glif</string>
+    <key>Ymacron.tk02</key>
+    <string>Y_macron.tk02.glif</string>
+    <key>Ymacron.tk03</key>
+    <string>Y_macron.tk03.glif</string>
     <key>Ytilde</key>
     <string>Y_tilde.glif</string>
+    <key>Ytilde.tk01</key>
+    <string>Y_tilde.tk01.glif</string>
+    <key>Ytilde.tk02</key>
+    <string>Y_tilde.tk02.glif</string>
+    <key>Ytilde.tk03</key>
+    <string>Y_tilde.tk03.glif</string>
     <key>Z</key>
     <string>Z_.glif</string>
     <key>Zacute</key>
@@ -1166,6 +1364,8 @@
     <string>eight.subs.glif</string>
     <key>eight.tf</key>
     <string>eight.tf.glif</string>
+    <key>eight.tf.osf</key>
+    <string>eight.tf.osf.glif</string>
     <key>eightsuperior</key>
     <string>eightsuperior.glif</string>
     <key>einvertedbreve</key>
@@ -1238,6 +1438,8 @@
     <string>five.subs.glif</string>
     <key>five.tf</key>
     <string>five.tf.glif</string>
+    <key>five.tf.osf</key>
+    <string>five.tf.osf.glif</string>
     <key>fiveeighths</key>
     <string>fiveeighths.glif</string>
     <key>fivesuperior</key>
@@ -1262,6 +1464,8 @@
     <string>four.subs.glif</string>
     <key>four.tf</key>
     <string>four.tf.glif</string>
+    <key>four.tf.osf</key>
+    <string>four.tf.osf.glif</string>
     <key>foursuperior</key>
     <string>foursuperior.glif</string>
     <key>fraction</key>
@@ -1654,6 +1858,8 @@
     <string>nine.subs.glif</string>
     <key>nine.tf</key>
     <string>nine.tf.glif</string>
+    <key>nine.tf.osf</key>
+    <string>nine.tf.osf.glif</string>
     <key>ninesuperior</key>
     <string>ninesuperior.glif</string>
     <key>nlinebelow</key>
@@ -1764,6 +1970,8 @@
     <string>one.subs.glif</string>
     <key>one.tf</key>
     <string>one.tf.glif</string>
+    <key>one.tf.osf</key>
+    <string>one.tf.osf.glif</string>
     <key>oneeighth</key>
     <string>oneeighth.glif</string>
     <key>onehalf</key>
@@ -1976,6 +2184,8 @@
     <string>seven.subs.glif</string>
     <key>seven.tf</key>
     <string>seven.tf.glif</string>
+    <key>seven.tf.osf</key>
+    <string>seven.tf.osf.glif</string>
     <key>seveneighths</key>
     <string>seveneighths.glif</string>
     <key>sevensuperior</key>
@@ -1992,6 +2202,8 @@
     <string>six.subs.glif</string>
     <key>six.tf</key>
     <string>six.tf.glif</string>
+    <key>six.tf.osf</key>
+    <string>six.tf.osf.glif</string>
     <key>sixsuperior</key>
     <string>sixsuperior.glif</string>
     <key>slash</key>
@@ -2050,6 +2262,8 @@
     <string>three.subs.glif</string>
     <key>three.tf</key>
     <string>three.tf.glif</string>
+    <key>three.tf.osf</key>
+    <string>three.tf.osf.glif</string>
     <key>threeeighths</key>
     <string>threeeighths.glif</string>
     <key>threequarters</key>
@@ -2080,6 +2294,8 @@
     <string>two.subs.glif</string>
     <key>two.tf</key>
     <string>two.tf.glif</string>
+    <key>two.tf.osf</key>
+    <string>two.tf.osf.glif</string>
     <key>twosuperior</key>
     <string>twosuperior.glif</string>
     <key>twothirds</key>
@@ -2248,32 +2464,14 @@
     <string>zero.slash.osf.glif</string>
     <key>zero.slash.tf</key>
     <string>zero.slash.tf.glif</string>
-    <key>zero.subs</key>
-    <string>zero.subs.glif</string>
-    <key>zero.tf.osf</key>
-    <string>zero.tf.osf.glif</string>
-    <key>one.tf.osf</key>
-    <string>one.tf.osf.glif</string>
-    <key>two.tf.osf</key>
-    <string>two.tf.osf.glif</string>
-    <key>three.tf.osf</key>
-    <string>three.tf.osf.glif</string>
-    <key>four.tf.osf</key>
-    <string>four.tf.osf.glif</string>
-    <key>five.tf.osf</key>
-    <string>five.tf.osf.glif</string>
-    <key>six.tf.osf</key>
-    <string>six.tf.osf.glif</string>
-    <key>seven.tf.osf</key>
-    <string>seven.tf.osf.glif</string>
-    <key>eight.tf.osf</key>
-    <string>eight.tf.osf.glif</string>
-    <key>nine.tf.osf</key>
-    <string>nine.tf.osf.glif</string>
     <key>zero.slash.tf.osf</key>
     <string>zero.slash.tf.osf.glif</string>
+    <key>zero.subs</key>
+    <string>zero.subs.glif</string>
     <key>zero.tf</key>
     <string>zero.tf.glif</string>
+    <key>zero.tf.osf</key>
+    <string>zero.tf.osf.glif</string>
     <key>zerosuperior</key>
     <string>zerosuperior.glif</string>
     <key>zlinebelow</key>

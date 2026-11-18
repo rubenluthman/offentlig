@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Wdieresis.ss03.tk03" format="2">
+  <advance width="1964"/>
+  <outline>
+    <component base="Wdieresis.ss03"/>
+  </outline>
+</glyph>
