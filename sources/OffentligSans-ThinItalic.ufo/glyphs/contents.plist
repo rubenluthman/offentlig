@@ -1106,6 +1106,8 @@
     <string>asterisk.glif</string>
     <key>at</key>
     <string>at.glif</string>
+    <key>at.case</key>
+    <string>at.case.glif</string>
     <key>atilde</key>
     <string>atilde.glif</string>
     <key>atilde.cv04</key>
@@ -1128,12 +1130,20 @@
     <string>blinebelow.glif</string>
     <key>braceleft</key>
     <string>braceleft.glif</string>
+    <key>braceleft.case</key>
+    <string>braceleft.case.glif</string>
     <key>braceright</key>
     <string>braceright.glif</string>
+    <key>braceright.case</key>
+    <string>braceright.case.glif</string>
     <key>bracketleft</key>
     <string>bracketleft.glif</string>
+    <key>bracketleft.case</key>
+    <string>bracketleft.case.glif</string>
     <key>bracketright</key>
     <string>bracketright.glif</string>
+    <key>bracketright.case</key>
+    <string>bracketright.case.glif</string>
     <key>breve</key>
     <string>breve.glif</string>
     <key>brevebelowcomb</key>
@@ -1204,8 +1214,12 @@
     <string>circumflexcomb_tildecomb.glif</string>
     <key>colon</key>
     <string>colon.glif</string>
+    <key>colon.case</key>
+    <string>colon.case.glif</string>
     <key>colon.ss03</key>
     <string>colon.ss03.glif</string>
+    <key>colon.ss03.case</key>
+    <string>colon.ss03.case.glif</string>
     <key>colonsign</key>
     <string>colonsign.glif</string>
     <key>colonsign.tf</key>
@@ -1378,10 +1392,14 @@
     <string>emacronacute.glif</string>
     <key>emdash</key>
     <string>emdash.glif</string>
+    <key>emdash.case</key>
+    <string>emdash.case.glif</string>
     <key>emptyset</key>
     <string>emptyset.glif</string>
     <key>endash</key>
     <string>endash.glif</string>
+    <key>endash.case</key>
+    <string>endash.case.glif</string>
     <key>eng</key>
     <string>eng.glif</string>
     <key>eogonek</key>
@@ -1576,6 +1594,8 @@
     <string>hungarumlautcomb.glif</string>
     <key>hyphen</key>
     <string>hyphen.glif</string>
+    <key>hyphen.case</key>
+    <string>hyphen.case.glif</string>
     <key>i</key>
     <string>i.glif</string>
     <key>i.ss03</key>
@@ -2012,12 +2032,16 @@
     <string>paragraph.glif</string>
     <key>parenleft</key>
     <string>parenleft.glif</string>
+    <key>parenleft.case</key>
+    <string>parenleft.case.glif</string>
     <key>parenleft.subs</key>
     <string>parenleft.subs.glif</string>
     <key>parenleftsuperior</key>
     <string>parenleftsuperior.glif</string>
     <key>parenright</key>
     <string>parenright.glif</string>
+    <key>parenright.case</key>
+    <string>parenright.case.glif</string>
     <key>parenright.subs</key>
     <string>parenright.subs.glif</string>
     <key>parenrightsuperior</key>

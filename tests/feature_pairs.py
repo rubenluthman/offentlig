@@ -16,14 +16,14 @@ from test_accent_pairs import FLOOR, accent_violation, base_of, diaeresis_pair, 
 from test_plain_pairs import plain_violation
 from test_spacing import shaper, source, ufo_glyph_name
 
-ALL_FEATURES = ["ss01", "ss02", "ss03", "cv01", "cv03", "cv04", "cv05", "cv06", "zero", "onum"]
+ALL_FEATURES = ["ss01", "ss02", "ss03", "cv01", "cv03", "cv04", "cv05", "cv06", "zero", "onum", "case"]
 # Each alternate on its own, then the combinations where two alternates meet in one pair.
 ALTERNATE_SETS = {
-    **{name: {name: True} for name in ("ss01", "ss02", "cv01", "cv03", "cv04", "cv05", "cv06", "zero", "onum")},
+    **{name: {name: True} for name in ("ss01", "ss02", "cv01", "cv03", "cv04", "cv05", "cv06", "zero", "onum", "case")},
     "cv04+ss03": {"cv04": True, "ss03": True},
     "salt+ss03": {"salt": True, "ss03": True},
     "onum+zero+cv06": {"onum": True, "zero": True, "cv06": True},
-    **{f"{name}+ss03": {name: True, "ss03": True} for name in ("ss01", "ss02", "cv01", "cv03", "cv05", "cv06", "zero", "onum")},
+    **{f"{name}+ss03": {name: True, "ss03": True} for name in ("ss01", "ss02", "cv01", "cv03", "cv05", "cv06", "zero", "onum", "case")},
     "all": {name: True for name in ALL_FEATURES},
     "all, lining figures": {name: True for name in ALL_FEATURES if name != "onum"},
 }

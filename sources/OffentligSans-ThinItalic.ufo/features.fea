@@ -37,6 +37,7 @@ feature cv04;
 feature cv05;
 feature cv06;
 feature zero;
+feature case;
 
 } aalt;
 
@@ -767,6 +768,40 @@ featureNames {
 };
 
 } ss03;
+
+# Case-sensitive punctuation (docs/design-decisions.md, F4 and F18).
+# `case` raises the hyphen, dashes, brackets, braces, `@` and the colon to the capital centre. `calt` does it only between
+# capitals and figures. Both run after `ss03`, so the round-dot colon has its own raised form.
+
+@caseCap = [A AE AEacute AEmacron Aacute Abreve Abreveacute Abrevedotbelow Abrevedotbelow.ss03 Abrevegrave Abrevehookabove Abrevetilde Acaron Acircumflex Acircumflexacute Acircumflexdotbelow Acircumflexdotbelow.ss03 Acircumflexgrave Acircumflexhookabove Acircumflextilde Adblgrave Adieresis Adieresis.ss03 Adieresismacron Adieresismacron.ss03 Adotaccent Adotaccent.ss03 Adotbelow Adotbelow.ss03 Agrave Ahookabove Ainvertedbreve Amacron Aogonek Aring Aringacute Atilde B Bdotaccent Bdotaccent.ss03 Blinebelow C Cacute Ccaron Ccedilla Ccircumflex Cdotaccent Cdotaccent.ss03 Chook D Dcaron Dcedilla Dcroat Ddotaccent Ddotaccent.ss03 Ddotbelow Ddotbelow.ss03 Dlinebelow E Eacute Ebreve Ecaron Ecedilla Ecedillabreve Ecircumflex Ecircumflexacute Ecircumflexdotbelow Ecircumflexdotbelow.ss03 Ecircumflexgrave Ecircumflexhookabove Ecircumflextilde Edblgrave Edieresis Edieresis.ss03 Edotaccent Edotaccent.ss03 Edotbelow Edotbelow.ss03 Egrave Ehookabove Einvertedbreve Emacron Emacronacute Eng Eogonek Eth Etilde Ezh Ezhcaron F Fdotaccent Fdotaccent.ss03 G G.cv03 Gacute Gacute.cv03 Gbreve Gbreve.cv03 Gcaron Gcaron.cv03 Gcircumflex Gcircumflex.cv03 Gcommaaccent Gcommaaccent.cv03 Gcommaaccent.cv03.ss03 Gcommaaccent.ss03 Gdotaccent Gdotaccent.cv03 Gdotaccent.cv03.ss03 Gdotaccent.ss03 Germandbls Gmacron Gmacron.cv03 Gstroke Gstroke.cv03 H Hbar Hbrevebelow Hcaron Hcedilla Hcircumflex Hdieresis Hdieresis.ss03 Hdotaccent Hdotaccent.ss03 Hdotbelow Hdotbelow.ss03 I I.cv05 IJ IJ.cv01 IJ.cv01.cv05 IJ.cv05 Iacute Iacute.cv05 Ibreve Ibreve.cv05 Icaron Icaron.cv05 Icircumflex Icircumflex.cv05 Idblgrave Idblgrave.cv05 Idieresis Idieresis.cv05 Idieresis.cv05.ss03 Idieresis.ss03 Idieresisacute Idieresisacute.cv05 Idieresisacute.cv05.ss03 Idieresisacute.ss03 Idotaccent Idotaccent.cv05 Idotaccent.cv05.ss03 Idotaccent.ss03 Idotbelow Idotbelow.cv05 Idotbelow.cv05.ss03 Idotbelow.ss03 Igrave Igrave.cv05 Ihookabove Ihookabove.cv05 Iinvertedbreve Iinvertedbreve.cv05 Imacron Imacron.cv05 Iogonek Iogonek.cv05 Istroke Istroke.cv05 Itilde Itilde.cv05 J J.cv01 Jcircumflex Jcircumflex.cv01 K Kacute Kcaron Kcommaaccent Kcommaaccent.ss03 Kdotbelow Kdotbelow.ss03 Klinebelow L Lacute Lcaron Lcommaaccent Lcommaaccent.ss03 Ldot Ldot.ss03 Ldotbelow Ldotbelow.ss03 Llinebelow Lslash M Macute Mdotaccent Mdotaccent.ss03 Mdotbelow Mdotbelow.ss03 N Nacute Ncaron Ncommaaccent Ncommaaccent.ss03 Ndotaccent Ndotaccent.ss03 Ndotbelow Ndotbelow.ss03 Ngrave Nlinebelow Ntilde O OE Oacute Obreve Ocaron Ocircumflex Ocircumflexacute Ocircumflexdotbelow Ocircumflexdotbelow.ss03 Ocircumflexgrave Ocircumflexhookabove Ocircumflextilde Odblgrave Odieresis Odieresis.ss03 Odieresismacron Odieresismacron.ss03 Odotaccent Odotaccent.ss03 Odotaccentmacron Odotaccentmacron.ss03 Odotbelow Odotbelow.ss03 Ograve Ohm Ohookabove Ohorn Ohornacute Ohorndotbelow Ohorndotbelow.ss03 Ohorngrave Ohornhookabove Ohorntilde Ohungarumlaut Oinvertedbreve Omacron Omacronacute Oogonek Oogonekmacron Oslash Oslashacute Otilde Otildemacron P Pacute Pdotaccent Pdotaccent.ss03 Q R Racute Rcaron Rcommaaccent Rcommaaccent.ss03 Rdblgrave Rdotaccent Rdotaccent.ss03 Rdotbelow Rdotbelow.ss03 Rinvertedbreve Rlinebelow S Sacute Scaron Scedilla Schwa Scircumflex Scommaaccent Scommaaccent.ss03 Sdotaccent Sdotaccent.ss03 Sdotbelow Sdotbelow.ss03 T Tbar Tcaron Tcedilla Tcommaaccent Tcommaaccent.ss03 Tdotaccent Tdotaccent.ss03 Tdotbelow Tdotbelow.ss03 Thorn Tlinebelow U Uacute Ubreve Ucaron Ucircumflex Udblgrave Udieresis Udieresis.ss03 Udieresisacute Udieresisacute.ss03 Udieresiscaron Udieresiscaron.ss03 Udieresisgrave Udieresisgrave.ss03 Udieresismacron Udieresismacron.ss03 Udotbelow Udotbelow.ss03 Ugrave Uhookabove Uhorn Uhornacute Uhorndotbelow Uhorndotbelow.ss03 Uhorngrave Uhornhookabove Uhorntilde Uhungarumlaut Uinvertedbreve Umacron Uogonek Uring Utilde V W Wacute Wcircumflex Wdieresis Wdieresis.ss03 Wdotaccent Wdotaccent.ss03 Wgrave X Xdieresis Xdieresis.ss03 Y Yacute Ycircumflex Ydieresis Ydieresis.ss03 Ydotaccent Ydotaccent.ss03 Ydotbelow Ydotbelow.ss03 Ygrave Yhookabove Ymacron Ytilde Z Zacute Zcaron Zcircumflex Zdotaccent Zdotaccent.ss03 Zdotbelow Zdotbelow.ss03 Zlinebelow];
+@caseFig = [eight eight.tf five five.tf four four.tf nine nine.tf one one.cv06 one.tf seven seven.tf six six.tf three three.tf two two.tf zero zero.slash zero.slash.tf zero.tf];
+@caseAny = [@caseCap @caseFig];
+@caseBase = [hyphen endash emdash parenleft parenright bracketleft bracketright braceleft braceright at colon colon.ss03];
+@caseForm = [hyphen.case endash.case emdash.case parenleft.case parenright.case bracketleft.case bracketright.case braceleft.case braceright.case at.case colon.case colon.ss03.case];
+@caseDash = [hyphen endash emdash];
+@caseDashForm = [hyphen.case endash.case emdash.case];
+@caseOpen = [parenleft bracketleft braceleft];
+@caseOpenForm = [parenleft.case bracketleft.case braceleft.case];
+@caseOpenAll = [parenleft bracketleft braceleft parenleft.case bracketleft.case braceleft.case];
+@caseClose = [parenright bracketright braceright];
+@caseCloseForm = [parenright.case bracketright.case braceright.case];
+
+feature case {
+    sub @caseBase by @caseForm;
+} case;
+
+feature calt {
+    lookupflag IgnoreMarks;
+    sub @caseAny @caseDash' @caseAny by @caseDashForm;
+    sub @caseAny [colon colon.ss03]' @caseAny by [colon.case colon.ss03.case];
+    sub at' @caseCap by at.case;
+    sub @caseOpen' @caseAny @caseAny by @caseOpenForm;
+    sub parenleft' @caseAny parenright by parenleft.case;
+    sub bracketleft' @caseAny bracketright by bracketleft.case;
+    sub braceleft' @caseAny braceright by braceleft.case;
+    sub @caseAny @caseAny @caseClose' by @caseCloseForm;
+    sub @caseOpenAll @caseAny @caseClose' by @caseCloseForm;
+} calt;
 
 # Typed-accent kerning: helper capitals (docs/design-decisions.md).
 # A capital followed by a lowercase base and a top mark is swapped for a copy that draws the same and has its own kerning groups.

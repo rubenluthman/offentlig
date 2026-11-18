@@ -1090,6 +1090,18 @@
       <string>Ytilde.tk01</string>
       <string>Ytilde.tk02</string>
       <string>Ytilde.tk03</string>
+      <string>hyphen.case</string>
+      <string>endash.case</string>
+      <string>emdash.case</string>
+      <string>parenleft.case</string>
+      <string>parenright.case</string>
+      <string>bracketleft.case</string>
+      <string>bracketright.case</string>
+      <string>braceleft.case</string>
+      <string>braceright.case</string>
+      <string>at.case</string>
+      <string>colon.case</string>
+      <string>colon.ss03.case</string>
     </array>
     <key>public.openTypeCategories</key>
     <dict>

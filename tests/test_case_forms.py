@@ -1,0 +1,119 @@
+"""Case-sensitive punctuation: `.case` forms and the `case` and `calt` rules that swap them in.
+
+The hyphen, en and em dash, `( ) [ ] { }`, `@` and the colon (also the round-dot colon) have a `.case` form moved so that its ink
+centre sits on the capital centre; the advance is unchanged. `case` swaps every one of them; `calt` swaps them only where the
+neighbours are capitals or figures (docs/design-decisions.md, F4 and F18).
+"""
+import pytest
+import uharfbuzz as hb
+from fontTools.pens.boundsPen import BoundsPen
+
+from conftest import STATIC_IDS, STATICS, static_path
+
+CASE_BASES = {
+    "-": "hyphen", "–": "endash", "—": "emdash", "(": "parenleft", ")": "parenright", "[": "bracketleft",
+    "]": "bracketright", "{": "braceleft", "}": "braceright", "@": "at", ":": "colon",
+}
+
+# `^` marks the character that `calt` raises. Everything else stays at its default height.
+CONTEXTS = [
+    # times, dates, ranges
+    "12^:30", "ISO 2026^-11^-18", "A^–Ö", "Ö^–Å", "ABC^-123", "A^—B", "1^–2", "A^:B", "A1^:B2",
+    # the stricter rule: a lowercase neighbour keeps the low form
+    "E-post", "T-shirt", "12-tal", "x-y", "KL:s", "1:a", "Hej: ", "a - B", "A - 1", "-1", "A-",
+    # brackets look at two characters
+    "^(HEJ^)", "^(1^)", "^[1^]", "^[TEXT^]", "^{AB^}", "^(A1^)", "^(ÅÄ^)", "(Stockholm)", "(Hej)", "[x]", "(1", "(1^-2)",
+    "(Hej) 12-tal",
+    # @ before a capital
+    "H^@G", "^@HEJ", "^@Hej", "user@host", "x@1",
+    # accented capitals count as capitals
+    "ÅÄÖ^-ÅÄÖ",
+]
+
+
+def font_of(path):
+    return hb.Font(hb.Face(hb.Blob.from_file_path(str(path))))
+
+
+def shape(font, text, features):
+    buf = hb.Buffer()
+    buf.add_str(text)
+    buf.guess_segment_properties()
+    hb.shape(font, buf, features)
+    return [font.glyph_to_string(i.codepoint) for i in buf.glyph_infos]
+
+
+def split(marked):
+    text, raised, _ = "", set(), 0
+    for ch in marked:
+        if ch == "^":
+            raised.add(len(text))
+        else:
+            text += ch
+    return text, raised
+
+
+@pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
+def test_calt_raises_punctuation_between_capitals_and_figures_only(weight, italic):
+    font = font_of(static_path(weight, italic))
+    for marked in CONTEXTS:
+        text, raised = split(marked)
+        got = shape(font, text, {})
+        assert len(got) == len(text), (text, got)
+        found = {i for i, g in enumerate(got) if g.endswith(".case")}
+        assert found == raised, (text, got)
+
+
+@pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
+def test_calt_off_raises_nothing_and_case_raises_everything(weight, italic):
+    font = font_of(static_path(weight, italic))
+    for marked in CONTEXTS:
+        text, raised = split(marked)
+        assert not [g for g in shape(font, text, {"calt": False}) if g.endswith(".case")], text
+        got = shape(font, text, {"calt": False, "case": True})
+        want = {i for i, ch in enumerate(text) if ch in CASE_BASES}
+        assert {i for i, g in enumerate(got) if g.endswith(".case")} == want, (text, got)
+
+
+@pytest.mark.parametrize("italic", [False, True], ids=["roman", "italic"])
+def test_round_dot_colon_and_oldstyle_figures(italic):
+    font = font_of(static_path("Regular", italic))
+    assert shape(font, "12:30", {"ss03": True}) == ["one", "two", "colon.ss03.case", "three", "zero"]
+    assert shape(font, "12:30", {"ss03": True, "calt": False, "case": True})[2] == "colon.ss03.case"
+    assert shape(font, "12:30", {"ss03": True, "calt": False})[2] == "colon.ss03"
+    # oldstyle figures sit at lowercase height: nothing is raised next to them
+    assert not [g for g in shape(font, "2026-11-18 12:30 (12)", {"onum": True}) if g.endswith(".case")]
+    # tabular figures and the slashed zero are figures
+    assert shape(font, "10:30", {"tnum": True})[2] == "colon.case"
+    assert "colon.case" in shape(font, "0:0", {"zero": True})
+
+
+@pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
+def test_case_forms_are_centred_on_the_capitals_and_keep_their_width(weight, italic):
+    from fontTools.ttLib import TTFont
+    ttf = TTFont(static_path(weight, italic))
+    gs, cmap, hmtx = ttf.getGlyphSet(), ttf.getBestCmap(), ttf["hmtx"]
+
+    def centre(name):
+        pen = BoundsPen(gs)
+        gs[name].draw(pen)
+        return (pen.bounds[1] + pen.bounds[3]) / 2
+
+    cap = centre("H")
+    names = list(CASE_BASES.values()) + ["colon.ss03"]
+    for name in names:
+        case = name + ".case"
+        assert case in ttf.getGlyphOrder(), case
+        assert hmtx[case][0] == hmtx[name][0], case
+        assert abs(centre(case) - cap) <= 2, (case, centre(case), cap)
+        assert case not in cmap.values(), case
+        if name != "emdash":
+            assert abs(centre(name) - cap) > 20, (name, "was not low")
+
+
+@pytest.mark.parametrize("weight,italic", [("Regular", False), ("Regular", True)], ids=["roman", "italic"])
+def test_case_and_calt_are_in_the_font(weight, italic):
+    from fontTools.ttLib import TTFont
+    ttf = TTFont(static_path(weight, italic))
+    tags = {r.FeatureTag for r in ttf["GSUB"].table.FeatureList.FeatureRecord}
+    assert {"case", "calt"} <= tags

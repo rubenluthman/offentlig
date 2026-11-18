@@ -1,4 +1,4 @@
-"""Em dash spacing: the em dash has the en dash's side bearings, and no feature substitutes it."""
+"""Em dash spacing: the em dash has the en dash's side bearings, and no feature changes its spacing."""
 from fontTools.pens.boundsPen import BoundsPen
 
 from test_fixes import shape
@@ -19,10 +19,12 @@ def test_em_dash_has_the_en_dash_side_bearings(static_ttf):
     assert all(abs(a - b) <= 1 for a, b in zip(em, en)), (em, en)
 
 
-def test_em_dash_is_not_substituted(static_ttf):
+def test_em_dash_has_no_spacing_substitute(static_ttf):
+    """`calt` exists for the case forms; it never narrows the em dash. `emdash.case` is the em dash moved up: same advance, same ink width."""
     assert "emdash.alt" not in static_ttf.getGlyphOrder()
-    gsub = static_ttf["GSUB"].table
-    assert "calt" not in {r.FeatureTag for r in gsub.FeatureList.FeatureRecord}
+    assert static_ttf["hmtx"]["emdash.case"][0] == static_ttf["hmtx"]["emdash"][0]
+    plain, case = bearings(static_ttf, "emdash"), bearings(static_ttf, "emdash.case")
+    assert abs(sum(plain) - sum(case)) <= 1, (plain, case)
 
 
 def advances(path, text):

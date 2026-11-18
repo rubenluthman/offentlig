@@ -8,6 +8,7 @@
 ## [0.5.1] - 2026-11-18
 
 - Added four space characters: the figure space (U+2007, 1400 units, the tabular figure width), the punctuation space (U+2008, as wide as the period at each weight), the thin space (U+2009, 333 units) and the narrow no-break space (U+202F, 333 units, a sixth of an em), for grouping digits in Swedish and French numbers and aligning tables. The others have the same advance at every weight, and none of the four kerns. Nothing else changed.
+- Added case-sensitive punctuation: the hyphen, en and em dash, `( ) [ ] { }`, `@` and the colon have forms raised to the capital centre, in the `case` feature and, between capitals and figures, in `calt` (`2026-11-18`, `A–Ö`, `12:30`, `(HEJ)`, `ABC-123`; `E-post`, `12-tal` and `(Stockholm)` stay as they were). Apps can turn `calt` off. Text that has these neighbours changes, so this is a minor-version change.
 
 ## [0.5.0] - 2026-11-18
 

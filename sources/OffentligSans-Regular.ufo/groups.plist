@@ -481,6 +481,7 @@
     <key>public.kern1.emdash</key>
     <array>
       <string>emdash</string>
+      <string>emdash.case</string>
     </array>
     <key>public.kern1.f</key>
     <array>
@@ -522,8 +523,10 @@
     <key>public.kern1.hyphen</key>
     <array>
       <string>hyphen</string>
+      <string>hyphen.case</string>
       <string>softhyphen</string>
       <string>endash</string>
+      <string>endash.case</string>
     </array>
     <key>public.kern1.i</key>
     <array>
@@ -755,6 +758,7 @@
       <string>pacute</string>
       <string>thorn</string>
       <string>at</string>
+      <string>at.case</string>
     </array>
     <key>public.kern1.ohorn</key>
     <array>
@@ -796,7 +800,9 @@
       <string>comma</string>
       <string>comma.ss03</string>
       <string>colon</string>
+      <string>colon.case</string>
       <string>colon.ss03</string>
+      <string>colon.ss03.case</string>
       <string>ellipsis</string>
       <string>ellipsis.ss03</string>
       <string>periodcentered</string>
@@ -1848,7 +1854,9 @@
     <key>public.kern2.colon</key>
     <array>
       <string>colon</string>
+      <string>colon.case</string>
       <string>colon.ss03</string>
+      <string>colon.ss03.case</string>
       <string>semicolon</string>
       <string>semicolon.ss03</string>
     </array>
@@ -1868,6 +1876,7 @@
     <key>public.kern2.emdash</key>
     <array>
       <string>emdash</string>
+      <string>emdash.case</string>
     </array>
     <key>public.kern2.f</key>
     <array>
@@ -1909,8 +1918,10 @@
     <key>public.kern2.hyphen</key>
     <array>
       <string>hyphen</string>
+      <string>hyphen.case</string>
       <string>softhyphen</string>
       <string>endash</string>
+      <string>endash.case</string>
     </array>
     <key>public.kern2.i</key>
     <array>
@@ -2164,6 +2175,7 @@
       <string>q</string>
       <string>g.ss01</string>
       <string>at</string>
+      <string>at.case</string>
       <string>gacute.ss01</string>
       <string>gbreve.ss01</string>
       <string>gcaron.ss01</string>
@@ -2203,8 +2215,11 @@
       <string>question</string>
       <string>question.ss03</string>
       <string>parenright</string>
+      <string>parenright.case</string>
       <string>braceright</string>
+      <string>braceright.case</string>
       <string>bracketright</string>
+      <string>bracketright.case</string>
     </array>
     <key>public.kern2.period</key>
     <array>
