@@ -4,16 +4,16 @@
   <anchor x="564.607" y="1415" name="top"/>
   <outline>
     <contour>
-      <point x="269.077" y="1155" type="line"/>
-      <point x="541.077" y="1155" type="line"/>
-      <point x="485.962" y="1446" type="line"/>
-      <point x="139.963" y="1446" type="line"/>
+      <point x="271.077" y="1155" type="line"/>
+      <point x="543.077" y="1155" type="line"/>
+      <point x="487.974" y="1446" type="line"/>
+      <point x="176.974" y="1446" type="line"/>
     </contour>
     <contour>
-      <point x="685.077" y="1155" type="line"/>
-      <point x="957.077" y="1155" type="line"/>
-      <point x="901.962" y="1446" type="line"/>
-      <point x="555.962" y="1446" type="line"/>
+      <point x="648.077" y="1155" type="line"/>
+      <point x="920.077" y="1155" type="line"/>
+      <point x="864.974" y="1446" type="line"/>
+      <point x="553.974" y="1446" type="line"/>
     </contour>
   </outline>
 </glyph>

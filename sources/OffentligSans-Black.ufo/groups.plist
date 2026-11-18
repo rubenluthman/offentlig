@@ -868,7 +868,6 @@
       <string>rcaron</string>
       <string>rcommaaccent</string>
       <string>rcommaaccent.ss03</string>
-      <string>rdblgrave</string>
       <string>rdotbelow</string>
       <string>rdotbelow.ss03</string>
       <string>rinvertedbreve</string>
@@ -1079,7 +1078,6 @@
       <string>idotbelow_brevecomb.ss03</string>
       <string>istroke_brevecomb</string>
       <string>icircumflex</string>
-      <string>idblgrave</string>
       <string>idieresis</string>
       <string>idotbelow_dieresiscomb</string>
       <string>istroke_dieresiscomb</string>
@@ -1967,7 +1965,6 @@
       <string>idotbelow_brevecomb.ss03</string>
       <string>istroke_brevecomb</string>
       <string>icircumflex</string>
-      <string>idblgrave</string>
       <string>idieresis</string>
       <string>idotbelow_dieresiscomb</string>
       <string>istroke_dieresiscomb</string>
@@ -2053,7 +2050,6 @@
       <string>rcaron</string>
       <string>rcommaaccent</string>
       <string>rcommaaccent.ss03</string>
-      <string>rdblgrave</string>
       <string>rdotbelow</string>
       <string>rdotbelow.ss03</string>
       <string>rinvertedbreve</string>
@@ -2426,6 +2422,22 @@
       <string>six.numr</string>
       <string>eight.numr</string>
       <string>nine.numr</string>
+    </array>
+    <key>public.kern1.idblgrave</key>
+    <array>
+      <string>idblgrave</string>
+    </array>
+    <key>public.kern2.idblgrave</key>
+    <array>
+      <string>idblgrave</string>
+    </array>
+    <key>public.kern1.rdblgrave</key>
+    <array>
+      <string>rdblgrave</string>
+    </array>
+    <key>public.kern2.rdblgrave</key>
+    <array>
+      <string>rdblgrave</string>
     </array>
   </dict>
 </plist>

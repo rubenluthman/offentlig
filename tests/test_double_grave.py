@@ -1,6 +1,6 @@
 """The narrow double grave on `ȉ ȑ` and on typed `i ı r` + U+030F.
 
-`ȉ ȑ` use `dblgravecomb.narrow`, drawn in the six masters to overhang the stem by no more than the breve of `ĭ` plus 40 units
+`ȉ ȑ` use `dblgravecomb.narrow`, drawn in the six masters to overhang the stem by no more than the breve of `ĭ`
 (the full-width mark made pairs with `ȉ` need over 300 units of kerning). Typed `i ı r` + U+030F swap to the narrow mark in `ccmp`,
 so they set exactly like `ȉ ȑ`; every other base keeps the full-width mark.
 """
@@ -47,10 +47,10 @@ def test_typed_i_dotless_i_and_r_with_a_double_grave_set_like_the_precomposed_le
 
 @pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
 def test_the_double_grave_on_i_reaches_no_further_than_the_breve_of_i(weight, italic):
-    """`ȉ` overhangs its advance on each side by no more than `ĭ` does, plus 40 units (the full-width mark overhung by up to 390)."""
+    """`ȉ` overhangs its advance on each side by no more than `ĭ` does, in every weight (the full-width mark overhung by up to 390)."""
     lo, hi, advance = ink(weight, italic, "ȉ")
     blo, bhi, _ = ink(weight, italic, "ĭ")
-    assert -lo <= max(-blo, 0) + 40 and hi - advance <= max(bhi - advance, 0) + 40, (lo, hi, advance, blo, bhi)
+    assert -lo <= max(-blo, 0) and hi - advance <= max(bhi - advance, 0), (lo, hi, advance, blo, bhi)
 
 
 @pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
