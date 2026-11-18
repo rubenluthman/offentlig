@@ -1828,6 +1828,14 @@
     <string>napostrophe.ss03.glif</string>
     <key>nbspace</key>
     <string>nbspace.glif</string>
+    <key>figurespace</key>
+    <string>figurespace.glif</string>
+    <key>punctuationspace</key>
+    <string>punctuationspace.glif</string>
+    <key>thinspace</key>
+    <string>thinspace.glif</string>
+    <key>narrownbspace</key>
+    <string>narrownbspace.glif</string>
     <key>ncaron</key>
     <string>ncaron.glif</string>
     <key>ncommaaccent</key>

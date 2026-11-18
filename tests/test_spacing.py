@@ -41,6 +41,10 @@ EXEMPT = {
     "ldot.ss03": "inherited from Public Sans: the italic masters have no right-hand group",
     "ldot.ss02": "follows ldot: the italic masters have no right-hand group",
     "ldot.ss02.ss03": "follows ldot: the italic masters have no right-hand group",
+    "figurespace": "space, no outline: it kerns with nothing, so it has no kerning group",
+    "punctuationspace": "space, no outline: it kerns with nothing, so it has no kerning group",
+    "thinspace": "space, no outline: it kerns with nothing, so it has no kerning group",
+    "narrownbspace": "space, no outline: it kerns with nothing, so it has no kerning group",
 }
 
 

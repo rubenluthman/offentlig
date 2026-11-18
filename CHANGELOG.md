@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+
+- Added four space characters: the figure space (U+2007, 1400 units, the tabular figure width), the punctuation space (U+2008, 450 units, the period at Regular), the thin space (U+2009, 333 units) and the narrow no-break space (U+202F, 333 units, a sixth of an em), for grouping digits in Swedish and French numbers and aligning tables. Each has the same advance at every weight and never kerns. Nothing else changed.
+
 ## [0.5.0] - 2026-11-18
 
 - Added tabular oldstyle figures: with `tnum` and `onum` both on, in either order, figures are oldstyle on the shared 1400-unit width (they were lining), and `zero` and `cv06` carry through. The oldstyle `1` keeps its base. Nothing else changed.

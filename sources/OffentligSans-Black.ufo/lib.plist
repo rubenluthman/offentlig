@@ -826,6 +826,10 @@
       <string>quotesingle</string>
       <string>space</string>
       <string>nbspace</string>
+      <string>figurespace</string>
+      <string>punctuationspace</string>
+      <string>thinspace</string>
+      <string>narrownbspace</string>
       <string>CR</string>
       <string>.notdef</string>
       <string>bitcoin</string>
@@ -3564,6 +3568,14 @@
       <string>uni0149</string>
       <key>nbspace</key>
       <string>uni00A0</string>
+      <key>figurespace</key>
+      <string>uni2007</string>
+      <key>punctuationspace</key>
+      <string>uni2008</string>
+      <key>thinspace</key>
+      <string>uni2009</string>
+      <key>narrownbspace</key>
+      <string>uni202F</string>
       <key>ncommaaccent</key>
       <string>uni0146</string>
       <key>ndotaccent</key>
