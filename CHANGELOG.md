@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [0.5.1] - 2026-11-18
 
 - Added four space characters: the figure space (U+2007, 1400 units, the tabular figure width), the punctuation space (U+2008, as wide as the period at each weight), the thin space (U+2009, 333 units) and the narrow no-break space (U+202F, 333 units, a sixth of an em), for grouping digits in Swedish and French numbers and aligning tables. The others have the same advance at every weight, and none of the four kerns. Nothing else changed.
 
