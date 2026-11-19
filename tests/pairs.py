@@ -29,6 +29,9 @@ class PairTable:
                 self.texts.append(text)
                 self.gids.append(shaped[0][0])
         self.index = {t: i for i, t in enumerate(self.texts)}
+        # (left, right) -> glyph id `calt` or `rclt` put in place of the first glyph, set by `kerning_pairs`
+        self.first_shaped = {}
+        self._rows = {}
         self.advance = np.array([self.shaper.shape(t, features)[0][1] for t in self.texts], dtype=np.float64)
         ink = {gid: self.shaper.spans(gid) for gid in set(self.gids)}
         self.lmax = np.full((len(self.texts), len(ROWS)), -np.inf)
@@ -45,12 +48,25 @@ class PairTable:
             self._codes = {n: c for c, n in TTFont(self.shaper.path).getBestCmap().items()}
         return self._codes.get(name)
 
+    def first_rows(self, a, b):
+        """(rightmost ink per row, advance) of the glyph shaped for the first glyph of the pair (a, b)."""
+        gid = self.first_shaped.get((a, b))
+        if gid is None:
+            return self.lmax[a], self.advance[a]
+        if gid not in self._rows:
+            row = np.full(len(ROWS), -np.inf)
+            for y, (lo, hi) in self.shaper.spans(gid).items():
+                row[int((y - LOW) // STEP)] = hi
+            self._rows[gid] = (row, float(self.hmtx[self.names[gid]][0]))
+        return self._rows[gid]
+
     def glyph_name(self, i):
         return self.names[self.gids[i]]
 
     def kerning(self, left, right, chunk=2000):
         """Matrix of the kerning of the first glyph for `left` x `right` (indexes into `self.texts`), NaN where the pair
-        is not two glyphs (a ligature or a substitution)."""
+        is not two glyphs (a ligature or a substitution of the second glyph). A first glyph that `calt` or `rclt` swapped
+        is measured as shaped (`first_shaped`)."""
         values = self.kerning_pairs([(a, b) for a in left for b in right], chunk)
         return np.array(values).reshape(len(left), len(right))
 
@@ -76,8 +92,11 @@ class PairTable:
                     members.append(at)
                     at += 1
                 value = np.nan
-                if len(members) == 3 and infos[members[0]].codepoint == self.gids[a] and infos[members[1]].codepoint == self.gids[b]:
-                    value = positions[members[0]].x_advance - self.hmtx[self.names[self.gids[a]]][0]
+                if len(members) == 3 and infos[members[1]].codepoint == self.gids[b]:
+                    shaped = infos[members[0]].codepoint
+                    if shaped != self.gids[a]:
+                        self.first_shaped[(a, b)] = shaped
+                    value = positions[members[0]].x_advance - self.hmtx[self.names[shaped]][0]
                 out.append(value)
         return out
 
@@ -87,10 +106,20 @@ class PairTable:
         right_rows = self.rmin[right]
         for a, i in enumerate(left):
             out[a] = (right_rows - self.lmax[i]).min(axis=1)
-        return out + self.advance[left][:, None] + kern
+        out = out + self.advance[left][:, None] + kern
+        if self.first_shaped:  # pairs whose first glyph was swapped: their own ink and advance
+            where_left, where_right = {i: n for n, i in enumerate(left)}, {j: n for n, j in enumerate(right)}
+            for (a, b) in self.first_shaped:
+                if a in where_left and b in where_right:
+                    n, m = where_left[a], where_right[b]
+                    rows, advance = self.first_rows(a, b)
+                    out[n, m] = float((self.rmin[b] - rows).min()) + advance + kern[n, m]
+        return out
 
     def gaps_pairs(self, pairs, kern):
         """List of the ink gap of each (left, right) pair of indexes (inf where the glyphs share no row), with `kern` from `kerning_pairs`."""
-        return [
-            float((self.rmin[b] - self.lmax[a]).min()) + self.advance[a] + k for (a, b), k in zip(pairs, kern)
-        ]
+        out = []
+        for (a, b), k in zip(pairs, kern):
+            rows, advance = self.first_rows(a, b)
+            out.append(float((self.rmin[b] - rows).min()) + advance + k)
+        return out

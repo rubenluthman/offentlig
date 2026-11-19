@@ -158,14 +158,16 @@ def test_all_encoded_pairs_clear_diagonal_floor(weight, italic):
     ccache = _contour_cache(path)
     tight = []
     for x, y in zip(xs, ys):
-        row_dist = np.min(r_dil[y] + adv[x] + k[x, y] - l_max[x])
+        # `calt` can swap the first glyph (`.arm` capitals, `at.case`): measure the glyph that is shaped
+        rows, advance = table.first_rows(x, y)
+        row_dist = np.min(r_dil[y] + advance + k[x, y] - rows)
         if row_dist >= DIAGONAL_FLOOR:
             continue
         a, ch_b = chars[x], chars[y]
         if _is_e2_exempt(weight, italic, a, ch_b):
             continue
-        c1 = ccache[gids[x]]
-        c2 = _shifted(ccache[gids[y]], adv[x] + k[x, y])
+        c1 = ccache[table.first_shaped.get((int(x), int(y)), gids[x])]
+        c2 = _shifted(ccache[gids[y]], advance + k[x, y])
         od = outline_distance(c1, c2)
         if od < DIAGONAL_FLOOR:
             tight.append((a + ch_b, round(od, 2)))
