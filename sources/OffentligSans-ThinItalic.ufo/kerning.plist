@@ -5025,6 +5025,10 @@
       <integer>0</integer>
       <key>Itilde</key>
       <integer>0</integer>
+      <key>braceright.case</key>
+      <real>0.0</real>
+      <key>bracketright.case</key>
+      <real>0.0</real>
       <key>edblgrave</key>
       <integer>0</integer>
       <key>hcircumflex</key>
@@ -5075,6 +5079,8 @@
       <integer>0</integer>
       <key>odblgrave</key>
       <integer>0</integer>
+      <key>parenright.case</key>
+      <real>0.0</real>
       <key>sevensuperior</key>
       <integer>0</integer>
       <key>tdieresis</key>
@@ -5367,6 +5373,12 @@
       <integer>0</integer>
       <key>bdotaccent</key>
       <integer>0</integer>
+      <key>braceright.case</key>
+      <real>0.0</real>
+      <key>bracketleft.case</key>
+      <real>0.0</real>
+      <key>bracketright.case</key>
+      <real>0.0</real>
       <key>edblgrave</key>
       <integer>0</integer>
       <key>eightsuperior</key>
@@ -5421,6 +5433,8 @@
       <integer>0</integer>
       <key>parenleftsuperior</key>
       <integer>0</integer>
+      <key>parenright.case</key>
+      <real>0.0</real>
       <key>parenrightsuperior</key>
       <integer>0</integer>
       <key>ring</key>
@@ -5626,6 +5640,8 @@
       <integer>0</integer>
       <key>bdotaccent.ss03</key>
       <integer>0</integer>
+      <key>braceright.case</key>
+      <real>0.0</real>
       <key>edblgrave</key>
       <integer>0</integer>
       <key>hcaron</key>
@@ -5668,6 +5684,8 @@
       <integer>22</integer>
       <key>odblgrave</key>
       <integer>0</integer>
+      <key>parenright.case</key>
+      <real>0.0</real>
       <key>parenrightsuperior</key>
       <integer>0</integer>
       <key>sevensuperior</key>
@@ -5713,6 +5731,12 @@
       <integer>0</integer>
       <key>bdotaccent</key>
       <integer>0</integer>
+      <key>braceright.case</key>
+      <real>0.0</real>
+      <key>bracketleft.case</key>
+      <real>0.0</real>
+      <key>bracketright.case</key>
+      <real>0.0</real>
       <key>edblgrave</key>
       <integer>0</integer>
       <key>eightsuperior</key>
@@ -5767,6 +5791,8 @@
       <integer>0</integer>
       <key>parenleftsuperior</key>
       <integer>0</integer>
+      <key>parenright.case</key>
+      <real>0.0</real>
       <key>parenrightsuperior</key>
       <integer>0</integer>
       <key>ring</key>
@@ -5972,6 +5998,8 @@
       <integer>0</integer>
       <key>bdotaccent.ss03</key>
       <integer>0</integer>
+      <key>braceright.case</key>
+      <real>0.0</real>
       <key>edblgrave</key>
       <integer>0</integer>
       <key>hcaron</key>
@@ -6014,6 +6042,8 @@
       <integer>22</integer>
       <key>odblgrave</key>
       <integer>0</integer>
+      <key>parenright.case</key>
+      <real>0.0</real>
       <key>parenrightsuperior</key>
       <integer>0</integer>
       <key>sevensuperior</key>
@@ -6737,6 +6767,10 @@
       <integer>0</integer>
       <key>Itilde</key>
       <integer>0</integer>
+      <key>braceright.case</key>
+      <real>0.0</real>
+      <key>bracketright.case</key>
+      <real>0.0</real>
       <key>edblgrave</key>
       <integer>0</integer>
       <key>hcaron</key>
@@ -6791,6 +6825,8 @@
       <integer>0</integer>
       <key>odblgrave</key>
       <integer>0</integer>
+      <key>parenright.case</key>
+      <real>0.0</real>
       <key>ring</key>
       <integer>0</integer>
       <key>sevensuperior</key>
@@ -6927,6 +6963,10 @@
       <integer>0</integer>
       <key>bdotaccent.ss03</key>
       <integer>0</integer>
+      <key>braceright.case</key>
+      <real>0.0</real>
+      <key>bracketright.case</key>
+      <real>0.0</real>
       <key>edblgrave</key>
       <integer>0</integer>
       <key>hcaron</key>
@@ -6983,6 +7023,8 @@
       <integer>39</integer>
       <key>odblgrave</key>
       <integer>0</integer>
+      <key>parenright.case</key>
+      <real>0.0</real>
       <key>parenrightsuperior</key>
       <integer>0</integer>
       <key>sevensuperior</key>
@@ -7783,6 +7825,10 @@
       <integer>0</integer>
       <key>bdotaccent</key>
       <integer>0</integer>
+      <key>braceright.case</key>
+      <real>26.0</real>
+      <key>bracketright.case</key>
+      <real>33.0</real>
       <key>edblgrave</key>
       <integer>0</integer>
       <key>hcircumflex</key>
@@ -7853,6 +7899,8 @@
       <integer>0</integer>
       <key>onesuperior</key>
       <integer>66</integer>
+      <key>parenright.case</key>
+      <real>0.0</real>
       <key>ring</key>
       <integer>0</integer>
       <key>sevensuperior</key>
@@ -19236,6 +19284,31 @@
       <key>jcircumflex</key>
       <integer>0</integer>
     </dict>
+    <key>at.case</key>
+    <dict>
+      <key>Lslash</key>
+      <real>0.0</real>
+      <key>T</key>
+      <real>-195.0</real>
+      <key>Tbar</key>
+      <real>-195.0</real>
+      <key>icircumflex</key>
+      <real>0.0</real>
+      <key>idieresis</key>
+      <real>0.0</real>
+      <key>idotbelow_circumflexcomb</key>
+      <real>0.0</real>
+      <key>idotbelow_circumflexcomb.ss03</key>
+      <real>0.0</real>
+      <key>idotbelow_dieresiscomb</key>
+      <real>0.0</real>
+      <key>idotlessdieresisacute</key>
+      <real>0.0</real>
+      <key>istroke_circumflexcomb</key>
+      <real>0.0</real>
+      <key>istroke_dieresiscomb</key>
+      <real>0.0</real>
+    </dict>
     <key>atilde</key>
     <dict>
       <key>idieresis</key>
@@ -19451,12 +19524,24 @@
     </dict>
     <key>braceleft.case</key>
     <dict>
+      <key>Icircumflex</key>
+      <real>0.0</real>
+      <key>Idblgrave</key>
+      <real>0.0</real>
+      <key>Idieresis</key>
+      <real>0.0</real>
+      <key>Idieresisacute</key>
+      <real>0.0</real>
       <key>dieresis</key>
       <integer>43</integer>
       <key>dieresis.ss03</key>
       <integer>49</integer>
       <key>florin</key>
       <integer>219</integer>
+      <key>hcircumflex</key>
+      <real>13.0</real>
+      <key>hdieresis</key>
+      <real>0.0</real>
       <key>ibreve</key>
       <integer>1</integer>
       <key>icaron</key>
@@ -19499,6 +19584,10 @@
       <integer>6</integer>
       <key>imacron</key>
       <integer>0</integer>
+      <key>iogonek</key>
+      <real>12.0</real>
+      <key>iogonek.ss03</key>
+      <real>12.0</real>
       <key>istroke_brevecomb</key>
       <integer>1</integer>
       <key>istroke_caroncomb</key>
@@ -19563,6 +19652,8 @@
       <integer>0</integer>
       <key>istroke_dieresiscomb.ss03</key>
       <integer>0</integer>
+      <key>rupeeIndian</key>
+      <real>20.0</real>
     </dict>
     <key>bracketleft</key>
     <dict>
@@ -19647,12 +19738,24 @@
     </dict>
     <key>bracketleft.case</key>
     <dict>
+      <key>Icircumflex</key>
+      <real>0.0</real>
+      <key>Idblgrave</key>
+      <real>0.0</real>
+      <key>Idieresis</key>
+      <real>0.0</real>
+      <key>Idieresisacute</key>
+      <real>0.0</real>
       <key>dieresis</key>
       <integer>43</integer>
       <key>dieresis.ss03</key>
       <integer>49</integer>
       <key>florin</key>
       <integer>217</integer>
+      <key>hcircumflex</key>
+      <real>14.0</real>
+      <key>hdieresis</key>
+      <real>0.0</real>
       <key>ibreve</key>
       <integer>1</integer>
       <key>icaron</key>
@@ -19801,10 +19904,18 @@
     </dict>
     <key>bracketright.case</key>
     <dict>
+      <key>Idieresis</key>
+      <real>0.0</real>
+      <key>Idieresisacute</key>
+      <real>0.0</real>
       <key>edblgrave</key>
       <integer>0</integer>
       <key>florin</key>
       <integer>49</integer>
+      <key>hcircumflex</key>
+      <real>0.0</real>
+      <key>hdieresis</key>
+      <real>0.0</real>
       <key>ibreve</key>
       <integer>0</integer>
       <key>icaron</key>
@@ -20526,12 +20637,38 @@
     </dict>
     <key>colon.case</key>
     <dict>
+      <key>T</key>
+      <real>-100.0</real>
+      <key>Tbar</key>
+      <real>-100.0</real>
+      <key>icircumflex</key>
+      <real>0.0</real>
+      <key>idieresis</key>
+      <real>0.0</real>
+      <key>idotbelow_circumflexcomb</key>
+      <real>0.0</real>
+      <key>idotbelow_dieresiscomb</key>
+      <real>0.0</real>
+      <key>idotbelow_macroncomb</key>
+      <real>0.0</real>
+      <key>idotlessdieresisacute</key>
+      <real>0.0</real>
+      <key>imacron</key>
+      <real>0.0</real>
+      <key>istroke_circumflexcomb</key>
+      <real>0.0</real>
+      <key>istroke_dieresiscomb</key>
+      <real>0.0</real>
+      <key>istroke_macroncomb</key>
+      <real>0.0</real>
       <key>napostrophe</key>
       <integer>-125</integer>
       <key>quotedblright</key>
       <integer>-125</integer>
       <key>quoteright</key>
       <integer>-125</integer>
+      <key>seven</key>
+      <real>-40.0</real>
       <key>seven.osf</key>
       <integer>-40</integer>
     </dict>
@@ -20548,12 +20685,18 @@
     </dict>
     <key>colon.ss03.case</key>
     <dict>
+      <key>T</key>
+      <real>-100.0</real>
+      <key>Tbar</key>
+      <real>-100.0</real>
       <key>napostrophe.ss03</key>
       <integer>-125</integer>
       <key>quotedblright.ss03</key>
       <integer>-125</integer>
       <key>quoteright.ss03</key>
       <integer>-125</integer>
+      <key>seven</key>
+      <real>-40.0</real>
       <key>seven.osf</key>
       <integer>-40</integer>
     </dict>
@@ -25569,6 +25712,11 @@
       <key>idblgrave</key>
       <integer>23</integer>
     </dict>
+    <key>hyphen.case</key>
+    <dict>
+      <key>Tbar</key>
+      <real>-264.0</real>
+    </dict>
     <key>i</key>
     <dict>
       <key>edblgrave</key>
@@ -27450,6 +27598,10 @@
       <integer>0</integer>
       <key>circumflex</key>
       <integer>68</integer>
+      <key>colon.case</key>
+      <real>0.0</real>
+      <key>colon.ss03.case</key>
+      <real>0.0</real>
       <key>commaturnedmod</key>
       <integer>0</integer>
       <key>currency</key>
@@ -28231,6 +28383,8 @@
       <integer>0</integer>
       <key>circumflex</key>
       <integer>0</integer>
+      <key>colon.case</key>
+      <real>0.0</real>
       <key>commaturnedmod</key>
       <integer>0</integer>
       <key>currency</key>
@@ -28459,6 +28613,8 @@
       <integer>0</integer>
       <key>paragraph</key>
       <integer>0</integer>
+      <key>parenleft.case</key>
+      <real>0.0</real>
       <key>parenleftsuperior</key>
       <integer>5</integer>
       <key>parenright</key>
@@ -31661,6 +31817,8 @@
       <integer>0</integer>
       <key>circumflex</key>
       <integer>68</integer>
+      <key>colon.case</key>
+      <real>0.0</real>
       <key>commaturnedmod</key>
       <integer>0</integer>
       <key>currency</key>
@@ -32096,6 +32254,8 @@
       <integer>0</integer>
       <key>circumflex</key>
       <integer>68</integer>
+      <key>colon.ss03.case</key>
+      <real>0.0</real>
       <key>commaturnedmod</key>
       <integer>0</integer>
       <key>currency</key>
@@ -32813,6 +32973,8 @@
       <integer>0</integer>
       <key>circumflex</key>
       <integer>0</integer>
+      <key>colon.case</key>
+      <real>0.0</real>
       <key>commaturnedmod</key>
       <integer>0</integer>
       <key>currency</key>
@@ -33056,7 +33218,7 @@
       <key>parenleft</key>
       <integer>0</integer>
       <key>parenleft.case</key>
-      <integer>0</integer>
+      <real>0.0</real>
       <key>parenleftsuperior</key>
       <integer>5</integer>
       <key>parenright</key>
@@ -34207,6 +34369,8 @@
       <integer>40</integer>
       <key>circumflex</key>
       <integer>0</integer>
+      <key>colon.case</key>
+      <real>0.0</real>
       <key>commaturnedmod</key>
       <integer>0</integer>
       <key>currency</key>
@@ -34692,6 +34856,8 @@
       <integer>40</integer>
       <key>circumflex</key>
       <integer>0</integer>
+      <key>colon.ss03.case</key>
+      <real>0.0</real>
       <key>commaturnedmod</key>
       <integer>0</integer>
       <key>currency</key>
@@ -35077,6 +35243,8 @@
       <integer>0</integer>
       <key>braceright.case</key>
       <integer>0</integer>
+      <key>bracketleft.case</key>
+      <real>0.0</real>
       <key>bracketright</key>
       <integer>0</integer>
       <key>bracketright.case</key>
@@ -35434,6 +35602,8 @@
       <integer>0</integer>
       <key>braceright.case</key>
       <integer>0</integer>
+      <key>bracketleft.case</key>
+      <real>0.0</real>
       <key>bracketright</key>
       <integer>0</integer>
       <key>bracketright.case</key>
@@ -35797,6 +35967,8 @@
       <integer>0</integer>
       <key>circumflex</key>
       <integer>0</integer>
+      <key>colon.case</key>
+      <real>0.0</real>
       <key>commaturnedmod</key>
       <integer>0</integer>
       <key>currency</key>
@@ -35971,6 +36143,8 @@
       <integer>0</integer>
       <key>paragraph</key>
       <integer>0</integer>
+      <key>parenleft.case</key>
+      <real>0.0</real>
       <key>parenleftsuperior</key>
       <integer>5</integer>
       <key>parenrightsuperior</key>
@@ -37081,6 +37255,10 @@
       <integer>0</integer>
       <key>circumflex</key>
       <integer>9</integer>
+      <key>colon.case</key>
+      <real>0.0</real>
+      <key>colon.ss03.case</key>
+      <real>0.0</real>
       <key>commaturnedmod</key>
       <integer>0</integer>
       <key>currency</key>
@@ -38098,6 +38276,10 @@
       <integer>40</integer>
       <key>circumflex</key>
       <integer>0</integer>
+      <key>colon.case</key>
+      <real>0.0</real>
+      <key>colon.ss03.case</key>
+      <real>0.0</real>
       <key>commaturnedmod</key>
       <integer>0</integer>
       <key>currency</key>
@@ -40283,6 +40465,10 @@
       <integer>0</integer>
       <key>circumflex</key>
       <integer>68</integer>
+      <key>colon.case</key>
+      <real>0.0</real>
+      <key>colon.ss03.case</key>
+      <real>0.0</real>
       <key>commaturnedmod</key>
       <integer>0</integer>
       <key>currency</key>
@@ -41076,6 +41262,8 @@
       <integer>0</integer>
       <key>circumflex</key>
       <integer>0</integer>
+      <key>colon.case</key>
+      <real>0.0</real>
       <key>commaturnedmod</key>
       <integer>0</integer>
       <key>currency</key>
@@ -41319,7 +41507,7 @@
       <key>parenleft</key>
       <integer>0</integer>
       <key>parenleft.case</key>
-      <integer>0</integer>
+      <real>0.0</real>
       <key>parenleftsuperior</key>
       <integer>5</integer>
       <key>parenright</key>
@@ -42471,6 +42659,10 @@
       <integer>40</integer>
       <key>circumflex</key>
       <integer>0</integer>
+      <key>colon.case</key>
+      <real>0.0</real>
+      <key>colon.ss03.case</key>
+      <real>0.0</real>
       <key>commaturnedmod</key>
       <integer>0</integer>
       <key>currency</key>
@@ -42910,6 +43102,8 @@
       <integer>0</integer>
       <key>braceright.case</key>
       <integer>0</integer>
+      <key>bracketleft.case</key>
+      <real>0.0</real>
       <key>bracketright</key>
       <integer>0</integer>
       <key>bracketright.case</key>
@@ -43339,6 +43533,8 @@
       <integer>0</integer>
       <key>braceright.case</key>
       <integer>0</integer>
+      <key>bracketleft.case</key>
+      <real>0.0</real>
       <key>bracketright</key>
       <integer>0</integer>
       <key>bracketright.case</key>
@@ -43904,8 +44100,14 @@
       <integer>20</integer>
       <key>blinebelow</key>
       <integer>20</integer>
+      <key>bracketleft.case</key>
+      <real>0.0</real>
       <key>circumflex</key>
       <integer>90</integer>
+      <key>colon.case</key>
+      <real>0.0</real>
+      <key>colon.ss03.case</key>
+      <real>0.0</real>
       <key>commaturnedmod</key>
       <integer>0</integer>
       <key>currency</key>
@@ -45286,6 +45488,8 @@
     <dict>
       <key>Lslash</key>
       <integer>0</integer>
+      <key>braceleft.case</key>
+      <real>29.0</real>
       <key>dagger</key>
       <integer>32</integer>
       <key>daggerdbl</key>
@@ -45375,6 +45579,8 @@
       <integer>0</integer>
       <key>Lslash</key>
       <integer>0</integer>
+      <key>braceleft.case</key>
+      <real>31.0</real>
       <key>dagger</key>
       <integer>34</integer>
       <key>daggerdbl</key>
@@ -46647,6 +46853,10 @@
       <integer>0</integer>
       <key>braceleft.case</key>
       <integer>0</integer>
+      <key>braceright.case</key>
+      <real>-20.0</real>
+      <key>bracketright.case</key>
+      <real>-20.0</real>
       <key>c</key>
       <integer>0</integer>
       <key>cacute</key>
@@ -46867,6 +47077,8 @@
       <integer>0</integer>
       <key>otildemacron</key>
       <integer>0</integer>
+      <key>parenright.case</key>
+      <real>-20.0</real>
       <key>parenrightsuperior</key>
       <integer>0</integer>
       <key>q</key>
@@ -48019,6 +48231,8 @@
       <integer>0</integer>
       <key>chook</key>
       <integer>0</integer>
+      <key>colon.ss03.case</key>
+      <real>0.0</real>
       <key>currency</key>
       <integer>0</integer>
       <key>d</key>
@@ -49298,8 +49512,22 @@
     </dict>
     <key>parenleft.case</key>
     <dict>
+      <key>Icircumflex</key>
+      <real>0.0</real>
+      <key>Idblgrave</key>
+      <real>0.0</real>
+      <key>Idieresis</key>
+      <real>0.0</real>
+      <key>Idieresisacute</key>
+      <real>0.0</real>
+      <key>Imacron</key>
+      <real>0.0</real>
       <key>florin</key>
       <integer>175</integer>
+      <key>hcircumflex</key>
+      <real>0.0</real>
+      <key>hdieresis</key>
+      <real>0.0</real>
       <key>ibreve</key>
       <integer>0</integer>
       <key>icaron</key>
@@ -56224,6 +56452,8 @@
     </dict>
     <key>uhorn</key>
     <dict>
+      <key>at.case</key>
+      <real>0.0</real>
       <key>euro</key>
       <integer>33</integer>
       <key>parenleftsuperior</key>
@@ -56244,6 +56474,8 @@
     </dict>
     <key>uhorndotbelow</key>
     <dict>
+      <key>at.case</key>
+      <real>0.0</real>
       <key>euro</key>
       <integer>33</integer>
       <key>parenleftsuperior</key>
@@ -56255,6 +56487,8 @@
     </dict>
     <key>uhorndotbelow.ss03</key>
     <dict>
+      <key>at.case</key>
+      <real>0.0</real>
       <key>euro</key>
       <integer>33</integer>
       <key>parenleftsuperior</key>
@@ -56266,6 +56500,8 @@
     </dict>
     <key>uhorngrave</key>
     <dict>
+      <key>at.case</key>
+      <real>0.0</real>
       <key>euro</key>
       <integer>33</integer>
       <key>parenleftsuperior</key>
@@ -56279,6 +56515,8 @@
     </dict>
     <key>uhornhookabove</key>
     <dict>
+      <key>at.case</key>
+      <real>0.0</real>
       <key>euro</key>
       <integer>33</integer>
       <key>parenleftsuperior</key>
@@ -56292,6 +56530,8 @@
     </dict>
     <key>uhorntilde</key>
     <dict>
+      <key>at.case</key>
+      <real>0.0</real>
       <key>euro</key>
       <integer>33</integer>
       <key>parenleftsuperior</key>
