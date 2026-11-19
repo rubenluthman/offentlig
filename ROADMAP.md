@@ -23,6 +23,7 @@
 - [ ] Make the round dots of `ss03` the default and move the square dots to `ss03`, so Offentlig Sans uses the circular dot of IBM Plex, which Offentlig Serif and Mono will adapt. Widths stay the same.
 - [ ] Pairs of `T V W Y` with the narrow `i` and a mark are looser than their gap needs (Regular `Tĩ` is 61 units looser than `Ti` at a gap of 92). Find the cause before changing any value.
 - [ ] Case forms for the other characters that sit low next to capitals: guillemets, `¡ ¿`, the slash and the bullet.
+- [ ] `tests/test_arm_helpers.py` checks 6 of the 24 shorter-arm capitals (`T Ŧ Ť Y Ý Ÿ`). Extend it to all of them, including the `ss03` copies.
 - [ ] Review which alternates should become the default form, which would revisit decision F4 (alternates are opt-in). Do this after every other Offentlig Sans item above.
 
 <!-- vale HouseStyle.Headings = NO -->
@@ -45,8 +46,6 @@
 
 - [ ] Cyrillic, to complete DIN 91379 (see public-sans issue #17). Before drawing, find an OFL font closer to Public Sans than Inter that has Cyrillic, to measure proportions from, and check whether issue #17 points to existing work. Reuse the letters Cyrillic shares with Latin, and build the lowercase letters shaped like small capitals from Offentlig's capitals, with the stroke weight corrected. For the rest, make a first draft: measure stem width, x-height, contrast, width and slant in the reference font and in Offentlig, apply those ratios to the reference font's letters as whole-letter changes, then redraw the curves and stroke ends in Offentlig's details. Check the reference font's licence first.
 - [ ] Greek, to complete DIN 91379 (see public-sans issue #17). Before drawing, find an OFL font closer to Public Sans than Inter that has Greek, to measure proportions from. Reuse the capitals Greek shares with Latin, and draft the rest, above all the lowercase, the same way as Cyrillic: apply the measured ratios to the reference font's letters, then redraw them in Offentlig's details.
-- [ ] `tests/test_arm_helpers.py` checks 6 of the 24 shorter-arm capitals (`T Ŧ Ť Y Ý Ÿ`). Extend it to all of them, including the `ss03` copies.
-
 <!-- vale HouseStyle.Headings = NO -->
 ### Offentlig Serif
 <!-- vale HouseStyle.Headings = YES -->
