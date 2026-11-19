@@ -6,6 +6,7 @@
 ### Offentlig Sans
 <!-- vale HouseStyle.Headings = YES -->
 
+- [ ] The alternate-pair tests hold about 1 GB of pair lists per pytest worker. Work through the pairs in chunks, so each worker uses less memory and more workers can run at once.
 - [x] Audit every design and spacing decision before work on Offentlig Serif and Offentlig Mono starts, since they will reuse these rules (completed in 0.4.0; see [docs/design-decisions.md](docs/design-decisions.md) and `tests/test_diagonal_gaps.py`).
 - [ ] Follow the three fixes this fork carries that Public Sans has not merged yet: uswds/public-sans PRs #396 (italic `å`), #397 (subscript digits) and #398 (Thin kerning of space and dashes). Checked at each release (see the release steps in [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md#releases)).
 - [ ] The shape of the ogonek. Public-sans issue #158 names it without a target, so take one from a reference design, such as Libre Franklin (the source of Public Sans), and check it on the Polish and Lithuanian letters.
@@ -20,6 +21,8 @@
 - [x] Replace the single-pair kerning exceptions added for the narrow double grave with group kerning where the result is the same.
 - [x] Even out `make test`: idle workers now take waiting tests (`--dist worksteal`), and the run uses three workers.
 - [ ] Make the round dots of `ss03` the default and move the square dots to `ss03`, so Offentlig Sans uses the circular dot of IBM Plex, which Offentlig Serif and Mono will adapt. Widths stay the same.
+- [ ] Pairs of `T V W Y` with the narrow `i` and a mark are looser than their gap needs (Regular `Tĩ` is 61 units looser than `Ti` at a gap of 92). Find the cause before changing any value.
+- [ ] Case forms for the other characters that sit low next to capitals: guillemets, `¡ ¿`, the slash and the bullet.
 - [ ] Review which alternates should become the default form, which would revisit decision F4 (alternates are opt-in). Do this after every other Offentlig Sans item above.
 
 <!-- vale HouseStyle.Headings = NO -->
@@ -42,10 +45,6 @@
 
 - [ ] Cyrillic, to complete DIN 91379 (see public-sans issue #17). Before drawing, find an OFL font closer to Public Sans than Inter that has Cyrillic, to measure proportions from, and check whether issue #17 points to existing work. Reuse the letters Cyrillic shares with Latin, and build the lowercase letters shaped like small capitals from Offentlig's capitals, with the stroke weight corrected. For the rest, make a first draft: measure stem width, x-height, contrast, width and slant in the reference font and in Offentlig, apply those ratios to the reference font's letters as whole-letter changes, then redraw the curves and stroke ends in Offentlig's details. Check the reference font's licence first.
 - [ ] Greek, to complete DIN 91379 (see public-sans issue #17). Before drawing, find an OFL font closer to Public Sans than Inter that has Greek, to measure proportions from. Reuse the capitals Greek shares with Latin, and draft the rest, above all the lowercase, the same way as Cyrillic: apply the measured ratios to the reference font's letters, then redraw them in Offentlig's details.
-
-- [ ] Pairs of `T V W Y` with the narrow `i` and a mark are looser than their gap needs (Regular `Tĩ` is 61 units looser than `Ti` at a gap of 92). Find the cause before changing any value.
-- [ ] Case forms for the other characters that sit low next to capitals: guillemets, `¡ ¿`, the slash and the bullet.
-- [ ] The alternate-pair tests hold about 1 GB of pair lists per pytest worker. Working through the pairs in chunks would use less memory and could allow more workers on an 8 GB machine.
 
 <!-- vale HouseStyle.Headings = NO -->
 ### Offentlig Serif
