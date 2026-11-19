@@ -25,6 +25,13 @@ jobs:
           echo "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb  gitleaks.tar.gz" | sha256sum -c -
           tar -xzf gitleaks.tar.gz gitleaks
           sudo mv gitleaks /usr/local/bin/gitleaks
+      - name: Install Vale 3.26.0
+        if: hashFiles('.vale.ini') != ''
+        run: |
+          curl -sSfL -o vale.tar.gz https://github.com/vale-cli/vale/releases/download/v3.26.0/vale_3.26.0_Linux_64-bit.tar.gz
+          echo "22aa69a556558e4a9dfc63c17030777383d8d3c48dcdfad655fa98e839d666ed  vale.tar.gz" | sha256sum -c -
+          tar -xzf vale.tar.gz vale
+          sudo mv vale /usr/local/bin/vale
       - name: Commit checks
         env:
           COMMIT_CHECKS_PRIVATE_NAMES: ${{ secrets.COMMIT_CHECKS_PRIVATE_NAMES }}
