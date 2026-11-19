@@ -70649,9 +70649,9 @@
       <key>ecedillabreve</key>
       <integer>-250</integer>
       <key>edieresis</key>
-      <integer>-250</integer>
+      <integer>-191</integer>
       <key>edieresis.ss03</key>
-      <integer>-250</integer>
+      <integer>-228</integer>
       <key>emacron</key>
       <integer>-250</integer>
       <key>emacronacute</key>
@@ -70669,15 +70669,15 @@
       <key>ocaron</key>
       <integer>-250</integer>
       <key>odieresis</key>
-      <integer>-250</integer>
+      <integer>-184</integer>
       <key>odieresis.ss03</key>
-      <integer>-250</integer>
+      <integer>-221</integer>
       <key>odieresismacron</key>
-      <integer>-250</integer>
+      <integer>-184</integer>
       <key>odieresismacron.ss03</key>
-      <integer>-250</integer>
+      <integer>-221</integer>
       <key>ohorntilde</key>
-      <integer>-250</integer>
+      <integer>-245</integer>
       <key>omacron</key>
       <integer>-250</integer>
       <key>omacronacute</key>
