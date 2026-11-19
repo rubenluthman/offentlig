@@ -25,11 +25,12 @@ Offentlig Sans starts from Public Sans `develop` at `e40fcf567`. Sizes are in fo
 | Italic `å` | Renders as `ǻ` | Renders as `å` |
 | Subscript digits `₀` – `₉` | Drawn, not mapped to U+2080 – U+2089 | Mapped |
 | Spaced en dash | Kerning removes most of the space in every weight except Black | Spaces kept |
+| Spaces U+2007, U+2008, U+2009, U+202F | Missing | Added: figure space (tabular figure width), punctuation space (width of the period), thin space and narrow no-break space; none kerns |
 | Capital `Ǔ` (U+01D3) | Missing | Added |
 | Pinyin and DIN 91379 | Pinyin tone letters, many Latin Extended letters and several combining marks missing | 20 pinyin tone letters, 108 composite letters, drawn Ƈ ƈ Ɨ ɨ Ǥ ǥ Ʒ ʒ and the combining marks they need; stacked marks land where the precomposed letter puts them |
 | Prime marks `′ ″ ‴` and small letters `ʰ ʳ ˢ ᵈ ᵗ ⁿ` | Missing | Added; the letters have the size and stem weight of `ª º` and stand on the baseline of the superior figures, and `sups` sets typed h r s d t n as them after a superior figure, so `1st 2nd 3rd 4th` becomes ¹ˢᵗ ²ⁿᵈ ³ʳᵈ ⁴ᵗʰ |
 | Arrows `← ↑ → ↓ ↖ ↗ ↘ ↙` | Missing | Added, drawn by Wayne Shih for Public Sans |
-| Em dash | Built-in space of 371 per side at Regular, narrowed by a `calt` rule when spaces are typed around it, so both look the same ([#146](https://github.com/uswds/public-sans/issues/146)); the rule fails when the next space is in another element, such as a link ([#151](https://github.com/uswds/public-sans/issues/151)) | Side bearings of the en dash (124) in every context, no `calt` |
+| Em dash | Built-in space of 371 per side at Regular, narrowed by a `calt` rule when spaces are typed around it, so both look the same ([#146](https://github.com/uswds/public-sans/issues/146)); the rule fails when the next space is in another element, such as a link ([#151](https://github.com/uswds/public-sans/issues/151)) | Side bearings of the en dash (124) in every context; no `calt` rule narrows it |
 | Hyphen, dashes, `@` and colon next to capitals and figures (`2026-11-18`, `A–Ö`, `@HEJ`, `12:30`) | At lowercase height, so they look low | Raised to the capital centre by `calt`; `E-post` and `12-tal` keep the low forms. Apps can turn `calt` off |
 | Brackets `( ) [ ] { }` in all-capital text (`(HEJ)`) | At lowercase height, so they look low | Raised to the capital centre by the `case` feature (turn it on for capital text); by default they stay low, so a pair of brackets never mismatches |
 | `A` before `m n r p h b` | Not kerned | Kerned, never tighter than before `o` |
