@@ -9129,6 +9129,8 @@
       <integer>-36</integer>
       <key>icircumflex</key>
       <integer>-90</integer>
+      <key>idblgrave</key>
+      <integer>62</integer>
       <key>idieresis</key>
       <integer>-90</integer>
       <key>idieresis.ss03</key>
@@ -9265,6 +9267,8 @@
       <integer>-40</integer>
       <key>rcaron</key>
       <integer>-90</integer>
+      <key>rdblgrave</key>
+      <integer>-53</integer>
       <key>scaron</key>
       <integer>-60</integer>
       <key>tdieresis</key>
@@ -9277,10 +9281,6 @@
       <integer>0</integer>
       <key>zcaron</key>
       <integer>-50</integer>
-      <key>idblgrave</key>
-      <integer>62</integer>
-      <key>rdblgrave</key>
-      <integer>-53</integer>
     </dict>
     <key>Uhungarumlaut</key>
     <dict>
@@ -10561,6 +10561,8 @@
       <integer>0</integer>
       <key>icaron</key>
       <integer>0</integer>
+      <key>idblgrave</key>
+      <integer>11</integer>
       <key>idotbelow_brevecomb</key>
       <integer>0</integer>
       <key>idotbelow_brevecomb.ss03</key>
@@ -10603,8 +10605,6 @@
       <integer>-50</integer>
       <key>udblgrave</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>11</integer>
     </dict>
     <key>acircumflexacute.cv04</key>
     <dict>
@@ -11012,6 +11012,8 @@
       <integer>0</integer>
       <key>icaron</key>
       <integer>0</integer>
+      <key>idblgrave</key>
+      <integer>4</integer>
       <key>idotbelow_brevecomb</key>
       <integer>0</integer>
       <key>idotbelow_brevecomb.ss03</key>
@@ -11032,8 +11034,6 @@
       <integer>0</integer>
       <key>tdieresis</key>
       <integer>-50</integer>
-      <key>idblgrave</key>
-      <integer>4</integer>
     </dict>
     <key>acircumflexhookabove.cv04</key>
     <dict>
@@ -11082,6 +11082,8 @@
       <integer>0</integer>
       <key>icaron</key>
       <integer>1</integer>
+      <key>idblgrave</key>
+      <integer>18</integer>
       <key>idotbelow_brevecomb</key>
       <integer>0</integer>
       <key>idotbelow_brevecomb.ss03</key>
@@ -11120,8 +11122,6 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>18</integer>
     </dict>
     <key>adieresis</key>
     <dict>
@@ -12267,14 +12267,14 @@
       <integer>0</integer>
       <key>franc</key>
       <integer>0</integer>
+      <key>idblgrave</key>
+      <integer>-20</integer>
       <key>public.kern2.n</key>
       <integer>-20</integer>
       <key>public.kern2.o</key>
       <integer>-10</integer>
       <key>public.kern2.v</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>-20</integer>
       <key>rdblgrave</key>
       <integer>-20</integer>
     </dict>
@@ -12360,6 +12360,8 @@
       <integer>0</integer>
       <key>icaron</key>
       <integer>0</integer>
+      <key>idblgrave</key>
+      <integer>6</integer>
       <key>idotbelow_brevecomb</key>
       <integer>0</integer>
       <key>idotbelow_brevecomb.ss03</key>
@@ -12392,8 +12394,6 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>6</integer>
     </dict>
     <key>caron</key>
     <dict>
@@ -13057,6 +13057,8 @@
       <integer>96</integer>
       <key>icircumflex</key>
       <integer>75</integer>
+      <key>idblgrave</key>
+      <integer>212</integer>
       <key>idieresis</key>
       <integer>27</integer>
       <key>idieresis.ss03</key>
@@ -13141,6 +13143,8 @@
       <integer>0</integer>
       <key>product</key>
       <integer>22</integer>
+      <key>rdblgrave</key>
+      <integer>73</integer>
       <key>ring</key>
       <integer>29</integer>
       <key>rupeeIndian</key>
@@ -13163,10 +13167,6 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>24</integer>
-      <key>idblgrave</key>
-      <integer>212</integer>
-      <key>rdblgrave</key>
-      <integer>73</integer>
     </dict>
     <key>dcedilla</key>
     <dict>
@@ -13838,6 +13838,8 @@
       <integer>83</integer>
       <key>icircumflex</key>
       <integer>0</integer>
+      <key>idblgrave</key>
+      <integer>19</integer>
       <key>idieresis</key>
       <integer>8</integer>
       <key>idotbelow_brevecomb</key>
@@ -13904,15 +13906,13 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>19</integer>
     </dict>
     <key>dotaccent.ss03</key>
     <dict>
       <key>adblgrave</key>
       <integer>0</integer>
       <key>adblgrave.cv04</key>
-      <real>0.0</real>
+      <integer>0</integer>
       <key>braceright</key>
       <integer>0</integer>
       <key>braceright.case</key>
@@ -14331,6 +14331,8 @@
       <integer>0</integer>
       <key>icaron</key>
       <integer>0</integer>
+      <key>idblgrave</key>
+      <integer>2</integer>
       <key>idotbelow_brevecomb</key>
       <integer>0</integer>
       <key>idotbelow_brevecomb.ss03</key>
@@ -14363,8 +14365,6 @@
       <integer>-60</integer>
       <key>udblgrave</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>2</integer>
     </dict>
     <key>ecircumflexdotbelow</key>
     <dict>
@@ -15743,6 +15743,8 @@
       <integer>194</integer>
       <key>icircumflex</key>
       <integer>67</integer>
+      <key>idblgrave</key>
+      <integer>184</integer>
       <key>idieresis</key>
       <integer>128</integer>
       <key>idieresis.ss03</key>
@@ -15857,6 +15859,8 @@
       <integer>-30</integer>
       <key>rcaron</key>
       <integer>142</integer>
+      <key>rdblgrave</key>
+      <integer>151</integer>
       <key>rdotaccent</key>
       <integer>0</integer>
       <key>rdotaccent.ss03</key>
@@ -15929,10 +15933,6 @@
       <integer>0</integer>
       <key>zdotaccent.ss03</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>184</integer>
-      <key>rdblgrave</key>
-      <integer>151</integer>
     </dict>
     <key>franc</key>
     <dict>
@@ -16287,6 +16287,8 @@
       <integer>0</integer>
       <key>icaron</key>
       <integer>0</integer>
+      <key>idblgrave</key>
+      <integer>18</integer>
       <key>idotbelow_brevecomb</key>
       <integer>0</integer>
       <key>idotbelow_brevecomb.ss03</key>
@@ -16325,8 +16327,6 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>18</integer>
     </dict>
     <key>hyphen.case</key>
     <dict>
@@ -16503,6 +16503,8 @@
       <integer>20</integer>
       <key>icaron</key>
       <integer>29</integer>
+      <key>idblgrave</key>
+      <integer>239</integer>
       <key>idieresis</key>
       <integer>20</integer>
       <key>idieresis.ss03</key>
@@ -16567,6 +16569,8 @@
       <integer>-20</integer>
       <key>rcaron</key>
       <integer>20</integer>
+      <key>rdblgrave</key>
+      <integer>67</integer>
       <key>ring</key>
       <integer>10</integer>
       <key>ringhalfright</key>
@@ -16593,10 +16597,6 @@
       <integer>18</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>239</integer>
-      <key>rdblgrave</key>
-      <integer>67</integer>
     </dict>
     <key>ibreve</key>
     <dict>
@@ -17152,6 +17152,8 @@
       <integer>110</integer>
       <key>icircumflex</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>162</integer>
       <key>idieresis</key>
       <integer>60</integer>
       <key>idieresis.ss03</key>
@@ -17398,8 +17400,6 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>8</integer>
-      <key>idblgrave</key>
-      <integer>162</integer>
     </dict>
     <key>icaron</key>
     <dict>
@@ -17567,6 +17567,8 @@
       <integer>109</integer>
       <key>icaron</key>
       <integer>142</integer>
+      <key>idblgrave</key>
+      <integer>189</integer>
       <key>idieresis</key>
       <integer>72</integer>
       <key>idieresis.ss03</key>
@@ -17689,6 +17691,8 @@
       <integer>0</integer>
       <key>rcaron</key>
       <integer>20</integer>
+      <key>rdblgrave</key>
+      <integer>24</integer>
       <key>ring</key>
       <integer>71</integer>
       <key>ringhalfright</key>
@@ -17735,10 +17739,6 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>21</integer>
-      <key>idblgrave</key>
-      <integer>189</integer>
-      <key>rdblgrave</key>
-      <integer>24</integer>
     </dict>
     <key>icircumflex</key>
     <dict>
@@ -18523,6 +18523,45 @@
       <key>zerosuperior</key>
       <integer>31</integer>
     </dict>
+    <key>idblgrave</key>
+    <dict>
+      <key>acute</key>
+      <integer>18</integer>
+      <key>braceright.case</key>
+      <integer>0</integer>
+      <key>bracketleft.case</key>
+      <integer>0</integer>
+      <key>bracketright.case</key>
+      <integer>0</integer>
+      <key>circumflex</key>
+      <integer>26</integer>
+      <key>colon.case</key>
+      <real>0.0</real>
+      <key>colon.ss03.case</key>
+      <real>0.0</real>
+      <key>hungarumlaut</key>
+      <integer>17</integer>
+      <key>icircumflex</key>
+      <integer>69</integer>
+      <key>idblgrave</key>
+      <integer>20</integer>
+      <key>idotbelow_circumflexcomb</key>
+      <integer>69</integer>
+      <key>idotbelow_circumflexcomb.ss03</key>
+      <integer>69</integer>
+      <key>iinvertedbreve</key>
+      <integer>35</integer>
+      <key>istroke_circumflexcomb</key>
+      <integer>69</integer>
+      <key>jcircumflex</key>
+      <integer>49</integer>
+      <key>parenleft.case</key>
+      <real>0.0</real>
+      <key>parenright.case</key>
+      <integer>0</integer>
+      <key>rdblgrave</key>
+      <integer>20</integer>
+    </dict>
     <key>idieresis</key>
     <dict>
       <key>acute</key>
@@ -18571,6 +18610,8 @@
       <integer>74</integer>
       <key>icircumflex</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>132</integer>
       <key>idieresis</key>
       <integer>20</integer>
       <key>idotbelow_brevecomb</key>
@@ -18683,8 +18724,6 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>132</integer>
     </dict>
     <key>idieresis.ss03</key>
     <dict>
@@ -18774,6 +18813,8 @@
       <integer>66</integer>
       <key>icaron</key>
       <integer>72</integer>
+      <key>idblgrave</key>
+      <integer>123</integer>
       <key>idieresis.ss03</key>
       <integer>20</integer>
       <key>idotbelow_brevecomb</key>
@@ -18842,8 +18883,6 @@
       <integer>0</integer>
       <key>udblgrave</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>123</integer>
     </dict>
     <key>idotbelow</key>
     <dict>
@@ -18995,6 +19034,8 @@
       <integer>20</integer>
       <key>icaron</key>
       <integer>29</integer>
+      <key>idblgrave</key>
+      <integer>210</integer>
       <key>idieresis</key>
       <integer>20</integer>
       <key>idotbelow_brevecomb</key>
@@ -19049,6 +19090,8 @@
       <integer>-20</integer>
       <key>rcaron</key>
       <integer>20</integer>
+      <key>rdblgrave</key>
+      <integer>67</integer>
       <key>ring</key>
       <integer>10</integer>
       <key>ringhalfright</key>
@@ -19077,10 +19120,6 @@
       <integer>18</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>210</integer>
-      <key>rdblgrave</key>
-      <integer>67</integer>
     </dict>
     <key>idotbelow_acutecomb.ss03</key>
     <dict>
@@ -19178,6 +19217,8 @@
       <integer>20</integer>
       <key>icaron</key>
       <integer>29</integer>
+      <key>idblgrave</key>
+      <integer>239</integer>
       <key>idieresis.ss03</key>
       <integer>20</integer>
       <key>idotbelow_brevecomb</key>
@@ -19232,6 +19273,8 @@
       <integer>-20</integer>
       <key>rcaron</key>
       <integer>20</integer>
+      <key>rdblgrave</key>
+      <integer>67</integer>
       <key>ring</key>
       <integer>10</integer>
       <key>ringhalfright</key>
@@ -19260,10 +19303,6 @@
       <integer>18</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>239</integer>
-      <key>rdblgrave</key>
-      <integer>67</integer>
     </dict>
     <key>idotbelow_brevecomb</key>
     <dict>
@@ -19707,6 +19746,8 @@
       <integer>110</integer>
       <key>icircumflex</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>133</integer>
       <key>idieresis</key>
       <integer>60</integer>
       <key>idotbelow</key>
@@ -19913,8 +19954,6 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>8</integer>
-      <key>idblgrave</key>
-      <integer>133</integer>
     </dict>
     <key>idotbelow_brevecomb.ss03</key>
     <dict>
@@ -20362,6 +20401,8 @@
       <integer>110</integer>
       <key>icircumflex</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>162</integer>
       <key>idieresis.ss03</key>
       <integer>65</integer>
       <key>idotbelow.ss03</key>
@@ -20560,8 +20601,6 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>8</integer>
-      <key>idblgrave</key>
-      <integer>162</integer>
     </dict>
     <key>idotbelow_caroncomb</key>
     <dict>
@@ -20705,6 +20744,8 @@
       <integer>109</integer>
       <key>icaron</key>
       <integer>142</integer>
+      <key>idblgrave</key>
+      <integer>159</integer>
       <key>idieresis</key>
       <integer>72</integer>
       <key>idotbelow_brevecomb</key>
@@ -20815,6 +20856,8 @@
       <integer>0</integer>
       <key>rcaron</key>
       <integer>20</integer>
+      <key>rdblgrave</key>
+      <integer>24</integer>
       <key>ring</key>
       <integer>71</integer>
       <key>ringhalfright</key>
@@ -20861,10 +20904,6 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>21</integer>
-      <key>idblgrave</key>
-      <integer>159</integer>
-      <key>rdblgrave</key>
-      <integer>24</integer>
     </dict>
     <key>idotbelow_caroncomb.ss03</key>
     <dict>
@@ -21010,6 +21049,8 @@
       <integer>109</integer>
       <key>icaron</key>
       <integer>142</integer>
+      <key>idblgrave</key>
+      <integer>189</integer>
       <key>idieresis.ss03</key>
       <integer>71</integer>
       <key>idotbelow_brevecomb</key>
@@ -21116,6 +21157,8 @@
       <integer>0</integer>
       <key>rcaron</key>
       <integer>20</integer>
+      <key>rdblgrave</key>
+      <integer>24</integer>
       <key>ring</key>
       <integer>71</integer>
       <key>ringhalfright</key>
@@ -21160,10 +21203,6 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>21</integer>
-      <key>idblgrave</key>
-      <integer>189</integer>
-      <key>rdblgrave</key>
-      <integer>24</integer>
     </dict>
     <key>idotbelow_circumflexcomb</key>
     <dict>
@@ -22103,6 +22142,8 @@
       <integer>74</integer>
       <key>icircumflex</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>132</integer>
       <key>idieresis</key>
       <integer>20</integer>
       <key>idotbelow_brevecomb</key>
@@ -22231,8 +22272,6 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>132</integer>
     </dict>
     <key>idotbelow_dieresiscomb.ss03</key>
     <dict>
@@ -22360,6 +22399,8 @@
       <integer>66</integer>
       <key>icaron</key>
       <integer>72</integer>
+      <key>idblgrave</key>
+      <integer>123</integer>
       <key>idotbelow_brevecomb</key>
       <integer>66</integer>
       <key>idotbelow_brevecomb.ss03</key>
@@ -22434,8 +22475,6 @@
       <integer>0</integer>
       <key>udblgrave</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>123</integer>
     </dict>
     <key>idotbelow_gravecomb</key>
     <dict>
@@ -22513,6 +22552,8 @@
       <integer>105</integer>
       <key>icircumflex</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>128</integer>
       <key>idieresis</key>
       <integer>46</integer>
       <key>idotbelow_brevecomb</key>
@@ -22605,8 +22646,6 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>128</integer>
     </dict>
     <key>idotbelow_macroncomb.ss03</key>
     <dict>
@@ -22662,6 +22701,8 @@
       <integer>105</integer>
       <key>icircumflex</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>155</integer>
       <key>idieresis.ss03</key>
       <integer>51</integer>
       <key>idotbelow_brevecomb</key>
@@ -22754,8 +22795,6 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>155</integer>
     </dict>
     <key>idotbelow_tildecomb</key>
     <dict>
@@ -22811,6 +22850,8 @@
       <integer>114</integer>
       <key>icircumflex</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>148</integer>
       <key>idieresis</key>
       <integer>61</integer>
       <key>idotbelow_brevecomb</key>
@@ -22905,8 +22946,6 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>14</integer>
-      <key>idblgrave</key>
-      <integer>148</integer>
     </dict>
     <key>idotbelow_tildecomb.ss03</key>
     <dict>
@@ -22962,6 +23001,8 @@
       <integer>114</integer>
       <key>icircumflex</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>177</integer>
       <key>idieresis.ss03</key>
       <integer>63</integer>
       <key>idotbelow_brevecomb</key>
@@ -23054,8 +23095,6 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>14</integer>
-      <key>idblgrave</key>
-      <integer>177</integer>
     </dict>
     <key>idotlessdieresisacute</key>
     <dict>
@@ -23265,6 +23304,8 @@
       <integer>78</integer>
       <key>icircumflex</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>142</integer>
       <key>idieresis</key>
       <integer>20</integer>
       <key>idotbelow_brevecomb</key>
@@ -23533,8 +23574,6 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>142</integer>
     </dict>
     <key>idotlessdieresisacute.ss03</key>
     <dict>
@@ -23688,6 +23727,8 @@
       <integer>79</integer>
       <key>icircumflex</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>130</integer>
       <key>idieresis.ss03</key>
       <integer>23</integer>
       <key>idotbelow_brevecomb</key>
@@ -23894,8 +23935,6 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>130</integer>
     </dict>
     <key>igrave</key>
     <dict>
@@ -23918,6 +23957,8 @@
       <integer>20</integer>
       <key>icaron</key>
       <integer>22</integer>
+      <key>idblgrave</key>
+      <integer>95</integer>
       <key>idieresis.ss03</key>
       <integer>20</integer>
       <key>idotbelow_brevecomb</key>
@@ -23956,8 +23997,6 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>95</integer>
     </dict>
     <key>iinvertedbreve</key>
     <dict>
@@ -23995,6 +24034,8 @@
       <integer>58</integer>
       <key>icircumflex</key>
       <integer>24</integer>
+      <key>idblgrave</key>
+      <integer>106</integer>
       <key>idieresis</key>
       <integer>39</integer>
       <key>idotbelow_brevecomb</key>
@@ -24077,8 +24118,6 @@
       <integer>16</integer>
       <key>won</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>106</integer>
     </dict>
     <key>ij</key>
     <dict>
@@ -24188,6 +24227,8 @@
       <integer>105</integer>
       <key>icircumflex</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>155</integer>
       <key>idieresis</key>
       <integer>46</integer>
       <key>idieresis.ss03</key>
@@ -24302,8 +24343,6 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>155</integer>
     </dict>
     <key>integral</key>
     <dict>
@@ -24380,6 +24419,8 @@
       <integer>20</integer>
       <key>icircumflex</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>34</integer>
       <key>idotbelow_brevecomb</key>
       <integer>20</integer>
       <key>idotbelow_brevecomb.ss03</key>
@@ -24402,8 +24443,6 @@
       <integer>20</integer>
       <key>udblgrave</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>34</integer>
     </dict>
     <key>iogonek.ss03</key>
     <dict>
@@ -24413,6 +24452,8 @@
       <integer>7</integer>
       <key>ibreve</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>27</integer>
       <key>idotbelow_brevecomb</key>
       <integer>20</integer>
       <key>idotbelow_brevecomb.ss03</key>
@@ -24425,8 +24466,6 @@
       <integer>20</integer>
       <key>rlinebelow</key>
       <integer>20</integer>
-      <key>idblgrave</key>
-      <integer>27</integer>
     </dict>
     <key>istroke</key>
     <dict>
@@ -24598,6 +24637,8 @@
       <integer>20</integer>
       <key>icaron</key>
       <integer>30</integer>
+      <key>idblgrave</key>
+      <integer>239</integer>
       <key>idieresis</key>
       <integer>20</integer>
       <key>idieresis.ss03</key>
@@ -24666,6 +24707,8 @@
       <integer>-20</integer>
       <key>rcaron</key>
       <integer>20</integer>
+      <key>rdblgrave</key>
+      <integer>67</integer>
       <key>ring</key>
       <integer>10</integer>
       <key>ringhalfright</key>
@@ -24692,10 +24735,6 @@
       <integer>18</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>239</integer>
-      <key>rdblgrave</key>
-      <integer>67</integer>
     </dict>
     <key>istroke_brevecomb</key>
     <dict>
@@ -25255,6 +25294,8 @@
       <integer>110</integer>
       <key>icircumflex</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>162</integer>
       <key>idieresis</key>
       <integer>60</integer>
       <key>idieresis.ss03</key>
@@ -25501,8 +25542,6 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>9</integer>
-      <key>idblgrave</key>
-      <integer>162</integer>
     </dict>
     <key>istroke_caroncomb</key>
     <dict>
@@ -25672,6 +25711,8 @@
       <integer>109</integer>
       <key>icaron</key>
       <integer>142</integer>
+      <key>idblgrave</key>
+      <integer>189</integer>
       <key>idieresis</key>
       <integer>72</integer>
       <key>idieresis.ss03</key>
@@ -25794,6 +25835,8 @@
       <integer>0</integer>
       <key>rcaron</key>
       <integer>20</integer>
+      <key>rdblgrave</key>
+      <integer>24</integer>
       <key>ring</key>
       <integer>71</integer>
       <key>ringhalfright</key>
@@ -25840,10 +25883,6 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>21</integer>
-      <key>idblgrave</key>
-      <integer>189</integer>
-      <key>rdblgrave</key>
-      <integer>24</integer>
     </dict>
     <key>istroke_circumflexcomb</key>
     <dict>
@@ -26454,6 +26493,8 @@
       <integer>74</integer>
       <key>icircumflex</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>132</integer>
       <key>idieresis</key>
       <integer>20</integer>
       <key>idotbelow_brevecomb</key>
@@ -26582,8 +26623,6 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>132</integer>
     </dict>
     <key>istroke_dieresiscomb.ss03</key>
     <dict>
@@ -26709,6 +26748,8 @@
       <integer>66</integer>
       <key>icaron</key>
       <integer>72</integer>
+      <key>idblgrave</key>
+      <integer>123</integer>
       <key>idotbelow_brevecomb</key>
       <integer>66</integer>
       <key>idotbelow_brevecomb.ss03</key>
@@ -26783,8 +26824,6 @@
       <integer>0</integer>
       <key>udblgrave</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>123</integer>
     </dict>
     <key>istroke_gravecomb</key>
     <dict>
@@ -26859,6 +26898,8 @@
       <integer>105</integer>
       <key>icircumflex</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>155</integer>
       <key>idieresis</key>
       <integer>46</integer>
       <key>idieresis.ss03</key>
@@ -26973,8 +27014,6 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>155</integer>
     </dict>
     <key>istroke_tildecomb</key>
     <dict>
@@ -27040,6 +27079,8 @@
       <integer>114</integer>
       <key>icircumflex</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>177</integer>
       <key>idieresis</key>
       <integer>60</integer>
       <key>idieresis.ss03</key>
@@ -27156,8 +27197,6 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>14</integer>
-      <key>idblgrave</key>
-      <integer>177</integer>
     </dict>
     <key>itilde</key>
     <dict>
@@ -27223,6 +27262,8 @@
       <integer>114</integer>
       <key>icircumflex</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>177</integer>
       <key>idieresis</key>
       <integer>61</integer>
       <key>idieresis.ss03</key>
@@ -27339,8 +27380,6 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>14</integer>
-      <key>idblgrave</key>
-      <integer>177</integer>
     </dict>
     <key>j</key>
     <dict>
@@ -27930,6 +27969,8 @@
       <integer>108</integer>
       <key>icaron</key>
       <integer>141</integer>
+      <key>idblgrave</key>
+      <integer>188</integer>
       <key>idieresis</key>
       <integer>71</integer>
       <key>idieresis.ss03</key>
@@ -28046,6 +28087,8 @@
       <integer>0</integer>
       <key>rcaron</key>
       <integer>20</integer>
+      <key>rdblgrave</key>
+      <integer>24</integer>
       <key>ring</key>
       <integer>71</integer>
       <key>ringhalfright</key>
@@ -28088,10 +28131,6 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>20</integer>
-      <key>idblgrave</key>
-      <integer>188</integer>
-      <key>rdblgrave</key>
-      <integer>24</integer>
     </dict>
     <key>k</key>
     <dict>
@@ -28448,6 +28487,8 @@
       <integer>33</integer>
       <key>icircumflex</key>
       <integer>14</integer>
+      <key>idblgrave</key>
+      <integer>202</integer>
       <key>idieresis</key>
       <integer>-10</integer>
       <key>idieresis.ss03</key>
@@ -28516,6 +28557,10 @@
       <integer>-40</integer>
       <key>parenright</key>
       <integer>0</integer>
+      <key>parenright.case</key>
+      <integer>0</integer>
+      <key>rdblgrave</key>
+      <integer>8</integer>
       <key>rupeeIndian</key>
       <integer>0</integer>
       <key>tdieresis</key>
@@ -28524,10 +28569,6 @@
       <integer>-50</integer>
       <key>yen</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>202</integer>
-      <key>rdblgrave</key>
-      <integer>8</integer>
     </dict>
     <key>lcaron.ss02</key>
     <dict>
@@ -31756,6 +31797,8 @@
       <integer>0</integer>
       <key>icaron</key>
       <integer>0</integer>
+      <key>idblgrave</key>
+      <integer>110</integer>
       <key>idieresis</key>
       <integer>0</integer>
       <key>idotbelow</key>
@@ -31940,8 +31983,6 @@
       <integer>-20</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>110</integer>
     </dict>
     <key>oinvertedbreve</key>
     <dict>
@@ -32861,6 +32902,8 @@
       <integer>-40</integer>
       <key>public.kern2.hyphen</key>
       <integer>-60</integer>
+      <key>public.kern2.idblgrave</key>
+      <integer>-20</integer>
       <key>public.kern2.n</key>
       <integer>-20</integer>
       <key>public.kern2.o</key>
@@ -32869,6 +32912,8 @@
       <integer>-20</integer>
       <key>public.kern2.quoteright</key>
       <integer>-195</integer>
+      <key>public.kern2.rdblgrave</key>
+      <integer>-20</integer>
       <key>public.kern2.s</key>
       <integer>-30</integer>
       <key>public.kern2.seven</key>
@@ -32884,10 +32929,6 @@
       <key>public.kern2.x</key>
       <integer>-20</integer>
       <key>public.kern2.zero</key>
-      <integer>-20</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>-20</integer>
-      <key>public.kern2.rdblgrave</key>
       <integer>-20</integer>
     </dict>
     <key>public.kern1.B</key>
@@ -33043,12 +33084,16 @@
       <integer>-30</integer>
       <key>public.kern2.hyphen</key>
       <integer>-40</integer>
+      <key>public.kern2.idblgrave</key>
+      <integer>-40</integer>
       <key>public.kern2.n</key>
       <integer>-40</integer>
       <key>public.kern2.o</key>
       <integer>-20</integer>
       <key>public.kern2.period</key>
       <integer>-75</integer>
+      <key>public.kern2.rdblgrave</key>
+      <integer>-40</integer>
       <key>public.kern2.s</key>
       <integer>-30</integer>
       <key>public.kern2.t</key>
@@ -33059,10 +33104,6 @@
       <integer>-30</integer>
       <key>public.kern2.x</key>
       <integer>-30</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>-40</integer>
-      <key>public.kern2.rdblgrave</key>
-      <integer>-40</integer>
     </dict>
     <key>public.kern1.F</key>
     <dict>
@@ -33212,6 +33253,8 @@
       <integer>-42</integer>
       <key>public.kern2.i</key>
       <integer>-42</integer>
+      <key>public.kern2.idblgrave</key>
+      <integer>-42</integer>
       <key>public.kern2.j</key>
       <integer>-42</integer>
       <key>public.kern2.n</key>
@@ -33240,6 +33283,8 @@
       <integer>-42</integer>
       <key>public.kern2.quotesingle</key>
       <integer>-42</integer>
+      <key>public.kern2.rdblgrave</key>
+      <integer>-42</integer>
       <key>public.kern2.s</key>
       <integer>-42</integer>
       <key>public.kern2.seven</key>
@@ -33267,10 +33312,6 @@
       <key>public.kern2.zero.dnom</key>
       <integer>-42</integer>
       <key>public.kern2.zero.numr</key>
-      <integer>-42</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>-42</integer>
-      <key>public.kern2.rdblgrave</key>
       <integer>-42</integer>
     </dict>
     <key>public.kern1.Icv05</key>
@@ -33307,12 +33348,16 @@
       <integer>-75</integer>
       <key>public.kern2.g</key>
       <integer>60</integer>
+      <key>public.kern2.idblgrave</key>
+      <integer>80</integer>
       <key>public.kern2.j</key>
       <integer>80</integer>
       <key>public.kern2.n</key>
       <integer>80</integer>
       <key>public.kern2.o</key>
       <integer>-32</integer>
+      <key>public.kern2.rdblgrave</key>
+      <integer>80</integer>
       <key>public.kern2.s</key>
       <integer>25</integer>
       <key>public.kern2.t</key>
@@ -33322,10 +33367,6 @@
       <key>public.kern2.x</key>
       <integer>80</integer>
       <key>public.kern2.z</key>
-      <integer>80</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>80</integer>
-      <key>public.kern2.rdblgrave</key>
       <integer>80</integer>
     </dict>
     <key>public.kern1.K</key>
@@ -33544,14 +33585,14 @@
       <integer>-80</integer>
       <key>public.kern2.J</key>
       <integer>-20</integer>
+      <key>public.kern2.idblgrave</key>
+      <integer>136</integer>
       <key>ugrave</key>
       <integer>0</integer>
       <key>uhorngrave</key>
       <integer>0</integer>
       <key>ygrave</key>
       <integer>0</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>136</integer>
     </dict>
     <key>public.kern1.Oslash</key>
     <dict>
@@ -33649,21 +33690,21 @@
       <integer>-20</integer>
       <key>public.kern2.hyphen</key>
       <integer>-90</integer>
+      <key>public.kern2.idblgrave</key>
+      <integer>-20</integer>
       <key>public.kern2.n</key>
       <integer>-20</integer>
       <key>public.kern2.o</key>
       <integer>-30</integer>
       <key>public.kern2.period</key>
       <integer>-10</integer>
+      <key>public.kern2.rdblgrave</key>
+      <integer>-20</integer>
       <key>public.kern2.u</key>
       <integer>-20</integer>
       <key>public.kern2.x</key>
       <integer>-20</integer>
       <key>public.kern2.z</key>
-      <integer>-20</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>-20</integer>
-      <key>public.kern2.rdblgrave</key>
       <integer>-20</integer>
     </dict>
     <key>public.kern1.S</key>
@@ -33867,6 +33908,8 @@
       <integer>-115</integer>
       <key>public.kern2.hyphen</key>
       <integer>-185</integer>
+      <key>public.kern2.idblgrave</key>
+      <integer>172</integer>
       <key>public.kern2.j</key>
       <integer>60</integer>
       <key>public.kern2.n</key>
@@ -33877,6 +33920,8 @@
       <integer>-130</integer>
       <key>public.kern2.quoteright</key>
       <integer>60</integer>
+      <key>public.kern2.rdblgrave</key>
+      <integer>-7</integer>
       <key>public.kern2.s</key>
       <integer>-105</integer>
       <key>public.kern2.t</key>
@@ -33903,10 +33948,6 @@
       <integer>-60</integer>
       <key>ygrave</key>
       <integer>-60</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>172</integer>
-      <key>public.kern2.rdblgrave</key>
-      <integer>-7</integer>
     </dict>
     <key>public.kern1.U</key>
     <dict>
@@ -34001,10 +34042,14 @@
       <integer>-60</integer>
       <key>public.kern2.g</key>
       <integer>-100</integer>
+      <key>public.kern2.idblgrave</key>
+      <integer>61</integer>
       <key>public.kern2.n</key>
       <integer>-90</integer>
       <key>public.kern2.o</key>
       <integer>-40</integer>
+      <key>public.kern2.rdblgrave</key>
+      <integer>-54</integer>
       <key>public.kern2.s</key>
       <integer>-60</integer>
       <key>public.kern2.t</key>
@@ -34015,10 +34060,6 @@
       <integer>-45</integer>
       <key>public.kern2.z</key>
       <integer>-50</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>61</integer>
-      <key>public.kern2.rdblgrave</key>
-      <integer>-54</integer>
     </dict>
     <key>public.kern1.V</key>
     <dict>
@@ -34144,6 +34185,8 @@
       <integer>-60</integer>
       <key>public.kern2.hyphen</key>
       <integer>-90</integer>
+      <key>public.kern2.idblgrave</key>
+      <integer>171</integer>
       <key>public.kern2.j</key>
       <integer>60</integer>
       <key>public.kern2.n</key>
@@ -34160,8 +34203,6 @@
       <integer>0</integer>
       <key>udblgrave</key>
       <integer>0</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>171</integer>
     </dict>
     <key>public.kern1.W</key>
     <dict>
@@ -34437,6 +34478,8 @@
       <integer>-90</integer>
       <key>public.kern2.hyphen</key>
       <integer>-155</integer>
+      <key>public.kern2.idblgrave</key>
+      <integer>196</integer>
       <key>public.kern2.n</key>
       <integer>-60</integer>
       <key>public.kern2.o</key>
@@ -34447,6 +34490,8 @@
       <integer>-130</integer>
       <key>public.kern2.quoteright</key>
       <integer>30</integer>
+      <key>public.kern2.rdblgrave</key>
+      <integer>17</integer>
       <key>public.kern2.s</key>
       <integer>-115</integer>
       <key>public.kern2.t</key>
@@ -34483,10 +34528,6 @@
       <integer>-70</integer>
       <key>zcaron</key>
       <integer>-50</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>196</integer>
-      <key>public.kern2.rdblgrave</key>
-      <integer>17</integer>
     </dict>
     <key>public.kern1.Z</key>
     <dict>
@@ -34528,16 +34569,16 @@
       <integer>20</integer>
       <key>public.kern2.hyphen</key>
       <integer>-165</integer>
+      <key>public.kern2.idblgrave</key>
+      <integer>-50</integer>
       <key>public.kern2.n</key>
       <integer>-50</integer>
       <key>public.kern2.o</key>
       <integer>-40</integer>
-      <key>public.kern2.v</key>
-      <integer>-20</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>-50</integer>
       <key>public.kern2.rdblgrave</key>
       <integer>-50</integer>
+      <key>public.kern2.v</key>
+      <integer>-20</integer>
     </dict>
     <key>public.kern1.comma</key>
     <dict>
@@ -34801,6 +34842,15 @@
       <key>rlinebelow</key>
       <integer>0</integer>
     </dict>
+    <key>public.kern1.idblgrave</key>
+    <dict>
+      <key>public.kern2.Icv05</key>
+      <integer>80</integer>
+      <key>public.kern2.n</key>
+      <integer>20</integer>
+      <key>public.kern2.quotesingle</key>
+      <integer>-20</integer>
+    </dict>
     <key>public.kern1.k</key>
     <dict>
       <key>public.kern2.Icv05</key>
@@ -34848,6 +34898,8 @@
       <integer>30</integer>
       <key>public.kern2.hyphen</key>
       <integer>-40</integer>
+      <key>public.kern2.idblgrave</key>
+      <integer>-10</integer>
       <key>public.kern2.n</key>
       <integer>-10</integer>
       <key>public.kern2.o</key>
@@ -34856,6 +34908,8 @@
       <integer>-115</integer>
       <key>public.kern2.quotesingle</key>
       <integer>-115</integer>
+      <key>public.kern2.rdblgrave</key>
+      <integer>-10</integer>
       <key>public.kern2.s</key>
       <integer>-40</integer>
       <key>public.kern2.t</key>
@@ -34866,10 +34920,6 @@
       <integer>-30</integer>
       <key>public.kern2.z</key>
       <integer>10</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>-10</integer>
-      <key>public.kern2.rdblgrave</key>
-      <integer>-10</integer>
     </dict>
     <key>public.kern1.n</key>
     <dict>
@@ -35071,12 +35121,16 @@
       <integer>-185</integer>
       <key>public.kern2.a</key>
       <integer>-115</integer>
+      <key>public.kern2.idblgrave</key>
+      <integer>-40</integer>
       <key>public.kern2.n</key>
       <integer>-40</integer>
       <key>public.kern2.o</key>
       <integer>-115</integer>
       <key>public.kern2.period</key>
       <integer>-175</integer>
+      <key>public.kern2.rdblgrave</key>
+      <integer>-40</integer>
       <key>public.kern2.s</key>
       <integer>-115</integer>
       <key>public.kern2.v</key>
@@ -35085,10 +35139,6 @@
       <integer>-60</integer>
       <key>space</key>
       <integer>-70</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>-40</integer>
-      <key>public.kern2.rdblgrave</key>
-      <integer>-40</integer>
     </dict>
     <key>public.kern1.quotesingle</key>
     <dict>
@@ -35116,10 +35166,14 @@
       <integer>-135</integer>
       <key>public.kern2.g</key>
       <integer>-135</integer>
+      <key>public.kern2.idblgrave</key>
+      <integer>-115</integer>
       <key>public.kern2.n</key>
       <integer>-115</integer>
       <key>public.kern2.o</key>
       <integer>-135</integer>
+      <key>public.kern2.rdblgrave</key>
+      <integer>-115</integer>
       <key>public.kern2.s</key>
       <integer>-175</integer>
       <key>public.kern2.t</key>
@@ -35130,10 +35184,6 @@
       <integer>-60</integer>
       <key>public.kern2.z</key>
       <integer>-60</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>-115</integer>
-      <key>public.kern2.rdblgrave</key>
-      <integer>-115</integer>
     </dict>
     <key>public.kern1.r</key>
     <dict>
@@ -35149,6 +35199,37 @@
       <integer>-145</integer>
       <key>public.kern2.n</key>
       <integer>0</integer>
+      <key>public.kern2.o</key>
+      <integer>-30</integer>
+      <key>public.kern2.parenright</key>
+      <integer>-30</integer>
+      <key>public.kern2.period</key>
+      <integer>-185</integer>
+      <key>public.kern2.quoteright</key>
+      <integer>10</integer>
+      <key>public.kern2.s</key>
+      <integer>-10</integer>
+      <key>public.kern2.t</key>
+      <integer>-50</integer>
+      <key>public.kern2.v</key>
+      <integer>30</integer>
+      <key>public.kern2.x</key>
+      <integer>30</integer>
+      <key>public.kern2.z</key>
+      <integer>20</integer>
+    </dict>
+    <key>public.kern1.rdblgrave</key>
+    <dict>
+      <key>public.kern2.Icv05</key>
+      <integer>-75</integer>
+      <key>public.kern2.a</key>
+      <integer>-50</integer>
+      <key>public.kern2.comma</key>
+      <integer>-80</integer>
+      <key>public.kern2.g</key>
+      <integer>-50</integer>
+      <key>public.kern2.hyphen</key>
+      <integer>-145</integer>
       <key>public.kern2.o</key>
       <integer>-30</integer>
       <key>public.kern2.parenright</key>
@@ -35213,6 +35294,8 @@
       <integer>-60</integer>
       <key>public.kern2.four</key>
       <integer>-80</integer>
+      <key>public.kern2.idblgrave</key>
+      <integer>-30</integer>
       <key>public.kern2.n</key>
       <integer>-30</integer>
       <key>public.kern2.nine</key>
@@ -35225,6 +35308,8 @@
       <integer>60</integer>
       <key>public.kern2.period</key>
       <integer>-255</integer>
+      <key>public.kern2.rdblgrave</key>
+      <integer>-30</integer>
       <key>public.kern2.seven</key>
       <integer>40</integer>
       <key>public.kern2.sevenosf</key>
@@ -35235,10 +35320,6 @@
       <integer>-60</integer>
       <key>public.kern2.zero.numr</key>
       <integer>80</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>-30</integer>
-      <key>public.kern2.rdblgrave</key>
-      <integer>-30</integer>
     </dict>
     <key>public.kern1.six</key>
     <dict>
@@ -35279,14 +35360,14 @@
     </dict>
     <key>public.kern1.tk01T0</key>
     <dict>
-      <key>public.kern2.n</key>
-      <integer>15</integer>
-      <key>public.kern2.s</key>
-      <integer>-105</integer>
       <key>public.kern2.idblgrave</key>
+      <integer>15</integer>
+      <key>public.kern2.n</key>
       <integer>15</integer>
       <key>public.kern2.rdblgrave</key>
       <integer>15</integer>
+      <key>public.kern2.s</key>
+      <integer>-105</integer>
     </dict>
     <key>public.kern1.tk01V0</key>
     <dict>
@@ -35297,70 +35378,70 @@
     <dict>
       <key>public.kern2.a</key>
       <integer>-100</integer>
+      <key>public.kern2.idblgrave</key>
+      <integer>-5</integer>
       <key>public.kern2.n</key>
       <integer>-5</integer>
       <key>public.kern2.o</key>
       <integer>-60</integer>
-      <key>public.kern2.s</key>
-      <integer>-115</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>-5</integer>
       <key>public.kern2.rdblgrave</key>
       <integer>-5</integer>
+      <key>public.kern2.s</key>
+      <integer>-115</integer>
     </dict>
     <key>public.kern1.tk02T0</key>
     <dict>
+      <key>public.kern2.idblgrave</key>
+      <integer>33</integer>
       <key>public.kern2.n</key>
       <integer>33</integer>
       <key>public.kern2.o</key>
       <integer>-125</integer>
-      <key>public.kern2.s</key>
-      <integer>-105</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>33</integer>
       <key>public.kern2.rdblgrave</key>
       <integer>33</integer>
+      <key>public.kern2.s</key>
+      <integer>-105</integer>
     </dict>
     <key>public.kern1.tk02V0</key>
     <dict>
+      <key>public.kern2.idblgrave</key>
+      <integer>34</integer>
       <key>public.kern2.n</key>
       <integer>34</integer>
       <key>public.kern2.o</key>
       <integer>-70</integer>
-      <key>public.kern2.s</key>
-      <integer>-10</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>34</integer>
       <key>public.kern2.rdblgrave</key>
       <integer>34</integer>
+      <key>public.kern2.s</key>
+      <integer>-10</integer>
     </dict>
     <key>public.kern1.tk02Y0</key>
     <dict>
       <key>public.kern2.a</key>
       <integer>-100</integer>
+      <key>public.kern2.idblgrave</key>
+      <integer>59</integer>
       <key>public.kern2.n</key>
       <integer>59</integer>
       <key>public.kern2.o</key>
       <integer>-60</integer>
+      <key>public.kern2.rdblgrave</key>
+      <integer>59</integer>
       <key>public.kern2.s</key>
       <integer>-115</integer>
       <key>public.kern2.u</key>
       <integer>-60</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>59</integer>
-      <key>public.kern2.rdblgrave</key>
-      <integer>59</integer>
     </dict>
     <key>public.kern1.tk03T0</key>
     <dict>
-      <key>public.kern2.n</key>
-      <integer>3</integer>
-      <key>public.kern2.s</key>
-      <integer>-105</integer>
       <key>public.kern2.idblgrave</key>
+      <integer>3</integer>
+      <key>public.kern2.n</key>
       <integer>3</integer>
       <key>public.kern2.rdblgrave</key>
       <integer>3</integer>
+      <key>public.kern2.s</key>
+      <integer>-105</integer>
     </dict>
     <key>public.kern1.tk03V0</key>
     <dict>
@@ -35369,16 +35450,16 @@
     </dict>
     <key>public.kern1.tk03Y0</key>
     <dict>
+      <key>public.kern2.idblgrave</key>
+      <integer>-29</integer>
       <key>public.kern2.n</key>
       <integer>-29</integer>
       <key>public.kern2.o</key>
       <integer>-60</integer>
-      <key>public.kern2.s</key>
-      <integer>-115</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>-29</integer>
       <key>public.kern2.rdblgrave</key>
       <integer>-29</integer>
+      <key>public.kern2.s</key>
+      <integer>-115</integer>
     </dict>
     <key>public.kern1.two</key>
     <dict>
@@ -35429,12 +35510,12 @@
       <integer>80</integer>
       <key>public.kern2.a</key>
       <integer>0</integer>
+      <key>public.kern2.idblgrave</key>
+      <integer>20</integer>
       <key>public.kern2.n</key>
       <integer>20</integer>
       <key>public.kern2.quotesingle</key>
       <integer>-20</integer>
-      <key>public.kern2.idblgrave</key>
-      <integer>20</integer>
       <key>public.kern2.rdblgrave</key>
       <integer>20</integer>
     </dict>
@@ -36101,6 +36182,8 @@
       <integer>0</integer>
       <key>icaron</key>
       <integer>0</integer>
+      <key>idblgrave</key>
+      <integer>172</integer>
       <key>idieresis</key>
       <integer>0</integer>
       <key>idieresis.ss03</key>
@@ -36159,6 +36242,8 @@
       <integer>0</integer>
       <key>rcaron</key>
       <integer>0</integer>
+      <key>rdblgrave</key>
+      <integer>2</integer>
       <key>ring</key>
       <integer>0</integer>
       <key>ringhalfright</key>
@@ -36183,10 +36268,6 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>172</integer>
-      <key>rdblgrave</key>
-      <integer>2</integer>
     </dict>
     <key>radical</key>
     <dict>
@@ -36409,6 +36490,8 @@
       <integer>0</integer>
       <key>icaron</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>72</integer>
       <key>idieresis</key>
       <integer>0</integer>
       <key>idotbelow_brevecomb</key>
@@ -36453,8 +36536,6 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>72</integer>
     </dict>
     <key>rcommaaccent</key>
     <dict>
@@ -36471,6 +36552,13 @@
       <integer>0</integer>
       <key>periodcentered.ss03</key>
       <integer>-185</integer>
+    </dict>
+    <key>rdblgrave</key>
+    <dict>
+      <key>braceright.case</key>
+      <integer>-30</integer>
+      <key>parenright.case</key>
+      <integer>-30</integer>
     </dict>
     <key>rdotaccent</key>
     <dict>
@@ -36973,6 +37061,8 @@
       <integer>0</integer>
       <key>icaron</key>
       <integer>0</integer>
+      <key>idblgrave</key>
+      <integer>52</integer>
       <key>idotbelow_brevecomb</key>
       <integer>0</integer>
       <key>idotbelow_brevecomb.ss03</key>
@@ -37003,8 +37093,6 @@
       <integer>0</integer>
       <key>udblgrave</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>52</integer>
     </dict>
     <key>scaron</key>
     <dict>
@@ -37629,6 +37717,8 @@
       <integer>0</integer>
       <key>icircumflex</key>
       <integer>0</integer>
+      <key>idblgrave</key>
+      <integer>56</integer>
       <key>idotbelow_brevecomb</key>
       <integer>0</integer>
       <key>idotbelow_brevecomb.ss03</key>
@@ -37665,8 +37755,6 @@
       <integer>-100</integer>
       <key>udblgrave</key>
       <integer>-10</integer>
-      <key>idblgrave</key>
-      <integer>56</integer>
     </dict>
     <key>tcedilla</key>
     <dict>
@@ -38412,6 +38500,8 @@
       <integer>20</integer>
       <key>icaron</key>
       <integer>20</integer>
+      <key>idblgrave</key>
+      <integer>92</integer>
       <key>idieresis</key>
       <integer>20</integer>
       <key>idieresis.ss03</key>
@@ -38492,8 +38582,6 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>92</integer>
     </dict>
     <key>underscore</key>
     <dict>
@@ -38753,6 +38841,8 @@
       <integer>-10</integer>
       <key>icaron</key>
       <integer>0</integer>
+      <key>idblgrave</key>
+      <integer>12</integer>
       <key>idotbelow_caroncomb</key>
       <integer>0</integer>
       <key>idotbelow_caroncomb.ss03</key>
@@ -38765,8 +38855,6 @@
       <integer>0</integer>
       <key>odblgrave</key>
       <integer>-10</integer>
-      <key>idblgrave</key>
-      <integer>12</integer>
     </dict>
     <key>ycircumflex</key>
     <dict>
@@ -39119,6 +39207,8 @@
       <integer>0</integer>
       <key>icaron</key>
       <integer>0</integer>
+      <key>idblgrave</key>
+      <integer>62</integer>
       <key>idotbelow_brevecomb</key>
       <integer>0</integer>
       <key>idotbelow_brevecomb.ss03</key>
@@ -39149,8 +39239,6 @@
       <integer>0</integer>
       <key>udblgrave</key>
       <integer>0</integer>
-      <key>idblgrave</key>
-      <integer>62</integer>
     </dict>
     <key>zcaron</key>
     <dict>
@@ -39290,71 +39378,6 @@
       <integer>0</integer>
       <key>rlinebelow</key>
       <integer>0</integer>
-    </dict>
-    <key>public.kern1.idblgrave</key>
-    <dict>
-      <key>public.kern2.Icv05</key>
-      <integer>80</integer>
-      <key>public.kern2.n</key>
-      <integer>20</integer>
-      <key>public.kern2.quotesingle</key>
-      <integer>-20</integer>
-    </dict>
-    <key>idblgrave</key>
-    <dict>
-      <key>acute</key>
-      <integer>18</integer>
-      <key>icircumflex</key>
-      <integer>69</integer>
-      <key>idotbelow_circumflexcomb</key>
-      <integer>69</integer>
-      <key>idotbelow_circumflexcomb.ss03</key>
-      <integer>69</integer>
-      <key>iinvertedbreve</key>
-      <integer>35</integer>
-      <key>istroke_circumflexcomb</key>
-      <integer>69</integer>
-      <key>circumflex</key>
-      <integer>26</integer>
-      <key>hungarumlaut</key>
-      <integer>17</integer>
-      <key>jcircumflex</key>
-      <integer>49</integer>
-      <key>idblgrave</key>
-      <integer>20</integer>
-      <key>rdblgrave</key>
-      <integer>20</integer>
-    </dict>
-    <key>public.kern1.rdblgrave</key>
-    <dict>
-      <key>public.kern2.Icv05</key>
-      <integer>-75</integer>
-      <key>public.kern2.a</key>
-      <integer>-50</integer>
-      <key>public.kern2.o</key>
-      <integer>-30</integer>
-      <key>public.kern2.parenright</key>
-      <integer>-30</integer>
-      <key>public.kern2.period</key>
-      <integer>-185</integer>
-      <key>public.kern2.hyphen</key>
-      <integer>-145</integer>
-      <key>public.kern2.t</key>
-      <integer>-50</integer>
-      <key>public.kern2.g</key>
-      <integer>-50</integer>
-      <key>public.kern2.quoteright</key>
-      <integer>10</integer>
-      <key>public.kern2.comma</key>
-      <integer>-80</integer>
-      <key>public.kern2.s</key>
-      <integer>-10</integer>
-      <key>public.kern2.v</key>
-      <integer>30</integer>
-      <key>public.kern2.x</key>
-      <integer>30</integer>
-      <key>public.kern2.z</key>
-      <integer>20</integer>
     </dict>
   </dict>
 </plist>
