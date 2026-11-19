@@ -1,0 +1,24 @@
+{
+  "version": "v0.1.1",
+  "commit": "0935eb0f9cfe1e34a440b64b5aba907e0b4e1d2e",
+  "source": "https://github.com/rubenluthman/commit-checks.git",
+  "visibility": "public",
+  "email_allow": [],
+  "allow": [
+    {
+      "rule": "emails",
+      "path": "AUTHORS.txt",
+      "reason": "upstream font authors' addresses, credited in the open-source project files they came with"
+    },
+    {
+      "rule": "emails",
+      "path": "CONTRIBUTORS.txt",
+      "reason": "upstream contributors' addresses, credited in the open-source project files they came with"
+    },
+    {
+      "rule": "generic-api-key",
+      "path": "sources/*.ufo/kerning.plist",
+      "reason": "long glyph names in kerning pairs look like random keys; the files hold no secrets"
+    }
+  ]
+}

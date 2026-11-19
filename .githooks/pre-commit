@@ -1,0 +1,5 @@
+#!/bin/sh
+# Shared commit checks first; this repository's own fast checks go below the marker.
+root=$(git rev-parse --show-toplevel) || exit 1
+"$root/scripts/commit-checks" pre-commit || exit 1
+# --- repository checks ---

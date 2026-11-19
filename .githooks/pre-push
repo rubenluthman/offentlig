@@ -1,0 +1,4 @@
+#!/bin/sh
+root=$(git rev-parse --show-toplevel) || exit 1
+"$root/scripts/commit-checks" pre-push || exit 1
+# --- repository checks ---

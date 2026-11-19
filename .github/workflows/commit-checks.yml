@@ -1,0 +1,38 @@
+name: commit-checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+      - name: Install gitleaks 8.30.1
+        run: |
+          curl -sSfL -o gitleaks.tar.gz https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz
+          echo "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb  gitleaks.tar.gz" | sha256sum -c -
+          tar -xzf gitleaks.tar.gz gitleaks
+          sudo mv gitleaks /usr/local/bin/gitleaks
+      - name: Commit checks
+        env:
+          COMMIT_CHECKS_PRIVATE_NAMES: ${{ secrets.COMMIT_CHECKS_PRIVATE_NAMES }}
+          GITHUB_TOKEN: ${{ github.token }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          zeros=0000000000000000000000000000000000000000
+          if [ -n "$BASE_SHA" ] && [ "$BASE_SHA" != "$zeros" ]; then
+            export COMMIT_CHECKS_RANGE="$BASE_SHA..${{ github.event.pull_request.head.sha || github.sha }}"
+          fi
+          scripts/commit-checks ci

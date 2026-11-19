@@ -14,7 +14,7 @@ Makefile                           venv, build, test, qa, proof, diff-public-san
 requirements.txt, requirements-qa.txt   Python dependencies for the build and for QA
 scripts/verify_commit.sh           pre-commit verification
 scripts/check_prose.sh             house style check (Vale), run by verify_commit.sh and prose.yaml
-scripts/check_conflict_markers.sh  fails on leftover git conflict markers, run by verify_commit.sh and prose.yaml
+scripts/commit-checks              loader for the shared commit-checks package: secrets, home paths, emails, private names, conflict markers, hooks (pinned in .commit-checks.json)
 scripts/release_notes.sh           CHANGELOG.md section for one version, used as the release notes
 scripts/proof_page.py              tester page from docs/proof/allemansratten.txt (make proof)
 scripts/specimen.py                docs/specimen.png and the social preview (make specimen, make social-preview)

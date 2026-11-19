@@ -1,5 +1,5 @@
 #!/bin/sh
-# Pre-commit verification: tests, relative Markdown links, house style (Vale), conflict markers, absolute home paths and secrets.
+# Pre-commit verification: tests, relative Markdown links, house style (Vale) and the shared commit checks.
 set -eu
 cd "$(dirname "$0")/.."
 fail=0
@@ -32,12 +32,7 @@ done
 echo "== house style (Vale)"
 ./scripts/check_prose.sh || fail=1
 
-echo "== conflict markers"
-./scripts/check_conflict_markers.sh || fail=1
-
-echo "== absolute home paths and secrets"
-if echo "$files" | grep -v '^scripts/verify_commit.sh$' | xargs grep -I -n -E '/Users/[A-Za-z0-9_.-]+|/home/[A-Za-z0-9_.-]+|gh[pousr]_[A-Za-z0-9]{20,}|AKIA[0-9A-Z]{16}|BEGIN (RSA |OPENSSH |EC )?PRIVATE KEY|sk-[A-Za-z0-9]{20,}' ; then
-  fail=1
-fi
+echo "== shared commit checks (secrets, home paths, emails, private names, conflict markers, hooks)"
+./scripts/commit-checks verify || fail=1
 
 [ "$fail" -eq 0 ] && echo "verify: ok" || { echo "verify: FAILED" >&2; exit 1; }
