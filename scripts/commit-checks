@@ -20,9 +20,13 @@ def die(message):
     sys.exit(2)
 
 
-def git(args, cwd=None):
+def git(args, cwd=None, clean=False):
+    env = None
+    if clean:
+        # A hook exports GIT_DIR without GIT_WORK_TREE, which makes rev-parse answer the wrong folder.
+        env = {k: v for k, v in os.environ.items() if k not in ("GIT_DIR", "GIT_WORK_TREE", "GIT_INDEX_FILE")}
     try:
-        proc = subprocess.run(["git"] + args, cwd=cwd, capture_output=True, timeout=300)
+        proc = subprocess.run(["git"] + args, cwd=cwd, capture_output=True, timeout=300, env=env)
     except (OSError, subprocess.TimeoutExpired) as exc:
         die("git failed: %s" % exc)
     return proc.returncode, proc.stdout.decode("utf-8", "replace").strip(), proc.stderr.decode("utf-8", "replace").strip()
@@ -52,9 +56,11 @@ def export(repo, commit, dest):
 
 def main():
     here = os.path.dirname(os.path.abspath(__file__))
-    code, root, _ = git(["rev-parse", "--show-toplevel"], cwd=here)
+    code, root, _ = git(["rev-parse", "--show-toplevel"], cwd=here, clean=True)
     if code != 0 or not root:
         die("not inside a git repository")
+    if os.path.realpath(here) != os.path.realpath(os.path.join(root, "scripts")):
+        die("this loader must live at <repository root>/scripts/commit-checks")
     try:
         with open(os.path.join(root, ".commit-checks.json"), encoding="utf-8") as fh:
             settings = json.load(fh)
@@ -63,7 +69,7 @@ def main():
         die("cannot read version and commit from .commit-checks.json: %s" % exc)
     if len(commit) != 40 or any(c not in "0123456789abcdef" for c in commit):
         die("settings: commit must be a full 40-character commit ID")
-    _c, common, _e = git(["rev-parse", "--git-common-dir"], cwd=root)
+    _c, common, _e = git(["rev-parse", "--git-common-dir"], cwd=root, clean=True)
     common = common if os.path.isabs(common) else os.path.normpath(os.path.join(root, common))
     cache = os.path.join(common, "commit-checks", commit)
     marker = os.path.join(cache, ".commit")
