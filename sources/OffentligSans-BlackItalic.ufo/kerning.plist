@@ -7962,6 +7962,10 @@
       <integer>92</integer>
       <key>bdotaccent</key>
       <integer>10</integer>
+      <key>braceright.case</key>
+      <real>98.0</real>
+      <key>bracketright.case</key>
+      <real>40.0</real>
       <key>edblgrave</key>
       <integer>17</integer>
       <key>hcircumflex</key>
@@ -8032,6 +8036,8 @@
       <integer>24</integer>
       <key>onesuperior</key>
       <integer>18</integer>
+      <key>parenright.case</key>
+      <real>92.0</real>
       <key>ring</key>
       <integer>15</integer>
       <key>sevensuperior</key>
@@ -19426,6 +19432,24 @@
       <real>-92.0</real>
       <key>Tbar</key>
       <real>-92.0</real>
+      <key>Tcaron</key>
+      <real>-92.0</real>
+      <key>Tcedilla</key>
+      <real>-92.0</real>
+      <key>Tcommaaccent</key>
+      <real>-92.0</real>
+      <key>Tcommaaccent.ss03</key>
+      <real>-92.0</real>
+      <key>Tdotaccent</key>
+      <real>-92.0</real>
+      <key>Tdotaccent.ss03</key>
+      <real>-92.0</real>
+      <key>Tdotbelow</key>
+      <real>-92.0</real>
+      <key>Tdotbelow.ss03</key>
+      <real>-92.0</real>
+      <key>Tlinebelow</key>
+      <real>-92.0</real>
       <key>icircumflex</key>
       <real>26.0</real>
       <key>idieresis</key>
@@ -20817,6 +20841,18 @@
       <real>-111.0</real>
       <key>Tbar</key>
       <real>-111.0</real>
+      <key>Tcaron</key>
+      <real>-111.0</real>
+      <key>Tcedilla</key>
+      <real>-111.0</real>
+      <key>Tcommaaccent</key>
+      <real>-111.0</real>
+      <key>Tdotaccent</key>
+      <real>-111.0</real>
+      <key>Tdotbelow</key>
+      <real>-111.0</real>
+      <key>Tlinebelow</key>
+      <real>-111.0</real>
       <key>icircumflex</key>
       <real>32.0</real>
       <key>idieresis</key>
@@ -20864,6 +20900,18 @@
       <key>T</key>
       <real>-114.0</real>
       <key>Tbar</key>
+      <real>-114.0</real>
+      <key>Tcaron</key>
+      <real>-114.0</real>
+      <key>Tcedilla</key>
+      <real>-114.0</real>
+      <key>Tcommaaccent.ss03</key>
+      <real>-114.0</real>
+      <key>Tdotaccent.ss03</key>
+      <real>-114.0</real>
+      <key>Tdotbelow.ss03</key>
+      <real>-114.0</real>
+      <key>Tlinebelow</key>
       <real>-114.0</real>
       <key>napostrophe.ss03</key>
       <integer>-156</integer>
@@ -23872,6 +23920,11 @@
       <key>istroke_dieresiscomb</key>
       <integer>61</integer>
     </dict>
+    <key>endash.case</key>
+    <dict>
+      <key>seven.osf</key>
+      <real>-109.0</real>
+    </dict>
     <key>eng</key>
     <dict>
       <key>florin</key>
@@ -26119,6 +26172,8 @@
     <dict>
       <key>Tbar</key>
       <real>-234.0</real>
+      <key>seven.osf</key>
+      <real>-107.0</real>
     </dict>
     <key>i</key>
     <dict>
@@ -46157,6 +46212,8 @@
       <integer>35</integer>
       <key>Lslash</key>
       <integer>48</integer>
+      <key>braceleft.case</key>
+      <real>12.0</real>
       <key>dagger</key>
       <integer>0</integer>
       <key>daggerdbl</key>

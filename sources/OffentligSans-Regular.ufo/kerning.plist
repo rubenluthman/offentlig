@@ -4810,6 +4810,12 @@
       <integer>16</integer>
       <key>bdotaccent</key>
       <integer>0</integer>
+      <key>braceright.case</key>
+      <real>69.0</real>
+      <key>bracketleft.case</key>
+      <real>0.0</real>
+      <key>bracketright.case</key>
+      <real>54.0</real>
       <key>edblgrave</key>
       <integer>0</integer>
       <key>hcircumflex</key>
@@ -4842,6 +4848,8 @@
       <integer>0</integer>
       <key>onesuperior</key>
       <integer>18</integer>
+      <key>parenright.case</key>
+      <real>49.0</real>
       <key>parenrightsuperior</key>
       <integer>0</integer>
       <key>ring</key>
@@ -10676,6 +10684,8 @@
       <integer>0</integer>
       <key>kcaron</key>
       <integer>0</integer>
+      <key>parenright.case</key>
+      <real>0.0</real>
       <key>parenrightsuperior</key>
       <integer>0</integer>
       <key>sevensuperior</key>
@@ -11555,6 +11565,24 @@
       <key>T</key>
       <real>-185.0</real>
       <key>Tbar</key>
+      <real>-185.0</real>
+      <key>Tcaron</key>
+      <real>-185.0</real>
+      <key>Tcedilla</key>
+      <real>-185.0</real>
+      <key>Tcommaaccent</key>
+      <real>-185.0</real>
+      <key>Tcommaaccent.ss03</key>
+      <real>-185.0</real>
+      <key>Tdotaccent</key>
+      <real>-185.0</real>
+      <key>Tdotaccent.ss03</key>
+      <real>-185.0</real>
+      <key>Tdotbelow</key>
+      <real>-185.0</real>
+      <key>Tdotbelow.ss03</key>
+      <real>-185.0</real>
+      <key>Tlinebelow</key>
       <real>-185.0</real>
       <key>icircumflex</key>
       <real>0.0</real>
@@ -12737,6 +12765,18 @@
       <real>-121.0</real>
       <key>Tbar</key>
       <real>-121.0</real>
+      <key>Tcaron</key>
+      <real>-121.0</real>
+      <key>Tcedilla</key>
+      <real>-121.0</real>
+      <key>Tcommaaccent</key>
+      <real>-121.0</real>
+      <key>Tdotaccent</key>
+      <real>-121.0</real>
+      <key>Tdotbelow</key>
+      <real>-121.0</real>
+      <key>Tlinebelow</key>
+      <real>-121.0</real>
       <key>icircumflex</key>
       <real>0.0</real>
       <key>idotbelow_circumflexcomb</key>
@@ -12772,6 +12812,18 @@
       <key>T</key>
       <real>-121.0</real>
       <key>Tbar</key>
+      <real>-121.0</real>
+      <key>Tcaron</key>
+      <real>-121.0</real>
+      <key>Tcedilla</key>
+      <real>-121.0</real>
+      <key>Tcommaaccent.ss03</key>
+      <real>-121.0</real>
+      <key>Tdotaccent.ss03</key>
+      <real>-121.0</real>
+      <key>Tdotbelow.ss03</key>
+      <real>-121.0</real>
+      <key>Tlinebelow</key>
       <real>-121.0</real>
       <key>icircumflex</key>
       <real>0.0</real>
@@ -13910,7 +13962,7 @@
       <key>adblgrave</key>
       <integer>0</integer>
       <key>adblgrave.cv04</key>
-      <integer>18</integer>
+      <real>18.0</real>
       <key>braceright</key>
       <integer>0</integer>
       <key>braceright.case</key>
@@ -14901,6 +14953,11 @@
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
       <integer>0</integer>
+    </dict>
+    <key>endash.case</key>
+    <dict>
+      <key>seven.osf</key>
+      <real>-232.0</real>
     </dict>
     <key>eng</key>
     <dict>
@@ -16335,6 +16392,11 @@
       <integer>18</integer>
       <key>idblgrave</key>
       <integer>75</integer>
+    </dict>
+    <key>hyphen.case</key>
+    <dict>
+      <key>seven.osf</key>
+      <real>-232.0</real>
     </dict>
     <key>i</key>
     <dict>
@@ -29432,7 +29494,9 @@
       <key>at</key>
       <integer>-50</integer>
       <key>at.case</key>
-      <integer>-50</integer>
+      <real>-34.0</real>
+      <key>braceleft.case</key>
+      <real>48.0</real>
       <key>d</key>
       <integer>-50</integer>
       <key>dagger</key>
