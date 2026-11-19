@@ -4,7 +4,7 @@
 
 - Added case-sensitive punctuation: the hyphen, dashes, `( ) [ ] { }`, `@` and the colon rise to the capital centre in `case`. The hyphen, dashes and colon also rise through `calt` between capitals and figures (`2026-11-18`, `12:30`, `ABC-123`), and `@` before a capital; next to lowercase they stay where they were (`E-post`). Parentheses, square brackets and braces rise in `case` only, so a pair never comes out with one bracket raised and the other low.
 - Changed kerning in the heavy weights: `T` and `Y` swap through `calt` to a copy with a shorter right arm before letters with a tall mark, so `Tö` kerns like `To`, and `Yö`, `Yë` and `Yō` at most 66 units looser than `Yo` (before, `Tö` was 38 and `Yö` 130 units looser in Black). The `Y` arm ends 100 units lower along its own edges, so its angle and stroke stay those of the plain `Y`. Regular and lighter weights are unchanged.
-- Changed the narrow double grave on `ȉ` in Black: it no longer overhangs further than the breve on `ĭ` (100 and 114 units, was 137 and 151). Pairs with `ȉ ȑ` use group kerning with the same values.
+- Changed the narrow double grave on `ȉ ȑ` from Medium to Black: it is up to 37 units narrower on each side, so in Black it no longer overhangs further than the breve on `ĭ` (100 and 114 units, was 137 and 151). Typed `ị̏ į̏ ɨ̏ ṛ̏ ṟ̏ ŗ̏` now take the narrow mark too. Pairs with `ȉ ȑ` use group kerning with the same values.
 
 ## [0.5.1] - 2026-11-18
 
