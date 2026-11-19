@@ -825,10 +825,10 @@ feature calt {
 @tkBase009 = [c ccedilla iogonek.dotless odotbelow.ss03 r s sdotbelow.ss03];
 @tkBase010 = [aogonek aogonek.cv04 c ccedilla edotbelow edotbelow.ss03 eogonek iogonek.dotless odotbelow odotbelow.ss03 s sdotbelow sdotbelow.ss03];
 @tkBase011 = [aogonek aogonek.cv04 c ccedilla edotbelow edotbelow.ss03 eogonek iogonek.dotless odotbelow odotbelow.ss03 s sdotbelow sdotbelow.ss03 udotbelow udotbelow.ss03 uogonek];
-@tkBase012 = [aogonek c ccedilla edotbelow eogonek iogonek.dotless odotbelow s sdotbelow];
-@tkBase013 = [aogonek c ccedilla edotbelow eogonek iogonek.dotless odotbelow s sdotbelow udotbelow uogonek];
-@tkBase014 = [aogonek.cv04 c ccedilla edotbelow.ss03 eogonek iogonek.dotless odotbelow.ss03 s sdotbelow.ss03];
-@tkBase015 = [aogonek.cv04 c ccedilla edotbelow.ss03 eogonek iogonek.dotless odotbelow.ss03 s sdotbelow.ss03 udotbelow.ss03 uogonek];
+@tkBase012 = [aogonek aogonek.cv04 c ccedilla edotbelow eogonek iogonek.dotless odotbelow s sdotbelow];
+@tkBase013 = [aogonek aogonek.cv04 c ccedilla edotbelow eogonek iogonek.dotless odotbelow s sdotbelow udotbelow uogonek];
+@tkBase014 = [aogonek aogonek.cv04 c ccedilla edotbelow.ss03 eogonek iogonek.dotless odotbelow.ss03 s sdotbelow.ss03];
+@tkBase015 = [aogonek aogonek.cv04 c ccedilla edotbelow.ss03 eogonek iogonek.dotless odotbelow.ss03 s sdotbelow.ss03 udotbelow.ss03 uogonek];
 
 feature rclt {
     sub [Y Yacute Ycircumflex Ygrave Yhookabove Ymacron Ytilde]' @tkBase010 @tkTop01 by [Y.tk01 Yacute.tk01 Ycircumflex.tk01 Ygrave.tk01 Yhookabove.tk01 Ymacron.tk01 Ytilde.tk01];

@@ -23,7 +23,13 @@ from ink import Polyline, outline_distance
 from test_spacing import Shaper
 
 FLOOR = 28  # 30 units in K19, 28 in the row tests (4-unit rows)
-FEATURES = {"default": {}, "all": {"cv04": True, "ss03": True, "ss01": True, "ss02": True}}
+# `cv04` and `ss03` alone: the rules list the alternate base forms with the matching capitals, so each option needs its own run.
+FEATURES = {
+    "default": {},
+    "cv04": {"cv04": True},
+    "ss03": {"ss03": True},
+    "all": {"cv04": True, "ss03": True, "ss01": True, "ss02": True},
+}
 
 CAPS = "TŤŦŢȚṪṬṮYÝŶŸẎỴỲỶȲỸVWẂŴẄẆẀ"
 DIN = ["k̀", "k̂", "k̄", "k̇", "t̀", "t̄", "ç̆", "ṭ̄", "ḳ̄", "c̨̆", "s̛̄", "l̥̄", "r̥̄", "d̂", "f̀", "f̄", "m̀", "m̂", "m̆",
