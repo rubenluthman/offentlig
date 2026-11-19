@@ -1,8 +1,10 @@
 """Case-sensitive punctuation: `.case` forms and the `case` and `calt` rules that swap them in.
 
 The hyphen, en and em dash, `( ) [ ] { }`, `@` and the colon (also the round-dot colon) have a `.case` form moved so that its ink
-centre sits on the capital centre; the advance is unchanged. `case` swaps every one of them; `calt` swaps them only where the
-neighbours are capitals or figures (docs/design-decisions.md, F4 and F18).
+centre sits on the capital centre; the advance is unchanged. `case` swaps every one of them; `calt` swaps the hyphen, the dashes
+and the colon only where the neighbours are capitals or figures, and `@` before a capital. Parentheses, square brackets and
+braces rise in `case` only: raised by their neighbours, one of a pair could rise and the other not (docs/design-decisions.md,
+F4 and F18).
 """
 import pytest
 import uharfbuzz as hb
@@ -15,15 +17,15 @@ CASE_BASES = {
     "]": "bracketright", "{": "braceleft", "}": "braceright", "@": "at", ":": "colon",
 }
 
-# `^` marks the character that `calt` raises. Everything else stays at its default height.
+# `^` marks the character that `calt` raises. Everything else stays at its default height, brackets included.
 CONTEXTS = [
     # times, dates, ranges
     "12^:30", "ISO 2026^-11^-18", "A^–Ö", "Ö^–Å", "ABC^-123", "A^—B", "1^–2", "A^:B", "A1^:B2",
     # the stricter rule: a lowercase neighbour keeps the low form
     "E-post", "T-shirt", "12-tal", "x-y", "KL:s", "1:a", "Hej: ", "a - B", "A - 1", "-1", "A-",
-    # brackets look at two characters
-    "^(HEJ^)", "^(1^)", "^[1^]", "^[TEXT^]", "^{AB^}", "^(A1^)", "^(ÅÄ^)", "(Stockholm)", "(Hej)", "[x]", "(1", "(1^-2)",
-    "(Hej) 12-tal",
+    # brackets are never raised by `calt`, whatever stands inside them
+    "(HEJ)", "(1)", "[1]", "[TEXT]", "{AB}", "(A1)", "(ÅÄ)", "((HEJ))", "(Stockholm)", "(Hej)", "[x]", "(1", "(9^:00)", "(född 1984)",
+    "(2026 års utgåva)", "(A^-12)", "(12^-A)", "(1]", "(1^-2)", "(Hej) 12-tal",
     # @ before a capital
     "H^@G", "^@HEJ", "^@Hej", "user@host", "x@1",
     # accented capitals count as capitals
@@ -75,6 +77,18 @@ def test_calt_off_raises_nothing_and_case_raises_everything(weight, italic):
         assert {i for i, g in enumerate(got) if g.endswith(".case")} == want, (text, got)
 
 
+@pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
+def test_brackets_rise_under_case_only(weight, italic):
+    """No parenthesis, square bracket or brace changes under the default features (or `calt` alone); all of them rise under `case`."""
+    font = font_of(static_path(weight, italic))
+    text = "(HEJ) [1] {AB} (9:00) (född 1984) ((A1)) (1] [A-1}"
+    brackets = {i for i, ch in enumerate(text) if ch in "()[]{}"}
+    for features in ({}, {"calt": True}):
+        assert not [g for g in shape(font, text, features) if g.split(".")[0] in {CASE_BASES[c] for c in "()[]{}"} and g.endswith(".case")]
+    got = shape(font, text, {"case": True})
+    assert {i for i, g in enumerate(got) if g.endswith(".case")} >= brackets
+
+
 @pytest.mark.parametrize("italic", [False, True], ids=["roman", "italic"])
 def test_round_dot_colon_and_oldstyle_figures(italic):
     font = font_of(static_path("Regular", italic))
@@ -107,8 +121,7 @@ def test_case_forms_are_centred_on_the_capitals_and_keep_their_width(weight, ita
         assert hmtx[case][0] == hmtx[name][0], case
         assert abs(centre(case) - cap) <= 2, (case, centre(case), cap)
         assert case not in cmap.values(), case
-        if name != "emdash":
-            assert abs(centre(name) - cap) > 20, (name, "was not low")
+        assert abs(centre(name) - cap) > 20, (name, "was not low")
 
 
 @pytest.mark.parametrize("weight,italic", [("Regular", False), ("Regular", True)], ids=["roman", "italic"])
