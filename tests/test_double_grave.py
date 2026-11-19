@@ -1,8 +1,9 @@
-"""The narrow double grave on `ȉ ȑ` and on typed `i ı r` + U+030F.
+"""The narrow double grave on `ȉ ȑ` and on typed `i ı r` + U+030F, also on the bases with a mark below.
 
 `ȉ ȑ` use `dblgravecomb.narrow`, drawn in the six masters to overhang the stem by no more than the breve of `ĭ`
 (the full-width mark made pairs with `ȉ` need over 300 units of kerning). Typed `i ı r` + U+030F swap to the narrow mark in `ccmp`,
-so they set exactly like `ȉ ȑ`; every other base keeps the full-width mark.
+so they set exactly like `ȉ ȑ`; every other base keeps the full-width mark. `ị į ɨ ṛ ṟ ŗ` (precomposed or typed with the
+mark below) take the narrow mark too, and no more overhang than they have with a breve.
 """
 import pytest
 import uharfbuzz as hb
@@ -60,3 +61,34 @@ def test_other_letters_keep_the_full_width_double_grave(weight, italic):
     assert max(abs(x - y) for x, y in zip(typed, ink(weight, italic, "ȁ"))) <= 1
     narrow = ink(weight, italic, "ȉ")
     assert narrow[1] - narrow[0] < typed[1] - typed[0]
+
+
+BELOW = ["ị", "į", "ɨ", "ṛ", "ṟ", "ŗ", "i\u0323", "i\u0328", "r\u0323", "r\u0331", "r\u0327", "ı\u0323"]
+
+
+@pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
+def test_the_double_grave_on_a_base_with_a_mark_below_is_the_narrow_one(weight, italic):
+    path = static_path(weight, italic)
+    order = TTFont(path).getGlyphOrder()
+    face = hb.Font(hb.Face(path.read_bytes()))
+    wide = []
+    for base in BELOW:
+        buf = hb.Buffer()
+        buf.add_str(base + DOUBLE_GRAVE)
+        buf.guess_segment_properties()
+        hb.shape(face, buf, {})
+        if "dblgravecomb.narrow" not in [order[i.codepoint] for i in buf.glyph_infos]:
+            wide.append(base)
+    assert wide == []
+
+
+@pytest.mark.parametrize("features", [None, {"ss03": True}], ids=["default", "ss03"])
+@pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
+def test_the_double_grave_on_a_base_with_a_mark_below_overhangs_no_more_than_a_breve(weight, italic, features):
+    over = []
+    for base in BELOW:
+        lo, hi, advance = ink(weight, italic, base + DOUBLE_GRAVE, features)
+        blo, bhi, _ = ink(weight, italic, base + "\u0306", features)
+        if -lo > max(-blo, 0) or hi - advance > max(bhi - advance, 0):
+            over.append((base, round(lo), round(hi), advance, round(blo), round(bhi)))
+    assert over == []
