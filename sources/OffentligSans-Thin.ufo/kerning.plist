@@ -10036,6 +10036,8 @@
     <dict>
       <key>T</key>
       <integer>-275</integer>
+      <key>T.arm</key>
+      <integer>-275</integer>
       <key>Tbar</key>
       <integer>-275</integer>
       <key>Tcaron</key>
@@ -10075,6 +10077,8 @@
       <key>Wgrave</key>
       <integer>-60</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -10133,6 +10137,8 @@
     <dict>
       <key>Y</key>
       <integer>-60</integer>
+      <key>Y.arm</key>
+      <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
       <key>Ycircumflex</key>
@@ -10163,6 +10169,8 @@
     <key>abreve</key>
     <dict>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -10196,6 +10204,8 @@
       <key>Idblgrave</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -10233,6 +10243,8 @@
     <dict>
       <key>Y</key>
       <integer>-60</integer>
+      <key>Y.arm</key>
+      <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
       <key>Ycircumflex</key>
@@ -10258,6 +10270,8 @@
     <dict>
       <key>Y</key>
       <integer>-60</integer>
+      <key>Y.arm</key>
+      <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
       <key>Ycircumflex</key>
@@ -10280,6 +10294,8 @@
     <key>abrevegrave</key>
     <dict>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -10311,6 +10327,8 @@
     <key>abrevehookabove</key>
     <dict>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -10344,6 +10362,8 @@
       <key>Idblgrave</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -10382,6 +10402,8 @@
     <key>acaron</key>
     <dict>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -10463,6 +10485,8 @@
       <integer>80</integer>
       <key>T</key>
       <integer>-246</integer>
+      <key>T.arm</key>
+      <integer>-246</integer>
       <key>Tbar</key>
       <integer>-246</integer>
       <key>Tcaron</key>
@@ -10502,6 +10526,8 @@
       <key>Wgrave</key>
       <integer>-60</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -10642,6 +10668,8 @@
       <integer>0</integer>
       <key>Y</key>
       <integer>-60</integer>
+      <key>Y.arm</key>
+      <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
       <key>Ycircumflex</key>
@@ -10706,6 +10734,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>-212</integer>
+      <key>T.arm</key>
+      <integer>-212</integer>
       <key>Tbar</key>
       <integer>-212</integer>
       <key>Tcaron</key>
@@ -10745,6 +10775,8 @@
       <key>Wgrave</key>
       <integer>-60</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -10821,6 +10853,8 @@
     <dict>
       <key>T</key>
       <integer>-275</integer>
+      <key>T.arm</key>
+      <integer>-275</integer>
       <key>Tbar</key>
       <integer>-275</integer>
       <key>Tcaron</key>
@@ -10860,6 +10894,8 @@
       <key>Wgrave</key>
       <integer>-60</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -10934,6 +10970,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>-257</integer>
+      <key>T.arm</key>
+      <integer>-257</integer>
       <key>Tbar</key>
       <integer>-257</integer>
       <key>Tcaron</key>
@@ -10973,6 +11011,8 @@
       <key>Wgrave</key>
       <integer>-60</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -11066,6 +11106,8 @@
     <dict>
       <key>Y</key>
       <integer>0</integer>
+      <key>Y.arm</key>
+      <integer>0</integer>
       <key>adblgrave</key>
       <integer>0</integer>
       <key>adblgrave.cv04</key>
@@ -11127,6 +11169,8 @@
     <dict>
       <key>T</key>
       <integer>-275</integer>
+      <key>T.arm</key>
+      <integer>-275</integer>
       <key>Tbar</key>
       <integer>-275</integer>
       <key>Tcaron</key>
@@ -11156,6 +11200,8 @@
       <key>Wgrave</key>
       <integer>-60</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -11210,6 +11256,8 @@
     <dict>
       <key>Y</key>
       <integer>-60</integer>
+      <key>Y.arm</key>
+      <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
       <key>Ycircumflex</key>
@@ -11234,6 +11282,8 @@
     <key>adieresis.ss03</key>
     <dict>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -11261,6 +11311,8 @@
       <key>Idblgrave</key>
       <integer>0</integer>
       <key>T</key>
+      <integer>-275</integer>
+      <key>T.arm</key>
       <integer>-275</integer>
       <key>Tbar</key>
       <integer>-275</integer>
@@ -11291,6 +11343,8 @@
       <key>Wgrave</key>
       <integer>-60</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -11349,6 +11403,8 @@
       <integer>0</integer>
       <key>Y</key>
       <integer>-60</integer>
+      <key>Y.arm</key>
+      <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
       <key>Ycircumflex</key>
@@ -11382,6 +11438,8 @@
       <key>Idblgrave.cv05</key>
       <integer>80</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -11551,6 +11609,8 @@
       <key>Lslash</key>
       <integer>0</integer>
       <key>T</key>
+      <real>-195.0</real>
+      <key>T.arm</key>
       <real>-195.0</real>
       <key>Tbar</key>
       <real>-195.0</real>
@@ -12284,6 +12344,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>-195</integer>
+      <key>T.arm</key>
+      <integer>-195</integer>
       <key>Tbar</key>
       <integer>-195</integer>
       <key>Tcaron</key>
@@ -12323,6 +12385,8 @@
       <key>Wgrave</key>
       <integer>-70</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -12490,6 +12554,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>-195</integer>
+      <key>T.arm</key>
+      <integer>-195</integer>
       <key>Tbar</key>
       <integer>-195</integer>
       <key>Tcaron</key>
@@ -12511,6 +12577,8 @@
       <key>Tlinebelow</key>
       <integer>-195</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -12569,6 +12637,8 @@
       <key>Lslash</key>
       <integer>0</integer>
       <key>T</key>
+      <integer>-195</integer>
+      <key>T.arm</key>
       <integer>-195</integer>
       <key>Tbar</key>
       <integer>-195</integer>
@@ -12709,6 +12779,8 @@
     <dict>
       <key>T</key>
       <real>-100.0</real>
+      <key>T.arm</key>
+      <real>-100.0</real>
       <key>Tbar</key>
       <real>-100.0</real>
       <key>Tcaron</key>
@@ -12756,6 +12828,8 @@
     <key>colon.ss03.case</key>
     <dict>
       <key>T</key>
+      <real>-100.0</real>
+      <key>T.arm</key>
       <real>-100.0</real>
       <key>Tbar</key>
       <real>-100.0</real>
@@ -12951,6 +13025,8 @@
       <integer>5</integer>
       <key>T</key>
       <integer>1</integer>
+      <key>T.arm</key>
+      <integer>1</integer>
       <key>Tbar</key>
       <integer>1</integer>
       <key>Tcaron</key>
@@ -12990,6 +13066,8 @@
       <key>Wgrave</key>
       <integer>1</integer>
       <key>Y</key>
+      <integer>25</integer>
+      <key>Y.arm</key>
       <integer>25</integer>
       <key>Yacute</key>
       <integer>25</integer>
@@ -13384,6 +13462,8 @@
     <key>dieresis</key>
     <dict>
       <key>Y</key>
+      <integer>0</integer>
+      <key>Y.arm</key>
       <integer>0</integer>
       <key>Yacute</key>
       <integer>0</integer>
@@ -13794,6 +13874,8 @@
     <dict>
       <key>Y</key>
       <integer>0</integer>
+      <key>Y.arm</key>
+      <integer>0</integer>
       <key>Yacute</key>
       <integer>0</integer>
       <key>Ycircumflex</key>
@@ -14005,6 +14087,8 @@
     <dict>
       <key>T</key>
       <integer>-195</integer>
+      <key>T.arm</key>
+      <integer>-195</integer>
       <key>Tbar</key>
       <integer>-195</integer>
       <key>Tcaron</key>
@@ -14026,6 +14110,8 @@
       <key>Tlinebelow</key>
       <integer>-195</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -14076,6 +14162,8 @@
     <dict>
       <key>Y</key>
       <integer>-60</integer>
+      <key>Y.arm</key>
+      <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
       <key>Ycircumflex</key>
@@ -14108,6 +14196,8 @@
       <key>Lslash</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -14148,6 +14238,8 @@
     <key>ecedillabreve</key>
     <dict>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -14235,6 +14327,8 @@
       <integer>-28</integer>
       <key>T</key>
       <integer>-195</integer>
+      <key>T.arm</key>
+      <integer>-195</integer>
       <key>Tbar</key>
       <integer>-195</integer>
       <key>Tcaron</key>
@@ -14274,6 +14368,8 @@
       <key>Wgrave</key>
       <integer>-70</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -14392,6 +14488,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>-195</integer>
+      <key>T.arm</key>
+      <integer>-195</integer>
       <key>Tbar</key>
       <integer>-195</integer>
       <key>Tcaron</key>
@@ -14431,6 +14529,8 @@
       <key>Wgrave</key>
       <integer>-70</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -14525,6 +14625,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>-195</integer>
+      <key>T.arm</key>
+      <integer>-195</integer>
       <key>Tbar</key>
       <integer>-195</integer>
       <key>Tcaron</key>
@@ -14546,6 +14648,8 @@
       <key>Tlinebelow</key>
       <integer>-195</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -14610,6 +14714,8 @@
     <dict>
       <key>T</key>
       <integer>-195</integer>
+      <key>T.arm</key>
+      <integer>-195</integer>
       <key>Tbar</key>
       <integer>-195</integer>
       <key>Tcaron</key>
@@ -14625,6 +14731,8 @@
       <key>Tlinebelow</key>
       <integer>-195</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -14674,6 +14782,8 @@
     <key>edieresis.ss03</key>
     <dict>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -14803,6 +14913,8 @@
     <dict>
       <key>Y</key>
       <integer>-60</integer>
+      <key>Y.arm</key>
+      <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
       <key>Ycircumflex</key>
@@ -14849,6 +14961,8 @@
       <key>Imacron</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -14961,6 +15075,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>-183</integer>
+      <key>T.arm</key>
+      <integer>-183</integer>
       <key>Tbar</key>
       <integer>-183</integer>
       <key>Tcaron</key>
@@ -14982,6 +15098,8 @@
       <key>Tlinebelow</key>
       <integer>-184</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -15017,6 +15135,8 @@
     <key>etilde</key>
     <dict>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -15171,6 +15291,8 @@
       <key>Lslash</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>0</integer>
+      <key>Y.arm</key>
       <integer>0</integer>
       <key>adblgrave</key>
       <integer>-10</integer>
@@ -16271,6 +16393,8 @@
     <dict>
       <key>Y</key>
       <integer>0</integer>
+      <key>Y.arm</key>
+      <integer>0</integer>
       <key>adblgrave</key>
       <integer>0</integer>
       <key>adblgrave.cv04</key>
@@ -16389,6 +16513,8 @@
     <dict>
       <key>T</key>
       <integer>0</integer>
+      <key>T.arm</key>
+      <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
       <key>Tcaron</key>
@@ -16434,6 +16560,8 @@
       <key>Xdieresis.ss03</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>19</integer>
+      <key>Y.arm</key>
       <integer>19</integer>
       <key>Yacute</key>
       <integer>19</integer>
@@ -16906,6 +17034,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>17</integer>
+      <key>T.arm</key>
+      <integer>17</integer>
       <key>Tbar</key>
       <integer>17</integer>
       <key>Tcaron</key>
@@ -17019,6 +17149,8 @@
       <key>Xdieresis.ss03</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>0</integer>
+      <key>Y.arm</key>
       <integer>0</integer>
       <key>Yacute</key>
       <integer>0</integer>
@@ -17451,6 +17583,8 @@
       <integer>80</integer>
       <key>T</key>
       <integer>17</integer>
+      <key>T.arm</key>
+      <integer>17</integer>
       <key>Tbar</key>
       <integer>20</integer>
       <key>Tcaron</key>
@@ -17474,6 +17608,8 @@
       <key>W</key>
       <integer>4</integer>
       <key>Y</key>
+      <integer>2</integer>
+      <key>Y.arm</key>
       <integer>2</integer>
       <key>Yacute</key>
       <integer>0</integer>
@@ -18049,6 +18185,8 @@
       <key>Rlinebelow</key>
       <integer>0</integer>
       <key>T</key>
+      <integer>0</integer>
+      <key>T.arm</key>
       <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
@@ -18731,6 +18869,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>-21</integer>
+      <key>T.arm</key>
+      <integer>-21</integer>
       <key>Tbar</key>
       <integer>-21</integer>
       <key>Tcaron</key>
@@ -18760,6 +18900,8 @@
       <key>Wgrave</key>
       <integer>-5</integer>
       <key>Y</key>
+      <integer>-20</integer>
+      <key>Y.arm</key>
       <integer>-20</integer>
       <key>Yacute</key>
       <integer>-20</integer>
@@ -18942,6 +19084,8 @@
     <dict>
       <key>T</key>
       <integer>0</integer>
+      <key>T.arm</key>
+      <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
       <key>Tcaron</key>
@@ -18975,6 +19119,8 @@
       <key>Xdieresis</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>19</integer>
+      <key>Y.arm</key>
       <integer>19</integer>
       <key>Yacute</key>
       <integer>19</integer>
@@ -19125,6 +19271,8 @@
     <dict>
       <key>T</key>
       <integer>0</integer>
+      <key>T.arm</key>
+      <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
       <key>Tcaron</key>
@@ -19158,6 +19306,8 @@
       <key>Xdieresis.ss03</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>19</integer>
+      <key>Y.arm</key>
       <integer>19</integer>
       <key>Yacute</key>
       <integer>19</integer>
@@ -19544,6 +19694,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>17</integer>
+      <key>T.arm</key>
+      <integer>17</integer>
       <key>Tbar</key>
       <integer>17</integer>
       <key>Tcaron</key>
@@ -19631,6 +19783,8 @@
       <key>Xdieresis</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>0</integer>
+      <key>Y.arm</key>
       <integer>0</integer>
       <key>Yacute</key>
       <integer>0</integer>
@@ -20197,6 +20351,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>17</integer>
+      <key>T.arm</key>
+      <integer>17</integer>
       <key>Tbar</key>
       <integer>17</integer>
       <key>Tcaron</key>
@@ -20284,6 +20440,8 @@
       <key>Xdieresis.ss03</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>0</integer>
+      <key>Y.arm</key>
       <integer>0</integer>
       <key>Yacute</key>
       <integer>0</integer>
@@ -20642,6 +20800,8 @@
       <integer>80</integer>
       <key>T</key>
       <integer>17</integer>
+      <key>T.arm</key>
+      <integer>17</integer>
       <key>Tbar</key>
       <integer>20</integer>
       <key>Tcaron</key>
@@ -20659,6 +20819,8 @@
       <key>W</key>
       <integer>4</integer>
       <key>Y</key>
+      <integer>2</integer>
+      <key>Y.arm</key>
       <integer>2</integer>
       <key>Yacute</key>
       <integer>0</integer>
@@ -20947,6 +21109,8 @@
       <integer>80</integer>
       <key>T</key>
       <integer>17</integer>
+      <key>T.arm</key>
+      <integer>17</integer>
       <key>Tbar</key>
       <integer>20</integer>
       <key>Tcaron</key>
@@ -20964,6 +21128,8 @@
       <key>W</key>
       <integer>4</integer>
       <key>Y</key>
+      <integer>2</integer>
+      <key>Y.arm</key>
       <integer>2</integer>
       <key>Yacute</key>
       <integer>0</integer>
@@ -21245,6 +21411,8 @@
       <key>Itilde.cv05</key>
       <integer>80</integer>
       <key>T</key>
+      <integer>0</integer>
+      <key>T.arm</key>
       <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
@@ -21679,6 +21847,8 @@
       <integer>80</integer>
       <key>T</key>
       <integer>0</integer>
+      <key>T.arm</key>
+      <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
       <key>Tcaron</key>
@@ -22068,6 +22238,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>0</integer>
+      <key>T.arm</key>
+      <integer>0</integer>
       <key>V</key>
       <integer>0</integer>
       <key>W</key>
@@ -22075,6 +22247,8 @@
       <key>X</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>0</integer>
+      <key>Y.arm</key>
       <integer>0</integer>
       <key>Z</key>
       <integer>0</integer>
@@ -22291,6 +22465,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>-21</integer>
+      <key>T.arm</key>
+      <integer>-21</integer>
       <key>Tbar</key>
       <integer>0</integer>
       <key>Tcaron</key>
@@ -22322,6 +22498,8 @@
       <key>X</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>-20</integer>
+      <key>Y.arm</key>
       <integer>-20</integer>
       <key>Yacute</key>
       <integer>0</integer>
@@ -22504,6 +22682,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>0</integer>
+      <key>T.arm</key>
+      <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
       <key>Tcaron</key>
@@ -22653,6 +22833,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>0</integer>
+      <key>T.arm</key>
+      <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
       <key>Tcaron</key>
@@ -22799,6 +22981,8 @@
     <key>idotbelow_tildecomb</key>
     <dict>
       <key>T</key>
+      <integer>8</integer>
+      <key>T.arm</key>
       <integer>8</integer>
       <key>Tbar</key>
       <integer>8</integer>
@@ -22950,6 +23134,8 @@
     <key>idotbelow_tildecomb.ss03</key>
     <dict>
       <key>T</key>
+      <integer>8</integer>
+      <key>T.arm</key>
       <integer>8</integer>
       <key>Tbar</key>
       <integer>8</integer>
@@ -24169,6 +24355,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>0</integer>
+      <key>T.arm</key>
+      <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
       <key>Tcaron</key>
@@ -24521,6 +24709,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>0</integer>
+      <key>T.arm</key>
+      <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
       <key>Tcaron</key>
@@ -24566,6 +24756,8 @@
       <key>Xdieresis.ss03</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>19</integer>
+      <key>Y.arm</key>
       <integer>19</integer>
       <key>Yacute</key>
       <integer>19</integer>
@@ -25046,6 +25238,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>17</integer>
+      <key>T.arm</key>
+      <integer>17</integer>
       <key>Tbar</key>
       <integer>17</integer>
       <key>Tcaron</key>
@@ -25159,6 +25353,8 @@
       <key>Xdieresis.ss03</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>0</integer>
+      <key>Y.arm</key>
       <integer>0</integer>
       <key>Yacute</key>
       <integer>0</integer>
@@ -25593,6 +25789,8 @@
       <integer>80</integer>
       <key>T</key>
       <integer>17</integer>
+      <key>T.arm</key>
+      <integer>17</integer>
       <key>Tbar</key>
       <integer>20</integer>
       <key>Tcaron</key>
@@ -25616,6 +25814,8 @@
       <key>W</key>
       <integer>4</integer>
       <key>Y</key>
+      <integer>2</integer>
+      <key>Y.arm</key>
       <integer>2</integer>
       <key>Yacute</key>
       <integer>0</integer>
@@ -25935,6 +26135,8 @@
       <key>Itilde.cv05</key>
       <integer>80</integer>
       <key>T</key>
+      <integer>0</integer>
+      <key>T.arm</key>
       <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
@@ -26421,6 +26623,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>0</integer>
+      <key>T.arm</key>
+      <integer>0</integer>
       <key>V</key>
       <integer>0</integer>
       <key>W</key>
@@ -26428,6 +26632,8 @@
       <key>X</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>0</integer>
+      <key>Y.arm</key>
       <integer>0</integer>
       <key>Z</key>
       <integer>0</integer>
@@ -26642,6 +26848,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>-21</integer>
+      <key>T.arm</key>
+      <integer>-21</integer>
       <key>Tbar</key>
       <integer>0</integer>
       <key>Tcaron</key>
@@ -26673,6 +26881,8 @@
       <key>X</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>-20</integer>
+      <key>Y.arm</key>
       <integer>-20</integer>
       <key>Yacute</key>
       <integer>0</integer>
@@ -26839,6 +27049,8 @@
       <key>Hbar</key>
       <integer>0</integer>
       <key>T</key>
+      <integer>0</integer>
+      <key>T.arm</key>
       <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
@@ -27018,6 +27230,8 @@
     <key>istroke_tildecomb</key>
     <dict>
       <key>T</key>
+      <integer>6</integer>
+      <key>T.arm</key>
       <integer>6</integer>
       <key>Tbar</key>
       <integer>6</integer>
@@ -27201,6 +27415,8 @@
     <key>itilde</key>
     <dict>
       <key>T</key>
+      <integer>8</integer>
+      <key>T.arm</key>
       <integer>8</integer>
       <key>Tbar</key>
       <integer>8</integer>
@@ -27488,6 +27704,8 @@
       <key>Itilde.cv05</key>
       <integer>80</integer>
       <key>T</key>
+      <integer>0</integer>
+      <key>T.arm</key>
       <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
@@ -27865,6 +28083,8 @@
       <integer>80</integer>
       <key>T</key>
       <integer>16</integer>
+      <key>T.arm</key>
+      <integer>16</integer>
       <key>Tbar</key>
       <integer>19</integer>
       <key>Tcaron</key>
@@ -27888,6 +28108,8 @@
       <key>W</key>
       <integer>4</integer>
       <key>Y</key>
+      <integer>2</integer>
+      <key>Y.arm</key>
       <integer>2</integer>
       <key>Yacute</key>
       <integer>0</integer>
@@ -28395,6 +28617,8 @@
     <dict>
       <key>T</key>
       <integer>-63</integer>
+      <key>T.arm</key>
+      <integer>-63</integer>
       <key>Tbar</key>
       <integer>-63</integer>
       <key>Tcaron</key>
@@ -28434,6 +28658,8 @@
       <key>Wgrave</key>
       <integer>-40</integer>
       <key>Y</key>
+      <integer>-35</integer>
+      <key>Y.arm</key>
       <integer>-35</integer>
       <key>Yacute</key>
       <integer>-35</integer>
@@ -29759,6 +29985,8 @@
     <dict>
       <key>Y</key>
       <integer>-60</integer>
+      <key>Y.arm</key>
+      <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
       <key>Ycircumflex</key>
@@ -29933,6 +30161,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>-195</integer>
+      <key>T.arm</key>
+      <integer>-195</integer>
       <key>Tbar</key>
       <integer>-195</integer>
       <key>Tcaron</key>
@@ -29954,6 +30184,8 @@
       <key>Tlinebelow</key>
       <integer>-195</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -29998,6 +30230,8 @@
       <integer>0</integer>
       <key>Y</key>
       <integer>-60</integer>
+      <key>Y.arm</key>
+      <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
       <key>Ycircumflex</key>
@@ -30030,6 +30264,8 @@
       <key>Lslash</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -30121,6 +30357,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>-195</integer>
+      <key>T.arm</key>
+      <integer>-195</integer>
       <key>Tbar</key>
       <integer>-195</integer>
       <key>Tcaron</key>
@@ -30160,6 +30398,8 @@
       <key>Wgrave</key>
       <integer>-70</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -30272,6 +30512,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>-195</integer>
+      <key>T.arm</key>
+      <integer>-195</integer>
       <key>Tbar</key>
       <integer>-195</integer>
       <key>Tcaron</key>
@@ -30311,6 +30553,8 @@
       <key>Wgrave</key>
       <integer>-70</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -30407,6 +30651,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>-195</integer>
+      <key>T.arm</key>
+      <integer>-195</integer>
       <key>Tbar</key>
       <integer>-195</integer>
       <key>Tcaron</key>
@@ -30428,6 +30674,8 @@
       <key>Tlinebelow</key>
       <integer>-195</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -30490,6 +30738,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>-195</integer>
+      <key>T.arm</key>
+      <integer>-195</integer>
       <key>Tbar</key>
       <integer>-195</integer>
       <key>Tcaron</key>
@@ -30505,6 +30755,8 @@
       <key>Tlinebelow</key>
       <integer>-195</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -30549,6 +30801,8 @@
       <integer>0</integer>
       <key>Y</key>
       <integer>-60</integer>
+      <key>Y.arm</key>
+      <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
       <key>Ycircumflex</key>
@@ -30582,6 +30836,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>-195</integer>
+      <key>T.arm</key>
+      <integer>-195</integer>
       <key>Tbar</key>
       <integer>-195</integer>
       <key>Tcaron</key>
@@ -30597,6 +30853,8 @@
       <key>Tlinebelow</key>
       <integer>-195</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -30646,6 +30904,8 @@
       <key>Lslash</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -30776,6 +31036,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>0</integer>
+      <key>T.arm</key>
+      <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
       <key>Tcaron</key>
@@ -30846,6 +31108,8 @@
       <key>Lslash</key>
       <integer>0</integer>
       <key>T</key>
+      <integer>0</integer>
+      <key>T.arm</key>
       <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
@@ -30936,6 +31200,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>0</integer>
+      <key>T.arm</key>
+      <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
       <key>Tcaron</key>
@@ -31007,6 +31273,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>0</integer>
+      <key>T.arm</key>
+      <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
       <key>Tcaron</key>
@@ -31077,6 +31345,8 @@
       <key>Lslash</key>
       <integer>0</integer>
       <key>T</key>
+      <integer>0</integer>
+      <key>T.arm</key>
       <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
@@ -31167,6 +31437,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>0</integer>
+      <key>T.arm</key>
+      <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
       <key>Tcaron</key>
@@ -31255,6 +31527,8 @@
       <key>Lslash</key>
       <integer>0</integer>
       <key>T</key>
+      <integer>0</integer>
+      <key>T.arm</key>
       <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
@@ -31647,6 +31921,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>-157</integer>
+      <key>T.arm</key>
+      <integer>-157</integer>
       <key>Tbar</key>
       <integer>-129</integer>
       <key>Tcaron</key>
@@ -31694,6 +31970,8 @@
       <key>Xdieresis.ss03</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>-38</integer>
+      <key>Y.arm</key>
       <integer>-38</integer>
       <key>Yacute</key>
       <integer>-38</integer>
@@ -31997,6 +32275,8 @@
       <integer>0</integer>
       <key>Y</key>
       <integer>-60</integer>
+      <key>Y.arm</key>
+      <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
       <key>Ycircumflex</key>
@@ -32045,6 +32325,8 @@
       <key>Lslash</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -32175,6 +32457,8 @@
       <integer>0</integer>
       <key>Y</key>
       <integer>-60</integer>
+      <key>Y.arm</key>
+      <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
       <key>Ycircumflex</key>
@@ -32245,6 +32529,8 @@
     <dict>
       <key>Y</key>
       <integer>-60</integer>
+      <key>Y.arm</key>
+      <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
       <key>Ycircumflex</key>
@@ -32275,6 +32561,8 @@
       <key>Lslash</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -32316,6 +32604,8 @@
       <key>Lslash</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -32359,6 +32649,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>-195</integer>
+      <key>T.arm</key>
+      <integer>-195</integer>
       <key>Tbar</key>
       <integer>-195</integer>
       <key>Tcaron</key>
@@ -32380,6 +32672,8 @@
       <key>Tlinebelow</key>
       <integer>-195</integer>
       <key>Y</key>
+      <integer>-60</integer>
+      <key>Y.arm</key>
       <integer>-60</integer>
       <key>Yacute</key>
       <integer>-60</integer>
@@ -33949,6 +34243,29 @@
       <key>ygrave</key>
       <integer>-60</integer>
     </dict>
+    <key>public.kern1.Tarm</key>
+    <dict>
+      <key>edieresis</key>
+      <integer>-125</integer>
+      <key>edieresis.ss03</key>
+      <integer>-125</integer>
+      <key>odieresis</key>
+      <integer>-125</integer>
+      <key>odieresis.ss03</key>
+      <integer>-125</integer>
+      <key>odieresismacron</key>
+      <integer>-125</integer>
+      <key>odieresismacron.ss03</key>
+      <integer>-125</integer>
+      <key>scaron</key>
+      <integer>-105</integer>
+      <key>scircumflex</key>
+      <integer>-105</integer>
+      <key>ydieresis</key>
+      <integer>-60</integer>
+      <key>ydieresis.ss03</key>
+      <integer>-60</integer>
+    </dict>
     <key>public.kern1.U</key>
     <dict>
       <key>icaron</key>
@@ -34523,6 +34840,111 @@
       <key>uhorngrave</key>
       <integer>-60</integer>
       <key>ydieresis</key>
+      <integer>-70</integer>
+      <key>ygrave</key>
+      <integer>-70</integer>
+      <key>zcaron</key>
+      <integer>-50</integer>
+    </dict>
+    <key>public.kern1.Yarm</key>
+    <dict>
+      <key>acaron</key>
+      <integer>-100</integer>
+      <key>acaron.cv04</key>
+      <integer>-100</integer>
+      <key>adieresis</key>
+      <integer>-100</integer>
+      <key>adieresis.cv04</key>
+      <integer>-100</integer>
+      <key>adieresis.cv04.ss03</key>
+      <integer>-100</integer>
+      <key>adieresis.ss03</key>
+      <integer>-100</integer>
+      <key>adieresismacron</key>
+      <integer>-100</integer>
+      <key>adieresismacron.cv04</key>
+      <integer>-100</integer>
+      <key>adieresismacron.cv04.ss03</key>
+      <integer>-100</integer>
+      <key>adieresismacron.ss03</key>
+      <integer>-100</integer>
+      <key>agrave</key>
+      <integer>-100</integer>
+      <key>agrave.cv04</key>
+      <integer>-100</integer>
+      <key>ccaron</key>
+      <integer>-60</integer>
+      <key>ebreve</key>
+      <integer>-60</integer>
+      <key>ecaron</key>
+      <integer>-60</integer>
+      <key>ecedillabreve</key>
+      <integer>-60</integer>
+      <key>edieresis</key>
+      <integer>-60</integer>
+      <key>edieresis.ss03</key>
+      <integer>-60</integer>
+      <key>emacron</key>
+      <integer>-60</integer>
+      <key>emacronacute</key>
+      <integer>-60</integer>
+      <key>gbreve</key>
+      <integer>-115</integer>
+      <key>gbreve.ss01</key>
+      <integer>-60</integer>
+      <key>gcaron</key>
+      <integer>-115</integer>
+      <key>gcaron.ss01</key>
+      <integer>-60</integer>
+      <key>obreve</key>
+      <integer>-60</integer>
+      <key>ocaron</key>
+      <integer>-60</integer>
+      <key>odieresis</key>
+      <integer>-60</integer>
+      <key>odieresis.ss03</key>
+      <integer>-60</integer>
+      <key>odieresismacron</key>
+      <integer>-60</integer>
+      <key>odieresismacron.ss03</key>
+      <integer>-60</integer>
+      <key>ohorntilde</key>
+      <integer>-60</integer>
+      <key>omacron</key>
+      <integer>-60</integer>
+      <key>omacronacute</key>
+      <integer>-60</integer>
+      <key>oogonekmacron</key>
+      <integer>-60</integer>
+      <key>scaron</key>
+      <integer>-115</integer>
+      <key>udieresis</key>
+      <integer>-60</integer>
+      <key>udieresis.ss03</key>
+      <integer>-60</integer>
+      <key>udieresisacute</key>
+      <integer>-60</integer>
+      <key>udieresisacute.ss03</key>
+      <integer>-60</integer>
+      <key>udieresiscaron</key>
+      <integer>-60</integer>
+      <key>udieresiscaron.ss03</key>
+      <integer>-60</integer>
+      <key>udieresisgrave</key>
+      <integer>-60</integer>
+      <key>udieresisgrave.ss03</key>
+      <integer>-60</integer>
+      <key>udieresismacron</key>
+      <integer>-60</integer>
+      <key>udieresismacron.ss03</key>
+      <integer>-60</integer>
+      <key>ugrave</key>
+      <integer>-60</integer>
+      <key>uhorngrave</key>
+      <integer>-60</integer>
+      <key>ydieresis</key>
+      <integer>-70</integer>
+      <key>ydieresis.ss03</key>
       <integer>-70</integer>
       <key>ygrave</key>
       <integer>-70</integer>
@@ -36084,6 +36506,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>0</integer>
+      <key>T.arm</key>
+      <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
       <key>Tcaron</key>
@@ -36129,6 +36553,8 @@
       <key>Xdieresis.ss03</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>0</integer>
+      <key>Y.arm</key>
       <integer>0</integer>
       <key>Yacute</key>
       <integer>0</integer>
@@ -36406,6 +36832,8 @@
       <integer>0</integer>
       <key>T</key>
       <integer>0</integer>
+      <key>T.arm</key>
+      <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
       <key>Tcaron</key>
@@ -36445,6 +36873,8 @@
       <key>Wgrave</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>0</integer>
+      <key>Y.arm</key>
       <integer>0</integer>
       <key>Yacute</key>
       <integer>0</integer>
@@ -36819,6 +37249,8 @@
       <key>Lslash</key>
       <integer>0</integer>
       <key>T</key>
+      <integer>0</integer>
+      <key>T.arm</key>
       <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
@@ -38402,6 +38834,8 @@
     <dict>
       <key>T</key>
       <integer>0</integer>
+      <key>T.arm</key>
+      <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
       <key>Tcaron</key>
@@ -38447,6 +38881,8 @@
       <key>Xdieresis.ss03</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>0</integer>
+      <key>Y.arm</key>
       <integer>0</integer>
       <key>Yacute</key>
       <integer>0</integer>
@@ -38809,6 +39245,8 @@
     <dict>
       <key>Y</key>
       <integer>0</integer>
+      <key>Y.arm</key>
+      <integer>0</integer>
       <key>Yacute</key>
       <integer>0</integer>
       <key>Ycircumflex</key>
@@ -38866,6 +39304,8 @@
     <key>ydieresis</key>
     <dict>
       <key>Y</key>
+      <integer>0</integer>
+      <key>Y.arm</key>
       <integer>0</integer>
       <key>Yacute</key>
       <integer>0</integer>
@@ -38959,6 +39399,8 @@
     <dict>
       <key>T</key>
       <integer>0</integer>
+      <key>T.arm</key>
+      <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
       <key>Tcaron</key>
@@ -39004,6 +39446,8 @@
       <key>Xdieresis.ss03</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>0</integer>
+      <key>Y.arm</key>
       <integer>0</integer>
       <key>Yacute</key>
       <integer>0</integer>
@@ -39149,6 +39593,8 @@
     <dict>
       <key>T</key>
       <integer>0</integer>
+      <key>T.arm</key>
+      <integer>0</integer>
       <key>Tbar</key>
       <integer>0</integer>
       <key>Tcaron</key>
@@ -39170,6 +39616,8 @@
       <key>Tlinebelow</key>
       <integer>0</integer>
       <key>Y</key>
+      <integer>0</integer>
+      <key>Y.arm</key>
       <integer>0</integer>
       <key>Yacute</key>
       <integer>0</integer>
