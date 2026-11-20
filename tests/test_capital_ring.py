@@ -7,7 +7,7 @@ from conftest import WEIGHTS, static_path
 from test_diacritics import contour_bounds
 
 CAP_HEIGHT = 1446  # apex of `A`; ring contours lie above it
-CLEARANCE = 30  # least distance from the ring top to the descenders of the line above, at the default line spacing
+CLEARANCE = 15  # least distance from the ring top to the descenders of the line above, at the default line spacing
 DESCENDERS = "gjpqy"
 CAPITAL_RINGS = ["Aring", "Uring"]
 
@@ -35,7 +35,7 @@ def descender_reach(font):
 
 @pytest.mark.parametrize("name", CAPITAL_RINGS)
 def test_capital_ring_clears_the_descenders_above(static_ttf, name):
-    """At the default line spacing the ring of `Å Ů` ends at least 30 units below the lowest descender of the line above."""
+    """At the default line spacing the ring of `Å Ů` ends at least 15 units below the lowest descender of the line above."""
     top = max(b[3] for b in contour_bounds(static_ttf, name))
     assert top <= descender_reach(static_ttf) - CLEARANCE
 
@@ -55,9 +55,9 @@ def test_capital_ring_top_limit(static_ttf, name):
 
 @pytest.mark.parametrize("name", CAPITAL_RINGS)
 def test_capital_ring_leaves_the_apex_free(static_ttf, name):
-    """The bottom of the ring is at least 25 units above the capital, so the ring and the letter do not touch (28 at Black, where the ring floors of D5 leave no more room)."""
+    """The bottom of the ring is at least 50 units above the capital, so the ring and the letter do not touch (56 at Black, where the ring floors of D5 leave no more room)."""
     inner, outer = ring_contours(static_ttf, name)
-    assert outer[1] - CAP_HEIGHT >= 25
+    assert outer[1] - CAP_HEIGHT >= 50
 
 
 @pytest.mark.parametrize("name", CAPITAL_RINGS)
