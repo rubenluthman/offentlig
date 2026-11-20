@@ -23,7 +23,7 @@
 - [ ] Make the round dots of `ss03` the default and move the square dots to `ss03`, so Offentlig Sans uses the circular dot of IBM Plex, which Offentlig Serif and Mono will adapt. Widths stay the same.
 - [ ] Pairs of `T V W Y` with the narrow `i` and a mark are looser than their gap needs (Regular `Tĩ` is 61 units looser than `Ti` at a gap of 92). Find the cause before changing any value.
 - [ ] Case forms for the other characters that sit low next to capitals: guillemets, `¡ ¿`, the slash and the bullet.
-- [ ] `tests/test_arm_helpers.py` checks 6 of the 24 shorter-arm capitals (`T Ŧ Ť Y Ý Ÿ`). Extend it to all of them, including the `ss03` copies.
+- [x] `tests/test_arm_helpers.py` covers all 24 shorter-arm glyphs (18 capitals and 6 `ss03` copies), found from the font.
 - [ ] Review which alternates should become the default form, which would revisit decision F4 (alternates are opt-in). Do this after every other Offentlig Sans item above.
 
 <!-- vale HouseStyle.Headings = NO -->

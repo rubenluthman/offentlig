@@ -26,9 +26,29 @@ FEATURES = {"default": {}, "all": {"cv04": True, "ss03": True, "ss01": True, "ss
 # The letters of the `calt` rules: the round letters whose mark the arm of the capital overhangs.
 T_LETTERS = "ëöÿŝšȫ"
 Y_LETTERS = "àäëöùüÿčēĕěğōŏšžǎǒǖǘǚǜǟǧǭȫḗḝṓỡừỳ"
-CAPITALS = {"T": T_LETTERS, "Ŧ": T_LETTERS, "Ť": T_LETTERS, "Y": Y_LETTERS, "Ý": Y_LETTERS, "Ÿ": Y_LETTERS}
+LETTERS = {"T": T_LETTERS, "Y": Y_LETTERS}
 # Letters in front of which the capital keeps its 0.5.0 form (the italics and Black need a larger cut than the rule allows).
 UNCOVERED = {"T": "äàèòùỳ", "Y": "èòờ"}
+
+
+def _helpers(tt):
+    """Every `.arm` glyph of the font as (helper, capital glyph, typed character, family, from an `ss03` copy). The characters
+    come from the font's cmap, so a helper added later is covered without touching this file."""
+    production = plistlib.loads(SOURCES.joinpath("OffentligSans-Regular.ufo", "lib.plist").read_bytes())["public.postscriptNames"]
+    by_name = {}
+    for code, name in tt.getBestCmap().items():
+        by_name.setdefault(name, chr(code))
+    out = []
+    for helper in tt.getGlyphOrder():
+        if not ARM.search(helper):
+            continue
+        base = ARM.sub("", helper)
+        ss03 = base.endswith(".ss03")
+        plain = base[: -len(".ss03")] if ss03 else base
+        char = by_name.get(production.get(plain, plain))
+        assert char is not None, helper
+        out.append((helper, production.get(base, base), char, plain[0], ss03))
+    return out
 
 
 @lru_cache(maxsize=None)
@@ -55,6 +75,7 @@ def test_arm_capitals_are_reachable_only_through_calt(italic):
     tt = TTFont(static_path("Regular", italic))
     helpers = {n for n in tt.getGlyphOrder() if ARM.search(n)}
     assert len(helpers) >= 20
+    assert {h for h, *_ in _helpers(tt)} == helpers
     assert not helpers & set(tt.getBestCmap().values())
     gsub = tt["GSUB"].table
     calt = {i for fr in gsub.FeatureList.FeatureRecord if fr.FeatureTag == "calt" for i in fr.Feature.LookupListIndex}
@@ -99,35 +120,52 @@ def test_arm_capitals_keep_the_advance_and_the_marks_of_their_capital(weight, it
 @pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
 def test_covered_pairs_kern_like_the_plain_pair_and_keep_30_units(weight, italic, features):
     _, _, sh = _font(weight, italic)
+    tt, _, sh = _font(weight, italic)
+    feats = FEATURES[features]
+    helpers = _helpers(tt)
+    names = {h for h, *_ in helpers}
     bad = []
-    for cap, letters in CAPITALS.items():
-        for letter in letters:
+    seen = set()
+    for helper, _, cap, family, ss03 in helpers:
+        if ss03 and not feats.get("ss03"):
+            continue  # the `ss03` copy is reached only with `ss03` on
+        if not ss03 and feats.get("ss03") and helper.replace(".arm", ".ss03.arm") in names:
+            continue  # with `ss03` on, the dotted capital is the `ss03` copy, checked on its own row
+        # `ss03` is a font-wide feature; a capital without a copy ignores it
+        for letter in LETTERS[family]:
             text = cap + letter
-            names = _glyphs(weight, italic, text, FEATURES[features])
-            if len(names) != 2:
+            shaped = _glyphs(weight, italic, text, feats)
+            if len(shaped) != 2:
                 continue  # a feature composed or split the letter
+            seen.add(helper)
             plain = _plain(cap, letter)
-            if not ARM.search(names[0]):
-                bad.append((text, "not swapped"))
+            if shaped[0] != helper:
+                bad.append((text, "not swapped to", helper, shaped[0]))
                 continue
-            gap = sh.gap(text, FEATURES[features])
+            gap = sh.gap(text, feats)
             if gap is not None and gap < FLOOR:
                 bad.append((text, "gap", round(gap)))
             # the arm kerns like the plain pair, or looser where the shorter arm alone cannot reach 30 units (at most
             # LOOSER units: the ö of Y in Black, K20); never tighter
-            looser = sh.shape(text, FEATURES[features])[0][1] - sh.shape(plain, FEATURES[features])[0][1]
+            looser = sh.shape(text, feats)[0][1] - sh.shape(plain, feats)[0][1]
             if not 0 <= looser <= LOOSER:
                 bad.append((text, "kerning differs from", plain, round(looser)))
     assert bad == []
+    # every helper that applies was reached by at least one letter
+    expected = {h for h, _, _, _, ss03 in helpers if (not ss03 or feats.get("ss03")) and not (not ss03 and feats.get("ss03") and h.replace(".arm", ".ss03.arm") in names)}
+    assert seen == expected, sorted(expected - seen)
 
 
+@pytest.mark.parametrize("features", FEATURES, ids=list(FEATURES))
 @pytest.mark.parametrize("weight,italic", [("Black", False), ("Regular", False), ("Black", True)], ids=["Black", "Regular", "Black-italic"])
-def test_calt_off_and_uncovered_letters_keep_the_plain_capital(weight, italic):
-    for cap, letters in (("T", T_LETTERS), ("Y", Y_LETTERS)):
-        for letter in letters:
-            assert not ARM.search(_glyphs(weight, italic, cap + letter, {"calt": False})[0])
-        for letter in UNCOVERED[cap] + "oaeuAEO.":
-            assert not ARM.search(_glyphs(weight, italic, cap + letter, {})[0]), cap + letter
+def test_calt_off_and_uncovered_letters_keep_the_plain_capital(weight, italic, features):
+    tt, _, _ = _font(weight, italic)
+    feats = FEATURES[features]
+    for _, _, cap, family, _ in _helpers(tt):
+        for letter in LETTERS[family]:
+            assert not ARM.search(_glyphs(weight, italic, cap + letter, {**feats, "calt": False})[0]), cap + letter
+        for letter in UNCOVERED[family] + "oaeuAEO.":
+            assert not ARM.search(_glyphs(weight, italic, cap + letter, feats)[0]), cap + letter
 
 
 @pytest.mark.parametrize("weight,italic", [("Black", False), ("Black", True)], ids=["Black", "Black-italic"])

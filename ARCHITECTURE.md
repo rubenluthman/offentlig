@@ -123,6 +123,7 @@ These values are identical in every master and are enforced by `tests/test_metri
 - U+1E9E is mapped and wider than `S`; U+00DF still maps to `germandbls`.
 - The ten `.tf` digits and the ten `.tf.osf` digits share one advance at every weight, static and variable (`tnum`, `tnum` + `onum`).
 - Black and Black Italic `five` have no tiny smooth curve at the join between the diagonal and the bowl.
+- Every `.arm` glyph in the font (the 18 shorter-arm capitals and their 6 `ss03` copies, found from the glyph order, so a new one is covered automatically) is not in the cmap, appears only in `calt`, has the advance and marks of its capital, is swapped in before each covered letter and kept out before the others and with `calt` off, keeps 30 units from the mark and kerns like the plain pair, in every static with the alternate forms on and off (`tests/test_arm_helpers.py`).
 - The eight arrows U+2190 – U+2193 and U+2196 – U+2199 (from public-sans pull request #252) are mapped in every font, have an advance of 1446 and outlines. Their bounding-box centre lies within 12 units of the `plus` centre for the four axis arrows and within 70 units for the four diagonals.
 - `leftArrow` and `rightArrow` have the same bounding-box height.
 - `onum` draws `0 1 2` at x-height, `3 4 5 7 9` hanging from x-height below the baseline, and `6 8` at full figure height, each with its own outline.
