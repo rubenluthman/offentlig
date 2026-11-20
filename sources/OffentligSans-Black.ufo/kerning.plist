@@ -14950,6 +14950,12 @@
       <integer>116</integer>
       <key>igrave</key>
       <integer>24</integer>
+      <key>iogonek</key>
+      <integer>0</integer>
+      <key>iogonek.dotless</key>
+      <integer>0</integer>
+      <key>iogonek.ss03</key>
+      <integer>0</integer>
       <key>istroke_brevecomb</key>
       <integer>62</integer>
       <key>istroke_caroncomb</key>
@@ -15039,6 +15045,8 @@
       <integer>24</integer>
       <key>iogonek</key>
       <real>0.0</real>
+      <key>iogonek.dotless</key>
+      <integer>0</integer>
       <key>iogonek.ss03</key>
       <real>0.0</real>
       <key>istroke_brevecomb</key>
@@ -15148,6 +15156,12 @@
       <integer>116</integer>
       <key>igrave</key>
       <integer>24</integer>
+      <key>iogonek</key>
+      <integer>0</integer>
+      <key>iogonek.dotless</key>
+      <integer>0</integer>
+      <key>iogonek.ss03</key>
+      <integer>0</integer>
       <key>istroke_brevecomb</key>
       <integer>62</integer>
       <key>istroke_caroncomb</key>
@@ -15237,6 +15251,8 @@
       <integer>24</integer>
       <key>iogonek</key>
       <real>0.0</real>
+      <key>iogonek.dotless</key>
+      <integer>0</integer>
       <key>iogonek.ss03</key>
       <real>0.0</real>
       <key>istroke_brevecomb</key>
@@ -20907,8 +20923,36 @@
     </dict>
     <key>eogonek</key>
     <dict>
+      <key>braceright</key>
+      <integer>-20</integer>
+      <key>braceright.case</key>
+      <integer>-20</integer>
+      <key>florin</key>
+      <integer>0</integer>
+      <key>florin.tf</key>
+      <integer>0</integer>
+      <key>fraction</key>
+      <integer>16</integer>
+      <key>fraction.alt</key>
+      <integer>16</integer>
       <key>franc</key>
       <integer>34</integer>
+      <key>llinebelow</key>
+      <integer>79</integer>
+      <key>llinebelow.ss02</key>
+      <integer>79</integer>
+      <key>parenright</key>
+      <integer>-20</integer>
+      <key>parenright.case</key>
+      <integer>-20</integer>
+      <key>parenright.subs</key>
+      <integer>0</integer>
+      <key>public.kern2.g</key>
+      <integer>-20</integer>
+      <key>public.kern2.j</key>
+      <integer>0</integer>
+      <key>rlinebelow</key>
+      <integer>52</integer>
     </dict>
     <key>equal.subs</key>
     <dict>

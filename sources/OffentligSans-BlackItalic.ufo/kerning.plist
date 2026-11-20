@@ -23049,6 +23049,12 @@
       <integer>83</integer>
       <key>imacron</key>
       <integer>42</integer>
+      <key>iogonek</key>
+      <integer>0</integer>
+      <key>iogonek.dotless</key>
+      <integer>0</integer>
+      <key>iogonek.ss03</key>
+      <integer>0</integer>
       <key>istroke_brevecomb</key>
       <integer>47</integer>
       <key>istroke_caroncomb</key>
@@ -23150,6 +23156,8 @@
       <integer>42</integer>
       <key>iogonek</key>
       <real>0.0</real>
+      <key>iogonek.dotless</key>
+      <integer>0</integer>
       <key>iogonek.ss03</key>
       <real>0.0</real>
       <key>istroke_brevecomb</key>
@@ -23275,6 +23283,12 @@
       <integer>83</integer>
       <key>imacron</key>
       <integer>42</integer>
+      <key>iogonek</key>
+      <integer>0</integer>
+      <key>iogonek.dotless</key>
+      <integer>0</integer>
+      <key>iogonek.ss03</key>
+      <integer>0</integer>
       <key>istroke_brevecomb</key>
       <integer>47</integer>
       <key>istroke_caroncomb</key>
@@ -23374,6 +23388,12 @@
       <integer>83</integer>
       <key>imacron</key>
       <integer>42</integer>
+      <key>iogonek</key>
+      <integer>0</integer>
+      <key>iogonek.dotless</key>
+      <integer>0</integer>
+      <key>iogonek.ss03</key>
+      <integer>0</integer>
       <key>istroke_brevecomb</key>
       <integer>47</integer>
       <key>istroke_caroncomb</key>
@@ -30572,10 +30592,34 @@
     </dict>
     <key>eogonek</key>
     <dict>
+      <key>braceright</key>
+      <integer>2</integer>
+      <key>braceright.case</key>
+      <integer>2</integer>
+      <key>florin</key>
+      <integer>0</integer>
+      <key>florin.tf</key>
+      <integer>0</integer>
       <key>fraction</key>
-      <integer>4</integer>
+      <integer>76</integer>
       <key>franc</key>
       <integer>33</integer>
+      <key>llinebelow</key>
+      <integer>160</integer>
+      <key>llinebelow.ss02</key>
+      <integer>160</integer>
+      <key>parenright</key>
+      <integer>11</integer>
+      <key>parenright.case</key>
+      <integer>11</integer>
+      <key>parenright.subs</key>
+      <integer>31</integer>
+      <key>public.kern2.g</key>
+      <integer>-6</integer>
+      <key>public.kern2.j</key>
+      <integer>41</integer>
+      <key>rlinebelow</key>
+      <integer>133</integer>
     </dict>
     <key>equal.subs</key>
     <dict>
