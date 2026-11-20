@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+
+- Changed `W` and `N` in Bold, ExtraBold and Black, upright and italic: the notches between their diagonals are cut deeper, so the lower vertices of `W` and the crotches of `N` hold less ink and no longer fill in as far as in other fonts. The widest circle at the `W` vertices falls from 1.31 – 1.34 to 1.04 – 1.10 times the stem, and at the `N` crotches from 1.43 – 1.48 to 1.32 – 1.36. Advance widths and spacing are unchanged, and Regular and lighter weights are unchanged.
+
 ## [0.6.0] - 2026-11-19
 
 - Added case-sensitive punctuation: the hyphen, dashes, `( ) [ ] { }`, `@` and the colon rise to the capital centre in `case`. The hyphen, dashes and colon also rise through `calt` between capitals and figures (`2026-11-18`, `12:30`, `ABC-123`), and `@` before a capital; next to lowercase they stay where they were (`E-post`). Parentheses, square brackets and braces rise in `case` only, so a pair never comes out with one bracket raised and the other low.
