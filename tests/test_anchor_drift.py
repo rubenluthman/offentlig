@@ -138,9 +138,9 @@ SS03_EXCLUDED = {
 
 @pytest.mark.parametrize("ufo", UFOS)
 def test_ss03_marks_sit_on_their_anchors_or_where_the_plain_glyph_has_them(ufo):
-    """In a `.ss03` composite each mark is on its anchor, or at the offset the plain (square-dot) glyph has it, within 2 units.
+    """In a `.ss03` composite each mark is on its anchor, or at the offset the plain (round-dot) glyph has it, within 2 units.
 
-    A few plain glyphs keep a deliberate offset (the dots over the dotless i, the horn and breve in italic); the round-dot
+    A few plain glyphs keep a deliberate offset (the dots over the dotless i, the horn and breve in italic); the square-dot
     form keeps it. Anything else means the mark was left behind when the dot or the anchor moved.
     """
     font = ufoLib2.Font.open(SOURCES / ufo)

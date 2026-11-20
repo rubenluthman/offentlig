@@ -1,7 +1,7 @@
 """Every pair of plain characters keeps at least 30 units of ink gap, at all 18 statics.
 
 "Plain" means every encoded letter, digit, punctuation mark and symbol that is not an accented letter (`test_accent_pairs.py` holds
-those). Both orders of every pair are measured with no feature, with the round dots (`ss03`) and with the single-storey `a` (`cv04`).
+those). Both orders of every pair are measured with no feature, with the square dots (`ss03`) and with the single-storey `a` (`cv04`).
 Pair exceptions aim at 40 units and the floor is 30, as for the accent pairs.
 """
 import pytest

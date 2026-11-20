@@ -7,6 +7,6 @@
   <outline>
     <component base="a.cv04"/>
     <component base="dotbelowcomb" xOffset="435"/>
-    <component base="circumflexcomb" xOffset="169"/>
+    <component base="circumflexcomb" xOffset="169.0"/>
   </outline>
 </glyph>

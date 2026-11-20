@@ -9,6 +9,6 @@
   <anchor x="511.5" y="1651" name="top"/>
   <outline>
     <component base="t"/>
-    <component base="dieresiscomb" xOffset="227.53523" yOffset="290"/>
+    <component base="dieresiscomb" xOffset="227.535" yOffset="290"/>
   </outline>
 </glyph>

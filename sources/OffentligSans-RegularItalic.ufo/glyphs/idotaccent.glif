@@ -2,10 +2,23 @@
 <glyph name="idotaccent" format="2">
   <advance width="490.9375"/>
   <anchor x="240.28125" y="23.25" name="ogonek"/>
-  <anchor x="379.48275" y="1415" name="top"/>
+  <anchor x="377.42779972987483" y="1421.8" name="top"/>
   <anchor x="174.59375" y="0" name="bottom"/>
   <outline>
+    <contour>
+      <point x="365.24994874711473" y="1254.5" type="curve" smooth="yes"/>
+      <point x="423.8806868491602" y="1254.5"/>
+      <point x="471.4100500022106" y="1302.0294427121373"/>
+      <point x="471.4100500022106" y="1360.6600500022105" type="curve" smooth="yes"/>
+      <point x="471.4100500022106" y="1419.2906572922839"/>
+      <point x="423.8806868491602" y="1466.8201000044212"/>
+      <point x="365.24994874711473" y="1466.8201000044212" type="curve" smooth="yes"/>
+      <point x="306.6193131508398" y="1466.8201000044212"/>
+      <point x="259.0899499977894" y="1419.2906572922839"/>
+      <point x="259.0899499977894" y="1360.6600500022105" type="curve" smooth="yes"/>
+      <point x="259.0899499977894" y="1302.0294427121373"/>
+      <point x="306.6193131508398" y="1254.5"/>
+    </contour>
     <component base="idotless"/>
-    <component base="dotaccentcomb" xOffset="152.53125"/>
   </outline>
 </glyph>

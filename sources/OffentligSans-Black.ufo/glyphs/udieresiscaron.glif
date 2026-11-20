@@ -5,10 +5,10 @@
   <anchor x="613" y="0" name="bottom"/>
   <anchor x="1062" y="714" name="horn"/>
   <anchor x="1064" y="20" name="ogonek"/>
-  <anchor x="606" y="1798" name="top"/>
+  <anchor x="606" y="1871.0" name="top"/>
   <outline>
     <component base="u"/>
     <component base="dieresiscomb" xOffset="147"/>
-    <component base="caroncomb" xOffset="174" yOffset="381"/>
+    <component base="caroncomb" xOffset="174" yOffset="453.99999999999994"/>
   </outline>
 </glyph>

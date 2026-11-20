@@ -2,10 +2,10 @@
 <glyph name="Mdotbelow" format="2">
   <advance width="1770.625"/>
   <unicode hex="1E42"/>
-  <anchor x="853.64062" y="0" name="bottom"/>
-  <anchor x="885.14062" y="1446" name="top"/>
+  <anchor x="853.64" y="0" name="bottom"/>
+  <anchor x="885.14" y="1446" name="top"/>
   <outline>
     <component base="M"/>
-    <component base="dotbelowcomb" xOffset="750.26562"/>
+    <component base="dotbelowcomb" xOffset="750.266"/>
   </outline>
 </glyph>

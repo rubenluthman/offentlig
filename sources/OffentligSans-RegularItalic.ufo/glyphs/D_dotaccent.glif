@@ -2,11 +2,11 @@
 <glyph name="Ddotaccent" format="2">
   <advance width="1342.3125"/>
   <unicode hex="1E0A"/>
-  <anchor x="510.59375" y="0" name="bottom"/>
-  <anchor x="698.90625" y="724" name="center"/>
-  <anchor x="950.327" y="1827" name="top"/>
+  <anchor x="510.59" y="0" name="bottom"/>
+  <anchor x="698.91" y="724" name="center"/>
+  <anchor x="953.7024969993981" y="1850.9903713507028" name="top"/>
   <outline>
     <component base="D"/>
-    <component base="dotaccentcomb" xOffset="723.375" yOffset="412"/>
+    <component base="dotaccentcomb" xOffset="723.375" yOffset="412.0"/>
   </outline>
 </glyph>

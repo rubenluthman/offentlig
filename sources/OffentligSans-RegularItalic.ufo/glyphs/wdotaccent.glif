@@ -2,10 +2,10 @@
 <glyph name="wdotaccent" format="2">
   <advance width="1482.59375"/>
   <unicode hex="1E87"/>
-  <anchor x="875.671" y="1415" name="top"/>
+  <anchor x="879.042496999398" y="1438.9903713507028" name="top"/>
   <anchor x="676.8" y="0" name="bottom"/>
   <outline>
     <component base="w"/>
-    <component base="dotaccentcomb" xOffset="648.71875"/>
+    <component base="dotaccentcomb" xOffset="648.719"/>
   </outline>
 </glyph>

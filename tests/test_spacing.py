@@ -318,7 +318,7 @@ def accented_lowercase(font):
 def test_accented_lowercase_clears_the_arm_of_t_v_w_y(weight, italic, features):
     """Pair exceptions between the T, V and Y kern1 groups and each accented lowercase keep at least 30 units of ink
     between the arm and the mark, at every weight (the masters aim at 40), with no features and with the
-    single-storey `a` (`cv04`), the round dots (`ss03`) or both, and with the alternate `g` and `l` (`ss01`, `ss02`, `salt`)."""
+    single-storey `a` (`cv04`), the square dots (`ss03`) or both, and with the alternate `g` and `l` (`ss01`, `ss02`, `salt`)."""
     s = shaper(weight, italic)
     tight = []
     for left in "TVWYŤẂŶ":

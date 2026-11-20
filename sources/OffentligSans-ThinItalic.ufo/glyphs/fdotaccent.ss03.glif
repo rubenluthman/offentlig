@@ -5,6 +5,6 @@
   <anchor x="285.5" y="0" name="bottom"/>
   <outline>
     <component base="f"/>
-    <component base="dotaccentcomb.ss03" xOffset="370.519" yOffset="412"/>
+    <component base="dotaccentcomb.ss03" xOffset="370.51896" yOffset="412"/>
   </outline>
 </glyph>

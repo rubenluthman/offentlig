@@ -3,9 +3,9 @@
   <advance width="1244.0"/>
   <anchor x="553" y="0" name="bottom"/>
   <anchor x="1013.0" y="20" name="ogonek"/>
-  <anchor x="734.7454848714154" y="1487.88" name="top"/>
+  <anchor x="724.5" y="1415" name="top"/>
   <outline>
     <component base="a.cv04"/>
-    <component base="dieresiscomb.ss03" xOffset="137.0"/>
+    <component base="dieresiscomb.ss03" xOffset="137"/>
   </outline>
 </glyph>

@@ -6,6 +6,6 @@
   <anchor x="637" y="1361" name="top"/>
   <outline>
     <component base="a.cv04"/>
-    <component base="dieresiscomb" xOffset="353"/>
+    <component base="dieresiscomb" xOffset="353.0"/>
   </outline>
 </glyph>

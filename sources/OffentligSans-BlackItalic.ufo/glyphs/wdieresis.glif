@@ -2,7 +2,7 @@
 <glyph name="wdieresis" format="2">
   <advance width="1583"/>
   <unicode hex="1E85"/>
-  <anchor x="925.546" y="1415" name="top"/>
+  <anchor x="935.7454848714154" y="1487.88" name="top"/>
   <anchor x="726.7" y="0" name="bottom"/>
   <outline>
     <component base="w"/>

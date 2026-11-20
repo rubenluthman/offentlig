@@ -3,9 +3,9 @@
   <advance width="1081.125"/>
   <anchor x="466" y="0" name="bottom"/>
   <anchor x="805" y="807" name="horn"/>
-  <anchor x="381.52" y="1446" name="top"/>
+  <anchor x="381.51896" y="1446" name="top"/>
   <outline>
     <component base="k"/>
-    <component base="dotbelowcomb.ss03" xOffset="437.906"/>
+    <component base="dotbelowcomb.ss03" xOffset="437.90625"/>
   </outline>
 </glyph>

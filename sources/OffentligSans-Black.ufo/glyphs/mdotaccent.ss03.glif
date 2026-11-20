@@ -2,7 +2,7 @@
 <glyph name="mdotaccent.ss03" format="2">
   <advance width="1847"/>
   <anchor x="927" y="0" name="bottom"/>
-  <anchor x="927" y="1490.231620865118" name="top"/>
+  <anchor x="927" y="1415" name="top"/>
   <outline>
     <component base="m"/>
     <component base="dotaccentcomb.ss03" xOffset="735"/>

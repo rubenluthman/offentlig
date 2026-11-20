@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="ydieresis.ss03" format="2">
   <advance width="1169"/>
-  <anchor x="708.7454848714154" y="1487.88" name="top"/>
+  <anchor x="698.546" y="1415" name="top"/>
   <anchor x="186" y="-330" name="bottom"/>
   <outline>
     <component base="y"/>

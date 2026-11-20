@@ -2,10 +2,10 @@
 <glyph name="rdotaccent" format="2">
   <advance width="781.625"/>
   <unicode hex="1E59"/>
-  <anchor x="243.78125" y="0" name="bottom"/>
-  <anchor x="422.78125" y="1415" name="top"/>
+  <anchor x="243.78" y="0" name="bottom"/>
+  <anchor x="422.78" y="1442.7738776137353" name="top"/>
   <outline>
     <component base="r"/>
-    <component base="dotaccentcomb" xOffset="318.71875"/>
+    <component base="dotaccentcomb" xOffset="318.719"/>
   </outline>
 </glyph>

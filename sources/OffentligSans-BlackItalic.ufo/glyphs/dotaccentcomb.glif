@@ -2,13 +2,21 @@
 <glyph name="dotaccentcomb" format="2">
   <unicode hex="0307"/>
   <anchor x="262" y="1034" name="_top"/>
-  <anchor x="315.546" y="1415" name="top"/>
+  <anchor x="325.8386177971818" y="1488.235368192925" name="top"/>
   <outline>
     <contour>
-      <point x="100" y="1155" type="line"/>
-      <point x="458" y="1155" type="line"/>
-      <point x="502" y="1446" type="line"/>
-      <point x="144" y="1446" type="line"/>
+      <point x="301.0" y="1155.0" type="curve" smooth="yes"/>
+      <point x="401.5576775306399" y="1155.0"/>
+      <point x="483.07582786271917" y="1236.5181503320794"/>
+      <point x="483.07582786271917" y="1337.075827862719" type="curve" smooth="yes"/>
+      <point x="483.07582786271917" y="1437.6335053933587"/>
+      <point x="401.5576775306399" y="1519.151655725438"/>
+      <point x="301.0" y="1519.151655725438" type="curve" smooth="yes"/>
+      <point x="200.44232246936005" y="1519.151655725438"/>
+      <point x="118.92417213728083" y="1437.6335053933587"/>
+      <point x="118.92417213728083" y="1337.075827862719" type="curve" smooth="yes"/>
+      <point x="118.92417213728083" y="1236.5181503320794"/>
+      <point x="200.44232246936005" y="1155.0"/>
     </contour>
   </outline>
   <lib>

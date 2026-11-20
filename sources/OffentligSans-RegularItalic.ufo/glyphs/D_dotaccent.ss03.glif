@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Ddotaccent.ss03" format="2">
   <advance width="1342.3125"/>
-  <anchor x="510.59" y="0" name="bottom"/>
-  <anchor x="698.91" y="724" name="center"/>
-  <anchor x="953.7024969993981" y="1850.9903713507028" name="top"/>
+  <anchor x="510.59375" y="0" name="bottom"/>
+  <anchor x="698.90625" y="724" name="center"/>
+  <anchor x="950.327" y="1827" name="top"/>
   <outline>
     <component base="D"/>
-    <component base="dotaccentcomb.ss03" xOffset="723.375" yOffset="412.0"/>
+    <component base="dotaccentcomb.ss03" xOffset="723.375" yOffset="412"/>
   </outline>
 </glyph>

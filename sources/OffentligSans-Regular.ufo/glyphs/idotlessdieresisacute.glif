@@ -2,12 +2,12 @@
 <glyph name="idotlessdieresisacute" format="2">
   <advance width="494.53125"/>
   <unicode hex="1E2F"/>
-  <anchor x="314.5625" y="23.25" name="ogonek"/>
-  <anchor x="249.30625" y="1762.0" name="top"/>
+  <anchor x="314.56625" y="23.25" name="ogonek"/>
+  <anchor x="249.30625" y="1786.8720127466604" name="top"/>
   <anchor x="247.90625" y="0" name="bottom"/>
   <outline>
     <component base="idotless"/>
-    <component base="dieresiscomb" xOffset="-46.25"/>
-    <component base="acutecomb" xOffset="158.15625" yOffset="347.0"/>
+    <component base="dieresiscomb" xOffset="-46.24975"/>
+    <component base="acutecomb" xOffset="158.15625" yOffset="371.8640127466605"/>
   </outline>
 </glyph>

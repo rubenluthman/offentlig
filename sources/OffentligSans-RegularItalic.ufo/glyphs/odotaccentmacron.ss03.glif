@@ -2,12 +2,12 @@
 <glyph name="odotaccentmacron.ss03" format="2">
   <advance width="1085.25"/>
   <anchor x="450.75" y="0" name="bottom"/>
-  <anchor x="886.34" y="698.19" name="horn"/>
-  <anchor x="574.66" y="20" name="ogonek"/>
-  <anchor x="694.1724969993979" y="1739.4603713507029" name="top"/>
+  <anchor x="886.34375" y="698.1875" name="horn"/>
+  <anchor x="574.65625" y="20" name="ogonek"/>
+  <anchor x="690.805" y="1715.469" name="top"/>
   <outline>
     <component base="o"/>
     <component base="dotaccentcomb.ss03" xOffset="421.625"/>
-    <component base="macroncomb" xOffset="268.26149699939805" yOffset="404.9943713507028"/>
+    <component base="macroncomb" xOffset="264.889" yOffset="381.0"/>
   </outline>
 </glyph>

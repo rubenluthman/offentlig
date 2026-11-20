@@ -2,11 +2,11 @@
 <glyph name="Adieresismacron.ss03" format="2">
   <advance width="1420.3125"/>
   <anchor x="710.5" y="0" name="bottom"/>
-  <anchor x="1319.38" y="19.19" name="ogonek"/>
-  <anchor x="710.5" y="2118.3720127466604" name="top"/>
+  <anchor x="1319.375" y="19.1875" name="ogonek"/>
+  <anchor x="710.5" y="2093.5" name="top"/>
   <outline>
     <component base="A"/>
-    <component base="dieresiscomb.ss03" xOffset="414.906" yOffset="412.0"/>
-    <component base="macroncomb" xOffset="385.312" yOffset="783.8640127466605"/>
+    <component base="dieresiscomb.ss03" xOffset="414.90625" yOffset="412"/>
+    <component base="macroncomb" xOffset="385.312" yOffset="759.0"/>
   </outline>
 </glyph>

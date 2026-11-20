@@ -2,13 +2,13 @@
 <glyph name="tdieresis" format="2">
   <advance width="778.3125"/>
   <unicode hex="1E97"/>
-  <anchor x="464.65625" y="6.1875" name="bottom"/>
-  <anchor x="423.90625" y="1520.375" name="caron"/>
-  <anchor x="401.84375" y="584.25" name="center"/>
+  <anchor x="464.66" y="6.19" name="bottom"/>
+  <anchor x="423.91" y="1520.38" name="caron"/>
+  <anchor x="401.84" y="584.25" name="center"/>
   <anchor x="650" y="920" name="horn"/>
-  <anchor x="388.0" y="1682.0" name="top"/>
+  <anchor x="388.0" y="1706.8720127466604" name="top"/>
   <outline>
     <component base="t"/>
-    <component base="dieresiscomb" xOffset="92.40625" yOffset="301"/>
+    <component base="dieresiscomb" xOffset="92.406" yOffset="301"/>
   </outline>
 </glyph>

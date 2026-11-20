@@ -2,13 +2,13 @@
 <glyph name="udieresisacute" format="2">
   <advance width="1161.21875"/>
   <unicode hex="01D8"/>
-  <anchor x="576.90625" y="0" name="bottom"/>
-  <anchor x="970.125" y="807.1875" name="horn"/>
-  <anchor x="978.6875" y="21.3125" name="ogonek"/>
-  <anchor x="575.8" y="1762.0" name="top"/>
+  <anchor x="576.91" y="0" name="bottom"/>
+  <anchor x="970.12" y="807.19" name="horn"/>
+  <anchor x="978.69" y="21.31" name="ogonek"/>
+  <anchor x="575.8" y="1786.8720127466604" name="top"/>
   <outline>
     <component base="u"/>
-    <component base="dieresiscomb" xOffset="280.21875"/>
-    <component base="acutecomb" xOffset="484.625" yOffset="347.0"/>
+    <component base="dieresiscomb" xOffset="280.219"/>
+    <component base="acutecomb" xOffset="484.625" yOffset="371.8640127466605"/>
   </outline>
 </glyph>

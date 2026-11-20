@@ -2,7 +2,7 @@
 <glyph name="idotbelow_dieresiscomb" format="2">
   <advance width="490.9375"/>
   <anchor x="240.28125" y="23.25" name="ogonek"/>
-  <anchor x="374.69375" y="1381" name="top"/>
+  <anchor x="378.0314043593074" y="1405.0018410377381" name="top"/>
   <anchor x="174.59375" y="0" name="bottom"/>
   <outline>
     <component base="idotless"/>

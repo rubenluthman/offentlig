@@ -2,10 +2,10 @@
 <glyph name="adieresis.cv04.ss03" format="2">
   <advance width="1171.8125"/>
   <anchor x="484.75" y="0.0" name="bottom"/>
-  <anchor x="906.03" y="25.25" name="ogonek"/>
-  <anchor x="670.9376543593073" y="1405.0018410377381" name="top"/>
+  <anchor x="906.03125" y="25.25" name="ogonek"/>
+  <anchor x="667.5" y="1381.0" name="top"/>
   <outline>
     <component base="a.cv04"/>
-    <component base="dieresiscomb.ss03" xOffset="279.0"/>
+    <component base="dieresiscomb.ss03" xOffset="279"/>
   </outline>
 </glyph>

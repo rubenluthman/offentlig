@@ -21,7 +21,7 @@
 - [x] In Black, the narrow double grave on `ȉ` still overhangs the advance by 35 units more than the breve on `ĭ`.
 - [x] Replace the single-pair kerning exceptions added for the narrow double grave with group kerning where the result is the same.
 - [x] Even out `make test`: idle workers now take waiting tests (`--dist worksteal`), and the run uses three workers.
-- [ ] Make the round dots of `ss03` the default and move the square dots to `ss03`, so Offentlig Sans uses the circular dot of IBM Plex, which Offentlig Serif and Mono will adapt. Widths stay the same.
+- [x] Make the round dots of `ss03` the default and move the square dots to `ss03`, so Offentlig Sans uses the circular dot of IBM Plex, which Offentlig Serif and Mono will adapt. Widths stay the same.
 - [x] Pairs of `T V W Y` with the narrow double grave `ȉ` were far looser than their gap needs (Regular `Tȉ` gap 247 units, aim 40). The group entries for `public.kern2.idblgrave` held up to 404 units of kerning (Black); they now give a gap of 40 – 67 at every weight (K21).
 - [ ] `T V W Y` before `ĩ ī ĭ ǐ` (and `Ť Ţ Ŧ`) stay looser than the 40-unit aim in Regular (gaps 92 – 117). Closing them needs Thin and ExtraLight loosened, because their gaps already sit near the floor (Thin `Tĩ` at kerning -28). Left as they are for now; take it up in a review of the light weights.
 - [ ] Measure the gaps of `T V W Y` before `ȑ` and before `ȁ ȅ ȍ ȕ`, which the `ȉ` kerning (K21) did not cover, and of plain `Ti`, which Public Sans kerns at 0.

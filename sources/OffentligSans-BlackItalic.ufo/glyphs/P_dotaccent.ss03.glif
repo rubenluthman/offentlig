@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Pdotaccent.ss03" format="2">
   <advance width="1339"/>
-  <anchor x="603.18" y="0" name="bottom"/>
-  <anchor x="870.2426177971818" y="1900.235368192925" name="top"/>
+  <anchor x="603.17666" y="0" name="bottom"/>
+  <anchor x="859.945" y="1827" name="top"/>
   <outline>
     <component base="P"/>
-    <component base="dotaccentcomb.ss03" xOffset="544.399" yOffset="412"/>
+    <component base="dotaccentcomb.ss03" xOffset="544.39871" yOffset="412"/>
   </outline>
 </glyph>

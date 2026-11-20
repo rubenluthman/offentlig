@@ -2,10 +2,10 @@
 <glyph name="Hdieresis" format="2">
   <advance width="1531.90625"/>
   <unicode hex="1E26"/>
-  <anchor x="781.21875" y="0" name="bottom"/>
-  <anchor x="763.9" y="1800.9" name="top"/>
+  <anchor x="781.22" y="0" name="bottom"/>
+  <anchor x="763.9" y="1825.7720127466605" name="top"/>
   <outline>
     <component base="H"/>
-    <component base="dieresiscomb" xOffset="468.28125" yOffset="419.875"/>
+    <component base="dieresiscomb" xOffset="468.281" yOffset="419.875"/>
   </outline>
 </glyph>

@@ -2,7 +2,7 @@
 <glyph name="ydotaccent" format="2">
   <advance width="1014"/>
   <unicode hex="1E8F"/>
-  <anchor x="515" y="1415" name="top"/>
+  <anchor x="515" y="1416.1103610569678" name="top"/>
   <anchor x="232.7" y="-330" name="bottom"/>
   <outline>
     <component base="y"/>

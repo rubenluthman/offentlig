@@ -3,10 +3,10 @@
   <advance width="909"/>
   <anchor x="402.3" y="0" name="bottom"/>
   <anchor x="628.3" y="9" name="ogonek"/>
-  <anchor x="709.3900000000001" y="2208" name="top"/>
+  <anchor x="719.6354848714155" y="2280.9" name="top"/>
   <outline>
     <component base="I.cv05"/>
     <component base="dieresiscomb" xOffset="68.30000000000001" yOffset="412"/>
-    <component base="acutecomb" xOffset="433.846" yOffset="793"/>
+    <component base="acutecomb" xOffset="444.09148487141545" yOffset="865.8999999999999"/>
   </outline>
 </glyph>

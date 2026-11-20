@@ -2,13 +2,13 @@
 <glyph name="Odieresismacron" format="2">
   <advance width="1409.78125"/>
   <unicode hex="022A"/>
-  <anchor x="633.78125" y="0" name="bottom"/>
-  <anchor x="1195.84375" y="1171.4375" name="horn"/>
-  <anchor x="780.65625" y="18.6875" name="ogonek"/>
-  <anchor x="926.7" y="2093.5" name="top"/>
+  <anchor x="633.78" y="0" name="bottom"/>
+  <anchor x="1195.84" y="1171.44" name="horn"/>
+  <anchor x="780.66" y="18.69" name="ogonek"/>
+  <anchor x="930.0376543593075" y="2117.501841037738" name="top"/>
   <outline>
     <component base="O"/>
-    <component base="dieresiscomb" xOffset="495.96875" yOffset="412"/>
-    <component base="macroncomb" xOffset="500.79891964172975" yOffset="759.0"/>
+    <component base="dieresiscomb" xOffset="495.969" yOffset="412.0"/>
+    <component base="macroncomb" xOffset="504.1706543593074" yOffset="782.9938410377382"/>
   </outline>
 </glyph>

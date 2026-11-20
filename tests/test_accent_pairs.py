@@ -2,7 +2,7 @@
 
 An accent never brings a pair below what the same pair has with the unaccented base letters, up to 30 units, less 2
 (`ACCENT_SLACK`). The checks run over every encoded letter, digit, punctuation mark and symbol on both sides of every accented
-letter (and the typed `ị` and `ɨ` with a top mark, which shape as one glyph), at all 18 statics, with no feature, with the round
+letter (and the typed `ị` and `ɨ` with a top mark, which shape as one glyph), at all 18 statics, with no feature, with the square
 dots (`ss03`) and with the single-storey `a` (`cv04`).
 """
 import unicodedata

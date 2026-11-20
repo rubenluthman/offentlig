@@ -2,10 +2,10 @@
 <glyph name="fdotaccent" format="2">
   <advance width="760.875"/>
   <unicode hex="1E1F"/>
-  <anchor x="581.065" y="1827" name="top"/>
+  <anchor x="584.4424969993981" y="1850.9903713507028" name="top"/>
   <anchor x="292.9" y="0" name="bottom"/>
   <outline>
     <component base="f"/>
-    <component base="dotaccentcomb" xOffset="354.11271" yOffset="412"/>
+    <component base="dotaccentcomb" xOffset="354.113" yOffset="412"/>
   </outline>
 </glyph>

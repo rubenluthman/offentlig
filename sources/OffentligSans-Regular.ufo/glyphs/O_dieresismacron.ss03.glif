@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Odieresismacron.ss03" format="2">
   <advance width="1467.625"/>
-  <anchor x="738.47" y="0" name="bottom"/>
-  <anchor x="1152.28" y="1171.44" name="horn"/>
-  <anchor x="889.25" y="18.69" name="ogonek"/>
-  <anchor x="737.1" y="2118.3720127466604" name="top"/>
+  <anchor x="738.46875" y="0" name="bottom"/>
+  <anchor x="1152.28125" y="1171.4375" name="horn"/>
+  <anchor x="889.25" y="18.6875" name="ogonek"/>
+  <anchor x="737.1" y="2093.5" name="top"/>
   <outline>
     <component base="O"/>
-    <component base="dieresiscomb.ss03" xOffset="441.5" yOffset="412.0"/>
-    <component base="macroncomb" xOffset="411.906" yOffset="783.8640127466605"/>
+    <component base="dieresiscomb.ss03" xOffset="441.5" yOffset="412"/>
+    <component base="macroncomb" xOffset="411.906" yOffset="759.0"/>
   </outline>
 </glyph>

@@ -2,7 +2,7 @@
 <glyph name="gdotaccent" format="2">
   <advance width="1268"/>
   <unicode hex="0121"/>
-  <anchor x="616" y="1415" name="top"/>
+  <anchor x="616" y="1490.231620865118" name="top"/>
   <anchor x="612.7" y="-342" name="bottom"/>
   <outline>
     <component base="g"/>

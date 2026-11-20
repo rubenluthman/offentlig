@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Gdotaccent.cv03" format="2">
   <advance width="1465.90625"/>
-  <anchor x="722.46875" y="0.0" name="bottom"/>
-  <anchor x="726.5" y="1827" name="top"/>
+  <anchor x="722.47" y="0.0" name="bottom"/>
+  <anchor x="726.53" y="1854.7738776137353" name="top"/>
   <outline>
     <component base="G.cv03"/>
-    <component base="dotaccentcomb" xOffset="622.46875" yOffset="412.0"/>
+    <component base="dotaccentcomb" xOffset="622.469" yOffset="412.0"/>
   </outline>
 </glyph>

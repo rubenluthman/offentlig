@@ -4,13 +4,21 @@
   <unicode hex="2018"/>
   <outline>
     <contour>
-      <point x="175.28125" y="1013.0514375" type="line"/>
-      <point x="405.21875" y="1013.0514375" type="line"/>
-      <point x="437.53125" y="1233.37434375" type="line"/>
-      <point x="353.0625" y="1238.2339375000001" type="line"/>
-      <point x="498.6875" y="1487.289875" type="line"/>
-      <point x="413.34375" y="1487.289875" type="line"/>
-      <point x="203.5625" y="1205.74578125" type="line"/>
+      <point x="498.6875" y="1487.2899" type="line"/>
+      <point x="413.3438" y="1487.2899" type="line"/>
+      <point x="209.1505" y="1201.2614" type="line"/>
+      <point x="175.5049" y="1159.3358"/>
+      <point x="172.5136" y="1100.5677"/>
+      <point x="201.7284" y="1055.4426" type="curve" smooth="yes"/>
+      <point x="230.9433" y="1010.3175"/>
+      <point x="285.7877" y="988.9932"/>
+      <point x="337.8117" y="1002.5317" type="curve" smooth="yes"/>
+      <point x="389.8357" y="1016.0701"/>
+      <point x="427.3283" y="1061.4237"/>
+      <point x="430.8405" y="1115.0655" type="curve" smooth="yes"/>
+      <point x="434.3527" y="1168.7073"/>
+      <point x="403.0939" y="1218.5624"/>
+      <point x="353.2794" y="1238.7688" type="curve"/>
     </contour>
   </outline>
 </glyph>

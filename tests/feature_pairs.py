@@ -88,7 +88,7 @@ class FeaturePairs:
                     continue
                 ta, tb = self.table.texts[a], self.table.texts[b]
                 if self.accented[a] or self.accented[b]:
-                    found = accent_violation(ta, tb, self.accented[a], self.accented[b], g, r)
+                    found = accent_violation(ta, tb, self.accented[a], self.accented[b], g, r, self.weight, self.italic)
                     rule = "accent"
                 else:
                     found = plain_violation(ta, tb, g)

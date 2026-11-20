@@ -2,7 +2,7 @@
 <glyph name="candrabinducomb" format="2">
   <unicode hex="0310"/>
   <anchor x="266" y="1038" name="_top"/>
-  <anchor x="265.5" y="1512" name="top"/>
+  <anchor x="265.5" y="1513.1103610569678" name="top"/>
   <outline>
     <component base="brevecomb"/>
     <component base="dotaccentcomb" xOffset="207.5" yOffset="97"/>

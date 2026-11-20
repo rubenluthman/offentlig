@@ -1,7 +1,7 @@
 """Four small feature and mark fixes, at all 18 statics.
 
 - `sups` also sets the small letters after a raised + − =.
-- Turkish `i` with `ss03` has the dot of `i.ss03`.
+- Turkish `i` has the dot of `i` (round, and square with `ss03`).
 - `į` loses its dot under a top mark, like every other Soft_Dotted letter in the font.
 - `dotbelowcomb` attaches under `j ı ȷ`.
 """
@@ -79,20 +79,24 @@ def test_sups_keeps_a_letter_after_hyphen_minus(weight, italic):
 
 
 @ALL
-def test_turkish_round_dot_i_has_the_dot_of_i_ss03(weight, italic):
-    tr = names(weight, italic, "i", features={"ss03": True}, language="tr")
-    assert tr == ["idotaccent.ss03"], tr
+def test_turkish_dotted_i_has_the_dot_of_i(weight, italic):
+    """The round Turkish `i` (default) has the dot of `i`. With `ss03` it keeps the shared accent dot of Public Sans, which is smaller."""
+    tr = names(weight, italic, "i", language="tr")
+    assert tr == ["i.loclTRK"], tr  # the production name of `idotaccent`
+    assert names(weight, italic, "i", features={"ss03": True}, language="tr") == ["idotaccent.ss03"]
     def dot(name):
         return max((box(c) for c in contours(weight, italic, name)), key=lambda b: b[1])
-    a, b = dot("idotaccent.ss03"), dot("i.ss03")
+    a, b = dot("i.loclTRK"), dot("i")
     assert abs((a[2] - a[0]) - (b[2] - b[0])) <= 1 and abs((a[3] - a[1]) - (b[3] - b[1])) <= 1, (a, b)
-    assert abs(a[1] - b[1]) <= 1, "same height as the dot of i.ss03"
+    assert abs(a[1] - b[1]) <= 1, "same height as the dot of i"
 
 
 @ALL
-def test_round_dot_letters_keep_the_accent_dot(weight, italic):
-    """ċ ė ġ ż İ keep the shared accent dot (smaller than the i dot in every weight, as in the default style)."""
+def test_dotted_letters_keep_the_accent_dot(weight, italic):
+    """ċ ė ġ ż İ keep the shared accent dot (smaller than the i dot in every weight, as in the default style), round by default and square with `ss03`."""
     for ch in "ċėġżİ":
+        out = names(weight, italic, ch)
+        assert not out[0].endswith(".ss03") and "dotaccent" in out[0], out
         out = names(weight, italic, ch, features={"ss03": True})
         assert out[0].endswith(".ss03") and "dotaccent" in out[0], out
 

@@ -3,7 +3,7 @@
   <advance width="1218"/>
   <unicode hex="1E45"/>
   <anchor x="537" y="0" name="bottom"/>
-  <anchor x="746.546" y="1415" name="top"/>
+  <anchor x="756.7926177971817" y="1488.215368192925" name="top"/>
   <outline>
     <component base="n"/>
     <component base="dotaccentcomb" xOffset="431"/>

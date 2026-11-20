@@ -1,6 +1,6 @@
 """Every accented letter has its cv03, cv04, cv05, ss01, ss02 and ss03 form, and every dotted letter alternate its round-dot form.
 
-The letter alternates (`cv03` G, `cv04` single-storey a, `cv05` serifed I, `ss01` g, `ss02` l) and `ss03` (round dots) are separate
+The letter alternates (`cv03` G, `cv04` single-storey a, `cv05` serifed I, `ss01` g, `ss02` l) and `ss03` (square dots) are separate
 features, and the `cv` features run first. A letter that has a dot and an alternate therefore needs a third glyph,
 `<name>.cvNN.ss03`, otherwise `ss03` would leave it with square dots or undo the alternate.
 """

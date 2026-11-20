@@ -2,7 +2,7 @@
 <glyph name="wdotaccent" format="2">
   <advance width="1593"/>
   <unicode hex="1E87"/>
-  <anchor x="805" y="1415" name="top"/>
+  <anchor x="805" y="1490.231620865118" name="top"/>
   <anchor x="805" y="0" name="bottom"/>
   <outline>
     <component base="w"/>

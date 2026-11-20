@@ -2,11 +2,11 @@
 <glyph name="adotaccent" format="2">
   <advance width="1105.8125"/>
   <unicode hex="0227"/>
-  <anchor x="564.84375" y="0" name="bottom"/>
+  <anchor x="564.84" y="0" name="bottom"/>
   <anchor x="942.75" y="25.25" name="ogonek"/>
-  <anchor x="567.90625" y="1415" name="top"/>
+  <anchor x="567.91" y="1442.7738776137353" name="top"/>
   <outline>
     <component base="a"/>
-    <component base="dotaccentcomb" xOffset="463.84375"/>
+    <component base="dotaccentcomb" xOffset="463.844"/>
   </outline>
 </glyph>

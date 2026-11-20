@@ -1,4 +1,4 @@
-"""ss03 swaps every glyph that carries a dot for its round-dot form and changes nothing when it is off."""
+"""The dots are round by default. `ss03` swaps every glyph that carries a dot for its square-dot form (the dots of Public Sans) and changes nothing when it is off."""
 import pytest
 import uharfbuzz as hb
 from fontTools.ttLib import TTFont
@@ -33,7 +33,7 @@ DOT_GLYPHS = """
     udieresisacute udieresiscaron udieresisgrave udieresismacron wdotaccent xdieresis ydotaccent
 """.split()
 
-# Letter alternates that carry a dot: the `cv` and `ss02` features run first, so these need their own round-dot forms.
+# Letter alternates that carry a dot: the `cv` and `ss02` features run first, so these need their own square-dot forms.
 DOT_ALTERNATES = """
     Gcommaaccent.cv03 Gdotaccent.cv03 Idieresis.cv05 Idieresisacute.cv05 Idotaccent.cv05 Idotbelow.cv05
     abrevedotbelow.cv04 acircumflexdotbelow.cv04 adieresis.cv04 adieresismacron.cv04 adotaccent.cv04
@@ -77,7 +77,7 @@ def test_ss03_substitutes_every_dot_glyph(weight, italic):
 
 
 @pytest.mark.parametrize("italic", [False, True], ids=["roman", "italic"])
-def test_ss03_shapes_text_with_round_dots(italic):
+def test_ss03_shapes_text_with_square_dots(italic):
     path = static_path("Regular", italic)
     text = "\u00e4\u00f6\u00ef\u0130ij.,:;!?\u00bf\u00a1\u2026\u00f7"
     off, _ = shape(path, text, {})
@@ -141,7 +141,7 @@ def test_italic_ss03_marks_sit_on_their_anchors(weight):
 
 @pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
 def test_ss03_does_not_undo_letter_alternates(weight, italic):
-    """The `cv` features run before `ss03`, so a letter alternate keeps its shape under `ss03` and swaps to its own round-dot form."""
+    """The `cv` features run before `ss03`, so a letter alternate keeps its shape under `ss03` and swaps to its own square-dot form."""
     path = static_path(weight, italic)
     assert shape(path, "ä", {"ss03": True, "cv04": True})[0] == ["adieresis.cv04.ss03"]
     assert shape(path, "ạ", {"ss03": True, "cv04": True})[0] == ["adotbelow.cv04.ss03"]
@@ -150,9 +150,9 @@ def test_ss03_does_not_undo_letter_alternates(weight, italic):
     assert shape(path, "ǟ", {"ss03": True, "cv04": True})[0] == ["adieresismacron.cv04.ss03"]
     assert shape(path, "ȧ", {"ss03": True, "cv04": True})[0] == ["adotaccent.cv04.ss03"]
     assert shape(path, "Ḯ", {"ss03": True, "cv05": True})[0] == ["Idieresisacute.cv05.ss03"]
-    # an alternate without a dot keeps its form, and a dotted letter without an alternate gets the plain round dots
+    # an alternate without a dot keeps its form, and a dotted letter without an alternate gets the plain square dots
     assert shape(path, "á", {"ss03": True, "cv04": True})[0] == ["aacute.cv04"]
-    # letters the alternates do not touch still get round dots
+    # letters the alternates do not touch still get square dots
     assert shape(path, "öÄ", {"ss03": True, "cv04": True})[0] == ["odieresis.ss03", "Adieresis.ss03"]
     assert shape(path, "1.5", {"ss03": True, "tnum": True})[0] == ["one.tf", "period.tf.ss03", "five.tf"]
 
@@ -175,13 +175,13 @@ STACKS = [
 
 @pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
 def test_marks_stacked_on_round_dots_clear_the_dots(weight, italic):
-    """A second mark over a letter with a dot or diaeresis sits at least as high with `ss03` as without, so it never lands on the (larger) round dots."""
+    """A second mark over a letter with a dot or diaeresis sits at least as high without `ss03` (round dots) as with it (square dots), so it never lands on the (larger) round dots."""
     path = static_path(weight, italic)
     for text in STACKS:
         off = last_mark_offset(path, text, {})
         on = last_mark_offset(path, text, {"ss03": True})
         # a stack the font composes into one glyph (ü + acute is ǘ) has no second mark to place
-        assert on >= off, (text, off, on)
+        assert off >= on, (text, off, on)
         if text in ("\u00e4\u0301", "\u00c4\u0301", "\u0117\u0301", "\u00ff\u0301", "\u00f6\u0300"):
             assert off > 0, text
 
@@ -209,7 +209,7 @@ def _clearances(font, glyph):
 @pytest.mark.parametrize("weight", ["Thin", "Regular", "Black"])
 @pytest.mark.parametrize("italic", [False, True], ids=["roman", "italic"])
 def test_round_dots_keep_the_clearances_of_the_square_dots(weight, italic):
-    """Round dots sit no closer to the letter than square dots; a mark stacked above them is never closer than 2 units less than above square dots."""
+    """Round dots (default) sit no closer to the letter than square dots (`.ss03`); a mark stacked above them is never closer than 2 units less than above square dots."""
     import ufoLib2
     from pathlib import Path
 
@@ -218,7 +218,7 @@ def test_round_dots_keep_the_clearances_of_the_square_dots(weight, italic):
     for glyph in font:
         if not glyph.name.endswith(".ss03") or glyph.contours or glyph.name[:-5] not in font:
             continue
-        plain, rounded = _clearances(font, font[glyph.name[:-5]]), _clearances(font, glyph)
+        plain, rounded = _clearances(font, glyph), _clearances(font, font[glyph.name[:-5]])  # square (`.ss03`), round (default)
         if plain is None or rounded is None:
             continue
         checked += 1
@@ -233,7 +233,7 @@ def test_round_dots_keep_the_clearances_of_the_square_dots(weight, italic):
 @pytest.mark.parametrize("weight", ["Thin", "Regular", "Black"])
 @pytest.mark.parametrize("italic", [False, True], ids=["roman", "italic"])
 def test_round_dots_match_square_dot_area(weight, italic):
-    """D27: each round dot has the same ink area as the square dot, measured on the contours (the italic square is a parallelogram, so its bounding box overstates its area). Only the Black `dieresiscomb.ss03` is clamped to a 364.0 diameter so stacked `Udieresiscaron.ss03` stays within winAscent 2315."""
+    """D27: each round dot (the default glyph) has the same ink area as the square dot (`.ss03`), measured on the contours (the italic square is a parallelogram, so its bounding box overstates its area). Only the Black `dieresiscomb` is clamped to a 364.0 diameter so stacked `Udieresiscaron.ss03` stays within winAscent 2315."""
     import math
     from pathlib import Path
     import ufoLib2
@@ -254,7 +254,7 @@ def test_round_dots_match_square_dot_area(weight, italic):
         ("period.ss03", 0, "period", 0),
         ("periodcentered.ss03", 0, "periodcentered", 0),
     ]:
-        want = area(font, font[base_name].contours[bi])
+        want = area(font, font[ss_name].contours[si])
         if ss_name == "dieresiscomb.ss03" and weight == "Black":
             want = min(want, math.pi / 4 * 364.0 ** 2)
-        assert area(font, font[ss_name].contours[si]) == pytest.approx(want, rel=0.01), ss_name
+        assert area(font, font[base_name].contours[bi]) == pytest.approx(want, rel=0.01), ss_name

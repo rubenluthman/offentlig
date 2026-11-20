@@ -6,9 +6,9 @@
   <anchor x="675" y="1586" name="caron"/>
   <anchor x="429" y="516" name="center"/>
   <anchor x="836" y="920" name="horn"/>
-  <anchor x="593.579" y="1737" name="top"/>
+  <anchor x="603.8254848714155" y="1809.9" name="top"/>
   <outline>
     <component base="t"/>
-    <component base="dieresiscomb" xOffset="6.03254" yOffset="322"/>
+    <component base="dieresiscomb" xOffset="6.033" yOffset="322"/>
   </outline>
 </glyph>

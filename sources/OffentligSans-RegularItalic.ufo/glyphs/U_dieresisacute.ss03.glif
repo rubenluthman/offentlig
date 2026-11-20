@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Udieresisacute.ss03" format="2">
   <advance width="1350.90625"/>
-  <anchor x="615.94" y="2.62" name="bottom"/>
-  <anchor x="1247.66" y="1171.44" name="horn"/>
-  <anchor x="745.81" y="11.81" name="ogonek"/>
-  <anchor x="933.4376543593073" y="2198.001841037738" name="top"/>
+  <anchor x="615.9375" y="2.625" name="bottom"/>
+  <anchor x="1247.65625" y="1171.4375" name="horn"/>
+  <anchor x="745.8125" y="11.8125" name="ogonek"/>
+  <anchor x="930.0" y="2174.0" name="top"/>
   <outline>
     <component base="U"/>
-    <component base="dieresiscomb.ss03" xOffset="487.969" yOffset="412.0"/>
-    <component base="acutecomb" xOffset="709.0466543593072" yOffset="782.9938410377382"/>
+    <component base="dieresiscomb.ss03" xOffset="487.96875" yOffset="412"/>
+    <component base="acutecomb" xOffset="705.6739196417298" yOffset="759.0"/>
   </outline>
 </glyph>

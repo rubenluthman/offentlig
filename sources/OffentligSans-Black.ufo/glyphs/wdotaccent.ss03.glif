@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="wdotaccent.ss03" format="2">
   <advance width="1593"/>
-  <anchor x="805" y="1490.231620865118" name="top"/>
+  <anchor x="805" y="1415" name="top"/>
   <anchor x="805" y="0" name="bottom"/>
   <outline>
     <component base="w"/>

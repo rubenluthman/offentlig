@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Bdotaccent.ss03" format="2">
   <advance width="1288.96875"/>
-  <anchor x="570.71" y="0" name="bottom"/>
-  <anchor x="830.842496999398" y="1850.9903713507028" name="top"/>
+  <anchor x="570.70581" y="0" name="bottom"/>
+  <anchor x="827.474" y="1827" name="top"/>
   <outline>
     <component base="B"/>
-    <component base="dotaccentcomb.ss03" xOffset="600.522" yOffset="412"/>
+    <component base="dotaccentcomb.ss03" xOffset="600.5216" yOffset="412"/>
   </outline>
 </glyph>

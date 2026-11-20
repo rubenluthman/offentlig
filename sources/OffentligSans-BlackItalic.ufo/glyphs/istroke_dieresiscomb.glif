@@ -2,7 +2,7 @@
 <glyph name="istroke_dieresiscomb" format="2">
   <advance width="571"/>
   <anchor x="363" y="18" name="ogonek"/>
-  <anchor x="417.546" y="1415" name="top"/>
+  <anchor x="417.4859459165298" y="1449.8000000000002" name="top"/>
   <anchor x="212" y="0" name="bottom"/>
   <outline>
     <contour>

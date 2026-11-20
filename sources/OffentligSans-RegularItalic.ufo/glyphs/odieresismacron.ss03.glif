@@ -2,12 +2,12 @@
 <glyph name="odieresismacron.ss03" format="2">
   <advance width="1085.25"/>
   <anchor x="450.75" y="0" name="bottom"/>
-  <anchor x="886.34" y="698.19" name="horn"/>
-  <anchor x="574.66" y="20" name="ogonek"/>
-  <anchor x="689.4376543593073" y="1705.5018410377381" name="top"/>
+  <anchor x="886.34375" y="698.1875" name="horn"/>
+  <anchor x="574.65625" y="20" name="ogonek"/>
+  <anchor x="686.0" y="1681.5" name="top"/>
   <outline>
     <component base="o"/>
-    <component base="dieresiscomb.ss03" xOffset="255.281"/>
-    <component base="macroncomb" xOffset="263.48365435930737" yOffset="370.9938410377382"/>
+    <component base="dieresiscomb.ss03" xOffset="255.28125"/>
+    <component base="macroncomb" xOffset="260.11141964172975" yOffset="347.0"/>
   </outline>
 </glyph>

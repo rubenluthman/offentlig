@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="Gdotaccent.cv03" format="2">
   <advance width="1413.9375"/>
-  <anchor x="610.21875" y="0.0" name="bottom"/>
-  <anchor x="877.3" y="1827" name="top"/>
+  <anchor x="610.22" y="0.0" name="bottom"/>
+  <anchor x="880.7024969993981" y="1850.9903713507028" name="top"/>
   <outline>
     <component base="G.cv03"/>
     <component base="dotaccentcomb" xOffset="650.375" yOffset="412.0"/>

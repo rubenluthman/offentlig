@@ -131,26 +131,31 @@ def _area(font, name):
 
 @pytest.mark.parametrize("master", MASTERS)
 def test_round_comma_heads_keep_the_inner_edge_and_the_weight(fonts, master):
-    """The `.ss03` head ends where the square head ends (nearest the letter) and carries at least 85 % of its ink (77 % in Thin)."""
+    """The round head (default) ends where the square head (`.ss03`) ends (nearest the letter) and carries at least 85 % of its ink (77 % in Thin)."""
     font = fonts[master]
     for name, edge in COMMAS.items():
-        plain, rounded = bounds(font, name), bounds(font, name + ".ss03")
+        plain, rounded = bounds(font, name + ".ss03"), bounds(font, name)
         index = 3 if edge is max else 1
         assert rounded[index] == pytest.approx(plain[index], abs=0.5), name
-        assert _area(font, name + ".ss03") / _area(font, name) >= (0.77 if master.startswith("Thin") else 0.85), name
+        assert _area(font, name) / _area(font, name + ".ss03") >= (0.77 if master.startswith("Thin") else 0.85), name
+
+
+# The square head (`.ss03`) leans with the slant. The round head is not sheared (D27), so its ink centre sits off the slant
+# line by the measured amounts (italic against upright, `commaaboverightcomb`): 4.2 at Thin, 5.8 at Regular, 10.1 at Black.
+COMMA_TOLERANCE = {"commaaboverightcomb.ss03": 3.0, "commaaboverightcomb": 11.0}
 
 
 @pytest.mark.parametrize("style", ["Thin", "Regular", "Black"])
-def test_comma_above_right_follows_the_slant_in_the_italic(fonts, style):
+@pytest.mark.parametrize("name", list(COMMA_TOLERANCE))
+def test_comma_above_right_follows_the_slant_in_the_italic(fonts, style, name):
     """The comma's ink sits at the upright offset from `_top`, plus the lean over the height of the comma."""
     upright, italic = fonts[style], fonts[style + "Italic"]
-    name = "commaaboverightcomb"
     ux0, _, ux1, _ = bounds(upright, name)
     ix0, iy0, ix1, iy1 = bounds(italic, name)
     up_offset = (ux0 + ux1) / 2 - anchors(upright[name])["_top"][0]
     ax, ay = anchors(italic[name])["_top"]
     want = up_offset + ((iy0 + iy1) / 2 - ay) * TAN8
-    assert (ix0 + ix1) / 2 - ax == pytest.approx(want, abs=3.0)
+    assert (ix0 + ix1) / 2 - ax == pytest.approx(want, abs=COMMA_TOLERANCE[name])
 
 
 @pytest.mark.parametrize("master", ["Thin", "Regular", "Black"])
