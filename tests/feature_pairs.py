@@ -43,14 +43,24 @@ class FeaturePairs:
         self.accented = np.array([is_accented(x) for x in t.texts])
         self.reference = np.array([t.index.get(base_of(x), -1) if a else i for i, (x, a) in enumerate(zip(t.texts, self.accented))])
 
+    def pair_chunks(self, focus=(), size=20000):
+        """Lists of at most `size` pairs, in the order of `pairs`: the pairs are never all in memory at once."""
+        n = len(self.table.texts)
+        changed = np.ones(n, dtype=bool) if focus == "all" else self.changed | np.isin(self.table.texts, list(focus))
+        columns = [int(b) for b in np.nonzero(changed)[0]]
+        chunk = []
+        for a in range(n):
+            for b in range(n) if changed[a] else columns:
+                chunk.append((a, b))
+                if len(chunk) >= size:
+                    yield chunk
+                    chunk = []
+        if chunk:
+            yield chunk
+
     def pairs(self, focus=()):
         """Indexes (left, right) of every pair with a changed glyph on either side (and with a text of `focus`)."""
-        n = len(self.table.texts)
-        if focus == "all":
-            return [(a, b) for a in range(n) for b in range(n)]
-        changed = np.nonzero(self.changed | np.isin(self.table.texts, list(focus)))[0]
-        pairs = {(int(a), b) for a in changed for b in range(n)} | {(a, int(b)) for b in changed for a in range(n)}
-        return sorted(pairs)
+        return [pair for chunk in self.pair_chunks(focus) for pair in chunk]
 
     def measure(self, pairs):
         """(gap, reference gap or inf, kerning) of each pair; gap is NaN where the pair is not two glyphs."""
@@ -70,21 +80,21 @@ class FeaturePairs:
 
     def violations(self, focus=()):
         """List of (left index, right index, text of the pair, gap, reference gap, rule) for every pair that breaks a rule."""
-        pairs = self.pairs(focus)
-        gap, ref, _ = self.measure(pairs)
         out = []
-        for (a, b), g, r in zip(pairs, gap, ref):
-            if np.isnan(g):
-                continue
-            ta, tb = self.table.texts[a], self.table.texts[b]
-            if self.accented[a] or self.accented[b]:
-                found = accent_violation(ta, tb, self.accented[a], self.accented[b], g, r)
-                rule = "accent"
-            else:
-                found = plain_violation(ta, tb, g)
-                rule = "plain"
-            if found:
-                out.append((a, b, ta + tb, found[1], found[2] if rule == "accent" else None, rule))
+        for pairs in self.pair_chunks(focus):
+            gap, ref, _ = self.measure(pairs)
+            for (a, b), g, r in zip(pairs, gap, ref):
+                if np.isnan(g):
+                    continue
+                ta, tb = self.table.texts[a], self.table.texts[b]
+                if self.accented[a] or self.accented[b]:
+                    found = accent_violation(ta, tb, self.accented[a], self.accented[b], g, r)
+                    rule = "accent"
+                else:
+                    found = plain_violation(ta, tb, g)
+                    rule = "plain"
+                if found:
+                    out.append((a, b, ta + tb, found[1], found[2] if rule == "accent" else None, rule))
         return out
 
     def requirement(self, a, b, ref):

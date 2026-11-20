@@ -23,28 +23,34 @@ def test_pairs_with_an_alternate_keep_the_gap_of_the_rules(weight, italic, featu
     assert [(text, gap, ref, rule) for _, _, text, gap, ref, rule in found] == []
 
 
+def closed_below_default(weight, italic, features_name):
+    """Pairs with an alternate that sit closer than the default pair of the same characters (see the test below), as (pair, gap, default gap)."""
+    on = FeaturePairs(weight, italic, ALTERNATE_SETS[features_name])
+    off = FeaturePairs(weight, italic, {})
+    texts = on.table.texts
+    tight = []
+    for todo in on.pair_chunks():
+        todo = [(a, b) for a, b in todo if texts[a] in off.table.index and texts[b] in off.table.index]
+        gap_on = on.table.gaps_pairs(todo, on.table.kerning_pairs(todo))
+        pairs_off = [(off.table.index[texts[a]], off.table.index[texts[b]]) for a, b in todo]
+        gap_off = off.table.gaps_pairs(pairs_off, off.table.kerning_pairs(pairs_off))
+        for (a, b), x, y in zip(todo, gap_on, gap_off):
+            if np.isnan(x) or np.isnan(y) or np.isinf(y):
+                continue
+            if any(c in texts[a] + texts[b] for c in "⁄") or diaeresis_pair(texts[a], texts[b], weight, italic):
+                continue  # the fraction slash overlaps figures (`frac` builds fractions); the diaeresis pairs keep 8 (above)
+            if x < min(y, FLOOR) - 2 and (on.requirement(a, b, np.inf) is not None):
+                tight.append((texts[a] + texts[b], round(float(x)), round(float(y))))
+    return tight
+
+
 @pytest.mark.parametrize("features_name", list(ALTERNATE_SETS))
 @pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
 def test_an_alternate_never_closes_a_pair_below_the_default_pair(weight, italic, features_name):
     """A pair with an alternate keeps at least the smaller of the gap of the same characters without the feature and 30 units,
     less 2. This is the outcome the kerning groups of the alternates serve: an alternate that shares the groups of its default
     form but not its glyph-to-glyph exceptions would close the pair."""
-    on = FeaturePairs(weight, italic, ALTERNATE_SETS[features_name])
-    off = FeaturePairs(weight, italic, {})
-    texts = on.table.texts
-    todo = [(a, b) for a, b in on.pairs() if texts[a] in off.table.index and texts[b] in off.table.index]
-    gap_on = on.table.gaps_pairs(todo, on.table.kerning_pairs(todo))
-    pairs_off = [(off.table.index[texts[a]], off.table.index[texts[b]]) for a, b in todo]
-    gap_off = off.table.gaps_pairs(pairs_off, off.table.kerning_pairs(pairs_off))
-    tight = []
-    for (a, b), x, y in zip(todo, gap_on, gap_off):
-        if np.isnan(x) or np.isnan(y) or np.isinf(y):
-            continue
-        if any(c in texts[a] + texts[b] for c in "⁄") or diaeresis_pair(texts[a], texts[b], weight, italic):
-            continue  # the fraction slash overlaps figures (`frac` builds fractions); the diaeresis pairs keep 8 (above)
-        if x < min(y, FLOOR) - 2 and (on.requirement(a, b, np.inf) is not None):
-            tight.append((texts[a] + texts[b], round(float(x)), round(float(y))))
-    assert tight == []
+    assert closed_below_default(weight, italic, features_name) == []
 
 
 @pytest.mark.parametrize("master", MASTERS)

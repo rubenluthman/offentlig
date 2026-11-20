@@ -67,8 +67,12 @@ class PairTable:
         """Matrix of the kerning of the first glyph for `left` x `right` (indexes into `self.texts`), NaN where the pair
         is not two glyphs (a ligature or a substitution of the second glyph). A first glyph that `calt` or `rclt` swapped
         is measured as shaped (`first_shaped`)."""
-        values = self.kerning_pairs([(a, b) for a in left for b in right], chunk)
-        return np.array(values).reshape(len(left), len(right))
+        out = np.empty((len(left), len(right)))
+        rows = max(1, chunk // max(1, len(right)))  # a block of rows at a time: the list of all pairs is never built
+        for start in range(0, len(left), rows):
+            block = left[start : start + rows]
+            out[start : start + len(block)] = np.array(self.kerning_pairs([(a, b) for a in block for b in right], chunk)).reshape(len(block), len(right))
+        return out
 
     def kerning_pairs(self, pairs, chunk=2000):
         """List of the kerning of the first glyph of each (left, right) pair of indexes into `self.texts` (NaN as in `kerning`)."""
