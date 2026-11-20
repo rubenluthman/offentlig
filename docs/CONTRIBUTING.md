@@ -26,7 +26,7 @@ make clean     # deletes fonts/ and build/
 make verify    # tests, links, house style, conflict markers, paths and secrets
 ```
 
-`make test` and `make verify` use `--dist worksteal`: a worker that runs out of tests takes queued ones from another, so no worker is left running the longest tests alone. Measured on `v0.5.0` with the same tests collected and passing: two workers with the default distribution took 71 minutes, with one worker idle for the last 60; three workers with `worksteal` took 33 minutes, all busy until the last 16 seconds. Each worker peaks near 1 GB, so the local default stays at three; raise `PYTEST_JOBS` on a machine with memory to spare. CI uses `PYTEST_JOBS=auto`.
+`make test` and `make verify` use `--dist worksteal`: a worker that runs out of tests takes queued ones from another, so no worker is left running the longest tests alone. Measured on `v0.5.0` with the same tests collected and passing: two workers with the default distribution took 71 minutes, with one worker idle for the last 60; three workers with `worksteal` took 33 minutes, all busy until the last 16 seconds. In a full run with three workers, each peaked between 0.8 and 1.2 GB (the pair tests now build their pair lists in chunks, which lowers the peak inside one test but not the memory a worker keeps across tests), so the local default stays at three; raise `PYTEST_JOBS` on a machine with memory to spare. CI uses `PYTEST_JOBS=auto`.
 
 Each heavy step (`build`, `test`, `qa`, `proof`, `diff-public-sans`, `diff-main`, and the test step of `verify`) runs one at a time: when a `heavy-run` command is installed it queues on a shared lock, and where it is not (CI) it runs directly.
 

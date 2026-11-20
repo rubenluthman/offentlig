@@ -6,7 +6,8 @@
 ### Offentlig Sans
 <!-- vale HouseStyle.Headings = YES -->
 
-- [ ] The alternate-pair tests hold about 1 GB of pair lists per pytest worker. Work through the pairs in chunks, so each worker uses less memory and more workers can run at once.
+- [x] The alternate-pair tests now build their pair lists in chunks. A full run with three workers took 33 minutes, and each worker still peaked between 0.8 and 1.2 GB, so the worker count stays at three.
+- [ ] Try four and five test workers alone, one run each, and set the default from the times.
 - [x] Audit every design and spacing decision before work on Offentlig Serif and Offentlig Mono starts, since they will reuse these rules (completed in 0.4.0; see [docs/design-decisions.md](docs/design-decisions.md) and `tests/test_diagonal_gaps.py`).
 - [ ] Follow the three fixes this fork carries that Public Sans has not merged yet: uswds/public-sans PRs #396 (italic `å`), #397 (subscript digits) and #398 (Thin kerning of space and dashes). Checked at each release (see the release steps in [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md#releases)).
 - [ ] The shape of the ogonek. Public-sans issue #158 names it without a target, so take one from a reference design, such as Libre Franklin (the source of Public Sans), and check it on the Polish and Lithuanian letters.
