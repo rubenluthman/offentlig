@@ -4,6 +4,9 @@ set -eu
 cd "$(dirname "$0")/.."
 fail=0
 
+# Only the test step is heavy: it queues on the machine-wide lock where `heavy-run` is installed (not in CI).
+heavy() { if command -v heavy-run >/dev/null 2>&1; then heavy-run "$@"; else "$@"; fi; }
+
 echo "== tests"
 built=fonts/OffentligSans/ttf/OffentligSans-Regular.ttf
 if [ ! -f "$built" ]; then
@@ -15,7 +18,7 @@ elif [ -n "$(git ls-files -z --cached --others --exclude-standard sources | xarg
   echo "fonts/ is older than sources/: run 'make build' first" >&2
   fail=1
 else
-  PATH="$PWD/venv/bin:$PATH" pytest -q -n "${PYTEST_JOBS:-3}" --dist worksteal tests || fail=1
+  PATH="$PWD/venv/bin:$PATH" heavy pytest -q -n "${PYTEST_JOBS:-3}" --dist worksteal tests || fail=1
 fi
 
 files=$(git ls-files --cached --others --exclude-standard)

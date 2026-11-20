@@ -6,7 +6,9 @@ FONTSPECTOR ?= $(VENV)/bin/fontspector
 SANS_REF ?= build/public-sans-reference
 SANS_REF_COMMIT ?= e40fcf567
 MAIN_REF ?= build/main-reference
-DIFFENATOR2 = PATH="$(CURDIR)/$(VENV)/diffenator/bin:$$PATH" diffenator2
+# Heavy targets queue on the machine-wide lock when a `heavy-run` command is installed, and run directly where it is not (CI).
+HEAVY := $(shell command -v heavy-run)
+DIFFENATOR2 = $(HEAVY) env PATH="$(CURDIR)/$(VENV)/diffenator/bin:$$PATH" diffenator2
 
 .PHONY: venv build test proof diff-public-sans diff-main specimen social-preview install qa verify clean
 
@@ -17,16 +19,16 @@ venv:
 	$(VENV)/diffenator/bin/pip install -r requirements-qa.txt
 
 build:
-	cd sources && gftools builder config-OffentligSans.yaml
+	cd sources && $(HEAVY) gftools builder config-OffentligSans.yaml
 
 PYTEST_JOBS ?= 3
 
 test:
-	$(VENV)/bin/pytest -q -n $(PYTEST_JOBS) --dist worksteal tests
+	$(HEAVY) $(VENV)/bin/pytest -q -n $(PYTEST_JOBS) --dist worksteal tests
 
 proof:
 	$(VENV)/bin/python scripts/proof_page.py
-	PATH="$(CURDIR)/$(VENV)/diffenator/bin:$$PATH" diffenator2 proof $(FONTS)/ttf/*.ttf -o build/proof/diffenator2
+	$(HEAVY) env PATH="$(CURDIR)/$(VENV)/diffenator/bin:$$PATH" diffenator2 proof $(FONTS)/ttf/*.ttf -o build/proof/diffenator2
 
 # Public Sans at SANS_REF_COMMIT, cloned once into SANS_REF (its fonts/ttf holds the built TTFs).
 $(SANS_REF)/fonts/ttf:
@@ -51,7 +53,7 @@ diff-main:
 	  git worktree remove --force "$(MAIN_REF)" 2>/dev/null; \
 	  rm -rf "$(MAIN_REF)" && mkdir -p "$(MAIN_REF)" && \
 	  git archive "$$ref" | tar -x -C "$(MAIN_REF)" && \
-	  (cd "$(MAIN_REF)/sources" && gftools builder config-OffentligSans.yaml) && \
+	  (cd "$(MAIN_REF)/sources" && $(HEAVY) gftools builder config-OffentligSans.yaml) && \
 	  echo "$$ref" > "$(MAIN_REF)/.main-commit" || exit 1; \
 	fi
 	$(DIFFENATOR2) diff -fb $(MAIN_REF)/$(FONTS)/ttf/*.ttf -fa $(FONTS)/ttf/*.ttf -o build/diff-main
@@ -69,8 +71,8 @@ install:
 
 qa:
 	mkdir -p build
-	-$(FONTSPECTOR) -p universal --skip-network --json build/fsp-universal.json $(FONTS)/ttf/*.ttf $(FONTS)/variable/*.ttf > build/fsp-universal.txt
-	-$(FONTSPECTOR) -p opentype --skip-network --json build/fsp-opentype.json $(FONTS)/ttf/*.ttf $(FONTS)/variable/*.ttf > build/fsp-opentype.txt
+	-$(HEAVY) $(FONTSPECTOR) -p universal --skip-network --json build/fsp-universal.json $(FONTS)/ttf/*.ttf $(FONTS)/variable/*.ttf > build/fsp-universal.txt
+	-$(HEAVY) $(FONTSPECTOR) -p opentype --skip-network --json build/fsp-opentype.json $(FONTS)/ttf/*.ttf $(FONTS)/variable/*.ttf > build/fsp-opentype.txt
 	@status=0; \
 	for r in universal opentype; do \
 	  $(VENV)/bin/python scripts/fsp_summary.py build/fsp-$$r.json || status=1; \
