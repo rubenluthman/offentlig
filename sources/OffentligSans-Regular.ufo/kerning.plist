@@ -7041,13 +7041,13 @@
       <key>euro</key>
       <integer>0</integer>
       <key>icircumflex</key>
-      <integer>37</integer>
+      <integer>25</integer>
       <key>idotbelow_circumflexcomb</key>
-      <integer>37</integer>
+      <integer>25</integer>
       <key>idotbelow_circumflexcomb.ss03</key>
-      <integer>37</integer>
+      <integer>25</integer>
       <key>istroke_circumflexcomb</key>
-      <integer>38</integer>
+      <integer>26</integer>
       <key>jcircumflex</key>
       <integer>0</integer>
       <key>periodcentered</key>
@@ -7066,13 +7066,13 @@
       <key>hdieresis</key>
       <integer>0</integer>
       <key>icircumflex</key>
-      <integer>37</integer>
+      <integer>25</integer>
       <key>idotbelow_circumflexcomb</key>
-      <integer>37</integer>
+      <integer>25</integer>
       <key>idotbelow_circumflexcomb.ss03</key>
-      <integer>37</integer>
+      <integer>25</integer>
       <key>istroke_circumflexcomb</key>
-      <integer>38</integer>
+      <integer>26</integer>
       <key>jcircumflex</key>
       <integer>0</integer>
       <key>periodcentered</key>
@@ -7085,11 +7085,11 @@
       <key>euro</key>
       <integer>0</integer>
       <key>icircumflex</key>
-      <integer>37</integer>
+      <integer>25</integer>
       <key>idotbelow_circumflexcomb</key>
-      <integer>37</integer>
+      <integer>25</integer>
       <key>istroke_circumflexcomb</key>
-      <integer>38</integer>
+      <integer>26</integer>
       <key>jcircumflex</key>
       <integer>0</integer>
       <key>periodcentered</key>
@@ -48421,7 +48421,7 @@
       <key>public.kern2.i</key>
       <real>17.1875</real>
       <key>public.kern2.idblgrave</key>
-      <integer>247</integer>
+      <integer>41</integer>
       <key>public.kern2.j</key>
       <real>39.375</real>
       <key>public.kern2.n</key>
@@ -48663,7 +48663,7 @@
       <key>idotlessdieresisacute</key>
       <real>25.25</real>
       <key>idotlessdieresisacute.ss03</key>
-      <real>25.25</real>
+      <real>10.25</real>
       <key>igrave</key>
       <integer>14</integer>
       <key>iinvertedbreve</key>
@@ -48741,7 +48741,7 @@
       <key>public.kern2.hyphen</key>
       <real>-93.4375</real>
       <key>public.kern2.idblgrave</key>
-      <integer>246</integer>
+      <integer>41</integer>
       <key>public.kern2.j</key>
       <real>39.375</real>
       <key>public.kern2.n</key>
@@ -48948,7 +48948,7 @@
       <key>ibreve</key>
       <integer>24</integer>
       <key>icaron</key>
-      <real>48.0625</real>
+      <real>42.0625</real>
       <key>idieresis</key>
       <integer>-30</integer>
       <key>idieresis.ss03</key>
@@ -48958,9 +48958,9 @@
       <key>idotbelow_brevecomb.ss03</key>
       <integer>24</integer>
       <key>idotbelow_caroncomb</key>
-      <real>48.0625</real>
+      <real>42.0625</real>
       <key>idotbelow_caroncomb.ss03</key>
-      <real>48.0625</real>
+      <real>42.0625</real>
       <key>idotbelow_dieresiscomb</key>
       <integer>-30</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
@@ -48980,7 +48980,7 @@
       <key>idotlessdieresisacute</key>
       <real>37.0625</real>
       <key>idotlessdieresisacute.ss03</key>
-      <real>37.0625</real>
+      <real>11.0625</real>
       <key>igrave</key>
       <integer>35</integer>
       <key>imacron</key>
@@ -48988,7 +48988,7 @@
       <key>istroke_brevecomb</key>
       <integer>24</integer>
       <key>istroke_caroncomb</key>
-      <real>48.0625</real>
+      <real>42.0625</real>
       <key>istroke_dieresiscomb</key>
       <integer>-30</integer>
       <key>istroke_dieresiscomb.ss03</key>
@@ -49074,7 +49074,7 @@
       <key>public.kern2.i</key>
       <real>27.5</real>
       <key>public.kern2.idblgrave</key>
-      <integer>267</integer>
+      <integer>63</integer>
       <key>public.kern2.n</key>
       <real>-35.9375</real>
       <key>public.kern2.o</key>

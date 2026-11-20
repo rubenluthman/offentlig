@@ -48960,7 +48960,7 @@
       <key>idotlessdieresisacute</key>
       <integer>127</integer>
       <key>idotlessdieresisacute.ss03</key>
-      <integer>127</integer>
+      <integer>98</integer>
       <key>istroke_caroncomb</key>
       <integer>80</integer>
       <key>istroke_dieresiscomb</key>
@@ -49502,7 +49502,7 @@
       <key>idotlessdieresisacute</key>
       <integer>97</integer>
       <key>idotlessdieresisacute.ss03</key>
-      <integer>97</integer>
+      <integer>0</integer>
       <key>istroke_dieresiscomb</key>
       <integer>0</integer>
       <key>public.kern2.A</key>
@@ -49801,7 +49801,7 @@
       <key>public.kern2.i</key>
       <integer>50</integer>
       <key>public.kern2.idblgrave</key>
-      <integer>392</integer>
+      <integer>112</integer>
       <key>public.kern2.o</key>
       <integer>-165</integer>
       <key>public.kern2.parenright</key>
@@ -50031,7 +50031,7 @@
       <key>idotlessdieresisacute</key>
       <integer>161</integer>
       <key>idotlessdieresisacute.ss03</key>
-      <integer>161</integer>
+      <integer>105</integer>
       <key>igrave</key>
       <integer>67</integer>
       <key>iinvertedbreve</key>
@@ -50105,7 +50105,7 @@
       <key>public.kern2.hyphen</key>
       <integer>-100</integer>
       <key>public.kern2.idblgrave</key>
-      <integer>390</integer>
+      <integer>110</integer>
       <key>public.kern2.n</key>
       <integer>-40</integer>
       <key>public.kern2.o</key>
@@ -50302,7 +50302,7 @@
       <key>ibreve</key>
       <integer>122</integer>
       <key>icaron</key>
-      <integer>138</integer>
+      <integer>137</integer>
       <key>idieresis</key>
       <integer>10</integer>
       <key>idieresis.ss03</key>
@@ -50312,9 +50312,9 @@
       <key>idotbelow_brevecomb.ss03</key>
       <integer>122</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>138</integer>
+      <integer>137</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>138</integer>
+      <integer>137</integer>
       <key>idotbelow_dieresiscomb</key>
       <integer>10</integer>
       <key>idotbelow_dieresiscomb.ss03</key>
@@ -50334,7 +50334,7 @@
       <key>idotlessdieresisacute</key>
       <integer>174</integer>
       <key>idotlessdieresisacute.ss03</key>
-      <integer>174</integer>
+      <integer>109</integer>
       <key>igrave</key>
       <integer>81</integer>
       <key>imacron</key>
@@ -50342,7 +50342,7 @@
       <key>istroke_brevecomb</key>
       <integer>122</integer>
       <key>istroke_caroncomb</key>
-      <integer>138</integer>
+      <integer>137</integer>
       <key>istroke_dieresiscomb</key>
       <integer>10</integer>
       <key>istroke_dieresiscomb.ss03</key>
@@ -50424,7 +50424,7 @@
       <key>public.kern2.i</key>
       <integer>80</integer>
       <key>public.kern2.idblgrave</key>
-      <integer>404</integer>
+      <integer>124</integer>
       <key>public.kern2.n</key>
       <integer>10</integer>
       <key>public.kern2.o</key>

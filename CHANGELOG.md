@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- Changed kerning of `T V W Y` before `ȉ`: the gap is now 40 – 67 units at every weight, upright and italic (Regular was 247, Black 323). `Pî`, `Yĩ` and `Yǐ` tighten by 1 – 11 units in the same groups. No pair gets looser.
 - Changed `W` and `N` in Bold, ExtraBold and Black, upright and italic: the notches between their diagonals are cut deeper, so the lower vertices of `W` and the crotches of `N` hold less ink and no longer fill in as far as in other fonts. The widest circle at the `W` vertices falls from 1.31 – 1.34 to 1.04 – 1.10 times the stem, and at the `N` crotches from 1.43 – 1.48 to 1.32 – 1.36. Advance widths and spacing are unchanged, and Regular and lighter weights are unchanged.
 - Changed the ring of `Å` and `Ů`: it is now a round ring of its own that sits lower, so `Å` no longer reaches into the descenders of the line above at the default line spacing (the Black ring was 45 units into them). `å` and `ů` are unchanged.
 - Changed the ogonek on `ą ę į ų ǫ ǭ` and the capitals: it is about 85 units deeper (lowest point -405, -415 and -425 at Thin, Regular and Black), its tip is 20 units shorter, and on `ę` it hangs under the end of the arm instead of under the bowl. Advances are unchanged; 22 pairs per master gain kerning, mostly `ę` before `g j ḻ ṟ ƒ`.

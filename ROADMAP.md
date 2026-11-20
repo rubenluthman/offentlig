@@ -22,7 +22,8 @@
 - [x] Replace the single-pair kerning exceptions added for the narrow double grave with group kerning where the result is the same.
 - [x] Even out `make test`: idle workers now take waiting tests (`--dist worksteal`), and the run uses three workers.
 - [ ] Make the round dots of `ss03` the default and move the square dots to `ss03`, so Offentlig Sans uses the circular dot of IBM Plex, which Offentlig Serif and Mono will adapt. Widths stay the same.
-- [ ] Pairs of `T V W Y` with the narrow `i` and a mark are looser than their gap needs (Regular `Tĩ` is 61 units looser than `Ti` at a gap of 92). Find the cause before changing any value.
+- [x] Pairs of `T V W Y` with the narrow double grave `ȉ` were far looser than their gap needs (Regular `Tȉ` gap 247 units, aim 40). The group entries for `public.kern2.idblgrave` held up to 404 units of kerning (Black); they now give a gap of 40 – 67 at every weight (K21).
+- [ ] `T V W Y` before `ĩ ī ĭ ǐ` (and `Ť Ţ Ŧ`) stay looser than the 40-unit aim in Regular (gaps 92 – 117). Closing them needs Thin and ExtraLight loosened, because their gaps already sit near the floor (Thin `Tĩ` at kerning -28). Decide whether to loosen the light weights.
 - [ ] Case forms for the other characters that sit low next to capitals: guillemets, `¡ ¿`, the slash and the bullet.
 - [ ] The lower vertices of `W` drop 100 units between weight 400 and 500, a steeper step than anywhere else on the weight axis. Check it in a weight ladder at display sizes and smooth it if it shows.
 - [x] `tests/test_arm_helpers.py` covers all 24 shorter-arm glyphs (18 capitals and 6 `ss03` copies), found from the font.
