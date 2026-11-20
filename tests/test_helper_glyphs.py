@@ -5,7 +5,7 @@ from fontTools.ttLib import TTFont
 from conftest import BUILD
 
 # Source names of the helpers; the built fonts would name the `_j-hook` helper `_jhook`.
-HELPERS = {"__horn", "espaciador", "_ringacute", "_jhook", "_j-hook", "_dot", "_emdash", "_hook.C", "_hook.c"}
+HELPERS = {"__horn", "espaciador", "_ringacute", "_ringcap", "_jhook", "_j-hook", "_dot", "_emdash", "_hook.C", "_hook.c"}
 FILES = sorted(p for kind in ("ttf", "otf", "variable", "webfonts") for p in (BUILD / kind).iterdir() if p.suffix in (".ttf", ".otf", ".woff2"))
 
 

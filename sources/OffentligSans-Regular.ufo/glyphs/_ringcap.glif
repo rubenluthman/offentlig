@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="_ringcap" format="2">
+  <outline>
+    <contour>
+      <point x="-0.66" y="-207.0" type="curve" smooth="yes"/>
+      <point x="116.32" y="-207.0"/>
+      <point x="209.0" y="-116.34"/>
+      <point x="209.0" y="1.35" type="curve" smooth="yes"/>
+      <point x="209.0" y="116.34"/>
+      <point x="116.32" y="207.0"/>
+      <point x="-0.66" y="207.0" type="curve" smooth="yes"/>
+      <point x="-115.0" y="207.0"/>
+      <point x="-209.0" y="117.03"/>
+      <point x="-209.0" y="5.41" type="curve" smooth="yes"/>
+      <point x="-209.0" y="-114.32"/>
+      <point x="-117.02" y="-207.0"/>
+    </contour>
+    <contour>
+      <point x="0.66" y="-99.0" type="curve" smooth="yes"/>
+      <point x="-54.39" y="-99.0"/>
+      <point x="-103.0" y="-51.93"/>
+      <point x="-103.0" y="1.23" type="curve" smooth="yes"/>
+      <point x="-103.0" y="58.64"/>
+      <point x="-54.39" y="99.0"/>
+      <point x="0.66" y="99.0" type="curve" smooth="yes"/>
+      <point x="58.24" y="99.0"/>
+      <point x="103.0" y="58.64"/>
+      <point x="103.0" y="1.23" type="curve" smooth="yes"/>
+      <point x="103.0" y="-51.93"/>
+      <point x="58.24" y="-99.0"/>
+    </contour>
+  </outline>
+</glyph>

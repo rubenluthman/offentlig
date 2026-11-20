@@ -4,9 +4,9 @@
   <unicode hex="00C5"/>
   <anchor x="608.5625" y="0.0" name="bottom"/>
   <anchor x="1176.0625" y="19.1875" name="ogonek"/>
-  <anchor x="890.1" y="1958.3" name="top"/>
+  <anchor x="886.675" y="1929.007" name="top"/>
   <outline>
     <component base="A"/>
-    <component base="ringcomb" xOffset="526.0625" yOffset="419.5625"/>
+    <component base="_ringcap" xOffset="863.123" yOffset="1753.0"/>
   </outline>
 </glyph>

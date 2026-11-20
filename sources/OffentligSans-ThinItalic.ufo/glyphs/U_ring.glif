@@ -5,9 +5,9 @@
   <anchor x="585" y="4" name="bottom"/>
   <anchor x="1171" y="1212" name="horn"/>
   <anchor x="719" y="18" name="ogonek"/>
-  <anchor x="862.287" y="1939" name="top"/>
+  <anchor x="861.584" y="1929.0" name="top"/>
   <outline>
     <component base="U"/>
-    <component base="ringcomb" xOffset="523" yOffset="412"/>
+    <component base="_ringcap" xOffset="839.297" yOffset="1772.0"/>
   </outline>
 </glyph>
