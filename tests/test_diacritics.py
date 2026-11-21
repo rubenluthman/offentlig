@@ -70,6 +70,17 @@ def test_italic_dot_pitch_matches_upright(weight):
     assert abs(dot_pitch(upright) - dot_pitch(italic)) * scale <= 3
 
 
+@pytest.mark.parametrize("italic", [False, True], ids=["roman", "italic"])
+def test_black_round_dots_keep_their_gap(italic):
+    """The two round dots of the diaeresis in Black are 352 units wide and 468 apart centre to centre (gap 116, 0.33 of the diameter) inside the same 820-unit outer span as before, so no spacing around a dotted letter changes."""
+    font = TTFont(static_path("Black", italic))
+    scale = 2000 / font["head"].unitsPerEm
+    dots = sorted(contour_bounds(font, "dieresis"), key=lambda b: b[0])
+    assert abs(dot_pitch(font) * scale - 468) <= 2
+    assert all(abs((d[2] - d[0]) * scale - 352) <= 2 for d in dots)
+    assert (dots[1][0] - dots[0][2]) * scale >= 112
+
+
 MASTER_WEIGHTS = ["Thin", "Regular", "Black"]
 
 

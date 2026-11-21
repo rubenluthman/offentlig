@@ -7975,11 +7975,11 @@
       <key>Idieresis.ss03</key>
       <integer>243</integer>
       <key>Idieresis</key>
-      <integer>66</integer>
+      <integer>69</integer>
       <key>Idieresisacute.ss03</key>
       <integer>243</integer>
       <key>Idieresisacute</key>
-      <integer>66</integer>
+      <integer>69</integer>
       <key>Igrave</key>
       <integer>27</integer>
       <key>Iinvertedbreve</key>
@@ -8001,7 +8001,7 @@
       <key>hdieresis.ss03</key>
       <integer>284</integer>
       <key>hdieresis</key>
-      <integer>107</integer>
+      <integer>110</integer>
       <key>hmod</key>
       <integer>65</integer>
       <key>ibreve</key>
@@ -8073,7 +8073,7 @@
       <key>tdieresis.ss03</key>
       <integer>159</integer>
       <key>tdieresis</key>
-      <integer>80</integer>
+      <integer>83</integer>
       <key>threesuperior</key>
       <integer>13</integer>
       <key>twosuperior</key>
@@ -38667,6 +38667,10 @@
     </dict>
     <key>idieresis</key>
     <dict>
+      <key>three</key>
+      <integer>3</integer>
+      <key>rinvertedbreve</key>
+      <integer>4</integer>
       <key>D</key>
       <integer>24</integer>
       <key>Dcaron</key>
@@ -39272,7 +39276,7 @@
       <key>one</key>
       <integer>58</integer>
       <key>one.cv06</key>
-      <integer>41</integer>
+      <integer>45</integer>
       <key>oneeighth</key>
       <integer>126</integer>
       <key>onehalf</key>
@@ -45063,6 +45067,10 @@
     </dict>
     <key>idotbelow_dieresiscomb</key>
     <dict>
+      <key>three</key>
+      <integer>3</integer>
+      <key>rinvertedbreve</key>
+      <integer>4</integer>
       <key>B</key>
       <integer>16</integer>
       <key>Bdotaccent</key>
@@ -45136,7 +45144,7 @@
       <key>H</key>
       <integer>58</integer>
       <key>Hbar</key>
-      <integer>130</integer>
+      <integer>133</integer>
       <key>Hbrevebelow</key>
       <integer>30</integer>
       <key>Hcaron</key>
@@ -45852,7 +45860,7 @@
       <key>one</key>
       <integer>57</integer>
       <key>one.cv06</key>
-      <integer>41</integer>
+      <integer>45</integer>
       <key>oneeighth</key>
       <integer>125</integer>
       <key>onehalf</key>
@@ -55890,6 +55898,10 @@
     </dict>
     <key>istroke_dieresiscomb</key>
     <dict>
+      <key>three</key>
+      <integer>3</integer>
+      <key>rinvertedbreve</key>
+      <integer>4</integer>
       <key>B</key>
       <integer>16</integer>
       <key>Bdotaccent</key>
@@ -56679,7 +56691,7 @@
       <key>one</key>
       <integer>57</integer>
       <key>one.cv06</key>
-      <integer>41</integer>
+      <integer>45</integer>
       <key>oneeighth</key>
       <integer>125</integer>
       <key>onehalf</key>

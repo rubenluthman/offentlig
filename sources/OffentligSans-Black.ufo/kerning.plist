@@ -3050,11 +3050,11 @@
       <key>Idieresis.ss03</key>
       <integer>171</integer>
       <key>Idieresis</key>
-      <integer>35</integer>
+      <integer>38</integer>
       <key>Idieresisacute.ss03</key>
       <integer>171</integer>
       <key>Idieresisacute</key>
-      <integer>35</integer>
+      <integer>38</integer>
       <key>Iinvertedbreve</key>
       <integer>116</integer>
       <key>Imacron</key>
@@ -3070,7 +3070,7 @@
       <key>hdieresis.ss03</key>
       <integer>211</integer>
       <key>hdieresis</key>
-      <integer>75</integer>
+      <integer>78</integer>
       <key>icircumflex</key>
       <integer>21</integer>
       <key>idotbelow_circumflexcomb.ss03</key>
@@ -4772,7 +4772,7 @@
       <key>hdieresis.ss03</key>
       <integer>286</integer>
       <key>hdieresis</key>
-      <integer>137</integer>
+      <integer>140</integer>
       <key>hdotaccent.ss03</key>
       <integer>19</integer>
       <key>hmod</key>
@@ -4889,7 +4889,7 @@
       <key>tdieresis.ss03</key>
       <integer>151</integer>
       <key>tdieresis</key>
-      <integer>86</integer>
+      <integer>89</integer>
       <key>Idieresis.cv05.ss03</key>
       <integer>118</integer>
       <key>Idieresisacute.cv05.ss03</key>
@@ -5620,6 +5620,8 @@
     </dict>
     <key>Ohorn</key>
     <dict>
+      <key>tdieresis</key>
+      <integer>-99</integer>
       <key>adblgrave</key>
       <integer>84</integer>
       <key>adblgrave.cv04</key>
@@ -5835,6 +5837,8 @@
     </dict>
     <key>Ohornacute</key>
     <dict>
+      <key>tdieresis</key>
+      <integer>-99</integer>
       <key>adblgrave</key>
       <integer>84</integer>
       <key>adblgrave.cv04</key>
@@ -6217,6 +6221,8 @@
     </dict>
     <key>Ohorndotbelow</key>
     <dict>
+      <key>tdieresis</key>
+      <integer>-99</integer>
       <key>adblgrave</key>
       <integer>84</integer>
       <key>adblgrave.cv04</key>
@@ -6360,6 +6366,8 @@
     </dict>
     <key>Ohorngrave</key>
     <dict>
+      <key>tdieresis</key>
+      <integer>-99</integer>
       <key>adblgrave</key>
       <integer>84</integer>
       <key>adblgrave.cv04</key>
@@ -6575,6 +6583,8 @@
     </dict>
     <key>Ohornhookabove</key>
     <dict>
+      <key>tdieresis</key>
+      <integer>-99</integer>
       <key>adblgrave</key>
       <integer>84</integer>
       <key>adblgrave.cv04</key>
@@ -6790,6 +6800,8 @@
     </dict>
     <key>Ohorntilde</key>
     <dict>
+      <key>tdieresis</key>
+      <integer>-99</integer>
       <key>adblgrave</key>
       <integer>84</integer>
       <key>adblgrave.cv04</key>
@@ -15013,6 +15025,8 @@
     </dict>
     <key>braceleft.case</key>
     <dict>
+      <key>hdieresis</key>
+      <integer>2</integer>
       <key>Icircumflex</key>
       <real>37.0</real>
       <key>Idblgrave</key>
@@ -15219,6 +15233,8 @@
     </dict>
     <key>bracketleft.case</key>
     <dict>
+      <key>hdieresis</key>
+      <integer>2</integer>
       <key>Icircumflex</key>
       <real>39.0</real>
       <key>Idblgrave</key>
@@ -22734,7 +22750,7 @@
       <key>idotlessdieresisacute.ss03</key>
       <integer>187</integer>
       <key>idotlessdieresisacute</key>
-      <integer>51</integer>
+      <integer>54</integer>
       <key>iinvertedbreve</key>
       <integer>21</integer>
       <key>istroke_circumflexcomb</key>
@@ -25675,7 +25691,7 @@
       <key>idotlessdieresisacute.ss03</key>
       <integer>318</integer>
       <key>idotlessdieresisacute</key>
-      <integer>169</integer>
+      <integer>172</integer>
       <key>iinvertedbreve</key>
       <integer>150</integer>
       <key>ij.ss03</key>
@@ -26855,6 +26871,12 @@
     </dict>
     <key>idieresis</key>
     <dict>
+      <key>istroke_circumflexcomb</key>
+      <integer>3</integer>
+      <key>idotbelow_circumflexcomb</key>
+      <integer>3</integer>
+      <key>icircumflex</key>
+      <integer>3</integer>
       <key>Hbar</key>
       <integer>0</integer>
       <key>T</key>
@@ -31231,6 +31253,8 @@
     </dict>
     <key>idotbelow_circumflexcomb</key>
     <dict>
+      <key>dieresis</key>
+      <integer>5</integer>
       <key>Hbar</key>
       <integer>121</integer>
       <key>I.cv05</key>
@@ -31572,7 +31596,7 @@
       <key>idotbelow_tildecomb</key>
       <integer>87</integer>
       <key>idotlessdieresisacute</key>
-      <integer>169</integer>
+      <integer>172</integer>
       <key>iinvertedbreve</key>
       <integer>150</integer>
       <key>imacron</key>
@@ -32011,6 +32035,12 @@
     </dict>
     <key>idotbelow_dieresiscomb</key>
     <dict>
+      <key>istroke_circumflexcomb</key>
+      <integer>3</integer>
+      <key>idotbelow_circumflexcomb</key>
+      <integer>3</integer>
+      <key>icircumflex</key>
+      <integer>3</integer>
       <key>B</key>
       <integer>0</integer>
       <key>E</key>
@@ -33835,6 +33865,8 @@
     </dict>
     <key>idotlessdieresisacute</key>
     <dict>
+      <key>foursuperior</key>
+      <integer>3</integer>
       <key>Adblgrave</key>
       <integer>146</integer>
       <key>Edblgrave</key>
@@ -36974,6 +37006,8 @@
     </dict>
     <key>istroke_circumflexcomb</key>
     <dict>
+      <key>dieresis</key>
+      <integer>5</integer>
       <key>Hbar</key>
       <integer>121</integer>
       <key>I.cv05</key>
@@ -37415,7 +37449,7 @@
       <key>idotlessdieresisacute.ss03</key>
       <integer>318</integer>
       <key>idotlessdieresisacute</key>
-      <integer>169</integer>
+      <integer>172</integer>
       <key>iinvertedbreve</key>
       <integer>150</integer>
       <key>ij.ss03</key>
@@ -37892,6 +37926,12 @@
     </dict>
     <key>istroke_dieresiscomb</key>
     <dict>
+      <key>istroke_circumflexcomb</key>
+      <integer>3</integer>
+      <key>idotbelow_circumflexcomb</key>
+      <integer>3</integer>
+      <key>icircumflex</key>
+      <integer>3</integer>
       <key>B</key>
       <integer>0</integer>
       <key>E</key>
@@ -52792,13 +52832,13 @@
       <key>Idieresis.cv05.ss03</key>
       <integer>11</integer>
       <key>Idieresis</key>
-      <integer>68</integer>
+      <integer>71</integer>
       <key>Idieresisacute.ss03</key>
       <integer>146</integer>
       <key>Idieresisacute.cv05.ss03</key>
       <integer>11</integer>
       <key>Idieresisacute</key>
-      <integer>68</integer>
+      <integer>71</integer>
       <key>Iinvertedbreve</key>
       <integer>72</integer>
       <key>Imacron</key>

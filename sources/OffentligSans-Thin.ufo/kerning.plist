@@ -5582,6 +5582,8 @@
     </dict>
     <key>Ohorn</key>
     <dict>
+      <key>tdieresis</key>
+      <integer>0</integer>
       <key>adblgrave</key>
       <integer>0</integer>
       <key>adblgrave.cv04</key>
@@ -5797,6 +5799,8 @@
     </dict>
     <key>Ohornacute</key>
     <dict>
+      <key>tdieresis</key>
+      <integer>0</integer>
       <key>adblgrave</key>
       <integer>0</integer>
       <key>adblgrave.cv04</key>
@@ -6179,6 +6183,8 @@
     </dict>
     <key>Ohorndotbelow</key>
     <dict>
+      <key>tdieresis</key>
+      <integer>0</integer>
       <key>adblgrave</key>
       <integer>0</integer>
       <key>adblgrave.cv04</key>
@@ -6322,6 +6328,8 @@
     </dict>
     <key>Ohorngrave</key>
     <dict>
+      <key>tdieresis</key>
+      <integer>0</integer>
       <key>adblgrave</key>
       <integer>0</integer>
       <key>adblgrave.cv04</key>
@@ -6537,6 +6545,8 @@
     </dict>
     <key>Ohornhookabove</key>
     <dict>
+      <key>tdieresis</key>
+      <integer>0</integer>
       <key>adblgrave</key>
       <integer>0</integer>
       <key>adblgrave.cv04</key>
@@ -6752,6 +6762,8 @@
     </dict>
     <key>Ohorntilde</key>
     <dict>
+      <key>tdieresis</key>
+      <integer>0</integer>
       <key>adblgrave</key>
       <integer>0</integer>
       <key>adblgrave.cv04</key>
@@ -14782,6 +14794,8 @@
     </dict>
     <key>braceleft.case</key>
     <dict>
+      <key>hdieresis</key>
+      <integer>0</integer>
       <key>Icircumflex</key>
       <real>8.0</real>
       <key>Idblgrave</key>
@@ -14974,6 +14988,8 @@
     </dict>
     <key>bracketleft.case</key>
     <dict>
+      <key>hdieresis</key>
+      <integer>0</integer>
       <key>Icircumflex</key>
       <real>9.0</real>
       <key>Idblgrave</key>
@@ -25605,6 +25621,12 @@
     </dict>
     <key>idieresis</key>
     <dict>
+      <key>istroke_circumflexcomb</key>
+      <integer>20</integer>
+      <key>idotbelow_circumflexcomb</key>
+      <integer>20</integer>
+      <key>icircumflex</key>
+      <integer>20</integer>
       <key>Hbar</key>
       <integer>0</integer>
       <key>T</key>
@@ -29851,6 +29873,8 @@
     </dict>
     <key>idotbelow_circumflexcomb</key>
     <dict>
+      <key>dieresis</key>
+      <integer>0</integer>
       <key>Hbar</key>
       <integer>69</integer>
       <key>I.cv05</key>
@@ -30623,6 +30647,12 @@
     </dict>
     <key>idotbelow_dieresiscomb</key>
     <dict>
+      <key>istroke_circumflexcomb</key>
+      <integer>20</integer>
+      <key>idotbelow_circumflexcomb</key>
+      <integer>20</integer>
+      <key>icircumflex</key>
+      <integer>20</integer>
       <key>B</key>
       <integer>0</integer>
       <key>E</key>
@@ -32367,6 +32397,8 @@
     </dict>
     <key>idotlessdieresisacute</key>
     <dict>
+      <key>foursuperior</key>
+      <integer>0</integer>
       <key>Adblgrave</key>
       <integer>0</integer>
       <key>Edblgrave</key>
@@ -35454,6 +35486,8 @@
     </dict>
     <key>istroke_circumflexcomb</key>
     <dict>
+      <key>dieresis</key>
+      <integer>0</integer>
       <key>Hbar</key>
       <integer>69</integer>
       <key>I.cv05</key>
@@ -36364,6 +36398,12 @@
     </dict>
     <key>istroke_dieresiscomb</key>
     <dict>
+      <key>istroke_circumflexcomb</key>
+      <integer>20</integer>
+      <key>idotbelow_circumflexcomb</key>
+      <integer>20</integer>
+      <key>icircumflex</key>
+      <integer>20</integer>
       <key>B</key>
       <integer>0</integer>
       <key>E</key>

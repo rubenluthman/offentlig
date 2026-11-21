@@ -37226,6 +37226,10 @@
     </dict>
     <key>idieresis</key>
     <dict>
+      <key>three</key>
+      <integer>0</integer>
+      <key>rinvertedbreve</key>
+      <integer>20</integer>
       <key>D</key>
       <integer>0</integer>
       <key>Dcaron</key>
@@ -43532,6 +43536,10 @@
     </dict>
     <key>idotbelow_dieresiscomb</key>
     <dict>
+      <key>three</key>
+      <integer>0</integer>
+      <key>rinvertedbreve</key>
+      <integer>20</integer>
       <key>B</key>
       <integer>0</integer>
       <key>Bdotaccent</key>
@@ -54277,6 +54285,10 @@
     </dict>
     <key>istroke_dieresiscomb</key>
     <dict>
+      <key>three</key>
+      <integer>0</integer>
+      <key>rinvertedbreve</key>
+      <integer>20</integer>
       <key>B</key>
       <integer>0</integer>
       <key>Bdotaccent</key>

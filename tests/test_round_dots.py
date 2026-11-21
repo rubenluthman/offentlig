@@ -233,7 +233,7 @@ def test_round_dots_keep_the_clearances_of_the_square_dots(weight, italic):
 @pytest.mark.parametrize("weight", ["Thin", "Regular", "Black"])
 @pytest.mark.parametrize("italic", [False, True], ids=["roman", "italic"])
 def test_round_dots_match_square_dot_area(weight, italic):
-    """D27: each round dot (the default glyph) has the same ink area as the square dot (`.ss03`), measured on the contours (the italic square is a parallelogram, so its bounding box overstates its area). Only the Black `dieresiscomb` is clamped to a 364.0 diameter so stacked `Udieresiscaron.ss03` stays within winAscent 2315."""
+    """D27: each round dot (the default glyph) has the same ink area as the square dot (`.ss03`), measured on the contours (the italic square is a parallelogram, so its bounding box overstates its area). Only the Black `dieresiscomb` is clamped, to a 352.0 diameter (the equal-area diameter is 364.2): it gives up 6.6 % of the ink so the two dots can be 116 apart inside the outer span of the square dots."""
     import math
     from pathlib import Path
     import ufoLib2
@@ -256,5 +256,5 @@ def test_round_dots_match_square_dot_area(weight, italic):
     ]:
         want = area(font, font[ss_name].contours[si])
         if ss_name == "dieresiscomb.ss03" and weight == "Black":
-            want = min(want, math.pi / 4 * 364.0 ** 2)
+            want = min(want, math.pi / 4 * 352.0 ** 2)
         assert area(font, font[base_name].contours[bi]) == pytest.approx(want, rel=0.01), ss_name
