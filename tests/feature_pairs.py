@@ -32,11 +32,12 @@ ALTERNATE_SETS = {
 class FeaturePairs:
     """The pair table of every encoded text at one static, shaped with one feature set, and which texts the features change."""
 
-    def __init__(self, weight, italic, features):
+    def __init__(self, weight, italic, features, texts=None):
+        """`texts`: the texts to measure (default: every encoded text); see `combination_texts` for the small set of a combination."""
         self.weight = weight
         self.italic = italic
         s = shaper(weight, italic)
-        self.table = PairTable(static_path(weight, italic), features, encoded_texts(weight, italic), shaper=s)
+        self.table = PairTable(static_path(weight, italic), features, texts if texts is not None else encoded_texts(weight, italic), shaper=s)
         t = self.table
         default = [s.shape(text) for text in t.texts]
         self.changed = np.array([len(d) != 1 or d[0][0] != gid for d, gid in zip(default, t.gids)])
@@ -44,13 +45,18 @@ class FeaturePairs:
         self.reference = np.array([t.index.get(base_of(x), -1) if a else i for i, (x, a) in enumerate(zip(t.texts, self.accented))])
 
     def pair_chunks(self, focus=(), size=20000):
-        """Lists of at most `size` pairs, in the order of `pairs`: the pairs are never all in memory at once."""
+        """Lists of at most `size` pairs, in the order of `pairs`: the pairs are never all in memory at once. `focus`: texts to add
+        to the changed ones, "all", or "meeting" for the pairs whose two glyphs are both changed."""
         n = len(self.table.texts)
-        changed = np.ones(n, dtype=bool) if focus == "all" else self.changed | np.isin(self.table.texts, list(focus))
+        if focus == "meeting":  # only pairs with a changed glyph on both sides: where two alternates meet
+            changed, rows = self.changed, [int(a) for a in np.nonzero(self.changed)[0]]
+        else:
+            changed = np.ones(n, dtype=bool) if focus == "all" else self.changed | np.isin(self.table.texts, list(focus))
+            rows = range(n)
         columns = [int(b) for b in np.nonzero(changed)[0]]
         chunk = []
-        for a in range(n):
-            for b in range(n) if changed[a] else columns:
+        for a in rows:
+            for b in range(n) if changed[a] and focus != "meeting" else columns:
                 chunk.append((a, b))
                 if len(chunk) >= size:
                     yield chunk
@@ -121,6 +127,22 @@ class FeaturePairs:
             return name
         code = self.table.codepoint_of(base)
         return next((g.name for g in font if code in g.unicodes), base) + dot + suffix
+
+
+@lru_cache(maxsize=None)
+def changed_texts(weight, italic, feature):
+    """The encoded texts that shape to something else with `feature` on alone."""
+    s = shaper(weight, italic)
+    return frozenset(t for t in encoded_texts(weight, italic) if s.shape(t, {feature: True}) != s.shape(t))
+
+
+def combination_texts(weight, italic, features):
+    """The texts to measure for a combination of alternates: every text one of the features changes (a text two features change
+    is shaped with both on), and the base letters of the accented ones, which the accent rule compares against. Pairs of these
+    with a changed glyph on both sides are the pairs in which two alternates can meet."""
+    changed = set().union(*(changed_texts(weight, italic, f) for f in features))
+    wanted = changed | {base_of(t) for t in changed if is_accented(t)}
+    return [t for t in encoded_texts(weight, italic) if t in wanted]
 
 
 def alternate_violations(weight, italic, name):
