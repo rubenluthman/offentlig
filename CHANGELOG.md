@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Changed `W` between Regular and ExtraBold: the lower vertices no longer dip at weight 500 (46 units higher) and rise steadily with weight; at 800 they are about 20 units lower. Regular and lighter are unchanged.
+
 ## [0.7.0] - 2026-11-21
 
 - Changed the dots to round by default, the dot shape of IBM Plex that Offentlig Serif and Mono will share; `ss03` gives the square dots of Public Sans. The kerning of `i`, `ĳ` and a few pairs moves with the dots.

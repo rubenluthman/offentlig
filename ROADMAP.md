@@ -27,7 +27,7 @@
 - [ ] Measure the gaps of `T V W Y` before `ȑ` and before `ȁ ȅ ȍ ȕ`, which the `ȉ` kerning (K21) did not cover, and of plain `Ti`, which Public Sans kerns at 0.
 - [ ] Pair-test combinations of two or more alternates without `ss03` (for example `ĴÏ` with `cv01 cv05`, kerned at -51), which the tests only cover together with `ss03`.
 - [ ] Case forms for the other characters that sit low next to capitals: guillemets, `¡ ¿`, the slash and the bullet.
-- [ ] The lower vertices of `W` drop 100 units between weight 400 and 500, a steeper step than anywhere else on the weight axis. Check it in a weight ladder at display sizes and smooth it if it shows.
+- [x] The lower vertices of `W` fell 46 units between weight 400 and 500 (295 to 249), the only dip among the reference fonts. Held at 295 from 400 to 500 and the ExtraBold layer lowered 20 units; the join circle at Bold is 1.09 upright and 1.10 italic (G26). Lowercase `w` rises steadily and is unchanged.
 - [x] `tests/test_arm_helpers.py` covers all 24 shorter-arm glyphs (18 capitals and 6 `ss03` copies), found from the font.
 - [ ] Review which alternates should become the default form, which would revisit decision F4 (alternates are opt-in). Do this after every other Offentlig Sans item above.
 
