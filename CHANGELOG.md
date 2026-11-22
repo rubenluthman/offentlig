@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 - Added case forms for the guillemets `« » ‹ ›`, `¡ ¿` (also the round-dot forms) and the slash `/` to the `case` feature, raised to the capital height for all-capital text. By default they stay as they were; `calt` does not swap them.
+- Changed the kerning of `T V W Y` before `ȑ ȓ ȃ ȇ ȏ ȗ` (gaps of 104 – 539 units, now about 40), before `ȁ ȅ ȍ ȕ` in Thin to Light, and before `ĩ ī ĭ ǐ` in Regular. `Ŧ` before `ȉ` in Black Italic follows `T`. Thin before `ĩ ī ĭ ǐ` is up to 42 units looser.
 - Changed `W` between Regular and ExtraBold: the lower vertices no longer dip at weight 500 (46 units higher) and rise steadily with weight; at 800 they are about 20 units lower. Regular and lighter are unchanged.
 - Changed the ring of `å ů` in the italic from Thin to Regular to a round ring like the upright, where it was a narrow oval. The spacing ring `˚` next to other marks, and `⁄å`, gained kerning in Thin Italic and Regular Italic to keep the 30-unit gap. Black Italic and the other marks are unchanged.
 

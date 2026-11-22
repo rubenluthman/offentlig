@@ -47857,7 +47857,7 @@
     <key>public.kern1.T</key>
     <dict>
       <key>adblgrave</key>
-      <integer>-115</integer>
+      <integer>-140</integer>
       <key>adblgrave.cv04</key>
       <integer>-115</integer>
       <key>agrave</key>
@@ -47867,7 +47867,7 @@
       <key>b</key>
       <integer>0</integer>
       <key>edblgrave</key>
-      <integer>-125</integer>
+      <integer>-161</integer>
       <key>edieresis.ss03</key>
       <integer>-125</integer>
       <key>egrave</key>
@@ -47877,9 +47877,9 @@
       <key>i.ss03</key>
       <integer>0</integer>
       <key>ibreve</key>
-      <integer>-35</integer>
+      <integer>9</integer>
       <key>icaron</key>
-      <integer>-23</integer>
+      <integer>21</integer>
       <key>icircumflex</key>
       <integer>-100</integer>
       <key>idieresis.ss03</key>
@@ -47889,13 +47889,13 @@
       <key>idotbelow</key>
       <integer>-94</integer>
       <key>idotbelow_brevecomb.ss03</key>
-      <integer>-35</integer>
+      <integer>9</integer>
       <key>idotbelow_brevecomb</key>
-      <integer>-35</integer>
+      <integer>9</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>-23</integer>
+      <integer>21</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>-23</integer>
+      <integer>21</integer>
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>-100</integer>
       <key>idotbelow_circumflexcomb</key>
@@ -47927,11 +47927,11 @@
       <key>ij.ss03</key>
       <integer>0</integer>
       <key>imacron</key>
-      <integer>-40</integer>
+      <integer>2</integer>
       <key>istroke_brevecomb</key>
-      <integer>-35</integer>
+      <integer>9</integer>
       <key>istroke_caroncomb</key>
-      <integer>-23</integer>
+      <integer>21</integer>
       <key>istroke_circumflexcomb</key>
       <integer>-100</integer>
       <key>istroke_dieresiscomb.ss03</key>
@@ -47945,7 +47945,7 @@
       <key>istroke_tildecomb</key>
       <integer>-28</integer>
       <key>itilde</key>
-      <integer>-28</integer>
+      <integer>11</integer>
       <key>jcircumflex</key>
       <integer>60</integer>
       <key>jdotlesscaron</key>
@@ -47955,7 +47955,7 @@
       <key>l</key>
       <integer>0</integer>
       <key>odblgrave</key>
-      <integer>-125</integer>
+      <integer>-147</integer>
       <key>odieresis.ss03</key>
       <integer>-125</integer>
       <key>odieresismacron.ss03</key>
@@ -48013,7 +48013,7 @@
       <key>public.kern2.quoteright</key>
       <integer>60</integer>
       <key>public.kern2.rdblgrave</key>
-      <integer>-7</integer>
+      <integer>-196</integer>
       <key>public.kern2.s</key>
       <integer>-105</integer>
       <key>public.kern2.t</key>
@@ -48031,7 +48031,7 @@
       <key>scircumflex</key>
       <integer>-105</integer>
       <key>udblgrave</key>
-      <integer>-100</integer>
+      <integer>-151</integer>
       <key>ugrave</key>
       <integer>-100</integer>
       <key>uhorngrave</key>
@@ -48040,6 +48040,16 @@
       <integer>-60</integer>
       <key>ygrave</key>
       <integer>-60</integer>
+      <key>rinvertedbreve</key>
+      <integer>-226</integer>
+      <key>ainvertedbreve</key>
+      <integer>-347</integer>
+      <key>einvertedbreve</key>
+      <integer>-315</integer>
+      <key>oinvertedbreve</key>
+      <integer>-302</integer>
+      <key>uinvertedbreve</key>
+      <integer>-333</integer>
     </dict>
     <key>public.kern1.Tarm</key>
     <dict>
@@ -48179,7 +48189,7 @@
     <key>public.kern1.V</key>
     <dict>
       <key>adblgrave</key>
-      <integer>-64</integer>
+      <integer>-135</integer>
       <key>adblgrave.cv04</key>
       <integer>-70</integer>
       <key>ae</key>
@@ -48189,11 +48199,11 @@
       <key>agrave.cv04</key>
       <integer>-70</integer>
       <key>edblgrave</key>
-      <integer>-70</integer>
+      <integer>-156</integer>
       <key>egrave</key>
       <integer>-70</integer>
       <key>ibreve</key>
-      <integer>0</integer>
+      <integer>-17</integer>
       <key>icaron</key>
       <integer>0</integer>
       <key>icircumflex</key>
@@ -48203,9 +48213,9 @@
       <key>idieresis</key>
       <integer>0</integer>
       <key>idotbelow_brevecomb.ss03</key>
-      <integer>0</integer>
+      <integer>-17</integer>
       <key>idotbelow_brevecomb</key>
-      <integer>0</integer>
+      <integer>-17</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>0</integer>
       <key>idotbelow_caroncomb</key>
@@ -48239,9 +48249,9 @@
       <key>iinvertedbreve</key>
       <integer>0</integer>
       <key>imacron</key>
-      <integer>0</integer>
+      <integer>-24</integer>
       <key>istroke_brevecomb</key>
-      <integer>0</integer>
+      <integer>-17</integer>
       <key>istroke_caroncomb</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
@@ -48257,11 +48267,11 @@
       <key>istroke_tildecomb</key>
       <integer>0</integer>
       <key>itilde</key>
-      <integer>0</integer>
+      <integer>-22</integer>
       <key>jdotlesscaron</key>
       <integer>60</integer>
       <key>odblgrave</key>
-      <integer>-70</integer>
+      <integer>-148</integer>
       <key>ograve</key>
       <integer>-70</integer>
       <key>ohorngrave</key>
@@ -48317,7 +48327,19 @@
       <key>public.kern2.t</key>
       <integer>0</integer>
       <key>udblgrave</key>
-      <integer>0</integer>
+      <integer>-166</integer>
+      <key>public.kern2.rdblgrave</key>
+      <integer>-196</integer>
+      <key>rinvertedbreve</key>
+      <integer>-210</integer>
+      <key>ainvertedbreve</key>
+      <integer>-362</integer>
+      <key>einvertedbreve</key>
+      <integer>-369</integer>
+      <key>oinvertedbreve</key>
+      <integer>-357</integer>
+      <key>uinvertedbreve</key>
+      <integer>-294</integer>
     </dict>
     <key>public.kern1.W</key>
     <dict>
@@ -48430,7 +48452,7 @@
       <key>acaron.cv04</key>
       <integer>-100</integer>
       <key>adblgrave</key>
-      <integer>-100</integer>
+      <integer>-111</integer>
       <key>adblgrave.cv04</key>
       <integer>-100</integer>
       <key>adieresis.ss03</key>
@@ -48454,7 +48476,7 @@
       <key>ecedillabreve</key>
       <integer>-60</integer>
       <key>edblgrave</key>
-      <integer>-60</integer>
+      <integer>-133</integer>
       <key>edieresis.ss03</key>
       <integer>-60</integer>
       <key>edieresis</key>
@@ -48538,7 +48560,7 @@
       <key>ocaron</key>
       <integer>-60</integer>
       <key>odblgrave</key>
-      <integer>-60</integer>
+      <integer>-119</integer>
       <key>odieresis.ss03</key>
       <integer>-60</integer>
       <key>odieresis</key>
@@ -48606,7 +48628,7 @@
       <key>public.kern2.quoteright</key>
       <integer>30</integer>
       <key>public.kern2.rdblgrave</key>
-      <integer>17</integer>
+      <integer>-170</integer>
       <key>public.kern2.s</key>
       <integer>-115</integer>
       <key>public.kern2.t</key>
@@ -48622,7 +48644,7 @@
       <key>scaron</key>
       <integer>-115</integer>
       <key>udblgrave</key>
-      <integer>-60</integer>
+      <integer>-122</integer>
       <key>udieresis.ss03</key>
       <integer>-60</integer>
       <key>udieresisacute.ss03</key>
@@ -48643,6 +48665,16 @@
       <integer>-70</integer>
       <key>zcaron</key>
       <integer>-50</integer>
+      <key>rinvertedbreve</key>
+      <integer>-233</integer>
+      <key>ainvertedbreve</key>
+      <integer>-385</integer>
+      <key>einvertedbreve</key>
+      <integer>-405</integer>
+      <key>oinvertedbreve</key>
+      <integer>-392</integer>
+      <key>uinvertedbreve</key>
+      <integer>-387</integer>
     </dict>
     <key>public.kern1.Yarm</key>
     <dict>

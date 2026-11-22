@@ -48345,9 +48345,9 @@
       <key>i.ss03</key>
       <integer>0</integer>
       <key>ibreve</key>
-      <integer>116</integer>
+      <integer>53</integer>
       <key>icaron</key>
-      <integer>134</integer>
+      <integer>71</integer>
       <key>icircumflex</key>
       <integer>-40</integer>
       <key>idieresis.ss03</key>
@@ -48357,13 +48357,13 @@
       <key>idotbelow</key>
       <integer>-66</integer>
       <key>idotbelow_brevecomb.ss03</key>
-      <integer>116</integer>
+      <integer>53</integer>
       <key>idotbelow_brevecomb</key>
-      <integer>116</integer>
+      <integer>53</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>134</integer>
+      <integer>71</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>134</integer>
+      <integer>71</integer>
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>-40</integer>
       <key>idotbelow_circumflexcomb</key>
@@ -48395,11 +48395,11 @@
       <key>ij.ss03</key>
       <integer>0</integer>
       <key>imacron</key>
-      <integer>68</integer>
+      <integer>5</integer>
       <key>istroke_brevecomb</key>
-      <integer>116</integer>
+      <integer>53</integer>
       <key>istroke_caroncomb</key>
-      <integer>134</integer>
+      <integer>71</integer>
       <key>istroke_circumflexcomb</key>
       <integer>-40</integer>
       <key>istroke_dieresiscomb.ss03</key>
@@ -48413,7 +48413,7 @@
       <key>istroke_tildecomb</key>
       <integer>61</integer>
       <key>itilde</key>
-      <integer>61</integer>
+      <integer>11</integer>
       <key>jcircumflex</key>
       <integer>39</integer>
       <key>jdotlesscaron</key>
@@ -48487,7 +48487,7 @@
       <key>public.kern2.quoteright</key>
       <real>39.375</real>
       <key>public.kern2.rdblgrave</key>
-      <integer>68</integer>
+      <integer>-132</integer>
       <key>public.kern2.s</key>
       <real>-129.0625</real>
       <key>public.kern2.t</key>
@@ -48514,6 +48514,16 @@
       <integer>-82</integer>
       <key>ygrave</key>
       <integer>-86</integer>
+      <key>rinvertedbreve</key>
+      <integer>-141</integer>
+      <key>ainvertedbreve</key>
+      <integer>-287</integer>
+      <key>einvertedbreve</key>
+      <integer>-285</integer>
+      <key>oinvertedbreve</key>
+      <integer>-275</integer>
+      <key>uinvertedbreve</key>
+      <integer>-293</integer>
     </dict>
     <key>public.kern1.Tarm</key>
     <dict>
@@ -48803,7 +48813,7 @@
       <key>public.kern2.period</key>
       <real>-87.1875</real>
       <key>public.kern2.rdblgrave</key>
-      <integer>67</integer>
+      <integer>-131</integer>
       <key>public.kern2.s</key>
       <real>-47.8125</real>
       <key>public.kern2.t</key>
@@ -48813,7 +48823,17 @@
       <key>public.kern2.z</key>
       <real>-13.75</real>
       <key>udblgrave</key>
-      <integer>0</integer>
+      <integer>-57</integer>
+      <key>rinvertedbreve</key>
+      <integer>-189</integer>
+      <key>ainvertedbreve</key>
+      <integer>-334</integer>
+      <key>einvertedbreve</key>
+      <integer>-344</integer>
+      <key>oinvertedbreve</key>
+      <integer>-333</integer>
+      <key>uinvertedbreve</key>
+      <integer>-262</integer>
     </dict>
     <key>public.kern1.W</key>
     <dict>
@@ -49136,7 +49156,7 @@
       <key>public.kern2.quoteright</key>
       <real>33.4375</real>
       <key>public.kern2.rdblgrave</key>
-      <integer>88</integer>
+      <integer>-109</integer>
       <key>public.kern2.s</key>
       <real>-142.5</real>
       <key>public.kern2.t</key>
@@ -49175,6 +49195,16 @@
       <integer>-89</integer>
       <key>zcaron</key>
       <integer>-74</integer>
+      <key>rinvertedbreve</key>
+      <integer>-221</integer>
+      <key>ainvertedbreve</key>
+      <integer>-367</integer>
+      <key>einvertedbreve</key>
+      <integer>-377</integer>
+      <key>oinvertedbreve</key>
+      <integer>-365</integer>
+      <key>uinvertedbreve</key>
+      <integer>-362</integer>
     </dict>
     <key>public.kern1.Yarm</key>
     <dict>

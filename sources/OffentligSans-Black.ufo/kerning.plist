@@ -49945,7 +49945,7 @@
       <key>public.kern2.period</key>
       <integer>-180</integer>
       <key>public.kern2.rdblgrave</key>
-      <integer>212</integer>
+      <integer>-68</integer>
       <key>public.kern2.s</key>
       <integer>-175</integer>
       <key>public.kern2.t</key>
@@ -49972,6 +49972,16 @@
       <integer>-131</integer>
       <key>ygrave</key>
       <integer>-120</integer>
+      <key>rinvertedbreve</key>
+      <integer>-52</integer>
+      <key>ainvertedbreve</key>
+      <integer>-182</integer>
+      <key>einvertedbreve</key>
+      <integer>-184</integer>
+      <key>oinvertedbreve</key>
+      <integer>-176</integer>
+      <key>uinvertedbreve</key>
+      <integer>-187</integer>
     </dict>
     <key>public.kern1.Tarm</key>
     <dict>
@@ -50249,7 +50259,7 @@
       <key>public.kern2.period</key>
       <integer>-120</integer>
       <key>public.kern2.rdblgrave</key>
-      <integer>210</integer>
+      <integer>-71</integer>
       <key>public.kern2.s</key>
       <integer>-120</integer>
       <key>public.kern2.t</key>
@@ -50262,6 +50272,16 @@
       <integer>-40</integer>
       <key>udblgrave</key>
       <integer>76</integer>
+      <key>rinvertedbreve</key>
+      <integer>-151</integer>
+      <key>ainvertedbreve</key>
+      <integer>-284</integer>
+      <key>einvertedbreve</key>
+      <integer>-273</integer>
+      <key>oinvertedbreve</key>
+      <integer>-265</integer>
+      <key>uinvertedbreve</key>
+      <integer>-202</integer>
     </dict>
     <key>public.kern1.W</key>
     <dict>
@@ -50472,7 +50492,7 @@
       <key>igrave</key>
       <integer>81</integer>
       <key>imacron</key>
-      <integer>10</integer>
+      <integer>3</integer>
       <key>istroke_brevecomb</key>
       <integer>122</integer>
       <key>istroke_caroncomb</key>
@@ -50488,7 +50508,7 @@
       <key>istroke_tildecomb</key>
       <integer>10</integer>
       <key>itilde</key>
-      <integer>10</integer>
+      <integer>-23</integer>
       <key>jdotlesscaron</key>
       <integer>102</integer>
       <key>obreve</key>
@@ -50570,7 +50590,7 @@
       <key>public.kern2.quoteright</key>
       <integer>40</integer>
       <key>public.kern2.rdblgrave</key>
-      <integer>224</integer>
+      <integer>-57</integer>
       <key>public.kern2.s</key>
       <integer>-195</integer>
       <key>public.kern2.t</key>
@@ -50609,6 +50629,16 @@
       <integer>-108</integer>
       <key>zcaron</key>
       <integer>-88</integer>
+      <key>rinvertedbreve</key>
+      <integer>-203</integer>
+      <key>ainvertedbreve</key>
+      <integer>-334</integer>
+      <key>einvertedbreve</key>
+      <integer>-323</integer>
+      <key>oinvertedbreve</key>
+      <integer>-316</integer>
+      <key>uinvertedbreve</key>
+      <integer>-317</integer>
     </dict>
     <key>public.kern1.Yarm</key>
     <dict>

@@ -11765,9 +11765,9 @@
       <key>hbar</key>
       <integer>-100</integer>
       <key>ibreve</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>icaron</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>icircumflex</key>
       <integer>-100</integer>
       <key>idieresis.ss03</key>
@@ -11775,13 +11775,13 @@
       <key>idieresis</key>
       <integer>-32</integer>
       <key>idotbelow_brevecomb.ss03</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>idotbelow_brevecomb</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>-100</integer>
       <key>idotbelow_circumflexcomb</key>
@@ -11811,11 +11811,11 @@
       <key>iinvertedbreve</key>
       <integer>-100</integer>
       <key>imacron</key>
-      <integer>-51</integer>
-      <key>istroke_brevecomb</key>
-      <integer>-46</integer>
-      <key>istroke_caroncomb</key>
       <integer>-35</integer>
+      <key>istroke_brevecomb</key>
+      <integer>-29</integer>
+      <key>istroke_caroncomb</key>
+      <integer>-22</integer>
       <key>istroke_circumflexcomb</key>
       <integer>-100</integer>
       <key>istroke_dieresiscomb.ss03</key>
@@ -11829,7 +11829,7 @@
       <key>istroke_tildecomb</key>
       <integer>-52</integer>
       <key>itilde</key>
-      <integer>-52</integer>
+      <integer>-39</integer>
       <key>yen</key>
       <integer>0</integer>
     </dict>
@@ -11844,9 +11844,9 @@
       <key>hbar</key>
       <integer>-100</integer>
       <key>ibreve</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>icaron</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>icircumflex</key>
       <integer>-100</integer>
       <key>idieresis.ss03</key>
@@ -11854,13 +11854,13 @@
       <key>idieresis</key>
       <integer>-32</integer>
       <key>idotbelow_brevecomb.ss03</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>idotbelow_brevecomb</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>-100</integer>
       <key>idotbelow_circumflexcomb</key>
@@ -11888,11 +11888,11 @@
       <key>iinvertedbreve</key>
       <integer>-100</integer>
       <key>imacron</key>
-      <integer>-51</integer>
-      <key>istroke_brevecomb</key>
-      <integer>-46</integer>
-      <key>istroke_caroncomb</key>
       <integer>-35</integer>
+      <key>istroke_brevecomb</key>
+      <integer>-29</integer>
+      <key>istroke_caroncomb</key>
+      <integer>-22</integer>
       <key>istroke_circumflexcomb</key>
       <integer>-100</integer>
       <key>istroke_dieresiscomb.ss03</key>
@@ -11906,7 +11906,7 @@
       <key>istroke_tildecomb</key>
       <integer>-52</integer>
       <key>itilde</key>
-      <integer>-52</integer>
+      <integer>-39</integer>
       <key>yen</key>
       <integer>0</integer>
     </dict>
@@ -11925,9 +11925,9 @@
       <key>hbar</key>
       <integer>-100</integer>
       <key>ibreve</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>icaron</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>icircumflex</key>
       <integer>-100</integer>
       <key>idieresis.ss03</key>
@@ -11935,13 +11935,13 @@
       <key>idieresis</key>
       <integer>-32</integer>
       <key>idotbelow_brevecomb.ss03</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>idotbelow_brevecomb</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>-100</integer>
       <key>idotbelow_circumflexcomb</key>
@@ -11969,11 +11969,11 @@
       <key>iinvertedbreve</key>
       <integer>-100</integer>
       <key>imacron</key>
-      <integer>-51</integer>
-      <key>istroke_brevecomb</key>
-      <integer>-46</integer>
-      <key>istroke_caroncomb</key>
       <integer>-35</integer>
+      <key>istroke_brevecomb</key>
+      <integer>-29</integer>
+      <key>istroke_caroncomb</key>
+      <integer>-22</integer>
       <key>istroke_circumflexcomb</key>
       <integer>-100</integer>
       <key>istroke_dieresiscomb.ss03</key>
@@ -11987,7 +11987,7 @@
       <key>istroke_tildecomb</key>
       <integer>-52</integer>
       <key>itilde</key>
-      <integer>-52</integer>
+      <integer>-39</integer>
       <key>yen</key>
       <integer>0</integer>
     </dict>
@@ -12002,9 +12002,9 @@
       <key>hbar</key>
       <integer>-100</integer>
       <key>ibreve</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>icaron</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>icircumflex</key>
       <integer>-100</integer>
       <key>idieresis.ss03</key>
@@ -12012,13 +12012,13 @@
       <key>idieresis</key>
       <integer>-32</integer>
       <key>idotbelow_brevecomb.ss03</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>idotbelow_brevecomb</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>-100</integer>
       <key>idotbelow_circumflexcomb</key>
@@ -12046,11 +12046,11 @@
       <key>iinvertedbreve</key>
       <integer>-100</integer>
       <key>imacron</key>
-      <integer>-51</integer>
-      <key>istroke_brevecomb</key>
-      <integer>-46</integer>
-      <key>istroke_caroncomb</key>
       <integer>-35</integer>
+      <key>istroke_brevecomb</key>
+      <integer>-29</integer>
+      <key>istroke_caroncomb</key>
+      <integer>-22</integer>
       <key>istroke_circumflexcomb</key>
       <integer>-100</integer>
       <key>istroke_dieresiscomb.ss03</key>
@@ -12064,7 +12064,7 @@
       <key>istroke_tildecomb</key>
       <integer>-52</integer>
       <key>itilde</key>
-      <integer>-52</integer>
+      <integer>-39</integer>
       <key>yen</key>
       <integer>0</integer>
     </dict>
@@ -12136,21 +12136,21 @@
       <key>hbar</key>
       <integer>-100</integer>
       <key>ibreve</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>icaron</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>icircumflex</key>
       <integer>-100</integer>
       <key>idieresis</key>
       <integer>-32</integer>
       <key>idotbelow_brevecomb.ss03</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>idotbelow_brevecomb</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>idotbelow_circumflexcomb</key>
       <integer>-100</integer>
       <key>idotbelow_dieresiscomb</key>
@@ -12166,11 +12166,11 @@
       <key>iinvertedbreve</key>
       <integer>-100</integer>
       <key>imacron</key>
-      <integer>-51</integer>
-      <key>istroke_brevecomb</key>
-      <integer>-46</integer>
-      <key>istroke_caroncomb</key>
       <integer>-35</integer>
+      <key>istroke_brevecomb</key>
+      <integer>-29</integer>
+      <key>istroke_caroncomb</key>
+      <integer>-22</integer>
       <key>istroke_circumflexcomb</key>
       <integer>-100</integer>
       <key>istroke_dieresiscomb</key>
@@ -12182,7 +12182,7 @@
       <key>istroke_tildecomb</key>
       <integer>-52</integer>
       <key>itilde</key>
-      <integer>-52</integer>
+      <integer>-39</integer>
       <key>yen</key>
       <integer>0</integer>
     </dict>
@@ -12254,21 +12254,21 @@
       <key>hbar</key>
       <integer>-100</integer>
       <key>ibreve</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>icaron</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>icircumflex</key>
       <integer>-100</integer>
       <key>idieresis</key>
       <integer>-32</integer>
       <key>idotbelow_brevecomb.ss03</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>idotbelow_brevecomb</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>idotbelow_circumflexcomb</key>
       <integer>-100</integer>
       <key>idotbelow_dieresiscomb</key>
@@ -12284,11 +12284,11 @@
       <key>iinvertedbreve</key>
       <integer>-100</integer>
       <key>imacron</key>
-      <integer>-51</integer>
-      <key>istroke_brevecomb</key>
-      <integer>-46</integer>
-      <key>istroke_caroncomb</key>
       <integer>-35</integer>
+      <key>istroke_brevecomb</key>
+      <integer>-29</integer>
+      <key>istroke_caroncomb</key>
+      <integer>-22</integer>
       <key>istroke_circumflexcomb</key>
       <integer>-100</integer>
       <key>istroke_dieresiscomb</key>
@@ -12300,7 +12300,7 @@
       <key>istroke_tildecomb</key>
       <integer>-52</integer>
       <key>itilde</key>
-      <integer>-52</integer>
+      <integer>-39</integer>
       <key>yen</key>
       <integer>0</integer>
     </dict>
@@ -12372,21 +12372,21 @@
       <key>hbar</key>
       <integer>-100</integer>
       <key>ibreve</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>icaron</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>icircumflex</key>
       <integer>-100</integer>
       <key>idieresis</key>
       <integer>-32</integer>
       <key>idotbelow_brevecomb.ss03</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>idotbelow_brevecomb</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>idotbelow_circumflexcomb</key>
       <integer>-100</integer>
       <key>idotbelow_dieresiscomb</key>
@@ -12402,11 +12402,11 @@
       <key>iinvertedbreve</key>
       <integer>-100</integer>
       <key>imacron</key>
-      <integer>-51</integer>
-      <key>istroke_brevecomb</key>
-      <integer>-46</integer>
-      <key>istroke_caroncomb</key>
       <integer>-35</integer>
+      <key>istroke_brevecomb</key>
+      <integer>-29</integer>
+      <key>istroke_caroncomb</key>
+      <integer>-22</integer>
       <key>istroke_circumflexcomb</key>
       <integer>-100</integer>
       <key>istroke_dieresiscomb</key>
@@ -12418,7 +12418,7 @@
       <key>istroke_tildecomb</key>
       <integer>-52</integer>
       <key>itilde</key>
-      <integer>-52</integer>
+      <integer>-39</integer>
       <key>yen</key>
       <integer>0</integer>
     </dict>
@@ -12448,9 +12448,9 @@
       <key>hbar</key>
       <integer>-100</integer>
       <key>ibreve</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>icaron</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>icircumflex</key>
       <integer>-100</integer>
       <key>idieresis.ss03</key>
@@ -12458,13 +12458,13 @@
       <key>idieresis</key>
       <integer>-32</integer>
       <key>idotbelow_brevecomb.ss03</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>idotbelow_brevecomb</key>
-      <integer>-46</integer>
+      <integer>-29</integer>
       <key>idotbelow_caroncomb.ss03</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>idotbelow_caroncomb</key>
-      <integer>-35</integer>
+      <integer>-22</integer>
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>-100</integer>
       <key>idotbelow_circumflexcomb</key>
@@ -12492,11 +12492,11 @@
       <key>iinvertedbreve</key>
       <integer>-100</integer>
       <key>imacron</key>
-      <integer>-51</integer>
-      <key>istroke_brevecomb</key>
-      <integer>-46</integer>
-      <key>istroke_caroncomb</key>
       <integer>-35</integer>
+      <key>istroke_brevecomb</key>
+      <integer>-29</integer>
+      <key>istroke_caroncomb</key>
+      <integer>-22</integer>
       <key>istroke_circumflexcomb</key>
       <integer>-100</integer>
       <key>istroke_dieresiscomb.ss03</key>
@@ -12510,7 +12510,7 @@
       <key>istroke_tildecomb</key>
       <integer>-52</integer>
       <key>itilde</key>
-      <integer>-52</integer>
+      <integer>-39</integer>
       <key>yen</key>
       <integer>0</integer>
     </dict>
@@ -15408,7 +15408,7 @@
     <key>V</key>
     <dict>
       <key>ibreve</key>
-      <integer>0</integer>
+      <integer>-32</integer>
       <key>icaron</key>
       <integer>0</integer>
       <key>icircumflex</key>
@@ -15418,9 +15418,9 @@
       <key>idieresis</key>
       <integer>22</integer>
       <key>idotbelow_brevecomb.ss03</key>
-      <integer>0</integer>
+      <integer>-32</integer>
       <key>idotbelow_brevecomb</key>
-      <integer>0</integer>
+      <integer>-32</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>0</integer>
       <key>idotbelow_caroncomb</key>
@@ -15448,9 +15448,9 @@
       <key>iinvertedbreve</key>
       <integer>0</integer>
       <key>imacron</key>
-      <integer>0</integer>
+      <integer>-41</integer>
       <key>istroke_brevecomb</key>
-      <integer>0</integer>
+      <integer>-32</integer>
       <key>istroke_caroncomb</key>
       <integer>0</integer>
       <key>istroke_dieresiscomb.ss03</key>
@@ -15464,7 +15464,7 @@
       <key>istroke_tildecomb</key>
       <integer>1</integer>
       <key>itilde</key>
-      <integer>1</integer>
+      <integer>-42</integer>
       <key>yen</key>
       <integer>0</integer>
     </dict>
@@ -15473,7 +15473,7 @@
       <key>dieresis</key>
       <integer>6</integer>
       <key>ibreve</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>icaron</key>
       <integer>0</integer>
       <key>icircumflex</key>
@@ -15483,9 +15483,9 @@
       <key>idieresis</key>
       <integer>22</integer>
       <key>idotbelow_brevecomb.ss03</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>idotbelow_brevecomb</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>0</integer>
       <key>idotbelow_caroncomb</key>
@@ -15517,9 +15517,9 @@
       <key>iinvertedbreve</key>
       <integer>0</integer>
       <key>imacron</key>
-      <integer>0</integer>
+      <integer>-35</integer>
       <key>istroke_brevecomb</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>istroke_caroncomb</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
@@ -15535,7 +15535,7 @@
       <key>istroke_tildecomb</key>
       <integer>1</integer>
       <key>itilde</key>
-      <integer>1</integer>
+      <integer>-33</integer>
       <key>yen</key>
       <integer>0</integer>
     </dict>
@@ -15544,7 +15544,7 @@
       <key>dieresis</key>
       <integer>6</integer>
       <key>ibreve</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>icaron</key>
       <integer>0</integer>
       <key>icircumflex</key>
@@ -15554,9 +15554,9 @@
       <key>idieresis</key>
       <integer>22</integer>
       <key>idotbelow_brevecomb.ss03</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>idotbelow_brevecomb</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>0</integer>
       <key>idotbelow_caroncomb</key>
@@ -15588,9 +15588,9 @@
       <key>iinvertedbreve</key>
       <integer>0</integer>
       <key>imacron</key>
-      <integer>0</integer>
+      <integer>-35</integer>
       <key>istroke_brevecomb</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>istroke_caroncomb</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
@@ -15606,7 +15606,7 @@
       <key>istroke_tildecomb</key>
       <integer>1</integer>
       <key>itilde</key>
-      <integer>1</integer>
+      <integer>-33</integer>
       <key>yen</key>
       <integer>0</integer>
     </dict>
@@ -15615,7 +15615,7 @@
       <key>dieresis</key>
       <integer>6</integer>
       <key>ibreve</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>icaron</key>
       <integer>0</integer>
       <key>icircumflex</key>
@@ -15625,9 +15625,9 @@
       <key>idieresis</key>
       <integer>0</integer>
       <key>idotbelow_brevecomb.ss03</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>idotbelow_brevecomb</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>0</integer>
       <key>idotbelow_caroncomb</key>
@@ -15659,9 +15659,9 @@
       <key>iinvertedbreve</key>
       <integer>0</integer>
       <key>imacron</key>
-      <integer>0</integer>
+      <integer>-35</integer>
       <key>istroke_brevecomb</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>istroke_caroncomb</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
@@ -15677,7 +15677,7 @@
       <key>istroke_tildecomb</key>
       <integer>1</integer>
       <key>itilde</key>
-      <integer>1</integer>
+      <integer>-33</integer>
       <key>yen</key>
       <integer>0</integer>
     </dict>
@@ -15741,7 +15741,7 @@
       <key>dieresis</key>
       <integer>6</integer>
       <key>ibreve</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>icaron</key>
       <integer>0</integer>
       <key>icircumflex</key>
@@ -15749,9 +15749,9 @@
       <key>idieresis</key>
       <integer>22</integer>
       <key>idotbelow_brevecomb.ss03</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>idotbelow_brevecomb</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>0</integer>
       <key>idotbelow_caroncomb</key>
@@ -15771,9 +15771,9 @@
       <key>iinvertedbreve</key>
       <integer>0</integer>
       <key>imacron</key>
-      <integer>0</integer>
+      <integer>-35</integer>
       <key>istroke_brevecomb</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>istroke_caroncomb</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
@@ -15787,7 +15787,7 @@
       <key>istroke_tildecomb</key>
       <integer>1</integer>
       <key>itilde</key>
-      <integer>1</integer>
+      <integer>-33</integer>
       <key>yen</key>
       <integer>0</integer>
     </dict>
@@ -15851,7 +15851,7 @@
       <key>dieresis</key>
       <integer>6</integer>
       <key>ibreve</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>icaron</key>
       <integer>0</integer>
       <key>icircumflex</key>
@@ -15859,9 +15859,9 @@
       <key>idieresis</key>
       <integer>22</integer>
       <key>idotbelow_brevecomb.ss03</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>idotbelow_brevecomb</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>0</integer>
       <key>idotbelow_caroncomb</key>
@@ -15881,9 +15881,9 @@
       <key>iinvertedbreve</key>
       <integer>0</integer>
       <key>imacron</key>
-      <integer>0</integer>
+      <integer>-35</integer>
       <key>istroke_brevecomb</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>istroke_caroncomb</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
@@ -15897,7 +15897,7 @@
       <key>istroke_tildecomb</key>
       <integer>1</integer>
       <key>itilde</key>
-      <integer>1</integer>
+      <integer>-33</integer>
       <key>yen</key>
       <integer>0</integer>
     </dict>
@@ -15906,7 +15906,7 @@
       <key>dieresis</key>
       <integer>6</integer>
       <key>ibreve</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>icaron</key>
       <integer>0</integer>
       <key>icircumflex</key>
@@ -15916,9 +15916,9 @@
       <key>idieresis</key>
       <integer>0</integer>
       <key>idotbelow_brevecomb.ss03</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>idotbelow_brevecomb</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>idotbelow_caroncomb.ss03</key>
       <integer>0</integer>
       <key>idotbelow_caroncomb</key>
@@ -15950,9 +15950,9 @@
       <key>iinvertedbreve</key>
       <integer>0</integer>
       <key>imacron</key>
-      <integer>0</integer>
+      <integer>-35</integer>
       <key>istroke_brevecomb</key>
-      <integer>0</integer>
+      <integer>-20</integer>
       <key>istroke_caroncomb</key>
       <integer>0</integer>
       <key>istroke_circumflexcomb</key>
@@ -15968,7 +15968,7 @@
       <key>istroke_tildecomb</key>
       <integer>1</integer>
       <key>itilde</key>
-      <integer>1</integer>
+      <integer>-33</integer>
       <key>yen</key>
       <integer>0</integer>
     </dict>
@@ -68038,7 +68038,7 @@
       <key>b</key>
       <integer>0</integer>
       <key>edblgrave</key>
-      <integer>-125</integer>
+      <integer>-142</integer>
       <key>edieresis.ss03</key>
       <integer>-125</integer>
       <key>egrave</key>
@@ -68182,7 +68182,7 @@
       <key>public.kern2.quoteright</key>
       <integer>60</integer>
       <key>public.kern2.rdblgrave</key>
-      <integer>52</integer>
+      <integer>-131</integer>
       <key>public.kern2.s</key>
       <integer>-105</integer>
       <key>public.kern2.t</key>
@@ -68200,7 +68200,7 @@
       <key>scircumflex</key>
       <integer>-105</integer>
       <key>udblgrave</key>
-      <integer>-100</integer>
+      <integer>-132</integer>
       <key>ugrave</key>
       <integer>-100</integer>
       <key>uhorngrave</key>
@@ -68209,6 +68209,16 @@
       <integer>-60</integer>
       <key>ygrave</key>
       <integer>-60</integer>
+      <key>rinvertedbreve</key>
+      <integer>-240</integer>
+      <key>ainvertedbreve</key>
+      <integer>-295</integer>
+      <key>einvertedbreve</key>
+      <integer>-273</integer>
+      <key>oinvertedbreve</key>
+      <integer>-260</integer>
+      <key>uinvertedbreve</key>
+      <integer>-294</integer>
     </dict>
     <key>public.kern1.Tarm</key>
     <dict>
@@ -68352,7 +68362,7 @@
     <key>public.kern1.V</key>
     <dict>
       <key>adblgrave</key>
-      <integer>-70</integer>
+      <integer>-128</integer>
       <key>adblgrave.cv04</key>
       <integer>-70</integer>
       <key>ae</key>
@@ -68362,7 +68372,7 @@
       <key>agrave.cv04</key>
       <integer>-70</integer>
       <key>edblgrave</key>
-      <integer>-70</integer>
+      <integer>-141</integer>
       <key>egrave</key>
       <integer>-70</integer>
       <key>ibreve</key>
@@ -68434,7 +68444,7 @@
       <key>jdotlesscaron</key>
       <integer>60</integer>
       <key>odblgrave</key>
-      <integer>-70</integer>
+      <integer>-93</integer>
       <key>ograve</key>
       <integer>-70</integer>
       <key>ohorngrave</key>
@@ -68486,13 +68496,23 @@
       <key>public.kern2.period</key>
       <integer>-70</integer>
       <key>public.kern2.rdblgrave</key>
-      <integer>53</integer>
+      <integer>-128</integer>
       <key>public.kern2.s</key>
       <integer>-10</integer>
       <key>public.kern2.t</key>
       <integer>0</integer>
       <key>udblgrave</key>
-      <integer>0</integer>
+      <integer>-144</integer>
+      <key>rinvertedbreve</key>
+      <integer>-158</integer>
+      <key>ainvertedbreve</key>
+      <integer>-350</integer>
+      <key>einvertedbreve</key>
+      <integer>-353</integer>
+      <key>oinvertedbreve</key>
+      <integer>-320</integer>
+      <key>uinvertedbreve</key>
+      <integer>-287</integer>
     </dict>
     <key>public.kern1.W</key>
     <dict>
@@ -68643,7 +68663,7 @@
       <key>ecedillabreve</key>
       <integer>-60</integer>
       <key>edblgrave</key>
-      <integer>-60</integer>
+      <integer>-107</integer>
       <key>edieresis.ss03</key>
       <integer>-60</integer>
       <key>edieresis</key>
@@ -68795,7 +68815,7 @@
       <key>public.kern2.quoteright</key>
       <integer>30</integer>
       <key>public.kern2.rdblgrave</key>
-      <integer>81</integer>
+      <integer>-99</integer>
       <key>public.kern2.s</key>
       <integer>-115</integer>
       <key>public.kern2.t</key>
@@ -68811,7 +68831,7 @@
       <key>scaron</key>
       <integer>-115</integer>
       <key>udblgrave</key>
-      <integer>-60</integer>
+      <integer>-100</integer>
       <key>udieresis.ss03</key>
       <integer>-60</integer>
       <key>udieresisacute.ss03</key>
@@ -68832,6 +68852,16 @@
       <integer>-70</integer>
       <key>zcaron</key>
       <integer>-50</integer>
+      <key>rinvertedbreve</key>
+      <integer>-192</integer>
+      <key>ainvertedbreve</key>
+      <integer>-384</integer>
+      <key>einvertedbreve</key>
+      <integer>-402</integer>
+      <key>oinvertedbreve</key>
+      <integer>-354</integer>
+      <key>uinvertedbreve</key>
+      <integer>-368</integer>
     </dict>
     <key>public.kern1.Yarm</key>
     <dict>
