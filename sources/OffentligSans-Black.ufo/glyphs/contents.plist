@@ -1478,8 +1478,12 @@
     <string>exclam.ss03.glif</string>
     <key>exclamdown</key>
     <string>exclamdown.glif</string>
+    <key>exclamdown.case</key>
+    <string>exclamdown.case.glif</string>
     <key>exclamdown.ss03</key>
     <string>exclamdown.ss03.glif</string>
+    <key>exclamdown.ss03.case</key>
+    <string>exclamdown.ss03.case.glif</string>
     <key>ezh</key>
     <string>ezh.glif</string>
     <key>ezhcaron</key>
@@ -1604,12 +1608,20 @@
     <string>gstroke.glif</string>
     <key>guillemetleft</key>
     <string>guillemetleft.glif</string>
+    <key>guillemetleft.case</key>
+    <string>guillemetleft.case.glif</string>
     <key>guillemetright</key>
     <string>guillemetright.glif</string>
+    <key>guillemetright.case</key>
+    <string>guillemetright.case.glif</string>
     <key>guilsinglleft</key>
     <string>guilsinglleft.glif</string>
+    <key>guilsinglleft.case</key>
+    <string>guilsinglleft.case.glif</string>
     <key>guilsinglright</key>
     <string>guilsinglright.glif</string>
+    <key>guilsinglright.case</key>
+    <string>guilsinglright.case.glif</string>
     <key>h</key>
     <string>h.glif</string>
     <key>hbar</key>
@@ -2142,8 +2154,12 @@
     <string>question.ss03.glif</string>
     <key>questiondown</key>
     <string>questiondown.glif</string>
+    <key>questiondown.case</key>
+    <string>questiondown.case.glif</string>
     <key>questiondown.ss03</key>
     <string>questiondown.ss03.glif</string>
+    <key>questiondown.ss03.case</key>
+    <string>questiondown.ss03.case.glif</string>
     <key>quotedbl</key>
     <string>quotedbl.glif</string>
     <key>quotedblbase</key>
@@ -2288,6 +2304,8 @@
     <string>sixsuperior.glif</string>
     <key>slash</key>
     <string>slash.glif</string>
+    <key>slash.case</key>
+    <string>slash.case.glif</string>
     <key>smod</key>
     <string>smod.glif</string>
     <key>softhyphen</key>

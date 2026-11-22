@@ -543,10 +543,12 @@
     <key>public.kern1.guilsinglleft</key>
     <array>
       <string>guillemetleft</string>
+      <string>guillemetleft.case</string>
     </array>
     <key>public.kern1.guilsinglright</key>
     <array>
       <string>guillemetright</string>
+      <string>guillemetright.case</string>
     </array>
     <key>public.kern1.hyphen</key>
     <array>
@@ -1966,10 +1968,12 @@
     <key>public.kern2.guilsinglleft</key>
     <array>
       <string>guillemetleft</string>
+      <string>guillemetleft.case</string>
     </array>
     <key>public.kern2.guilsinglright</key>
     <array>
       <string>guillemetright</string>
+      <string>guillemetright.case</string>
     </array>
     <key>public.kern2.hyphen</key>
     <array>

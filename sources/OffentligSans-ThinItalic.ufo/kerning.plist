@@ -24922,6 +24922,10 @@
       <integer>17</integer>
       <key>rupeeIndian</key>
       <integer>23</integer>
+      <key>questiondown.case</key>
+      <integer>17</integer>
+      <key>questiondown.ss03.case</key>
+      <integer>17</integer>
     </dict>
     <key>dblprimemod</key>
     <dict>
@@ -43539,6 +43543,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
+      <key>slash.case</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_dieresiscomb</key>
     <dict>
@@ -44459,6 +44465,8 @@
       <key>ygrave</key>
       <integer>0</integer>
       <key>zerosuperior</key>
+      <integer>0</integer>
+      <key>slash.case</key>
       <integer>0</integer>
     </dict>
     <key>idotbelow_gravecomb.ss03</key>
@@ -54288,6 +54296,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
+      <key>slash.case</key>
+      <integer>0</integer>
     </dict>
     <key>istroke_dieresiscomb</key>
     <dict>
@@ -55206,6 +55216,8 @@
       <key>ygrave</key>
       <integer>0</integer>
       <key>zerosuperior</key>
+      <integer>0</integer>
+      <key>slash.case</key>
       <integer>0</integer>
     </dict>
     <key>istroke_gravecomb</key>
@@ -59950,6 +59962,10 @@
       <key>ytilde</key>
       <integer>0</integer>
       <key>zlinebelow</key>
+      <integer>0</integer>
+      <key>exclamdown.case</key>
+      <integer>0</integer>
+      <key>exclamdown.ss03.case</key>
       <integer>0</integer>
     </dict>
     <key>lslash</key>
@@ -76013,6 +76029,119 @@
       <key>franc</key>
       <integer>0</integer>
       <key>llinebelow</key>
+      <integer>0</integer>
+    </dict>
+    <key>exclamdown.case</key>
+    <dict>
+      <key>florin</key>
+      <integer>99</integer>
+    </dict>
+    <key>exclamdown.ss03.case</key>
+    <dict>
+      <key>florin</key>
+      <integer>99</integer>
+    </dict>
+    <key>questiondown.case</key>
+    <dict>
+      <key>AE</key>
+      <integer>0</integer>
+      <key>florin</key>
+      <integer>44</integer>
+      <key>j</key>
+      <integer>0</integer>
+      <key>jdotless</key>
+      <integer>0</integer>
+    </dict>
+    <key>questiondown.ss03.case</key>
+    <dict>
+      <key>AE</key>
+      <integer>0</integer>
+      <key>florin</key>
+      <integer>44</integer>
+      <key>j.ss03</key>
+      <integer>0</integer>
+      <key>jdotless</key>
+      <integer>0</integer>
+    </dict>
+    <key>slash.case</key>
+    <dict>
+      <key>dieresis.ss03</key>
+      <integer>30</integer>
+      <key>dieresis</key>
+      <integer>42</integer>
+      <key>edblgrave</key>
+      <integer>0</integer>
+      <key>ibreve</key>
+      <integer>2</integer>
+      <key>icaron</key>
+      <integer>8</integer>
+      <key>icircumflex</key>
+      <integer>0</integer>
+      <key>idieresis.ss03</key>
+      <integer>26</integer>
+      <key>idieresis</key>
+      <integer>22</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>2</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>2</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>8</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>8</integer>
+      <key>idotbelow_circumflexcomb.ss03</key>
+      <integer>0</integer>
+      <key>idotbelow_circumflexcomb</key>
+      <integer>0</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>26</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>22</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>18</integer>
+      <key>idotbelow_gravecomb</key>
+      <integer>18</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>0</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>0</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>0</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>0</integer>
+      <key>idotlessdieresisacute.ss03</key>
+      <integer>0</integer>
+      <key>idotlessdieresisacute</key>
+      <integer>0</integer>
+      <key>igrave</key>
+      <integer>18</integer>
+      <key>imacron</key>
+      <integer>0</integer>
+      <key>istroke_brevecomb</key>
+      <integer>2</integer>
+      <key>istroke_caroncomb</key>
+      <integer>8</integer>
+      <key>istroke_circumflexcomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>26</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>22</integer>
+      <key>istroke_gravecomb</key>
+      <integer>20</integer>
+      <key>istroke_macroncomb</key>
+      <integer>0</integer>
+      <key>istroke_tildecomb</key>
+      <integer>0</integer>
+      <key>itilde</key>
+      <integer>0</integer>
+      <key>jdotlesscaron</key>
+      <integer>3</integer>
+      <key>odblgrave</key>
+      <integer>0</integer>
+      <key>udblgrave</key>
+      <integer>0</integer>
+      <key>yen</key>
       <integer>0</integer>
     </dict>
   </dict>

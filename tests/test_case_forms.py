@@ -1,10 +1,11 @@
 """Case-sensitive punctuation: `.case` forms and the `case` and `calt` rules that swap them in.
 
-The hyphen, en and em dash, `( ) [ ] { }`, `@` and the colon (also the round-dot colon) have a `.case` form moved so that its ink
+The hyphen, en and em dash, `( ) [ ] { }`, `« » ‹ ›`, `¡ ¿` (also with `ss03`), the slash, `@` and the colon (also the round-dot colon) have a `.case` form moved so that its ink
 centre sits on the capital centre; the advance is unchanged. `case` swaps every one of them; `calt` swaps the hyphen, the dashes
-and the colon only where the neighbours are capitals or figures, and `@` before a capital. Parentheses, square brackets and
-braces rise in `case` only: raised by their neighbours, one of a pair could rise and the other not (docs/design-decisions.md,
-F4 and F18).
+and the colon only where the neighbours are capitals or figures, and `@` before a capital. Parentheses, square brackets,
+braces, guillemets, `¡ ¿` and the slash rise in `case` only: raised by their neighbours, one of a pair could rise and the other
+not (`«Hej»`), `¿` would sit on the baseline in nearly every Spanish sentence and the slash would be clipped in `24/7`
+(docs/design-decisions.md, F4 and F18). The bullet needs none: its centre is within 12 units of the capital centre.
 """
 import pytest
 import uharfbuzz as hb
@@ -12,9 +13,11 @@ from fontTools.pens.boundsPen import BoundsPen
 
 from conftest import STATIC_IDS, STATICS, static_path
 
+INVERTED = {"exclamdown", "questiondown", "exclamdown.ss03", "questiondown.ss03"}
 CASE_BASES = {
     "-": "hyphen", "–": "endash", "—": "emdash", "(": "parenleft", ")": "parenright", "[": "bracketleft",
-    "]": "bracketright", "{": "braceleft", "}": "braceright", "@": "at", ":": "colon",
+    "]": "bracketright", "{": "braceleft", "}": "braceright", "@": "at", ":": "colon", "«": "guillemetleft", "»": "guillemetright",
+    "‹": "guilsinglleft", "›": "guilsinglright", "¡": "exclamdown", "¿": "questiondown", "/": "slash",
 }
 
 # `^` marks the character that `calt` raises. Everything else stays at its default height, brackets included.
@@ -30,6 +33,8 @@ CONTEXTS = [
     "H^@G", "^@HEJ", "^@Hej", "user@host", "x@1",
     # accented capitals count as capitals
     "ÅÄÖ^-ÅÄÖ",
+    # guillemets, inverted marks and the slash are never raised by `calt`
+    "«HEJ»", "«Hej»", "‹A›", "¿QUÉ?", "¡HOLA!", "¿Qué?", "A/B", "24/7", "22/11", "a/b",
 ]
 
 
@@ -95,6 +100,8 @@ def test_round_dot_colon_and_oldstyle_figures(italic):
     assert shape(font, "12:30", {"ss03": True}) == ["one", "two", "colon.ss03.case", "three", "zero"]
     assert shape(font, "12:30", {"ss03": True, "calt": False, "case": True})[2] == "colon.ss03.case"
     assert shape(font, "12:30", {"ss03": True, "calt": False})[2] == "colon.ss03"
+    assert shape(font, "¡¿", {"ss03": True, "case": True}) == ["exclamdown.ss03.case", "questiondown.ss03.case"]
+    assert shape(font, "¡¿", {"ss03": True}) == ["exclamdown.ss03", "questiondown.ss03"]
     # oldstyle figures sit at lowercase height: nothing is raised next to them
     assert not [g for g in shape(font, "2026-11-18 12:30 (12)", {"onum": True}) if g.endswith(".case")]
     # tabular figures and the slashed zero are figures
@@ -114,13 +121,25 @@ def test_case_forms_are_centred_on_the_capitals_and_keep_their_width(weight, ita
         return (pen.bounds[1] + pen.bounds[3]) / 2
 
     cap = centre("H")
-    names = list(CASE_BASES.values()) + ["colon.ss03"]
-    for name in names:
-        case = name + ".case"
+    # The compiled font names U+00AB and U+00BB `guillemotleft` and `guillemotright`; the case forms keep the source name.
+    bases = {name: cmap[ord(ch)] for ch, name in CASE_BASES.items()}
+    bases.update({"colon.ss03": "colon.ss03", "exclamdown.ss03": "exclamdown.ss03", "questiondown.ss03": "questiondown.ss03"})
+    for source_name, name in bases.items():
+        case = source_name + ".case"
         assert case in ttf.getGlyphOrder(), case
         assert hmtx[case][0] == hmtx[name][0], case
-        assert abs(centre(case) - cap) <= 2, (case, centre(case), cap)
         assert case not in cmap.values(), case
+        if source_name in INVERTED:  # the lowest point sits on the baseline instead of the centre on the capital centre
+            pen = BoundsPen(gs)
+            gs[case].draw(pen)
+            assert abs(pen.bounds[1]) <= 1, (case, pen.bounds)
+            continue
+        if source_name == "slash":  # runs from the baseline to the cap height
+            pen = BoundsPen(gs)
+            gs[case].draw(pen)
+            assert abs(pen.bounds[1]) <= 1 and abs(pen.bounds[3] - 1446) <= 1, (case, pen.bounds)
+            continue
+        assert abs(centre(case) - cap) <= 2, (case, centre(case), cap)
         assert abs(centre(name) - cap) > 20, (name, "was not low")
 
 

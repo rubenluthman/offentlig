@@ -1102,6 +1102,15 @@
       <string>at.case</string>
       <string>colon.case</string>
       <string>colon.ss03.case</string>
+      <string>guillemetleft.case</string>
+      <string>guillemetright.case</string>
+      <string>guilsinglleft.case</string>
+      <string>guilsinglright.case</string>
+      <string>exclamdown.case</string>
+      <string>exclamdown.ss03.case</string>
+      <string>questiondown.case</string>
+      <string>questiondown.ss03.case</string>
+      <string>slash.case</string>
       <string>T.arm</string>
       <string>Tbar.arm</string>
       <string>Tcaron.arm</string>
