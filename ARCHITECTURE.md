@@ -13,15 +13,15 @@ tests/                             pytest suite, runs against the built fonts
 Makefile                           venv, build, test, qa, proof, diff-public-sans, diff-main, specimen, social-preview, install, verify, clean
 requirements.txt, requirements-qa.txt   Python dependencies for the build and for QA
 scripts/verify_commit.sh           pre-commit verification
-scripts/check_prose.sh             house style check (Vale), run by verify_commit.sh and prose.yaml
 scripts/commit-checks              loader for the shared commit-checks package: secrets, home paths, emails, private names, conflict markers, hooks (pinned in .commit-checks.json)
 scripts/release_notes.sh           CHANGELOG.md section for one version, used as the release notes
 scripts/proof_page.py              tester page from docs/proof/allemansratten.txt (make proof)
 scripts/specimen.py                docs/specimen.png and the social preview (make specimen, make social-preview)
 scripts/fsp_summary.py             summary of the Fontspector reports (make qa)
 .github/workflows/ci.yaml          CI: build, test, Fontspector; draft release with zip and LICENSE on v* tags
-.github/workflows/prose.yaml       CI: conflict markers and house style check on changes to prose files
-docs/                              contributor docs, docs/design-decisions.md (decision register), docs/adr/, docs/proof/ (tester text) and docs/specimen.png
+.github/workflows/commit-checks.yml   CI: the shared commit checks, including conflict markers and the house style check (Vale)
+CONTRIBUTING.md                    contributor guide
+docs/                              docs/design-decisions.md (decision register), docs/adr/, docs/proof/ (tester text) and docs/specimen.png
 fonts/OffentligSans/{otf,ttf,variable,webfonts}/    build output, gitignored
 build/                             Fontspector, proof and Diffenator2 output and the reference builds they compare against, gitignored
 ```
@@ -192,6 +192,6 @@ In Black, the 30 units that clear the mark of `ö` from the arm of `T` or `Y` ma
 
 ## Documents
 
-See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) for workflow and [docs/adr/README.md](docs/adr/README.md) for decision records.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for workflow and [docs/adr/README.md](docs/adr/README.md) for decision records.
 
 [docs/design-decisions.md](docs/design-decisions.md) is the decision register: one row per design and spacing decision in Offentlig Sans, with what it solves, where it is enforced, where it comes from (Public Sans, this project or a standard), its basis, and whether Offentlig Serif and Offentlig Mono must follow it.

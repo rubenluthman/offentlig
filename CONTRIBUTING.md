@@ -50,7 +50,7 @@ This project follows a shared house style for wording, punctuation, and headings
 
 - Work on a branch and open a pull request into `main`.
 - Use Conventional Commits.
-- Run `make verify` before committing. It stops before the tests when `fonts/` is missing or older than `sources/`, because the tests read the built fonts. It runs the house style check with `vale` ([install](https://vale.sh/docs/install)), and skips it with a notice when `vale` is missing, because CI runs it too. The rules are described under [House style](#house-style).
+- Run `make verify` before committing. It stops before the tests when `fonts/` is missing or older than `sources/`, because the tests read the built fonts. It runs the house style check (through the shared commit checks) with `vale` ([install](https://vale.sh/docs/install)), and skips it with a notice when `vale` is missing, because CI runs it too. The rules are described under [House style](#house-style).
 
 ## Releases
 
@@ -65,7 +65,7 @@ This project follows a shared house style for wording, punctuation, and headings
 
 CI runs on pushes and pull requests to `main` that touch `sources/`, `tests/`, `scripts/`, `docs/proof/` (the tester text is read by a test), `Makefile`, `requirements*.txt` or `.github/`, and fails on any test failure or Fontspector FAIL. Every run that is not a tag push also builds the zip and uploads it as the `release-zip` workflow artifact, so the release job's input can be inspected without a tag. The workflow can also be started manually (`workflow_dispatch`).
 
-A second workflow, Prose, checks for leftover conflict markers and runs the house style check on pushes and pull requests to `main` that touch `.md` or `.txt` files or `.vale.ini`. It installs a pinned Vale release and checks its SHA-256 first.
+A second workflow, commit-checks, runs the shared commit checks on every push and pull request to `main`: secrets, home paths, emails, private names, leftover conflict markers and the house style check on `.md` and `.txt` files (all but `LICENSE`, `AUTHORS.txt` and `CONTRIBUTORS.txt`). It installs a pinned Vale release and checks its SHA-256 first.
 
 Versioning:
 

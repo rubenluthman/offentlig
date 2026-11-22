@@ -1,5 +1,5 @@
 #!/bin/sh
-# Pre-commit verification: tests, relative Markdown links, house style (Vale) and the shared commit checks.
+# Pre-commit verification: tests, relative Markdown links and the shared commit checks (which include the house style check with Vale).
 set -eu
 cd "$(dirname "$0")/.."
 fail=0
@@ -32,10 +32,7 @@ for f in $(echo "$files" | grep '\.md$'); do
   done || fail=1
 done
 
-echo "== house style (Vale)"
-./scripts/check_prose.sh || fail=1
-
-echo "== shared commit checks (secrets, home paths, emails, private names, conflict markers, hooks)"
+echo "== shared commit checks (house style with Vale, secrets, home paths, emails, private names, conflict markers, hooks)"
 ./scripts/commit-checks verify || fail=1
 
 [ "$fail" -eq 0 ] && echo "verify: ok" || { echo "verify: FAILED" >&2; exit 1; }
