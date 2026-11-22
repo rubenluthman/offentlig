@@ -21500,6 +21500,8 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
+      <key>ring</key>
+      <integer>13</integer>
     </dict>
     <key>adieresis.ss03</key>
     <dict>
@@ -23411,6 +23413,8 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
+      <key>ring</key>
+      <integer>13</integer>
     </dict>
     <key>brokenbar</key>
     <dict>
@@ -23932,7 +23936,7 @@
       <key>odblgrave</key>
       <integer>0</integer>
       <key>ring</key>
-      <integer>14</integer>
+      <integer>16</integer>
       <key>rupeeIndian</key>
       <integer>28</integer>
       <key>udblgrave</key>
@@ -25425,7 +25429,7 @@
       <key>rdblgrave</key>
       <integer>120</integer>
       <key>ring</key>
-      <integer>12</integer>
+      <integer>20</integer>
       <key>rupeeIndian</key>
       <integer>37</integer>
       <key>seveneighths</key>
@@ -26065,7 +26069,7 @@
       <key>product</key>
       <integer>33</integer>
       <key>ring</key>
-      <integer>48</integer>
+      <integer>55</integer>
       <key>rupeeIndian</key>
       <integer>64</integer>
       <key>seveneighths</key>
@@ -26262,7 +26266,7 @@
       <key>product</key>
       <integer>42</integer>
       <key>ring</key>
-      <integer>56</integer>
+      <integer>59</integer>
       <key>rupeeIndian</key>
       <integer>64</integer>
       <key>seveneighths</key>
@@ -26776,7 +26780,7 @@
       <key>parenleftsuperior</key>
       <integer>0</integer>
       <key>ring</key>
-      <integer>12</integer>
+      <integer>20</integer>
       <key>rupeeIndian</key>
       <integer>44</integer>
       <key>udblgrave</key>
@@ -26857,7 +26861,7 @@
       <key>product</key>
       <integer>11</integer>
       <key>ring</key>
-      <integer>24</integer>
+      <integer>34</integer>
       <key>rupeeIndian</key>
       <integer>51</integer>
       <key>trademark</key>
@@ -31897,7 +31901,7 @@
       <key>amacron.cv04</key>
       <integer>0</integer>
       <key>aring</key>
-      <integer>0</integer>
+      <integer>3</integer>
       <key>aring.cv04</key>
       <integer>0</integer>
       <key>atilde</key>
@@ -33024,6 +33028,8 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
+      <key>ring</key>
+      <integer>13</integer>
     </dict>
     <key>hyphen.case</key>
     <dict>
@@ -33685,7 +33691,7 @@
       <key>rdblgrave</key>
       <integer>112</integer>
       <key>ring</key>
-      <integer>1</integer>
+      <integer>3</integer>
       <key>ringhalfright</key>
       <integer>0</integer>
       <key>rmod</key>
@@ -38516,7 +38522,7 @@
       <key>rdblgrave</key>
       <integer>112</integer>
       <key>ring</key>
-      <integer>1</integer>
+      <integer>3</integer>
       <key>ringhalfright</key>
       <integer>0</integer>
       <key>rlinebelow</key>
@@ -38985,7 +38991,7 @@
       <key>rdblgrave</key>
       <integer>112</integer>
       <key>ring</key>
-      <integer>1</integer>
+      <integer>3</integer>
       <key>ringhalfright</key>
       <integer>0</integer>
       <key>rlinebelow</key>
@@ -60096,6 +60102,8 @@
       <integer>38</integer>
       <key>odblgrave</key>
       <integer>0</integer>
+      <key>ring</key>
+      <integer>3</integer>
     </dict>
     <key>minus.subs</key>
     <dict>
@@ -71841,17 +71849,17 @@
       <key>Idieresisacute.ss03</key>
       <integer>0</integer>
       <key>breve</key>
-      <integer>12</integer>
+      <integer>22</integer>
       <key>caron</key>
-      <integer>17</integer>
+      <integer>26</integer>
       <key>dieresis.ss03</key>
-      <integer>59</integer>
+      <integer>67</integer>
       <key>dieresis</key>
-      <integer>71</integer>
+      <integer>82</integer>
       <key>dotaccent.ss03</key>
-      <integer>13</integer>
+      <integer>22</integer>
       <key>dotaccent</key>
-      <integer>25</integer>
+      <integer>30</integer>
       <key>edblgrave</key>
       <integer>0</integer>
       <key>hcircumflex</key>
@@ -71867,7 +71875,7 @@
       <key>idieresis.ss03</key>
       <integer>10</integer>
       <key>idieresis</key>
-      <integer>14</integer>
+      <integer>22</integer>
       <key>idotbelow_brevecomb.ss03</key>
       <integer>45</integer>
       <key>idotbelow_brevecomb</key>
@@ -71883,7 +71891,7 @@
       <key>idotbelow_dieresiscomb.ss03</key>
       <integer>10</integer>
       <key>idotbelow_dieresiscomb</key>
-      <integer>14</integer>
+      <integer>22</integer>
       <key>idotbelow_gravecomb.ss03</key>
       <integer>17</integer>
       <key>idotbelow_gravecomb</key>
@@ -71893,17 +71901,17 @@
       <key>idotbelow_macroncomb</key>
       <integer>36</integer>
       <key>idotbelow_tildecomb.ss03</key>
-      <integer>38</integer>
+      <integer>40</integer>
       <key>idotbelow_tildecomb</key>
-      <integer>38</integer>
+      <integer>40</integer>
       <key>idotlessdieresisacute.ss03</key>
       <integer>10</integer>
       <key>idotlessdieresisacute</key>
-      <integer>14</integer>
+      <integer>22</integer>
       <key>igrave</key>
       <integer>17</integer>
       <key>iinvertedbreve</key>
-      <integer>0</integer>
+      <integer>12</integer>
       <key>imacron</key>
       <integer>36</integer>
       <key>istroke_brevecomb</key>
@@ -71915,27 +71923,35 @@
       <key>istroke_dieresiscomb.ss03</key>
       <integer>10</integer>
       <key>istroke_dieresiscomb</key>
-      <integer>14</integer>
+      <integer>22</integer>
       <key>istroke_gravecomb</key>
       <integer>19</integer>
       <key>istroke_macroncomb</key>
       <integer>35</integer>
       <key>istroke_tildecomb</key>
-      <integer>38</integer>
+      <integer>40</integer>
       <key>itilde</key>
-      <integer>38</integer>
+      <integer>40</integer>
       <key>jdotlesscaron</key>
-      <integer>46</integer>
+      <integer>50</integer>
       <key>odblgrave</key>
       <integer>0</integer>
       <key>rupeeIndian</key>
-      <integer>23</integer>
+      <integer>28</integer>
       <key>tdieresis.ss03</key>
       <integer>0</integer>
       <key>udblgrave</key>
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
+      <key>macron</key>
+      <integer>14</integer>
+      <key>parenleftsuperior</key>
+      <integer>1</integer>
+      <key>ring</key>
+      <integer>27</integer>
+      <key>tilde</key>
+      <integer>13</integer>
     </dict>
     <key>ringhalfleft</key>
     <dict>

@@ -55,6 +55,14 @@ def test_ring_is_round(static_ttf):
     assert 0.93 <= ratio <= 1.03
 
 
+@pytest.mark.parametrize("weight", ["Thin", "ExtraLight", "Light", "Regular"])
+def test_italic_ring_is_a_circle_in_the_light_weights(weight):
+    """From Thin to Regular the italic ring is the upright circle, unsheared (0.99 - 1.03 wide to tall; before 0.8.0 it was an
+    oval of 0.94 - 0.97, where Inter, IBM Plex Sans, Noto Sans, Libre Franklin and Atkinson Next keep 0.99 or more)."""
+    _, r_out = ring_and_o(TTFont(static_path(weight, True)))[0]
+    assert 0.99 <= (r_out[2] - r_out[0]) / (r_out[3] - r_out[1]) <= 1.03
+
+
 def dot_pitch(font):
     dots = sorted(contour_bounds(font, "dieresis"), key=lambda b: b[0])
     assert len(dots) == 2

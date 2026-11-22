@@ -21516,6 +21516,8 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>18</integer>
+      <key>ring</key>
+      <integer>8</integer>
     </dict>
     <key>adieresis.ss03</key>
     <dict>
@@ -23439,6 +23441,8 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>0</integer>
+      <key>ring</key>
+      <integer>5</integer>
     </dict>
     <key>brokenbar</key>
     <dict>
@@ -23964,7 +23968,7 @@
       <key>odblgrave</key>
       <integer>0</integer>
       <key>ring</key>
-      <integer>0</integer>
+      <integer>8</integer>
       <key>rupeeIndian</key>
       <integer>0</integer>
       <key>udblgrave</key>
@@ -26091,7 +26095,7 @@
       <key>product</key>
       <integer>19</integer>
       <key>ring</key>
-      <integer>34</integer>
+      <integer>38</integer>
       <key>rupeeIndian</key>
       <integer>29</integer>
       <key>seveneighths</key>
@@ -26288,7 +26292,7 @@
       <key>product</key>
       <integer>29</integer>
       <key>ring</key>
-      <integer>38</integer>
+      <integer>40</integer>
       <key>rupeeIndian</key>
       <integer>38</integer>
       <key>seveneighths</key>
@@ -26802,7 +26806,7 @@
       <key>parenleftsuperior</key>
       <integer>0</integer>
       <key>ring</key>
-      <integer>10</integer>
+      <integer>15</integer>
       <key>rupeeIndian</key>
       <integer>0</integer>
       <key>udblgrave</key>
@@ -26885,7 +26889,7 @@
       <key>product</key>
       <integer>5</integer>
       <key>ring</key>
-      <integer>20</integer>
+      <integer>23</integer>
       <key>rupeeIndian</key>
       <integer>15</integer>
       <key>trademark</key>
@@ -31938,9 +31942,9 @@
       <key>amacron.cv04</key>
       <integer>33</integer>
       <key>aring</key>
-      <integer>0</integer>
+      <integer>8</integer>
       <key>aring.cv04</key>
-      <integer>0</integer>
+      <integer>8</integer>
       <key>atilde</key>
       <integer>0</integer>
       <key>atilde.cv04</key>
@@ -33065,6 +33069,8 @@
       <integer>0</integer>
       <key>yen</key>
       <integer>19</integer>
+      <key>ring</key>
+      <integer>8</integer>
     </dict>
     <key>hyphen.case</key>
     <dict>
@@ -33726,7 +33732,7 @@
       <key>rdblgrave</key>
       <integer>185</integer>
       <key>ring</key>
-      <integer>21</integer>
+      <integer>37</integer>
       <key>ringhalfright</key>
       <integer>0</integer>
       <key>rmod</key>
@@ -34541,7 +34547,7 @@
       <key>rdblgrave</key>
       <integer>145</integer>
       <key>ring</key>
-      <integer>73</integer>
+      <integer>76</integer>
       <key>ringhalfright</key>
       <integer>0</integer>
       <key>rmod</key>
@@ -35200,7 +35206,7 @@
       <key>rdblgrave</key>
       <integer>158</integer>
       <key>ring</key>
-      <integer>78</integer>
+      <integer>83</integer>
       <key>ringhalfright</key>
       <integer>13</integer>
       <key>rmod</key>
@@ -38775,7 +38781,7 @@
       <key>rdblgrave</key>
       <integer>185</integer>
       <key>ring</key>
-      <integer>21</integer>
+      <integer>37</integer>
       <key>ringhalfright</key>
       <integer>0</integer>
       <key>rlinebelow</key>
@@ -39244,7 +39250,7 @@
       <key>rdblgrave</key>
       <integer>185</integer>
       <key>ring</key>
-      <integer>21</integer>
+      <integer>37</integer>
       <key>ringhalfright</key>
       <integer>0</integer>
       <key>rlinebelow</key>
@@ -39893,7 +39899,7 @@
       <key>rdblgrave</key>
       <integer>145</integer>
       <key>ring</key>
-      <integer>73</integer>
+      <integer>76</integer>
       <key>ringhalfright</key>
       <integer>0</integer>
       <key>rlinebelow</key>
@@ -40556,7 +40562,7 @@
       <key>rdblgrave</key>
       <integer>145</integer>
       <key>ring</key>
-      <integer>73</integer>
+      <integer>76</integer>
       <key>ringhalfright</key>
       <integer>0</integer>
       <key>rlinebelow</key>
@@ -41081,7 +41087,7 @@
       <key>rdblgrave</key>
       <integer>158</integer>
       <key>ring</key>
-      <integer>78</integer>
+      <integer>83</integer>
       <key>ringhalfright</key>
       <integer>13</integer>
       <key>rmod</key>
@@ -41608,7 +41614,7 @@
       <key>rdblgrave</key>
       <integer>158</integer>
       <key>ring</key>
-      <integer>78</integer>
+      <integer>83</integer>
       <key>ringhalfright</key>
       <integer>13</integer>
       <key>rlinebelow</key>
@@ -51300,7 +51306,7 @@
       <key>rdblgrave</key>
       <integer>185</integer>
       <key>ring</key>
-      <integer>21</integer>
+      <integer>37</integer>
       <key>ringhalfright</key>
       <integer>0</integer>
       <key>rmod</key>
@@ -52117,7 +52123,7 @@
       <key>rdblgrave</key>
       <integer>145</integer>
       <key>ring</key>
-      <integer>73</integer>
+      <integer>75</integer>
       <key>ringhalfright</key>
       <integer>0</integer>
       <key>rmod</key>
@@ -52760,7 +52766,7 @@
       <key>rdblgrave</key>
       <integer>158</integer>
       <key>ring</key>
-      <integer>78</integer>
+      <integer>83</integer>
       <key>ringhalfright</key>
       <integer>13</integer>
       <key>rmod</key>
@@ -59462,7 +59468,7 @@
       <key>rdblgrave</key>
       <integer>168</integer>
       <key>ring</key>
-      <integer>0</integer>
+      <integer>16</integer>
       <key>rupeeIndian</key>
       <integer>15</integer>
       <key>tdieresis.ss03</key>
@@ -59747,7 +59753,7 @@
       <key>parenright.case</key>
       <integer>0</integer>
       <key>ring</key>
-      <integer>10</integer>
+      <integer>16</integer>
       <key>rupeeIndian</key>
       <integer>5</integer>
       <key>tdieresis.ss03</key>
@@ -60378,6 +60384,8 @@
       <key>jdotlesscaron</key>
       <integer>36</integer>
       <key>odblgrave</key>
+      <integer>0</integer>
+      <key>ring</key>
       <integer>0</integer>
     </dict>
     <key>minus.subs</key>
@@ -72573,15 +72581,15 @@
       <key>breve</key>
       <integer>0</integer>
       <key>caron</key>
-      <integer>0</integer>
+      <integer>3</integer>
       <key>dieresis.ss03</key>
-      <integer>34</integer>
+      <integer>38</integer>
       <key>dieresis</key>
-      <integer>41</integer>
+      <integer>43</integer>
       <key>dotaccent.ss03</key>
-      <integer>0</integer>
+      <integer>9</integer>
       <key>dotaccent</key>
-      <integer>19</integer>
+      <integer>25</integer>
       <key>edblgrave</key>
       <integer>0</integer>
       <key>hcircumflex</key>
@@ -72635,7 +72643,7 @@
       <key>igrave</key>
       <integer>44</integer>
       <key>iinvertedbreve</key>
-      <integer>0</integer>
+      <integer>12</integer>
       <key>imacron</key>
       <integer>50</integer>
       <key>istroke_brevecomb</key>
@@ -72667,6 +72675,14 @@
       <key>udblgrave</key>
       <integer>0</integer>
       <key>yen</key>
+      <integer>0</integer>
+      <key>macron</key>
+      <integer>0</integer>
+      <key>parenleftsuperior</key>
+      <integer>0</integer>
+      <key>ring</key>
+      <integer>10</integer>
+      <key>tilde</key>
       <integer>0</integer>
     </dict>
     <key>ringhalfleft</key>
@@ -76583,7 +76599,7 @@
       <key>product</key>
       <integer>0</integer>
       <key>ring</key>
-      <integer>0</integer>
+      <integer>9</integer>
       <key>seveneighths</key>
       <integer>0</integer>
       <key>trademark</key>

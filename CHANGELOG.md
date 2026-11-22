@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 - Changed `W` between Regular and ExtraBold: the lower vertices no longer dip at weight 500 (46 units higher) and rise steadily with weight; at 800 they are about 20 units lower. Regular and lighter are unchanged.
+- Changed the ring of `å ů` in the italic from Thin to Regular to a round ring like the upright, where it was a narrow oval. The spacing ring `˚` next to other marks, and `⁄å`, gained kerning in Thin Italic and Regular Italic to keep the 30-unit gap. Black Italic and the other marks are unchanged.
 
 ## [0.7.0] - 2026-11-21
 
