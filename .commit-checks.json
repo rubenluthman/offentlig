@@ -3,7 +3,9 @@
   "commit": "ca8609ff9033ca57265523d1316b18ae9f72f339",
   "source": "https://github.com/rubenluthman/commit-checks.git",
   "visibility": "public",
-  "email_allow": [],
+  "email_allow": [
+    "^noreply@github\\.com$"
+  ],
   "allow": [
     {
       "rule": "emails",
