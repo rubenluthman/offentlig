@@ -1,4 +1,4 @@
-"""Every accented letter has its cv03, cv04, cv05, ss01, ss02 and ss03 form, and every dotted letter alternate its round-dot form.
+"""Every accented letter has its cv03, cv04, cv05, ss01, ss02 and ss03 form, and every dotted letter alternate its `ss03` (square-dot) form.
 
 The letter alternates (`cv03` G, `cv04` single-storey a, `cv05` serifed I, `ss01` g, `ss02` l) and `ss03` (square dots) are separate
 features, and the `cv` features run first. A letter that has a dot and an alternate therefore needs a third glyph,
@@ -47,7 +47,7 @@ def ss03_rules(ttf):
 
 
 def has_square_dot(font, name):
-    """True if a component of the glyph (at any depth) has a round-dot form: the glyph then carries a square dot or comma head."""
+    """True if a component of the glyph (at any depth) has a square-dot (`ss03`) form: the glyph then carries a round dot or comma head by default."""
     return any(c.baseGlyph + ".ss03" in font or has_square_dot(font, c.baseGlyph) for c in font[name].components)
 
 
@@ -114,7 +114,8 @@ def test_every_square_dot_glyph_has_an_ss03_form(regular_source):
     assert not missing
 
 
-def test_every_dotted_alternate_has_a_round_dot_form(regular_source):
+def test_every_dotted_alternate_has_a_square_dot_form(regular_source):
+    """The default dotted alternates are round; each has its `.ss03` form with the square dots of Public Sans."""
     names = set(regular_source.keys())
     alternates = [n for n in names if re.search(r"\.(cv0[345]|ss0[12])$", n) and has_square_dot(regular_source, n)]
     assert len(alternates) >= 11
@@ -135,7 +136,7 @@ def test_ss03_has_a_rule_for_every_dotted_glyph_and_alternate(weight, italic, re
 
 
 @pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
-def test_cv_and_ss03_together_give_the_round_dot_alternate(weight, italic):
+def test_cv_and_ss03_together_give_the_square_dot_alternate(weight, italic):
     path = static_path(weight, italic)
     both = lambda text, tag: shape(path, text, {tag: True, "ss03": True})
     assert both("ä", "cv04") == ["adieresis.cv04.ss03"]
@@ -148,7 +149,7 @@ def test_cv_and_ss03_together_give_the_round_dot_alternate(weight, italic):
     assert both("ḷ", "ss02") == ["ldotbelow.ss02.ss03"]
     assert both("ļ", "ss02") == ["lcommaaccent.ss02.ss03"]
     assert both("Ḯ", "cv05") == ["Idieresisacute.cv05.ss03"]
-    # an alternate with no dot is unchanged by ss03, and with ss03 alone the plain round-dot letter is used
+    # an alternate with no dot is unchanged by ss03, and with ss03 alone the plain square-dot letter is used
     assert both("ǎ", "cv04") == ["acaron.cv04"]
     assert shape(path, "ǟ", {"ss03": True}) == ["adieresismacron.ss03"]
     # neither feature on: default shaping

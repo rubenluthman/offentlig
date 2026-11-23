@@ -71,3 +71,35 @@ def test_join_circles(weight, italic):
     assert w <= W_LIMIT, f"W lower vertices: circle {w:.2f} x stem, limit {W_LIMIT}"
     assert n_top <= N_LIMIT, f"N top-left crotch: circle {n_top:.2f} x stem, limit {N_LIMIT}"
     assert n_bottom <= N_LIMIT, f"N bottom-right crotch: circle {n_bottom:.2f} x stem, limit {N_LIMIT}"
+
+
+WEIGHT_STEPS = list(range(400, 901, 25))
+
+
+def lower_w_vertex_heights(path):
+    """Height of the two lower vertices of `W` (the points where the inner edges of each stroke pair meet, between the baseline and half
+    the cap height) on the variable font at each of `WEIGHT_STEPS`."""
+    font = TTFont(path)
+    cap = font["OS/2"].sCapHeight
+    heights = []
+    for wght in WEIGHT_STEPS:
+        gs = font.getGlyphSet(location={"wght": wght})
+        pen = DecomposingRecordingPen(gs)
+        gs["W"].draw(pen)
+        ys = [args[0][1] for op, args in pen.value if op in ("moveTo", "lineTo") and 50 < args[0][1] < cap / 2]
+        assert len(ys) == 2 and abs(ys[0] - ys[1]) <= 1, (wght, ys)
+        heights.append(round(sum(ys) / 2))
+    return heights
+
+
+def check_w_vertices_rise(heights):
+    """Pairs (wght, height) where the height falls from one step to the next; a rounding step of 1 unit is allowed."""
+    return [(w, h, nxt) for w, h, nxt in zip(WEIGHT_STEPS, heights, heights[1:]) if nxt < h - 1]
+
+
+def test_lower_vertices_of_w_never_fall_with_weight(variable_path):
+    """The lower vertices of `W` rise with weight from 400 to 900 (295 at 400 and 500, 335 at 700, 360 at 800 upright; 345 and 377
+    in the italic). The 0.7.0 fonts fell from 295 at 400 to 248 at 500 before rising again, and this test fails on them."""
+    heights = lower_w_vertex_heights(variable_path)
+    assert check_w_vertices_rise(heights) == []
+    assert heights[-1] > heights[0]
