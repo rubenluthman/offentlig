@@ -59,7 +59,7 @@ Offentlig Sans starts from Public Sans `develop` at `e40fcf567`. Sizes are in fo
 | Stylistic sets | `ss01` switches `g` and `l` | `ss01` switches `g`, `ss02` switches `l`, `salt` both |
 | Variable font default | Thin (100) | Regular (400) |
 
-The variable font opens at Regular because Public Sans opens at Thin, so a web page that loads it without setting a weight shows hairline text. Inter, Noto Sans and Atkinson also default to 400.
+An app that uses the variable font without choosing a weight, or that cannot vary it, shows the default weight. In Public Sans that is Thin, so the text comes out as hairlines; in Offentlig Sans it is Regular, as in Inter, Noto Sans, IBM Plex Sans and Atkinson Hyperlegible Next. Web browsers are not affected: they apply the page's weight, 400 unless set.
 
 The first three fixes went to Public Sans as pull requests [#396](https://github.com/uswds/public-sans/pull/396), [#397](https://github.com/uswds/public-sans/pull/397) and [#398](https://github.com/uswds/public-sans/pull/398). The `Ǔ` addition is noted on issue [#258](https://github.com/uswds/public-sans/issues/258).
 
