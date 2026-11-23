@@ -1,6 +1,8 @@
 """The ogonek reaches the depth of the deepest comparison fonts, fits in `winDescent`, and the `ę` hook ends level with the arm."""
 import pytest
 
+from conftest import WEIGHTS
+
 OGONEK_LETTERS = "ąęįųĄĘĮŲǫǭǪǬ̨˛"
 
 # Lowest point of the ogonek, in units of 2000 per em. Thin, Regular and Black are drawn at -405, -415 and -425 on `ą`;
@@ -44,3 +46,39 @@ def test_e_ogonek_hook_ends_at_the_arm(static_ttf):
     arm_right = max(x for x, y in pts if 0 <= y <= 400)
     assert hook_right <= arm_right + HOOK_OVERSHOOT
     assert hook_right >= arm_right - HOOK_MIN_REACH
+
+
+ITALIC_HOOK_TOLERANCE = 3
+
+
+@pytest.mark.parametrize("weight", WEIGHTS)
+def test_italic_u_ogonek_hook_is_as_deep_as_the_upright(weight):
+    """`Ų` is drawn with its own hook. The italic hook hung 24 units lower than the upright one at Black (8 at Regular), its top edge
+    poked out of the bowl, and the `U` `ogonek` anchor sat on the baseline instead of 24 units above it."""
+    from conftest import static_path
+    from fontTools.pens.boundsPen import BoundsPen
+    from fontTools.ttLib import TTFont
+    low = {}
+    for italic in (False, True):
+        ttf = TTFont(static_path(weight, italic))
+        gs = ttf.getGlyphSet()
+        pen = BoundsPen(gs)
+        gs[ttf.getBestCmap()[ord("Ų")]].draw(pen)
+        low[italic] = pen.bounds[1]
+    assert abs(low[True] - low[False]) <= ITALIC_HOOK_TOLERANCE, low
+
+
+@pytest.mark.parametrize("master", ["Thin", "Regular", "Black"])
+def test_italic_u_ogonek_anchor_and_hook_follow_the_upright_in_the_source(master):
+    """Along the slant: the hook contour and the `ogonek` anchor of `U` and `Ų` sit at the upright heights (1 unit)."""
+    from pathlib import Path
+    import ufoLib2
+    sources = Path(__file__).resolve().parent.parent / "sources"
+    up = ufoLib2.Font.open(sources / f"OffentligSans-{master}.ufo")
+    it = ufoLib2.Font.open(sources / f"OffentligSans-{master}Italic.ufo")
+    for name in ("U", "Uogonek"):
+        a = {x.name: (x.x, x.y) for x in up[name].anchors}["ogonek"]
+        b = {x.name: (x.x, x.y) for x in it[name].anchors}["ogonek"]
+        assert abs(a[1] - b[1]) <= 1, (name, a, b)
+    hook_up, hook_it = up["Uogonek"].contours[0].getBounds(up), it["Uogonek"].contours[0].getBounds(it)
+    assert abs(hook_up[1] - hook_it[1]) <= 1 and abs(hook_up[3] - hook_it[3]) <= 1, (hook_up, hook_it)

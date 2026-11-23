@@ -4,31 +4,31 @@
   <unicode hex="0172"/>
   <anchor x="615.9375" y="2.625" name="bottom"/>
   <anchor x="1247.65625" y="1171.4375" name="horn"/>
-  <anchor x="745.8125" y="11.8125" name="ogonek"/>
+  <anchor x="746.9368" y="19.8125" name="ogonek"/>
   <anchor x="827.71875" y="1446.0" name="top"/>
-  <anchor x="745.8125" y="11.8125" name="_ogonek"/>
+  <anchor x="746.9368" y="19.8125" name="_ogonek"/>
   <outline>
     <contour>
-      <point x="581.59375" y="-428.9375" type="curve" smooth="yes"/>
-      <point x="656.625" y="-428.9375"/>
-      <point x="718.022727" y="-407.5"/>
-      <point x="746.505682" y="-388.0625" type="curve"/>
-      <point x="758.625" y="-290.544725" type="line"/>
-      <point x="734.335227" y="-307.1875"/>
-      <point x="692.454545" y="-327.875"/>
-      <point x="637.125" y="-327.875" type="curve" smooth="yes"/>
-      <point x="576.1875" y="-327.875"/>
-      <point x="555.625" y="-303.3125"/>
-      <point x="560.9375" y="-232.75031" type="curve" smooth="yes"/>
-      <point x="571.5625" y="-128.939961"/>
-      <point x="629.25" y="-59.9375"/>
-      <point x="766.1875" y="-4.0625" type="curve"/>
-      <point x="635.375" y="7.75" type="line"/>
-      <point x="478.6875" y="-42.3125"/>
-      <point x="426.875" y="-131.834673"/>
-      <point x="415.5625" y="-258.203809" type="curve" smooth="yes"/>
-      <point x="401.5" y="-368.375"/>
-      <point x="457.3125" y="-428.9375"/>
+      <point x="582.7181" y="-420.9375" type="curve" smooth="yes"/>
+      <point x="657.7493" y="-420.9375"/>
+      <point x="719.1471" y="-399.5"/>
+      <point x="747.63" y="-380.0625" type="curve"/>
+      <point x="759.7493" y="-282.5447" type="line"/>
+      <point x="735.4596" y="-299.1875"/>
+      <point x="693.5789" y="-319.875"/>
+      <point x="638.2493" y="-319.875" type="curve" smooth="yes"/>
+      <point x="577.3118" y="-319.875"/>
+      <point x="556.7493" y="-295.3125"/>
+      <point x="562.0618" y="-224.7503" type="curve" smooth="yes"/>
+      <point x="572.6868" y="-120.94"/>
+      <point x="630.3743" y="-51.9375"/>
+      <point x="767.3118" y="3.9375" type="curve"/>
+      <point x="636.4993" y="15.75" type="line"/>
+      <point x="479.8118" y="-34.3125"/>
+      <point x="427.9993" y="-123.8347"/>
+      <point x="416.6868" y="-250.2038" type="curve" smooth="yes"/>
+      <point x="402.6243" y="-360.375"/>
+      <point x="458.4368" y="-420.9375"/>
     </contour>
     <component base="U"/>
   </outline>
