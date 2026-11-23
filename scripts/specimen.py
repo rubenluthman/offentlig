@@ -1,4 +1,6 @@
-"""Render docs/specimen.png from the built static TTFs, quoting the statutes in docs/proof/allemansratten.txt.
+"""Render docs/specimen.png and docs/specimen-dark.png from the built static TTFs, quoting the statutes in
+docs/proof/allemansratten.txt. Both have a transparent background and no side margins, so every line starts at the
+README's text edge; the README picks the dark one in a dark color scheme.
 
 With --social it renders build/social-preview.png instead: the 1280 x 640 image GitHub shows when a link to the
 repository is shared, uploaded by hand under Settings > General > Social preview.
@@ -17,11 +19,13 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parent.parent
 TTF = ROOT / "fonts" / "OffentligSans" / "ttf"
 OUT = ROOT / "docs" / "specimen.png"
+DARK_OUT = ROOT / "docs" / "specimen-dark.png"
 SOCIAL_OUT = ROOT / "build" / "social-preview.png"
 
-WIDTH, MARGIN, SS = 1600, 100, 2
-CONTENT = WIDTH - 2 * MARGIN
+WIDTH, MARGIN, SS = 1400, 56, 2
 INK, MUTED = (17, 17, 17), (110, 110, 110)
+# GitHub's dark theme text colors.
+DARK_INK, DARK_MUTED = (240, 246, 252), (145, 152, 161)
 WEIGHTS = ["Thin", "ExtraLight", "Light", "Regular", "Medium", "SemiBold", "Bold", "ExtraBold", "Black"]
 
 QUOTE_RF = "Alla ska ha tillgång till naturen enligt allemansrätten."
@@ -107,37 +111,65 @@ def fit(style, text, max_width):
 
 
 def main():
-    title_size = 132
-    rf_size = fit("Regular", QUOTE_RF, CONTENT)
-    mb_size = 44
-    caption_size = 24
-    mb_lines = wrap("Italic", QUOTE_MB, mb_size, CONTENT)
-    column = CONTENT / len(WEIGHTS)
-    sample_size = min(fit("Black", WEIGHT_SAMPLE, column * 0.86), 92)
+    """Every line is placed by its ink, so all of them start at the left edge; the first quote and the weight row also
+    end at the right edge."""
+    title, title_size, mb_size, caption_size = "Offentlig Sans", 132, 44, 24
+    left, right = ink("Regular", QUOTE_RF, 1)
+    rf_size = WIDTH / (right - left)
+    mb_lines = wrap("Italic", QUOTE_MB, mb_size, WIDTH)
+
+    # Weight row: the samples' ink spans the full width, with equal gaps between them.
+    sample_size = 92
+    while True:
+        spans = [ink(weight, WEIGHT_SAMPLE, sample_size) for weight in WEIGHTS]
+        gap = (WIDTH - sum(r - l for l, r in spans)) / (len(WEIGHTS) - 1)
+        if gap >= sample_size * 0.4:
+            break
+        sample_size -= 1
+
+    def at_edge(kind, style, text, size, baseline):
+        return (kind, style, text, size, -ink(style, text, size)[0], baseline)
 
     # Vertical layout: baselines measured from the top margin. Cap height is 0.723 em.
     y = MARGIN + 0.723 * title_size
-    plan = [("line", "Bold", "Offentlig Sans", title_size, MARGIN, y, INK)]
+    plan = [at_edge("ink", "Bold", title, title_size, y)]
     y += 0.723 * rf_size + 96
-    plan.append(("line", "Regular", QUOTE_RF, rf_size, MARGIN, y, INK))
+    plan.append(at_edge("ink", "Regular", QUOTE_RF, rf_size, y))
     y += 50
-    plan.append(("line", "Regular", SOURCE_RF, caption_size, MARGIN, y, MUTED))
+    plan.append(at_edge("muted", "Regular", SOURCE_RF, caption_size, y))
     y += 0.723 * mb_size + 64
     for i, text in enumerate(mb_lines):
-        plan.append(("line", "Italic", text, mb_size, MARGIN, y, INK))
+        plan.append(at_edge("ink", "Italic", text, mb_size, y))
         y += mb_size * 1.3 if i < len(mb_lines) - 1 else 0
     y += 46
-    plan.append(("line", "Regular", SOURCE_MB, caption_size, MARGIN, y, MUTED))
+    plan.append(at_edge("muted", "Regular", SOURCE_MB, caption_size, y))
     y += 0.723 * sample_size + 92
-    for i, weight in enumerate(WEIGHTS):
-        left = MARGIN + i * column
-        w = width(weight, WEIGHT_SAMPLE, sample_size)
-        plan.append(("line", weight, WEIGHT_SAMPLE, sample_size, left + (column - w) / 2, y, INK))
-        lw = width("Regular", weight, caption_size)
-        plan.append(("line", "Regular", weight, caption_size, left + (column - lw) / 2, y + 48, MUTED))
+    x = 0
+    for weight, (l, r) in zip(WEIGHTS, spans):
+        plan.append(("ink", weight, WEIGHT_SAMPLE, sample_size, x - l, y))
+        label = width("Regular", weight, caption_size)
+        plan.append(("muted", "Regular", weight, caption_size, x + (r - l - label) / 2, y + 48))
+        x += (r - l) + gap
     height = round(y + 48 + MARGIN)
 
-    render(plan, WIDTH, height, OUT)
+    render_transparent(plan, WIDTH, height, {"ink": INK, "muted": MUTED}, OUT)
+    render_transparent(plan, WIDTH, height, {"ink": DARK_INK, "muted": DARK_MUTED}, DARK_OUT)
+
+
+def render_transparent(plan, page_width, page_height, colors, out):
+    """Draw each color's lines as a coverage mask, then color the masks, so antialiased edges carry no background."""
+    page = Image.new("RGBA", (page_width, page_height), (0, 0, 0, 0))
+    for kind in ("muted", "ink"):
+        mask = Image.new("L", (page_width * SS, page_height * SS), 0)
+        draw = ImageDraw.Draw(mask)
+        for line_kind, style, text, size, x, baseline in plan:
+            if line_kind == kind:
+                draw_line(draw, style, text, size, x, baseline, 255)
+        layer = Image.new("RGBA", (page_width, page_height), colors[kind] + (255,))
+        layer.putalpha(mask.resize((page_width, page_height), Image.Resampling.LANCZOS))
+        page = Image.alpha_composite(page, layer)
+    page.save(out, optimize=True)
+    print(f"wrote {out.relative_to(ROOT)} ({page_width} x {page_height})")
 
 
 def render(plan, page_width, page_height, out):

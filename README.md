@@ -2,7 +2,10 @@
 
 Offentlig is a planned open-source font superfamily. Offentlig Sans is the first member: a renamed fork of [Public Sans](https://github.com/uswds/public-sans) with correct Swedish letters. Serif and Mono families are planned but not yet started.
 
-![Offentlig Sans specimen](docs/specimen.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/specimen-dark.png">
+  <img alt="Offentlig Sans specimen" src="docs/specimen.png">
+</picture>
 
 <!-- vale HouseStyle.Headings = NO -->
 ## Offentlig Sans

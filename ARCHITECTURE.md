@@ -16,12 +16,12 @@ scripts/verify_commit.sh           pre-commit verification
 scripts/commit-checks              loader for the shared commit-checks package: secrets, home paths, emails, private names, conflict markers, hooks (pinned in .commit-checks.json)
 scripts/release_notes.sh           CHANGELOG.md section for one version, used as the release notes
 scripts/proof_page.py              tester page from docs/proof/allemansratten.txt (make proof)
-scripts/specimen.py                docs/specimen.png and the social preview (make specimen, make social-preview)
+scripts/specimen.py                docs/specimen.png, docs/specimen-dark.png and the social preview (make specimen, make social-preview)
 scripts/fsp_summary.py             summary of the Fontspector reports (make qa)
 .github/workflows/ci.yaml          CI: build, test, Fontspector; draft release with zip and LICENSE on v* tags
 .github/workflows/commit-checks.yml   CI: the shared commit checks, including conflict markers and the house style check (Vale)
 CONTRIBUTING.md                    contributor guide
-docs/                              docs/design-decisions.md (decision register), docs/adr/, docs/proof/ (tester text) and docs/specimen.png
+docs/                              docs/design-decisions.md (decision register), docs/adr/, docs/proof/ (tester text) and the README specimens
 fonts/OffentligSans/{otf,ttf,variable,webfonts}/    build output, gitignored
 build/                             Fontspector, proof and Diffenator2 output and the reference builds they compare against, gitignored
 ```
