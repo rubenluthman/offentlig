@@ -1,15 +1,12 @@
 {
-  "version": "v0.2.7",
-  "commit": "ca8609ff9033ca57265523d1316b18ae9f72f339",
+  "version": "v0.3.1",
+  "commit": "6032f42a85a065734d05a5156ad43c48814b5af2",
   "source": "https://github.com/rubenluthman/commit-checks.git",
   "visibility": "public",
   "vale": {
     "globs": ["*.md", "*.txt"],
     "exclude": ["LICENSE", "AUTHORS.txt", "CONTRIBUTORS.txt"]
   },
-  "email_allow": [
-    "^noreply@github\\.com$"
-  ],
   "allow": [
     {
       "rule": "emails",
