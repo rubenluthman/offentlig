@@ -26,24 +26,28 @@ Offentlig Sans starts from Public Sans `develop` at `e40fcf567`. Sizes are in fo
 | | Public Sans | Offentlig Sans |
 | --- | --- | --- |
 | Italic `å` | Renders as `ǻ` | Renders as `å` |
-| Subscript digits `₀` – `₉` | Drawn, not mapped to U+2080 – U+2089 | Mapped |
-| Spaced en dash | Kerning removes most of the space in every weight except Black | Spaces kept |
-| Spaces U+2007, U+2008, U+2009, U+202F | Missing | Added: figure space (tabular figure width), punctuation space (width of the period), thin space and narrow no-break space; none kerns |
-| Capital `Ǔ` (U+01D3) | Missing | Added |
-| Pinyin and DIN 91379 | Pinyin tone letters, many Latin Extended letters and several combining marks missing | 20 pinyin tone letters, 108 composite letters, drawn Ƈ ƈ Ɨ ɨ Ǥ ǥ Ʒ ʒ and the combining marks they need; stacked marks land where the precomposed letter puts them |
-| Prime marks `′ ″ ‴` and small letters `ʰ ʳ ˢ ᵈ ᵗ ⁿ` | Missing | Added; the letters have the size and stem weight of `ª º` and stand on the baseline of the superior figures, and `sups` sets typed h r s d t n as them after a superior figure, so `1st 2nd 3rd 4th` becomes ¹ˢᵗ ²ⁿᵈ ³ʳᵈ ⁴ᵗʰ |
-| Arrows `← ↑ → ↓ ↖ ↗ ↘ ↙` | Missing | Added, drawn by Wayne Shih for Public Sans |
-| Em dash | Built-in space of 371 per side at Regular, narrowed by a `calt` rule when spaces are typed around it, so both look the same ([#146](https://github.com/uswds/public-sans/issues/146)); the rule fails when the next space is in another element, such as a link ([#151](https://github.com/uswds/public-sans/issues/151)) | Side bearings of the en dash (124) in every context; no `calt` rule narrows it |
+| Accented letters next to their neighbours (`Yö`, `Tè`, `"în`, `(sí)`, `fî`, `ĴÏ`) | Accent touches a capital's arm, a quote, a bracket, an `f` or another accent, worst in Black | Kerned apart: every pair with an accented letter keeps at least 30 units, or the gap of the same pair without accents where that is smaller, at every weight; in the heavy weights, `calt` swaps in a `T` or `Y` with a shorter right arm, so `Tö` keeps the kerning of `To` |
+| Ring of `å Å ů Ů` | Thin ring at Black | Thicker round ring (Black stroke 164, hole 200); `Å Ů` have a round ring of their own that stays below the descenders of the line above |
+| Diaeresis | Dots high above the letter, closer together in the italic | Lower at Thin (54) and Regular (34), as far apart in the italic as upright, further apart in Black |
+| Dots (period, comma, colon, `i j`, diaeresis, dot accents) | Square | Round, the dot of IBM Plex that Offentlig Serif and Mono will share; `ss03` gives the square dots |
 | Hyphen, dashes, `@` and colon next to capitals and figures (`2026-11-18`, `A–Ö`, `@HEJ`, `12:30`) | At lowercase height, so they look low | Raised to the capital centre by `calt`; `E-post` and `12-tal` keep the low forms. Apps can turn `calt` off |
 | Brackets `( ) [ ] { }`, guillemets `« » ‹ ›`, `¡ ¿` and the slash in all-capital text (`(HEJ)`, `«HEJ»`, `¿QUÉ?`, `A/B`) | At lowercase height (the slash hangs below the baseline), so they look low | Raised to the capital centre (`¡ ¿` to the baseline, the slash fitted between baseline and cap height) by the `case` feature (turn it on for capital text); by default they stay as they were, so a pair never mismatches |
-| `A` before `m n r p h b` | Not kerned | Kerned, never tighter than before `o` |
-| Accented letters next to their neighbours (`Yö`, `Tè`, `"în`, `(sí)`, `fî`, `ĴÏ`) | Accent touches a capital's arm, a quote, a bracket, an `f` or another accent, worst in Black | Kerned apart: every pair with an accented letter keeps at least 30 units, or the gap of the same pair without accents where that is smaller, at every weight |
+| Em dash | Built-in space of 371 per side at Regular, narrowed by a `calt` rule when spaces are typed around it, so both look the same ([#146](https://github.com/uswds/public-sans/issues/146)); the rule fails when the next space is in another element, such as a link ([#151](https://github.com/uswds/public-sans/issues/151)) | Side bearings of the en dash (124) in every context; no `calt` rule narrows it |
+| Spaced en dash | Kerning removes most of the space in every weight except Black | Spaces kept |
+| Double grave on `ȉ ȑ` | Full-width mark that overhangs the letter by up to 390 units in Black | Narrow mark centred on the letter, so neighbours keep at least 30 units |
 | Plain pairs that touch (`Ax` in Black, `ƒ ₣ ¥ Æ Ł` next to their neighbours) | Some pairs touch or nearly touch in Black and the thinnest weights | At least 30 units of space at every weight |
-| `™ ℠ ₿ $ ¢` | Marks sit low, `₿` missing, `$` and `¢` heavy in Bold and Black | Marks at cap height, `₿` added, lighter `$ ¢ ₿` strokes (about 0.56 of the `H` stem at Bold, 0.50 at Black) |
-| Ring and diaeresis | Thin ring at Black, close dot spacing in the italic, dots high above the letter | Thicker ring (Black stroke 164, hole 200), upright dot spacing in the italic, dots lower at Thin (54) and Regular (34) |
+| `A` before `m n r p h b` | Not kerned | Kerned, never tighter than before `o` |
+| Pinyin and DIN 91379 | Pinyin tone letters, many Latin Extended letters and several combining marks missing | 20 pinyin tone letters, 108 composite letters, drawn Ƈ ƈ Ɨ ɨ Ǥ ǥ Ʒ ʒ and the combining marks they need; stacked marks land where the precomposed letter puts them |
+| Dotless `ı` and the Turkish `i` | Narrower than `i` (17 units at Thin, 11 at Regular), so Turkish text sets `i` narrower | Same advance as `i` at every weight |
 | `ẞ` and Black `5` | No drawn `ẞ`; Black `5` has a notch at the join | `ẞ` drawn in every weight; clean `5` |
 | Oldstyle figures (`onum`) | Components of the lining figures, so nothing changes | Ten drawn oldstyle figures, also on the tabular width with `tnum` |
-| Alternates `cv01` `cv03` `cv04` `cv05` `cv06` `zero` `ss03` | None | Optional forms, with matching accented letters and figure variants |
+| Subscript digits `₀` – `₉` | Drawn, not mapped to U+2080 – U+2089 | Mapped |
+| Spaces U+2007, U+2008, U+2009, U+202F | Missing | Added: figure space (tabular figure width), punctuation space (width of the period), thin space and narrow no-break space; none kerns |
+| Capital `Ǔ` (U+01D3) | Missing | Added |
+| Prime marks `′ ″ ‴` and small letters `ʰ ʳ ˢ ᵈ ᵗ ⁿ` | Missing | Added; the letters have the size and stem weight of `ª º` and stand on the baseline of the superior figures, and `sups` sets typed h r s d t n as them after a superior figure, so `1st 2nd 3rd 4th` becomes ¹ˢᵗ ²ⁿᵈ ³ʳᵈ ⁴ᵗʰ |
+| Arrows `← ↑ → ↓ ↖ ↗ ↘ ↙` | Missing | Added, drawn by Wayne Shih for Public Sans |
+| `™ ℠ ₿ $ ¢` | Marks sit low, `₿` missing, `$` and `¢` heavy in Bold and Black | Marks at cap height, `₿` added, lighter `$ ¢ ₿` strokes (about 0.56 of the `H` stem at Bold, 0.50 at Black) |
+| Alternates `cv01` `cv03` `cv04` `cv05` `cv06` `zero` | None | Optional forms, with matching accented letters and figure variants |
 | `%` `‰` `~` `≈` | Thin slash, thin wave in Black | Thicker slash in Regular and Black, stronger Black wave |
 | Tilde, macron and hook above a breve | Black tilde and macron heavy, tilde close to the macron, hook above a breve taller than above a circumflex | Black strokes of 200, a wider tilde wave, a lower hook above a breve |
 | Italic superior figures | Left of the slant by about 29 units | On the slant, as the subscripts are |
@@ -61,7 +65,7 @@ Offentlig Sans starts from Public Sans `develop` at `e40fcf567`. Sizes are in fo
 
 An app that uses the variable font without choosing a weight, or that cannot vary it, shows the default weight. In Public Sans that is Thin, so the text comes out as hairlines; in Offentlig Sans it is Regular, as in Inter, Noto Sans, IBM Plex Sans and Atkinson Hyperlegible Next. Web browsers are not affected: they apply the page's weight, 400 unless set.
 
-The first three fixes went to Public Sans as pull requests [#396](https://github.com/uswds/public-sans/pull/396), [#397](https://github.com/uswds/public-sans/pull/397) and [#398](https://github.com/uswds/public-sans/pull/398). The `Ǔ` addition is noted on issue [#258](https://github.com/uswds/public-sans/issues/258).
+The fixes for italic `å`, the subscript digits and the spaced en dash went to Public Sans as pull requests [#396](https://github.com/uswds/public-sans/pull/396), [#397](https://github.com/uswds/public-sans/pull/397) and [#398](https://github.com/uswds/public-sans/pull/398). The `Ǔ` addition is noted on issue [#258](https://github.com/uswds/public-sans/issues/258).
 
 ## Install on macOS
 
