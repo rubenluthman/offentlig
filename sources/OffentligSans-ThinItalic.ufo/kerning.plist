@@ -39773,6 +39773,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
+      <key>exclamdown.ss03.case</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_brevecomb</key>
     <dict>
@@ -42029,6 +42031,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>10</integer>
+      <key>exclamdown.ss03.case</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_circumflexcomb</key>
     <dict>
@@ -42548,6 +42552,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>10</integer>
+      <key>exclamdown.case</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_dieresiscomb.ss03</key>
     <dict>
@@ -43617,6 +43623,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
+      <key>exclamdown.ss03.case</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_dieresiscomb</key>
     <dict>
@@ -44538,6 +44546,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
+      <key>exclamdown.case</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_gravecomb.ss03</key>
     <dict>
@@ -45239,6 +45249,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
+      <key>exclamdown.ss03.case</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_macroncomb</key>
     <dict>
@@ -45896,6 +45908,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
+      <key>exclamdown.case</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_tildecomb.ss03</key>
     <dict>
@@ -46439,6 +46453,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>2</integer>
+      <key>exclamdown.ss03.case</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_tildecomb</key>
     <dict>
@@ -46994,6 +47010,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>2</integer>
+      <key>exclamdown.case</key>
+      <integer>0</integer>
     </dict>
     <key>idotlessdieresisacute.ss03</key>
     <dict>
@@ -51999,6 +52017,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
+      <key>exclamdown.ss03.case</key>
+      <integer>0</integer>
     </dict>
     <key>istroke_caroncomb</key>
     <dict>
@@ -53309,6 +53329,10 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>10</integer>
+      <key>exclamdown.case</key>
+      <integer>0</integer>
+      <key>exclamdown.ss03.case</key>
+      <integer>0</integer>
     </dict>
     <key>istroke_dieresiscomb.ss03</key>
     <dict>
@@ -54378,6 +54402,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
+      <key>exclamdown.ss03.case</key>
+      <integer>0</integer>
     </dict>
     <key>istroke_dieresiscomb</key>
     <dict>
@@ -55297,6 +55323,8 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
+      <key>exclamdown.case</key>
+      <integer>0</integer>
     </dict>
     <key>istroke_gravecomb</key>
     <dict>
@@ -56091,6 +56119,10 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
+      <key>exclamdown.case</key>
+      <integer>0</integer>
+      <key>exclamdown.ss03.case</key>
+      <integer>0</integer>
     </dict>
     <key>istroke_tildecomb</key>
     <dict>
@@ -56736,6 +56768,10 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>2</integer>
+      <key>exclamdown.case</key>
+      <integer>0</integer>
+      <key>exclamdown.ss03.case</key>
+      <integer>0</integer>
     </dict>
     <key>itilde</key>
     <dict>
@@ -76159,6 +76195,14 @@
       <integer>0</integer>
       <key>imacron</key>
       <integer>0</integer>
+      <key>idotbelow_circumflexcomb</key>
+      <integer>0</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>0</integer>
+      <key>istroke_circumflexcomb</key>
+      <integer>0</integer>
+      <key>istroke_macroncomb</key>
+      <integer>0</integer>
     </dict>
     <key>exclamdown.ss03.case</key>
     <dict>
@@ -76169,6 +76213,18 @@
       <key>idotlessdieresisacute.ss03</key>
       <integer>0</integer>
       <key>imacron</key>
+      <integer>0</integer>
+      <key>idotbelow_circumflexcomb.ss03</key>
+      <integer>0</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>0</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_circumflexcomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_macroncomb</key>
       <integer>0</integer>
     </dict>
     <key>questiondown.case</key>
@@ -76218,6 +76274,50 @@
       <key>udblgrave</key>
       <integer>0</integer>
       <key>yen</key>
+      <integer>0</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>0</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>0</integer>
+      <key>idotbelow_circumflexcomb</key>
+      <integer>0</integer>
+      <key>idotbelow_circumflexcomb.ss03</key>
+      <integer>0</integer>
+      <key>idotbelow_dieresiscomb</key>
+      <integer>0</integer>
+      <key>idotbelow_dieresiscomb.ss03</key>
+      <integer>0</integer>
+      <key>idotbelow_gravecomb</key>
+      <integer>7</integer>
+      <key>idotbelow_gravecomb.ss03</key>
+      <integer>7</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>0</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>0</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>0</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_brevecomb</key>
+      <integer>0</integer>
+      <key>istroke_caroncomb</key>
+      <integer>0</integer>
+      <key>istroke_circumflexcomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb</key>
+      <integer>0</integer>
+      <key>istroke_dieresiscomb.ss03</key>
+      <integer>0</integer>
+      <key>istroke_gravecomb</key>
+      <integer>9</integer>
+      <key>istroke_macroncomb</key>
+      <integer>0</integer>
+      <key>istroke_tildecomb</key>
       <integer>0</integer>
     </dict>
   </dict>
