@@ -11,6 +11,7 @@
 - Make the ring of `ǻ Ǻ` (`_ringacute`) round in Thin to Regular Italic, as the ring of `å` now is (D5): its italic outer contour is 4 – 7 % narrower than the upright one there, and the same at Black.
 - Typed `ị̏ ɨ̏` after `T V W Y` overlap the capital (outline distance 0 at every weight), because `ccmp` composes no glyph for them and they keep plain `i` kerning. Add `idotbelow_dblgravecomb` and `istroke_dblgravecomb`, like the other typed `ị ɨ` forms, and kern them like `ȉ` (K21).
 - Review which alternates should become the default form, which would revisit decision F4 (alternates are opt-in). Do this after every other Offentlig Sans item above.
+- Change the version scheme before any 0.10.0 release (M8): `versionMinor` 1000 would give the font revision 0.1000, lower than 0.900. Add a test that the revision only increases.
 
 <!-- vale HouseStyle.Headings = NO -->
 ### Offentlig Serif
