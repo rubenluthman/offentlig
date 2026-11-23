@@ -3,24 +3,24 @@
   <advance width="437"/>
   <outline>
     <contour>
-      <point x="65" y="0" type="line"/>
-      <point x="159" y="0" type="line"/>
-      <point x="279" y="1066" type="line"/>
-      <point x="221" y="1066" type="line"/>
+      <point x="110" y="0" type="line"/>
+      <point x="204" y="0" type="line"/>
+      <point x="324" y="1066" type="line"/>
+      <point x="266" y="1066" type="line"/>
     </contour>
     <contour>
-      <point x="278.0" y="1223.8072126313073" type="curve" smooth="yes"/>
-      <point x="318.5493207699793" y="1223.8072126313073"/>
-      <point x="351.42112770844597" y="1256.679019569774"/>
-      <point x="351.42112770844597" y="1297.2283403397532" type="curve" smooth="yes"/>
-      <point x="351.42112770844597" y="1337.7776611097327"/>
-      <point x="318.5493207699793" y="1370.6494680481992"/>
-      <point x="278.0" y="1370.6494680481992" type="curve" smooth="yes"/>
-      <point x="237.45067923002068" y="1370.6494680481992"/>
-      <point x="204.57887229155406" y="1337.7776611097327"/>
-      <point x="204.57887229155406" y="1297.2283403397532" type="curve" smooth="yes"/>
-      <point x="204.57887229155406" y="1256.679019569774"/>
-      <point x="237.45067923002068" y="1223.8072126313073"/>
+      <point x="323" y="1223.8072" type="curve" smooth="yes"/>
+      <point x="363.5493" y="1223.8072"/>
+      <point x="396.4211" y="1256.679"/>
+      <point x="396.4211" y="1297.2283" type="curve" smooth="yes"/>
+      <point x="396.4211" y="1337.7777"/>
+      <point x="363.5493" y="1370.6495"/>
+      <point x="323" y="1370.6495" type="curve" smooth="yes"/>
+      <point x="282.4507" y="1370.6495"/>
+      <point x="249.5789" y="1337.7777"/>
+      <point x="249.5789" y="1297.2283" type="curve" smooth="yes"/>
+      <point x="249.5789" y="1256.679"/>
+      <point x="282.4507" y="1223.8072"/>
     </contour>
   </outline>
 </glyph>

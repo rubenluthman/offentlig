@@ -3,32 +3,32 @@
   <advance width="995.1875"/>
   <outline>
     <contour>
-      <point x="369.34375" y="0.0" type="curve" smooth="yes"/>
-      <point x="576.34375" y="0.0"/>
-      <point x="757.34375" y="108.3125"/>
-      <point x="862.21875" y="289.875" type="curve"/>
-      <point x="707.03125" y="339.5" type="line"/>
-      <point x="652.34375" y="229.5625"/>
-      <point x="511.78125" y="144.5625"/>
-      <point x="389.65625" y="144.5625" type="curve" smooth="yes"/>
-      <point x="246.84375" y="144.5625"/>
-      <point x="161.34375" y="227.875"/>
-      <point x="178.53125" y="356.6875" type="curve" smooth="yes"/>
-      <point x="212.34375" y="609.8125"/>
-      <point x="562.96875" y="637.625"/>
-      <point x="612.84375" y="1010.4375" type="curve"/>
-      <point x="457.78125" y="1010.4375" type="line"/>
-      <point x="413.96875" y="683.5"/>
-      <point x="36.09375" y="677.625"/>
-      <point x="-8.59375" y="349.125" type="curve" smooth="yes"/>
-      <point x="-35.21875" y="146.1875"/>
-      <point x="98.21875" y="0.0"/>
+      <point x="417.3438" y="0" type="curve" smooth="yes"/>
+      <point x="624.3438" y="0"/>
+      <point x="805.3438" y="108.3125"/>
+      <point x="910.2188" y="289.875" type="curve"/>
+      <point x="755.0312" y="339.5" type="line"/>
+      <point x="700.3438" y="229.5625"/>
+      <point x="559.7812" y="144.5625"/>
+      <point x="437.6562" y="144.5625" type="curve" smooth="yes"/>
+      <point x="294.8438" y="144.5625"/>
+      <point x="209.3438" y="227.875"/>
+      <point x="226.5312" y="356.6875" type="curve" smooth="yes"/>
+      <point x="260.3438" y="609.8125"/>
+      <point x="610.9688" y="637.625"/>
+      <point x="660.8438" y="1010.4375" type="curve"/>
+      <point x="505.7812" y="1010.4375" type="line"/>
+      <point x="461.9688" y="683.5"/>
+      <point x="84.0938" y="677.625"/>
+      <point x="39.4062" y="349.125" type="curve" smooth="yes"/>
+      <point x="12.7812" y="146.1875"/>
+      <point x="146.2188" y="0"/>
     </contour>
     <contour>
-      <point x="446.09375" y="1142.9375" type="line"/>
-      <point x="660.53125" y="1142.9375" type="line"/>
-      <point x="692.21875" y="1376.0" type="line"/>
-      <point x="477.78125" y="1376.0" type="line"/>
+      <point x="494.0938" y="1142.9375" type="line"/>
+      <point x="708.5312" y="1142.9375" type="line"/>
+      <point x="740.2188" y="1376" type="line"/>
+      <point x="525.7812" y="1376" type="line"/>
     </contour>
   </outline>
 </glyph>

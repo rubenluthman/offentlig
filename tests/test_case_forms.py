@@ -1,17 +1,19 @@
 """Case-sensitive punctuation: `.case` forms and the `case` and `calt` rules that swap them in.
 
-The hyphen, en and em dash, `( ) [ ] { }`, `« » ‹ ›`, `¡ ¿` (also with `ss03`), the slash, `@` and the colon (also the round-dot colon) have a `.case` form moved so that its ink
+The hyphen, en and em dash, `( ) [ ] { }`, `« » ‹ ›`, `¡ ¿` (also with `ss03`), the slash, `@` and the colon (also the square-dot colon) have a `.case` form moved so that its ink
 centre sits on the capital centre; the advance is unchanged. `case` swaps every one of them; `calt` swaps the hyphen, the dashes
 and the colon only where the neighbours are capitals or figures, and `@` before a capital. Parentheses, square brackets,
 braces, guillemets, `¡ ¿` and the slash rise in `case` only: raised by their neighbours, one of a pair could rise and the other
 not (`«Hej»`), `¿` would sit on the baseline in nearly every Spanish sentence and the slash would be clipped in `24/7`
 (docs/design-decisions.md, F4 and F18). The bullet needs none: its centre is within 12 units of the capital centre.
 """
+import math
+
 import pytest
 import uharfbuzz as hb
 from fontTools.pens.boundsPen import BoundsPen
 
-from conftest import STATIC_IDS, STATICS, static_path
+from conftest import STATIC_IDS, STATICS, WEIGHTS, static_path
 
 INVERTED = {"exclamdown", "questiondown", "exclamdown.ss03", "questiondown.ss03"}
 CASE_BASES = {
@@ -95,7 +97,7 @@ def test_brackets_rise_under_case_only(weight, italic):
 
 
 @pytest.mark.parametrize("italic", [False, True], ids=["roman", "italic"])
-def test_round_dot_colon_and_oldstyle_figures(italic):
+def test_square_dot_colon_and_oldstyle_figures(italic):
     font = font_of(static_path("Regular", italic))
     assert shape(font, "12:30", {"ss03": True}) == ["one", "two", "colon.ss03.case", "three", "zero"]
     assert shape(font, "12:30", {"ss03": True, "calt": False, "case": True})[2] == "colon.ss03.case"
@@ -141,6 +143,36 @@ def test_case_forms_are_centred_on_the_capitals_and_keep_their_width(weight, ita
             continue
         assert abs(centre(case) - cap) <= 2, (case, centre(case), cap)
         assert abs(centre(name) - cap) > 20, (name, "was not low")
+
+
+TAN8 = math.tan(math.radians(8))
+ITALIC_STATICS = [(w, True) for w in WEIGHTS]
+
+
+@pytest.mark.parametrize("weight,italic", ITALIC_STATICS, ids=[f"{w}-italic" for w, _ in ITALIC_STATICS])
+def test_italic_case_forms_move_along_the_slant(weight, italic):
+    """In the italic every `.case` form is its base moved up along the 8 degree slant: the ink centre moves right by the rise
+    times tan 8 degrees (1 unit of tolerance), not straight up. A form moved straight up leans back against the capitals."""
+    from fontTools.ttLib import TTFont
+    ttf = TTFont(static_path(weight, italic))
+    gs, cmap = ttf.getGlyphSet(), ttf.getBestCmap()
+
+    def centre(name):
+        pen = BoundsPen(gs)
+        gs[name].draw(pen)
+        x0, y0, x1, y1 = pen.bounds
+        return (x0 + x1) / 2, (y0 + y1) / 2
+
+    bases = {name: cmap[ord(ch)] for ch, name in CASE_BASES.items()}
+    bases.update({"colon.ss03": "colon.ss03", "exclamdown.ss03": "exclamdown.ss03", "questiondown.ss03": "questiondown.ss03"})
+    wrong = []
+    for source_name, name in bases.items():
+        (bx, by), (cx, cy) = centre(name), centre(source_name + ".case")
+        rise = cy - by
+        assert abs(rise) > 20 or source_name == "slash", (source_name, "did not rise")  # the slash only grows from its low end, 0 at Black
+        if abs((cx - bx) - rise * TAN8) > 1:
+            wrong.append((source_name, round(cx - bx, 1), round(rise * TAN8, 1)))
+    assert wrong == []
 
 
 @pytest.mark.parametrize("weight,italic", [("Regular", False), ("Regular", True)], ids=["roman", "italic"])
