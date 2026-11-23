@@ -7,7 +7,7 @@
 <!-- vale HouseStyle.Headings = YES -->
 
 - [x] The alternate-pair tests now build their pair lists in chunks. A full run with three workers took 33 minutes, and each worker still peaked between 0.8 and 1.2 GB, so the worker count stays at three.
-- [ ] Try four and five test workers alone, one run each, and set the default from the times.
+- [x] Try four and five test workers alone, one run each, and set the default from the times. Four workers took 54 minutes and swapped heavily, so five were not tried and the default stays three (see [CONTRIBUTING.md](CONTRIBUTING.md)).
 - [x] Audit every design and spacing decision before work on Offentlig Serif and Offentlig Mono starts, since they will reuse these rules (completed in 0.4.0; see [docs/design-decisions.md](docs/design-decisions.md) and `tests/test_diagonal_gaps.py`).
 - [ ] Follow the three fixes this fork carries that Public Sans has not merged yet: uswds/public-sans PRs #396 (italic `å`), #397 (subscript digits) and #398 (Thin kerning of space and dashes). Checked at each release (see the release steps in [CONTRIBUTING.md](CONTRIBUTING.md#releases)).
 - [x] The shape of the ogonek: deeper (-405, -415 and -425 at Thin, Regular and Black) and the hook of `ę` under the end of the arm, chosen from drawn candidates beside eight comparison fonts (see D23 in [docs/design-decisions.md](docs/design-decisions.md)).
@@ -29,6 +29,10 @@
 - [x] Case forms for the guillemets `« » ‹ ›`, `¡ ¿` and the slash, raised by `case` only (`calt` would split `«Hej»`, lift `¿` in nearly every Spanish sentence and clip the slash in `24/7`). The bullet needs none: its centre is 735 against the capital centre 723.
 - [x] The lower vertices of `W` fell 46 units between weight 400 and 500 (295 to 249), the only dip among the reference fonts. Held at 295 from 400 to 500 and the ExtraBold layer lowered 20 units; the join circle at Bold is 1.09 upright and 1.10 italic (G26). Lowercase `w` rises steadily and is unchanged.
 - [x] `tests/test_arm_helpers.py` covers all 24 shorter-arm glyphs (18 capitals and 6 `ss03` copies), found from the font.
+- [ ] 33 pairs of `T V W Y` before `ĩ ī ĭ ǐ` are under 30 units by outline distance while their row gaps pass, mostly in the heavy italic and before `ǐ`, up to 7 units short (Black Italic `Yī` 23). They are listed in `OUTLINE_UNDER_FLOOR` in `tests/test_tvwy_gaps.py`. Thirteen `W` and `Y` pairs before `ȁ ȅ ȍ ȕ` measure 29, as in 0.7.0, and sit in the same file's exemption list.
+- [x] Check Thin `T` before `ȃ ȇ ȏ ȗ ȓ` by outline distance: where the thin arm of `T` shares no row with the mark, the row gap reads the stem (K23). `tests/test_tvwy_gaps.py` now holds an outline distance of 30 for `T V W Y` before `ȑ ȓ ȃ ȇ ȏ ȗ ȁ ȅ ȍ ȕ ȉ` at all 18 statics; no `T` pair is under it.
+- [ ] Make the ring of `ǻ Ǻ` (`_ringacute`) round in Thin to Regular Italic, as the ring of `å` now is (D5): its italic outer contour is 4 – 7 % narrower than the upright one there, and the same at Black.
+- [ ] Typed `ị̏ ɨ̏` after `T V W Y` overlap the capital (outline distance 0 at every weight), because `ccmp` composes no glyph for them and they keep plain `i` kerning. Add `idotbelow_dblgravecomb` and `istroke_dblgravecomb`, like the other typed `ị ɨ` forms, and kern them like `ȉ` (K21).
 - [ ] Review which alternates should become the default form, which would revisit decision F4 (alternates are opt-in). Do this after every other Offentlig Sans item above.
 
 <!-- vale HouseStyle.Headings = NO -->

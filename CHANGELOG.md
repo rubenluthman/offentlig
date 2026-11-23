@@ -2,10 +2,11 @@
 
 ## [Unreleased]
 
-- Added case forms for the guillemets `« » ‹ ›`, `¡ ¿` (also the round-dot forms) and the slash `/` to the `case` feature, raised to the capital height for all-capital text. By default they stay as they were; `calt` does not swap them.
-- Changed the kerning of `T V W Y` before `ȑ ȓ ȃ ȇ ȏ ȗ` (gaps of 104 – 539 units, now about 40), before `ȁ ȅ ȍ ȕ` in Thin to Light, and before `ĩ ī ĭ ǐ` in Regular. `Ŧ` before `ȉ` in Black Italic follows `T`. Thin before `ĩ ī ĭ ǐ` is up to 42 units looser.
-- Changed `W` between Regular and ExtraBold: the lower vertices no longer dip at weight 500 (46 units higher) and rise steadily with weight; at 800 they are about 20 units lower. Regular and lighter are unchanged.
-- Changed the ring of `å ů` in the italic from Thin to Regular to a round ring like the upright, where it was a narrow oval. The spacing ring `˚` next to other marks, and `⁄å`, gained kerning in Thin Italic and Regular Italic to keep the 30-unit gap. Black Italic and the other marks are unchanged.
+## [0.8.0] - 2026-11-23
+
+- Added case forms for the guillemets `« » ‹ ›`, `¡ ¿` and the slash `/`: in `case` they rise to the capitals for all-capital text. Without `case` they stay as they were.
+- Changed the kerning of `T V W Y` before `ȑ ȓ ȃ ȇ ȏ ȗ` (gaps of 57 – 539 units, now about 40, also with the single-storey `a`), before `ȁ ȅ ȍ ȕ` in Thin to Light, and before `ĩ ī ĭ ǐ` and the typed `ị ɨ` with a tilde or macron, which close in Regular and open slightly in Thin, where the mark sat too close under the arm of `T`.
+- Changed `W`, the italic ring and the italic `Ų`: the lower vertices of `W` no longer dip at weight 500, the ring of `å ů` and the ring below in the italic from Thin to Regular are round like the upright, with kerning that keeps `˚` clear of other marks, and the hook of `Ų` in the italic hangs as deep as in the upright.
 
 ## [0.7.0] - 2026-11-21
 
