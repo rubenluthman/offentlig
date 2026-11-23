@@ -1,6 +1,7 @@
 """The gaps of `T V W Y` and the other capitals of their kern1 groups before `ȑ ȓ`, `ȁ ȅ ȍ ȕ`, `ȃ ȇ ȏ ȗ`, `ȉ` and `ĩ ī ĭ ǐ` (K21, K23).
 
-Floor: no pair is closer than 30 units at any of the 18 statics, with and without `ss03`.
+Floor: no pair is closer than 30 units at any of the 18 statics, with and without `ss03`, and for `ȃ ȁ` with `cv04` as well. The typed
+`ị̃ ị̄ ɨ̃ ɨ̄` kern exactly like `ĩ ī` and keep the outline-distance floor.
 
 Ceiling: the pairs were fitted to the 40-unit aim, so they stay below the highest gap measured after the fit, plus 6 units. The
 ceiling holds the fit at every static, and at Thin and Regular it is the check that a master does not loosen a pair that was
@@ -19,11 +20,16 @@ import numpy as np
 
 FLOOR = 30
 FEATURE_SETS = [{}, {"ss03": True}]
+# `cv04` swaps `ȃ` and `ȁ` for their single-storey forms (`ainvertedbreve.cv04`, `adblgrave.cv04`), which have their own kerning keys.
+CV04_SETS = [{"cv04": True}, {"cv04": True, "ss03": True}]
+CV04_GROUPS = ("ȃȇȏȗ", "ȁȅȍȕ")
+# The `cv04` `ȃ` is a little looser than the default forms of its group in the heavy italics (highest gap after the fit, plus 6).
+CV04_CEILING = {("ȃ", True): [338, 166, 134, 106, 89, 76, 75, 73, 74]}
 GROUPS = {"ȑȓ": "ȑ ȓ", "ȁȅȍȕ": "ȁ ȅ ȍ ȕ", "ȃȇȏȗ": "ȃ ȇ ȏ ȗ", "ȉ": "ȉ", "ĩīĭǐ": "ĩ ī ĭ ǐ"}
 # Highest gap of any pair of the group after the fit, plus 6, by weight (Thin to Black). Upright, then italic.
 CEILING = {
     ("ȑȓ", False): [61, 61, 61, 61, 60, 61, 59, 59, 62],
-    ("ȑȓ", True): [315, 63, 62, 62, 61, 59, 59, 57, 65],
+    ("ȑȓ", True): [336, 63, 62, 62, 61, 59, 59, 57, 65],  # Thin was 315 before the Thin Italic `Tȓ` fit loosened it by 20 (K23)
     ("ȁȅȍȕ", False): [66, 56, 63, 70, 65, 61, 54, 46, 41],
     ("ȁȅȍȕ", True): [64, 55, 61, 67, 63, 60, 53, 45, 41],
     ("ȃȇȏȗ", False): [144, 97, 78, 74, 72, 71, 68, 66, 64],
@@ -51,8 +57,10 @@ def test_capitals_before_the_double_grave_and_i_marks_keep_their_gap(weight, ita
     path = static_path(weight, italic)
     lefts = left_capitals()
     too_close, too_open = [], []
-    for features in FEATURE_SETS:
+    for features in FEATURE_SETS + CV04_SETS:
         for rights, _ in GROUPS.items():
+            if features.get("cv04") and rights not in CV04_GROUPS:
+                continue
             table = PairTable(path, features, lefts + list(rights))
             idx = table.index
             left = [idx[c] for c in lefts if c in idx]
@@ -63,9 +71,13 @@ def test_capitals_before_the_double_grave_and_i_marks_keep_their_gap(weight, ita
                 kern = table.kerning(left, [idx[letter]])
                 gaps = table.gaps(left, [idx[letter]], kern)[:, 0]
                 ceiling = CEILING[(rights, italic)][WEIGHTS.index(weight)]
+                if features.get("cv04"):
+                    ceiling = max(ceiling, CV04_CEILING.get((letter, italic), [0] * 9)[WEIGHTS.index(weight)])
                 for c, g in zip(names, gaps):
                     if not np.isfinite(g):
                         continue
+                    if features.get("cv04") and letter not in "ȃȁ":
+                        continue  # `cv04` changes only `ȃ ȁ`; the others are the default pairs, measured above
                     if g < FLOOR:
                         too_close.append((c + letter, round(float(g)), features))
                     if g > ceiling:
@@ -156,3 +168,77 @@ def test_outline_distance_of_t_before_the_marks_of_i_stays_above_the_fitted_valu
         if distance < minimum:
             short.append(("T" + letter, round(distance), minimum))
     assert short == []
+
+
+# The pairs of `T V W Y` before `ȑ ȓ ȃ ȇ ȏ ȗ ȁ ȅ ȍ ȕ ȉ` whose outline distance is under 30. All are 29.0 at 0.7.0 and now: the row gap
+# reads 31 - 37 (K23 left them there as clear), and the diagonal from the corner of the double-grave mark to the arm is one unit
+# shorter. Each keeps its value (the test fails if it falls by more than 1 unit) and stays here only while it is under 30. Found, not fixed.
+MARK_OUTLINE_UNDER_FLOOR = {
+    ("Regular", False, "Wȁ"): 29,
+    ("Regular", False, "Wȅ"): 29,
+    ("SemiBold", False, "Wȁ"): 29,
+    ("SemiBold", False, "Wȅ"): 29,
+    ("ExtraBold", False, "Wȅ"): 29,
+    ("SemiBold", True, "Yȁ"): 29,
+    ("ExtraBold", True, "Yȁ"): 29,
+    ("ExtraBold", True, "Yȍ"): 29,
+    ("ExtraBold", True, "Yȕ"): 29,
+    ("Black", True, "Yȁ"): 29,
+    ("Black", True, "Yȅ"): 29,
+    ("Black", True, "Yȍ"): 29,
+    ("Black", True, "Yȕ"): 29,
+}
+
+
+@pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
+def test_outline_distance_of_t_v_w_y_before_the_marked_r_and_a_letters_keeps_the_floor(weight, italic):
+    """`T V W Y` before `ȑ ȓ ȃ ȇ ȏ ȗ ȁ ȅ ȍ ȕ ȉ` keep an outline distance of 30. The arm of `T` and the mark of `ȓ` pass each other
+    diagonally in the light italics, where the row gap reads clear: ExtraLight Italic `Tȓ` was 23 and Light Italic 29 before the
+    Thin Italic value of `public.kern1.T` before `rinvertedbreve` was loosened (100 and 97 at 0.7.0)."""
+    path = static_path(weight, italic)
+    wrong = []
+    for left in "TVWY":
+        for letter in "ȑȓȃȇȏȗȁȅȍȕȉ":
+            glyphs = placed_contours(path, left + letter)
+            distance = outline_distance(glyphs[0], glyphs[1])
+            held = MARK_OUTLINE_UNDER_FLOOR.get((weight, italic, left + letter))
+            if held is None:
+                if distance < OUTLINE_FLOOR:
+                    wrong.append((left + letter, round(distance)))
+            elif not held - 1 <= distance < OUTLINE_FLOOR:
+                wrong.append((left + letter, round(distance), "exempt at", held))
+    assert wrong == []
+
+
+TYPED_I = {"ị̃": "ĩ", "ị̄": "ī", "ɨ̃": "ĩ", "ɨ̄": "ī"}
+
+
+@pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
+def test_typed_i_with_tilde_or_macron_kerns_like_the_precomposed_letter(weight, italic):
+    """`ị̃ ị̄ ɨ̃ ɨ̄` (typed, shaped to one glyph by `ccmp`) have the advance and side bearing of `ĩ ī`, so `T V W Y` and the other capitals
+    of their kern1 groups kern before them exactly as before `ĩ ī`, with and without `ss03`, and keep the outline-distance floor."""
+    path = static_path(weight, italic)
+    lefts = left_capitals()
+    wrong = []
+    for features in FEATURE_SETS:
+        table = PairTable(path, features, lefts + list(TYPED_I) + list(TYPED_I.values()))
+        idx = table.index
+        names = [c for c in lefts if c in idx]
+        left = [idx[c] for c in names]
+        for typed, plain in TYPED_I.items():
+            assert typed in idx, (typed, "does not shape to one glyph")
+            assert table.advance[idx[typed]] == table.advance[idx[plain]], (typed, plain)
+            typed_kern = table.kerning(left, [idx[typed]])[:, 0]
+            plain_kern = table.kerning(left, [idx[plain]])[:, 0]
+            wrong += [(c + typed, k, c + plain, p, features) for c, k, p in zip(names, typed_kern, plain_kern) if k != p]
+    for left_letter in "TVWY":
+        for typed, plain in TYPED_I.items():
+            glyphs = placed_contours(path, left_letter + typed)
+            distance = outline_distance(glyphs[0], glyphs[1])
+            held = OUTLINE_UNDER_FLOOR.get((weight, italic, left_letter + plain))  # the precomposed letter's entry: same ink at the mark
+            if held is None:
+                if distance < OUTLINE_FLOOR:
+                    wrong.append((left_letter + typed, round(distance)))
+            elif not held - 1 <= distance < OUTLINE_FLOOR + 1:
+                wrong.append((left_letter + typed, round(distance), "exempt at", held))
+    assert wrong == []

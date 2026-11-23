@@ -11845,13 +11845,13 @@
       <key>idotbelow_gravecomb</key>
       <integer>143</integer>
       <key>idotbelow_macroncomb.ss03</key>
-      <integer>104</integer>
+      <integer>94</integer>
       <key>idotbelow_macroncomb</key>
-      <integer>104</integer>
+      <integer>94</integer>
       <key>idotbelow_tildecomb.ss03</key>
-      <integer>90</integer>
+      <integer>81</integer>
       <key>idotbelow_tildecomb</key>
-      <integer>90</integer>
+      <integer>81</integer>
       <key>idotlessdieresisacute.ss03</key>
       <integer>158</integer>
       <key>idotlessdieresisacute</key>
@@ -11875,9 +11875,9 @@
       <key>istroke_gravecomb</key>
       <integer>143</integer>
       <key>istroke_macroncomb</key>
-      <integer>104</integer>
+      <integer>94</integer>
       <key>istroke_tildecomb</key>
-      <integer>90</integer>
+      <integer>81</integer>
       <key>itilde</key>
       <integer>81</integer>
       <key>yen</key>
@@ -12005,13 +12005,13 @@
       <key>idotbelow_gravecomb</key>
       <integer>143</integer>
       <key>idotbelow_macroncomb.ss03</key>
-      <integer>104</integer>
+      <integer>94</integer>
       <key>idotbelow_macroncomb</key>
-      <integer>104</integer>
+      <integer>94</integer>
       <key>idotbelow_tildecomb.ss03</key>
-      <integer>90</integer>
+      <integer>81</integer>
       <key>idotbelow_tildecomb</key>
-      <integer>90</integer>
+      <integer>81</integer>
       <key>idotlessdieresisacute.ss03</key>
       <integer>158</integer>
       <key>igrave</key>
@@ -12033,9 +12033,9 @@
       <key>istroke_gravecomb</key>
       <integer>143</integer>
       <key>istroke_macroncomb</key>
-      <integer>104</integer>
+      <integer>94</integer>
       <key>istroke_tildecomb</key>
-      <integer>90</integer>
+      <integer>81</integer>
       <key>itilde</key>
       <integer>81</integer>
       <key>yen</key>
@@ -12176,6 +12176,10 @@
       <integer>90</integer>
       <key>yen</key>
       <integer>39</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>90</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>104</integer>
     </dict>
     <key>Tcommaaccent</key>
     <dict>
@@ -12235,6 +12239,10 @@
       <integer>90</integer>
       <key>yen</key>
       <integer>39</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>90</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>104</integer>
     </dict>
     <key>Tdotaccent.ss03</key>
     <dict>
@@ -12294,6 +12302,10 @@
       <integer>90</integer>
       <key>yen</key>
       <integer>39</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>90</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>104</integer>
     </dict>
     <key>Tdotaccent</key>
     <dict>
@@ -12353,6 +12365,10 @@
       <integer>90</integer>
       <key>yen</key>
       <integer>39</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>90</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>104</integer>
     </dict>
     <key>Tdotbelow.ss03</key>
     <dict>
@@ -12412,6 +12428,10 @@
       <integer>90</integer>
       <key>yen</key>
       <integer>39</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>90</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>104</integer>
     </dict>
     <key>Tdotbelow</key>
     <dict>
@@ -12471,6 +12491,10 @@
       <integer>90</integer>
       <key>yen</key>
       <integer>39</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>90</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>104</integer>
     </dict>
     <key>Thorn</key>
     <dict>
@@ -15488,13 +15512,13 @@
       <key>idotbelow_gravecomb</key>
       <integer>142</integer>
       <key>idotbelow_macroncomb.ss03</key>
-      <integer>75</integer>
+      <integer>65</integer>
       <key>idotbelow_macroncomb</key>
-      <integer>75</integer>
+      <integer>65</integer>
       <key>idotbelow_tildecomb.ss03</key>
-      <integer>55</integer>
+      <integer>45</integer>
       <key>idotbelow_tildecomb</key>
-      <integer>55</integer>
+      <integer>45</integer>
       <key>idotlessdieresisacute.ss03</key>
       <integer>158</integer>
       <key>igrave</key>
@@ -15514,9 +15538,9 @@
       <key>istroke_gravecomb</key>
       <integer>142</integer>
       <key>istroke_macroncomb</key>
-      <integer>75</integer>
+      <integer>65</integer>
       <key>istroke_tildecomb</key>
-      <integer>55</integer>
+      <integer>45</integer>
       <key>itilde</key>
       <integer>45</integer>
       <key>yen</key>
@@ -15557,13 +15581,13 @@
       <key>idotbelow_gravecomb</key>
       <integer>142</integer>
       <key>idotbelow_macroncomb.ss03</key>
-      <integer>77</integer>
+      <integer>68</integer>
       <key>idotbelow_macroncomb</key>
-      <integer>77</integer>
+      <integer>68</integer>
       <key>idotbelow_tildecomb.ss03</key>
-      <integer>60</integer>
+      <integer>49</integer>
       <key>idotbelow_tildecomb</key>
-      <integer>60</integer>
+      <integer>49</integer>
       <key>idotlessdieresisacute.ss03</key>
       <integer>158</integer>
       <key>igrave</key>
@@ -15585,9 +15609,9 @@
       <key>istroke_gravecomb</key>
       <integer>142</integer>
       <key>istroke_macroncomb</key>
-      <integer>77</integer>
+      <integer>68</integer>
       <key>istroke_tildecomb</key>
-      <integer>60</integer>
+      <integer>49</integer>
       <key>itilde</key>
       <integer>49</integer>
       <key>yen</key>
@@ -15628,13 +15652,13 @@
       <key>idotbelow_gravecomb</key>
       <integer>142</integer>
       <key>idotbelow_macroncomb.ss03</key>
-      <integer>77</integer>
+      <integer>68</integer>
       <key>idotbelow_macroncomb</key>
-      <integer>77</integer>
+      <integer>68</integer>
       <key>idotbelow_tildecomb.ss03</key>
-      <integer>60</integer>
+      <integer>49</integer>
       <key>idotbelow_tildecomb</key>
-      <integer>60</integer>
+      <integer>49</integer>
       <key>idotlessdieresisacute.ss03</key>
       <integer>157</integer>
       <key>igrave</key>
@@ -15656,9 +15680,9 @@
       <key>istroke_gravecomb</key>
       <integer>142</integer>
       <key>istroke_macroncomb</key>
-      <integer>77</integer>
+      <integer>68</integer>
       <key>istroke_tildecomb</key>
-      <integer>60</integer>
+      <integer>49</integer>
       <key>itilde</key>
       <integer>49</integer>
       <key>yen</key>
@@ -15789,6 +15813,10 @@
       <integer>60</integer>
       <key>yen</key>
       <integer>39</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>60</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>77</integer>
     </dict>
     <key>Wdieresis</key>
     <dict>
@@ -15844,6 +15872,10 @@
       <integer>60</integer>
       <key>yen</key>
       <integer>39</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>60</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>77</integer>
     </dict>
     <key>Wdotaccent.ss03</key>
     <dict>
@@ -15899,6 +15931,10 @@
       <integer>60</integer>
       <key>yen</key>
       <integer>39</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>60</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>77</integer>
     </dict>
     <key>Wdotaccent</key>
     <dict>
@@ -15954,6 +15990,10 @@
       <integer>60</integer>
       <key>yen</key>
       <integer>39</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>60</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>77</integer>
     </dict>
     <key>Wgrave</key>
     <dict>
@@ -16196,13 +16236,13 @@
       <key>idotbelow_gravecomb</key>
       <integer>157</integer>
       <key>idotbelow_macroncomb.ss03</key>
-      <integer>71</integer>
+      <integer>61</integer>
       <key>idotbelow_macroncomb</key>
-      <integer>71</integer>
+      <integer>61</integer>
       <key>idotbelow_tildecomb.ss03</key>
-      <integer>41</integer>
+      <integer>32</integer>
       <key>idotbelow_tildecomb</key>
-      <integer>41</integer>
+      <integer>32</integer>
       <key>idotlessdieresisacute.ss03</key>
       <integer>172</integer>
       <key>igrave</key>
@@ -16220,9 +16260,9 @@
       <key>istroke_gravecomb</key>
       <integer>156</integer>
       <key>istroke_macroncomb</key>
-      <integer>71</integer>
+      <integer>61</integer>
       <key>istroke_tildecomb</key>
-      <integer>41</integer>
+      <integer>32</integer>
       <key>itilde</key>
       <integer>32</integer>
       <key>odieresis</key>
@@ -16330,13 +16370,13 @@
       <key>idotbelow_gravecomb</key>
       <integer>157</integer>
       <key>idotbelow_macroncomb.ss03</key>
-      <integer>71</integer>
+      <integer>61</integer>
       <key>idotbelow_macroncomb</key>
-      <integer>71</integer>
+      <integer>61</integer>
       <key>idotbelow_tildecomb.ss03</key>
-      <integer>41</integer>
+      <integer>32</integer>
       <key>idotbelow_tildecomb</key>
-      <integer>41</integer>
+      <integer>32</integer>
       <key>idotlessdieresisacute.ss03</key>
       <integer>172</integer>
       <key>igrave</key>
@@ -16354,9 +16394,9 @@
       <key>istroke_gravecomb</key>
       <integer>156</integer>
       <key>istroke_macroncomb</key>
-      <integer>71</integer>
+      <integer>61</integer>
       <key>istroke_tildecomb</key>
-      <integer>41</integer>
+      <integer>32</integer>
       <key>itilde</key>
       <integer>32</integer>
       <key>yen</key>
@@ -16412,6 +16452,10 @@
       <integer>41</integer>
       <key>yen</key>
       <integer>66</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>41</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>71</integer>
     </dict>
     <key>Ydieresis</key>
     <dict>
@@ -16461,6 +16505,10 @@
       <integer>41</integer>
       <key>yen</key>
       <integer>66</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>41</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>71</integer>
     </dict>
     <key>Ydotaccent.ss03</key>
     <dict>
@@ -16510,6 +16558,10 @@
       <integer>41</integer>
       <key>yen</key>
       <integer>66</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>41</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>71</integer>
     </dict>
     <key>Ydotaccent</key>
     <dict>
@@ -16559,6 +16611,10 @@
       <integer>41</integer>
       <key>yen</key>
       <integer>66</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>41</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>71</integer>
     </dict>
     <key>Ydotbelow.ss03</key>
     <dict>
@@ -16608,6 +16664,10 @@
       <integer>41</integer>
       <key>yen</key>
       <integer>66</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>41</integer>
+      <key>idotbelow_macroncomb</key>
+      <integer>71</integer>
     </dict>
     <key>Ydotbelow</key>
     <dict>
@@ -16657,6 +16717,10 @@
       <integer>41</integer>
       <key>yen</key>
       <integer>66</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>41</integer>
+      <key>idotbelow_macroncomb.ss03</key>
+      <integer>71</integer>
     </dict>
     <key>Ygrave</key>
     <dict>
@@ -35095,9 +35159,7 @@
       <key>zerosuperior</key>
       <integer>73</integer>
       <key>exclamdown.ss03.case</key>
-      <integer>62</integer>
-      <key>exclamdown.case</key>
-      <integer>39</integer>
+      <integer>26</integer>
     </dict>
     <key>icaron</key>
     <dict>
@@ -35753,8 +35815,6 @@
       <integer>36</integer>
       <key>zerosuperior</key>
       <integer>70</integer>
-      <key>exclamdown.ss03.case</key>
-      <integer>13</integer>
     </dict>
     <key>icircumflex</key>
     <dict>
@@ -36692,10 +36752,10 @@
       <integer>42</integer>
       <key>zerosuperior</key>
       <integer>111</integer>
-      <key>exclamdown.ss03.case</key>
-      <integer>119</integer>
       <key>exclamdown.case</key>
-      <integer>124</integer>
+      <integer>88</integer>
+      <key>exclamdown.ss03.case</key>
+      <integer>72</integer>
     </dict>
     <key>idblgrave</key>
     <dict>
@@ -37624,9 +37684,9 @@
       <key>zerosuperior</key>
       <integer>138</integer>
       <key>exclamdown.case</key>
-      <integer>113</integer>
+      <integer>77</integer>
       <key>exclamdown.ss03.case</key>
-      <integer>98</integer>
+      <integer>61</integer>
     </dict>
     <key>idieresis.ss03</key>
     <dict>
@@ -38677,7 +38737,7 @@
       <key>IJ.cv01.cv05</key>
       <integer>137</integer>
       <key>exclamdown.ss03.case</key>
-      <integer>151</integer>
+      <integer>115</integer>
     </dict>
     <key>idieresis</key>
     <dict>
@@ -39436,7 +39496,7 @@
       <key>zerosuperior</key>
       <integer>113</integer>
       <key>exclamdown.case</key>
-      <integer>139</integer>
+      <integer>97</integer>
     </dict>
     <key>idotbelow.ss03</key>
     <dict>
@@ -41188,8 +41248,6 @@
       <integer>73</integer>
       <key>IJ.cv01.cv05</key>
       <integer>86</integer>
-      <key>exclamdown.ss03.case</key>
-      <integer>62</integer>
     </dict>
     <key>idotbelow_brevecomb</key>
     <dict>
@@ -41861,8 +41919,6 @@
       <integer>39</integer>
       <key>zerosuperior</key>
       <integer>73</integer>
-      <key>exclamdown.case</key>
-      <integer>39</integer>
     </dict>
     <key>idotbelow_caroncomb.ss03</key>
     <dict>
@@ -42398,8 +42454,6 @@
       <integer>70</integer>
       <key>IJ.cv01.cv05</key>
       <integer>83</integer>
-      <key>exclamdown.ss03.case</key>
-      <integer>13</integer>
     </dict>
     <key>idotbelow_caroncomb</key>
     <dict>
@@ -43488,8 +43542,6 @@
       <integer>111</integer>
       <key>IJ.cv01.cv05</key>
       <integer>93</integer>
-      <key>exclamdown.ss03.case</key>
-      <integer>119</integer>
     </dict>
     <key>idotbelow_circumflexcomb</key>
     <dict>
@@ -44017,8 +44069,6 @@
       <integer>111</integer>
       <key>H</key>
       <integer>20</integer>
-      <key>exclamdown.case</key>
-      <integer>124</integer>
     </dict>
     <key>idotbelow_dieresiscomb.ss03</key>
     <dict>
@@ -45090,10 +45140,6 @@
       <integer>155</integer>
       <key>IJ.cv01.cv05</key>
       <integer>137</integer>
-      <key>slash.case</key>
-      <integer>0</integer>
-      <key>exclamdown.ss03.case</key>
-      <integer>151</integer>
     </dict>
     <key>idotbelow_dieresiscomb</key>
     <dict>
@@ -46015,10 +46061,6 @@
       <integer>91</integer>
       <key>zerosuperior</key>
       <integer>112</integer>
-      <key>slash.case</key>
-      <integer>0</integer>
-      <key>exclamdown.case</key>
-      <integer>139</integer>
     </dict>
     <key>idotbelow_gravecomb.ss03</key>
     <dict>
@@ -46726,8 +46768,6 @@
       <integer>122</integer>
       <key>IJ.cv01.cv05</key>
       <integer>107</integer>
-      <key>exclamdown.ss03.case</key>
-      <integer>121</integer>
     </dict>
     <key>idotbelow_macroncomb</key>
     <dict>
@@ -47389,8 +47429,6 @@
       <integer>29</integer>
       <key>zerosuperior</key>
       <integer>122</integer>
-      <key>exclamdown.case</key>
-      <integer>147</integer>
     </dict>
     <key>idotbelow_tildecomb.ss03</key>
     <dict>
@@ -47940,8 +47978,6 @@
       <integer>97</integer>
       <key>IJ.cv01.cv05</key>
       <integer>80</integer>
-      <key>exclamdown.ss03.case</key>
-      <integer>94</integer>
     </dict>
     <key>idotbelow_tildecomb</key>
     <dict>
@@ -48501,8 +48537,6 @@
       <integer>98</integer>
       <key>zerosuperior</key>
       <integer>97</integer>
-      <key>exclamdown.case</key>
-      <integer>121</integer>
     </dict>
     <key>idotlessdieresisacute.ss03</key>
     <dict>
@@ -48977,7 +49011,7 @@
       <key>IJ.cv01.cv05</key>
       <integer>137</integer>
       <key>exclamdown.ss03.case</key>
-      <integer>151</integer>
+      <integer>115</integer>
     </dict>
     <key>idotlessdieresisacute</key>
     <dict>
@@ -49428,7 +49462,7 @@
       <key>zerosuperior</key>
       <integer>113</integer>
       <key>exclamdown.case</key>
-      <integer>139</integer>
+      <integer>97</integer>
     </dict>
     <key>igrave</key>
     <dict>
@@ -50547,9 +50581,9 @@
       <key>zerosuperior</key>
       <integer>124</integer>
       <key>exclamdown.case</key>
-      <integer>136</integer>
+      <integer>100</integer>
       <key>exclamdown.ss03.case</key>
-      <integer>120</integer>
+      <integer>84</integer>
     </dict>
     <key>ij.ss03</key>
     <dict>
@@ -51842,9 +51876,9 @@
       <key>zerosuperior</key>
       <integer>122</integer>
       <key>exclamdown.case</key>
-      <integer>147</integer>
+      <integer>105</integer>
       <key>exclamdown.ss03.case</key>
-      <integer>121</integer>
+      <integer>85</integer>
     </dict>
     <key>integral</key>
     <dict>
@@ -53544,10 +53578,6 @@
       <integer>39</integer>
       <key>zerosuperior</key>
       <integer>73</integer>
-      <key>exclamdown.ss03.case</key>
-      <integer>62</integer>
-      <key>exclamdown.case</key>
-      <integer>39</integer>
     </dict>
     <key>istroke_caroncomb</key>
     <dict>
@@ -54205,8 +54235,6 @@
       <integer>36</integer>
       <key>zerosuperior</key>
       <integer>70</integer>
-      <key>exclamdown.ss03.case</key>
-      <integer>13</integer>
     </dict>
     <key>istroke_circumflexcomb</key>
     <dict>
@@ -54884,10 +54912,6 @@
       <integer>42</integer>
       <key>zerosuperior</key>
       <integer>111</integer>
-      <key>exclamdown.ss03.case</key>
-      <integer>119</integer>
-      <key>exclamdown.case</key>
-      <integer>124</integer>
     </dict>
     <key>istroke_dieresiscomb.ss03</key>
     <dict>
@@ -55959,10 +55983,6 @@
       <integer>155</integer>
       <key>IJ.cv01.cv05</key>
       <integer>137</integer>
-      <key>slash.case</key>
-      <integer>0</integer>
-      <key>exclamdown.ss03.case</key>
-      <integer>151</integer>
     </dict>
     <key>istroke_dieresiscomb</key>
     <dict>
@@ -56882,10 +56902,6 @@
       <integer>91</integer>
       <key>zerosuperior</key>
       <integer>112</integer>
-      <key>slash.case</key>
-      <integer>0</integer>
-      <key>exclamdown.case</key>
-      <integer>139</integer>
     </dict>
     <key>istroke_gravecomb</key>
     <dict>
@@ -57684,10 +57700,6 @@
       <integer>29</integer>
       <key>zerosuperior</key>
       <integer>122</integer>
-      <key>exclamdown.case</key>
-      <integer>147</integer>
-      <key>exclamdown.ss03.case</key>
-      <integer>121</integer>
     </dict>
     <key>istroke_tildecomb</key>
     <dict>
@@ -58337,10 +58349,6 @@
       <integer>98</integer>
       <key>zerosuperior</key>
       <integer>97</integer>
-      <key>exclamdown.case</key>
-      <integer>115</integer>
-      <key>exclamdown.ss03.case</key>
-      <integer>94</integer>
     </dict>
     <key>itilde</key>
     <dict>
@@ -59103,9 +59111,9 @@
       <key>zerosuperior</key>
       <integer>97</integer>
       <key>exclamdown.case</key>
-      <integer>121</integer>
+      <integer>69</integer>
       <key>exclamdown.ss03.case</key>
-      <integer>94</integer>
+      <integer>58</integer>
     </dict>
     <key>j.ss03</key>
     <dict>
@@ -59763,10 +59771,10 @@
       <integer>27</integer>
       <key>zerosuperior</key>
       <integer>96</integer>
-      <key>exclamdown.ss03.case</key>
-      <integer>112</integer>
       <key>exclamdown.case</key>
-      <integer>109</integer>
+      <integer>73</integer>
+      <key>exclamdown.ss03.case</key>
+      <integer>57</integer>
     </dict>
     <key>jdotless</key>
     <dict>
@@ -61716,10 +61724,6 @@
       <integer>21</integer>
       <key>zlinebelow</key>
       <integer>5</integer>
-      <key>exclamdown.case</key>
-      <integer>24</integer>
-      <key>exclamdown.ss03.case</key>
-      <integer>24</integer>
     </dict>
     <key>lslash</key>
     <dict>
@@ -63715,10 +63719,6 @@
       <integer>36</integer>
       <key>yen</key>
       <integer>20</integer>
-      <key>questiondown.case</key>
-      <integer>27</integer>
-      <key>questiondown.ss03.case</key>
-      <integer>27</integer>
     </dict>
     <key>ocircumflexdotbelow.ss03</key>
     <dict>
@@ -66583,12 +66583,6 @@
       <integer>41</integer>
       <key>zerosuperior</key>
       <integer>75</integer>
-      <key>questiondown.case</key>
-      <integer>45</integer>
-      <key>questiondown.ss03.case</key>
-      <integer>45</integer>
-      <key>exclamdown.ss03.case</key>
-      <integer>25</integer>
     </dict>
     <key>oinvertedbreve</key>
     <dict>
@@ -70174,6 +70168,8 @@
       <integer>-205</integer>
       <key>uinvertedbreve</key>
       <integer>-222</integer>
+      <key>ainvertedbreve.cv04</key>
+      <integer>-222</integer>
     </dict>
     <key>public.kern1.Tarm</key>
     <dict>
@@ -70478,6 +70474,8 @@
       <integer>-296</integer>
       <key>uinvertedbreve</key>
       <integer>-206</integer>
+      <key>ainvertedbreve.cv04</key>
+      <integer>-291</integer>
     </dict>
     <key>public.kern1.W</key>
     <dict>
@@ -70849,6 +70847,8 @@
       <integer>-350</integer>
       <key>uinvertedbreve</key>
       <integer>-321</integer>
+      <key>ainvertedbreve.cv04</key>
+      <integer>-360</integer>
     </dict>
     <key>public.kern1.Yarm</key>
     <dict>
@@ -74249,10 +74249,6 @@
       <integer>37</integer>
       <key>zerosuperior</key>
       <integer>52</integer>
-      <key>exclamdown.case</key>
-      <integer>27</integer>
-      <key>exclamdown.ss03.case</key>
-      <integer>11</integer>
     </dict>
     <key>rdotaccent.ss03</key>
     <dict>
@@ -74855,9 +74851,7 @@
       <key>zerosuperior</key>
       <integer>38</integer>
       <key>exclamdown.case</key>
-      <integer>50</integer>
-      <key>exclamdown.ss03.case</key>
-      <integer>34</integer>
+      <integer>14</integer>
     </dict>
     <key>rlinebelow</key>
     <dict>
@@ -78738,148 +78732,62 @@
     </dict>
     <key>exclamdown.case</key>
     <dict>
-      <key>florin</key>
-      <integer>0</integer>
-      <key>llinebelow</key>
-      <integer>76</integer>
-      <key>llinebelow.ss02</key>
-      <integer>76</integer>
-      <key>rlinebelow</key>
-      <integer>49</integer>
+      <key>icircumflex</key>
+      <integer>51</integer>
+      <key>iinvertedbreve</key>
+      <integer>15</integer>
+      <key>imacron</key>
+      <integer>32</integer>
     </dict>
     <key>exclamdown.ss03.case</key>
     <dict>
-      <key>florin</key>
-      <integer>0</integer>
-      <key>llinebelow</key>
-      <integer>76</integer>
-      <key>llinebelow.ss02</key>
-      <integer>76</integer>
-      <key>rlinebelow</key>
-      <integer>49</integer>
+      <key>icircumflex</key>
+      <integer>32</integer>
       <key>idieresis.ss03</key>
-      <integer>25</integer>
+      <integer>79</integer>
       <key>idotlessdieresisacute.ss03</key>
-      <integer>25</integer>
-      <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>25</integer>
-      <key>istroke_dieresiscomb.ss03</key>
-      <integer>25</integer>
+      <integer>79</integer>
+      <key>imacron</key>
+      <integer>15</integer>
     </dict>
     <key>questiondown.case</key>
     <dict>
-      <key>AE</key>
-      <integer>15</integer>
-      <key>AEacute</key>
-      <integer>15</integer>
-      <key>AEmacron</key>
-      <integer>15</integer>
-      <key>florin</key>
-      <integer>0</integer>
-      <key>j</key>
-      <integer>14</integer>
-      <key>jcircumflex</key>
-      <integer>15</integer>
-      <key>jdotless</key>
-      <integer>14</integer>
-      <key>jdotlesscaron</key>
-      <integer>15</integer>
       <key>franc</key>
-      <integer>21</integer>
+      <integer>80</integer>
     </dict>
     <key>questiondown.ss03.case</key>
     <dict>
-      <key>AE</key>
-      <integer>15</integer>
-      <key>AEacute</key>
-      <integer>15</integer>
-      <key>AEmacron</key>
-      <integer>15</integer>
-      <key>florin</key>
-      <integer>0</integer>
-      <key>j.ss03</key>
-      <integer>14</integer>
-      <key>jcircumflex</key>
-      <integer>15</integer>
-      <key>jdotless</key>
-      <integer>14</integer>
-      <key>jdotlesscaron</key>
-      <integer>15</integer>
       <key>franc</key>
-      <integer>21</integer>
+      <integer>80</integer>
     </dict>
     <key>slash.case</key>
     <dict>
-      <key>dieresis.ss03</key>
-      <integer>3</integer>
       <key>dieresis</key>
+      <integer>0</integer>
+      <key>dieresis.ss03</key>
       <integer>0</integer>
       <key>edblgrave</key>
       <integer>105</integer>
       <key>ibreve</key>
       <integer>106</integer>
       <key>icaron</key>
-      <integer>120</integer>
+      <integer>127</integer>
       <key>icircumflex</key>
       <integer>19</integer>
       <key>idblgrave</key>
-      <integer>147</integer>
-      <key>idieresis.ss03</key>
-      <integer>162</integer>
+      <integer>111</integer>
       <key>idieresis</key>
-      <integer>106</integer>
-      <key>idotbelow_brevecomb.ss03</key>
-      <integer>106</integer>
-      <key>idotbelow_brevecomb</key>
-      <integer>106</integer>
-      <key>idotbelow_caroncomb.ss03</key>
-      <integer>120</integer>
-      <key>idotbelow_caroncomb</key>
-      <integer>120</integer>
-      <key>idotbelow_circumflexcomb.ss03</key>
-      <integer>19</integer>
-      <key>idotbelow_circumflexcomb</key>
-      <integer>19</integer>
-      <key>idotbelow_dieresiscomb.ss03</key>
-      <integer>162</integer>
-      <key>idotbelow_dieresiscomb</key>
-      <integer>106</integer>
-      <key>idotbelow_gravecomb.ss03</key>
-      <integer>142</integer>
-      <key>idotbelow_gravecomb</key>
-      <integer>142</integer>
-      <key>idotbelow_macroncomb.ss03</key>
-      <integer>74</integer>
-      <key>idotbelow_macroncomb</key>
-      <integer>74</integer>
-      <key>idotbelow_tildecomb.ss03</key>
-      <integer>53</integer>
-      <key>idotbelow_tildecomb</key>
-      <integer>53</integer>
-      <key>idotlessdieresisacute.ss03</key>
-      <integer>158</integer>
+      <integer>109</integer>
+      <key>idieresis.ss03</key>
+      <integer>167</integer>
       <key>idotlessdieresisacute</key>
-      <integer>144</integer>
+      <integer>109</integer>
+      <key>idotlessdieresisacute.ss03</key>
+      <integer>167</integer>
       <key>igrave</key>
-      <integer>142</integer>
+      <integer>143</integer>
       <key>imacron</key>
       <integer>74</integer>
-      <key>istroke_brevecomb</key>
-      <integer>106</integer>
-      <key>istroke_caroncomb</key>
-      <integer>120</integer>
-      <key>istroke_circumflexcomb</key>
-      <integer>19</integer>
-      <key>istroke_dieresiscomb.ss03</key>
-      <integer>162</integer>
-      <key>istroke_dieresiscomb</key>
-      <integer>106</integer>
-      <key>istroke_gravecomb</key>
-      <integer>142</integer>
-      <key>istroke_macroncomb</key>
-      <integer>74</integer>
-      <key>istroke_tildecomb</key>
-      <integer>53</integer>
       <key>itilde</key>
       <integer>53</integer>
       <key>jdotlesscaron</key>

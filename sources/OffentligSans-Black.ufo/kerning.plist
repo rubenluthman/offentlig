@@ -49982,6 +49982,8 @@
       <integer>-176</integer>
       <key>uinvertedbreve</key>
       <integer>-187</integer>
+      <key>ainvertedbreve.cv04</key>
+      <integer>-189</integer>
     </dict>
     <key>public.kern1.Tarm</key>
     <dict>
@@ -50282,6 +50284,8 @@
       <integer>-265</integer>
       <key>uinvertedbreve</key>
       <integer>-202</integer>
+      <key>ainvertedbreve.cv04</key>
+      <integer>-279</integer>
     </dict>
     <key>public.kern1.W</key>
     <dict>
@@ -50478,13 +50482,13 @@
       <key>idotbelow_gravecomb</key>
       <integer>81</integer>
       <key>idotbelow_macroncomb.ss03</key>
-      <integer>10</integer>
+      <integer>3</integer>
       <key>idotbelow_macroncomb</key>
-      <integer>10</integer>
+      <integer>3</integer>
       <key>idotbelow_tildecomb.ss03</key>
-      <integer>10</integer>
+      <integer>-23</integer>
       <key>idotbelow_tildecomb</key>
-      <integer>10</integer>
+      <integer>-23</integer>
       <key>idotlessdieresisacute.ss03</key>
       <integer>174</integer>
       <key>idotlessdieresisacute</key>
@@ -50504,9 +50508,9 @@
       <key>istroke_gravecomb</key>
       <integer>81</integer>
       <key>istroke_macroncomb</key>
-      <integer>10</integer>
+      <integer>3</integer>
       <key>istroke_tildecomb</key>
-      <integer>10</integer>
+      <integer>-23</integer>
       <key>itilde</key>
       <integer>-23</integer>
       <key>jdotlesscaron</key>
@@ -50639,6 +50643,8 @@
       <integer>-316</integer>
       <key>uinvertedbreve</key>
       <integer>-317</integer>
+      <key>ainvertedbreve.cv04</key>
+      <integer>-329</integer>
     </dict>
     <key>public.kern1.Yarm</key>
     <dict>
