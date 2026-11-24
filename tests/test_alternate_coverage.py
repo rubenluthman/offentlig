@@ -2,7 +2,7 @@
 
 The letter alternates (`cv03` G, `cv04` single-storey a, `cv05` serifed I, `ss01` g, `ss02` l) and `ss03` (square dots) are separate
 features, and the `cv` features run first. A letter that has a dot and an alternate therefore needs a third glyph,
-`<name>.cvNN.ss03`, otherwise `ss03` would leave it with square dots or undo the alternate.
+`<name>.cvNN.ss03`, otherwise `ss03` would leave it with round dots or undo the alternate.
 """
 import re
 import unicodedata
