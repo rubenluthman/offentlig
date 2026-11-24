@@ -32,7 +32,7 @@ Open-source font superfamily. Offentlig Sans is a renamed fork of Public Sans (u
 - Measure every claim on the built fonts before acting on it or writing it down, including the reason for each entry in a test's exemption list. A review's verdict or an approval is not a measurement.
 - Apply and test every fix in all six masters, upright and italic, and with the alternate forms on.
 - Check that nothing became worse than Public Sans `e40fcf567` by accident: Diffenator2 for outlines, widths, kerning and marks, plus measured counters, stroke weights and mark gaps.
-- The Public Sans docs and issue history explain why a shape was drawn as it is. They inform a decision but never rule out an alternate or an improvement.
+- Public Sans is the starting point, not a standard to keep (P7 in `docs/design-decisions.md`). Its docs and issue history explain why a shape was drawn as it is. They inform a decision but never rule out an alternate, an improvement or a change of character.
 - Added slashes and bars (`zero.slash`, `Ǥ ǥ Ɨ ɨ`, currency bars) stay lighter than the main stems in Bold and Black.
 - Show drawn changes to the owner as before-and-after images, with the comparison fonts, before committing them.
 - Run one font build, full test run or whole-font pair scan at a time: together they run out of memory. Each heavy step (a font build, `make test`, Fontspector, Diffenator2, a scan with several worker processes) queues on a shared lock through `heavy-run`, one step per call; a script in one process runs without it. The Makefile does this where `heavy-run` is installed and runs directly where it is not (CI).
