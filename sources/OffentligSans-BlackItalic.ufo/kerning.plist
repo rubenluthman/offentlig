@@ -11885,6 +11885,8 @@
     </dict>
     <key>Tbar</key>
     <dict>
+      <key>ainvertedbreve.cv04</key>
+      <integer>-222</integer>
       <key>dieresis.ss03</key>
       <integer>0</integer>
       <key>dieresis</key>

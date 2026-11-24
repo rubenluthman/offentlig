@@ -7434,6 +7434,8 @@
     </dict>
     <key>Tbar</key>
     <dict>
+      <key>ainvertedbreve.cv04</key>
+      <integer>-301</integer>
       <key>hbar</key>
       <integer>-100</integer>
       <key>yen</key>
@@ -48051,7 +48053,7 @@
       <key>uinvertedbreve</key>
       <integer>-333</integer>
       <key>ainvertedbreve.cv04</key>
-      <integer>-301</integer>
+      <integer>-347</integer>
     </dict>
     <key>public.kern1.Tarm</key>
     <dict>

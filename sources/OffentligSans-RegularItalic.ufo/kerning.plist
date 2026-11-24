@@ -11837,6 +11837,8 @@
     </dict>
     <key>Tbar</key>
     <dict>
+      <key>ainvertedbreve.cv04</key>
+      <integer>-251</integer>
       <key>dieresis.ss03</key>
       <integer>0</integer>
       <key>dieresis</key>
@@ -68795,7 +68797,7 @@
       <key>uinvertedbreve</key>
       <integer>-286</integer>
       <key>ainvertedbreve.cv04</key>
-      <integer>-251</integer>
+      <integer>-290</integer>
     </dict>
     <key>public.kern1.Tarm</key>
     <dict>

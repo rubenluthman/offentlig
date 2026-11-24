@@ -135,16 +135,17 @@ def test_outline_distance_of_t_v_w_y_before_the_marks_of_i_keeps_the_floor(weigh
     18 statics, for `T V W Y` before `ĩ ī ĭ ǐ`, except the pairs in `OUTLINE_UNDER_FLOOR`, which keep their value."""
     path = static_path(weight, italic)
     wrong = []
-    for left in "TVWY":
-        for letter in "ĩīĭǐ":
-            glyphs = placed_contours(path, left + letter)
-            distance = outline_distance(glyphs[0], glyphs[1])
-            held = OUTLINE_UNDER_FLOOR.get((weight, italic, left + letter))
-            if held is None:
-                if distance < OUTLINE_FLOOR:
-                    wrong.append((left + letter, round(distance)))
-            elif not held - 1 <= distance < OUTLINE_FLOOR:
-                wrong.append((left + letter, round(distance), "exempt at", held))
+    for features in FEATURE_SETS:
+        for left in "TVWY":
+            for letter in "ĩīĭǐ":
+                glyphs = placed_contours(path, left + letter, features)
+                distance = outline_distance(glyphs[0], glyphs[1])
+                held = OUTLINE_UNDER_FLOOR.get((weight, italic, left + letter))
+                if held is None:
+                    if distance < OUTLINE_FLOOR:
+                        wrong.append((left + letter, round(distance), features))
+                elif not held - 1 <= distance < OUTLINE_FLOOR:
+                    wrong.append((left + letter, round(distance), "exempt at", held, features))
     assert wrong == []
 
 
@@ -190,6 +191,13 @@ MARK_OUTLINE_UNDER_FLOOR = {
 }
 
 
+# The same for the single-storey `ȃ ȁ` (`cv04`, with and without `ss03`): `Yȁ` is 29 at ExtraBold Italic and Black Italic, like the two-storey `Yȁ`.
+CV04_OUTLINE_UNDER_FLOOR = {
+    ("ExtraBold", True, "Yȁ"): 29,
+    ("Black", True, "Yȁ"): 29,
+}
+
+
 @pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
 def test_outline_distance_of_t_v_w_y_before_the_marked_r_and_a_letters_keeps_the_floor(weight, italic):
     """`T V W Y` before `ȑ ȓ ȃ ȇ ȏ ȗ ȁ ȅ ȍ ȕ ȉ` keep an outline distance of 30. The arm of `T` and the mark of `ȓ` pass each other
@@ -197,16 +205,20 @@ def test_outline_distance_of_t_v_w_y_before_the_marked_r_and_a_letters_keeps_the
     Thin Italic value of `public.kern1.T` before `rinvertedbreve` was loosened (100 and 97 at 0.7.0)."""
     path = static_path(weight, italic)
     wrong = []
-    for left in "TVWY":
-        for letter in "ȑȓȃȇȏȗȁȅȍȕȉ":
-            glyphs = placed_contours(path, left + letter)
-            distance = outline_distance(glyphs[0], glyphs[1])
-            held = MARK_OUTLINE_UNDER_FLOOR.get((weight, italic, left + letter))
-            if held is None:
-                if distance < OUTLINE_FLOOR:
-                    wrong.append((left + letter, round(distance)))
-            elif not held - 1 <= distance < OUTLINE_FLOOR:
-                wrong.append((left + letter, round(distance), "exempt at", held))
+    for features in FEATURE_SETS + CV04_SETS:
+        for left in "TVWY":
+            for letter in "ȑȓȃȇȏȗȁȅȍȕȉ":
+                if features.get("cv04") and letter not in "ȃȁ":
+                    continue  # `cv04` changes only `ȃ ȁ`
+                glyphs = placed_contours(path, left + letter, features)
+                distance = outline_distance(glyphs[0], glyphs[1])
+                table = CV04_OUTLINE_UNDER_FLOOR if features.get("cv04") else MARK_OUTLINE_UNDER_FLOOR
+                held = table.get((weight, italic, left + letter))
+                if held is None:
+                    if distance < OUTLINE_FLOOR:
+                        wrong.append((left + letter, round(distance), features))
+                elif not held - 1 <= distance < OUTLINE_FLOOR:
+                    wrong.append((left + letter, round(distance), "exempt at", held, features))
     assert wrong == []
 
 
@@ -239,6 +251,6 @@ def test_typed_i_with_tilde_or_macron_kerns_like_the_precomposed_letter(weight, 
             if held is None:
                 if distance < OUTLINE_FLOOR:
                     wrong.append((left_letter + typed, round(distance)))
-            elif not held - 1 <= distance < OUTLINE_FLOOR + 1:
+            elif not held - 1 <= distance < OUTLINE_FLOOR:
                 wrong.append((left_letter + typed, round(distance), "exempt at", held))
     assert wrong == []
