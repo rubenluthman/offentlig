@@ -135,11 +135,6 @@ def test_top_mark_drops_the_dot(weight, italic, base, dotted, mark):
         assert shape(weight, italic, base + mark)[0][1] == shape(weight, italic, base)[0][1]
 
 
-# Typed bases whose top mark does not follow the precomposed letter, so only the 30-unit floor applies to them.
-# `î` has the narrow circumflex (D39) while the typed `ị̂` still has the full one. The floor session switches `ị̂` and the
-# stacked forms after `î` to `circumflexcomb.narrow` and then deletes this table.
-NOT_FOLLOWING_PRECOMPOSED = {("ị", "\u0302")}
-
 ALL = [(w, i) for i in (False, True) for w in WEIGHTS]
 ALL_IDS = [f"{w}{'-italic' if i else ''}" for w, i in ALL]
 TOP_MARKS = {"\u0301": "í", "\u0300": "ì", "\u0304": "ī", "\u0303": "ĩ", "\u0302": "î", "\u0306": "ĭ", "\u0308": "ï", "\u030c": "ǐ"}
@@ -152,22 +147,18 @@ def gap_to_next(weight, italic, text):
 
 @pytest.mark.parametrize("weight,italic", ALL, ids=ALL_IDS)
 def test_typed_i_with_top_mark_spaces_like_the_precomposed_letter(weight, italic):
-    """Typed ị and ɨ with a top mark clear the next letter at every weight, 4-unit rows.
+    """Typed ị with a top mark clears the next letter as far as the precomposed í ì ī ĩ î ĭ ï ǐ does (within 10 units), at every weight.
 
-    ị follows the precomposed í ì ī ĩ (within 10 units), but not î, which has the narrow circumflex (D39); ɨ has a wider bar, so only the floor applies.
+    The nearest-ink floor of `test_ink_floor.py` holds the typed ị and ɨ to the floor; ɨ has a wider bar, so only that floor applies to it.
     The first version of these letters reused the dotless anchor and overlapped the next letter from Bold up.
     """
     bad = []
-    for base in "ịɨ":
-        for mark, precomposed in TOP_MARKS.items():
-            for nxt in "Hlni":
-                gap = gap_to_next(weight, italic, base + mark + nxt)
-                if gap < 30:
-                    bad.append((base + mark + nxt, round(gap)))
-                elif base == "ị" and (base, mark) not in NOT_FOLLOWING_PRECOMPOSED:
-                    reference = gap_to_next(weight, italic, precomposed + nxt)
-                    if gap < reference - 10:
-                        bad.append((base + mark + nxt, round(gap), "precomposed", round(reference)))
+    for mark, precomposed in TOP_MARKS.items():
+        for nxt in "Hlni":
+            gap = gap_to_next(weight, italic, "ị" + mark + nxt)
+            reference = gap_to_next(weight, italic, precomposed + nxt)
+            if gap < reference - 10:
+                bad.append(("ị" + mark + nxt, round(gap), "precomposed", round(reference)))
     assert not bad, bad
 
 

@@ -566,6 +566,9 @@
     <key>public.kern1.idblgrave</key>
     <array>
       <string>idblgrave</string>
+      <string>idotbelow_dblgravecomb</string>
+      <string>idotbelow_dblgravecomb.ss03</string>
+      <string>istroke_dblgravecomb</string>
     </array>
     <key>public.kern1.k</key>
     <array>
@@ -1991,6 +1994,9 @@
     <key>public.kern2.idblgrave</key>
     <array>
       <string>idblgrave</string>
+      <string>idotbelow_dblgravecomb</string>
+      <string>idotbelow_dblgravecomb.ss03</string>
+      <string>istroke_dblgravecomb</string>
     </array>
     <key>public.kern2.j</key>
     <array>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="idotbelow_dblgravecomb" format="2">
+  <advance width="490.9375"/>
+  <anchor x="240.28125" y="23.25" name="ogonek"/>
+  <anchor x="379.48275" y="1415" name="top"/>
+  <anchor x="174.59375" y="0" name="bottom"/>
+  <outline>
+    <component base="idotless"/>
+    <component base="dblgravecomb.narrow" xOffset="-53.839"/>
+    <component base="dotbelowcomb" xOffset="145.1875"/>
+  </outline>
+</glyph>

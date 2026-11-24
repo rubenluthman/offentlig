@@ -59,7 +59,9 @@ lookup ccmp_Other_0 {
 	sub idotbelow dieresiscomb by idotbelow_dieresiscomb;
 	sub istroke dieresiscomb by istroke_dieresiscomb;
 	sub idotbelow caroncomb by idotbelow_caroncomb;
+	sub idotbelow dblgravecomb by idotbelow_dblgravecomb;
 	sub istroke caroncomb by istroke_caroncomb;
+	sub istroke dblgravecomb by istroke_dblgravecomb;
 } ccmp_Other_0;
 
 lookup ccmp_Other_1 {
@@ -76,9 +78,8 @@ lookup ccmp_Other_2 {
 	# when the base has a mark below (`ị į ɨ ṛ ṟ ŗ`; `i` has become `ı` or one of these bases by now).
 	sub [idotless r idotbelow.dotless istroke.dotless iogonek.dotless rdotbelow rlinebelow rcommaaccent] dblgravecomb' by dblgravecomb.narrow;
 	sub [idotless r] @CombiningNonTopAccents dblgravecomb' by dblgravecomb.narrow;
-	# One shape of `î` in every word: the typed `i`/`ı` + U+0302 takes the narrow circumflex of the precomposed `î`.
-	# The stacked marks (`ấ`-style ligatures of ccmp_latn_1) keep the wide one.
-	ignore sub idotless circumflexcomb' [acutecomb gravecomb hookabovecomb tildecomb];
+	# One shape of `î` in every word: the typed `i`/`ı` + U+0302 takes the narrow circumflex of the precomposed `î`, also when
+	# another mark follows (the `ấ`-style ligatures of ccmp_latn_1 then no longer match, and the second mark stacks on the narrow one).
 	sub idotless circumflexcomb' by circumflexcomb.narrow;
 } ccmp_Other_2;
 
@@ -699,6 +700,7 @@ sub idotbelow_gravecomb by idotbelow_gravecomb.ss03;
 sub idotbelow_macroncomb by idotbelow_macroncomb.ss03;
 sub idotbelow_tildecomb by idotbelow_tildecomb.ss03;
 sub idotbelow_circumflexcomb by idotbelow_circumflexcomb.ss03;
+sub idotbelow_dblgravecomb by idotbelow_dblgravecomb.ss03;
 sub idotbelow_brevecomb by idotbelow_brevecomb.ss03;
 sub idotbelow_dieresiscomb by idotbelow_dieresiscomb.ss03;
 sub idotbelow_caroncomb by idotbelow_caroncomb.ss03;

@@ -447,14 +447,22 @@ def resolved_kern(font, left, right):
     return 0
 
 
-THIN_DIAGONAL_PAIRS = {("Thin", "(ĥ"), ("Thin", "Ĵ)")}
+def nearest_ink_without(weight, italic, shaped, moved):
+    """Nearest-ink distance of a shaped pair with its exception taken away (`moved` units less kerning on the first glyph), and
+    the floor of the static: a quarter of the nearest-ink distance of `oo` (`test_ink_floor.py`)."""
+    from test_ink_floor import glyph_contours, pair_distance, static_floor
+
+    contours, _ = glyph_contours(static_path(weight, italic))
+    (g1, advance), (g2, _) = shaped
+    return pair_distance(contours, g1, g2, advance - moved), static_floor(weight, italic)
 
 
 @pytest.mark.parametrize("master,weight,italic", [("Thin", "Thin", False), ("Regular", "Regular", False), ("ThinItalic", "Thin", True), ("RegularItalic", "Regular", True)])
 def test_light_and_regular_masters_keep_the_spacing_where_the_punctuation_was_already_clear(master, weight, italic):
     """The exceptions that clear a heavy-weight collision must not loosen Thin and Regular where the pair was already
     clear: an exception that moves a pair by more than 10 units at a master must have been needed there (the pair
-    without it sat under 40, or the neighbouring weights between this master and Black or Thin forced it)."""
+    without it sat under the aim, 10 units above the nearest-ink floor of the master, or the neighbouring weights between this
+    master and Black or Thin forced it). The nearest ink is measured because the row gap reads a corner that meets at an angle as clear."""
     s = shaper(weight, italic)
     font = source(master)
     loosened = []
@@ -470,11 +478,10 @@ def test_light_and_regular_masters_keep_the_spacing_where_the_punctuation_was_al
                 if (left, right) not in font.kerning:
                     continue
                 moved = font.kerning[(left, right)] - resolved_kern(font, left, right)
-                gap = s.gap(text, features)
-                if moved > 10 and gap is not None and gap - moved >= 40:
-                    if (master, text) in THIN_DIAGONAL_PAIRS:
-                        continue  # Thin needs its +18: the diagonal gap is 17.5 with it and about 0 without (floor 15, K8)
-                    loosened.append((text, round(gap - moved), round(moved)))
+                if moved > 10:
+                    without, floor = nearest_ink_without(weight, italic, shaped, moved)
+                    if without >= floor + 10:
+                        loosened.append((text, round(without), round(moved)))
     assert sorted(set(loosened)) == []
 
 

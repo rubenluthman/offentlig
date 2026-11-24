@@ -1710,6 +1710,10 @@
     <string>idotbelow_circumflexcomb.glif</string>
     <key>idotbelow_circumflexcomb.ss03</key>
     <string>idotbelow_circumflexcomb.ss03.glif</string>
+    <key>idotbelow_dblgravecomb</key>
+    <string>idotbelow_dblgravecomb.glif</string>
+    <key>idotbelow_dblgravecomb.ss03</key>
+    <string>idotbelow_dblgravecomb.ss03.glif</string>
     <key>idotbelow_dieresiscomb</key>
     <string>idotbelow_dieresiscomb.glif</string>
     <key>idotbelow_dieresiscomb.ss03</key>
@@ -1770,6 +1774,8 @@
     <string>istroke_caroncomb.glif</string>
     <key>istroke_circumflexcomb</key>
     <string>istroke_circumflexcomb.glif</string>
+    <key>istroke_dblgravecomb</key>
+    <string>istroke_dblgravecomb.glif</string>
     <key>istroke_dieresiscomb</key>
     <string>istroke_dieresiscomb.glif</string>
     <key>istroke_dieresiscomb.ss03</key>

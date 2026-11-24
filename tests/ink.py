@@ -1,6 +1,7 @@
 """Outline distance between shaped glyphs, for tests that measure the gap between a mark and its base."""
 import math
 
+import numpy as np
 import uharfbuzz as hb
 from fontTools.pens.basePen import BasePen
 from fontTools.pens.transformPen import TransformPen
@@ -110,6 +111,107 @@ def outline_distance(a, b):
                     ):
                         best = min(best, _point_segment(p, *s))
     return best
+
+
+def _np_segments(contours):
+    return (np.concatenate([c[:-1] for c in contours]), np.concatenate([c[1:] for c in contours]))
+
+
+def _np_inside(points, contours):
+    """Even-odd test for each point (k, 2) against closed contours; the numpy form of `_inside`."""
+    if len(points) == 0:
+        return np.zeros(0, bool)
+    a, b = _np_segments(contours)
+    px, py = points[:, 0:1], points[:, 1:2]
+    x0, y0, x1, y1 = a[:, 0], a[:, 1], b[:, 0], b[:, 1]
+    with np.errstate(divide="ignore", invalid="ignore"):
+        crossing = ((y0 > py) != (y1 > py)) & (px < x0 + (py - y0) * (x1 - x0) / (y1 - y0))
+    return crossing.sum(axis=1) % 2 == 1
+
+
+def _np_box_filter(a, b, lo, hi):
+    keep = (np.maximum(a[:, 0], b[:, 0]) >= lo[0]) & (np.minimum(a[:, 0], b[:, 0]) <= hi[0])
+    keep &= (np.maximum(a[:, 1], b[:, 1]) >= lo[1]) & (np.minimum(a[:, 1], b[:, 1]) <= hi[1])
+    return a[keep], b[keep]
+
+
+def _np_cross(o, a, b):
+    return (a[..., 0] - o[..., 0]) * (b[..., 1] - o[..., 1]) - (a[..., 1] - o[..., 1]) * (b[..., 0] - o[..., 0])
+
+
+def _np_on(p, s, e):
+    return (
+        (np.minimum(s[..., 0], e[..., 0]) <= p[..., 0])
+        & (p[..., 0] <= np.maximum(s[..., 0], e[..., 0]))
+        & (np.minimum(s[..., 1], e[..., 1]) <= p[..., 1])
+        & (p[..., 1] <= np.maximum(s[..., 1], e[..., 1]))
+    )
+
+
+def _np_meet_any(a1, a2, b1, b2):
+    """Any segment of set A crosses, touches or shares an edge with any of set B; the numpy form of `_segments_meet`."""
+    if len(a1) == 0 or len(b1) == 0:
+        return False
+    A1, A2, B1, B2 = a1[:, None, :], a2[:, None, :], b1[None, :, :], b2[None, :, :]
+    box = (
+        (np.maximum(B1[..., 0], B2[..., 0]) >= np.minimum(A1[..., 0], A2[..., 0]))
+        & (np.minimum(B1[..., 0], B2[..., 0]) <= np.maximum(A1[..., 0], A2[..., 0]))
+        & (np.maximum(B1[..., 1], B2[..., 1]) >= np.minimum(A1[..., 1], A2[..., 1]))
+        & (np.minimum(B1[..., 1], B2[..., 1]) <= np.maximum(A1[..., 1], A2[..., 1]))
+    )
+    if not box.any():
+        return False
+    d1, d2 = _np_cross(B1, B2, A1), _np_cross(B1, B2, A2)
+    d3, d4 = _np_cross(A1, A2, B1), _np_cross(A1, A2, B2)
+    proper = (((d1 > 0) & (d2 < 0)) | ((d1 < 0) & (d2 > 0))) & (((d3 > 0) & (d4 < 0)) | ((d3 < 0) & (d4 > 0)))
+    touch = (
+        ((d1 == 0) & _np_on(A1, B1, B2))
+        | ((d2 == 0) & _np_on(A2, B1, B2))
+        | ((d3 == 0) & _np_on(B1, A1, A2))
+        | ((d4 == 0) & _np_on(B2, A1, A2))
+    )
+    return bool((box & (proper | touch)).any())
+
+
+def _np_point_segment_min(points, a, b):
+    if len(points) == 0 or len(a) == 0:
+        return math.inf
+    d = b - a
+    dd = (d * d).sum(axis=1)
+    safe = np.where(dd == 0, 1, dd)
+    best = math.inf
+    for i in range(0, len(points), 512):
+        p = points[i : i + 512, None, :]
+        t = np.clip(np.where(dd == 0, 0.0, ((p - a) * d).sum(axis=2) / safe), 0, 1)
+        q = a + t[..., None] * d
+        best = min(best, float(np.sqrt(((p - q) ** 2).sum(axis=2)).min()))
+    return best
+
+
+def fast_distance(a, b, cap=math.inf):
+    """`outline_distance` in numpy, with contours given as lists of points or (n, 2) arrays: the same contact rules and the same
+    number, 0 when the outlines touch, cross or one lies in the other. Pieces farther than `cap` from the other glyph's box are
+    skipped, so the result is exact below `cap` and `cap` or more above it."""
+    a = [np.asarray(c, dtype=float) for c in a if len(c)]
+    b = [np.asarray(c, dtype=float) for c in b if len(c)]
+    if not a or not b:
+        return math.inf
+    all_a, all_b = np.concatenate(a), np.concatenate(b)
+    lo_a, hi_a, lo_b, hi_b = all_a.min(axis=0), all_a.max(axis=0), all_b.min(axis=0), all_b.max(axis=0)
+    seg_a, seg_b = _np_segments(a), _np_segments(b)
+    lo, hi = np.maximum(lo_a, lo_b), np.minimum(hi_a, hi_b)
+    if (lo <= hi).all():  # contact needs overlapping boxes
+        if _np_meet_any(*_np_box_filter(*seg_a, lo, hi), *_np_box_filter(*seg_b, lo, hi)):
+            return 0.0
+        if _np_inside(np.array([c[0] for c in a]), b).any() or _np_inside(np.array([c[0] for c in b]), a).any():
+            return 0.0
+    near_a = all_a[(all_a >= lo_b - cap).all(axis=1) & (all_a <= hi_b + cap).all(axis=1)]
+    near_b = all_b[(all_b >= lo_a - cap).all(axis=1) & (all_b <= hi_a + cap).all(axis=1)]
+    d = min(
+        _np_point_segment_min(near_a, *_np_box_filter(*seg_b, lo_a - cap, hi_a + cap)),
+        _np_point_segment_min(near_b, *_np_box_filter(*seg_a, lo_b - cap, hi_b + cap)),
+    )
+    return min(d, cap)
 
 
 def placed_contours(path, text, features=None):

@@ -6,7 +6,7 @@
   <anchor x="174.59375" y="0" name="bottom"/>
   <outline>
     <component base="idotless"/>
-    <component base="circumflexcomb" xOffset="-57.9375"/>
+    <component base="circumflexcomb.narrow" xOffset="-57.9375"/>
     <component base="dotbelowcomb.ss03" xOffset="149.78125"/>
   </outline>
 </glyph>

@@ -446,6 +446,9 @@
       <string>ibreve</string>
       <string>icircumflex</string>
       <string>idblgrave</string>
+      <string>idotbelow_dblgravecomb</string>
+      <string>idotbelow_dblgravecomb.ss03</string>
+      <string>istroke_dblgravecomb</string>
       <string>idieresis</string>
       <string>idotaccent</string>
       <string>idotbelow</string>
@@ -2594,6 +2597,10 @@
       <string>base</string>
       <key>idotbelow_circumflexcomb.ss03</key>
       <string>base</string>
+      <key>idotbelow_dblgravecomb</key>
+      <string>base</string>
+      <key>idotbelow_dblgravecomb.ss03</key>
+      <string>base</string>
       <key>idotbelow_dieresiscomb</key>
       <string>base</string>
       <key>idotbelow_dieresiscomb.ss03</key>
@@ -2647,6 +2654,8 @@
       <key>istroke_caroncomb</key>
       <string>base</string>
       <key>istroke_circumflexcomb</key>
+      <string>base</string>
+      <key>istroke_dblgravecomb</key>
       <string>base</string>
       <key>istroke_dieresiscomb</key>
       <string>base</string>

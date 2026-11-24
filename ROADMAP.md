@@ -7,9 +7,6 @@
 <!-- vale HouseStyle.Headings = YES -->
 
 - Follow the three fixes this fork carries that Public Sans has not merged yet: uswds/public-sans PRs #396 (italic `å`), #397 (subscript digits) and #398 (Thin kerning of space and dashes). Checked at each release (see the release steps in [CONTRIBUTING.md](CONTRIBUTING.md#releases)).
-- Some pairs of `T V W Y` before `ĩ ī ĭ ǐ`, and of `W Y` before `ȁ ȅ ȍ ȕ`, are closer than 30 units by outline distance while their row gaps pass, mostly in the heavy italic and before `ǐ` (Black Italic `Yī` 23). Bring them to 30 and empty the exemption tables in `tests/test_tvwy_gaps.py`.
-- Typed `ị̏ ɨ̏` after `T V W Y` overlap the capital (outline distance 0 at every weight), because `ccmp` composes no glyph for them and they keep plain `i` kerning. Add `idotbelow_dblgravecomb` and `istroke_dblgravecomb`, like the other typed `ị ɨ` forms, and kern them like `ȉ` (K21).
-- Kern the tight `ï` and `î` pairs left after the narrow `î`: Thin `Tï` 27.7 and `Pî` 36.6, Bold `Tî` 35.1, and in the italics from Regular to Bold `ïî` 24.8 – 30.1 and `î‘ î“ î1` 30 – 37 (outline distance).
 - Make the wide `J` the default and keep the narrow `J` as the alternate `cv07` (F4, F5): the narrow `J` is the narrowest capital after `I`, its ink 62 % as wide as `L` at Regular. Retire `cv01`, so text that turned it on keeps the wide `J`. Do this after every other Offentlig Sans item above.
 - Extend `cv06` and `zero` to the superscript, subscript and fraction figures and `½ ¼ ⅛ ⅓`, so text with them on never mixes two forms.
 - Study joined `f` and `t` crossbars (`ff ft tt`) as drawn ligatures, and other drawn letter pairs, after 0.9.0. Both crossbars end at the x-height in every master. Render the options before deciding.

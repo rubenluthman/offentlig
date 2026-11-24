@@ -1,8 +1,9 @@
-"""One shape of `î` in every word: the narrow circumflex (`circumflexcomb.narrow`) on `î` and on typed `i`/`ı` + U+0302.
+"""One shape of `î` in every word: the narrow circumflex (`circumflexcomb.narrow`) on `î`, on typed `i`/`ı` + U+0302, on typed `ị̂ ɨ̂`
+and under a second mark (`ı` + U+0302 + acute, grave, hook above or tilde).
 
 At the heavy weights the full circumflex overhangs the stem and came within 22 – 39 units of its neighbors. A contextual helper form
-would show two shapes of `î` in one text, so every `î` uses the narrow accent, drawn at 92 % of the width in the two Black masters
-(Thin and Regular are exact copies of `circumflexcomb`). Stacked marks (`ấ`-style ligatures) keep the wide accent.
+would show two shapes of `î` in one text, so every circumflex on an `i` form uses the narrow accent, drawn at 92 % of the width in the
+two Black masters (Thin and Regular are exact copies of `circumflexcomb`). The circumflex on other letters (`ấ` and the like) is unchanged.
 """
 import pytest
 import uharfbuzz as hb
@@ -46,17 +47,59 @@ def test_typed_i_and_dotless_i_with_a_circumflex_draw_like_the_precomposed_lette
         assert worst <= 1 and [g[0] for g in got] == [g[0] for g in ref[1]], (typed, worst)
 
 
+CIRCUMFLEX_FLOOR = 1100  # the stem of the dotless i ends below this height in every static; the circumflex starts above it
+
+
+def circumflex_shape(weight, italic, text, features=None):
+    """Outline points above CIRCUMFLEX_FLOOR of the shaped text that lie inside the first circumflex's own height range,
+    moved so the leftmost sits at 0, as sorted rounded tuples: the circumflex alone, wherever it is placed."""
+    _, out = outlines(weight, italic, text, features)
+    points = [(x, y) for op, args in out for x, y in args if y > CIRCUMFLEX_FLOOR]
+    ref = outlines(weight, italic, "î", features)[1]
+    top = max(y for op, args in ref for x, y in args)
+    left = min(x for x, y in points if y <= top)
+    return sorted((x - left, y) for x, y in points if y <= top)
+
+
+@pytest.mark.parametrize("features", [None, {"ss03": True}], ids=["default", "ss03"])
 @pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
-def test_a_stacked_circumflex_keeps_the_wide_accent(weight, italic):
+def test_every_i_form_draws_the_circumflex_of_the_precomposed_letter(weight, italic, features):
+    ref = circumflex_shape(weight, italic, "î", features)
+    assert ref
+    for text in ("i\u0302", "\u0131\u0302", "ị\u0302", "ɨ\u0302"):
+        got = circumflex_shape(weight, italic, text, features)
+        # each point has a partner within a unit (sorting by x alone can swap two points that differ by one unit)
+        assert len(got) == len(ref) and all(min(abs(x - a) + abs(y - b) for a, b in ref) <= 2 for x, y in got), text
+
+
+@pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
+def test_a_second_mark_stacks_on_the_narrow_circumflex_of_i(weight, italic):
+    path = static_path(weight, italic)
+    order = TTFont(path).getGlyphOrder()
+    face = hb.Font(hb.Face(path.read_bytes()))
+    for base in ("\u0131", "i"):
+        for mark in ("\u0301", "\u0300", "\u0309", "\u0303"):
+            buf = hb.Buffer()
+            buf.add_str(base + "\u0302" + mark)
+            buf.guess_segment_properties()
+            hb.shape(face, buf, {})
+            names = [order[i.codepoint] for i in buf.glyph_infos]
+            # `i` + U+0302 composes to the precomposed `î`, which has the narrow accent; `ı` takes the narrow mark in `ccmp`
+            first = "icircumflex" if base == "i" else "circumflexcomb.narrow"
+            assert first in names and not any(n.startswith("uni0302") or n.startswith("circumflexcomb_") for n in names), (base, mark, names)
+
+
+@pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
+def test_the_circumflex_of_other_letters_keeps_the_wide_accent(weight, italic):
     path = static_path(weight, italic)
     order = TTFont(path).getGlyphOrder()
     face = hb.Font(hb.Face(path.read_bytes()))
     buf = hb.Buffer()
-    buf.add_str("\u0131\u0302\u0301")
+    buf.add_str("a\u0302\u0301")
     buf.guess_segment_properties()
     hb.shape(face, buf, {})
     names = [order[i.codepoint] for i in buf.glyph_infos]
-    assert "uni03020301" in names and "circumflexcomb.narrow" not in names, names
+    assert "circumflexcomb.narrow" not in names, names
 
 
 @pytest.mark.parametrize("weight,italic", [("Thin", False), ("Thin", True), ("Regular", False), ("Regular", True)], ids=str)
