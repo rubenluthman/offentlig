@@ -82,3 +82,23 @@ def test_italic_u_ogonek_anchor_and_hook_follow_the_upright_in_the_source(master
         assert abs(a[1] - b[1]) <= 1, (name, a, b)
     hook_up, hook_it = up["Uogonek"].contours[0].getBounds(up), it["Uogonek"].contours[0].getBounds(it)
     assert abs(hook_up[1] - hook_it[1]) <= 1 and abs(hook_up[3] - hook_it[3]) <= 1, (hook_up, hook_it)
+
+
+@pytest.mark.parametrize("master", ["Thin", "Regular", "Black", "ThinItalic", "RegularItalic", "BlackItalic"])
+def test_every_u_composite_has_the_ogonek_anchor_of_u(master):
+    """A renderer that does not normalize `Ú` + U+0328 attaches the ogonek at the stored anchor of the composite, so it must be where
+    `U` has it, in x and in y (1 unit). Regular Italic and Black Italic kept the old anchor on 30 of 31 composites: (745.8, 11.8) and (797, 0)."""
+    from pathlib import Path
+    import ufoLib2
+    font = ufoLib2.Font.open(Path(__file__).resolve().parent.parent / "sources" / f"OffentligSans-{master}.ufo")
+    want = {a.name: (a.x, a.y) for a in font["U"].anchors}["ogonek"]
+    checked, wrong = 0, []
+    for glyph in font:
+        if glyph.name == "U" or not glyph.components or glyph.components[0].baseGlyph != "U":
+            continue
+        have = {a.name: (a.x, a.y) for a in glyph.anchors}.get("ogonek")
+        checked += 1
+        if have is None or abs(have[0] - want[0]) > 1 or abs(have[1] - want[1]) > 1:
+            wrong.append((glyph.name, have, want))
+    assert checked >= 25
+    assert wrong == []
