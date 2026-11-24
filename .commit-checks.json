@@ -1,8 +1,12 @@
 {
-  "version": "v0.4.0",
-  "commit": "4e3b42c4db464db4bf185cc11a8e438c7ce14453",
+  "version": "v0.4.1",
+  "commit": "2f14dafdd24780abe45293f87d532b9de6abd34d",
   "source": "https://github.com/rubenluthman/commit-checks.git",
   "visibility": "public",
+  "docs_only": {
+    "paths": ["*.md"],
+    "except": ["ARCHITECTURE.md", "CHANGELOG.md"]
+  },
   "vale": {
     "globs": ["*.md", "*.txt"],
     "exclude": ["LICENSE", "AUTHORS.txt", "CONTRIBUTORS.txt"]

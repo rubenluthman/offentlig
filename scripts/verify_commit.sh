@@ -7,9 +7,14 @@ fail=0
 # Only the test step is heavy: it queues on the machine-wide lock where `heavy-run` is installed (not in CI).
 heavy() { if command -v heavy-run >/dev/null 2>&1; then heavy-run "$@"; else "$@"; fi; }
 
+# Docs-only changes skip the build checks and the tests. The command prints its own reason.
+if scripts/commit-checks docs-only; then DOCS_ONLY=1; else DOCS_ONLY=0; fi
+
 echo "== tests"
 built=fonts/OffentligSans/ttf/OffentligSans-Regular.ttf
-if [ ! -f "$built" ]; then
+if [ "$DOCS_ONLY" = 1 ]; then
+  echo "Skipped (fonts/ build checks and pytest): docs-only change."
+elif [ ! -f "$built" ]; then
   echo "fonts/ missing: run 'make build' first" >&2
   fail=1
 elif [ -n "$(git ls-files -z --cached --others --exclude-standard sources | xargs -0 sh -c 'find "$@" -prune -newer "$0" 2>/dev/null' "$built" | head -n 1)" ]; then

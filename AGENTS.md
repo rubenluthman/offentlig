@@ -9,6 +9,7 @@ Open-source font superfamily. Offentlig Sans is a renamed fork of Public Sans (u
 - `make test` runs `pytest -n 3 --dist worksteal` locally (`PYTEST_JOBS=auto` in CI) against the built fonts. Build first. A worker peaks between 0.8 and 1.2 GB; four workers were slower and swapped heavily, so the default stays three (see `CONTRIBUTING.md`).
 - `make qa` runs Fontspector (`venv/bin/fontspector`, universal and opentype profiles). `make proof` runs Diffenator2.
 - `make verify` is the pre-commit check (`scripts/verify_commit.sh`).
+- Docs-only fast path: when every changed file is a doc (`docs_only` in `.commit-checks.json`), `make verify` skips the build checks and the tests. Every doc a test or script reads (`ARCHITECTURE.md`, `CHANGELOG.md`) must sit under `docs_only.except`.
 - Run `scripts/install-hooks.sh` once after cloning (needs `gitleaks`). Generic commit checks (secrets, home paths, emails, private names, conflict markers) come from the shared commit-checks package at the release pinned in `.commit-checks.json`; CI runs them too.
 
 ## Boundaries
