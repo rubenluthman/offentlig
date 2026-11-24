@@ -8,7 +8,6 @@
 
 - Follow the three fixes this fork carries that Public Sans has not merged yet: uswds/public-sans PRs #396 (italic `å`), #397 (subscript digits) and #398 (Thin kerning of space and dashes). Checked at each release (see the release steps in [CONTRIBUTING.md](CONTRIBUTING.md#releases)).
 - Some pairs of `T V W Y` before `ĩ ī ĭ ǐ`, and of `W Y` before `ȁ ȅ ȍ ȕ`, are closer than 30 units by outline distance while their row gaps pass, mostly in the heavy italic and before `ǐ` (Black Italic `Yī` 23). Bring them to 30 and empty the exemption tables in `tests/test_tvwy_gaps.py`.
-- Make the ring of `ǻ Ǻ` (`_ringacute`) round in Thin to Regular Italic, as the ring of `å` now is (D5): its italic outer contour is 4 – 7 % narrower than the upright one there, and the same at Black.
 - Typed `ị̏ ɨ̏` after `T V W Y` overlap the capital (outline distance 0 at every weight), because `ccmp` composes no glyph for them and they keep plain `i` kerning. Add `idotbelow_dblgravecomb` and `istroke_dblgravecomb`, like the other typed `ị ɨ` forms, and kern them like `ȉ` (K21).
 - Make the wide `J` the default and retire `cv01` with the narrow `J` (F4, F5): the narrow `J` is the narrowest capital after `I`, its ink 62 % as wide as `L` at Regular. Do this after every other Offentlig Sans item above.
 - Extend `cv06` and `zero` to the superscript, subscript and fraction figures and `½ ¼ ⅛ ⅓`, so text with them on never mixes two forms.

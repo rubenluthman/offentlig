@@ -101,6 +101,23 @@ def source_ring_acute(weight, italic):
     return bounds
 
 
+def ring_with_acute_ratio(weight, italic):
+    """Width to height of the ring of `_ringacute` in a source master. The helper holds the outer contour with the acute, whose top is
+    not the ring's, so the height is the hole height plus twice the stroke measured across the ring."""
+    hole, outer = source_ring_acute(weight, italic)
+    width = outer[2] - outer[0]
+    return width / ((hole[3] - hole[1]) + (width - (hole[2] - hole[0])))
+
+
+@pytest.mark.parametrize("weight", ["Thin", "Regular"])
+def test_italic_ring_with_acute_is_as_round_as_the_upright_one(weight):
+    """The ring of `ǻ Ǻ` is the upright circle, unsheared, in Thin Italic and Regular Italic as the ring of `å` is: its ratio is within
+    0.01 of the upright master's and above 0.97 (0.93 - 0.96 on this measure before 0.9.0)."""
+    italic, upright = ring_with_acute_ratio(weight, True), ring_with_acute_ratio(weight, False)
+    assert italic > 0.97
+    assert abs(italic - upright) <= 0.01
+
+
 @pytest.mark.parametrize("italic", [False, True], ids=["roman", "italic"])
 @pytest.mark.parametrize("weight", MASTER_WEIGHTS)
 def test_ring_with_acute_matches_the_plain_ring(weight, italic):
