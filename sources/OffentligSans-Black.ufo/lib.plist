@@ -924,6 +924,7 @@
       <string>hungarumlautcomb</string>
       <string>caroncomb.alt</string>
       <string>circumflexcomb</string>
+      <string>circumflexcomb.narrow</string>
       <string>caroncomb</string>
       <string>brevecomb</string>
       <string>ringcomb</string>
@@ -2311,6 +2312,8 @@
       <key>chook</key>
       <string>base</string>
       <key>circumflexcomb</key>
+      <string>mark</string>
+      <key>circumflexcomb.narrow</key>
       <string>mark</string>
       <key>circumflexcomb_acutecomb</key>
       <string>mark</string>

@@ -76,6 +76,10 @@ lookup ccmp_Other_2 {
 	# when the base has a mark below (`ị į ɨ ṛ ṟ ŗ`; `i` has become `ı` or one of these bases by now).
 	sub [idotless r idotbelow.dotless istroke.dotless iogonek.dotless rdotbelow rlinebelow rcommaaccent] dblgravecomb' by dblgravecomb.narrow;
 	sub [idotless r] @CombiningNonTopAccents dblgravecomb' by dblgravecomb.narrow;
+	# One shape of `î` in every word: the typed `i`/`ı` + U+0302 takes the narrow circumflex of the precomposed `î`.
+	# The stacked marks (`ấ`-style ligatures of ccmp_latn_1) keep the wide one.
+	ignore sub idotless circumflexcomb' [acutecomb gravecomb hookabovecomb tildecomb];
+	sub idotless circumflexcomb' by circumflexcomb.narrow;
 } ccmp_Other_2;
 
 lookup ccmp_latn_1 {

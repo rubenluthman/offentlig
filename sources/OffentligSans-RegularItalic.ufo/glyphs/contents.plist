@@ -1254,6 +1254,8 @@
     <string>circumflex.glif</string>
     <key>circumflexcomb</key>
     <string>circumflexcomb.glif</string>
+    <key>circumflexcomb.narrow</key>
+    <string>circumflexcomb.narrow.glif</string>
     <key>circumflexcomb_acutecomb</key>
     <string>circumflexcomb_acutecomb.glif</string>
     <key>circumflexcomb_gravecomb</key>
