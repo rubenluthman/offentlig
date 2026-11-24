@@ -13,7 +13,7 @@
 - Make the wide `J` the default and keep the narrow `J` as the alternate `cv07` (F4, F5): the narrow `J` is the narrowest capital after `I`, its ink 62 % as wide as `L` at Regular. Retire `cv01`, so text that turned it on keeps the wide `J`. Do this after every other Offentlig Sans item above.
 - Extend `cv06` and `zero` to the superscript, subscript and fraction figures and `½ ¼ ⅛ ⅓`, so text with them on never mixes two forms.
 - Study joined `f` and `t` crossbars (`ff ft tt`) as drawn ligatures, and other drawn letter pairs, after 0.9.0. Both crossbars end at the x-height in every master. Render the options before deciding.
-- Change the version scheme before any 0.10.0 release (M8): `versionMinor` 1000 would give the font revision 0.1000, lower than 0.900. Add a test that the revision only increases.
+- No 0.10.0 (M8): `versionMinor` 1000 would give the font revision 0.1000, lower than 0.900. After 0.9.0, releases are 0.9.x patches that leave layout unchanged; changes that move text, including joined crossbars if chosen, wait for 1.0.0, after a final review of Offentlig Sans. Before 1.0.0, set the revision rule for 1.x and later (the current one breaks again at 1.10.0) and add a test that the revision only increases.
 
 <!-- vale HouseStyle.Headings = NO -->
 ### Offentlig Serif
