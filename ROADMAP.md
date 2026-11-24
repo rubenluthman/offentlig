@@ -15,6 +15,8 @@
 - Study joined `f` and `t` crossbars (`ff ft tt`) as drawn ligatures, and other drawn letter pairs, after 0.9.0. Both crossbars end at the x-height in every master. Render the options before deciding.
 - No 0.10.0 (M8): `versionMinor` 1000 would give the font revision 0.1000, lower than 0.900. After 0.9.0, releases are 0.9.x patches that leave layout unchanged; changes that move text, including joined crossbars if chosen, wait for 1.0.0, after a final review of Offentlig Sans. Before 1.0.0, set the revision rule for 1.x and later (the current one breaks again at 1.10.0) and add a test that the revision only increases.
 
+- Lower the default `PYTEST_JOBS` (3): each worker grows to 1.4 – 1.6 GB, so a full run needs about 4.5 GB and swaps when other work is in memory. Measure each worker's peak and pick the default from that.
+
 <!-- vale HouseStyle.Headings = NO -->
 ### Offentlig Serif
 <!-- vale HouseStyle.Headings = YES -->
