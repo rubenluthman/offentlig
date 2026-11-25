@@ -539,6 +539,7 @@
       <string>idotbelow_dblgravecomb</string>
       <string>idotbelow_dblgravecomb.ss03</string>
       <string>istroke_dblgravecomb</string>
+      <string>iogonek_dblgravecomb</string>
     </array>
     <key>public.kern1.k</key>
     <array>
@@ -1175,6 +1176,15 @@
       <string>ldotbelow.ss02.ss03</string>
       <string>lslash.ss02</string>
       <string>dcroat</string>
+      <string>iogonek_acutecomb</string>
+      <string>iogonek_gravecomb</string>
+      <string>iogonek_circumflexcomb</string>
+      <string>iogonek_macroncomb</string>
+      <string>iogonek_tildecomb</string>
+      <string>iogonek_brevecomb</string>
+      <string>iogonek_dieresiscomb</string>
+      <string>iogonek_caroncomb</string>
+      <string>iogonek_dieresiscomb.ss03</string>
     </array>
     <key>public.kern1.uhorn</key>
     <array>
@@ -1949,6 +1959,7 @@
       <string>idotbelow_dblgravecomb</string>
       <string>idotbelow_dblgravecomb.ss03</string>
       <string>istroke_dblgravecomb</string>
+      <string>iogonek_dblgravecomb</string>
     </array>
     <key>public.kern2.j</key>
     <array>
@@ -2099,6 +2110,15 @@
       <string>lcommaaccent.ss02.ss03</string>
       <string>ldotbelow.ss02.ss03</string>
       <string>lslash.ss02</string>
+      <string>iogonek_acutecomb</string>
+      <string>iogonek_gravecomb</string>
+      <string>iogonek_circumflexcomb</string>
+      <string>iogonek_macroncomb</string>
+      <string>iogonek_tildecomb</string>
+      <string>iogonek_brevecomb</string>
+      <string>iogonek_dieresiscomb</string>
+      <string>iogonek_caroncomb</string>
+      <string>iogonek_dieresiscomb.ss03</string>
     </array>
     <key>public.kern2.nine</key>
     <array>

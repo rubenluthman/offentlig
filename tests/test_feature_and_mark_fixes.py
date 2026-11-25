@@ -108,15 +108,16 @@ def test_soft_dotted_letters_lose_the_dot_under_a_top_mark(weight, italic, base,
     out = shape(weight, italic, base + mark)
     # Either a dotless form, or a precomposed letter without a dot (ì ǰ ĵ and so on).
     plain = shape(weight, italic, base)[0][0]
-    assert "dotless" in out[0][0] or out[0][0] == "uni0237" or out[0][0].startswith(("idotbelow_", "istroke_")) or (len(out) == 1 and out[0][0] != plain), out
-    if base == "į":
+    assert "dotless" in out[0][0] or out[0][0] == "uni0237" or out[0][0].startswith(("idotbelow_", "istroke_", "iogonek_")) or (len(out) == 1 and out[0][0] != plain), out
+    if base == "į" and "dotless" in out[0][0]:
         assert out[0][1] == shape(weight, italic, base)[0][1], "the dotless form keeps the advance"
 
 
 @ALL
 def test_iogonek_keeps_its_dot_alone_and_with_a_typed_dot_above(weight, italic):
     assert names(weight, italic, "į") == ["iogonek"]
-    assert names(weight, italic, "į́") == ["iogonek.dotless", "acutecomb"]
+    # A typed top mark shapes with the base to one glyph (`iogonek_acutecomb`), like ị and ɨ.
+    assert names(weight, italic, "į́") == ["iogonek_acutecomb"]
     # Lithuanian writes U+0307 when the dot is wanted under the accent.
     assert names(weight, italic, "į̇́")[0] == "iogonek.dotless"
 

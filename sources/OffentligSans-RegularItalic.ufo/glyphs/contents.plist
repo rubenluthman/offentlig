@@ -2556,5 +2556,25 @@
     <string>zerosuperior.slash.glif</string>
     <key>zlinebelow</key>
     <string>zlinebelow.glif</string>
+    <key>iogonek_acutecomb</key>
+    <string>iogonek_acutecomb.glif</string>
+    <key>iogonek_gravecomb</key>
+    <string>iogonek_gravecomb.glif</string>
+    <key>iogonek_circumflexcomb</key>
+    <string>iogonek_circumflexcomb.glif</string>
+    <key>iogonek_macroncomb</key>
+    <string>iogonek_macroncomb.glif</string>
+    <key>iogonek_tildecomb</key>
+    <string>iogonek_tildecomb.glif</string>
+    <key>iogonek_brevecomb</key>
+    <string>iogonek_brevecomb.glif</string>
+    <key>iogonek_dieresiscomb</key>
+    <string>iogonek_dieresiscomb.glif</string>
+    <key>iogonek_caroncomb</key>
+    <string>iogonek_caroncomb.glif</string>
+    <key>iogonek_dblgravecomb</key>
+    <string>iogonek_dblgravecomb.glif</string>
+    <key>iogonek_dieresiscomb.ss03</key>
+    <string>iogonek_dieresiscomb.ss03.glif</string>
   </dict>
 </plist>

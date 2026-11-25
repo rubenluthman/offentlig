@@ -71,7 +71,7 @@ def static_floor(weight, italic):
 
 def row_texts(path):
     letters = [chr(c) for c in sorted(TTFont(path).getBestCmap()) if unicodedata.category(chr(c))[0] == "L"]
-    return letters + [base + mark for base in "ịɨ" for mark in TOP_MARKS + "̏"]
+    return letters + [base + mark for base in "ịɨį" for mark in TOP_MARKS + "̏"]
 
 
 def dilate(rows, steps):
@@ -182,6 +182,6 @@ def test_the_floor_follows_the_weight(weight):
 @pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
 def test_the_typed_double_grave_forms_shape_as_one_glyph(weight, italic):
     s = shaper(weight, italic)
-    for base in "ịɨ":
+    for base in "ịɨį":
         assert len(s.shape(base + "̏")) == 1, base
         assert len(s.shape(base + "̏", {"ss03": True})) == 1, base

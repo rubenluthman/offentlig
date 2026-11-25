@@ -32,7 +32,7 @@ def cmap_characters(weight, italic):
 def encoded_texts(weight, italic):
     """Every encoded letter, digit, punctuation mark and symbol, then the typed `ị` and `ɨ` with a top mark."""
     chars = [chr(c) for c in cmap_characters(weight, italic) if c > 32 and unicodedata.category(chr(c))[0] in "LNPS"]
-    return chars + [base + mark for base in "ịɨ" for mark in TOP_MARKS]
+    return chars + [base + mark for base in "ịɨį" for mark in TOP_MARKS]
 
 
 def diaeresis_twin(text):
@@ -48,7 +48,7 @@ def is_accented(text):
 
 def base_of(text):
     if len(text) == 2:
-        return "i" if text[0] == "ị" else "ɨ"
+        return "i" if text[0] == "ị" else ("į" if text[0] == "į" else "ɨ")
     return unicodedata.normalize("NFD", text)[0]
 
 

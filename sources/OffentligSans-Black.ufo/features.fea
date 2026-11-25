@@ -65,6 +65,15 @@ lookup ccmp_Other_0 {
 	sub idotbelow dblgravecomb by idotbelow_dblgravecomb;
 	sub istroke caroncomb by istroke_caroncomb;
 	sub istroke dblgravecomb by istroke_dblgravecomb;
+	sub iogonek acutecomb by iogonek_acutecomb;
+	sub iogonek gravecomb by iogonek_gravecomb;
+	sub iogonek circumflexcomb by iogonek_circumflexcomb;
+	sub iogonek macroncomb by iogonek_macroncomb;
+	sub iogonek tildecomb by iogonek_tildecomb;
+	sub iogonek brevecomb by iogonek_brevecomb;
+	sub iogonek dieresiscomb by iogonek_dieresiscomb;
+	sub iogonek caroncomb by iogonek_caroncomb;
+	sub iogonek dblgravecomb by iogonek_dblgravecomb;
 } ccmp_Other_0;
 
 lookup ccmp_Other_1 {
@@ -720,6 +729,7 @@ sub istroke_dieresiscomb by istroke_dieresiscomb.ss03;
 sub idotlessdieresisacute by idotlessdieresisacute.ss03;
 sub ij by ij.ss03;
 sub iogonek by iogonek.ss03;
+sub iogonek_dieresiscomb by iogonek_dieresiscomb.ss03;
 sub istroke by istroke.ss03;
 sub j by j.ss03;
 sub kcommaaccent by kcommaaccent.ss03;

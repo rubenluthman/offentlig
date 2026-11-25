@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="iogonek_macroncomb" format="2">
+  <advance width="569.3125"/>
+  <anchor x="355.125" y="23.25" name="ogonek"/>
+  <anchor x="289.90625" y="1334.46875" name="top"/>
+  <anchor x="288.50625" y="0" name="bottom"/>
+  <outline>
+    <component base="idotless" xOffset="40.5625"/>
+    <component base="macroncomb" xOffset="-35.28125"/>
+    <component base="ogonekcomb" xOffset="11.5" yOffset="0.625"/>
+  </outline>
+</glyph>

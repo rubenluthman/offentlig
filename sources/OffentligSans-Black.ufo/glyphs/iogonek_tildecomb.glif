@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="iogonek_tildecomb" format="2">
+  <advance width="790"/>
+  <anchor x="530" y="18" name="ogonek"/>
+  <anchor x="388" y="1448" name="top"/>
+  <anchor x="382" y="0" name="bottom"/>
+  <outline>
+    <component base="idotless" xOffset="96"/>
+    <component base="tildecomb" xOffset="-80"/>
+    <component base="ogonekcomb" xOffset="84" yOffset="-2"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>idotless</string>
+        </dict>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>1</integer>
+          <key>name</key>
+          <string>tildecomb</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

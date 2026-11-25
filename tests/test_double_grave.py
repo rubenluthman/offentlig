@@ -78,8 +78,8 @@ def test_the_double_grave_on_a_base_with_a_mark_below_is_the_narrow_one(weight, 
         buf.guess_segment_properties()
         hb.shape(face, buf, {})
         names = [order[i.codepoint] for i in buf.glyph_infos]
-        # `ị` and `ɨ` shape to one glyph that has the narrow mark drawn in (`idotbelow_dblgravecomb`, `istroke_dblgravecomb`)
-        if "dblgravecomb.narrow" not in names and not any(n.startswith(("idotbelow_dblgravecomb", "istroke_dblgravecomb")) for n in names):
+        # `ị`, `ɨ` and `į` shape to one glyph that has the narrow mark drawn in (`idotbelow_dblgravecomb`, `istroke_dblgravecomb`, `iogonek_dblgravecomb`)
+        if "dblgravecomb.narrow" not in names and not any(n.startswith(("idotbelow_dblgravecomb", "istroke_dblgravecomb", "iogonek_dblgravecomb")) for n in names):
             wide.append(base)
     assert wide == []
 

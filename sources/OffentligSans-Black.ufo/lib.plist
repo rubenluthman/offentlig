@@ -435,22 +435,32 @@
       <string>istroke_caroncomb</string>
       <string>idotlessdieresisacute</string>
       <string>icaron</string>
+      <string>iogonek_caroncomb</string>
       <string>iacute</string>
+      <string>iogonek_acutecomb</string>
       <string>ibreve</string>
+      <string>iogonek_brevecomb</string>
       <string>icircumflex</string>
+      <string>iogonek_circumflexcomb</string>
       <string>idblgrave</string>
+      <string>iogonek_dblgravecomb</string>
       <string>idotbelow_dblgravecomb</string>
       <string>idotbelow_dblgravecomb.ss03</string>
       <string>istroke_dblgravecomb</string>
       <string>idieresis</string>
+      <string>iogonek_dieresiscomb</string>
       <string>idotaccent</string>
       <string>idotbelow</string>
       <string>igrave</string>
+      <string>iogonek_gravecomb</string>
       <string>ihookabove</string>
       <string>iinvertedbreve</string>
       <string>imacron</string>
+      <string>iogonek_macroncomb</string>
       <string>iogonek</string>
+      <string>iogonek_dieresiscomb.ss03</string>
       <string>itilde</string>
+      <string>iogonek_tildecomb</string>
       <string>j</string>
       <string>jdotless</string>
       <string>jdotlesscaron</string>
@@ -3062,6 +3072,26 @@
       <key>zdotbelow.ss03</key>
       <string>base</string>
       <key>zlinebelow</key>
+      <string>base</string>
+      <key>iogonek_acutecomb</key>
+      <string>base</string>
+      <key>iogonek_gravecomb</key>
+      <string>base</string>
+      <key>iogonek_circumflexcomb</key>
+      <string>base</string>
+      <key>iogonek_macroncomb</key>
+      <string>base</string>
+      <key>iogonek_tildecomb</key>
+      <string>base</string>
+      <key>iogonek_brevecomb</key>
+      <string>base</string>
+      <key>iogonek_dieresiscomb</key>
+      <string>base</string>
+      <key>iogonek_caroncomb</key>
+      <string>base</string>
+      <key>iogonek_dblgravecomb</key>
+      <string>base</string>
+      <key>iogonek_dieresiscomb.ss03</key>
       <string>base</string>
     </dict>
     <key>public.postscriptNames</key>

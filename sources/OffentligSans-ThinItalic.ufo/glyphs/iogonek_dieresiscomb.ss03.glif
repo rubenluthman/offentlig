@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="iogonek_dieresiscomb.ss03" format="2">
+  <advance width="449"/>
+  <anchor x="176" y="26" name="ogonek"/>
+  <anchor x="341" y="1361" name="top"/>
+  <anchor x="151" y="0" name="bottom"/>
+  <outline>
+    <component base="idotless"/>
+    <component base="dieresiscomb.ss03" xOffset="57"/>
+    <component base="ogonekcomb" xOffset="-30" yOffset="2"/>
+  </outline>
+</glyph>

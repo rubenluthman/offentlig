@@ -111,7 +111,7 @@ def test_mark_attaches_and_clears_base_and_next_letter(weight, italic, seq):
     without = shape(weight, italic, seq, {"mark": False, "mkmk": False})
     if len(with_mark) == 1:
         # ị and ɨ with ´ ` ¯ ~ ˆ ˘ ¨ ˇ shape as one glyph with the accent drawn in (like í ì ī ĩ î); the spacing test covers them
-        assert seq[0] in "ịɨ" and seq[1] != "\u0323", with_mark
+        assert seq[0] in "ịɨį" and seq[1] != "\u0323", with_mark
         return
     assert len(with_mark) == len(without) == 2, with_mark
     assert with_mark[1][2:] != without[1][2:], f"{seq!r}: the mark is not positioned by GPOS"
