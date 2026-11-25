@@ -6,8 +6,10 @@
 ### Offentlig Sans
 <!-- vale HouseStyle.Headings = YES -->
 
+- Give `î` the full circumflex again and kern its tight pairs instead (D39): a narrower mark on `î` alone sets it apart from `â ê ô û`, and kerning opens those pairs by at most 30 units (Bold `Tî`).
+- Remove the shorter-arm `T Y` capitals from `calt` and kern those pairs instead (K20): a contextual swap can give one capital two shapes in the same word, and none of the compared sans families swaps a letter by context.
+- Add the principle for changes to the look (P14): each letter keeps one shape in all text; a change of character covers a whole class of marks or a letter together with its relatives; a collision is solved by spacing first, and a mark takes a narrower form only where it overhangs its own letter by more than kerning can absorb (as the double grave of D37).
 - Follow the three fixes this fork carries that Public Sans has not merged yet: uswds/public-sans PRs #396 (italic `å`), #397 (subscript digits) and #398 (Thin kerning of space and dashes). Checked at each release (see the release steps in [CONTRIBUTING.md](CONTRIBUTING.md#releases)).
-- Make the wide `J` the default and keep the narrow `J` as the alternate `cv07` (F4, F5): the narrow `J` is the narrowest capital after `I`, its ink 62 % as wide as `L` at Regular. Retire `cv01`, so text that turned it on keeps the wide `J`. Do this after every other Offentlig Sans item above.
 - Extend `cv06` and `zero` to the superscript, subscript and fraction figures and `½ ¼ ⅛ ⅓`, so text with them on never mixes two forms.
 - Study joined `f` and `t` crossbars (`ff ft tt`) as drawn ligatures, and other drawn letter pairs, after 0.9.0. Both crossbars end at the x-height in every master. Render the options before deciding.
 - No 0.10.0 (M8): `versionMinor` 1000 would give the font revision 0.1000, lower than 0.900. After 0.9.0, releases are 0.9.x patches that leave layout unchanged; changes that move text, including joined crossbars if chosen, wait for 1.0.0, after a final review of Offentlig Sans. Before 1.0.0, set the revision rule for 1.x and later (the current one breaks again at 1.10.0) and add a test that the revision only increases.
