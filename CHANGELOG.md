@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Changed the ogonek of `ą ę į ų Ą Ę Į Ų ǫ Ǫ`: it now ends at the `p` descender (-330 at `ą` in every weight, 75 – 95 units higher than before), so it no longer runs into the ring of `Å` on the next line.
+
 ## [0.8.0] - 2026-11-23
 
 - Added case forms for the guillemets `« » ‹ ›`, `¡ ¿` and the slash `/`: in `case` they rise to the capitals for all-capital text. Without `case` they stay as they were.

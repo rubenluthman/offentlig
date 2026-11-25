@@ -1,14 +1,14 @@
-"""The ogonek reaches the depth of the deepest comparison fonts, fits in `winDescent`, and the `ę` hook ends level with the arm."""
+"""The ogonek ends at the `p` descender, fits in `winDescent`, and the `ę` hook ends level with the arm."""
 import pytest
 
 from conftest import WEIGHTS
 
 OGONEK_LETTERS = "ąęįųĄĘĮŲǫǭǪǬ̨˛"
 
-# Lowest point of the ogonek, in units of 2000 per em. Thin, Regular and Black are drawn at -405, -415 and -425 on `ą`;
-# letters with the lowest join (`Į Ų`) and the weights between them add a few units.
-MIN_DEPTH = 395
-MAX_DEPTH = 460
+# The ogonek ends at the `p` descender (-322) so it clears the ring of `Å` on the next line at the default line spacing: `ą` is drawn at
+# -330 in every master. Letters with a lower join (`Į Ų`) and the weights between the masters differ by a few units, and `ę`, whose
+# hook is drawn shorter, ends up to 22 units above the descender.
+DESCENDER_REACH = 30
 
 # How far the hook of `ę` may end beyond the arm's end, and how far short of it, on-curve points only.
 HOOK_OVERSHOOT = 12
@@ -22,20 +22,19 @@ def points(font, name):
 
 @pytest.mark.parametrize("char", list(OGONEK_LETTERS))
 def test_ogonek_depth(static_ttf, char):
-    """Deep enough to read as an ogonek next to the descenders, and inside `winDescent` so line height clips nothing."""
-    name = static_ttf.getBestCmap()[ord(char)]
-    low = -min(y for _, y in points(static_ttf, name))
-    assert MIN_DEPTH <= low <= MAX_DEPTH, f"{char}: {low}"
+    """Ends at the `p` descender, within 30 units, and inside `winDescent` so line height clips nothing."""
+    cmap = static_ttf.getBestCmap()
+    low = -min(y for _, y in points(static_ttf, cmap[ord(char)]))
+    p_low = -min(y for _, y in points(static_ttf, cmap[ord("p")]))
+    assert abs(low - p_low) <= DESCENDER_REACH, f"{char}: {low} against p {p_low}"
     assert low <= static_ttf["OS/2"].usWinDescent
 
 
-def test_ogonek_reaches_below_the_descenders(static_ttf):
-    """The ogonek is longer than `j`'s hook, not a stub beside it."""
+def test_ogonek_ends_at_the_p_descender(static_ttf):
+    """`ą` ends within 12 units of -330, 8 below the `p` descender (-322), so its hook does not hang into the ring of `Å` below."""
     cmap = static_ttf.getBestCmap()
-    j_low = -min(y for _, y in points(static_ttf, cmap[ord("j")]))
-    for char in "ąę":
-        low = -min(y for _, y in points(static_ttf, cmap[ord(char)]))
-        assert low > j_low + 30, char
+    low = min(y for _, y in points(static_ttf, cmap[ord("ą")]))
+    assert -330 - 12 <= low <= -330 + 12, low
 
 
 def test_e_ogonek_hook_ends_at_the_arm(static_ttf):

@@ -9,26 +9,26 @@
   <anchor x="720.28125" y="23.9375" name="_ogonek"/>
   <outline>
     <contour>
-      <point x="600.84375" y="-416.8125" type="curve" smooth="yes"/>
-      <point x="679.309659" y="-416.8125"/>
-      <point x="739.548295" y="-395.375"/>
-      <point x="766.90625" y="-375.9375" type="curve"/>
-      <point x="766.90625" y="-275.40105" type="line"/>
-      <point x="743.741477" y="-295.0625"/>
-      <point x="701.349432" y="-315.75"/>
-      <point x="643.53125" y="-315.75" type="curve" smooth="yes"/>
-      <point x="578.65625" y="-315.75"/>
-      <point x="551.46875" y="-291.1875"/>
-      <point x="551.46875" y="-216.814694" type="curve" smooth="yes"/>
-      <point x="551.46875" y="-111.581862"/>
-      <point x="606.46875" y="-47.8125"/>
+      <point x="600.84375" y="-331.3125" type="curve" smooth="yes"/>
+      <point x="679.309659" y="-331.3125"/>
+      <point x="739.548295" y="-309.875"/>
+      <point x="766.90625" y="-290.4375" type="curve"/>
+      <point x="766.90625" y="-202.131798" type="line"/>
+      <point x="743.741477" y="-215.833384"/>
+      <point x="701.349432" y="-230.25"/>
+      <point x="643.53125" y="-230.25" type="curve" smooth="yes"/>
+      <point x="578.65625" y="-230.25"/>
+      <point x="551.46875" y="-213.132991"/>
+      <point x="551.46875" y="-161.30439" type="curve" smooth="yes"/>
+      <point x="551.46875" y="-87.970187"/>
+      <point x="606.46875" y="-43.530869"/>
       <point x="741.96875" y="8.0625" type="curve"/>
       <point x="607.21875" y="19.875" type="line"/>
       <point x="447.34375" y="-30.1875"/>
-      <point x="402.90625" y="-114.516239"/>
-      <point x="402.90625" y="-242.616975" type="curve" smooth="yes"/>
-      <point x="402.90625" y="-356.25"/>
-      <point x="470.65625" y="-416.8125"/>
+      <point x="402.90625" y="-90.015083"/>
+      <point x="402.90625" y="-179.285373" type="curve" smooth="yes"/>
+      <point x="402.90625" y="-270.75"/>
+      <point x="470.65625" y="-331.3125"/>
     </contour>
     <component base="o"/>
   </outline>

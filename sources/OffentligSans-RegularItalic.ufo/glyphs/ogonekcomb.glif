@@ -4,26 +4,26 @@
   <anchor x="259.5" y="22.625" name="_ogonek"/>
   <outline>
     <contour>
-      <point x="95.28125" y="-418.125" type="curve" smooth="yes"/>
-      <point x="170.3125" y="-418.125"/>
-      <point x="231.710227" y="-396.6875"/>
-      <point x="260.193182" y="-377.25" type="curve"/>
-      <point x="272.3125" y="-277.050951" type="line"/>
-      <point x="248.022727" y="-296.375"/>
-      <point x="206.142045" y="-317.0625"/>
-      <point x="150.8125" y="-317.0625" type="curve" smooth="yes"/>
-      <point x="89.875" y="-317.0625"/>
-      <point x="69.3125" y="-292.5"/>
-      <point x="74.625" y="-218.553112" type="curve" smooth="yes"/>
-      <point x="85.25" y="-113.479273"/>
-      <point x="142.9375" y="-49.125"/>
+      <point x="95.28125" y="-332.625" type="curve" smooth="yes"/>
+      <point x="170.3125" y="-332.625"/>
+      <point x="231.710227" y="-311.1875"/>
+      <point x="260.193182" y="-291.75" type="curve"/>
+      <point x="272.3125" y="-203.679424" type="line"/>
+      <point x="248.022727" y="-217.145884"/>
+      <point x="206.142045" y="-231.5625"/>
+      <point x="150.8125" y="-231.5625" type="curve" smooth="yes"/>
+      <point x="89.875" y="-231.5625"/>
+      <point x="69.3125" y="-214.445491"/>
+      <point x="74.625" y="-162.913702" type="curve" smooth="yes"/>
+      <point x="85.25" y="-89.690298"/>
+      <point x="142.9375" y="-44.843369"/>
       <point x="279.875" y="6.75" type="curve"/>
       <point x="149.0625" y="18.5625" type="line"/>
       <point x="-7.625" y="-31.5"/>
-      <point x="-59.4375" y="-116.409217"/>
-      <point x="-70.75" y="-244.316409" type="curve" smooth="yes"/>
-      <point x="-84.8125" y="-357.5625"/>
-      <point x="-29" y="-418.125"/>
+      <point x="-59.4375" y="-91.732104"/>
+      <point x="-70.75" y="-180.867517" type="curve" smooth="yes"/>
+      <point x="-84.8125" y="-272.0625"/>
+      <point x="-29" y="-332.625"/>
     </contour>
   </outline>
   <lib>

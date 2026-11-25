@@ -22777,6 +22777,10 @@
       <integer>0</integer>
       <key>idotbelow_dieresiscomb</key>
       <integer>0</integer>
+      <key>iogonek</key>
+      <integer>40</integer>
+      <key>iogonek.ss03</key>
+      <integer>40</integer>
       <key>istroke_dieresiscomb.ss03</key>
       <integer>0</integer>
       <key>istroke_dieresiscomb</key>
@@ -22922,11 +22926,11 @@
       <key>imacron</key>
       <integer>23</integer>
       <key>iogonek.ss03</key>
-      <integer>27</integer>
+      <integer>25</integer>
       <key>iogonek.dotless</key>
-      <integer>0</integer>
+      <integer>18</integer>
       <key>iogonek</key>
-      <integer>27</integer>
+      <integer>25</integer>
       <key>istroke_brevecomb</key>
       <integer>29</integer>
       <key>istroke_caroncomb</key>
@@ -23035,7 +23039,7 @@
       <key>iogonek.ss03</key>
       <real>12.0</real>
       <key>iogonek.dotless</key>
-      <integer>0</integer>
+      <integer>28</integer>
       <key>iogonek</key>
       <real>12.0</real>
       <key>istroke_brevecomb</key>
@@ -23166,11 +23170,11 @@
       <key>imacron</key>
       <integer>23</integer>
       <key>iogonek.ss03</key>
-      <integer>25</integer>
+      <integer>23</integer>
       <key>iogonek.dotless</key>
-      <integer>0</integer>
+      <integer>16</integer>
       <key>iogonek</key>
-      <integer>25</integer>
+      <integer>23</integer>
       <key>istroke_brevecomb</key>
       <integer>29</integer>
       <key>istroke_caroncomb</key>
@@ -23277,11 +23281,11 @@
       <key>imacron</key>
       <integer>0</integer>
       <key>iogonek.ss03</key>
-      <integer>0</integer>
+      <integer>33</integer>
       <key>iogonek.dotless</key>
-      <integer>0</integer>
+      <integer>26</integer>
       <key>iogonek</key>
-      <integer>0</integer>
+      <integer>33</integer>
       <key>istroke_brevecomb</key>
       <integer>1</integer>
       <key>istroke_caroncomb</key>
@@ -30451,9 +30455,7 @@
       <key>braceright.case</key>
       <integer>-20</integer>
       <key>florin</key>
-      <integer>179</integer>
-      <key>florin.tf</key>
-      <integer>179</integer>
+      <integer>199</integer>
       <key>fraction</key>
       <integer>44</integer>
       <key>franc</key>
@@ -30462,18 +30464,14 @@
       <integer>0</integer>
       <key>llinebelow.ss02</key>
       <integer>0</integer>
-      <key>parenright</key>
-      <integer>-20</integer>
       <key>parenright.case</key>
       <integer>-20</integer>
-      <key>parenright.subs</key>
-      <integer>0</integer>
       <key>public.kern2.g</key>
       <integer>0</integer>
       <key>public.kern2.j</key>
-      <integer>54</integer>
+      <integer>44</integer>
       <key>rlinebelow</key>
-      <integer>0</integer>
+      <integer>5</integer>
     </dict>
     <key>equal.subs</key>
     <dict>

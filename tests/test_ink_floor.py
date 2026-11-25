@@ -130,6 +130,39 @@ def test_every_pair_clears_the_nearest_ink_floor(weight, italic, features_name):
     assert tight == [], f"floor {static_floor(weight, italic):.1f}"
 
 
+# The neighbors of the ogonek hook that the 98-character set above leaves out: `ę` before `ƒ`, `ḻ`, `ṟ`, before the other forms of `g` and
+# `j`, and before the parentheses in their `case` and `subs` forms (each shapes to a different glyph), and `( [ { \\` before `į`.
+# 0.8.0 shipped `ęƒ` at 28.4 in Black Italic.
+OGONEK_NEIGHBORS = [
+    ("ę" + c, {}) for c in ")}ƒḻṟjgğĝġģĵ"
+] + [("ę)", {"case": True}), ("ę)", {"subs": True}), ("ę}", {"case": True})] + [
+    (c + "į", {}) for c in "([{\\"
+] + [(c + "į", {"ss03": True}) for c in "([{\\"]
+
+
+@pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
+def test_ogonek_neighbors_clear_the_floor(weight, italic):
+    """Every pair of `OGONEK_NEIGHBORS` is at least the floor of its static from the nearest ink, kerning on."""
+    path = static_path(weight, italic)
+    floor = font_floor(path)
+    contours, _ = glyph_contours(path)
+    sh, cm = shaper(weight, italic), TTFont(path).getBestCmap()
+    tight, checked = [], 0
+    for text, features in OGONEK_NEIGHBORS:
+        if not all(ord(c) in cm for c in text):
+            continue
+        shaped = sh.shape(text, features)
+        if len(shaped) != 2:
+            continue
+        (first, advance), (second, _) = shaped
+        checked += 1
+        d = pair_distance(contours, first, second, advance)
+        if d < floor:
+            tight.append((text, features, round(float(d), 1)))
+    assert checked >= 15
+    assert tight == [], f"floor {floor:.1f}"
+
+
 FLOORS = {
     ("Thin", False): 55, ("ExtraLight", False): 51.2, ("Light", False): 48.8, ("Regular", False): 46.5, ("Medium", False): 44,
     ("SemiBold", False): 41.8, ("Bold", False): 37.8, ("ExtraBold", False): 34, ("Black", False): 30,
