@@ -26,7 +26,7 @@ Offentlig Sans starts from Public Sans `develop` at `e40fcf567`. Sizes are in fo
 | | Public Sans | Offentlig Sans |
 | --- | --- | --- |
 | Italic `å` | Renders as `ǻ` | Renders as `å` |
-| Accented letters next to their neighbors (`Yö`, `Tè`, `"în`, `(sí)`, `fî`, `ĴÏ`) | Accent touches a capital's arm, a quote, a bracket, an `f` or another accent, worst in Black | Kerned apart: every pair with an accented letter keeps at least 30 units, or the gap of the same pair without accents where that is smaller, at every weight; in the heavy weights, `calt` swaps in a `T` or `Y` with a shorter right arm, so `Tö` keeps the kerning of `To` |
+| Accented letters next to their neighbors (`Yö`, `Tè`, `"în`, `(sí)`, `fî`, `ĴÏ`) | Accent touches a capital's arm, a quote, a bracket, an `f` or another accent, worst in Black | Kerned apart: every pair with an accented letter keeps at least 30 units, or the gap of the same pair without accents where that is smaller, at every weight |
 | Ring of `å Å ů Ů` | Thin ring at Black | Thicker round ring (Black stroke 164, hole 200); `Å Ů` have a round ring of their own that stays below the descenders of the line above |
 | Diaeresis | Dots high above the letter, closer together in the italic | Lower at Thin (54) and Regular (34), and as far apart in the italic as upright |
 | Dots (period, comma, colon, `i j`, diaeresis, dot accents) | Square | Round, the dot Offentlig Serif and Mono will share; `ss03` gives the square dots |

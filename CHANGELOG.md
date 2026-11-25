@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- Changed `î` and every other `i` with a circumflex to the full circumflex of `â ê ô û`, and removed the shorter-arm `T` and `Y` that `calt` swapped in before letters with tall marks: each letter now keeps one shape in all text, and the pairs that came closer than the floor of their weight are kerned apart (at most 46 units, mostly `î` before `ʾ` and `Y` before `č ě ō ǒ`).
 - Added the superscript, subscript, numerator, denominator and `½ ¼ ⅛ ⅓` figures to `cv06` (`1` with a base) and `zero` (slashed `0`), so text with either on never mixes two forms.
 - Changed the kerning of pairs with the alternates `cv01 cv03 cv05 cv06 zero` that stood closer than the floor of their weight (most of all `Ĵ)` with `cv01`, up to 66 units wider in Thin and Regular), so every pair clears the floor with the alternates on too.
 - Changed the ogonek of `ą ę į ų Ą Ę Į Ų ǫ Ǫ`: it now ends at the `p` descender (-330 at `ą` in every weight, 75 – 95 units higher than before), so it no longer runs into the ring of `Å` on the next line.

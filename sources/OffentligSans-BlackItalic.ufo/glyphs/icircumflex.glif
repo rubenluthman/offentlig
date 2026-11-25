@@ -7,6 +7,6 @@
   <anchor x="212" y="0" name="bottom"/>
   <outline>
     <component base="idotless"/>
-    <component base="circumflexcomb.narrow" xOffset="-138"/>
+    <component base="circumflexcomb" xOffset="-138"/>
   </outline>
 </glyph>

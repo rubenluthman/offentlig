@@ -128,9 +128,9 @@ def test_ss03_has_a_rule_for_every_dotted_glyph_and_alternate(weight, italic, re
     ttf = TTFont(static_path(weight, italic))
     targets = set(ss03_rules(ttf).values())
     order = set(ttf.getGlyphOrder())
-    # The hidden helper capitals (`.tk01` to `.tk03`, `.arm`) of dotted capitals are reached through the `.ss03.tkNN` and `.ss03.arm` helpers.
+    # The hidden helper capitals (`.tk01` to `.tk03`) of dotted capitals are reached through the `.ss03.tkNN` helpers.
     dotted = {n for n in regular_source.keys()
-              if not n.endswith(".ss03") and not n.startswith("_") and ".tk" not in n and not n.endswith(".arm") and has_square_dot(regular_source, n)}
+              if not n.endswith(".ss03") and not n.startswith("_") and ".tk" not in n and has_square_dot(regular_source, n)}
     assert dotted
     assert not [n for n in dotted if n + ".ss03" not in targets or n + ".ss03" not in order]
 

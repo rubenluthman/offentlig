@@ -12,6 +12,6 @@
       <point x="31.28425" y="618.062" type="line"/>
     </contour>
     <component base="idotless"/>
-    <component base="circumflexcomb.narrow" xOffset="-76.34375"/>
+    <component base="circumflexcomb" xOffset="-76.34375"/>
   </outline>
 </glyph>

@@ -939,7 +939,6 @@
       <string>hungarumlautcomb</string>
       <string>caroncomb.alt</string>
       <string>circumflexcomb</string>
-      <string>circumflexcomb.narrow</string>
       <string>caroncomb</string>
       <string>brevecomb</string>
       <string>ringcomb</string>
@@ -1119,30 +1118,6 @@
       <string>questiondown.case</string>
       <string>questiondown.ss03.case</string>
       <string>slash.case</string>
-      <string>T.arm</string>
-      <string>Tbar.arm</string>
-      <string>Tcaron.arm</string>
-      <string>Tcedilla.arm</string>
-      <string>Tcommaaccent.arm</string>
-      <string>Tcommaaccent.ss03.arm</string>
-      <string>Tdotaccent.arm</string>
-      <string>Tdotaccent.ss03.arm</string>
-      <string>Tdotbelow.arm</string>
-      <string>Tdotbelow.ss03.arm</string>
-      <string>Tlinebelow.arm</string>
-      <string>Y.arm</string>
-      <string>Yacute.arm</string>
-      <string>Ycircumflex.arm</string>
-      <string>Ydieresis.arm</string>
-      <string>Ydieresis.ss03.arm</string>
-      <string>Ydotaccent.arm</string>
-      <string>Ydotaccent.ss03.arm</string>
-      <string>Ydotbelow.arm</string>
-      <string>Ydotbelow.ss03.arm</string>
-      <string>Ygrave.arm</string>
-      <string>Yhookabove.arm</string>
-      <string>Ymacron.arm</string>
-      <string>Ytilde.arm</string>
     </array>
     <key>public.openTypeCategories</key>
     <dict>
@@ -1718,8 +1693,6 @@
       <string>base</string>
       <key>T</key>
       <string>base</string>
-      <key>T.arm</key>
-      <string>base</string>
       <key>T.tk01</key>
       <string>base</string>
       <key>T.tk02</key>
@@ -1727,8 +1700,6 @@
       <key>T.tk03</key>
       <string>base</string>
       <key>Tbar</key>
-      <string>base</string>
-      <key>Tbar.arm</key>
       <string>base</string>
       <key>Tbar.tk01</key>
       <string>base</string>
@@ -1738,8 +1709,6 @@
       <string>base</string>
       <key>Tcaron</key>
       <string>base</string>
-      <key>Tcaron.arm</key>
-      <string>base</string>
       <key>Tcaron.tk01</key>
       <string>base</string>
       <key>Tcaron.tk02</key>
@@ -1747,8 +1716,6 @@
       <key>Tcaron.tk03</key>
       <string>base</string>
       <key>Tcedilla</key>
-      <string>base</string>
-      <key>Tcedilla.arm</key>
       <string>base</string>
       <key>Tcedilla.tk01</key>
       <string>base</string>
@@ -1758,11 +1725,7 @@
       <string>base</string>
       <key>Tcommaaccent</key>
       <string>base</string>
-      <key>Tcommaaccent.arm</key>
-      <string>base</string>
       <key>Tcommaaccent.ss03</key>
-      <string>base</string>
-      <key>Tcommaaccent.ss03.arm</key>
       <string>base</string>
       <key>Tcommaaccent.ss03.tk01</key>
       <string>base</string>
@@ -1778,11 +1741,7 @@
       <string>base</string>
       <key>Tdotaccent</key>
       <string>base</string>
-      <key>Tdotaccent.arm</key>
-      <string>base</string>
       <key>Tdotaccent.ss03</key>
-      <string>base</string>
-      <key>Tdotaccent.ss03.arm</key>
       <string>base</string>
       <key>Tdotaccent.ss03.tk01</key>
       <string>base</string>
@@ -1798,11 +1757,7 @@
       <string>base</string>
       <key>Tdotbelow</key>
       <string>base</string>
-      <key>Tdotbelow.arm</key>
-      <string>base</string>
       <key>Tdotbelow.ss03</key>
-      <string>base</string>
-      <key>Tdotbelow.ss03.arm</key>
       <string>base</string>
       <key>Tdotbelow.ss03.tk01</key>
       <string>base</string>
@@ -1819,8 +1774,6 @@
       <key>Thorn</key>
       <string>base</string>
       <key>Tlinebelow</key>
-      <string>base</string>
-      <key>Tlinebelow.arm</key>
       <string>base</string>
       <key>Tlinebelow.tk01</key>
       <string>base</string>
@@ -1974,8 +1927,6 @@
       <string>base</string>
       <key>Y</key>
       <string>base</string>
-      <key>Y.arm</key>
-      <string>base</string>
       <key>Y.tk01</key>
       <string>base</string>
       <key>Y.tk02</key>
@@ -1983,8 +1934,6 @@
       <key>Y.tk03</key>
       <string>base</string>
       <key>Yacute</key>
-      <string>base</string>
-      <key>Yacute.arm</key>
       <string>base</string>
       <key>Yacute.tk01</key>
       <string>base</string>
@@ -1994,8 +1943,6 @@
       <string>base</string>
       <key>Ycircumflex</key>
       <string>base</string>
-      <key>Ycircumflex.arm</key>
-      <string>base</string>
       <key>Ycircumflex.tk01</key>
       <string>base</string>
       <key>Ycircumflex.tk02</key>
@@ -2004,11 +1951,7 @@
       <string>base</string>
       <key>Ydieresis</key>
       <string>base</string>
-      <key>Ydieresis.arm</key>
-      <string>base</string>
       <key>Ydieresis.ss03</key>
-      <string>base</string>
-      <key>Ydieresis.ss03.arm</key>
       <string>base</string>
       <key>Ydieresis.ss03.tk01</key>
       <string>base</string>
@@ -2024,11 +1967,7 @@
       <string>base</string>
       <key>Ydotaccent</key>
       <string>base</string>
-      <key>Ydotaccent.arm</key>
-      <string>base</string>
       <key>Ydotaccent.ss03</key>
-      <string>base</string>
-      <key>Ydotaccent.ss03.arm</key>
       <string>base</string>
       <key>Ydotaccent.ss03.tk01</key>
       <string>base</string>
@@ -2044,11 +1983,7 @@
       <string>base</string>
       <key>Ydotbelow</key>
       <string>base</string>
-      <key>Ydotbelow.arm</key>
-      <string>base</string>
       <key>Ydotbelow.ss03</key>
-      <string>base</string>
-      <key>Ydotbelow.ss03.arm</key>
       <string>base</string>
       <key>Ydotbelow.ss03.tk01</key>
       <string>base</string>
@@ -2064,8 +1999,6 @@
       <string>base</string>
       <key>Ygrave</key>
       <string>base</string>
-      <key>Ygrave.arm</key>
-      <string>base</string>
       <key>Ygrave.tk01</key>
       <string>base</string>
       <key>Ygrave.tk02</key>
@@ -2073,8 +2006,6 @@
       <key>Ygrave.tk03</key>
       <string>base</string>
       <key>Yhookabove</key>
-      <string>base</string>
-      <key>Yhookabove.arm</key>
       <string>base</string>
       <key>Yhookabove.tk01</key>
       <string>base</string>
@@ -2084,8 +2015,6 @@
       <string>base</string>
       <key>Ymacron</key>
       <string>base</string>
-      <key>Ymacron.arm</key>
-      <string>base</string>
       <key>Ymacron.tk01</key>
       <string>base</string>
       <key>Ymacron.tk02</key>
@@ -2093,8 +2022,6 @@
       <key>Ymacron.tk03</key>
       <string>base</string>
       <key>Ytilde</key>
-      <string>base</string>
-      <key>Ytilde.arm</key>
       <string>base</string>
       <key>Ytilde.tk01</key>
       <string>base</string>
@@ -2327,8 +2254,6 @@
       <key>chook</key>
       <string>base</string>
       <key>circumflexcomb</key>
-      <string>mark</string>
-      <key>circumflexcomb.narrow</key>
       <string>mark</string>
       <key>circumflexcomb_acutecomb</key>
       <string>mark</string>

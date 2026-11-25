@@ -365,20 +365,6 @@
       <string>Tdotbelow</string>
       <string>Tdotbelow.ss03</string>
     </array>
-    <key>public.kern1.Tarm</key>
-    <array>
-      <string>T.arm</string>
-      <string>Tbar.arm</string>
-      <string>Tcaron.arm</string>
-      <string>Tcedilla.arm</string>
-      <string>Tcommaaccent.arm</string>
-      <string>Tcommaaccent.ss03.arm</string>
-      <string>Tdotaccent.arm</string>
-      <string>Tdotaccent.ss03.arm</string>
-      <string>Tdotbelow.arm</string>
-      <string>Tdotbelow.ss03.arm</string>
-      <string>Tlinebelow.arm</string>
-    </array>
     <key>public.kern1.U</key>
     <array>
       <string>J</string>
@@ -459,22 +445,6 @@
       <string>Ygrave</string>
       <string>Yhookabove</string>
       <string>Ytilde</string>
-    </array>
-    <key>public.kern1.Yarm</key>
-    <array>
-      <string>Y.arm</string>
-      <string>Yacute.arm</string>
-      <string>Ycircumflex.arm</string>
-      <string>Ydieresis.arm</string>
-      <string>Ydieresis.ss03.arm</string>
-      <string>Ydotaccent.arm</string>
-      <string>Ydotaccent.ss03.arm</string>
-      <string>Ydotbelow.arm</string>
-      <string>Ydotbelow.ss03.arm</string>
-      <string>Ygrave.arm</string>
-      <string>Yhookabove.arm</string>
-      <string>Ymacron.arm</string>
-      <string>Ytilde.arm</string>
     </array>
     <key>public.kern1.Z</key>
     <array>
@@ -1671,17 +1641,6 @@
       <string>Tlinebelow.tk01</string>
       <string>Tlinebelow.tk02</string>
       <string>Tlinebelow.tk03</string>
-      <string>T.arm</string>
-      <string>Tbar.arm</string>
-      <string>Tcaron.arm</string>
-      <string>Tcedilla.arm</string>
-      <string>Tcommaaccent.arm</string>
-      <string>Tcommaaccent.ss03.arm</string>
-      <string>Tdotaccent.arm</string>
-      <string>Tdotaccent.ss03.arm</string>
-      <string>Tdotbelow.arm</string>
-      <string>Tdotbelow.ss03.arm</string>
-      <string>Tlinebelow.arm</string>
     </array>
     <key>public.kern2.U</key>
     <array>
@@ -1818,19 +1777,6 @@
       <string>Ytilde.tk01</string>
       <string>Ytilde.tk02</string>
       <string>Ytilde.tk03</string>
-      <string>Y.arm</string>
-      <string>Yacute.arm</string>
-      <string>Ycircumflex.arm</string>
-      <string>Ydieresis.arm</string>
-      <string>Ydieresis.ss03.arm</string>
-      <string>Ydotaccent.arm</string>
-      <string>Ydotaccent.ss03.arm</string>
-      <string>Ydotbelow.arm</string>
-      <string>Ydotbelow.ss03.arm</string>
-      <string>Ygrave.arm</string>
-      <string>Yhookabove.arm</string>
-      <string>Ymacron.arm</string>
-      <string>Ytilde.arm</string>
     </array>
     <key>public.kern2.Z</key>
     <array>

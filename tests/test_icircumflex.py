@@ -1,9 +1,6 @@
-"""One shape of `î` in every word: the narrow circumflex (`circumflexcomb.narrow`) on `î`, on typed `i`/`ı` + U+0302, on typed `ị̂ ɨ̂`
-and under a second mark (`ı` + U+0302 + acute, grave, hook above or tilde).
-
-At the heavy weights the full circumflex overhangs the stem and came within 22 – 39 units of its neighbors. A contextual helper form
-would show two shapes of `î` in one text, so every circumflex on an `i` form uses the narrow accent, drawn at 92 % of the width in the
-two Black masters (Thin and Regular are exact copies of `circumflexcomb`). The circumflex on other letters (`ấ` and the like) is unchanged.
+"""One shape of `î` in every word: `î` and every other `i` with a circumflex (typed `i`/`ı` + U+0302, `ị̂`, `ɨ̂`, and under a second mark)
+use the same circumflex as `â ê ô û` (P14, D39). There is no narrower mark: where the full circumflex comes close to a neighbor, the pair is kerned
+(`test_ink_floor.py`).
 """
 import pytest
 import uharfbuzz as hb
@@ -73,7 +70,15 @@ def test_every_i_form_draws_the_circumflex_of_the_precomposed_letter(weight, ita
 
 
 @pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
-def test_a_second_mark_stacks_on_the_narrow_circumflex_of_i(weight, italic):
+def test_the_circumflex_of_i_is_the_circumflex_of_the_other_letters(weight, italic):
+    """No narrow circumflex exists, and the mark on `î` has the outline of the mark on `â`."""
+    names = TTFont(static_path(weight, italic)).getGlyphOrder()
+    assert not [n for n in names if "circumflexcomb.narrow" in n]
+    assert circumflex_shape(weight, italic, "î") == circumflex_shape(weight, italic, "â")
+
+
+@pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
+def test_a_second_mark_stacks_on_the_circumflex_of_i(weight, italic):
     path = static_path(weight, italic)
     order = TTFont(path).getGlyphOrder()
     face = hb.Font(hb.Face(path.read_bytes()))
@@ -84,51 +89,4 @@ def test_a_second_mark_stacks_on_the_narrow_circumflex_of_i(weight, italic):
             buf.guess_segment_properties()
             hb.shape(face, buf, {})
             names = [order[i.codepoint] for i in buf.glyph_infos]
-            # `i` + U+0302 composes to the precomposed `î`, which has the narrow accent; `ı` takes the narrow mark in `ccmp`
-            first = "icircumflex" if base == "i" else "circumflexcomb.narrow"
-            assert first in names and not any(n.startswith("uni0302") or n.startswith("circumflexcomb_") for n in names), (base, mark, names)
-
-
-@pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
-def test_the_circumflex_of_other_letters_keeps_the_wide_accent(weight, italic):
-    path = static_path(weight, italic)
-    order = TTFont(path).getGlyphOrder()
-    face = hb.Font(hb.Face(path.read_bytes()))
-    buf = hb.Buffer()
-    buf.add_str("a\u0302\u0301")
-    buf.guess_segment_properties()
-    hb.shape(face, buf, {})
-    names = [order[i.codepoint] for i in buf.glyph_infos]
-    assert "circumflexcomb.narrow" not in names, names
-
-
-@pytest.mark.parametrize("weight,italic", [("Thin", False), ("Thin", True), ("Regular", False), ("Regular", True)], ids=str)
-def test_the_light_weights_keep_the_full_circumflex_on_i(weight, italic):
-    """Thin and Regular did not change: their narrow accent is an exact copy."""
-    path = static_path(weight, italic)
-    gs = TTFont(path).getGlyphSet()
-    a, b = DecomposingRecordingPen(gs), DecomposingRecordingPen(gs)
-    gs["uni0302"].draw(a)
-    gs["circumflexcomb.narrow"].draw(b)
-    assert a.value == b.value
-
-
-@pytest.mark.parametrize("weight,italic", [("Black", False), ("Black", True)], ids=str)
-def test_the_black_narrow_circumflex_is_92_percent_wide_with_the_same_stroke(weight, italic):
-    gs = TTFont(static_path(weight, italic)).getGlyphSet()
-    from fontTools.pens.boundsPen import BoundsPen
-    w = {}
-    for n in ("uni0302", "circumflexcomb.narrow"):
-        p = BoundsPen(gs)
-        gs[n].draw(p)
-        w[n] = p.bounds[2] - p.bounds[0]
-    assert w["circumflexcomb.narrow"] / w["uni0302"] == pytest.approx(0.92, abs=0.005)
-    # the two flat ends (the stroke width) are as wide as before
-    def top_flat(n):
-        pen = DecomposingRecordingPen(gs)
-        gs[n].draw(pen)
-        pts = [a for op, args in pen.value for a in args]
-        ymax = max(y for _, y in pts)
-        xs = [x for x, y in pts if y == ymax]
-        return max(xs) - min(xs)
-    assert top_flat("circumflexcomb.narrow") == top_flat("uni0302")
+            assert not any("narrow" in n for n in names), (base, mark, names)

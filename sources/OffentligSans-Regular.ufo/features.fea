@@ -81,9 +81,6 @@ lookup ccmp_Other_2 {
 	# when the base has a mark below (`ị į ɨ ṛ ṟ ŗ`; `i` has become `ı` or one of these bases by now).
 	sub [idotless r idotbelow.dotless istroke.dotless iogonek.dotless rdotbelow rlinebelow rcommaaccent] dblgravecomb' by dblgravecomb.narrow;
 	sub [idotless r] @CombiningNonTopAccents dblgravecomb' by dblgravecomb.narrow;
-	# One shape of `î` in every word: the typed `i`/`ı` + U+0302 takes the narrow circumflex of the precomposed `î`, also when
-	# another mark follows (the `ấ`-style ligatures of ccmp_latn_1 then no longer match, and the second mark stacks on the narrow one).
-	sub idotless circumflexcomb' by circumflexcomb.narrow;
 } ccmp_Other_2;
 
 lookup ccmp_latn_1 {
@@ -888,9 +885,3 @@ feature rclt {
     sub [Tcommaaccent Tdotaccent Tdotbelow]' @tkBase004 @tkTop03 by [Tcommaaccent.tk03 Tdotaccent.tk03 Tdotbelow.tk03];
     sub [Tcommaaccent Tdotaccent Tdotbelow]' @tkBase004 @tkMid @tkTop03 by [Tcommaaccent.tk03 Tdotaccent.tk03 Tdotbelow.tk03];
 } rclt;
-
-# The shorter-arm capitals T.arm and Y.arm sit in front of a letter with a tall mark, so the capital can be kerned like the plain pair.
-feature calt {
-    sub [T Tbar Tcaron Tcedilla Tcommaaccent.ss03 Tcommaaccent Tdotaccent.ss03 Tdotaccent Tdotbelow.ss03 Tdotbelow Tlinebelow]' [edieresis.ss03 edieresis odieresis.ss03 odieresis odieresismacron.ss03 odieresismacron scaron scircumflex ydieresis.ss03 ydieresis] by [T.arm Tbar.arm Tcaron.arm Tcedilla.arm Tcommaaccent.ss03.arm Tcommaaccent.arm Tdotaccent.ss03.arm Tdotaccent.arm Tdotbelow.ss03.arm Tdotbelow.arm Tlinebelow.arm];
-    sub [Y Yacute Ycircumflex Ydieresis.ss03 Ydieresis Ydotaccent.ss03 Ydotaccent Ydotbelow.ss03 Ydotbelow Ygrave Yhookabove Ymacron Ytilde]' [acaron acaron.cv04 adieresis.ss03 adieresis.cv04.ss03 adieresis.cv04 adieresis adieresismacron.ss03 adieresismacron.cv04.ss03 adieresismacron.cv04 adieresismacron agrave agrave.cv04 ccaron ebreve ecaron ecedillabreve edieresis.ss03 edieresis emacron emacronacute gbreve gbreve.ss01 gcaron gcaron.ss01 obreve ocaron odieresis.ss03 odieresis odieresismacron.ss03 odieresismacron ohorntilde omacron omacronacute oogonekmacron scaron udieresis.ss03 udieresis udieresisacute.ss03 udieresisacute udieresiscaron.ss03 udieresiscaron udieresisgrave.ss03 udieresisgrave udieresismacron.ss03 udieresismacron ugrave uhorngrave ydieresis.ss03 ydieresis ygrave zcaron] by [Y.arm Yacute.arm Ycircumflex.arm Ydieresis.ss03.arm Ydieresis.arm Ydotaccent.ss03.arm Ydotaccent.arm Ydotbelow.ss03.arm Ydotbelow.arm Ygrave.arm Yhookabove.arm Ymacron.arm Ytilde.arm];
-} calt;

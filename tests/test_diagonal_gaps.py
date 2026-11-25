@@ -158,7 +158,7 @@ def test_all_encoded_pairs_clear_diagonal_floor(weight, italic):
     ccache = _contour_cache(path)
     tight = []
     for x, y in zip(xs, ys):
-        # `calt` can swap the first glyph (`.arm` capitals, `at.case`): measure the glyph that is shaped
+        # `calt` can swap the first glyph (`at.case`): measure the glyph that is shaped
         rows, advance = table.first_rows(x, y)
         row_dist = np.min(r_dil[y] + advance + k[x, y] - rows)
         if row_dist >= DIAGONAL_FLOOR:

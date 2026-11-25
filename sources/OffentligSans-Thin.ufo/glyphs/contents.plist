@@ -580,8 +580,6 @@
     <string>S_dotbelow.ss03.glif</string>
     <key>T</key>
     <string>T_.glif</string>
-    <key>T.arm</key>
-    <string>T_.arm.glif</string>
     <key>T.tk01</key>
     <string>T_.tk01.glif</string>
     <key>T.tk02</key>
@@ -590,8 +588,6 @@
     <string>T_.tk03.glif</string>
     <key>Tbar</key>
     <string>T_bar.glif</string>
-    <key>Tbar.arm</key>
-    <string>T_bar.arm.glif</string>
     <key>Tbar.tk01</key>
     <string>T_bar.tk01.glif</string>
     <key>Tbar.tk02</key>
@@ -600,8 +596,6 @@
     <string>T_bar.tk03.glif</string>
     <key>Tcaron</key>
     <string>T_caron.glif</string>
-    <key>Tcaron.arm</key>
-    <string>T_caron.arm.glif</string>
     <key>Tcaron.tk01</key>
     <string>T_caron.tk01.glif</string>
     <key>Tcaron.tk02</key>
@@ -610,8 +604,6 @@
     <string>T_caron.tk03.glif</string>
     <key>Tcedilla</key>
     <string>T_cedilla.glif</string>
-    <key>Tcedilla.arm</key>
-    <string>T_cedilla.arm.glif</string>
     <key>Tcedilla.tk01</key>
     <string>T_cedilla.tk01.glif</string>
     <key>Tcedilla.tk02</key>
@@ -620,12 +612,8 @@
     <string>T_cedilla.tk03.glif</string>
     <key>Tcommaaccent</key>
     <string>T_commaaccent.glif</string>
-    <key>Tcommaaccent.arm</key>
-    <string>T_commaaccent.arm.glif</string>
     <key>Tcommaaccent.ss03</key>
     <string>T_commaaccent.ss03.glif</string>
-    <key>Tcommaaccent.ss03.arm</key>
-    <string>T_commaaccent.ss03.arm.glif</string>
     <key>Tcommaaccent.ss03.tk01</key>
     <string>T_commaaccent.ss03.tk01.glif</string>
     <key>Tcommaaccent.ss03.tk02</key>
@@ -640,12 +628,8 @@
     <string>T_commaaccent.tk03.glif</string>
     <key>Tdotaccent</key>
     <string>T_dotaccent.glif</string>
-    <key>Tdotaccent.arm</key>
-    <string>T_dotaccent.arm.glif</string>
     <key>Tdotaccent.ss03</key>
     <string>T_dotaccent.ss03.glif</string>
-    <key>Tdotaccent.ss03.arm</key>
-    <string>T_dotaccent.ss03.arm.glif</string>
     <key>Tdotaccent.ss03.tk01</key>
     <string>T_dotaccent.ss03.tk01.glif</string>
     <key>Tdotaccent.ss03.tk02</key>
@@ -660,12 +644,8 @@
     <string>T_dotaccent.tk03.glif</string>
     <key>Tdotbelow</key>
     <string>T_dotbelow.glif</string>
-    <key>Tdotbelow.arm</key>
-    <string>T_dotbelow.arm.glif</string>
     <key>Tdotbelow.ss03</key>
     <string>T_dotbelow.ss03.glif</string>
-    <key>Tdotbelow.ss03.arm</key>
-    <string>T_dotbelow.ss03.arm.glif</string>
     <key>Tdotbelow.ss03.tk01</key>
     <string>T_dotbelow.ss03.tk01.glif</string>
     <key>Tdotbelow.ss03.tk02</key>
@@ -682,8 +662,6 @@
     <string>T_horn.glif</string>
     <key>Tlinebelow</key>
     <string>T_linebelow.glif</string>
-    <key>Tlinebelow.arm</key>
-    <string>T_linebelow.arm.glif</string>
     <key>Tlinebelow.tk01</key>
     <string>T_linebelow.tk01.glif</string>
     <key>Tlinebelow.tk02</key>
@@ -836,8 +814,6 @@
     <string>X_dieresis.ss03.glif</string>
     <key>Y</key>
     <string>Y_.glif</string>
-    <key>Y.arm</key>
-    <string>Y_.arm.glif</string>
     <key>Y.tk01</key>
     <string>Y_.tk01.glif</string>
     <key>Y.tk02</key>
@@ -846,8 +822,6 @@
     <string>Y_.tk03.glif</string>
     <key>Yacute</key>
     <string>Y_acute.glif</string>
-    <key>Yacute.arm</key>
-    <string>Y_acute.arm.glif</string>
     <key>Yacute.tk01</key>
     <string>Y_acute.tk01.glif</string>
     <key>Yacute.tk02</key>
@@ -856,8 +830,6 @@
     <string>Y_acute.tk03.glif</string>
     <key>Ycircumflex</key>
     <string>Y_circumflex.glif</string>
-    <key>Ycircumflex.arm</key>
-    <string>Y_circumflex.arm.glif</string>
     <key>Ycircumflex.tk01</key>
     <string>Y_circumflex.tk01.glif</string>
     <key>Ycircumflex.tk02</key>
@@ -866,12 +838,8 @@
     <string>Y_circumflex.tk03.glif</string>
     <key>Ydieresis</key>
     <string>Y_dieresis.glif</string>
-    <key>Ydieresis.arm</key>
-    <string>Y_dieresis.arm.glif</string>
     <key>Ydieresis.ss03</key>
     <string>Y_dieresis.ss03.glif</string>
-    <key>Ydieresis.ss03.arm</key>
-    <string>Y_dieresis.ss03.arm.glif</string>
     <key>Ydieresis.ss03.tk01</key>
     <string>Y_dieresis.ss03.tk01.glif</string>
     <key>Ydieresis.ss03.tk02</key>
@@ -886,12 +854,8 @@
     <string>Y_dieresis.tk03.glif</string>
     <key>Ydotaccent</key>
     <string>Y_dotaccent.glif</string>
-    <key>Ydotaccent.arm</key>
-    <string>Y_dotaccent.arm.glif</string>
     <key>Ydotaccent.ss03</key>
     <string>Y_dotaccent.ss03.glif</string>
-    <key>Ydotaccent.ss03.arm</key>
-    <string>Y_dotaccent.ss03.arm.glif</string>
     <key>Ydotaccent.ss03.tk01</key>
     <string>Y_dotaccent.ss03.tk01.glif</string>
     <key>Ydotaccent.ss03.tk02</key>
@@ -906,12 +870,8 @@
     <string>Y_dotaccent.tk03.glif</string>
     <key>Ydotbelow</key>
     <string>Y_dotbelow.glif</string>
-    <key>Ydotbelow.arm</key>
-    <string>Y_dotbelow.arm.glif</string>
     <key>Ydotbelow.ss03</key>
     <string>Y_dotbelow.ss03.glif</string>
-    <key>Ydotbelow.ss03.arm</key>
-    <string>Y_dotbelow.ss03.arm.glif</string>
     <key>Ydotbelow.ss03.tk01</key>
     <string>Y_dotbelow.ss03.tk01.glif</string>
     <key>Ydotbelow.ss03.tk02</key>
@@ -926,8 +886,6 @@
     <string>Y_dotbelow.tk03.glif</string>
     <key>Ygrave</key>
     <string>Y_grave.glif</string>
-    <key>Ygrave.arm</key>
-    <string>Y_grave.arm.glif</string>
     <key>Ygrave.tk01</key>
     <string>Y_grave.tk01.glif</string>
     <key>Ygrave.tk02</key>
@@ -936,8 +894,6 @@
     <string>Y_grave.tk03.glif</string>
     <key>Yhookabove</key>
     <string>Y_hookabove.glif</string>
-    <key>Yhookabove.arm</key>
-    <string>Y_hookabove.arm.glif</string>
     <key>Yhookabove.tk01</key>
     <string>Y_hookabove.tk01.glif</string>
     <key>Yhookabove.tk02</key>
@@ -946,8 +902,6 @@
     <string>Y_hookabove.tk03.glif</string>
     <key>Ymacron</key>
     <string>Y_macron.glif</string>
-    <key>Ymacron.arm</key>
-    <string>Y_macron.arm.glif</string>
     <key>Ymacron.tk01</key>
     <string>Y_macron.tk01.glif</string>
     <key>Ymacron.tk02</key>
@@ -956,8 +910,6 @@
     <string>Y_macron.tk03.glif</string>
     <key>Ytilde</key>
     <string>Y_tilde.glif</string>
-    <key>Ytilde.arm</key>
-    <string>Y_tilde.arm.glif</string>
     <key>Ytilde.tk01</key>
     <string>Y_tilde.tk01.glif</string>
     <key>Ytilde.tk02</key>
@@ -1256,8 +1208,6 @@
     <string>circumflex.glif</string>
     <key>circumflexcomb</key>
     <string>circumflexcomb.glif</string>
-    <key>circumflexcomb.narrow</key>
-    <string>circumflexcomb.narrow.glif</string>
     <key>circumflexcomb_acutecomb</key>
     <string>circumflexcomb_acutecomb.glif</string>
     <key>circumflexcomb_gravecomb</key>

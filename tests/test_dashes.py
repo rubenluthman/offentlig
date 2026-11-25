@@ -20,7 +20,7 @@ def test_em_dash_has_the_en_dash_side_bearings(static_ttf):
 
 
 def test_em_dash_has_no_spacing_substitute(static_ttf):
-    """`calt` holds the case forms and the shorter-arm capitals; it never narrows the em dash. `emdash.case` is the em dash moved up: same advance, same ink width."""
+    """`calt` holds the case forms; it never narrows the em dash. `emdash.case` is the em dash moved up: same advance, same ink width."""
     assert "emdash.alt" not in static_ttf.getGlyphOrder()
     assert static_ttf["hmtx"]["emdash.case"][0] == static_ttf["hmtx"]["emdash"][0]
     plain, case = bearings(static_ttf, "emdash"), bearings(static_ttf, "emdash.case")

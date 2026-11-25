@@ -1,4 +1,4 @@
-"""A helper capital (`.arm`, `.tk01` - `.tk03`) kerns with the glyph before it exactly like its capital.
+"""A helper capital (`.tk01` - `.tk03`) kerns with the glyph before it exactly like its capital.
 
 `calt` and `rclt` swap a capital for a helper after the letter before it was placed, so a helper that lacks one of the
 glyph-to-glyph exceptions of its capital moves the letter in front of it (`éÝö`, `@Ťö`). Checked on the sources with
@@ -11,7 +11,7 @@ import ufoLib2
 
 from test_spacing import MASTERS, source
 
-HELPER = re.compile(r"\.(arm|tk\d\d)$")
+HELPER = re.compile(r"\.(tk\d\d)$")
 
 
 def _groups(font):
@@ -39,7 +39,7 @@ def test_helper_capitals_keep_the_left_kerning_of_their_capital(master):
     font = source(master)
     first_of, second_of = _groups(font)
     helpers = {n: HELPER.sub("", n) for n in font.keys() if HELPER.search(n)}
-    assert len(helpers) > 100
+    assert len(helpers) > 90  # the `.tk` helpers only: 99 per master
     # Every glyph that can come before a capital: the glyphs and groups named on the left of a pair.
     lefts = {a for a, _ in font.kerning if not a.startswith("public.")} | set(first_of)
     wrong = []
