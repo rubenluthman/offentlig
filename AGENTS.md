@@ -6,7 +6,7 @@ Open-source font superfamily. Offentlig Sans is a renamed fork of Public Sans (u
 
 - `make venv` creates `venv/` and `venv/diffenator`. Activate nothing: the Makefile puts `venv/bin` on `PATH`.
 - `make build` runs gftools builder in `sources/` and writes `fonts/OffentligSans/`.
-- `make test` runs `pytest -n 3 --dist worksteal` locally (`PYTEST_JOBS=auto` in CI) against the built fonts. Build first. A worker peaks between 0.8 and 1.2 GB; four workers were slower and swapped heavily, so the default stays three (see `CONTRIBUTING.md`).
+- `make test` runs `pytest -n 4 --dist worksteal` locally (`PYTEST_JOBS=auto` in CI) against the built fonts. Build first. A worker peaks below 0.4 GB, so four fit in memory with other work running (see `CONTRIBUTING.md`). A green run writes `build/test-stamp`; `make verify` skips pytest when the stamp matches the tree exactly, and runs it after any change.
 - `make qa` runs Fontspector (`venv/bin/fontspector`, universal and opentype profiles). `make proof` runs Diffenator2.
 - `make verify` is the pre-commit check (`scripts/verify_commit.sh`).
 - Docs-only fast path: when every changed file is a doc (`docs_only` in `.commit-checks.json`), `make verify` skips the build checks and the tests. Every doc a test or script reads (`ARCHITECTURE.md`, `CHANGELOG.md`) must sit under `docs_only.except`.

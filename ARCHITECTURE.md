@@ -13,6 +13,7 @@ tests/                             pytest suite, runs against the built fonts
 Makefile                           venv, build, test, qa, proof, diff-public-sans, diff-main, specimen, social-preview, install, verify, clean
 requirements.txt, requirements-qa.txt   Python dependencies for the build and for QA
 scripts/verify_commit.sh           pre-commit verification
+scripts/test_stamp.py              hash of what the tests read; `make test` writes it, verify skips a rerun on a match
 scripts/commit-checks              loader for the shared commit-checks package: secrets, home paths, emails, private names, conflict markers, hooks (pinned in .commit-checks.json)
 scripts/release_notes.sh           CHANGELOG.md section for one version, used as the release notes
 scripts/proof_page.py              tester page from docs/proof/allemansratten.txt (make proof)

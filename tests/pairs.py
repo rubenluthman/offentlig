@@ -33,14 +33,12 @@ class PairTable:
         self.first_shaped = {}
         self._rows = {}
         self.advance = np.array([self.shaper.shape(t, features)[0][1] for t in self.texts], dtype=np.float64)
-        ink = {gid: self.shaper.spans(gid) for gid in set(self.gids)}
         self.lmax = np.full((len(self.texts), len(ROWS)), -np.inf)
         self.rmin = np.full((len(self.texts), len(ROWS)), np.inf)
         for i, gid in enumerate(self.gids):
-            for y, (lo, hi) in ink[gid].items():
-                k = int((y - LOW) // STEP)
-                self.lmax[i, k] = hi
-                self.rmin[i, k] = lo
+            ink = self.shaper.spans(gid)  # the same grid as ROWS
+            self.lmax[i] = ink.hi
+            self.rmin[i] = ink.lo
 
     def codepoint_of(self, name):
         """The code point the built font encodes `name` at, or None."""
@@ -54,9 +52,7 @@ class PairTable:
         if gid is None:
             return self.lmax[a], self.advance[a]
         if gid not in self._rows:
-            row = np.full(len(ROWS), -np.inf)
-            for y, (lo, hi) in self.shaper.spans(gid).items():
-                row[int((y - LOW) // STEP)] = hi
+            row = self.shaper.spans(gid).hi
             self._rows[gid] = (row, float(self.hmtx[self.names[gid]][0]))
         return self._rows[gid]
 

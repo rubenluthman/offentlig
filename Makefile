@@ -21,10 +21,13 @@ venv:
 build:
 	cd sources && $(HEAVY) gftools builder config-OffentligSans.yaml
 
-PYTEST_JOBS ?= 3
+PYTEST_JOBS ?= 4
 
+# A green run leaves build/test-stamp, a hash of everything the tests read; `make verify` skips its own run when the hash still matches.
 test:
+	rm -f build/test-stamp
 	$(HEAVY) $(VENV)/bin/pytest -q -n $(PYTEST_JOBS) --dist worksteal tests
+	python3 scripts/test_stamp.py write
 
 proof:
 	$(VENV)/bin/python scripts/proof_page.py

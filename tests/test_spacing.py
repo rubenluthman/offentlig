@@ -9,6 +9,7 @@ import unicodedata
 from functools import lru_cache
 from pathlib import Path
 
+import numpy as np
 import pytest
 import ufoLib2
 import uharfbuzz as hb
@@ -90,6 +91,45 @@ def test_new_groups_hold_what_they_should(master):
     assert "Germandbls" in groups["public.kern1.B"] and "Germandbls" in groups["public.kern2.N"]
 
 
+SPAN_LOW, SPAN_HIGH = -500, 2400
+
+
+class Spans:
+    """The ink of one glyph on the rows of a 4-unit grid, as two float arrays (a dict per glyph took 90 MB per font):
+    `lo` and `hi` hold the leftmost and rightmost x of each row, `inf` and `-inf` where the glyph has no ink. It reads like
+    the `{y: (lo, hi)}` dict it replaces."""
+
+    def __init__(self, rows, low, step):
+        size = len(range(SPAN_LOW, SPAN_HIGH, step))
+        self.low, self.step = low, step
+        self.lo, self.hi = np.full(size, np.inf), np.full(size, -np.inf)
+        for y, (lo, hi) in rows.items():
+            k = int((y - low) // step)
+            self.lo[k], self.hi[k] = lo, hi
+
+    def _rows(self):
+        return np.nonzero(self.lo != np.inf)[0]
+
+    def __iter__(self):
+        return (int(self.low + k * self.step) for k in self._rows())
+
+    def __len__(self):
+        return len(self._rows())
+
+    def __contains__(self, y):
+        k = int((y - self.low) // self.step)
+        return 0 <= k < len(self.lo) and self.lo[k] != np.inf
+
+    def __getitem__(self, y):
+        if y not in self:
+            raise KeyError(y)
+        k = int((y - self.low) // self.step)
+        return float(self.lo[k]), float(self.hi[k])
+
+    def items(self):
+        return ((y, self[y]) for y in self)
+
+
 class Shaper:
     """HarfBuzz at one font file: kerning values and the horizontal ink gap between the two glyphs of a pair."""
 
@@ -114,6 +154,7 @@ class Shaper:
         return with_kern[0][1] - without[0][1]
 
     def spans(self, gid):
+        """The ink of one glyph as `Spans`: its leftmost and rightmost x on each row of the 4-unit grid."""
         if gid not in self.rows:
             points = []
 
@@ -149,7 +190,7 @@ class Shaper:
                     pass
 
             self.font.draw_glyph_with_pen(gid, Pen(None))
-            low, high, step = -500, 2400, self.STEP
+            low, high, step = SPAN_LOW, SPAN_HIGH, self.STEP
             rows = {}
             for contour in points:
                 for k, (x0, y0) in enumerate(contour):
@@ -166,15 +207,15 @@ class Shaper:
                             span = rows.get(y)
                             rows[y] = (x, x) if span is None else (min(span[0], x), max(span[1], x))
                         y += step
-            self.rows[gid] = rows
+            self.rows[gid] = Spans(rows, low, step)
         return self.rows[gid]
 
     def gap(self, text, features=None):
         """Smallest horizontal distance between the ink of the first and the second glyph, over the rows both occupy."""
         (g1, advance), (g2, _) = self.shape(text, features)
         left, right = self.spans(g1), self.spans(g2)
-        gaps = [advance + right[y][0] - left[y][1] for y in left if y in right]
-        return min(gaps) if gaps else None
+        smallest = ((advance + right.lo) - left.hi).min()  # inf on a row that either glyph does not occupy
+        return None if smallest == np.inf else float(smallest)
 
 
 @lru_cache(maxsize=None)

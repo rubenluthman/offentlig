@@ -14,7 +14,7 @@ QA tools: Diffenator2 is installed by `make venv` into `venv/diffenator`. Fontsp
 
 ```bash
 make build     # fonts/OffentligSans/{otf,ttf,variable,webfonts}
-make test      # pytest -n 3 --dist worksteal against the built fonts (override with PYTEST_JOBS=auto)
+make test      # pytest -n 4 --dist worksteal against the built fonts (override with PYTEST_JOBS=auto)
 make qa        # Fontspector universal and OpenType profiles, expected 0 FAIL
 make proof     # tester page (docs/proof/allemansratten.txt) and Diffenator2 proof pages in build/proof
 make specimen  # docs/specimen.png and specimen-dark.png from the built TTFs and the Allemansrätten text
@@ -26,7 +26,9 @@ make clean     # deletes fonts/ and build/
 make verify    # tests, links, house style, conflict markers, paths and secrets
 ```
 
-`make test` and `make verify` use `--dist worksteal`: a worker that runs out of tests takes queued ones from another, so no worker is left running the longest tests alone. Measured on `v0.5.0` with the same tests collected and passing: two workers with the default distribution took 71 minutes, with one worker idle for the last 60; three workers with `worksteal` took 33 minutes, all busy until the last 16 seconds. In a full run with three workers, each peaked between 0.8 and 1.2 GB (the pair tests now build their pair lists in chunks, which lowers the peak inside one test but not the memory a worker keeps across tests), so the local default stays at three. A later full run on the 0.8.0 development tree (10,002 passed, 111 skipped) with four workers took 53 minutes 41 seconds, slower than the three-worker run above on a smaller suite: resident memory per worker peaked at 767 MB, but the four workers together pushed swap up by about 4.4 GB (from 5.7 to 10.1 GB used) and memory pressure reached the warning level. Five workers were not tried. Raise `PYTEST_JOBS` only on a machine with memory to spare. CI uses `PYTEST_JOBS=auto`.
+`make test` and `make verify` use `--dist worksteal`: a worker that runs out of tests takes queued ones from another, so no worker is left running the longest tests alone. Each worker keeps the outline rows of every font it measures (`Shaper.spans` in `tests/test_spacing.py`). They were Python dicts at about 90 MB per font, so a worker that met all 18 statics peaked between 0.9 and 1.2 GB, three workers swapped on an 8 GB machine, and a full run took 70 minutes with the same 10,253 tests passing. Two arrays per glyph on the 4-unit grid cut that to about 15 MB per font: with three workers a full run took 9 min 39 s and each worker peaked at 252, 326 and 404 MB; with four workers it took 7 min 44 s and the peaks were 235, 349, 358 and 384 MB. The slowest single test then takes 35 s. The default is four workers; a fifth would add memory for little time, as the suite is CPU-bound at about four cores. CI uses `PYTEST_JOBS=auto`.
+
+A green `make test` writes `build/test-stamp`, a hash of the sources, tests, requirements, Makefile, `ARCHITECTURE.md`, the proof text and the built fonts (`scripts/test_stamp.py`). `make verify` skips pytest when the stamp matches the tree exactly and says so; any change reruns the tests, and CI (`CI` set) always runs them.
 
 Each heavy step (`build`, `test`, `qa`, `proof`, `diff-public-sans`, `diff-main`, and the test step of `verify`) runs one at a time: when a `heavy-run` command is installed it queues on a shared lock, and where it is not (CI) it runs directly.
 

@@ -1,5 +1,5 @@
 #!/bin/sh
-# Pre-commit verification: tests, relative Markdown links and the shared commit checks (which include the house style check with Vale).
+# Pre-commit verification: tests (skipped when build/test-stamp shows a green `make test` on this exact tree), relative Markdown links and the shared commit checks (which include the house style check with Vale).
 set -eu
 cd "$(dirname "$0")/.."
 fail=0
@@ -22,8 +22,11 @@ elif [ -n "$(git ls-files -z --cached --others --exclude-standard sources | xarg
   # Only source files count: the build writes ignored files (build.ninja, instance_ufos/) into sources/.
   echo "fonts/ is older than sources/: run 'make build' first" >&2
   fail=1
+elif [ -z "${CI:-}" ] && python3 scripts/test_stamp.py check; then
+  # `make test` passed on exactly this tree (sources, tests, requirements, Makefile, ARCHITECTURE.md, proof text and built fonts).
+  echo "Skipped pytest: build/test-stamp matches this tree, so the last green 'make test' covers it."
 else
-  PATH="$PWD/venv/bin:$PATH" heavy pytest -q -n "${PYTEST_JOBS:-3}" --dist worksteal tests || fail=1
+  PATH="$PWD/venv/bin:$PATH" heavy pytest -q -n "${PYTEST_JOBS:-4}" --dist worksteal tests || fail=1
 fi
 
 files=$(git ls-files --cached --others --exclude-standard)
