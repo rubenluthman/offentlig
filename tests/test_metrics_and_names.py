@@ -126,22 +126,34 @@ def source_numbers():
 
 def source_version():
     major, minor = source_numbers()
-    return f"Version {major}.{minor}"
+    return f"Version {major}.{minor:03d}"
 
 
 def assert_revision_matches_the_sources(font):
-    """`head.fontRevision` is `versionMajor.versionMinor` (a 16.16 fixed-point number, so within 0.001)."""
+    """`head.fontRevision` is `versionMajor.versionMinor` with three minor digits (a 16.16 fixed-point number, so within 0.001)."""
     major, minor = source_numbers()
-    assert font["head"].fontRevision == pytest.approx(float(f"{major}.{minor}"), abs=0.001)
+    assert 0 <= minor <= 999, f"versionMinor {minor} does not fit three digits"
+    assert font["head"].fontRevision == pytest.approx(float(f"{major}.{minor:03d}"), abs=0.001)
+
+
+def assert_name_id_5_matches_the_sources(font):
+    """Name ID 5 is `Version X.NNN`, or `Version X.NNN; X.Y.Z` with the SemVer of the release after the `;`."""
+    text = font["name"].getName(5, 3, 1, 0x409).toUnicode()
+    counter, _, semver = text.partition(";")
+    assert counter == source_version()
+    if semver:
+        top = re.search(r"^## \[(\d+\.\d+\.\d+)\]", (ROOT / "CHANGELOG.md").read_text(encoding="utf-8"), re.M)
+        assert top, "CHANGELOG.md has no release heading"
+        assert semver.strip() == top.group(1), (text, top.group(1))
 
 
 def test_version_matches_the_sources(static_ttf):
-    assert static_ttf["name"].getName(5, 3, 1, 0x409).toUnicode() == source_version()
+    assert_name_id_5_matches_the_sources(static_ttf)
     assert_revision_matches_the_sources(static_ttf)
 
 
 def test_variable_version_matches_the_sources(variable_ttf):
-    assert variable_ttf["name"].getName(5, 3, 1, 0x409).toUnicode() == source_version()
+    assert_name_id_5_matches_the_sources(variable_ttf)
     assert_revision_matches_the_sources(variable_ttf)
 
 

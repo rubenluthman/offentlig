@@ -8,7 +8,7 @@
 
 - Follow the three fixes this fork carries that Public Sans has not merged yet: uswds/public-sans PRs #396 (italic `å`), #397 (subscript digits) and #398 (Thin kerning of space and dashes). Checked at each release (see the release steps in [CONTRIBUTING.md](CONTRIBUTING.md#releases)).
 - Study joined `f` and `t` crossbars (`ff ft tt`) as drawn ligatures, and other drawn letter pairs, after 0.9.0. Both crossbars end at the x-height in every master. Render the options before deciding.
-- No 0.10.0 (M8): `versionMinor` 1000 would give the font revision 0.1000, lower than 0.900. After 0.9.0, releases are 0.9.x patches that leave layout unchanged; changes that move text, including joined crossbars if chosen, wait for 1.0.0, after a final review of Offentlig Sans. Before 1.0.0, set the revision rule for 1.x and later (the current one breaks again at 1.10.0) and add a test that the revision only increases.
+- After 0.9.0, release only 0.9.x patches that leave layout unchanged (M8). Changes that move text, including joined crossbars if chosen, wait for 1.0.0, after a final review of Offentlig Sans. A 0.10.0 is not planned.
 
 <!-- vale HouseStyle.Headings = NO -->
 ### Offentlig Serif
