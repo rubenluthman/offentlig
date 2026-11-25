@@ -3,8 +3,8 @@
 Every encoded letter, and the typed `ị` and `ɨ` with a top mark, is set against the characters of text (`a-z A-Z åäöÅÄÖéèüïîôçñ 0-9`
 and the usual punctuation), in both orders with kerning on, and the distance between the two outlines (not the gap along one row)
 must be at least a quarter of the `oo` distance of the same static: 55 units at Thin down to 30 at Black. The distance is measured to
-the nearest ink in any direction, so corners that meet at an angle count. The test runs with no feature and with `ss01 ss02 ss03 cv04`
-on together (each swaps different letters).
+the nearest ink in any direction, so corners that meet at an angle count. The test runs with no feature, with `ss01 ss02 ss03 cv04`
+on together, with `cv01 cv03 cv05` on together and with `cv06 zero` on together (each swaps different glyphs).
 
 A pair is first screened with the bounding boxes of its glyphs and with 4-unit rows (dilated by the floor), which can only rule out
 pairs that are farther apart than the floor; `ink.fast_distance` then measures the rest.
@@ -24,7 +24,12 @@ from test_spacing import ALL_FONTS, ALL_IDS, Shaper, shaper
 
 FLOOR_SHARE = 0.25  # of the `oo` distance
 SET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZåäöÅÄÖéèüïîôçñ0123456789.,:;!?'\"‘’“”()[]{}-–/&"
-FEATURE_SETS = {"default": {}, "alternates": {"ss01": True, "ss02": True, "ss03": True, "cv04": True}}
+FEATURE_SETS = {
+    "default": {},
+    "alternates": {"ss01": True, "ss02": True, "ss03": True, "cv04": True},
+    "letters": {"cv01": True, "cv03": True, "cv05": True},
+    "figures": {"cv06": True, "zero": True},
+}
 ROW_MARGIN = 6  # the rows hold ink at 4-unit steps
 # Pairs left out, each with the measured reason. None yet.
 EXEMPT = {}

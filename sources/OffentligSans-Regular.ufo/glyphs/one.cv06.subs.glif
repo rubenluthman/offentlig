@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="one.cv06.subs" format="2">
+  <advance width="581.0641"/>
+  <outline>
+    <component base="one.cv06.dnom" yOffset="-330.0"/>
+  </outline>
+</glyph>

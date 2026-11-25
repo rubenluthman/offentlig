@@ -823,11 +823,15 @@
     <key>public.kern1.onehalf</key>
     <array>
       <string>one.numr</string>
+      <string>one.cv06.numr</string>
       <string>onethird</string>
+      <string>onethird.cv06</string>
       <string>twothirds</string>
       <string>onequarter</string>
+      <string>onequarter.cv06</string>
       <string>threequarters</string>
       <string>oneeighth</string>
+      <string>oneeighth.cv06</string>
       <string>threeeighths</string>
       <string>fiveeighths</string>
       <string>seveneighths</string>
@@ -1275,6 +1279,7 @@
     <key>public.kern1.zero.dnom</key>
     <array>
       <string>zero.dnom</string>
+      <string>zero.slash.dnom</string>
       <string>two.dnom</string>
       <string>three.dnom</string>
       <string>six.dnom</string>
@@ -1283,6 +1288,7 @@
     <key>public.kern1.zero.numr</key>
     <array>
       <string>zero.numr</string>
+      <string>zero.slash.numr</string>
       <string>three.numr</string>
       <string>five.numr</string>
       <string>six.numr</string>
@@ -2277,11 +2283,15 @@
     <key>public.kern2.onehalf</key>
     <array>
       <string>one.numr</string>
+      <string>one.cv06.numr</string>
       <string>onethird</string>
+      <string>onethird.cv06</string>
       <string>twothirds</string>
       <string>onequarter</string>
+      <string>onequarter.cv06</string>
       <string>threequarters</string>
       <string>oneeighth</string>
+      <string>oneeighth.cv06</string>
       <string>threeeighths</string>
       <string>fiveeighths</string>
       <string>seveneighths</string>
@@ -2503,6 +2513,7 @@
     <key>public.kern2.zero.dnom</key>
     <array>
       <string>zero.dnom</string>
+      <string>zero.slash.dnom</string>
       <string>two.dnom</string>
       <string>three.dnom</string>
       <string>six.dnom</string>
@@ -2511,6 +2522,7 @@
     <key>public.kern2.zero.numr</key>
     <array>
       <string>zero.numr</string>
+      <string>zero.slash.numr</string>
       <string>two.numr</string>
       <string>three.numr</string>
       <string>five.numr</string>

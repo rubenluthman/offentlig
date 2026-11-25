@@ -729,7 +729,9 @@
       <string>nine.tf.osf</string>
       <string>zero.slash.tf.osf</string>
       <string>zero.subs</string>
+      <string>zero.slash.subs</string>
       <string>one.subs</string>
+      <string>one.cv06.subs</string>
       <string>two.subs</string>
       <string>three.subs</string>
       <string>four.subs</string>
@@ -739,7 +741,9 @@
       <string>eight.subs</string>
       <string>nine.subs</string>
       <string>zero.dnom</string>
+      <string>zero.slash.dnom</string>
       <string>one.dnom</string>
+      <string>one.cv06.dnom</string>
       <string>two.dnom</string>
       <string>three.dnom</string>
       <string>four.dnom</string>
@@ -749,7 +753,9 @@
       <string>eight.dnom</string>
       <string>nine.dnom</string>
       <string>zero.numr</string>
+      <string>zero.slash.numr</string>
       <string>one.numr</string>
+      <string>one.cv06.numr</string>
       <string>two.numr</string>
       <string>three.numr</string>
       <string>four.numr</string>
@@ -759,7 +765,9 @@
       <string>eight.numr</string>
       <string>nine.numr</string>
       <string>zerosuperior</string>
+      <string>zerosuperior.slash</string>
       <string>onesuperior</string>
+      <string>onesuperior.cv06</string>
       <string>twosuperior</string>
       <string>threesuperior</string>
       <string>foursuperior</string>
@@ -771,11 +779,15 @@
       <string>fraction.alt</string>
       <string>fraction</string>
       <string>onehalf</string>
+      <string>onehalf.cv06</string>
       <string>onethird</string>
+      <string>onethird.cv06</string>
       <string>twothirds</string>
       <string>onequarter</string>
+      <string>onequarter.cv06</string>
       <string>threequarters</string>
       <string>oneeighth</string>
+      <string>oneeighth.cv06</string>
       <string>threeeighths</string>
       <string>fiveeighths</string>
       <string>seveneighths</string>

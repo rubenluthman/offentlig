@@ -4783,6 +4783,8 @@
       <integer>26</integer>
       <key>parenright</key>
       <integer>58</integer>
+      <key>onesuperior.cv06</key>
+      <integer>18</integer>
     </dict>
     <key>Jcircumflex.cv01</key>
     <dict>
@@ -4864,6 +4866,10 @@
       <integer>26</integer>
       <key>tdieresis</key>
       <integer>26</integer>
+      <key>onesuperior.cv06</key>
+      <integer>18</integer>
+      <key>parenright</key>
+      <integer>66</integer>
     </dict>
     <key>K</key>
     <dict>
@@ -17349,6 +17355,16 @@
       <integer>0</integer>
       <key>public.kern2.parenright</key>
       <integer>14</integer>
+      <key>onesuperior.cv06</key>
+      <integer>40</integer>
+      <key>onehalf.cv06</key>
+      <integer>17</integer>
+      <key>onequarter.cv06</key>
+      <integer>17</integer>
+      <key>oneeighth.cv06</key>
+      <integer>17</integer>
+      <key>onethird.cv06</key>
+      <integer>17</integer>
     </dict>
     <key>dcedilla</key>
     <dict>
@@ -22292,6 +22308,8 @@
       <integer>221</integer>
       <key>istroke_dblgravecomb</key>
       <integer>221</integer>
+      <key>one.cv06.dnom</key>
+      <real>56.25</real>
     </dict>
     <key>franc</key>
     <dict>
@@ -23222,6 +23240,12 @@
       <integer>224</integer>
       <key>istroke_dblgravecomb</key>
       <integer>224</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
+      <key>zerosuperior.slash</key>
+      <integer>0</integer>
+      <key>I.cv05</key>
+      <integer>64</integer>
     </dict>
     <key>ibreve</key>
     <dict>
@@ -24279,6 +24303,18 @@
       <integer>187</integer>
       <key>istroke_dblgravecomb</key>
       <integer>187</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
+      <key>onehalf.cv06</key>
+      <integer>53</integer>
+      <key>onequarter.cv06</key>
+      <integer>53</integer>
+      <key>oneeighth.cv06</key>
+      <integer>53</integer>
+      <key>onethird.cv06</key>
+      <integer>53</integer>
+      <key>zerosuperior.slash</key>
+      <integer>40</integer>
     </dict>
     <key>icaron</key>
     <dict>
@@ -24824,6 +24860,18 @@
       <integer>201</integer>
       <key>parenright</key>
       <integer>64</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
+      <key>onehalf.cv06</key>
+      <integer>20</integer>
+      <key>onequarter.cv06</key>
+      <integer>20</integer>
+      <key>oneeighth.cv06</key>
+      <integer>20</integer>
+      <key>onethird.cv06</key>
+      <integer>20</integer>
+      <key>zerosuperior.slash</key>
+      <integer>38</integer>
     </dict>
     <key>icircumflex</key>
     <dict>
@@ -25638,7 +25686,7 @@
       <key>one</key>
       <integer>32</integer>
       <key>one.cv06</key>
-      <integer>19</integer>
+      <integer>32</integer>
       <key>oneeighth</key>
       <integer>0</integer>
       <key>onehalf</key>
@@ -25759,6 +25807,16 @@
       <integer>13</integer>
       <key>istroke_dblgravecomb</key>
       <integer>13</integer>
+      <key>onehalf.cv06</key>
+      <integer>0</integer>
+      <key>onequarter.cv06</key>
+      <integer>0</integer>
+      <key>oneeighth.cv06</key>
+      <integer>0</integer>
+      <key>onethird.cv06</key>
+      <integer>0</integer>
+      <key>zerosuperior.slash</key>
+      <integer>59</integer>
     </dict>
     <key>idblgrave</key>
     <dict>
@@ -25910,6 +25968,8 @@
       <real>40.125</real>
       <key>istroke_dieresiscomb</key>
       <real>40.125</real>
+      <key>zerosuperior.slash</key>
+      <integer>36</integer>
     </dict>
     <key>idieresis.ss03</key>
     <dict>
@@ -26963,6 +27023,10 @@
       <integer>192</integer>
       <key>istroke_dblgravecomb</key>
       <integer>192</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
+      <key>zerosuperior.slash</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_acutecomb</key>
     <dict>
@@ -27344,6 +27408,12 @@
       <integer>43</integer>
       <key>istroke_dieresiscomb.ss03</key>
       <integer>43</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
+      <key>zerosuperior.slash</key>
+      <integer>0</integer>
+      <key>I.cv05</key>
+      <integer>64</integer>
     </dict>
     <key>idotbelow_brevecomb.ss03</key>
     <dict>
@@ -28197,6 +28267,18 @@
       <integer>90</integer>
       <key>istroke_dieresiscomb</key>
       <integer>90</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
+      <key>onehalf.cv06</key>
+      <integer>53</integer>
+      <key>onequarter.cv06</key>
+      <integer>53</integer>
+      <key>oneeighth.cv06</key>
+      <integer>53</integer>
+      <key>onethird.cv06</key>
+      <integer>53</integer>
+      <key>zerosuperior.slash</key>
+      <integer>40</integer>
     </dict>
     <key>idotbelow_brevecomb</key>
     <dict>
@@ -29040,6 +29122,18 @@
       <integer>187</integer>
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>46</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
+      <key>onehalf.cv06</key>
+      <integer>53</integer>
+      <key>onequarter.cv06</key>
+      <integer>53</integer>
+      <key>oneeighth.cv06</key>
+      <integer>53</integer>
+      <key>onethird.cv06</key>
+      <integer>53</integer>
+      <key>zerosuperior.slash</key>
+      <integer>40</integer>
     </dict>
     <key>idotbelow_caroncomb.ss03</key>
     <dict>
@@ -29507,6 +29601,18 @@
       <integer>103</integer>
       <key>parenright</key>
       <integer>64</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
+      <key>onehalf.cv06</key>
+      <integer>20</integer>
+      <key>onequarter.cv06</key>
+      <integer>20</integer>
+      <key>oneeighth.cv06</key>
+      <integer>20</integer>
+      <key>onethird.cv06</key>
+      <integer>20</integer>
+      <key>zerosuperior.slash</key>
+      <integer>38</integer>
     </dict>
     <key>idotbelow_caroncomb</key>
     <dict>
@@ -29964,6 +30070,18 @@
       <integer>201</integer>
       <key>parenright</key>
       <integer>64</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
+      <key>onehalf.cv06</key>
+      <integer>20</integer>
+      <key>onequarter.cv06</key>
+      <integer>20</integer>
+      <key>oneeighth.cv06</key>
+      <integer>20</integer>
+      <key>onethird.cv06</key>
+      <integer>20</integer>
+      <key>zerosuperior.slash</key>
+      <integer>38</integer>
     </dict>
     <key>idotbelow_circumflexcomb.ss03</key>
     <dict>
@@ -30509,6 +30627,16 @@
       <integer>63</integer>
       <key>question</key>
       <integer>86</integer>
+      <key>onehalf.cv06</key>
+      <integer>0</integer>
+      <key>onequarter.cv06</key>
+      <integer>0</integer>
+      <key>oneeighth.cv06</key>
+      <integer>0</integer>
+      <key>onethird.cv06</key>
+      <integer>0</integer>
+      <key>zerosuperior.slash</key>
+      <integer>59</integer>
     </dict>
     <key>idotbelow_circumflexcomb</key>
     <dict>
@@ -30933,7 +31061,7 @@
       <key>one</key>
       <integer>32</integer>
       <key>one.cv06</key>
-      <integer>19</integer>
+      <integer>32</integer>
       <key>oneeighth</key>
       <integer>0</integer>
       <key>onehalf</key>
@@ -31056,6 +31184,16 @@
       <integer>63</integer>
       <key>question.ss03</key>
       <integer>86</integer>
+      <key>onehalf.cv06</key>
+      <integer>0</integer>
+      <key>onequarter.cv06</key>
+      <integer>0</integer>
+      <key>oneeighth.cv06</key>
+      <integer>0</integer>
+      <key>onethird.cv06</key>
+      <integer>0</integer>
+      <key>zerosuperior.slash</key>
+      <integer>59</integer>
     </dict>
     <key>idotbelow_dieresiscomb.ss03</key>
     <dict>
@@ -32059,6 +32197,14 @@
       <integer>61</integer>
       <key>istroke_dieresiscomb</key>
       <integer>61</integer>
+      <key>onehalf.cv06</key>
+      <integer>5</integer>
+      <key>onequarter.cv06</key>
+      <integer>5</integer>
+      <key>oneeighth.cv06</key>
+      <integer>5</integer>
+      <key>onethird.cv06</key>
+      <integer>5</integer>
     </dict>
     <key>idotbelow_macroncomb</key>
     <dict>
@@ -32290,6 +32436,14 @@
       <integer>55</integer>
       <key>istroke_dieresiscomb.ss03</key>
       <integer>55</integer>
+      <key>onehalf.cv06</key>
+      <integer>5</integer>
+      <key>onequarter.cv06</key>
+      <integer>5</integer>
+      <key>oneeighth.cv06</key>
+      <integer>5</integer>
+      <key>onethird.cv06</key>
+      <integer>5</integer>
     </dict>
     <key>idotbelow_tildecomb.ss03</key>
     <dict>
@@ -32521,6 +32675,16 @@
       <integer>65</integer>
       <key>istroke_dieresiscomb</key>
       <integer>65</integer>
+      <key>onehalf.cv06</key>
+      <integer>16</integer>
+      <key>onequarter.cv06</key>
+      <integer>16</integer>
+      <key>oneeighth.cv06</key>
+      <integer>16</integer>
+      <key>onethird.cv06</key>
+      <integer>16</integer>
+      <key>zerosuperior.slash</key>
+      <integer>0</integer>
     </dict>
     <key>idotbelow_tildecomb</key>
     <dict>
@@ -32750,6 +32914,16 @@
       <integer>63</integer>
       <key>istroke_dieresiscomb.ss03</key>
       <integer>63</integer>
+      <key>onehalf.cv06</key>
+      <integer>16</integer>
+      <key>onequarter.cv06</key>
+      <integer>16</integer>
+      <key>oneeighth.cv06</key>
+      <integer>16</integer>
+      <key>onethird.cv06</key>
+      <integer>16</integer>
+      <key>zerosuperior.slash</key>
+      <integer>0</integer>
     </dict>
     <key>idotlessdieresisacute.ss03</key>
     <dict>
@@ -33241,6 +33415,18 @@
       <integer>59</integer>
       <key>idotbelow_circumflexcomb</key>
       <integer>103</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
+      <key>onehalf.cv06</key>
+      <integer>39</integer>
+      <key>onequarter.cv06</key>
+      <integer>39</integer>
+      <key>oneeighth.cv06</key>
+      <integer>39</integer>
+      <key>onethird.cv06</key>
+      <integer>39</integer>
+      <key>zerosuperior.slash</key>
+      <integer>28</integer>
     </dict>
     <key>idotlessdieresisacute</key>
     <dict>
@@ -33616,6 +33802,18 @@
       <integer>66</integer>
       <key>idotbelow_circumflexcomb.ss03</key>
       <integer>48</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
+      <key>onehalf.cv06</key>
+      <integer>44</integer>
+      <key>onequarter.cv06</key>
+      <integer>44</integer>
+      <key>oneeighth.cv06</key>
+      <integer>44</integer>
+      <key>onethird.cv06</key>
+      <integer>44</integer>
+      <key>zerosuperior.slash</key>
+      <integer>27</integer>
     </dict>
     <key>igrave</key>
     <dict>
@@ -34144,6 +34342,14 @@
       <integer>130</integer>
       <key>public.kern2.Y</key>
       <integer>13</integer>
+      <key>onehalf.cv06</key>
+      <integer>5</integer>
+      <key>onequarter.cv06</key>
+      <integer>5</integer>
+      <key>oneeighth.cv06</key>
+      <integer>5</integer>
+      <key>onethird.cv06</key>
+      <integer>5</integer>
     </dict>
     <key>integral</key>
     <dict>
@@ -34816,6 +35022,12 @@
       <integer>224</integer>
       <key>braceleft</key>
       <integer>20</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
+      <key>zerosuperior.slash</key>
+      <integer>0</integer>
+      <key>I.cv05</key>
+      <integer>64</integer>
     </dict>
     <key>istroke_brevecomb</key>
     <dict>
@@ -35879,6 +36091,18 @@
       <integer>186</integer>
       <key>braceleft</key>
       <integer>20</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
+      <key>onehalf.cv06</key>
+      <integer>53</integer>
+      <key>onequarter.cv06</key>
+      <integer>53</integer>
+      <key>oneeighth.cv06</key>
+      <integer>53</integer>
+      <key>onethird.cv06</key>
+      <integer>53</integer>
+      <key>zerosuperior.slash</key>
+      <integer>39</integer>
     </dict>
     <key>istroke_caroncomb</key>
     <dict>
@@ -36428,6 +36652,18 @@
       <integer>64</integer>
       <key>braceleft</key>
       <integer>20</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
+      <key>onehalf.cv06</key>
+      <integer>20</integer>
+      <key>onequarter.cv06</key>
+      <integer>20</integer>
+      <key>oneeighth.cv06</key>
+      <integer>20</integer>
+      <key>onethird.cv06</key>
+      <integer>20</integer>
+      <key>zerosuperior.slash</key>
+      <integer>38</integer>
     </dict>
     <key>istroke_circumflexcomb</key>
     <dict>
@@ -36982,7 +37218,7 @@
       <key>one</key>
       <integer>32</integer>
       <key>one.cv06</key>
-      <integer>19</integer>
+      <integer>32</integer>
       <key>oneeighth</key>
       <integer>0</integer>
       <key>onehalf</key>
@@ -37103,6 +37339,16 @@
       <integer>13</integer>
       <key>braceleft</key>
       <integer>20</integer>
+      <key>onehalf.cv06</key>
+      <integer>0</integer>
+      <key>onequarter.cv06</key>
+      <integer>0</integer>
+      <key>oneeighth.cv06</key>
+      <integer>0</integer>
+      <key>onethird.cv06</key>
+      <integer>0</integer>
+      <key>zerosuperior.slash</key>
+      <integer>59</integer>
     </dict>
     <key>istroke_dieresiscomb.ss03</key>
     <dict>
@@ -38139,6 +38385,14 @@
       <integer>130</integer>
       <key>public.kern2.Y</key>
       <integer>13</integer>
+      <key>onehalf.cv06</key>
+      <integer>5</integer>
+      <key>onequarter.cv06</key>
+      <integer>5</integer>
+      <key>oneeighth.cv06</key>
+      <integer>5</integer>
+      <key>onethird.cv06</key>
+      <integer>5</integer>
     </dict>
     <key>istroke_tildecomb</key>
     <dict>
@@ -38420,6 +38674,16 @@
       <integer>160</integer>
       <key>public.kern2.Y</key>
       <integer>21</integer>
+      <key>onehalf.cv06</key>
+      <integer>16</integer>
+      <key>onequarter.cv06</key>
+      <integer>16</integer>
+      <key>oneeighth.cv06</key>
+      <integer>16</integer>
+      <key>onethird.cv06</key>
+      <integer>16</integer>
+      <key>zerosuperior.slash</key>
+      <integer>0</integer>
     </dict>
     <key>itilde</key>
     <dict>
@@ -38701,6 +38965,16 @@
       <integer>160</integer>
       <key>public.kern2.Y</key>
       <integer>21</integer>
+      <key>onehalf.cv06</key>
+      <integer>16</integer>
+      <key>onequarter.cv06</key>
+      <integer>16</integer>
+      <key>oneeighth.cv06</key>
+      <integer>16</integer>
+      <key>onethird.cv06</key>
+      <integer>16</integer>
+      <key>zerosuperior.slash</key>
+      <integer>0</integer>
     </dict>
     <key>j.ss03</key>
     <dict>
@@ -39187,7 +39461,7 @@
       <key>one</key>
       <integer>32</integer>
       <key>one.cv06</key>
-      <integer>14</integer>
+      <integer>34</integer>
       <key>oneeighth</key>
       <integer>0</integer>
       <key>onehalf</key>
@@ -39300,6 +39574,16 @@
       <integer>0</integer>
       <key>quoteright</key>
       <integer>0</integer>
+      <key>onehalf.cv06</key>
+      <integer>0</integer>
+      <key>onequarter.cv06</key>
+      <integer>0</integer>
+      <key>oneeighth.cv06</key>
+      <integer>0</integer>
+      <key>onethird.cv06</key>
+      <integer>0</integer>
+      <key>zerosuperior.slash</key>
+      <integer>53</integer>
     </dict>
     <key>jdotless</key>
     <dict>
@@ -39828,6 +40112,18 @@
       <integer>195</integer>
       <key>egrave</key>
       <integer>0</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
+      <key>onehalf.cv06</key>
+      <integer>14</integer>
+      <key>onequarter.cv06</key>
+      <integer>14</integer>
+      <key>oneeighth.cv06</key>
+      <integer>14</integer>
+      <key>onethird.cv06</key>
+      <integer>14</integer>
+      <key>zerosuperior.slash</key>
+      <integer>33</integer>
     </dict>
     <key>k</key>
     <dict>
@@ -40936,6 +41232,8 @@
       <integer>-40</integer>
       <key>ytilde</key>
       <integer>-40</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
     </dict>
     <key>ldot.ss02.ss03</key>
     <dict>
@@ -41197,6 +41495,8 @@
       <integer>23</integer>
       <key>braceleft</key>
       <integer>29</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
     </dict>
     <key>ldot.ss02</key>
     <dict>
@@ -41310,6 +41610,8 @@
       <integer>-40</integer>
       <key>won</key>
       <integer>29</integer>
+      <key>onesuperior.cv06</key>
+      <integer>20</integer>
     </dict>
     <key>ldot</key>
     <dict>
@@ -41417,6 +41719,8 @@
       <integer>30</integer>
       <key>v</key>
       <real>-40.3125</real>
+      <key>onesuperior.cv06</key>
+      <integer>28</integer>
     </dict>
     <key>ldotbelow.ss03</key>
     <dict>
@@ -41612,6 +41916,8 @@
       <key>exclamdown.case</key>
       <integer>0</integer>
       <key>exclamdown.ss03.case</key>
+      <integer>0</integer>
+      <key>one.cv06.subs</key>
       <integer>0</integer>
     </dict>
     <key>lslash</key>
@@ -43008,6 +43314,14 @@
       <integer>92</integer>
       <key>istroke_dblgravecomb</key>
       <integer>92</integer>
+      <key>onequarter.cv06</key>
+      <integer>0</integer>
+      <key>onehalf.cv06</key>
+      <integer>0</integer>
+      <key>onethird.cv06</key>
+      <integer>0</integer>
+      <key>oneeighth.cv06</key>
+      <integer>0</integer>
     </dict>
     <key>ocircumflexdotbelow.ss03</key>
     <dict>
@@ -44597,6 +44911,10 @@
       <integer>0</integer>
       <key>zerosuperior</key>
       <integer>0</integer>
+      <key>zerosuperior.slash</key>
+      <integer>0</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
     </dict>
     <key>ohornacute</key>
     <dict>
@@ -44774,6 +45092,10 @@
       <integer>0</integer>
       <key>zlinebelow</key>
       <integer>-27</integer>
+      <key>zerosuperior.slash</key>
+      <integer>0</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
     </dict>
     <key>ohorndotbelow.ss03</key>
     <dict>
@@ -44909,6 +45231,10 @@
       <integer>0</integer>
       <key>zlinebelow</key>
       <integer>-27</integer>
+      <key>zerosuperior.slash</key>
+      <integer>0</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
     </dict>
     <key>ohorndotbelow</key>
     <dict>
@@ -45044,6 +45370,10 @@
       <integer>0</integer>
       <key>zlinebelow</key>
       <integer>-27</integer>
+      <key>zerosuperior.slash</key>
+      <integer>0</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
     </dict>
     <key>ohorngrave</key>
     <dict>
@@ -45221,6 +45551,10 @@
       <integer>0</integer>
       <key>zlinebelow</key>
       <integer>-27</integer>
+      <key>zerosuperior.slash</key>
+      <integer>0</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
     </dict>
     <key>ohornhookabove</key>
     <dict>
@@ -45398,6 +45732,10 @@
       <integer>0</integer>
       <key>zlinebelow</key>
       <integer>-27</integer>
+      <key>zerosuperior.slash</key>
+      <integer>0</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
     </dict>
     <key>ohorntilde</key>
     <dict>
@@ -45575,6 +45913,10 @@
       <integer>0</integer>
       <key>zlinebelow</key>
       <integer>-27</integer>
+      <key>zerosuperior.slash</key>
+      <integer>0</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
     </dict>
     <key>ohungarumlaut</key>
     <dict>
@@ -46476,6 +46818,18 @@
       <integer>253</integer>
       <key>istroke_dblgravecomb</key>
       <integer>253</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
+      <key>zerosuperior.slash</key>
+      <integer>0</integer>
+      <key>onequarter.cv06</key>
+      <integer>0</integer>
+      <key>onehalf.cv06</key>
+      <integer>0</integer>
+      <key>onethird.cv06</key>
+      <integer>0</integer>
+      <key>oneeighth.cv06</key>
+      <integer>0</integer>
     </dict>
     <key>oinvertedbreve</key>
     <dict>
@@ -50514,6 +50868,8 @@
       <integer>115</integer>
       <key>public.kern2.zero.numr</key>
       <real>39.375</real>
+      <key>onehalf.cv06</key>
+      <integer>115</integer>
     </dict>
     <key>public.kern1.four</key>
     <dict>
@@ -50527,6 +50883,8 @@
       <real>116.71875</real>
       <key>public.kern2.zero.numr</key>
       <real>32.8125</real>
+      <key>onehalf.cv06</key>
+      <integer>100</integer>
     </dict>
     <key>public.kern1.g</key>
     <dict>
@@ -50903,6 +51261,8 @@
       <real>80.625</real>
       <key>public.kern2.zero.numr</key>
       <real>39.375</real>
+      <key>onehalf.cv06</key>
+      <real>116.71875</real>
     </dict>
     <key>public.kern1.one.numr</key>
     <dict>
@@ -51279,6 +51639,8 @@
       <real>10.3125</real>
       <key>istroke_tildecomb</key>
       <real>10.3125</real>
+      <key>onehalf.cv06</key>
+      <real>185.03125</real>
     </dict>
     <key>public.kern1.six</key>
     <dict>
@@ -51462,6 +51824,8 @@
       <real>106.09375</real>
       <key>seven.numr</key>
       <real>65.625</real>
+      <key>onehalf.cv06</key>
+      <real>116.71875</real>
     </dict>
     <key>public.kern1.u</key>
     <dict>
@@ -51656,6 +52020,8 @@
       <real>-13.125</real>
       <key>public.kern2.zero.numr</key>
       <real>75.46875</real>
+      <key>onehalf.cv06</key>
+      <real>116.71875</real>
     </dict>
     <key>public.kern1.zero.numr</key>
     <dict>
@@ -52092,7 +52458,7 @@
     <key>racute</key>
     <dict>
       <key>I.cv05</key>
-      <integer>-80</integer>
+      <integer>-53</integer>
       <key>IJ.cv01.cv05</key>
       <integer>23</integer>
       <key>IJ.cv05</key>
@@ -52583,6 +52949,8 @@
       <integer>283</integer>
       <key>bracketright</key>
       <real>-21.4375</real>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
     </dict>
     <key>radical</key>
     <dict>
@@ -52680,7 +53048,7 @@
     <key>rcaron</key>
     <dict>
       <key>I.cv05</key>
-      <integer>-90</integer>
+      <integer>-75</integer>
       <key>IJ.cv01.cv05</key>
       <integer>-25</integer>
       <key>IJ.cv05</key>
@@ -54827,6 +55195,8 @@
       <real>6.875</real>
       <key>rlinebelow</key>
       <integer>83</integer>
+      <key>one.cv06.subs</key>
+      <integer>0</integer>
     </dict>
     <key>tmod</key>
     <dict>
@@ -55779,6 +56149,8 @@
       <integer>234</integer>
       <key>istroke_dblgravecomb</key>
       <integer>234</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
     </dict>
     <key>umacron</key>
     <dict>
@@ -56801,6 +57173,8 @@
       <integer>77</integer>
       <key>istroke_dblgravecomb</key>
       <integer>77</integer>
+      <key>onesuperior.cv06</key>
+      <integer>0</integer>
     </dict>
     <key>ygrave</key>
     <dict>
@@ -57520,6 +57894,8 @@
       <real>40.125</real>
       <key>istroke_dieresiscomb</key>
       <real>40.125</real>
+      <key>zerosuperior.slash</key>
+      <integer>36</integer>
     </dict>
     <key>idotbelow_dblgravecomb.ss03</key>
     <dict>
@@ -57671,6 +58047,8 @@
       <real>40.125</real>
       <key>istroke_dieresiscomb</key>
       <real>40.125</real>
+      <key>zerosuperior.slash</key>
+      <integer>36</integer>
     </dict>
     <key>istroke_dblgravecomb</key>
     <dict>
@@ -57824,6 +58202,8 @@
       <real>40.125</real>
       <key>braceleft</key>
       <integer>14</integer>
+      <key>zerosuperior.slash</key>
+      <integer>36</integer>
     </dict>
     <key>ncaron</key>
     <dict>
@@ -57833,6 +58213,164 @@
     <key>public.kern1.colon</key>
     <dict>
       <key>florin</key>
+      <integer>0</integer>
+    </dict>
+    <key>one.cv06.subs</key>
+    <dict>
+      <key>florin</key>
+      <integer>128</integer>
+      <key>llinebelow</key>
+      <integer>28</integer>
+      <key>rlinebelow</key>
+      <integer>46</integer>
+      <key>j</key>
+      <integer>37</integer>
+      <key>jdotless</key>
+      <integer>37</integer>
+      <key>jcircumflex</key>
+      <integer>37</integer>
+      <key>jdotlesscaron</key>
+      <integer>37</integer>
+      <key>j.ss03</key>
+      <integer>37</integer>
+      <key>llinebelow.ss02</key>
+      <integer>15</integer>
+    </dict>
+    <key>onesuperior.cv06</key>
+    <dict>
+      <key>Idblgrave</key>
+      <integer>0</integer>
+      <key>Idieresis.ss03</key>
+      <integer>0</integer>
+      <key>Idieresisacute.ss03</key>
+      <integer>0</integer>
+      <key>adblgrave.cv04</key>
+      <integer>0</integer>
+      <key>edblgrave</key>
+      <integer>0</integer>
+      <key>hcircumflex</key>
+      <integer>0</integer>
+      <key>hdieresis.ss03</key>
+      <integer>0</integer>
+      <key>hdieresis</key>
+      <integer>0</integer>
+      <key>ibreve</key>
+      <integer>0</integer>
+      <key>icaron</key>
+      <integer>0</integer>
+      <key>icircumflex</key>
+      <integer>0</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>0</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>0</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>0</integer>
+      <key>idotbelow_circumflexcomb.ss03</key>
+      <integer>0</integer>
+      <key>idotbelow_circumflexcomb</key>
+      <integer>0</integer>
+      <key>idotlessdieresisacute.ss03</key>
+      <integer>0</integer>
+      <key>idotlessdieresisacute</key>
+      <integer>0</integer>
+      <key>istroke_brevecomb</key>
+      <integer>0</integer>
+      <key>istroke_caroncomb</key>
+      <integer>0</integer>
+      <key>istroke_circumflexcomb</key>
+      <integer>0</integer>
+      <key>odblgrave</key>
+      <integer>0</integer>
+      <key>euro</key>
+      <integer>14</integer>
+    </dict>
+    <key>onehalf.cv06</key>
+    <dict>
+      <key>franc</key>
+      <integer>32</integer>
+    </dict>
+    <key>onequarter.cv06</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>oneeighth.cv06</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>onethird.cv06</key>
+    <dict>
+      <key>franc</key>
+      <integer>0</integer>
+    </dict>
+    <key>zero.slash.subs</key>
+    <dict>
+      <key>florin</key>
+      <integer>31</integer>
+      <key>franc</key>
+      <integer>0</integer>
+      <key>llinebelow</key>
+      <integer>0</integer>
+    </dict>
+    <key>zerosuperior.slash</key>
+    <dict>
+      <key>adblgrave</key>
+      <integer>0</integer>
+      <key>adblgrave.cv04</key>
+      <integer>0</integer>
+      <key>edblgrave</key>
+      <integer>0</integer>
+      <key>hdieresis.ss03</key>
+      <integer>0</integer>
+      <key>ibreve</key>
+      <integer>39</integer>
+      <key>icaron</key>
+      <integer>40</integer>
+      <key>icircumflex</key>
+      <integer>58</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>39</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>39</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>40</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>40</integer>
+      <key>idotbelow_circumflexcomb.ss03</key>
+      <integer>58</integer>
+      <key>idotbelow_circumflexcomb</key>
+      <integer>58</integer>
+      <key>idotbelow_tildecomb.ss03</key>
+      <integer>0</integer>
+      <key>idotbelow_tildecomb</key>
+      <integer>0</integer>
+      <key>idotlessdieresisacute.ss03</key>
+      <integer>27</integer>
+      <key>idotlessdieresisacute</key>
+      <integer>24</integer>
+      <key>iinvertedbreve</key>
+      <integer>6</integer>
+      <key>istroke_brevecomb</key>
+      <integer>39</integer>
+      <key>istroke_caroncomb</key>
+      <integer>40</integer>
+      <key>istroke_circumflexcomb</key>
+      <integer>59</integer>
+      <key>istroke_tildecomb</key>
+      <integer>0</integer>
+      <key>itilde</key>
+      <integer>0</integer>
+      <key>jcircumflex</key>
+      <integer>26</integer>
+      <key>jdotlesscaron</key>
+      <integer>0</integer>
+      <key>odblgrave</key>
+      <integer>0</integer>
+      <key>udblgrave</key>
       <integer>0</integer>
     </dict>
   </dict>

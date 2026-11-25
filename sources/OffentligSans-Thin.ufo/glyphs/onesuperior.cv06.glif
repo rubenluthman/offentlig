@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="onesuperior.cv06" format="2">
+  <advance width="574.4839"/>
+  <outline>
+    <component base="one.cv06.numr" yOffset="208"/>
+  </outline>
+</glyph>

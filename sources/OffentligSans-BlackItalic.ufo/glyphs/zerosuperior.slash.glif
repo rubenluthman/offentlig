@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="zerosuperior.slash" format="2">
+  <advance width="842"/>
+  <outline>
+    <component base="zero.slash.numr" xOffset="29" yOffset="208"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>zero.numr</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

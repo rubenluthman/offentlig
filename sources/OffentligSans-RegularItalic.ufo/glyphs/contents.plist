@@ -2050,8 +2050,14 @@
     <string>one.glif</string>
     <key>one.cv06</key>
     <string>one.cv06.glif</string>
+    <key>one.cv06.dnom</key>
+    <string>one.cv06.dnom.glif</string>
+    <key>one.cv06.numr</key>
+    <string>one.cv06.numr.glif</string>
     <key>one.cv06.osf</key>
     <string>one.cv06.osf.glif</string>
+    <key>one.cv06.subs</key>
+    <string>one.cv06.subs.glif</string>
     <key>one.dnom</key>
     <string>one.dnom.glif</string>
     <key>one.numr</key>
@@ -2066,14 +2072,24 @@
     <string>one.tf.osf.glif</string>
     <key>oneeighth</key>
     <string>oneeighth.glif</string>
+    <key>oneeighth.cv06</key>
+    <string>oneeighth.cv06.glif</string>
     <key>onehalf</key>
     <string>onehalf.glif</string>
+    <key>onehalf.cv06</key>
+    <string>onehalf.cv06.glif</string>
     <key>onequarter</key>
     <string>onequarter.glif</string>
+    <key>onequarter.cv06</key>
+    <string>onequarter.cv06.glif</string>
     <key>onesuperior</key>
     <string>onesuperior.glif</string>
+    <key>onesuperior.cv06</key>
+    <string>onesuperior.cv06.glif</string>
     <key>onethird</key>
     <string>onethird.glif</string>
+    <key>onethird.cv06</key>
+    <string>onethird.cv06.glif</string>
     <key>oogonek</key>
     <string>oogonek.glif</string>
     <key>oogonekmacron</key>
@@ -2566,8 +2582,14 @@
     <string>zero.osf.glif</string>
     <key>zero.slash</key>
     <string>zero.slash.glif</string>
+    <key>zero.slash.dnom</key>
+    <string>zero.slash.dnom.glif</string>
+    <key>zero.slash.numr</key>
+    <string>zero.slash.numr.glif</string>
     <key>zero.slash.osf</key>
     <string>zero.slash.osf.glif</string>
+    <key>zero.slash.subs</key>
+    <string>zero.slash.subs.glif</string>
     <key>zero.slash.tf</key>
     <string>zero.slash.tf.glif</string>
     <key>zero.slash.tf.osf</key>
@@ -2580,6 +2602,8 @@
     <string>zero.tf.osf.glif</string>
     <key>zerosuperior</key>
     <string>zerosuperior.glif</string>
+    <key>zerosuperior.slash</key>
+    <string>zerosuperior.slash.glif</string>
     <key>zlinebelow</key>
     <string>zlinebelow.glif</string>
   </dict>

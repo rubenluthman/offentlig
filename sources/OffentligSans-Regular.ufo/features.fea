@@ -555,6 +555,10 @@ sub zero by zero.slash;
 sub zero.tf by zero.slash.tf;
 sub zero.osf by zero.slash.osf;
 sub zero.tf.osf by zero.slash.tf.osf;
+sub zero.subs by zero.slash.subs;
+sub zerosuperior by zerosuperior.slash;
+sub zero.numr by zero.slash.numr;
+sub zero.dnom by zero.slash.dnom;
 
 } zero;
 
@@ -562,6 +566,14 @@ feature cv06 {
 # automatic
 sub one by one.cv06;
 sub one.osf by one.cv06.osf;
+sub one.subs by one.cv06.subs;
+sub onesuperior by onesuperior.cv06;
+sub one.numr by one.cv06.numr;
+sub one.dnom by one.cv06.dnom;
+sub onehalf by onehalf.cv06;
+sub onequarter by onequarter.cv06;
+sub oneeighth by oneeighth.cv06;
+sub onethird by onethird.cv06;
 cvParameters {
     FeatUILabelNameID {
         name "1 with base";

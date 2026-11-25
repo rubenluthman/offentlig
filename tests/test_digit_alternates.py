@@ -13,8 +13,8 @@ from conftest import static_path
 
 # feature: (digit -> alternate marker, glyph count per master)
 FEATURES = {
-    "zero": ({"0": "zero.slash"}, 4),
-    "cv06": ({"1": "one.cv06"}, 2),
+    "zero": ({"0": "zero.slash"}, 8),  # lining, tabular, oldstyle, tabular oldstyle, superior, subscript, numerator, denominator
+    "cv06": ({"1": "one.cv06"}, 10),  # lining, oldstyle, superior, subscript, numerator, denominator, and the four fractions with a 1
 }
 ALT_MARKERS = (".cv06", ".slash")
 SHAPED = [("Thin", False), ("Regular", False), ("Black", False), ("Thin", True), ("Regular", True), ("Black", True)]
@@ -46,7 +46,7 @@ def test_every_alternate_exists_in_every_font(static_ttf):
 
 def test_every_alternate_exists_in_the_variable_fonts(variable_ttf):
     names = alt_glyphs(variable_ttf)
-    assert len(names) == 6
+    assert len(names) == 18
 
 
 def test_alternates_are_not_in_the_default_cmap(static_ttf):
@@ -131,3 +131,68 @@ def test_old_style_alternates_are_built_on_the_old_style_figures(static_ttf):
     for name in ("zero.slash.osf", "one.cv06.osf"):
         glyph = static_ttf["glyf"][name]
         assert glyph.numberOfContours != -1, f"{name} is a composite"
+
+
+# The small figures follow `zero` and `cv06`, so text with either on never mixes two forms of the 0 or the 1 (F-series: the
+# superscript and subscript figures, the `frac` numerators and denominators, and the fractions ½ ¼ ⅛ ⅓ that hold a 1).
+SMALL = {
+    "sups": ("zerosuperior.slash", "onesuperior.cv06"),
+    "subs": ("zero.slash.subs", "one.cv06.subs"),
+    "sinf": ("zero.slash.subs", "one.cv06.subs"),
+    "numr": ("zero.slash.numr", "one.cv06.numr"),
+    "dnom": ("zero.slash.dnom", "one.cv06.dnom"),
+}
+FRACTIONS = {"½": "onehalf", "¼": "onequarter", "⅛": "oneeighth", "⅓": "onethird"}
+
+
+@pytest.mark.parametrize("weight,italic", SHAPED, ids=IDS)
+@pytest.mark.parametrize("form", SMALL)
+def test_small_figures_follow_zero_and_cv06(form, weight, italic):
+    path = static_path(weight, italic)
+    zero, one = SMALL[form]
+    plain = shape(path, "01", {form: True})
+    assert shape(path, "0", {form: True, "zero": True}) == [zero]
+    assert shape(path, "1", {form: True, "cv06": True}) == [one]
+    # each feature leaves the other figure alone, and each form alone changes nothing without its feature
+    assert shape(path, "01", {form: True, "zero": True})[1] == plain[1]
+    assert shape(path, "01", {form: True, "cv06": True})[0] == plain[0]
+    on = shape(path, "0123456789", {form: True, "zero": True, "cv06": True})
+    assert on[0] == zero and on[1] == one and len(on) == 10
+
+
+@pytest.mark.parametrize("weight,italic", SHAPED, ids=IDS)
+def test_frac_numerators_and_denominators_follow_zero_and_cv06(weight, italic):
+    path = static_path(weight, italic)
+    assert shape(path, "10/10", {"frac": True, "zero": True, "cv06": True}) == [
+        "one.cv06.numr", "zero.slash.numr", "fraction", "one.cv06.dnom", "zero.slash.dnom"]
+    assert shape(path, "10/10", {"frac": True}) == ["one.numr", "zero.numr", "fraction", "one.dnom", "zero.dnom"]
+
+
+# The built font names the encoded glyphs by code (`uni2153`); the alternates are not encoded and keep their source names.
+FRACTION_CODES = {"½": 0xBD, "¼": 0xBC, "⅛": 0x215B, "⅓": 0x2153}
+
+
+@pytest.mark.parametrize("weight,italic", SHAPED, ids=IDS)
+def test_precomposed_fractions_follow_cv06_and_leave_the_others(weight, italic):
+    path = static_path(weight, italic)
+    cmap = TTFont(path).getBestCmap()
+    for char, source in FRACTIONS.items():
+        plain = cmap[ord(char)]
+        assert shape(path, char, {}) == [plain]
+        assert shape(path, char, {"cv06": True}) == [source + ".cv06"], char
+        assert shape(path, char, {"zero": True}) == [plain], char  # no 0 in these fractions
+    for char in "¾⅔⅜⅝⅞":
+        assert shape(path, char, {"cv06": True, "zero": True}) == shape(path, char, {}), char
+
+
+def test_small_one_with_base_is_wider_and_the_slashed_zero_keeps_its_width(static_ttf):
+    hmtx, cmap = static_ttf["hmtx"], static_ttf.getBestCmap()
+    sup1, sub1, sup0, sub0 = (cmap[c] for c in (0xB9, 0x2081, 0x2070, 0x2080))
+    for plain, alt in (("one.numr", "one.cv06.numr"), ("one.dnom", "one.cv06.dnom"), (sub1, "one.cv06.subs"), (sup1, "onesuperior.cv06")):
+        assert hmtx[alt][0] > hmtx[plain][0] + 40, alt
+    for plain, alt in (("zero.numr", "zero.slash.numr"), ("zero.dnom", "zero.slash.dnom"), (sub0, "zero.slash.subs"), (sup0, "zerosuperior.slash")):
+        assert hmtx[alt][0] == pytest.approx(hmtx[plain][0], abs=1), alt  # rounding of interpolated widths
+    # a fraction with the new numerator is as much wider as the numerator
+    for char, source in FRACTIONS.items():
+        plain = cmap[ord(char)]
+        assert hmtx[source + ".cv06"][0] - hmtx[plain][0] == pytest.approx(hmtx["one.cv06.numr"][0] - hmtx["one.numr"][0], abs=2), source

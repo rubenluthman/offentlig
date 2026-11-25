@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="oneeighth.cv06" format="2">
+  <advance width="1883.6266"/>
+  <outline>
+    <component base="one.cv06.numr"/>
+    <component base="fraction" xOffset="624.5016"/>
+    <component base="eight.dnom" xOffset="1055.0329"/>
+  </outline>
+</glyph>

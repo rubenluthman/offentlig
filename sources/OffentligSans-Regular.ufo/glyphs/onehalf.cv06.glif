@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="onehalf.cv06" format="2">
+  <advance width="1834.5016"/>
+  <outline>
+    <component base="one.cv06.numr"/>
+    <component base="fraction" xOffset="624.5016"/>
+    <component base="two.dnom" xOffset="1100.9704"/>
+  </outline>
+</glyph>
