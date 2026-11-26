@@ -1080,6 +1080,24 @@
       <string>istroke</string>
       <string>istroke.ss03</string>
       <string>idotless</string>
+      <string>idotless_dotaccentcomb_acutecomb</string>
+      <string>idotless_dotaccentcomb_gravecomb</string>
+      <string>idotless_dotaccentcomb_circumflexcomb</string>
+      <string>idotless_dotaccentcomb_macroncomb</string>
+      <string>idotless_dotaccentcomb_tildecomb</string>
+      <string>idotless_dotaccentcomb_brevecomb</string>
+      <string>idotless_dotaccentcomb_dieresiscomb</string>
+      <string>idotless_dotaccentcomb_caroncomb</string>
+      <string>idotless_dotaccentcomb_dblgravecomb</string>
+      <string>idotless_dotaccentcomb_acutecomb.ss03</string>
+      <string>idotless_dotaccentcomb_gravecomb.ss03</string>
+      <string>idotless_dotaccentcomb_circumflexcomb.ss03</string>
+      <string>idotless_dotaccentcomb_macroncomb.ss03</string>
+      <string>idotless_dotaccentcomb_tildecomb.ss03</string>
+      <string>idotless_dotaccentcomb_brevecomb.ss03</string>
+      <string>idotless_dotaccentcomb_dieresiscomb.ss03</string>
+      <string>idotless_dotaccentcomb_caroncomb.ss03</string>
+      <string>idotless_dotaccentcomb_dblgravecomb.ss03</string>
       <string>istroke.dotless</string>
       <string>idotbelow.dotless</string>
       <string>idotbelow.dotless.ss03</string>
@@ -1993,6 +2011,24 @@
       <string>istroke</string>
       <string>istroke.ss03</string>
       <string>idotless</string>
+      <string>idotless_dotaccentcomb_acutecomb</string>
+      <string>idotless_dotaccentcomb_gravecomb</string>
+      <string>idotless_dotaccentcomb_circumflexcomb</string>
+      <string>idotless_dotaccentcomb_macroncomb</string>
+      <string>idotless_dotaccentcomb_tildecomb</string>
+      <string>idotless_dotaccentcomb_brevecomb</string>
+      <string>idotless_dotaccentcomb_dieresiscomb</string>
+      <string>idotless_dotaccentcomb_caroncomb</string>
+      <string>idotless_dotaccentcomb_dblgravecomb</string>
+      <string>idotless_dotaccentcomb_acutecomb.ss03</string>
+      <string>idotless_dotaccentcomb_gravecomb.ss03</string>
+      <string>idotless_dotaccentcomb_circumflexcomb.ss03</string>
+      <string>idotless_dotaccentcomb_macroncomb.ss03</string>
+      <string>idotless_dotaccentcomb_tildecomb.ss03</string>
+      <string>idotless_dotaccentcomb_brevecomb.ss03</string>
+      <string>idotless_dotaccentcomb_dieresiscomb.ss03</string>
+      <string>idotless_dotaccentcomb_caroncomb.ss03</string>
+      <string>idotless_dotaccentcomb_dblgravecomb.ss03</string>
       <string>istroke.dotless</string>
       <string>idotbelow.dotless</string>
       <string>idotbelow.dotless.ss03</string>

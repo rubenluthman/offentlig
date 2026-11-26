@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="idotless_dotaccentcomb_gravecomb.ss03" format="2">
+  <advance width="490.9375"/>
+  <anchor x="240.28125" y="23.25" name="ogonek"/>
+  <anchor x="433.1" y="1796" name="top"/>
+  <anchor x="174.59375" y="0" name="bottom"/>
+  <outline>
+    <component base="idotless"/>
+    <component base="dotaccentcomb.ss03" xOffset="153"/>
+    <component base="gravecomb" xOffset="-119" yOffset="381"/>
+  </outline>
+</glyph>

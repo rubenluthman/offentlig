@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="idotless_dotaccentcomb_acutecomb" format="2">
+  <advance width="490.9375"/>
+  <anchor x="240.28125" y="23.25" name="ogonek"/>
+  <anchor x="436.4" y="1820" name="top"/>
+  <anchor x="174.59375" y="0" name="bottom"/>
+  <outline>
+    <component base="idotless"/>
+    <component base="dotaccentcomb" xOffset="153"/>
+    <component base="acutecomb" xOffset="212" yOffset="405"/>
+  </outline>
+</glyph>

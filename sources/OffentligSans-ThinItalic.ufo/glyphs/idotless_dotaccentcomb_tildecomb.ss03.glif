@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="idotless_dotaccentcomb_tildecomb.ss03" format="2">
+  <advance width="449"/>
+  <anchor x="176" y="26" name="ogonek"/>
+  <anchor x="392" y="1721" name="top"/>
+  <anchor x="151" y="0" name="bottom"/>
+  <outline>
+    <component base="idotless"/>
+    <component base="dotaccentcomb.ss03" xOffset="168"/>
+    <component base="tildecomb" xOffset="25" yOffset="381"/>
+  </outline>
+</glyph>

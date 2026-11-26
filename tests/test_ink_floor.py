@@ -1,6 +1,6 @@
 """Pair floor on the nearest ink (K3), per static.
 
-Every encoded letter, and the typed `ị` and `ɨ` with a top mark, is set against the characters of text (`a-z A-Z åäöÅÄÖéèüïîôçñ 0-9`
+Every encoded letter, and the typed `ị ɨ į ı i̇` with a top mark, is set against the characters of text (`a-z A-Z åäöÅÄÖéèüïîôçñ 0-9`
 and the usual punctuation), in both orders with kerning on, and the distance between the two outlines (not the gap along one row)
 must be at least a quarter of the `oo` distance of the same static: 55 units at Thin down to 30 at Black. The distance is measured to
 the nearest ink in any direction, so corners that meet at an angle count. The test runs with no feature, with `ss01 ss02 ss03 cv04`
@@ -69,9 +69,13 @@ def static_floor(weight, italic):
     return font_floor(static_path(weight, italic))
 
 
+TYPED_BASES = ("ị", "ɨ", "į", "ı", "i\u0307")  # the typed `i̇` (Lithuanian) is `i` + U+0307
+DOUBLE_GRAVE = "\u030f"
+
+
 def row_texts(path):
     letters = [chr(c) for c in sorted(TTFont(path).getBestCmap()) if unicodedata.category(chr(c))[0] == "L"]
-    return letters + [base + mark for base in "ịɨį" for mark in TOP_MARKS + "̏"]
+    return letters + [base + mark for base in TYPED_BASES for mark in TOP_MARKS + DOUBLE_GRAVE]
 
 
 def dilate(rows, steps):
@@ -182,6 +186,77 @@ def test_the_floor_follows_the_weight(weight):
 @pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
 def test_the_typed_double_grave_forms_shape_as_one_glyph(weight, italic):
     s = shaper(weight, italic)
-    for base in "ịɨį":
+    for base in TYPED_BASES:
         assert len(s.shape(base + "̏")) == 1, base
         assert len(s.shape(base + "̏", {"ss03": True})) == 1, base
+
+
+# T- and Y-group capitals before the lowercase letters with a top mark (`Ýá Ŷĕ Ÿê`, `Tš`, `Yî`, and the typed `ı́ i̇́ į́ ị́`). The capitals
+# with a mark of their own are not in the column set of the main test, nor are most of these letters.
+TY_CAPITALS = "TŤŦŢȚṪṬṮYÝŶŸẎỴỲỶȲỸ"
+TY_MARKED_CAPITALS = "ÝŶŸȲẎỲỶỸŤṪ"
+FLOOR_CAPITALS = "TY" + TY_MARKED_CAPITALS  # `Ŧ Ţ Ț Ṭ Ṯ Ỵ` have a bar or a mark below: see the note at the test
+
+
+def lowercase_with_top_marks(path):
+    """Every encoded lowercase letter whose decomposition has a mark above, then the typed bases with a top mark or a double grave."""
+    letters = [
+        chr(c) for c in sorted(TTFont(path).getBestCmap())
+        if unicodedata.category(chr(c)) == "Ll" and any(unicodedata.combining(x) == 230 for x in unicodedata.normalize("NFD", chr(c)))
+    ]
+    return letters + [base + mark for base in TYPED_BASES for mark in TOP_MARKS + DOUBLE_GRAVE]
+
+
+def short_pairs(weight, italic, features_name, lefts, rights, limit):
+    """[(text, distance)] of the pairs `left + right` (each side one glyph, kerning on) closer than `limit` units, nearest ink."""
+    path = static_path(weight, italic)
+    sh, features = shaper(weight, italic), FEATURE_SETS[features_name]
+    contours, bounds = glyph_contours(path)
+    one = {t: sh.shape(t, features) for t in dict.fromkeys(list(lefts) + list(rights))}
+    out = []
+    for a in lefts:
+        for b in rights:
+            if len(one[a]) != 1 or len(one[b]) != 1:
+                continue
+            shaped = sh.shape(a + b, features)
+            if len(shaped) != 2:
+                continue
+            (g1, advance), (g2, _) = shaped
+            b1, b2 = bounds[g1], bounds[g2]
+            if np.isnan(b1[0]) or np.isnan(b2[0]):
+                continue
+            gap_x = max(0.0, b2[0] + advance - b1[2], b1[0] - (b2[2] + advance))
+            gap_y = max(0.0, b2[1] - b1[3], b1[1] - b2[3])
+            if gap_x**2 + gap_y**2 >= limit**2:
+                continue
+            d = pair_distance(contours, g1, g2, advance, cap=limit + 1)
+            if d < limit:
+                out.append((a + b, round(float(d), 1)))
+    return out
+
+
+@pytest.mark.parametrize("features_name", list(FEATURE_SETS))
+@pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
+def test_t_and_y_capitals_clear_the_top_marks_of_lowercase_letters(weight, italic, features_name):
+    """`T Y Ý Ŷ Ÿ Ȳ Ẏ Ỳ Ỷ Ỹ Ť Ṫ` before every lowercase letter with a top mark clear the floor. The other capitals of the two groups
+    (`Ŧ Ţ Ț Ṭ Ṯ Ỵ`) are held to floor + 10 at Black only, by the next test."""
+    path = static_path(weight, italic)
+    tight = short_pairs(weight, italic, features_name, FLOOR_CAPITALS, lowercase_with_top_marks(path), font_floor(path))
+    assert [t for t in tight if t[0] not in EXEMPT] == [], f"floor {font_floor(path):.1f}"
+
+
+AIM_AT_BLACK = 10  # K20: floor + 10 at the masters Black and Black Italic
+
+
+@pytest.mark.parametrize("features_name", list(FEATURE_SETS))
+@pytest.mark.parametrize("italic", [False, True], ids=["Black", "Black-italic"])
+def test_t_and_y_capitals_clear_tall_marks_by_the_floor_plus_10_at_black(italic, features_name):
+    """K20: every capital of the kern1 groups T and Y before a lowercase letter with a top mark is at least floor + 10 from it in
+    Black and Black Italic. The one exemption is `ẗ` with `ss03` (in `alternates`): its round dots sit under the arm, so clearing
+    them takes 61 – 161 units (P14) and the pair stays at 31 against a floor of 30, which the floor tests still hold."""
+    path = static_path("Black", italic)
+    limit = font_floor(path) + AIM_AT_BLACK
+    tight = short_pairs("Black", italic, features_name, TY_CAPITALS, lowercase_with_top_marks(path), limit)
+    if features_name == "alternates":
+        tight = [(t, d) for t, d in tight if t[1:] != "ẗ"]
+    assert tight == [], f"floor + {AIM_AT_BLACK} = {limit:.1f}"

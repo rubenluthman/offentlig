@@ -74,6 +74,15 @@ lookup ccmp_Other_0 {
 	sub iogonek dieresiscomb by iogonek_dieresiscomb;
 	sub iogonek caroncomb by iogonek_caroncomb;
 	sub iogonek dblgravecomb by iogonek_dblgravecomb;
+	sub idotless acutecomb by iacute;
+	sub idotless gravecomb by igrave;
+	sub idotless circumflexcomb by icircumflex;
+	sub idotless macroncomb by imacron;
+	sub idotless tildecomb by itilde;
+	sub idotless brevecomb by ibreve;
+	sub idotless dieresiscomb by idieresis;
+	sub idotless caroncomb by icaron;
+	sub idotless dblgravecomb by idblgrave;
 } ccmp_Other_0;
 
 lookup ccmp_Other_1 {
@@ -90,6 +99,7 @@ lookup ccmp_Other_2 {
 	# when the base has a mark below (`ị į ɨ ṛ ṟ ŗ`; `i` has become `ı` or one of these bases by now).
 	sub [idotless r idotbelow.dotless istroke.dotless iogonek.dotless rdotbelow rlinebelow rcommaaccent] dblgravecomb' by dblgravecomb.narrow;
 	sub [idotless r] @CombiningNonTopAccents dblgravecomb' by dblgravecomb.narrow;
+	sub idotless dotaccentcomb dblgravecomb' by dblgravecomb.narrow;
 } ccmp_Other_2;
 
 lookup ccmp_latn_1 {
@@ -106,6 +116,19 @@ lookup ccmp_latn_1 {
 
 script latn;
 lookup ccmp_latn_1;
+lookup ccmp_latn_2 {
+	lookupflag 0;
+	sub idotless dotaccentcomb acutecomb by idotless_dotaccentcomb_acutecomb;
+	sub idotless dotaccentcomb gravecomb by idotless_dotaccentcomb_gravecomb;
+	sub idotless dotaccentcomb circumflexcomb by idotless_dotaccentcomb_circumflexcomb;
+	sub idotless dotaccentcomb macroncomb by idotless_dotaccentcomb_macroncomb;
+	sub idotless dotaccentcomb tildecomb by idotless_dotaccentcomb_tildecomb;
+	sub idotless dotaccentcomb brevecomb by idotless_dotaccentcomb_brevecomb;
+	sub idotless dotaccentcomb dieresiscomb by idotless_dotaccentcomb_dieresiscomb;
+	sub idotless dotaccentcomb caroncomb by idotless_dotaccentcomb_caroncomb;
+	sub idotless dotaccentcomb dblgravecomb.narrow by idotless_dotaccentcomb_dblgravecomb;
+} ccmp_latn_2;
+lookup ccmp_latn_2;
 
 } ccmp;
 
@@ -730,6 +753,15 @@ sub idotlessdieresisacute by idotlessdieresisacute.ss03;
 sub ij by ij.ss03;
 sub iogonek by iogonek.ss03;
 sub iogonek_dieresiscomb by iogonek_dieresiscomb.ss03;
+sub idotless_dotaccentcomb_acutecomb by idotless_dotaccentcomb_acutecomb.ss03;
+sub idotless_dotaccentcomb_gravecomb by idotless_dotaccentcomb_gravecomb.ss03;
+sub idotless_dotaccentcomb_circumflexcomb by idotless_dotaccentcomb_circumflexcomb.ss03;
+sub idotless_dotaccentcomb_macroncomb by idotless_dotaccentcomb_macroncomb.ss03;
+sub idotless_dotaccentcomb_tildecomb by idotless_dotaccentcomb_tildecomb.ss03;
+sub idotless_dotaccentcomb_brevecomb by idotless_dotaccentcomb_brevecomb.ss03;
+sub idotless_dotaccentcomb_dieresiscomb by idotless_dotaccentcomb_dieresiscomb.ss03;
+sub idotless_dotaccentcomb_caroncomb by idotless_dotaccentcomb_caroncomb.ss03;
+sub idotless_dotaccentcomb_dblgravecomb by idotless_dotaccentcomb_dblgravecomb.ss03;
 sub istroke by istroke.ss03;
 sub j by j.ss03;
 sub kcommaaccent by kcommaaccent.ss03;

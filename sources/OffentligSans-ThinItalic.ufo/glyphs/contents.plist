@@ -1680,6 +1680,42 @@
     <string>idotbelow_tildecomb.ss03.glif</string>
     <key>idotless</key>
     <string>idotless.glif</string>
+    <key>idotless_dotaccentcomb_acutecomb</key>
+    <string>idotless_dotaccentcomb_acutecomb.glif</string>
+    <key>idotless_dotaccentcomb_gravecomb</key>
+    <string>idotless_dotaccentcomb_gravecomb.glif</string>
+    <key>idotless_dotaccentcomb_circumflexcomb</key>
+    <string>idotless_dotaccentcomb_circumflexcomb.glif</string>
+    <key>idotless_dotaccentcomb_macroncomb</key>
+    <string>idotless_dotaccentcomb_macroncomb.glif</string>
+    <key>idotless_dotaccentcomb_tildecomb</key>
+    <string>idotless_dotaccentcomb_tildecomb.glif</string>
+    <key>idotless_dotaccentcomb_brevecomb</key>
+    <string>idotless_dotaccentcomb_brevecomb.glif</string>
+    <key>idotless_dotaccentcomb_dieresiscomb</key>
+    <string>idotless_dotaccentcomb_dieresiscomb.glif</string>
+    <key>idotless_dotaccentcomb_caroncomb</key>
+    <string>idotless_dotaccentcomb_caroncomb.glif</string>
+    <key>idotless_dotaccentcomb_dblgravecomb</key>
+    <string>idotless_dotaccentcomb_dblgravecomb.glif</string>
+    <key>idotless_dotaccentcomb_acutecomb.ss03</key>
+    <string>idotless_dotaccentcomb_acutecomb.ss03.glif</string>
+    <key>idotless_dotaccentcomb_gravecomb.ss03</key>
+    <string>idotless_dotaccentcomb_gravecomb.ss03.glif</string>
+    <key>idotless_dotaccentcomb_circumflexcomb.ss03</key>
+    <string>idotless_dotaccentcomb_circumflexcomb.ss03.glif</string>
+    <key>idotless_dotaccentcomb_macroncomb.ss03</key>
+    <string>idotless_dotaccentcomb_macroncomb.ss03.glif</string>
+    <key>idotless_dotaccentcomb_tildecomb.ss03</key>
+    <string>idotless_dotaccentcomb_tildecomb.ss03.glif</string>
+    <key>idotless_dotaccentcomb_brevecomb.ss03</key>
+    <string>idotless_dotaccentcomb_brevecomb.ss03.glif</string>
+    <key>idotless_dotaccentcomb_dieresiscomb.ss03</key>
+    <string>idotless_dotaccentcomb_dieresiscomb.ss03.glif</string>
+    <key>idotless_dotaccentcomb_caroncomb.ss03</key>
+    <string>idotless_dotaccentcomb_caroncomb.ss03.glif</string>
+    <key>idotless_dotaccentcomb_dblgravecomb.ss03</key>
+    <string>idotless_dotaccentcomb_dblgravecomb.ss03.glif</string>
     <key>idotlessdieresisacute</key>
     <string>idotlessdieresisacute.glif</string>
     <key>idotlessdieresisacute.ss03</key>

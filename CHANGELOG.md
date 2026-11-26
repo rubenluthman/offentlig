@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-- Fixed typed `į` with an accent (Lithuanian `į́ į̀ į̃`): the accent is drawn into one glyph like on `ị` and `ɨ`, so it no longer touches the next letter. `Y` and `T` before accented lowercase letters keep at least the floor plus 10 units at Black and Black Italic, and the weights between lose the extra gap that change had added.
+- Fixed typed `į`, `ı` and `i̇` with an accent (Lithuanian `į́ į̀ į̃ i̇́`): each is one glyph like `ị` and `ɨ` (`ı́` is `í`), so the accent no longer touches the next letter, and `Ý Ŷ Ÿ Ȳ Ẏ Ỳ Ỷ Ỹ Ť Ṫ` clear the marks of the lowercase letters after them. `Y` and `T` before accented lowercase letters keep at least the floor plus 10 units at Black and Black Italic, and the weights between lose the extra gap that change had added.
 - Changed `î` and every other `i` with a circumflex to the full circumflex of `â ê ô û`, and removed the shorter-arm `T` and `Y` that `calt` swapped in before letters with tall marks: each letter now keeps one shape in all text, and the pairs that came closer than the floor of their weight are kerned apart (at most 46 units, mostly `î` before `ʾ` and `Y` before `č ě ō ǒ`).
 - Added the superscript, subscript, numerator, denominator and `½ ¼ ⅛ ⅓` figures to `cv06` (`1` with a base) and `zero` (slashed `0`), so text with either on never mixes two forms.
 - Changed the kerning of pairs with the alternates `cv01 cv03 cv05 cv06 zero` that stood closer than the floor of their weight (most of all `Ĵ)` with `cv01`, up to 66 units wider in Thin and Regular), so every pair clears the floor with the alternates on too.

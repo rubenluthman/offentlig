@@ -8342,6 +8342,56 @@
       <real>180.5</real>
       <key>iogonek_circumflexcomb</key>
       <integer>197</integer>
+      <key>egrave</key>
+      <integer>-120</integer>
+      <key>ograve</key>
+      <integer>-112</integer>
+      <key>ugrave</key>
+      <integer>-132</integer>
+      <key>ydieresis.ss03</key>
+      <integer>-126</integer>
+      <key>ccircumflex</key>
+      <integer>-159</integer>
+      <key>ccaron</key>
+      <integer>-159</integer>
+      <key>ecaron</key>
+      <integer>-159</integer>
+      <key>ibreve</key>
+      <integer>113</integer>
+      <key>iogonek_brevecomb</key>
+      <integer>113</integer>
+      <key>iogonek_caroncomb</key>
+      <integer>127</integer>
+      <key>icaron</key>
+      <integer>127</integer>
+      <key>jcircumflex</key>
+      <integer>90</integer>
+      <key>scircumflex</key>
+      <integer>-141</integer>
+      <key>scaron</key>
+      <integer>-141</integer>
+      <key>zcaron</key>
+      <integer>-91</integer>
+      <key>jdotlesscaron</key>
+      <integer>90</integer>
+      <key>istroke_brevecomb</key>
+      <integer>113</integer>
+      <key>istroke_caroncomb</key>
+      <integer>127</integer>
+      <key>zcircumflex</key>
+      <integer>-91</integer>
+      <key>idotbelow_brevecomb.ss03</key>
+      <integer>113</integer>
+      <key>idotbelow_caroncomb.ss03</key>
+      <integer>127</integer>
+      <key>ohorngrave</key>
+      <integer>-100</integer>
+      <key>ygrave</key>
+      <integer>-112</integer>
+      <key>idotbelow_brevecomb</key>
+      <integer>113</integer>
+      <key>idotbelow_caroncomb</key>
+      <integer>127</integer>
     </dict>
     <key>Tcaron</key>
     <dict>
@@ -8352,7 +8402,7 @@
       <key>yen</key>
       <integer>39</integer>
       <key>icircumflex</key>
-      <real>180.5</real>
+      <integer>197</integer>
       <key>iogonek_circumflexcomb</key>
       <integer>197</integer>
       <key>egrave</key>
@@ -8405,6 +8455,12 @@
       <real>112.6</real>
       <key>idotbelow_caroncomb.ss03</key>
       <real>126.6</real>
+      <key>istroke_circumflexcomb</key>
+      <integer>197</integer>
+      <key>idotbelow_circumflexcomb.ss03</key>
+      <integer>166</integer>
+      <key>idotbelow_circumflexcomb</key>
+      <integer>197</integer>
     </dict>
     <key>Tcedilla</key>
     <dict>
@@ -8586,7 +8642,7 @@
       <key>yen</key>
       <integer>39</integer>
       <key>icircumflex</key>
-      <real>180.5</real>
+      <integer>197</integer>
       <key>iogonek_circumflexcomb</key>
       <integer>197</integer>
       <key>egrave</key>
@@ -8635,6 +8691,16 @@
       <real>112.6</real>
       <key>iogonek_caroncomb</key>
       <real>126.6</real>
+      <key>istroke_circumflexcomb</key>
+      <integer>197</integer>
+      <key>idotbelow_circumflexcomb.ss03</key>
+      <integer>166</integer>
+      <key>idotbelow_circumflexcomb</key>
+      <integer>197</integer>
+      <key>idotbelow_brevecomb</key>
+      <real>112.6</real>
+      <key>idotbelow_caroncomb</key>
+      <real>126.6</real>
     </dict>
     <key>Tdotaccent</key>
     <dict>
@@ -8643,7 +8709,7 @@
       <key>yen</key>
       <integer>39</integer>
       <key>icircumflex</key>
-      <real>180.5</real>
+      <integer>197</integer>
       <key>iogonek_circumflexcomb</key>
       <integer>197</integer>
       <key>egrave</key>
@@ -8690,6 +8756,10 @@
       <real>112.6</real>
       <key>iogonek_caroncomb</key>
       <real>126.6</real>
+      <key>istroke_circumflexcomb</key>
+      <integer>197</integer>
+      <key>idotbelow_circumflexcomb</key>
+      <integer>197</integer>
     </dict>
     <key>Tdotbelow.ss03</key>
     <dict>
@@ -11671,6 +11741,8 @@
       <real>125.6</real>
       <key>iogonek_dblgravecomb</key>
       <real>125.6</real>
+      <key>idotbelow_dblgravecomb</key>
+      <real>125.6</real>
     </dict>
     <key>Ydieresis</key>
     <dict>
@@ -11844,6 +11916,8 @@
       <key>istroke_dblgravecomb</key>
       <real>125.6</real>
       <key>iogonek_dblgravecomb</key>
+      <real>125.6</real>
+      <key>idotbelow_dblgravecomb</key>
       <real>125.6</real>
     </dict>
     <key>Ydotaccent</key>
@@ -28926,6 +29000,24 @@
       <integer>104</integer>
       <key>iogonek_acutecomb</key>
       <integer>14</integer>
+      <key>idotless_dotaccentcomb_gravecomb.ss03</key>
+      <integer>53</integer>
+      <key>idotless_dotaccentcomb_acutecomb.ss03</key>
+      <integer>53</integer>
+      <key>idotless_dotaccentcomb_circumflexcomb.ss03</key>
+      <integer>53</integer>
+      <key>idotless_dotaccentcomb_tildecomb.ss03</key>
+      <integer>53</integer>
+      <key>idotless_dotaccentcomb_macroncomb.ss03</key>
+      <integer>53</integer>
+      <key>idotless_dotaccentcomb_brevecomb.ss03</key>
+      <integer>53</integer>
+      <key>idotless_dotaccentcomb_dieresiscomb.ss03</key>
+      <integer>53</integer>
+      <key>idotless_dotaccentcomb_caroncomb.ss03</key>
+      <integer>53</integer>
+      <key>idotless_dotaccentcomb_dblgravecomb.ss03</key>
+      <integer>53</integer>
     </dict>
     <key>idblgrave</key>
     <dict>
@@ -51799,6 +51891,10 @@
       <integer>0</integer>
       <key>iogonek_gravecomb</key>
       <integer>42</integer>
+      <key>idotless_dotaccentcomb_circumflexcomb.ss03</key>
+      <integer>0</integer>
+      <key>idotless_dotaccentcomb_circumflexcomb</key>
+      <integer>0</integer>
     </dict>
     <key>parenleft.case</key>
     <dict>
@@ -69602,6 +69698,65 @@
       <integer>27</integer>
       <key>rlinebelow</key>
       <integer>74</integer>
+    </dict>
+    <key>idotless_dotaccentcomb_circumflexcomb.ss03</key>
+    <dict>
+      <key>parenright</key>
+      <integer>14</integer>
+      <key>icircumflex</key>
+      <integer>59</integer>
+    </dict>
+    <key>idotless_dotaccentcomb_circumflexcomb</key>
+    <dict>
+      <key>parenright</key>
+      <integer>0</integer>
+    </dict>
+    <key>idotless_dotaccentcomb_gravecomb.ss03</key>
+    <dict>
+      <key>icircumflex</key>
+      <integer>59</integer>
+    </dict>
+    <key>idotless_dotaccentcomb_acutecomb.ss03</key>
+    <dict>
+      <key>icircumflex</key>
+      <integer>59</integer>
+    </dict>
+    <key>idotless_dotaccentcomb_tildecomb.ss03</key>
+    <dict>
+      <key>icircumflex</key>
+      <integer>59</integer>
+    </dict>
+    <key>idotless_dotaccentcomb_macroncomb.ss03</key>
+    <dict>
+      <key>icircumflex</key>
+      <integer>59</integer>
+    </dict>
+    <key>idotless_dotaccentcomb_brevecomb.ss03</key>
+    <dict>
+      <key>icircumflex</key>
+      <integer>59</integer>
+    </dict>
+    <key>idotless_dotaccentcomb_dieresiscomb.ss03</key>
+    <dict>
+      <key>icircumflex</key>
+      <integer>59</integer>
+    </dict>
+    <key>idotless_dotaccentcomb_caroncomb.ss03</key>
+    <dict>
+      <key>icircumflex</key>
+      <integer>59</integer>
+    </dict>
+    <key>idotless_dotaccentcomb_dblgravecomb.ss03</key>
+    <dict>
+      <key>icircumflex</key>
+      <integer>59</integer>
+      <key>parenright</key>
+      <integer>13</integer>
+    </dict>
+    <key>idotless_dotaccentcomb_dblgravecomb</key>
+    <dict>
+      <key>parenright</key>
+      <integer>0</integer>
     </dict>
   </dict>
 </plist>

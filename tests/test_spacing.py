@@ -424,7 +424,7 @@ def test_accented_i_clears_the_closing_punctuation_after_it(weight, italic, feat
     tight = []
     lefts = [c for c in accented_lowercase(source("Regular")) if unicodedata.normalize("NFD", c)[0] == "i"]
     # typed ị and ɨ with a top mark shape as one glyph (`idotbelow_acutecomb`, `istroke_brevecomb` and the others)
-    lefts += [base + mark for base in "ịɨį" for mark in "\u0301\u0300\u0302\u0304\u0303\u0306\u0308\u030c"]
+    lefts += [base + mark for base in "ịɨįı" for mark in "\u0301\u0300\u0302\u0304\u0303\u0306\u0308\u030c"]
     for left in lefts:
         for right in CLOSING_PUNCTUATION:
             try:
@@ -445,7 +445,7 @@ def accented_letters(font):
         for c in (chr(g.unicodes[0]) for g in font if g.unicodes)
         if unicodedata.category(c) in ("Lu", "Ll") and len(unicodedata.normalize("NFD", c)) > 1
     ]
-    return sorted(letters) + [base + mark for base in "ịɨį" for mark in "\u0301\u0300\u0302\u0304\u0303\u0306\u0308\u030c"]
+    return sorted(letters) + [base + mark for base in "ịɨįı" for mark in "\u0301\u0300\u0302\u0304\u0303\u0306\u0308\u030c"]
 
 
 @pytest.mark.parametrize("features", [{}, {"ss03": True}, {"ss01": True}, {"ss02": True}, {"salt": True, "ss03": True}],

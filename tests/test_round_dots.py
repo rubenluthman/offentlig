@@ -41,6 +41,12 @@ DOT_ALTERNATES = """
     gcommaaccent.ss01 gdotaccent.ss01 lcommaaccent.ss02 ldotbelow.ss02
 """.split()
 DOT_GLYPHS += DOT_ALTERNATES
+# Typed Lithuanian `i̇` + a top mark is one glyph per mark (the dot is round or square).
+DOT_GLYPHS += [
+    f"idotless_dotaccentcomb_{mark}"
+    for mark in "acute grave circumflex macron tilde breve dieresis caron dblgrave".split()
+    for mark in [mark + "comb"]
+]
 
 
 def shape(path, text, features):
