@@ -7,6 +7,6 @@
   <outline>
     <component base="idotless"/>
     <component base="dotaccentcomb" xOffset="145"/>
-    <component base="gravecomb" xOffset="-102" yOffset="409"/>
+    <component base="gravecomb.narrow" xOffset="-37.625" yOffset="409"/>
   </outline>
 </glyph>

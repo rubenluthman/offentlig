@@ -114,8 +114,7 @@ lookup ccmp_latn_1 {
 	sub circumflexcomb tildecomb by circumflexcomb_tildecomb;
 } ccmp_latn_1;
 
-script latn;
-lookup ccmp_latn_1;
+# Built for every language system, so that `ro ca tr az kk tt` and `DFLT` shape the typed `i̇` + mark as `latn` does.
 lookup ccmp_latn_2 {
 	lookupflag 0;
 	sub idotless dotaccentcomb acutecomb by idotless_dotaccentcomb_acutecomb;
@@ -128,7 +127,6 @@ lookup ccmp_latn_2 {
 	sub idotless dotaccentcomb caroncomb by idotless_dotaccentcomb_caroncomb;
 	sub idotless dotaccentcomb dblgravecomb.narrow by idotless_dotaccentcomb_dblgravecomb;
 } ccmp_latn_2;
-lookup ccmp_latn_2;
 
 } ccmp;
 
