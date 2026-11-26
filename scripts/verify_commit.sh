@@ -29,18 +29,7 @@ else
   PATH="$PWD/venv/bin:$PATH" heavy pytest -q -n "${PYTEST_JOBS:-4}" --dist worksteal tests || fail=1
 fi
 
-files=$(git ls-files --cached --others --exclude-standard)
-
-echo "== relative Markdown links"
-for f in $(echo "$files" | grep '\.md$'); do
-  dir=$(dirname "$f")
-  grep -o '\](\([^)#]*\)\(#[^)]*\)\{0,1\})' "$f" | sed 's/^](//; s/)$//; s/#.*//' | while read -r target; do
-    case "$target" in ''|http*|mailto:*) continue ;; esac
-    [ -e "$dir/$target" ] || { echo "$f: broken link $target" >&2; exit 1; }
-  done || fail=1
-done
-
-echo "== shared commit checks (house style with Vale, secrets, home paths, emails, private names, conflict markers, hooks)"
+echo "== shared commit checks (links, house style with Vale, secrets, home paths, emails, private names, conflict markers, hooks)"
 ./scripts/commit-checks verify || fail=1
 
 [ "$fail" -eq 0 ] && echo "verify: ok" || { echo "verify: FAILED" >&2; exit 1; }
