@@ -57,7 +57,7 @@ This project follows a shared house style for wording, punctuation, and headings
 ## Releases
 
 1. Check the pull requests this fork sent to Public Sans ([#396](https://github.com/uswds/public-sans/pull/396), [#397](https://github.com/uswds/public-sans/pull/397), [#398](https://github.com/uswds/public-sans/pull/398)). When one has merged or closed, say so in `README.md` and `ROADMAP.md`, and compare the merged change with this fork's fix.
-2. Rename `## [Unreleased]` in `CHANGELOG.md` to `## [X.Y.Z] - YYYY-MM-DD`, and update the version in `sources/*.ufo/fontinfo.plist` (`versionMajor`, `versionMinor`). Package version `0.X.Y` becomes font version `0.(X × 100 + Y)`.
+2. Rename `## [Unreleased]` in `CHANGELOG.md` to `## [X.Y.Z] - YYYY-MM-DD`, and update the version in `sources/*.ufo/fontinfo.plist` (`versionMajor`, `versionMinor`). The font version is a release counter: `versionMinor` goes up by one with each release (`0.9.0` is `0.900`, the next release `0.901`, `1.0.0` is `1.000`; see `ARCHITECTURE.md`).
 3. Run `make build test qa`. The version test compares name ID 5 of every built font with `versionMajor` and `versionMinor` in the masters, so it fails on a stale build or masters that disagree.
 4. Run `make specimen` to refresh `docs/specimen.png` and `docs/specimen-dark.png` and `make social-preview` to write `build/social-preview.png`, and upload the preview by hand.
 5. Run `scripts/release_notes.sh X.Y.Z` to check the release notes before tagging: the release job fails without them, and a tag is never moved.
