@@ -20,11 +20,14 @@ def die(message):
     sys.exit(2)
 
 
+def clean_env():
+    # A hook exports GIT_DIR (absolute in a linked worktree) and GIT_INDEX_FILE, which point git at the
+    # consumer's repository instead of the folder it was asked to use.
+    return {k: v for k, v in os.environ.items() if k not in ("GIT_DIR", "GIT_WORK_TREE", "GIT_INDEX_FILE")}
+
+
 def git(args, cwd=None, clean=False):
-    env = None
-    if clean:
-        # A hook exports GIT_DIR without GIT_WORK_TREE, which makes rev-parse answer the wrong folder.
-        env = {k: v for k, v in os.environ.items() if k not in ("GIT_DIR", "GIT_WORK_TREE", "GIT_INDEX_FILE")}
+    env = clean_env() if clean else None
     try:
         proc = subprocess.run(["git"] + args, cwd=cwd, capture_output=True, timeout=300, env=env)
     except (OSError, subprocess.TimeoutExpired) as exc:
@@ -33,13 +36,14 @@ def git(args, cwd=None, clean=False):
 
 
 def resolve(repo, tag):
-    code, out, _err = git(["rev-parse", "--verify", "--quiet", tag + "^{commit}"], cwd=repo)
+    code, out, _err = git(["rev-parse", "--verify", "--quiet", tag + "^{commit}"], cwd=repo, clean=True)
     return out if code == 0 else ""
 
 
 def export(repo, commit, dest):
     try:
-        proc = subprocess.run(["git", "archive", "--format=tar", commit], cwd=repo, capture_output=True, timeout=300)
+        proc = subprocess.run(["git", "archive", "--format=tar", commit], cwd=repo, capture_output=True, timeout=300,
+                              env=clean_env())
     except (OSError, subprocess.TimeoutExpired) as exc:
         die("git archive failed: %s" % exc)
     if proc.returncode != 0:
@@ -91,7 +95,7 @@ def main():
                 if not source:
                     die("no local package folder (git config --global commit-checks.path) and no source in settings")
                 tmp_clone = tempfile.mkdtemp(prefix="clone-", dir=os.path.dirname(cache))
-                code, _o, err = git(["clone", "--quiet", "--no-checkout", source, tmp_clone])
+                code, _o, err = git(["clone", "--quiet", "--no-checkout", source, tmp_clone], clean=True)
                 if code != 0:
                     die("cannot fetch the package from its source: %s" % err[:200])
                 repo = tmp_clone
