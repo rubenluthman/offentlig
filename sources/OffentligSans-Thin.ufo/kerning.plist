@@ -3070,9 +3070,9 @@
       <key>idotless_dotaccentcomb_dieresiscomb.ss03</key>
       <integer>1</integer>
       <key>idotless_dotaccentcomb_gravecomb</key>
-      <integer>122</integer>
+      <integer>100</integer>
       <key>idotless_dotaccentcomb_gravecomb.ss03</key>
-      <integer>122</integer>
+      <integer>100</integer>
       <key>idotless_dotaccentcomb_macroncomb</key>
       <integer>2</integer>
       <key>idotless_dotaccentcomb_macroncomb.ss03</key>
@@ -3230,9 +3230,9 @@
       <key>idotless_dotaccentcomb_brevecomb.ss03</key>
       <integer>85</integer>
       <key>idotless_dotaccentcomb_caroncomb</key>
-      <integer>104</integer>
+      <integer>100</integer>
       <key>idotless_dotaccentcomb_caroncomb.ss03</key>
-      <integer>104</integer>
+      <integer>100</integer>
       <key>idotless_dotaccentcomb_circumflexcomb</key>
       <integer>0</integer>
       <key>idotless_dotaccentcomb_dblgravecomb</key>
@@ -3246,7 +3246,7 @@
       <key>idotless_dotaccentcomb_gravecomb</key>
       <integer>57</integer>
       <key>idotless_dotaccentcomb_gravecomb.ss03</key>
-      <integer>116</integer>
+      <integer>100</integer>
       <key>idotless_dotaccentcomb_macroncomb</key>
       <integer>79</integer>
       <key>idotless_dotaccentcomb_macroncomb.ss03</key>
@@ -3396,9 +3396,9 @@
       <key>idotless_dotaccentcomb_brevecomb.ss03</key>
       <integer>84</integer>
       <key>idotless_dotaccentcomb_caroncomb</key>
-      <integer>111</integer>
+      <integer>100</integer>
       <key>idotless_dotaccentcomb_caroncomb.ss03</key>
-      <integer>111</integer>
+      <integer>100</integer>
       <key>idotless_dotaccentcomb_circumflexcomb</key>
       <integer>0</integer>
       <key>idotless_dotaccentcomb_dblgravecomb</key>
@@ -3412,7 +3412,7 @@
       <key>idotless_dotaccentcomb_gravecomb</key>
       <integer>84</integer>
       <key>idotless_dotaccentcomb_gravecomb.ss03</key>
-      <integer>170</integer>
+      <integer>100</integer>
       <key>idotless_dotaccentcomb_macroncomb</key>
       <integer>84</integer>
       <key>idotless_dotaccentcomb_macroncomb.ss03</key>
@@ -3562,9 +3562,9 @@
       <key>idotless_dotaccentcomb_brevecomb.ss03</key>
       <integer>36</integer>
       <key>idotless_dotaccentcomb_circumflexcomb</key>
-      <integer>109</integer>
+      <integer>100</integer>
       <key>idotless_dotaccentcomb_circumflexcomb.ss03</key>
-      <integer>109</integer>
+      <integer>100</integer>
       <key>idotless_dotaccentcomb_dblgravecomb</key>
       <integer>0</integer>
       <key>idotless_dotaccentcomb_dblgravecomb.ss03</key>
@@ -5566,9 +5566,9 @@
       <key>idotless_dotaccentcomb_brevecomb.ss03</key>
       <integer>94</integer>
       <key>idotless_dotaccentcomb_caroncomb</key>
-      <integer>108</integer>
+      <integer>100</integer>
       <key>idotless_dotaccentcomb_caroncomb.ss03</key>
-      <integer>108</integer>
+      <integer>100</integer>
       <key>idotless_dotaccentcomb_circumflexcomb</key>
       <integer>0</integer>
       <key>idotless_dotaccentcomb_circumflexcomb.ss03</key>
@@ -36359,7 +36359,7 @@
       <key>idotless_dotaccentcomb_dieresiscomb.ss03</key>
       <integer>83</integer>
       <key>idotless_dotaccentcomb_gravecomb.ss03</key>
-      <integer>134</integer>
+      <integer>120</integer>
       <key>idotless_dotaccentcomb_macroncomb.ss03</key>
       <integer>105</integer>
       <key>idotless_dotaccentcomb_tildecomb.ss03</key>
@@ -36778,7 +36778,7 @@
       <key>idotless_dotaccentcomb_dieresiscomb</key>
       <integer>81</integer>
       <key>idotless_dotaccentcomb_gravecomb</key>
-      <integer>133</integer>
+      <integer>120</integer>
       <key>idotless_dotaccentcomb_macroncomb</key>
       <integer>105</integer>
       <key>idotless_dotaccentcomb_tildecomb</key>
@@ -65246,7 +65246,7 @@
       <key>Ibreve</key>
       <integer>0</integer>
       <key>Icircumflex</key>
-      <integer>106</integer>
+      <integer>100</integer>
       <key>Idieresis.ss03</key>
       <integer>0</integer>
       <key>Idieresisacute.ss03</key>
@@ -65281,6 +65281,10 @@
       <integer>0</integer>
       <key>udblgrave</key>
       <integer>0</integer>
+      <key>hdieresis.ss03</key>
+      <integer>90</integer>
+      <key>Idblgrave</key>
+      <integer>100</integer>
     </dict>
     <key>idotless_dotaccentcomb_circumflexcomb</key>
     <dict>
@@ -65291,7 +65295,7 @@
       <key>Icaron</key>
       <integer>0</integer>
       <key>Icircumflex</key>
-      <integer>106</integer>
+      <integer>100</integer>
       <key>Icircumflex.cv05</key>
       <integer>80</integer>
       <key>Idblgrave.cv05</key>
@@ -65338,6 +65342,10 @@
       <integer>24</integer>
       <key>tdieresis</key>
       <integer>0</integer>
+      <key>hdieresis.ss03</key>
+      <integer>90</integer>
+      <key>Idblgrave</key>
+      <integer>100</integer>
     </dict>
     <key>idotless_dotaccentcomb_gravecomb.ss03</key>
     <dict>
@@ -65353,6 +65361,10 @@
       <integer>0</integer>
       <key>udblgrave</key>
       <integer>0</integer>
+      <key>hdieresis.ss03</key>
+      <integer>90</integer>
+      <key>Idblgrave</key>
+      <integer>100</integer>
     </dict>
     <key>idotless_dotaccentcomb_acutecomb.ss03</key>
     <dict>
@@ -65363,9 +65375,9 @@
       <key>Edblgrave</key>
       <integer>0</integer>
       <key>Ibreve</key>
-      <integer>106</integer>
+      <integer>100</integer>
       <key>Icaron</key>
-      <integer>162</integer>
+      <integer>100</integer>
       <key>Icircumflex</key>
       <integer>0</integer>
       <key>Idieresis.ss03</key>
@@ -65375,7 +65387,7 @@
       <key>Idotaccent.ss03</key>
       <integer>0</integer>
       <key>Igrave</key>
-      <integer>119</integer>
+      <integer>100</integer>
       <key>Iinvertedbreve</key>
       <integer>13</integer>
       <key>Imacron</key>
@@ -65397,7 +65409,7 @@
       <key>edblgrave</key>
       <integer>0</integer>
       <key>hcaron</key>
-      <integer>230</integer>
+      <integer>120</integer>
       <key>hcircumflex</key>
       <integer>20</integer>
       <key>hdotaccent.ss03</key>
@@ -65405,7 +65417,7 @@
       <key>jcircumflex</key>
       <integer>0</integer>
       <key>kcaron</key>
-      <integer>218</integer>
+      <integer>120</integer>
       <key>tdieresis.ss03</key>
       <integer>0</integer>
       <key>udblgrave</key>
@@ -65414,6 +65426,10 @@
       <integer>0</integer>
       <key>udieresisgrave.ss03</key>
       <integer>0</integer>
+      <key>hdieresis.ss03</key>
+      <integer>90</integer>
+      <key>Idblgrave</key>
+      <integer>208</integer>
     </dict>
     <key>idotless_dotaccentcomb_tildecomb.ss03</key>
     <dict>
@@ -65456,7 +65472,7 @@
       <key>edblgrave</key>
       <integer>0</integer>
       <key>hcaron</key>
-      <integer>126</integer>
+      <integer>120</integer>
       <key>hcircumflex</key>
       <integer>36</integer>
       <key>hdotaccent.ss03</key>
@@ -65471,6 +65487,10 @@
       <integer>0</integer>
       <key>udblgrave</key>
       <integer>0</integer>
+      <key>hdieresis.ss03</key>
+      <integer>90</integer>
+      <key>Idblgrave</key>
+      <integer>148</integer>
     </dict>
     <key>idotless_dotaccentcomb_macroncomb.ss03</key>
     <dict>
@@ -65511,7 +65531,7 @@
       <key>edblgrave</key>
       <integer>0</integer>
       <key>hcaron</key>
-      <integer>124</integer>
+      <integer>120</integer>
       <key>hcircumflex</key>
       <integer>74</integer>
       <key>hdotaccent.ss03</key>
@@ -65526,6 +65546,10 @@
       <integer>0</integer>
       <key>udblgrave</key>
       <integer>0</integer>
+      <key>hdieresis.ss03</key>
+      <integer>90</integer>
+      <key>Idblgrave</key>
+      <integer>128</integer>
     </dict>
     <key>idotless_dotaccentcomb_brevecomb.ss03</key>
     <dict>
@@ -65568,7 +65592,7 @@
       <key>edblgrave</key>
       <integer>0</integer>
       <key>hcaron</key>
-      <integer>126</integer>
+      <integer>120</integer>
       <key>hcircumflex</key>
       <integer>74</integer>
       <key>hdotaccent.ss03</key>
@@ -65585,6 +65609,10 @@
       <integer>0</integer>
       <key>udieresisgrave.ss03</key>
       <integer>0</integer>
+      <key>hdieresis.ss03</key>
+      <integer>90</integer>
+      <key>Idblgrave</key>
+      <integer>130</integer>
     </dict>
     <key>idotless_dotaccentcomb_dieresiscomb.ss03</key>
     <dict>
@@ -65670,6 +65698,8 @@
       <integer>0</integer>
       <key>udieresisgrave.ss03</key>
       <integer>0</integer>
+      <key>Idblgrave</key>
+      <integer>134</integer>
     </dict>
     <key>idotless_dotaccentcomb_caroncomb.ss03</key>
     <dict>
@@ -65682,7 +65712,7 @@
       <key>Ibreve</key>
       <integer>100</integer>
       <key>Icaron</key>
-      <integer>108</integer>
+      <integer>100</integer>
       <key>Icircumflex</key>
       <integer>0</integer>
       <key>Idieresis.ss03</key>
@@ -65698,7 +65728,7 @@
       <key>Imacron</key>
       <integer>91</integer>
       <key>Itilde</key>
-      <integer>101</integer>
+      <integer>100</integer>
       <key>Odblgrave</key>
       <integer>0</integer>
       <key>Rdblgrave</key>
@@ -65729,6 +65759,10 @@
       <integer>0</integer>
       <key>udieresisgrave.ss03</key>
       <integer>0</integer>
+      <key>hdieresis.ss03</key>
+      <integer>90</integer>
+      <key>Idblgrave</key>
+      <integer>158</integer>
     </dict>
     <key>idotless_dotaccentcomb_dblgravecomb.ss03</key>
     <dict>
@@ -65784,6 +65818,10 @@
       <integer>0</integer>
       <key>udblgrave</key>
       <integer>0</integer>
+      <key>hdieresis.ss03</key>
+      <integer>90</integer>
+      <key>Idblgrave</key>
+      <integer>100</integer>
     </dict>
     <key>idotless_dotaccentcomb_dblgravecomb</key>
     <dict>
@@ -65851,6 +65889,10 @@
       <integer>0</integer>
       <key>tdieresis</key>
       <integer>0</integer>
+      <key>hdieresis.ss03</key>
+      <integer>90</integer>
+      <key>Idblgrave</key>
+      <integer>100</integer>
     </dict>
     <key>public.kern1.idotaccent</key>
     <dict>
@@ -65988,7 +66030,7 @@
       <key>Idieresisacute.cv05</key>
       <integer>80</integer>
       <key>Igrave</key>
-      <integer>119</integer>
+      <integer>100</integer>
       <key>Igrave.cv05</key>
       <integer>80</integer>
       <key>Iinvertedbreve</key>
@@ -66008,7 +66050,7 @@
       <key>bdotaccent</key>
       <integer>20</integer>
       <key>hcaron</key>
-      <integer>124</integer>
+      <integer>120</integer>
       <key>hcircumflex</key>
       <integer>20</integer>
       <key>hdieresis</key>
@@ -66023,6 +66065,10 @@
       <integer>0</integer>
       <key>udieresisgrave</key>
       <integer>0</integer>
+      <key>hdieresis.ss03</key>
+      <integer>90</integer>
+      <key>Idblgrave</key>
+      <integer>208</integer>
     </dict>
     <key>idotless_dotaccentcomb_brevecomb</key>
     <dict>
@@ -66069,7 +66115,7 @@
       <key>Udblgrave</key>
       <integer>0</integer>
       <key>hcaron</key>
-      <integer>127</integer>
+      <integer>120</integer>
       <key>hcircumflex</key>
       <integer>73</integer>
       <key>hdieresis</key>
@@ -66077,11 +66123,15 @@
       <key>hdotaccent</key>
       <integer>20</integer>
       <key>kcaron</key>
-      <integer>121</integer>
+      <integer>120</integer>
       <key>tdieresis</key>
       <integer>0</integer>
       <key>udieresisgrave</key>
       <integer>0</integer>
+      <key>hdieresis.ss03</key>
+      <integer>90</integer>
+      <key>Idblgrave</key>
+      <integer>130</integer>
     </dict>
     <key>idotless_dotaccentcomb_caroncomb</key>
     <dict>
@@ -66094,7 +66144,7 @@
       <key>Ibreve.cv05</key>
       <integer>80</integer>
       <key>Icaron</key>
-      <integer>108</integer>
+      <integer>100</integer>
       <key>Icaron.cv05</key>
       <integer>80</integer>
       <key>Idblgrave.cv05</key>
@@ -66127,6 +66177,10 @@
       <integer>146</integer>
       <key>udieresisgrave</key>
       <integer>0</integer>
+      <key>hdieresis.ss03</key>
+      <integer>90</integer>
+      <key>Idblgrave</key>
+      <integer>158</integer>
     </dict>
     <key>idotless_dotaccentcomb_dieresiscomb</key>
     <dict>
@@ -66196,6 +66250,8 @@
       <integer>0</integer>
       <key>tdieresis</key>
       <integer>0</integer>
+      <key>Idblgrave</key>
+      <integer>100</integer>
     </dict>
     <key>idotless_dotaccentcomb_macroncomb</key>
     <dict>
@@ -66258,7 +66314,7 @@
       <key>bracketright.case</key>
       <integer>28</integer>
       <key>hcaron</key>
-      <integer>125</integer>
+      <integer>120</integer>
       <key>hcircumflex</key>
       <integer>72</integer>
       <key>hdieresis</key>
@@ -66273,6 +66329,10 @@
       <integer>14</integer>
       <key>tdieresis</key>
       <integer>0</integer>
+      <key>hdieresis.ss03</key>
+      <integer>90</integer>
+      <key>Idblgrave</key>
+      <integer>130</integer>
     </dict>
     <key>idotless_dotaccentcomb_tildecomb</key>
     <dict>
@@ -66323,7 +66383,7 @@
       <key>bdotaccent</key>
       <integer>20</integer>
       <key>hcaron</key>
-      <integer>127</integer>
+      <integer>120</integer>
       <key>hcircumflex</key>
       <integer>35</integer>
       <key>hdieresis</key>
@@ -66333,9 +66393,13 @@
       <key>hmod</key>
       <integer>0</integer>
       <key>kcaron</key>
-      <integer>121</integer>
+      <integer>120</integer>
       <key>tdieresis</key>
       <integer>0</integer>
+      <key>hdieresis.ss03</key>
+      <integer>90</integer>
+      <key>Idblgrave</key>
+      <integer>148</integer>
     </dict>
     <key>nine.dnom</key>
     <dict>
@@ -66481,6 +66545,13 @@
       <integer>13</integer>
       <key>jcircumflex</key>
       <integer>16</integer>
+    </dict>
+    <key>idotless_dotaccentcomb_gravecomb</key>
+    <dict>
+      <key>hdieresis.ss03</key>
+      <integer>90</integer>
+      <key>Idblgrave</key>
+      <integer>100</integer>
     </dict>
   </dict>
 </plist>
