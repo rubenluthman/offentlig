@@ -1,4 +1,6 @@
 """Shared fixtures. Tests run against the built fonts in fonts/OffentligSans (run `make build` first)."""
+import plistlib
+from functools import cache
 from pathlib import Path
 
 import pytest
@@ -12,6 +14,17 @@ WEIGHTS = ["Thin", "ExtraLight", "Light", "Regular", "Medium", "SemiBold", "Bold
 def static_path(weight: str, italic: bool, kind: str = "ttf") -> Path:
     style = "Italic" if italic and weight == "Regular" else weight + ("Italic" if italic else "")
     return BUILD / kind / f"OffentligSans-{style}.{kind}"
+
+
+@cache
+def _production_names():
+    lib = ROOT / "sources" / "OffentligSans-Regular.ufo" / "lib.plist"
+    return plistlib.loads(lib.read_bytes())["public.postscriptNames"]
+
+
+def built_name(source_name: str) -> str:
+    """The name a source glyph has in the built fonts (`public.postscriptNames`; most glyphs keep their source name)."""
+    return _production_names().get(source_name, source_name)
 
 
 def pytest_configure(config):

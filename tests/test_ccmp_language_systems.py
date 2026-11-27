@@ -7,7 +7,7 @@ import uharfbuzz as hb
 import pytest
 from fontTools.ttLib import TTFont
 
-from conftest import static_path
+from conftest import built_name, static_path
 from test_accent_pairs import TOP_MARKS
 from test_spacing import ALL_FONTS, ALL_IDS
 
@@ -49,8 +49,9 @@ def lookup_with_glyph(path, glyph):
 @pytest.mark.parametrize("weight,italic", ALL_FONTS, ids=ALL_IDS)
 def test_every_language_system_builds_the_typed_dotted_i_forms(weight, italic):
     path = static_path(weight, italic)
-    wanted = lookup_with_glyph(path, "idotless_dotaccentcomb_acutecomb")
-    assert wanted, "no lookup builds idotless_dotaccentcomb_acutecomb"
+    glyph = built_name("idotless_dotaccentcomb_acutecomb")
+    wanted = lookup_with_glyph(path, glyph)
+    assert wanted, f"no lookup builds {glyph}"
     systems = ccmp_lookup_sets(path)
     assert ("DFLT", "dflt") in systems and ("latn", "dflt") in systems
     missing = [system for system, lookups in systems.items() if not wanted <= lookups]

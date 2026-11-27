@@ -13,7 +13,7 @@ import ufoLib2
 import uharfbuzz as hb
 from fontTools.ttLib import TTFont
 
-from conftest import STATICS, STATIC_IDS, static_path
+from conftest import STATICS, STATIC_IDS, built_name, static_path
 
 SOURCES = Path(__file__).resolve().parent.parent / "sources"
 MASTERS = ["Thin", "Regular", "Black", "ThinItalic", "RegularItalic", "BlackItalic"]
@@ -132,7 +132,7 @@ def test_ss03_has_a_rule_for_every_dotted_glyph_and_alternate(weight, italic, re
     dotted = {n for n in regular_source.keys()
               if not n.endswith(".ss03") and not n.startswith("_") and ".tk" not in n and has_square_dot(regular_source, n)}
     assert dotted
-    assert not [n for n in dotted if n + ".ss03" not in targets or n + ".ss03" not in order]
+    assert not [n for n in dotted if built_name(n + ".ss03") not in targets or built_name(n + ".ss03") not in order]
 
 
 @pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)

@@ -3641,6 +3641,42 @@
       <string>uni1ECB</string>
       <key>idotless</key>
       <string>dotlessi</string>
+      <key>idotless_dotaccentcomb_acutecomb</key>
+      <string>uni006903070301</string>
+      <key>idotless_dotaccentcomb_acutecomb.ss03</key>
+      <string>uni006903070301.ss03</string>
+      <key>idotless_dotaccentcomb_brevecomb</key>
+      <string>uni006903070306</string>
+      <key>idotless_dotaccentcomb_brevecomb.ss03</key>
+      <string>uni006903070306.ss03</string>
+      <key>idotless_dotaccentcomb_caroncomb</key>
+      <string>uni00690307030C</string>
+      <key>idotless_dotaccentcomb_caroncomb.ss03</key>
+      <string>uni00690307030C.ss03</string>
+      <key>idotless_dotaccentcomb_circumflexcomb</key>
+      <string>uni006903070302</string>
+      <key>idotless_dotaccentcomb_circumflexcomb.ss03</key>
+      <string>uni006903070302.ss03</string>
+      <key>idotless_dotaccentcomb_dblgravecomb</key>
+      <string>uni00690307030F</string>
+      <key>idotless_dotaccentcomb_dblgravecomb.ss03</key>
+      <string>uni00690307030F.ss03</string>
+      <key>idotless_dotaccentcomb_dieresiscomb</key>
+      <string>uni006903070308</string>
+      <key>idotless_dotaccentcomb_dieresiscomb.ss03</key>
+      <string>uni006903070308.ss03</string>
+      <key>idotless_dotaccentcomb_gravecomb</key>
+      <string>uni006903070300</string>
+      <key>idotless_dotaccentcomb_gravecomb.ss03</key>
+      <string>uni006903070300.ss03</string>
+      <key>idotless_dotaccentcomb_macroncomb</key>
+      <string>uni006903070304</string>
+      <key>idotless_dotaccentcomb_macroncomb.ss03</key>
+      <string>uni006903070304.ss03</string>
+      <key>idotless_dotaccentcomb_tildecomb</key>
+      <string>uni006903070303</string>
+      <key>idotless_dotaccentcomb_tildecomb.ss03</key>
+      <string>uni006903070303.ss03</string>
       <key>idotlessdieresisacute</key>
       <string>uni1E2F</string>
       <key>ihookabove</key>

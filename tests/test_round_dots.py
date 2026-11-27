@@ -3,7 +3,7 @@ import pytest
 import uharfbuzz as hb
 from fontTools.ttLib import TTFont
 
-from conftest import STATICS, STATIC_IDS, static_path
+from conftest import STATICS, STATIC_IDS, built_name, static_path
 
 # Every glyph whose outline or components contain a dot: i j and the dot accents, the punctuation dots and
 # comma heads, and every composite built from them.
@@ -61,7 +61,7 @@ def shape(path, text, features):
 @pytest.mark.parametrize("weight,italic", STATICS, ids=STATIC_IDS)
 def test_every_dot_glyph_has_an_ss03_form(weight, italic):
     order = set(TTFont(static_path(weight, italic)).getGlyphOrder())
-    missing = [g for g in DOT_GLYPHS if g + ".ss03" not in order]
+    missing = [g for g in DOT_GLYPHS if built_name(g + ".ss03") not in order]
     assert not missing
 
 
@@ -77,8 +77,8 @@ def test_ss03_substitutes_every_dot_glyph(weight, italic):
             for sub in gsub.LookupList.Lookup[index].SubTable:
                 sub = getattr(sub, "ExtSubTable", sub)
                 mapped.update(sub.mapping)
-    # keys can carry production names (uniXXXX), the .ss03 targets are never renamed
-    assert sorted(mapped.values()) == sorted(g + ".ss03" for g in DOT_GLYPHS)
+    # keys can carry production names (uniXXXX); the .ss03 targets are renamed only where `public.postscriptNames` says so
+    assert sorted(mapped.values()) == sorted(built_name(g + ".ss03") for g in DOT_GLYPHS)
     assert len(mapped) == len(DOT_GLYPHS)
 
 

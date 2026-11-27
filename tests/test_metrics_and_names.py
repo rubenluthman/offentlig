@@ -172,3 +172,16 @@ def test_variable_default_instance_names_match_name_table(variable_ttf):
     ps = name.getName(6, 3, 1, 0x409).toUnicode()
     default = [i for i in variable_ttf["fvar"].instances if i.coordinates["wght"] == 400]
     assert default and name.getDebugName(default[0].postscriptNameID) == ps
+
+
+def test_no_glyph_name_is_over_31_characters(static_ttf):
+    """Longer names are legacy-long to Fontspector and PDF tools; give a long source name a short one in `public.postscriptNames`."""
+    assert [g for g in static_ttf.getGlyphOrder() if len(g) > 31] == []
+
+
+@pytest.mark.parametrize("kind", ["otf", "variable", "webfonts"])
+def test_no_glyph_name_is_over_31_characters_in_other_builds(kind):
+    paths = sorted((BUILD / kind).glob("*.*"))
+    assert paths, f"no fonts in {kind}"
+    long = {p.name: [g for g in TTFont(p).getGlyphOrder() if len(g) > 31] for p in paths}
+    assert {k: v for k, v in long.items() if v} == {}
