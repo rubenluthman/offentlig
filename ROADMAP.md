@@ -7,6 +7,8 @@
 <!-- vale HouseStyle.Headings = YES -->
 
 - Fix the pairs listed in `tests/data/floor-baseline.json.gz` (K24) in the final Offentlig Sans review before 1.0.0: old small-figure pairs, typed `ị ɨ į ı i̇` pairs and some plain pairs under the nearest-ink floor. Layout is frozen until then (M8), so they wait. Rerun `scripts/write_floor_baseline.py` after each fix; the file is done when it lists nothing.
+- Widen the floor test to the typed `i̇ į ị ɨ ı` + mark forms against symbols, superscripts, modifier letters and the small figures (`numr dnom subs sups`), which no floor test covers yet (`i̇̂²` is under the floor in Thin). List what it finds in the K24 baseline, then fix those pairs with the others before 1.0.0.
+- Lower the group kerning `public.kern1.idotaccent` | `public.kern2.idblgrave` (999 in Black): every pair it covers has its own exception, so it moves nothing today, but a glyph added to either group would take it.
 - Follow the three fixes this fork carries that Public Sans has not merged yet: uswds/public-sans PRs #396 (italic `å`), #397 (subscript digits) and #398 (Thin kerning of space and dashes). Checked at each release (see the release steps in [CONTRIBUTING.md](CONTRIBUTING.md#releases)).
 - Study joined `f` and `t` crossbars (`ff ft tt`) as drawn ligatures, and other drawn letter pairs, after 0.9.0. Both crossbars end at the x-height in every master. Render the options before deciding.
 - After 0.9.0, release only 0.9.x patches that leave layout unchanged (M8). Changes that move text, including joined crossbars if chosen, wait for 1.0.0, after a final review of Offentlig Sans. A 0.10.0 is not planned.
